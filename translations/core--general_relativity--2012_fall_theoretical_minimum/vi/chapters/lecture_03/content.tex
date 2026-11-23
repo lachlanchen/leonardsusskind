@@ -1,0 +1,647 @@
+\chapter{Tính phẳng cục bộ, đạo hàm hiệp biến và độ cong}
+
+\lectureoverview{Metric luôn có thể được đưa về dạng Euclid đến bậc nhất tại một điểm được chọn. Độ cong bắt đầu ở nơi quyền tự do tọa độ ấy chấm dứt: ở sự không ghép khớp bậc hai giữa các hệ quy chiếu cục bộ lân cận. Chúng ta sẽ triển khai phát biểu đó qua ba giai đoạn. Trước hết là tọa độ chuẩn tắc, rồi đến đạo hàm hiệp biến và liên kết của nó, và cuối cùng là tính không giao hoán của hai đạo hàm hiệp biến, vốn xác định tensor Riemann và đem lại cho hấp dẫn thủy triều ý nghĩa bất biến.}
+
+\section{Gánh nặng tất yếu của các chỉ số}
+
+Thuyết tương đối rộng khó theo một cách khá đặc thù. Những ý tưởng cơ bản của nó không đến mức tối tăm không thể hiểu nổi, nhưng một phép tính nhanh chóng trở nên dày đặc các chỉ số, đạo hàm và ký hiệu. Có những ngôn ngữ cô đọng hơn: vielbein, dạng vi phân, spinor, twistor và các công cụ liên quan có thể gói các phương trình thành phần dài thành những đối tượng gọn. Tuy nhiên, việc học các ngôn ngữ đó tự thân đã là một nhiệm vụ đáng kể, và ký hiệu nén gọn có thể che khuất chính cơ chế mà người học lần đầu cần hiểu nhất.
+
+Phương trình Maxwell cung cấp hình mẫu. Khi được viết theo từng thành phần, chúng tạo thành vài phương trình riêng rẽ. Ký hiệu vectơ gom chúng lại thành các phương trình phân kỳ và xoáy, khiến cấu trúc dễ thấy hơn. Thuyết tương đối rộng cũng cho phép những cách nén tương tự, nhưng phương pháp thành phần vẫn là con đường đáng tin cậy khi thực sự phải làm một phép tính tường minh. Vì vậy chúng ta sẽ để các chỉ số hiện rõ. Một khi văn phạm của chúng trở nên quen thuộc, con đường khái niệm sẽ trơn tru hơn nhiều, dù phần tính toán vẫn có thể kéo dài hàng trang.
+
+Các gói phần mềm máy tính ký hiệu có thể giúp xử lý phần tính toán ấy. Với một metric \(g_{mn}(x)\), một gói như vậy có thể dựng các ký hiệu Christoffel, tensor Riemann, tensor Ricci và tensor Einstein. Sau đó nó có thể thế các biểu thức này vào các phương trình trường. Điều đó không loại bỏ nhu cầu phải hiểu những đối tượng ấy có nghĩa gì. Nó chỉ tách phần khai triển cơ học ra khỏi hình học.
+
+\begin{classroomqa}
+\audiencequestion{Vào thời điểm của bài giảng này, những lĩnh vực nghiên cứu sôi động trong thuyết tương đối rộng là gì?}
+\lecturerresponse{Bài giảng đã nêu bật một số mặt trận. Hấp dẫn lượng tử và vật lý lượng tử của lỗ đen là những vấn đề trung tâm của lý thuyết cơ bản. Vật lý thiên văn cổ điển và thuyết tương đối rộng số nghiên cứu các hệ như các lỗ đen quay quanh nhau và sáp nhập, nơi việc giải các phương trình Einstein và dự đoán bức xạ hấp dẫn đòi hỏi nhiều hơn rất nhiều so với việc mù quáng nhét phương trình vào máy tính. Các cấu trúc toán học ấy cũng đang tìm thấy ứng dụng trong vật lý vật chất ngưng tụ và động lực học chất lỏng. Điểm lịch sử cũng nổi bật không kém: thuyết tương đối rộng đã chuyển từ một chuyên ngành tương đối nhỏ trong thập niên 1960 thành một trong những ngôn ngữ trung tâm của vật lý lý thuyết, gắn chặt với lý thuyết trường lượng tử.
+\lecturetimestamp{00:05:15}}
+\end{classroomqa}
+
+Đây là bài giảng cuối cùng chỉ dành riêng cho hình học Riemann. Bắt đầu từ bài giảng tiếp theo, hình học sẽ được diễn giải như hấp dẫn. Cây cầu nối ấy đã hiện ra. Về mặt toán học, việc phân biệt một trường hấp dẫn thật với một trường biểu kiến do các tọa độ gia tốc hoặc cong tuyến gây ra cũng chính là bài toán phân biệt một metric cong với một metric phẳng được viết trong những tọa độ vụng về.
+
+\section{Câu hỏi bất biến}
+
+Một hình học hai chiều là phẳng khi hình học Euclid hoạt động một cách nội tại: các đường thẳng, các đường song song, các hệ thức tam giác và các phép đo khoảng cách đều mang dạng Euclid. Ta rất dễ muốn nói rằng tính phẳng có nghĩa là
+\(g_{mn}=\delta_{mn}\), nhưng phát biểu đó phụ thuộc vào tọa độ. Ngay cả một mặt phẳng thông thường cũng có metric phụ thuộc vị trí trong tọa độ cực. Phát biểu đúng là một miền phẳng chấp nhận các tọa độ mà trong đó metric là hằng và Euclid trên khắp miền ấy.
+
+Thay vào đó, giả sử metric được cho cho chúng ta trong một hệ tọa độ tùy ý nào đó. Một phép kiểm tra tồi sẽ là lần lượt lục tìm qua các hệ tọa độ, mỗi lần lại biến đổi metric và hy vọng cuối cùng sẽ tìm được một dạng Descartes. Có vô số khả năng, nên đây không phải là một tiêu chuẩn thực tế.
+
+Chiến lược đúng là xây dựng một đại lượng chẩn đoán từ \(g_{mn}\) và các đạo hàm của nó. Ta muốn một đối tượng \(R\) có hai tính chất quyết định:
+\[
+\begin{aligned}
+R=0
+&\quad\Longleftrightarrow\quad
+\text{locally flat geometry},\\
+R\neq 0 \text{ at } P
+&\quad\Longrightarrow\quad
+\text{curvature at } P.
+\end{aligned}
+\]
+Quan trọng nhất, \(R\) phải là một tensor. Một tensor triệt tiêu trong một hệ tọa độ thì triệt tiêu trong mọi hệ tọa độ, nên không cần phải dò tìm qua các hệ tọa độ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_01.png}
+\caption{Phép kiểm tra bất biến mong muốn: một metric không nhất thiết hiện rõ là bằng \(\delta_{mn}\), còn một đại lượng độ cong triệt tiêu thì phải nhận diện một hình học phẳng cục bộ.}
+\lectureframe{00:18:20}
+\end{figure}
+
+Sự hạn định \emph{cục bộ} là quan trọng. Một tensor Riemann triệt tiêu bảo đảm hình học Euclid cục bộ; các phép đồng nhất toàn cục vẫn có thể tạo ra tôpô không tầm thường. Chẳng hạn, một hình trụ phẳng hay một xuyến phẳng có thể là Euclid cục bộ mà về toàn cục không phải là mặt phẳng.
+
+\section{Hình học metric ở quy mô nhỏ}
+
+Sẽ hữu ích nếu thấy điều gì thay đổi theo số chiều. Một không gian 0 chiều chỉ là một điểm. Một không gian Riemann 1 chiều liên thông có thể được làm thẳng cục bộ thành một đường thẳng; về toàn cục nó có thể là một khoảng, một đường thẳng hoặc một vòng kín. Một con bọ bị giới hạn trên một đường chạy 1 chiều khép kín có thể đo chu vi của nó, nhưng việc bẻ cong đường ấy trong căn phòng xung quanh không làm thay đổi metric nội tại của nó.
+
+Hai chiều cho phép một hình học nội tại phong phú hơn nhiều: một mặt phẳng, một mặt cầu, một bề mặt Trái Đất gồ ghề và một xuyến không nhất thiết giống nhau ngay cả cục bộ, và tôpô toàn cục của chúng cũng có thể khác nhau. Metric là công cụ ghi lại các khoảng cách vi phân của chúng:
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:l3-line-element}
+\end{equation}
+Đại lượng \(ds^2\) là một vô hướng. Do đó, các biến đổi của \(dx^m\) dưới một phép biến đổi tọa độ được bù đúng bởi phép biến đổi của \(g_{mn}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_02.png}
+\caption{Phần tử độ dài bất biến được viết bằng một metric phụ thuộc vị trí.}
+\lectureframe{00:19:00}
+\end{figure}
+
+Metric là không suy biến và vì thế có một nghịch đảo:
+\begin{equation}
+ g^{mn}g_{nr}=\delta^m{}_r.
+\label{eq:l3-inverse-metric}
+\end{equation}
+Tensor Kronecker hỗn hợp \(\delta^m{}_r\) là ánh xạ đồng nhất. Trong hình học Riemann thông thường, metric còn xác định dương,
+\begin{equation}
+ g_{mn}u^m u^n>0
+\qquad\text{for every nonzero }u^m.
+\label{eq:l3-positive}
+\end{equation}
+Không-thời gian Lorentz về sau sẽ nới lỏng tính dương này trong khi vẫn giữ tính không suy biến.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_03.png}
+\caption{Metric nghịch đảo và tensor đồng nhất trên bảng.}
+\lectureframe{00:20:40}
+\end{figure}
+
+Metric thiết lập sự tương ứng giữa vectơ và đồng vectơ:
+\begin{equation}
+ V_m=g_{mn}V^n,
+ \qquad
+ V^m=g^{mn}V_n.
+\label{eq:l3-raise-lower}
+\end{equation}
+Vì thế, việc chuyển một chỉ số là một phép toán do metric thực hiện, chứ không phải một thay đổi thuần túy về cách viết.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_04.png}
+\caption{Nâng và hạ chỉ số của một vectơ bằng metric và metric nghịch đảo của nó.}
+\lectureframe{00:24:40}
+\end{figure}
+
+Nếu mọi thành phần của \(g_{mn}\) đều là hằng trong một miền, thì một phép đổi tọa độ tuyến tính với hệ số hằng có thể chéo hóa và chuẩn hóa metric tại đó. Khi ấy hình học là phẳng. Vì vậy, thông tin đáng chú ý phải gắn với cách metric biến thiên theo vị trí.
+
+\section{Tọa độ chuẩn tắc: phẳng đến bậc nhất}
+
+Hãy chọn một điểm \(P\). Định lý tọa độ chuẩn tắc nói rằng có thể xây dựng các tọa độ lấy \(P\) làm tâm sao cho
+\begin{align}
+ g_{mn}(P)&=\delta_{mn}, \label{eq:l3-normal-metric}\\
+ \partial_r g_{mn}(P)&=0. \label{eq:l3-normal-first}
+\end{align}
+Bài giảng gọi đây là các tọa độ chuẩn tắc Gauss. Về mặt hình học, ta vạch các trục qua \(P\) và kéo dài các đường tọa độ của chúng theo cách thẳng nhất mà hình học cho phép. Khái niệm chính xác về tính thẳng này sẽ trở thành chuyển động trắc địa.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_05.png}
+\caption{Các tọa độ chuẩn tắc được chọn sao cho metric là Euclid tại điểm đã chọn.}
+\lectureframe{00:28:50}
+\end{figure}
+
+Không có duy nhất một hệ quy chiếu như vậy. Một phép quay trực giao tại \(P\) bảo toàn \(g_{mn}(P)=\delta_{mn}\). Điều quan trọng không phải là định hướng của các trục mà là sự tồn tại của một hệ quy chiếu trong đó cả \eqref{eq:l3-normal-metric} lẫn \eqref{eq:l3-normal-first} đều đúng.
+
+\begin{classroomqa}
+\audiencequestion{Các điều kiện này chỉ đúng tại điểm đã chọn hay đúng trên cả một lân cận?}
+\lecturerresponse{Chúng đúng tại điểm đã chọn \(P\). Ta có thể đặt tâm một hệ chuẩn tắc tại bất kỳ điểm nào, nhưng nói chung không thể dùng một hệ tọa độ duy nhất trên một miền cong mà vẫn giữ metric là Euclid và mọi đạo hàm bậc nhất đều bằng không ở khắp nơi. Kéo dài cùng hệ tọa độ ấy ra xa \(P\) sẽ làm lộ ra các đạo hàm bậc cao hơn của metric.
+\lecturetimestamp{00:29:53}}
+\end{classroomqa}
+
+Tại \(P\), các đạo hàm bậc hai nói chung là không thể tránh khỏi:
+\begin{equation}
+ \partial_r\partial_s g_{mn}(P)\neq 0
+ \qquad\text{in general}.
+\label{eq:l3-normal-second}
+\end{equation}
+Vì vậy, metric không mang thông tin độ cong bất biến nào ở bậc không hoặc bậc nhất tại một điểm; sự tự do tọa độ có thể loại bỏ điều đó. Thông tin bất biến khả dĩ đầu tiên xuất hiện ở bậc hai.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_06.png}
+\caption{Các điều kiện của tọa độ chuẩn tắc: metric là Euclid, các đạo hàm bậc nhất của nó triệt tiêu, còn các đạo hàm bậc hai thì không nhất thiết như vậy.}
+\lectureframe{00:30:50}
+\end{figure}
+
+\subsection{Vì sao quyền tự do tọa độ là đủ}
+
+Chọn \(P\) làm gốc chung của các hệ tọa độ \(x^m\) và \(y^m\).
+Sau khi dùng một phép biến đổi tuyến tính để điều chỉnh metric tại gốc, hãy xét phần bậc hai của một phép đổi tọa độ tiếp theo:
+\begin{equation}
+ x^m
+ =y^m+C^m{}_{nr}y^n y^r+O(y^3),
+ \qquad C^m{}_{nr}=C^m{}_{rn}.
+\label{eq:l3-quadratic-transform}
+\end{equation}
+Trong bốn chiều, cặp đối xứng \(nr\) có
+\[
+\frac{4(4+1)}{2}=10
+\]
+lựa chọn độc lập. Với mỗi một trong bốn giá trị của \(m\), có
+10 hệ số \(C^m{}_{nr}\), cho tổng cộng 40 hệ số bậc hai.
+
+Metric đối xứng cũng có 10 thành phần độc lập trong bốn chiều. Mỗi thành phần có 4 đạo hàm bậc nhất, nên các điều kiện \(\partial_r g_{mn}(P)=0\) tạo thành 40 phương trình. Sự khớp nhau về số lượng cho thấy bậc tự do tọa độ bậc hai có đúng kích thước cần thiết để áp đặt các điều kiện đạo hàm bậc nhất. Định lý tọa độ chuẩn cung cấp mệnh đề tồn tại; riêng việc đếm chỉ là một kiểm tra cấu trúc hữu ích chứ không phải một chứng minh đầy đủ về tính giải được của một hệ phi tuyến tùy ý.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_07.png}
+\caption{Phép biến đổi tọa độ bậc hai và 10 đơn thức bậc hai độc lập trong bốn chiều.}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(x^m=y^m+C^m{}_{nr}y^n y^r+\cdots\) có phải là một phép biến đổi tọa độ đang được thử xét không?}
+\lecturerresponse{Có. Các hệ số \(C^m{}_{nr}\) được chọn sao cho, trong hệ tọa độ mới, các đạo hàm bậc nhất của metric triệt tiêu tại gốc chung. Phần tuyến tính giữ cho ma trận Jacobi khả nghịch gần điểm đó, còn phần bậc hai điều chỉnh các đạo hàm bậc nhất của metric. \lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Đây có phải là điều người ta muốn nói khi bảo rằng một hình học trơn là phẳng cục bộ không?}
+\lecturerresponse{Đó là phát biểu bậc nhất thích hợp. Ở một thang độ đủ nhỏ, một mặt trơn được xấp xỉ bởi mặt phẳng tiếp xúc của nó, và tọa độ chuẩn biểu thị sự kiện đó qua \(g_{mn}(P)=\delta_{mn}\) và
+\(\partial_r g_{mn}(P)=0\). Tính phẳng chính xác trên một lân cận còn mạnh hơn: nó còn đòi hỏi tensor độ cong triệt tiêu tại đó.
+\lecturetimestamp{00:36:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sự bằng nhau giữa 40 hệ số và 40 phương trình có thực sự bảo đảm rằng các phương trình có thể giải được không?}
+\lecturerresponse{Phép đếm xác định bậc tự do tọa độ cần có, còn định lý thì bảo đảm phép xây dựng cục bộ cho một metric trơn không suy biến. Bài giảng đề nghị kiểm tra trực tiếp trường hợp hai chiều như một bài tập. Lập luận không phụ thuộc vào bốn chiều; trong \(d\) chiều, cùng một tính đối xứng và bậc tự do tọa độ vẫn khớp với nhau. \lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao trong khai triển không có hạng số, và hạng nào là bậc nhất?}
+\lecturerresponse{Hạng \(y^m\) là hạng bậc nhất. Một hạng số đã được lược bỏ vì hai gốc tọa độ đã được cố ý chọn để biểu diễn cùng một điểm, nên \(y=0\) suy ra \(x=0\). Lựa chọn đó không làm mất tính tổng quát nào. \lecturetimestamp{00:38:52}}
+\end{classroomqa}
+
+\section{Vì sao phép lấy đạo hàm theo từng thành phần thất bại}
+
+Giờ hãy xét một trường đồng vectơ \(V_m(x)\). Trong các tọa độ Descartes thẳng trên không gian phẳng, một vectơ không đổi theo nghĩa hình học có các thành phần không đổi. Vì vậy người ta có thể thử định nghĩa đạo hàm của nó là \(\partial_rV_m\). Khó khăn xuất hiện ngay khi lưới tọa độ bị uốn cong.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_08.png}
+\caption{Một lưới tọa độ cong chồng lên một khung cục bộ thẳng.}
+\lectureframe{00:40:10}
+\end{figure}
+
+Đặt cùng một vectơ hình học tại các điểm lân cận nhau. So với một khung Descartes cố định, các thành phần không thay đổi. Tuy nhiên, so với một cơ sở tọa độ cong, chính các vectơ cơ sở lại quay khi ta di chuyển, nên danh sách các thành phần thay đổi mặc dù bản thân vectơ thì không.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_09.png}
+\caption{Cùng một vectơ tại các điểm lân cận mang những thành phần khác nhau vì cơ sở tọa độ cục bộ đã quay.}
+\lectureframe{00:42:30}
+\end{figure}
+
+Vì thế, điều kiện ngây thơ
+\begin{equation}
+ \partial_rV_m=0
+\label{eq:l3-naive-derivative}
+\end{equation}
+có thể đúng trong một hệ tọa độ và sai trong một hệ khác. Nếu \(\partial_rV_m\) là một tensor hạng hai, điều đó sẽ là không thể: việc nó triệt tiêu trong một khung sẽ kéo theo việc nó triệt tiêu trong mọi khung. Do đó, các đạo hàm riêng thông thường của các thành phần vectơ không phải là các thành phần tensor.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_10.png}
+\caption{Điều kiện đạo hàm bằng không cố ý ngây thơ bên cạnh cơ sở tọa độ cong đang thay đổi.}
+\lectureframe{00:44:00}
+\end{figure}
+
+Ta cần một đạo hàm loại bỏ sự thay đổi biểu kiến do cơ sở gây ra, đồng thời vẫn giữ lại sự thay đổi thực sự của trường đồng vectơ.
+
+\section{Định nghĩa đạo hàm hiệp biến}
+
+Phép lấy đạo hàm tại \(P\) chỉ so sánh các giá trị trong một lân cận nhỏ tùy ý của \(P\). Vì vậy ta có thể bắt đầu trong các tọa độ chuẩn lấy tâm tại đó. Lấy một vectơ tại một điểm lân cận, dời gốc của nó trở lại \(P\), và giữ cố định các thành phần của nó theo tọa độ chuẩn trong suốt phép dời. So sánh vectơ đã được vận chuyển với vectơ đã có sẵn tại \(P\), rồi chia cho độ tách, ta thu được đạo hàm thông thường trong khung cục bộ thẳng đó.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_11.png}
+\caption{Phép so sánh cục bộ: tịnh tiến vectơ lân cận trong tọa độ chuẩn trước khi lấy hiệu.}
+\lectureframe{00:46:50}
+\end{figure}
+
+Giờ hãy biểu diễn đạo hàm được định nghĩa theo hình học đó trong các tọa độ tùy ý. Có hai đóng góp: các thành phần \(V_m\) có thể thay đổi, và cơ sở tọa độ có thể thay đổi. Cấu trúc chỉ số quyết định dạng của số hạng hiệu chỉnh:
+\begin{equation}
+ \nabla_rV_m
+ =\partial_rV_m-\Gamma^t{}_{rm}V_t.
+\label{eq:l3-covector-derivative}
+\end{equation}
+Các đại lượng \(\Gamma^t{}_{rm}\) là các hệ số liên thông, còn được gọi là các ký hiệu Christoffel. Dấu trừ là thích hợp cho một chỉ số vectơ ở dưới. Tại tâm \(P\) của tọa độ chuẩn,
+\begin{equation}
+ \Gamma^t{}_{rm}(P)=0,
+\qquad
+ \nabla_rV_m(P)=\partial_rV_m(P).
+\label{eq:l3-gamma-normal-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_12.png}
+\caption{Đạo hàm hiệp biến của một đồng vectơ: sự biến thiên thông thường của các thành phần trừ đi sự biến thiên do cơ sở chuyển động gây ra.}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Công thức \(\nabla_rV_m=\partial_rV_m-\Gamma^t{}_{rm}V_t\) có đúng trong các tọa độ tùy ý không, và trong tọa độ chuẩn thì nó trở thành gì?}
+\lecturerresponse{Công thức đầy đủ có hiệu lực trong các tọa độ tùy ý. Tại điểm được chọn trong tọa độ chuẩn, các đạo hàm bậc nhất của metric, và do đó các ký hiệu Christoffel, triệt tiêu, chỉ còn lại \(\partial_rV_m\). Xa khỏi điểm đó, ngay cả cùng một bản đồ tọa độ chuẩn nói chung cũng có các hệ số liên thông khác không.
+\lecturetimestamp{00:50:22}}
+\end{classroomqa}
+
+Đạo hàm hiệp biến được gọi như vậy vì toàn bộ đối tượng \(\nabla_rV_m\) biến đổi hiệp biến như một tensor; tên gọi ấy không chỉ đơn thuần là một nhận xét về chỉ số đạo hàm ở dưới. Số hạng Christoffel chính là thứ khắc phục quy luật biến đổi phi tensor của đạo hàm riêng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_13.png}
+\caption{Đạo hàm đầy đủ của đồng vectơ và hiệu chỉnh liên thông của nó.}
+\lectureframe{00:51:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Điều này có liên hệ với đạo hàm đối lưu dùng trong dòng chảy chất lưu không?}
+\lecturerresponse{Bài giảng trả lời một cách thận trọng rằng có một mối liên hệ: cơ học chất lưu cũng phân biệt sự biến thiên được dòng chảy mang theo với sự biến thiên được quan sát tại một điểm tọa độ cố định, và đạo hàm hiệp biến xuất hiện trong các phương trình chất lưu trên các tọa độ cong hoặc các không gian cong. Hai toán tử này không đồng nhất theo định nghĩa, nhưng cả hai đều hiệu chỉnh một đạo hàm ngây thơ để tính đến một cấu trúc đang chuyển động cùng với phép mô tả.
+\lecturetimestamp{00:52:31}}
+\end{classroomqa}
+
+Đối với liên thông không xoắn được dùng ở đây,
+\begin{equation}
+ \Gamma^t{}_{rm}=\Gamma^t{}_{mr}.
+\label{eq:l3-torsion-free}
+\end{equation}
+Các hình học tổng quát hơn có thể mang xoắn và không nhất thiết tuân theo tính đối xứng này. Liên thông hiện tại là liên thông thích hợp với mô tả metric tiêu chuẩn của thuyết tương đối rộng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_14.png}
+\caption{Các ký hiệu Christoffel được nhận diện là các hệ số liên thông đối xứng của hình học không xoắn.}
+\lectureframe{00:54:30}
+\end{figure}
+
+Có một phép tương tự vật lý hữu ích. Tọa độ chuẩn đóng vai trò của một hệ quy chiếu rơi tự do tại một biến cố: hiệu chỉnh tọa độ có thể được làm biến mất ở đó. Các tọa độ cong tùy ý giống với một thang máy gia tốc, nơi các lực biểu kiến xuất hiện vì bản thân hệ quy chiếu đang thay đổi. Phép tương tự này là cục bộ, và độ cong sẽ đo lường vì sao một hệ quy chiếu rơi tự do duy nhất không thể loại bỏ hấp dẫn trên toàn bộ một miền mở rộng.
+
+\subsection{Một hiệu chỉnh cho mỗi chỉ số tensor}
+
+Đối với một tensor hạng hai hiệp biến \(T_{mn}\), mỗi chỉ số dưới nhận một số hạng hiệu chỉnh liên thông riêng:
+\begin{equation}
+ \nabla_sT_{mn}
+ =\partial_sT_{mn}
+ -\Gamma^t{}_{sm}T_{tn}
+ -\Gamma^t{}_{sn}T_{mt}.
+\label{eq:l3-rank-two-derivative}
+\end{equation}
+Để nhớ quy tắc này, hãy giữ cố định một chỉ số như một chỉ số ngoài cuộc trong khi lấy đạo hàm theo chỉ số kia, rồi lặp lại cho chỉ số thứ hai. Các chỉ số phản biến nhận các hạng tương ứng với dấu ngược lại.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_15.png}
+\caption{Đạo hàm hiệp biến của một tensor hiệp biến hạng hai, với một hiệu chỉnh Christoffel cho mỗi chỉ số dưới.}
+\lectureframe{01:01:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân ký hiệu \(\partial_r\) có chỉ quy chiếu tới tọa độ chuẩn hay không, và công thức tensor có bị giới hạn vào khung đó không?}
+\lecturerresponse{Không. Ký hiệu
+\(\partial_r=\partial/\partial x^r\) có nghĩa trong mọi hệ tọa độ, và công thức đầy đủ của đạo hàm hiệp biến được viết cho các tọa độ tùy ý. Chỉ tại điểm được chọn của một khung chuẩn thì các hiệu chỉnh Christoffel mới triệt tiêu. \lecturetimestamp{00:57:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Khi đạo hàm hiệp biến rút về đạo hàm riêng trong tọa độ chuẩn, sự rút gọn đó chỉ xảy ra tại điểm được chọn thôi sao? Các ký hiệu Christoffel có phải là tensor không?}
+\lecturerresponse{Đúng, sự rút gọn ấy là theo từng điểm. Các ký hiệu Christoffel không phải là tensor: chúng có thể triệt tiêu tại \(P\) trong tọa độ chuẩn và khác không tại chính điểm đó trong một hệ tọa độ khác. Chính quy luật biến đổi không phải tensor của chúng cho phép tổ hợp trong \eqref{eq:l3-covector-derivative} biến đổi như một tensor.
+\lecturetimestamp{00:58:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Đạo hàm hiệp biến thực sự sẽ được dùng để làm gì?}
+\lecturerresponse{Cho các phương trình trường. Trường hấp dẫn biến thiên từ điểm này sang điểm khác, nên các phương trình của nó phải chứa đạo hàm. Đồng thời, các phương trình ấy phải có cùng nội dung trong mọi hệ tọa độ. Phép lấy đạo hàm hiệp biến biến tensor thành tensor và do đó cho phép viết các phương trình vi phân mà tính đúng sai của chúng không phụ thuộc vào một hệ quy chiếu đặc biệt nào. \lecturetimestamp{01:02:35}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể nhân đạo hàm hiệp biến với một vi phân tọa độ để mô tả sự thay đổi giữa các điểm lân cận không?}
+\lecturerresponse{Có. Dọc theo một độ dời vô cùng nhỏ \(dx^s\), độ biến thiên hiệp biến là \(dx^s\nabla_sT\). Hạng đạo hàm riêng đo sự thay đổi của các thành phần, còn các hạng liên thông tính đến sự thay đổi của cơ sở tọa độ. Ngay cả không gian phẳng trong tọa độ cực cũng đòi hỏi phải phân biệt như vậy. \lecturetimestamp{01:03:22}}
+\end{classroomqa}
+
+\section{Điều kiện tương thích mêtric xác định liên thông}
+
+Áp dụng quy tắc cho tensor hạng hai vào mêtric. Tại \(P\) trong tọa độ chuẩn,
+\(\partial_sg_{mn}=0\) và \(\Gamma^t{}_{sm}=0\), nên
+\(\nabla_sg_{mn}=0\). Vì đạo hàm hiệp biến là một tensor, kết quả theo từng điểm này đúng trong mọi hệ tọa độ:
+\begin{equation}
+ \nabla_sg_{mn}=0.
+\label{eq:l3-metric-compatibility}
+\end{equation}
+Đó là tính tương thích mêtric. Nó nói rằng phép vận chuyển song song bảo toàn mêtric, và do đó bảo toàn độ dài và góc.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_16.png}
+\caption{Phương trình tương thích mêtric mở đầu việc suy ra liên thông từ mêtric.}
+\lectureframe{01:06:20}
+\end{figure}
+
+Khai triển \eqref{eq:l3-metric-compatibility} cho
+\begin{equation}
+ 0
+ =\partial_sg_{mn}
+ -\Gamma^t{}_{sm}g_{tn}
+ -\Gamma^t{}_{sn}g_{mt}.
+\label{eq:l3-compat-expanded}
+\end{equation}
+Viết thêm hai bản sao nữa với các chỉ số đạo hàm và mêtric được hoán vị tuần hoàn:
+\begin{align}
+ 0
+ &=\partial_mg_{sn}
+ -\Gamma^t{}_{ms}g_{tn}
+ -\Gamma^t{}_{mn}g_{st},
+\label{eq:l3-compat-m}\\
+ 0
+ &=\partial_ng_{sm}
+ -\Gamma^t{}_{ns}g_{tm}
+ -\Gamma^t{}_{nm}g_{st}.
+\label{eq:l3-compat-n}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_17.png}
+\caption{Ba phương trình tương thích mêtric với các chỉ số được hoán vị.}
+\lectureframe{01:10:20}
+\end{figure}
+
+Cộng \eqref{eq:l3-compat-m} và \eqref{eq:l3-compat-n},
+rồi trừ \eqref{eq:l3-compat-expanded}. Dùng tính đối xứng không xoắn \eqref{eq:l3-torsion-free}, các hạng liên thông không mong muốn triệt tiêu:
+\begin{equation}
+ \partial_mg_{sn}+\partial_ng_{sm}-\partial_sg_{mn}
+ =2\Gamma^t{}_{mn}g_{st}.
+\label{eq:l3-isolate-gamma-lowered}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_18.png}
+\caption{Cộng hai phương trình tương thích rồi trừ phương trình thứ ba sẽ triệt tiêu các hạng Christoffel không mong muốn.}
+\lectureframe{01:12:10}
+\end{figure}
+
+Nhân với \(g^{rs}\) sẽ tách được liên thông:
+\begin{equation}
+ \boxed{
+ \Gamma^r{}_{mn}
+ =\frac12 g^{rs}
+ \left(
+ \partial_mg_{sn}
+ +\partial_ng_{sm}
+ -\partial_sg_{mn}
+ \right)}
+\label{eq:l3-christoffel}
+\end{equation}
+Vì thế, liên thông Levi-Civita được xây dựng từ mêtric và các đạo hàm bậc nhất của nó. Đây chính là lời giải thích đã hứa trước đó cho việc các ký hiệu Christoffel triệt tiêu tại tâm của tọa độ chuẩn.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_19.png}
+\caption{Mêtric nghịch đảo tách ký hiệu Christoffel ra khỏi phương trình liên thông với chỉ số đã hạ.}
+\lectureframe{01:16:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao cả ba phương trình tương thích mêtric đều được đặt bằng không?}
+\lecturerresponse{Tại điểm được chọn trong tọa độ chuẩn, các đạo hàm thường của mêtric triệt tiêu và các ký hiệu Christoffel cũng vậy. Do đó đạo hàm hiệp biến của mêtric bằng không tại đó. Để thiết lập mệnh đề ở bất kỳ điểm nào khác, hãy đặt một hệ quy chiếu chuẩn có tâm tại điểm ấy rồi lặp lại. Vì \(\nabla_sg_{mn}\) là một tensor, việc nó triệt tiêu không phụ thuộc vào tọa độ. \lecturetimestamp{01:14:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kích thước của mêtric và của mảng Christoffel là gì, và vì sao có bốn mươi thành phần Christoffel độc lập trong bốn chiều?}
+\lecturerresponse{Trong \(d\) chiều, \(g_{mn}\) là một ma trận đối xứng \(d\times d\). Liên thông có ba chỉ số. Với mỗi chỉ số trên cố định \(r\), cặp chỉ số dưới đối xứng \(mn\) có \(d(d+1)/2\) khả năng chọn. Do đó một liên thông không xoắn có \(d^2(d+1)/2\) thành phần độc lập, tức là bốn mươi khi \(d=4\).
+\lecturetimestamp{01:16:18}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_20.png}
+\caption{Bảng viết trong phần thảo luận về việc đếm số thành phần: mười lựa chọn cho cặp chỉ số dưới đối xứng và bốn lựa chọn cho chỉ số trên.}
+\lectureframe{01:16:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Mêtric nào xuất hiện trong
+\eqref{eq:l3-christoffel}? Có phải dùng một mêtric tọa độ chuẩn khác nhau tại mỗi điểm không?}
+\lecturerresponse{Công thức dùng các thành phần của mêtric trong bất kỳ hệ tọa độ toàn cục hay cục bộ nào đã được chọn cho phép tính. Tọa độ chuẩn chỉ là công cụ cục bộ dùng để suy ra quy tắc: chuyển sang một hệ chuẩn tại một điểm, lấy đạo hàm ở đó, biến đổi kết quả trở lại, rồi bỏ hệ phụ trợ ấy đi. Một khi \eqref{eq:l3-christoffel} đã biết, nó được tính trực tiếp trong các tọa độ tùy ý đang xét. \lecturetimestamp{01:17:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(\nabla_sg_{mn}=0\) hoặc công thức Christoffel có cho ta biết rằng không gian là phẳng không?}
+\lecturerresponse{Không. Tính tương thích mêtric đúng cho mọi liên thông Levi-Civita, dù cong hay phẳng. Các ký hiệu Christoffel có thể khác không ngay cả trên một mặt phẳng khi viết bằng tọa độ cực. Nếu mọi \(\Gamma^r{}_{mn}\) đều triệt tiêu trên khắp một miền trong một hệ tọa độ nào đó, thì hệ tọa độ ấy là Descartes ở đó và miền ấy là phẳng; nhưng chỉ riêng việc chúng khác không thì không thể chẩn đoán độ cong. Vẫn cần một tensor được xây dựng từ các đạo hàm và các tích của \(\Gamma\). \lecturetimestamp{01:19:27}}
+\end{classroomqa}
+
+\section{Một hình nón cho thấy điều mà liên thông không thể cho thấy}
+
+Hãy xét một hình nón được làm tròn. Xa đỉnh của nó, ta có thể xấp xỉ nó bằng một hình nón thông thường làm bằng giấy. Cắt một hình quạt khỏi một đĩa phẳng rồi dán hai mép hở lại với nhau. Không phần nào của phần giấy còn lại bị kéo giãn; xét cục bộ, mọi điểm không nằm ở chỗ nối và ở đỉnh vẫn là phẳng. Phần hình quạt bị thiếu được đặc trưng bởi một góc khuyết
+\(\Delta\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_21.png}
+\caption{Hình nón được đưa vào như một hình học cục bộ phẳng ở xa đỉnh nhưng có độ cong không tầm thường tập trung tại đỉnh.}
+\lectureframe{01:23:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_22.png}
+\caption{Cắt một hình quạt khỏi một đĩa rồi đồng nhất hai mép của nó sẽ tạo ra góc khuyết hình nón.}
+\lectureframe{01:24:20}
+\end{figure}
+
+Cấu trúc bằng giấy này làm cho sự phân biệt trở nên trực quan. Trên tấm giấy đã cắt, hãy vận chuyển một vector sao cho nó luôn song song trong mặt phẳng thông thường. Sau khi hai mép của hình quạt được đồng nhất, một quỹ đạo bao quanh đỉnh sẽ trở về điểm xuất phát với vector được vận chuyển đã quay đi so với hướng ban đầu của nó.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_23.png}
+\caption{Minh họa hình nón bằng giấy: một tấm phẳng bị cắt bỏ một hình quạt sẽ trở thành hình nón khi các mép cắt của nó được ghép lại.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_24.png}
+\caption{Các vector được vẽ trên phần hình quạt đã cắt trước khi hai mép được đồng nhất.}
+\lectureframe{01:27:40}
+\end{figure}
+
+Phép quay này là holonomy. Nó không phải do một lựa chọn tọa độ tồi dọc theo một đoạn nào đó gây ra. Mỗi đoạn nhỏ đều có thể được xét trong một hệ cục bộ phẳng. Hiệu ứng chỉ xuất hiện sau khi ghép các so sánh cục bộ ấy quanh một vòng kín. Đối với hình nón lý tưởng, tổng góc quay bằng góc khuyết, tùy theo định hướng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_25.png}
+\caption{Vận chuyển song song quanh đỉnh nón đưa một vector trở lại với hướng đã quay: holonomy ghi nhận độ cong bị bao lấy.}
+\lectureframe{01:29:10}
+\end{figure}
+
+\section{Hai đường đi quanh một vòng kín vô cùng nhỏ}
+
+Hãy thay vòng kín hữu hạn bằng một hình chữ nhật tọa độ rất nhỏ. Bắt đầu từ một đỉnh, hãy vận chuyển trước theo hướng \(r\) rồi theo hướng \(s\). So sánh kết quả ấy với việc vận chuyển trước theo \(s\) rồi theo \(r\). Trong tọa độ Descartes phẳng, hai đường đi trùng nhau. Trong một hình học cong, nói chung chúng không trùng nhau.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_26.png}
+\caption{Hai thứ tự thực hiện phép vận chuyển vô cùng nhỏ quanh một hình chữ nhật tọa độ.}
+\lectureframe{01:31:40}
+\end{figure}
+
+Thước đo đại số là giao hoán tử của các đạo hàm hiệp biến:
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n.
+\label{eq:l3-commutator}
+\end{equation}
+Các đạo hàm riêng hỗn hợp thông thường giao hoán trên các hàm trơn. Sự không giao hoán ở đây xuất phát từ việc lấy đạo hàm không chỉ các thành phần của vector mà cả các hạng liên thông.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_27.png}
+\caption{Vòng kín vô cùng nhỏ được biểu diễn bởi hiệu giữa hai thứ tự lấy đạo hàm hiệp biến.}
+\lectureframe{01:33:20}
+\end{figure}
+
+Để tính nó, trước hết hãy xem
+\[
+ T_{rn}=\nabla_rV_n
+\]
+như một tensor hiệp biến hạng hai. Sau đó dùng
+\eqref{eq:l3-rank-two-derivative} để lấy đạo hàm của \(T_{rn}\) theo hướng
+\(s\). Lặp lại với \(r\) và \(s\) hoán đổi cho nhau rồi lấy hiệu. Phép tính này dài nhưng máy móc: khai triển, áp dụng quy tắc tích, rồi triệt tiêu các hạng chứa đạo hàm riêng bậc hai của \(V_n\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_28.png}
+\caption{Bắt đầu đạo hàm hiệp biến bậc hai bằng cách xem \(\nabla_rV_n\) như một tensor hiệp biến hạng hai.}
+\lectureframe{01:35:40}
+\end{figure}
+
+Dùng quy ước đã chọn trên bảng, ta được kết quả
+\begin{equation}
+ \left(\nabla_s\nabla_r-\nabla_r\nabla_s\right)V_n
+ =R_{srn}{}^tV_t.
+\label{eq:l3-riemann-commutator}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_29.png}
+\caption{Giao hoán tử của các đạo hàm hiệp biến xác định tác dụng của tensor độ cong lên một đồng vectơ.}
+\lectureframe{01:38:30}
+\end{figure}
+
+Với thứ tự này của giao hoán tử,
+\begin{equation}
+\begin{split}
+ R_{srn}{}^t
+={}&
+ \partial_r\Gamma^t{}_{sn}
+ -\partial_s\Gamma^t{}_{rn}\\
+&+\Gamma^p{}_{sn}\Gamma^t{}_{pr}
+ -\Gamma^p{}_{rn}\Gamma^t{}_{ps}.
+\end{split}
+\label{eq:l3-riemann}
+\end{equation}
+Các tài liệu khác có thể đảo dấu hoặc sắp xếp các chỉ số theo cách khác; quy ước được cố định bằng cách viết cả
+\eqref{eq:l3-riemann-commutator} và \eqref{eq:l3-riemann}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_30.png}
+\caption{Tensor Riemann: hai đạo hàm của liên kết và hai hạng bậc hai theo liên kết.}
+\lectureframe{01:39:40}
+\end{figure}
+
+Phương trình \eqref{eq:l3-christoffel} cho thấy vì sao độ cong chỉ xuất hiện lần đầu ở bậc hai theo metric. Mỗi \(\Gamma\) chứa một đạo hàm bậc nhất của \(g\). Vì vậy, các hạng đạo hàm trong \eqref{eq:l3-riemann} chứa các đạo hàm bậc hai của \(g\), còn các hạng bậc hai chứa các tích của các đạo hàm bậc nhất. Trong tọa độ chuẩn tắc tại \(P\), bản thân liên kết triệt tiêu nhưng các đạo hàm của nó nói chung thì không, nên độ cong vẫn còn:
+\[
+\begin{aligned}
+ \Gamma^t{}_{mn}(P)&=0,\\
+ R_{srn}{}^t(P)
+ &=\partial_r\Gamma^t{}_{sn}(P)
+ -\partial_s\Gamma^t{}_{rn}(P).
+\end{aligned}
+\]
+Điều quan trọng là phải giữ đúng thứ tự đạo hàm: tensor Riemann dùng các đạo hàm bậc nhất của \(\Gamma\), vốn là bậc hai theo metric.
+
+Đây là tiêu chuẩn chẩn đoán mong muốn. Nếu mọi thành phần của tensor Riemann đều triệt tiêu khắp một miền, thì miền ấy là phẳng cục bộ. Nếu có bất kỳ thành phần nào khác không tại một điểm, thì không một phép đổi tọa độ nào có thể loại bỏ độ cong ở đó. Một hệ đại số máy tính có thể kiểm tra các thành phần này từ một metric giải tích, nhưng về ý niệm thì đó đơn giản là sự không khép kín của phép vận chuyển song song quanh một vòng lặp vô cùng nhỏ.
+
+\section{Độ cong như hấp dẫn thủy triều}
+
+Tiêu chuẩn hình học ấy có một ý nghĩa vật lý trực tiếp. Hãy tưởng tượng một vật mềm dẻo được ghép từ các tam giác nối với nhau. Trong một miền phẳng, nó có thể được di chuyển mà không chịu ứng suất. Đẩy nó vào một miền mà metric nội tại bị cong, và các phần khác nhau của hệ khớp nối không thể đồng thời giữ nguyên những khoảng cách và góc ưa thích của chúng. Vật đó phải bị kéo giãn, ép lại hoặc biến dạng trượt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_31.png}
+\caption{Một vật thể liên kết, khi được chuyển từ một vùng phẳng vào một chỗ lồi cong, phải biến dạng để tuân theo metric cục bộ.}
+\lectureframe{01:44:10}
+\end{figure}
+
+Sự biến dạng ấy là đối ứng hình học của lực thủy triều. Trong một trường hấp dẫn, các hạt rơi tự do lân cận có thể gia tốc tương đối đối với nhau: một phương có thể bị kéo giãn trong khi phương khác bị nén lại. Tensor Riemann chi phối gia tốc tương đối này. Trong ngôn ngữ về sau được giới thiệu như độ lệch trắc địa, với vectơ tiếp tuyến \(u^\mu\) và vectơ độ tách \(\xi^\mu\),
+\begin{equation}
+ \frac{D^2\xi^\mu}{D\tau^2}
+ =-R^\mu{}_{\nu\rho\sigma}
+ u^\nu\xi^\rho u^\sigma,
+\label{eq:l3-geodesic-deviation-preview}
+\end{equation}
+trong đó dấu tổng thể tuân theo quy ước độ cong đã chọn. Phương trình này không được suy ra ở đây, nhưng nó phát biểu một cách chính xác điều bài giảng nói: độ cong và ứng suất thủy triều, đúng theo nghĩa đen, là cùng một vật lý cục bộ.
+
+Một trường hấp dẫn lý tưởng hoàn toàn đều không có biến thiên thủy triều và có thể bị loại bỏ cục bộ bằng cách chuyển sang một hệ quy chiếu gia tốc đều. Các trường thực do các khối lượng cô lập tạo ra không hoàn toàn đều. Trường của Trái Đất xấp xỉ hướng xuyên tâm và thay đổi theo vị trí, nên các quỹ đạo rơi tự do lân cận hội tụ hoặc tách ra.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_03_figure_32.png}
+\caption{Một trường hấp dẫn hướng xuyên tâm biến thiên trên khắp một vật thể có kích thước hữu hạn, tạo ra gia tốc tương đối được nhận diện là hấp dẫn thủy triều.}
+\lectureframe{01:48:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Điều gì phân biệt một trường hấp dẫn thực sự với trường biểu kiến thấy trong một hệ quy chiếu gia tốc?}
+\lecturerresponse{Một hệ quy chiếu gia tốc đều có thể mô phỏng một trường hấp dẫn đều cho các thí nghiệm cục bộ, nhưng nó không tạo ra gia tốc tương đối do thủy triều. Một trường do vật chất thực tạo ra biến thiên từ nơi này sang nơi khác và vì thế sinh ra các lực thủy triều. Những lực ấy là bằng chứng bất biến cho thấy hiệu ứng đó không chỉ đơn thuần là một phép biến đổi tọa độ. Một trường thực hoàn toàn đều là một sự lý tưởng hóa; gần một vùng đủ nhỏ trên bề mặt của một vật thể lớn, trường thực tế chỉ có thể gần đúng là đều. \lecturetimestamp{01:46:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao kích thước của vật đang rơi lại quan trọng đối với các hiệu ứng thủy triều?}
+\lecturerresponse{Độ cong so sánh các vị trí lân cận. Một vật nhỏ hơn rất nhiều so với thang chiều dài mà trên đó trường biến thiên sẽ chịu gần như cùng một gia tốc ở mọi phần của nó và hầu như không bị biến dạng. Một vật có kích thước lớn sẽ cảm nhận một độ khác biệt lớn hơn. Một vi khuẩn rơi tự do gần Trái Đất chịu ứng suất thủy triều không đáng kể, trong khi con người tưởng tượng cao hai nghìn dặm trong bài giảng sẽ bị biến dạng nghiêm trọng. Độ cong có một giá trị cục bộ, nhưng biến dạng tích lũy tỉ lệ theo độ tách đang được so sánh.
+\lecturetimestamp{01:49:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu tính phẳng đòi hỏi phải kiểm tra độ cong tại mọi điểm, liệu phép kiểm tra ấy vẫn là một bài toán vô hạn hay không?}
+\lecturerresponse{Đối với một metric được cho dưới dạng giải tích, các đạo hàm và các thành phần độ cong là những biểu thức giải tích. Ta tính chúng một lần như các hàm của vị trí và thường có thể thấy liệu chúng có đồng nhất triệt tiêu hay không. Nếu metric chỉ được cho bằng một bảng số, thì phải ước lượng và kiểm tra độ cong trên khắp miền được lấy mẫu, và việc này quả thật có thể tốn kém. Ngay cả khi đó, cách này vẫn được xác định rõ ràng hơn nhiều so với việc tìm kiếm mọi hệ tọa độ khả dĩ tại mọi điểm.
+\lecturetimestamp{01:50:37}}
+\end{classroomqa}
+
+\section{Điều đã được xác lập}
+
+Lập luận giờ đây có thể được đọc như một chuỗi liên tục:
+\begin{enumerate}
+ \item Tại bất kỳ điểm nào được chọn, có thể chọn tọa độ sao cho
+ \(g_{mn}=\delta_{mn}\) và \(\partial_rg_{mn}=0\).
+ \item Các đạo hàm thường của các thành phần tensor không biến đổi như
+ các tensor, vì các cơ sở tọa độ biến thiên từ điểm này sang điểm khác.
+ \item Liên kết hiệu chỉnh sự biến thiên của cơ sở đó và xác định
+ phép vi phân hiệp biến.
+ \item Tính tương thích với metric và xoắn bằng không xác định liên kết
+ một cách duy nhất từ metric.
+ \item Hai đạo hàm hiệp biến không giao hoán; sự không giao hoán ấy được cho bởi tensor Riemann.
+ Điều đó đo holonomy, biến thiên bậc hai của metric và
+ hấp dẫn thủy triều.
+\end{enumerate}
+
+Vì thế, phép kiểm tra độ cong đã hứa trước đó nay đã được xây dựng mà không cần chọn một hệ tọa độ toàn cục ưu tiên. Bước tiếp theo là chuyển từ hình học Riemann xác định dương sang không-thời gian Lorentz, áp dụng các công cụ này cho hình học Schwarzschild của một ngôi sao hoặc lỗ đen, và quay lại các đường trắc địa đã được hoãn lại ở cuối bài giảng này.

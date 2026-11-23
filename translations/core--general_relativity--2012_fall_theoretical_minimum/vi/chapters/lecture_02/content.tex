@@ -1,0 +1,710 @@
+\chapter{Hình học nội tại và đại số tensor}
+
+Ký pháp tensor chỉ hữu ích khi nó đảm đương hộ ta một phần suy luận. Một ký pháp được thiết kế tốt vận hành như một hộp các chi tiết cơ khí: một chỉ số trên khớp với một chỉ số dưới, những đối tượng khác loại không chịu được cộng với nhau, và một phép co hợp lệ để lại một đối tượng mà luật biến đổi của nó có thể đọc ra từ các chỉ số còn lại. Mục đích trực tiếp của bộ công cụ này là hình học. Ta muốn phân biệt độ cong thực với độ cong chỉ xuất hiện vì các tọa độ đã bị uốn cong.
+
+\section{Độ cong nhìn từ bên trong}
+
+Hãy bắt đầu với một tờ giấy bình thường. Có thể cuộn nó thành một hình trụ mà không cần kéo giãn hay xé rách. Đối với một người quan sát trong căn phòng bao quanh, tờ giấy rõ ràng đã bị uốn cong; tuy nhiên, các khoảng cách đo ngay trong tờ giấy vẫn không đổi. Độ cong ngoại tại của nó đã thay đổi, còn hình học nội tại thì không.
+
+Bây giờ hãy hình dung một sinh vật nhỏ bị giới hạn trên tờ giấy ấy. Nó không thể nhìn vào căn phòng xung quanh. Nó có thể đo độ dài, so sánh các phương lân cận, dựng các tam giác, và chuyển các thước đo từ chỗ này sang chỗ khác. Những thí nghiệm nội bộ ấy là tất cả những gì hình học cần đòi hỏi. Câu hỏi tương ứng trong lý thuyết hấp dẫn là liệu một trường biểu diễn độ cong thực của không-thời gian hay chỉ đơn thuần là một mô tả bằng tọa độ cong của không-thời gian phẳng.
+
+Một cách để làm cho quan điểm nội tại này trở nên cụ thể là thay mặt bằng một mạng các điểm và các thanh nối. Nối các điểm lân cận, ghi lại độ dài của từng thanh nối, và cho phép các khớp được quay. Một mạng tam giác đều nằm phẳng. Việc bẻ các khớp không làm thay đổi hình học đã được mã hóa, vì mạng ấy luôn có thể được đưa trở lại mặt phẳng mà không thay đổi một độ dài nào.
+
+Bây giờ hãy kéo dài sáu thanh nối gặp nhau tại một đỉnh trong khi giữ cố định các thanh nối xung quanh. Đỉnh trung tâm không còn có thể nằm trong mặt phẳng mà không vi phạm các độ dài đã cho. Nó buộc phải nhô lên thành một chỗ phồng. Không cần một góc nhìn nào từ bên ngoài để nhận ra độ cong này: các khoảng cách lân cận không tương thích đã chứa sẵn nó.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_01.png}
+\caption{Mô hình thanh nối tam giác của hình học nội tại. Việc thay đổi các thanh nối quanh một đỉnh ép xuất hiện một chỗ phồng không thể làm phẳng mà không thay đổi các độ dài.}
+\lectureframe{00:06:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vậy thì, định nghĩa chính xác của một không gian phẳng là gì?}
+\lecturerresponse{Câu trả lời theo thao tác là các quan hệ khoảng cách nội tại của nó có thể được thực hiện không biến dạng trong một cấu hình Euclid. Theo ngôn ngữ được phát triển bên dưới, một không gian Riemann là phẳng khi ta có thể tìm được các tọa độ, trên toàn bộ miền đang xét, trong đó metric là delta Kronecker hằng. Tại một điểm đơn lẻ, điều này luôn có thể làm được theo nghĩa cục bộ; làm được như vậy trên cả một miền mới là điều kiện không tầm thường. Tensor độ cong rốt cuộc sẽ phát biểu điều kiện ấy mà không cần viện đến một lựa chọn tọa độ đặc biệt.
+\lecturetimestamp{00:09:15}}
+\end{classroomqa}
+
+Câu trả lời này dùng metric trước khi ta đã biện minh cho việc dùng nó. Vì vậy, tạm thời ta chuyển từ độ cong sang giải tích tensor. Sự đi vòng này không phải là tùy ý: metric phải được nhận ra là một tensor trước khi sự phụ thuộc tọa độ của nó có thể được tách khỏi hình học đích thực.
+
+\section{Các trường và mô tả tọa độ}
+
+Một tensor trong thuyết tương đối rộng thường là một \emph{trường} tensor: tại mỗi điểm đều có một tensor, và các thành phần của nó biến thiên từ điểm này sang điểm khác. Một trường vô hướng là ví dụ đơn giản nhất. Nhiệt độ trên một mặt có thể được biểu diễn bởi một số \(S(P)\) tại mỗi điểm \(P\). Hai người có thể gán cho điểm ấy những tọa độ khác nhau, nhưng họ phải thống nhất về nhiệt độ tại đó.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_02.png}
+\caption{Một trường vô hướng cùng với hai cách gán nhãn tọa độ cho cùng những điểm ấy.}
+\lectureframe{00:11:25}
+\end{figure}
+
+Hãy để \(x^m\) và \(y^m\) là hai hệ tọa độ trơn. Mỗi hệ là một ánh xạ từ các điểm tới những bộ số có thứ tự, và trên một miền tọa độ chồng lấp, hai bộ này liên hệ với nhau bởi những hàm nghịch đảo lẫn nhau,
+\begin{equation}
+ y^m=y^m(x^1,\ldots,x^d),
+ \qquad
+ x^m=x^m(y^1,\ldots,y^d).
+\label{eq:coordinate-maps}
+\end{equation}
+Tính trơn cho phép lấy đạo hàm, còn tính khả nghịch bảo đảm rằng không có điểm nào bị mất đi hoặc bị đồng nhất với điểm khác chỉ vì thay đổi tọa độ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_03.png}
+\caption{Hai ánh xạ tọa độ trơn, khả nghịch mô tả cùng một miền hình học.}
+\lectureframe{00:13:10}
+\end{figure}
+
+Đối với một trường vô hướng, luật biến đổi đơn giản là
+\begin{equation}
+ S'(y)=S(x).
+\label{eq:scalar-law}
+\end{equation}
+Các hàm ở hai vế có thể trông khác nhau vì đối số của chúng khác nhau, nhưng tại các điểm tương ứng thì giá trị của chúng trùng nhau. Đây là khuôn mẫu điển hình của một mệnh đề bất biến.
+
+\section{Tọa độ xiên và hai loại thành phần}
+
+Trước khi định nghĩa các tensor tổng quát bằng luật biến đổi, sẽ hữu ích nếu thấy vì sao các chỉ số vectơ trên và dưới không thể được xem như những biến thể trang trí của nhau.
+
+Hãy vẽ một lưới tọa độ mà các trục không vuông góc cũng không được chuẩn hóa. Tại một điểm, tăng \(x^m\) thêm một đơn vị tọa độ sẽ xác định một vectơ cơ sở \(\mathbf e_m\). Trong ngôn ngữ tọa độ,
+\begin{equation}
+ \mathbf e_m=\frac{\partial \mathbf r}{\partial x^m}.
+\label{eq:coordinate-basis}
+\end{equation}
+Các vectơ \(\mathbf e_m\) không nhất thiết có độ dài đơn vị và cũng không nhất thiết trực giao.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_04.png}
+\caption{Một lưới tọa độ xiên và các vectơ cơ sở tọa độ của nó.}
+\lectureframe{00:17:40}
+\end{figure}
+
+Mọi vectơ \(\mathbf V\) đều có thể được khai triển theo cơ sở này:
+\begin{equation}
+ \mathbf V=V^m\mathbf e_m.
+\label{eq:contravariant-expansion}
+\end{equation}
+Các số \(V^m\) là các \emph{thành phần phản biến}. Chúng là những hệ số cần để dựng vectơ hình học từ các vectơ cơ sở.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_05.png}
+\caption{Khai triển một vectơ trong một cơ sở tọa độ không trực giao.}
+\lectureframe{00:19:20}
+\end{figure}
+
+Còn có một bộ số tự nhiên khác:
+\begin{equation}
+ V_m=\mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf e_m.
+\label{eq:covariant-projection}
+\end{equation}
+Đây là các \emph{thành phần hiệp biến}. Trong một cơ sở xiên, chúng không đơn giản chỉ là chính những hệ số ấy với chỉ số được chuyển vị trí. Thế \eqref{eq:contravariant-expansion} vào ta được
+\begin{equation}
+ V_m
+ =V^n\bigl(\mathbf e_n\mathbin{\boldsymbol{\cdot}}\mathbf e_m\bigr).
+\label{eq:covariant-from-basis}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_06.png}
+\caption{Các thành phần hiệp biến thu được bằng cách lấy tích vô hướng với cơ sở tọa độ.}
+\lectureframe{00:21:10}
+\end{figure}
+
+Các tích vô hướng của các vectơ cơ sở hợp thành ma trận Gram
+\begin{equation}
+ g_{mn}=\mathbf e_m\mathbin{\boldsymbol{\cdot}}\mathbf e_n.
+\label{eq:metric-gram}
+\end{equation}
+Do đó,
+\begin{equation}
+ V_m=g_{mn}V^n.
+\label{eq:lower-vector}
+\end{equation}
+Đây là lần đầu metric xuất hiện. Nó biến các hệ số khai triển thành các hình chiếu vì nó ghi lại cả độ dài lẫn các góc giữa các vectơ của cơ sở tọa độ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_07.png}
+\caption{Metric như ma trận Gram của các vectơ cơ sở.}
+\lectureframe{00:23:40}
+\end{figure}
+
+Cùng ma trận ấy cũng dùng để tính độ dài:
+\begin{align}
+ \mathbf V\mathbin{\boldsymbol{\cdot}}\mathbf V
+ &=(V^m\mathbf e_m)\mathbin{\boldsymbol{\cdot}}
+   (V^n\mathbf e_n) \notag\\
+ &=g_{mn}V^mV^n.
+\label{eq:vector-length}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_08.png}
+\caption{Chuẩn của vectơ được viết theo metric và các thành phần phản biến.}
+\lectureframe{00:25:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao lại đưa cấu trúc hình học này vào trước các luật biến đổi hình thức?}
+\lecturerresponse{Nó đem lại cho các chỉ số một ý nghĩa cụ thể. Các thành phần mang chỉ số trên là các hệ số khai triển, các thành phần mang chỉ số dưới là các phép đo tuyến tính của vectơ, và metric nối hai loại ấy lại với nhau. Khi đó, định nghĩa hình thức sẽ cho ta biết rằng những vai trò này vẫn được giữ nguyên qua các phép đổi tọa độ trơn tùy ý. \lecturetimestamp{00:26:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Khi nào các thành phần hiệp biến và phản biến có cùng giá trị số?}
+\lecturerresponse{Trong một cơ sở Euclid trực chuẩn, \(g_{mn}=\delta_{mn}\), nên \(V_m=V^m\) theo từng thành phần. Chỉ riêng tính trực giao là chưa đủ: nếu các vectơ cơ sở có độ dài không bằng đơn vị, metric đường chéo vẫn còn cung cấp các hệ số tỉ lệ.
+\lecturetimestamp{00:26:19}}
+\end{classroomqa}
+
+Tọa độ cực cho ta một lời cảnh báo rõ ràng. Các đường tọa độ bán kính và góc gặp nhau vuông góc, thế nhưng một biến thiên cố định \(d\theta\) lại tương ứng với độ dài vật lý \(r\,d\theta\). Trong mặt phẳng,
+\begin{equation}
+ ds^2=dr^2+r^2d\theta^2,
+\label{eq:polar-metric}
+\end{equation}
+nên cơ sở là trực giao nhưng không phải Cartesian.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_09.png}
+\caption{Tọa độ cực: các phương tọa độ trực giao với một hệ số tỉ lệ góc tăng theo bán kính.}
+\lectureframe{00:28:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Các vectơ hiệp biến có thực sự là những vectơ khác, hay chỉ là một cách thứ hai để liệt kê cùng một vectơ?}
+\lecturerresponse{Trước khi có metric, một vectơ và một đồng vectơ là hai loại đối tượng tuyến tính khác nhau. Một vectơ thuộc không gian tiếp xúc; một đồng vectơ là một phiếm hàm tuyến tính trên không gian ấy. Một metric không suy biến thiết lập một tương ứng một-một giữa chúng, được biểu diễn bởi \(V_m=g_{mn}V^n\), nhưng không nên nhầm tương ứng ấy với sự đồng nhất. \lecturetimestamp{00:29:10}}
+\end{classroomqa}
+
+\section{Các luật biến đổi định nghĩa tensor}
+
+Định nghĩa hình thức an toàn nhất mang tính thao tác: một mảng là tensor nếu các thành phần của nó biến đổi theo các thừa số Jacobian thích hợp. Lấy vi phân \eqref{eq:coordinate-maps} ta được
+\begin{equation}
+ dy^m=\frac{\partial y^m}{\partial x^n}\,dx^n.
+\label{eq:differential-law}
+\end{equation}
+Mọi vectơ phản biến đều tuân theo cùng quy tắc ấy,
+\begin{equation}
+ V'^m(y)
+ =\frac{\partial y^m}{\partial x^n}V^n(x).
+\label{eq:contravariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_10.png}
+\caption{Luật biến đổi phản biến, được mô phỏng theo phép biến đổi của các vi phân tọa độ.}
+\lectureframe{00:32:50}
+\end{figure}
+
+Một đồng vectơ biến đổi theo Jacobian nghịch đảo:
+\begin{equation}
+ W'_m(y)
+ =\frac{\partial x^n}{\partial y^m}W_n(x).
+\label{eq:covariant-law}
+\end{equation}
+Gradient của một vô hướng là ví dụ chuẩn. Áp dụng quy tắc dây chuyền cho \eqref{eq:scalar-law},
+\begin{equation}
+ \frac{\partial S}{\partial y^m}
+ =\frac{\partial x^n}{\partial y^m}
+  \frac{\partial S}{\partial x^n}.
+\label{eq:gradient-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_11.png}
+\caption{Một gradient của vô hướng biến đổi như một đồng vectơ theo quy tắc dây chuyền.}
+\lectureframe{00:34:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Các thành phần trên và dưới có nhất thiết phải có cùng đơn vị vật lý không?}
+\lecturerresponse{Không. Các thành phần tọa độ thừa hưởng đơn vị và các quy ước tỉ lệ của các tọa độ và các vectơ cơ sở của chúng. Nếu một tọa độ là độ dài còn một tọa độ khác là góc, thì các thành phần của chúng thậm chí không cần có cùng thứ nguyên. Đại lượng sau khi co hoàn toàn mới là đối tượng có thứ nguyên vật lý độc lập với tọa độ.
+\lecturetimestamp{00:35:41}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Tại sao các đạo hàm ở đây là đạo hàm riêng chứ không phải đạo hàm thường?}
+\lecturerresponse{Một trường phụ thuộc vào nhiều tọa độ. Jacobian cho biết một hàm tọa độ thay đổi như thế nào khi một biến thay đổi còn các biến khác được giữ cố định, nên các phần tử của nó là các đạo hàm riêng.
+\lecturetimestamp{00:36:45}}
+\end{classroomqa}
+
+Mẫu hình này giờ đây mở rộng một cách máy móc. Mỗi chỉ số trên có phẩy đem theo một thừa số \(\partial y/\partial x\); mỗi chỉ số dưới có phẩy đem theo một thừa số \(\partial x/\partial y\). Một tensor hỗn hợp biến đổi theo
+\begin{equation}
+ T'^m{}_n
+ =
+ \frac{\partial y^m}{\partial x^p}
+ \frac{\partial x^q}{\partial y^n}
+ T^p{}_q,
+\label{eq:mixed-law}
+\end{equation}
+và một tensor hiệp biến hạng hai biến đổi theo
+\begin{equation}
+ W'_{mn}
+ =
+ \frac{\partial x^p}{\partial y^m}
+ \frac{\partial x^q}{\partial y^n}
+ W_{pq}.
+\label{eq:rank-two-covariant-law}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_12.png}
+\caption{Quy luật biến đổi của một tensor với một chỉ số trên và một chỉ số dưới.}
+\lectureframe{00:40:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_13.png}
+\caption{Quy luật biến đổi hiệp biến hạng hai, với một Jacobian nghịch đảo cho mỗi chỉ số dưới.}
+\lectureframe{00:42:15}
+\end{figure}
+
+Các chỉ số lặp được ngầm hiểu là lấy tổng, trừ khi có nói khác. Quy ước này loại bỏ các dấu tổng trong khi vẫn giữ lại mọi thông tin cần để khôi phục chúng. Một chỉ số câm lặp lại phải xuất hiện đúng hai lần trong một hạng, một lần ở trên và một lần ở dưới; một chỉ số tự do xuất hiện một lần trong mỗi hạng của một phương trình.
+
+\begin{classroomqa}
+\audiencequestion{Ai đã đưa ra ký pháp tổng này?}
+\lecturerresponse{Theo thông lệ, ký pháp này được quy cho Einstein, vì thế nó được gọi là quy ước tổng Einstein. Giá trị của nó không chỉ là một nét tô điểm lịch sử: mẫu hình chỉ số làm cho các phép toán tensor hợp lệ hiện ra ngay từ cái nhìn đầu tiên. \lecturetimestamp{00:43:21}}
+\end{classroomqa}
+
+\section{Các phương trình tensor và tính đúng độc lập với tọa độ}
+
+Các thành phần thay đổi theo tọa độ, nhưng một phương trình tensor vẫn đúng trong mọi hệ tọa độ. Nếu hai tensor cùng loại thỏa mãn \(W=T\), thì hiệu của chúng là tensor không:
+\begin{equation}
+ W^{m\cdots}{}_{\cdots n}
+ -T^{m\cdots}{}_{\cdots n}=0.
+\label{eq:tensor-equality}
+\end{equation}
+Quy luật biến đổi là tuyến tính, nên các thành phần bằng 0 trong một hệ sẽ cho ra các thành phần bằng 0 trong mọi hệ. Các chỉ số tự do khớp nhau ở hai vế là điều không thể thiếu. Một phương trình giữa các đối tượng có loại tensor khác nhau không có ý nghĩa độc lập với tọa độ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_14.png}
+\caption{Cấu trúc chỉ số khớp nhau biến sự bằng nhau của các thành phần thành một phương trình tensor đúng trong mọi hệ tọa độ.}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Chính xác thì cái gì là bất biến nếu các thành phần của vectơ đang thay đổi?}
+\lecturerresponse{Tensor hình học và tính đúng của một phương trình tensor là bất biến; còn biểu diễn tọa độ thì không. Vô hướng là trường hợp đặc biệt không có chỉ số, nên giá trị số của nó tại một điểm là như nhau trong mọi hệ tọa độ. \lecturetimestamp{00:47:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Độ lớn của vectơ có phải là đại lượng bất biến tương ứng không, và độ lớn bằng 0 có nghĩa là vectơ đó bằng 0 không?}
+\lecturerresponse{Một khi đã cho metric, phép co \(g_{mn}V^mV^n\) là một vô hướng và do đó là một chuẩn bình phương bất biến. Trong hình học xác định dương, nó chỉ triệt tiêu đối với vectơ không. Trong không-thời gian Lorentz, một vectơ null khác 0 có thể có chuẩn bằng 0, nên phải giữ tách biệt hai mệnh đề ấy. \lecturetimestamp{00:48:04}}
+\end{classroomqa}
+
+\section{Các phép toán đại số được phép trên tensor}
+
+Trên bảng tập hợp các phép toán chính sẽ cần đến: nhân với một vô hướng, cộng hoặc trừ các tensor cùng loại, lập tích tensor, co một chỉ số trên với một chỉ số dưới, và về sau lấy đạo hàm hiệp biến.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_15.png}
+\caption{Bảng tổng kê các phép toán tensor: cộng, nhân, co và đạo hàm.}
+\lectureframe{00:50:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Lấy đạo hàm theo cái gì?}
+\lecturerresponse{Theo vị trí, do đó theo các tọa độ. Các đạo hàm thông thường của các thành phần nói chung không biến đổi như tensor vì bản thân các Jacobian cũng biến thiên. Đạo hàm hiệp biến khắc phục điều này, nhưng việc xây dựng nó được hoãn lại cho đến khi các phần chuẩn bị hình học đã sẵn sàng. \lecturetimestamp{00:51:49}}
+\end{classroomqa}
+
+Nhân với một vô hướng thì trực tiếp. Cộng và trừ đòi hỏi loại tensor phải khớp nhau:
+\begin{equation}
+ C^m{}_n=A^m{}_n+B^m{}_n,
+\qquad
+ D^m{}_n=A^m{}_n-B^m{}_n.
+\label{eq:tensor-addition}
+\end{equation}
+Không thể cộng một vectơ với một đồng vectơ, hay một tensor hạng hai với một vô hướng, cũng như không thể cộng một vận tốc với một diện tích.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_16.png}
+\caption{Phép cộng chỉ được định nghĩa theo từng thành phần đối với các tensor có cùng mẫu chỉ số tự do.}
+\lectureframe{00:53:00}
+\end{figure}
+
+Tích tensor kết hợp tất cả các chỉ số của các thừa số. Ví dụ,
+\begin{equation}
+ T^{mn}=V^mW^n,
+\qquad
+ S^m{}_n=V^mU_n.
+\label{eq:tensor-products}
+\end{equation}
+Trong 4 chiều, \(T^{mn}\) có 16 thành phần. Không có chỉ số nào bị lấy tổng, nên đây là tích ngoài chứ không phải tích vô hướng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_17.png}
+\caption{Một tích tensor giữ lại một chỉ số tự do từ mỗi thừa số vectơ.}
+\lectureframe{00:55:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ở đây phép nhân của hai vectơ có phải là tích vô hướng không?}
+\lecturerresponse{Không. Tích vô hướng co một chỉ số và tạo ra một vô hướng. Tích tensor để cả hai chỉ số tự do và do đó tạo ra một tensor hạng hai. Trong 4 chiều, đó là 16 thành phần chứ không phải 1. \lecturetimestamp{00:56:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì các con số thành phần giao hoán, việc đổi chỗ hai thừa số vectơ có phải là không tạo ra khác biệt nào không?}
+\lecturerresponse{Đối với các thành phần vô hướng thông thường, \(V^mW^n=W^nV^m\). Nhưng các vị trí của tensor có thứ tự. Đổi chỗ hai thừa số rồi gọi vị trí thứ nhất là \(m\) và vị trí thứ hai là \(n\) sẽ cho ra mảng chuyển vị; \(T^{mn}\) không nhất thiết bằng \(T^{nm}\).
+\lecturetimestamp{00:58:52}}
+\end{classroomqa}
+
+\section{Phép co và bổ đề Jacobian nghịch đảo}
+
+Chìa khóa của phép co là quy tắc dây chuyền. Vì các ánh xạ tọa độ là nghịch đảo của nhau,
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =
+ \frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\label{eq:inverse-jacobian}
+\end{equation}
+Hai ma trận Jacobian là nghịch đảo của nhau, và tích của chúng là delta Kronecker.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_18.png}
+\caption{Đồng nhất thức Jacobian nghịch đảo được chuẩn bị như bổ đề làm nền cho phép co tensor.}
+\lectureframe{01:02:15}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Jacobian nghịch đảo là loại đối tượng gì?}
+\lecturerresponse{Nó là ma trận đạo hàm của ánh xạ tọa độ nghịch đảo. Các phần tử của nó là \(\partial x^b/\partial y^m\), và phép nhân ma trận với \(\partial y^m/\partial x^a\) cho ra ma trận đơn vị nhờ quy tắc dây chuyền nhiều biến. \lecturetimestamp{01:02:37}}
+\end{classroomqa}
+
+Một chứng minh nhanh làm cho ký pháp trở nên minh bạch. Với mọi hàm vô hướng \(f\),
+\begin{equation}
+ \frac{\partial f}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial f}{\partial x^a}.
+\end{equation}
+Chọn \(f=x^b\) thì được
+\begin{equation}
+ \frac{\partial x^b}{\partial y^m}
+ \frac{\partial y^m}{\partial x^a}
+ =\frac{\partial x^b}{\partial x^a}
+ =\delta^b{}_a.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_19.png}
+\caption{Quy tắc dây chuyền rút gọn các Jacobian nghịch đảo thành delta Kronecker.}
+\lectureframe{01:04:55}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Có phải \(\delta^b{}_a\) chỉ là đồng nhất thức trong các tọa độ Descartes không?}
+\lecturerresponse{Không. Tensor hỗn hợp \(\delta^b{}_a\) biểu diễn ánh xạ đồng nhất trong mọi hệ tọa độ. Một metric Euclid viết dưới dạng \(\delta_{ab}\) là điều riêng của các tọa độ Descartes trực chuẩn, nhưng tensor đồng nhất với chỉ số hỗn hợp ấy không nên bị nhầm với metric đó.
+\lecturetimestamp{01:04:58}}
+\end{classroomqa}
+
+Bây giờ xét một tensor hỗn hợp \(T^m{}_n\). Vết sau khi biến đổi của nó là
+\begin{align}
+ T'^m{}_m
+ &=
+ \frac{\partial y^m}{\partial x^a}
+ \frac{\partial x^b}{\partial y^m}
+ T^a{}_b \notag\\
+ &=\delta^b{}_aT^a{}_b
+ =T^a{}_a.
+\label{eq:trace-invariant}
+\end{align}
+Đại lượng sau phép co không có chỉ số tự do nào và vì thế là một vô hướng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_20.png}
+\caption{Sự biến đổi của một tensor hỗn hợp trước khi co chỉ số trên và chỉ số dưới.}
+\lectureframe{01:07:45}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_21.png}
+\caption{Các Jacobian triệt tiêu dưới phép co, để lại cùng một vết vô hướng trong cả hai hệ tọa độ.}
+\lectureframe{01:10:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sau một phép co, kết quả có còn mang chỉ số không?}
+\lecturerresponse{Chỉ cặp bị co mới biến mất. Co chỉ số trên duy nhất và chỉ số dưới duy nhất của \(T^m{}_n\) sẽ để lại một vô hướng. Trong một tensor hạng cao hơn, mọi chỉ số không bị co vẫn còn tự do.
+\lecturetimestamp{01:09:00}}
+\end{classroomqa}
+
+Ví dụ,
+\begin{equation}
+ A^{mn}{}_{pq}
+ \longmapsto
+ A^{mn}{}_{pn}
+ =B^m{}_p
+\label{eq:higher-rank-contraction}
+\end{equation}
+co \(n\) và làm giảm hạng đi 2. Các chữ cái cụ thể chỉ là những nhãn câm; quy tắc cấu trúc là một vị trí trên và một vị trí dưới được lấy tổng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_22.png}
+\caption{Phép co ở hạng cao hơn loại bỏ một chỉ số trên và một chỉ số dưới, đồng thời giữ nguyên các chỉ số tự do còn lại.}
+\lectureframe{01:12:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao không co hai chỉ số trên, hoặc hai chỉ số dưới, theo cùng cách đó?}
+\lecturerresponse{Hai chỉ số trên cung cấp hai Jacobi cùng chiều,
+\(\partial y^m/\partial x^a\) và
+\(\partial y^m/\partial x^b\). Chúng không nhân thành đồng nhất thức, nên tổng được đề xuất không có quy luật biến đổi tensor. Trước hết có thể dùng một metric để hạ một trong các chỉ số xuống; khi đó phép co chỉ số trên--dưới là hợp lệ; nếu không có tensor bổ sung ấy thì phép toán đó không bất biến theo tọa độ. \lecturetimestamp{01:13:03}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_23.png}
+\caption{Phép co được thử giữa các chỉ số cùng biến tính để lại hai Jacobi cùng hướng và vì thế không rút gọn thành một đồng nhất thức.}
+\lectureframe{01:14:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Phép co có phải là phiên bản tensor của tích vô hướng không?}
+\lecturerresponse{Một phép co ghép một vị trí vectơ với một vị trí đồng vectơ và là phép ghép cặp bất biến cơ bản. Với một metric, hai vectơ có thể được biến thành một cặp như vậy, nên tích vô hướng quen thuộc là áp dụng metric trước rồi đến phép co. \lecturetimestamp{01:14:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hai chỉ số được co có nhất thiết phải chạy trên cùng một miền giá trị không?}
+\lecturerresponse{Có. Chúng quy chiếu đến các cơ sở đối ngẫu của cùng một không gian tiếp tuyến và không gian đối tiếp tuyến \(d\) chiều. Nếu không thì phép tổng và đồng nhất thức Jacobi nghịch đảo sẽ không được xác định.
+\lecturetimestamp{01:15:13}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao một tensor triệt tiêu trong một hệ quy chiếu thì lại triệt tiêu trong mọi hệ quy chiếu?}
+\lecturerresponse{Mỗi thành phần đã biến đổi là một tổ hợp tuyến tính của các thành phần ban đầu. Tất cả các tổ hợp ấy đều triệt tiêu khi mọi thành phần đầu vào bằng không. Chính tính tuyến tính đơn giản này làm cho các phương trình tensor độc lập với tọa độ. \lecturetimestamp{01:15:31}}
+\end{classroomqa}
+
+\section{Metric từ khoảng cách bình phương}
+
+Bây giờ quay lại hình học. Với một độ dời vi phân có các thành phần \(dx^m\), hãy định nghĩa bình phương độ dài của nó bởi
+\begin{equation}
+ ds^2=g_{mn}(x)\,dx^m dx^n.
+\label{eq:line-element}
+\end{equation}
+Đây là định lý Pythagore tổng quát hóa. Metric có thể thay đổi từ điểm này sang điểm khác, và các hạng ngoài đường chéo ghi nhận tính không trực giao của các phương tọa độ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_24.png}
+\caption{Danh sách các phép toán tensor nhường chỗ cho định nghĩa bậc hai của phần tử đường vi phân.}
+\lectureframe{01:18:45}
+\end{figure}
+
+Chỉ phần đối xứng góp phần vì
+\(dx^m dx^n=dx^n dx^m\). Do đó ta có thể lấy
+\begin{equation}
+ g_{mn}=g_{nm}.
+\label{eq:metric-symmetry}
+\end{equation}
+Trong \(d\) chiều, một metric đối xứng có
+\begin{equation}
+ \frac{d(d+1)}{2}
+\label{eq:metric-component-count}
+\end{equation}
+thành phần độc lập: 10 trong 4 chiều, 6 trong 3 chiều và 3 trong 2 chiều.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_25.png}
+\caption{Phần tử đường và mảng thành phần đối xứng dùng để đếm các phần tử độc lập của metric.}
+\lectureframe{01:21:35}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao trong 4 chiều có 10 thành phần metric độc lập chứ không phải 16?}
+\lecturerresponse{Có 4 phần tử trên đường chéo và 6 cặp ngoài đường chéo không có thứ tự. Tương đương,
+\(4(4+1)/2=10\). Phần phản đối xứng sẽ nhân với tích đối xứng \(dx^m dx^n\) và triệt tiêu. \lecturetimestamp{01:19:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Trong 3 chiều có bao nhiêu thành phần độc lập?}
+\lecturerresponse{6: 3 phần tử trên đường chéo và 3 cặp ngoài đường chéo, hay \(3(3+1)/2\). \lecturetimestamp{01:20:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Còn trong 2 chiều?}
+\lecturerresponse{3: \(g_{11}\), \(g_{22}\), và cặp đối xứng duy nhất \(g_{12}=g_{21}\). \lecturetimestamp{01:22:28}}
+\end{classroomqa}
+
+\subsection{Vì sao metric là một tensor}
+
+Khoảng cách bình phương là một đại lượng vô hướng. Vì vậy, viết cùng một độ dời trong hai hệ tọa độ cho ta
+\begin{equation}
+ g_{mn}(x)\,dx^m dx^n
+ =
+ g'_{pq}(y)\,dy^pdy^q.
+\label{eq:length-invariance}
+\end{equation}
+Dùng
+\begin{equation}
+ dx^m=\frac{\partial x^m}{\partial y^p}\,dy^p
+\end{equation}
+hai lần:
+\begin{align}
+ ds^2
+ &=
+ g_{mn}(x)
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ dy^pdy^q.
+\label{eq:metric-transform-derivation}
+\end{align}
+So sánh với biểu thức có phẩy xác định được
+\begin{equation}
+ g'_{pq}(y)
+ =
+ \frac{\partial x^m}{\partial y^p}
+ \frac{\partial x^n}{\partial y^q}
+ g_{mn}(x).
+\label{eq:metric-transformation}
+\end{equation}
+Đây chính xác là quy luật biến đổi của một tensor hiệp biến hạng hai.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_26.png}
+\caption{Suy ra quy luật biến đổi của metric từ tính bất biến của phần tử đường vô hướng.}
+\lectureframe{01:26:25}
+\end{figure}
+
+Kết luận ấy cũng giải thích hai chỉ số dưới. Mỗi chỉ số dưới của metric ghép cặp với một chỉ số trên do một thành phần độ dời mang. Dưới một phép biến đổi tọa độ, hai Jacobi nghịch đảo trong
+\eqref{eq:metric-transformation} triệt tiêu hai Jacobi thuận của các vi phân, khiến \(ds^2\) không đổi.
+
+\section{Ma trận metric và nghịch đảo của nó}
+
+Tại một điểm, \(g_{mn}\) là một ma trận đối xứng:
+\begin{equation}
+ [g_{mn}]
+ =
+ \begin{pmatrix}
+ g_{11} & g_{12} & \cdots \\
+ g_{12} & g_{22} & \cdots \\
+ \vdots & \vdots & \ddots
+ \end{pmatrix}.
+\label{eq:metric-matrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_27.png}
+\caption{Metric được biểu diễn dưới dạng một ma trận đối xứng sau khi quy luật biến đổi tensor của nó đã được thiết lập.}
+\lectureframe{01:28:50}
+\end{figure}
+
+Metric được yêu cầu là không suy biến: nó không có trị riêng bằng không và do đó có một nghịch đảo. Ký hiệu nghịch đảo đó là \(g^{mn}\).
+Theo ký hiệu chỉ số,
+\begin{equation}
+ g_{mn}g^{np}=\delta_m{}^p.
+\label{eq:inverse-metric}
+\end{equation}
+Chỉ số lặp \(n\) được lấy tổng, còn \(m\) và \(p\) lần lượt chỉ hàng và cột của tích.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_28.png}
+\caption{Metric nghịch đảo được đưa vào thông qua
+\(g_{mn}g^{np}=\delta_m{}^p\).}
+\lectureframe{01:31:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Các vectơ và tensor tại một điểm thực sự nằm ở đâu?}
+\lecturerresponse{Các vectơ tại một điểm hợp thành không gian tiếp tuyến của nó \(T_P M\); các đồng vectơ hợp thành không gian đối tiếp tuyến \(T_P^*M\). Các tensor bậc cao hơn thuộc các tích tensor của những không gian này. Một trường tensor gán một cách trơn một đối tượng như vậy cho mỗi điểm. Metric là một dạng song tuyến tính trên không gian tiếp tuyến, và nghịch đảo của nó là dạng song tuyến tính tương ứng trên không gian đối tiếp tuyến. \lecturetimestamp{01:34:15}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_29.png}
+\caption{Một vectơ được vẽ trong không gian tiếp tuyến gắn tại một điểm của một đa tạp cong.}
+\lectureframe{01:35:45}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Có phải
+\(g_{mn}g^{np}=\delta_m{}^p\) chỉ nói đến trường hợp \(m=p\) thôi không?}
+\lecturerresponse{Không. Đó là toàn bộ phương trình ma trận. Với mọi cặp có thứ tự \((m,p)\), tích đã lấy tổng bằng 1 khi \(m=p\) và bằng 0 khi \(m\ne p\). Mọi phương trình đường chéo và ngoài đường chéo đều hiện diện đồng thời. \lecturetimestamp{01:36:50}}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_30.png}
+\caption{Quan hệ nghịch đảo được hiểu như ma trận đơn vị chỉ số hỗn hợp đầy đủ.}
+\lectureframe{01:38:50}
+\end{figure}
+
+Trong 2 chiều, điều này có nghĩa là
+\begin{equation}
+ \begin{pmatrix}
+ g_{11} & g_{12}\\
+ g_{12} & g_{22}
+ \end{pmatrix}
+ \begin{pmatrix}
+ g^{11} & g^{12}\\
+ g^{12} & g^{22}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1&0\\
+ 0&1
+ \end{pmatrix}.
+\label{eq:two-dimensional-inverse}
+\end{equation}
+Chẳng hạn,
+\begin{align}
+ g_{11}g^{11}+g_{12}g^{12}&=1,\\
+ g_{11}g^{12}+g_{12}g^{22}&=0.
+\end{align}
+Hàng còn lại cho hai phương trình còn lại.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_02_figure_31.png}
+\caption{Đồng nhất thức metric nghịch đảo được khai triển thành một tích ma trận hai chiều tường minh.}
+\lectureframe{01:40:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Metric có nhất thiết phải xác định dương không?}
+\lecturerresponse{Đối với hình học Riemann thông thường, tính xác định dương làm cho mọi bình phương độ dài khác không đều dương. Thay vào đó, không-thời gian dùng metric Lorentz, với một dấu trái với ba dấu kia. Điều mà cả hai trường hợp ở đây đều đòi hỏi là tính không suy biến, không phải tính dương.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao phải loại trừ một trị riêng bằng không?}
+\lecturerresponse{Một trị riêng bằng không làm ma trận metric suy biến, nên \(g^{mn}\) không tồn tại và metric không thể thiết lập một tương ứng một-một giữa vectơ và đồng vectơ. Theo nghĩa hình học vi phân thông thường, metric được yêu cầu là không suy biến. \lecturetimestamp{01:43:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{10 thành phần độc lập của một metric 4 chiều có liên quan gì tới lý thuyết dây 10 chiều không?}
+\lecturerresponse{Không. Con số 10 thứ nhất đơn giản chỉ là
+\(4(4+1)/2\), số phần tử trong một ma trận đối xứng bốn nhân bốn. Việc xuất hiện 10 chiều không-thời gian trong lý thuyết siêu dây có một nguồn gốc khác. \lecturetimestamp{01:44:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu không-thời gian Lorentz có các vectơ khác không nhưng độ dài bằng không, điều đó có làm metric không khả nghịch không?}
+\lecturerresponse{Không. Một vectơ null thỏa mãn
+\(g_{mn}V^mV^n=0\), tức là một sự triệt tiêu bên trong một dạng bậc hai không xác định. Nó không phải là một vectơ trị riêng bằng không thỏa mãn
+\(g_{mn}V^n=0\). Chẳng hạn, metric Minkowski có các trị riêng
+\(\pm1\) và hoàn toàn khả nghịch, đồng thời vẫn cho phép các vectơ ánh sáng. \lecturetimestamp{01:45:02}}
+\end{classroomqa}
+
+\section{Tiếp theo là gì}
+
+Giờ đây ta có thể phát biểu chương trình hình học một cách gọn gàng. Metric ghi lại khoảng cách vi phân, biến đổi hiệp biến và có một nghịch đảo. Các thành phần của nó có thể trông phức tạp chỉ vì tọa độ phức tạp. Để quyết định liệu bản thân hình học có cong hay không, ta phải so sánh metric tại các điểm lân cận theo một cách độc lập với tọa độ.
+
+Đạo hàm thông thường là chưa đủ, vì khi lấy đạo hàm một tensor ta cũng lấy đạo hàm các Jacobi phụ thuộc vị trí trong quy luật biến đổi của nó. Vì vậy bước tiếp theo là đạo hàm hiệp biến. Từ các đạo hàm của metric, ta xây dựng một liên kết; từ các đạo hàm và các tích của liên kết ấy, ta xây dựng độ cong. Chỉ khi đó câu hỏi về tờ giấy cuộn mới nhận được câu trả lời nội tại cuối cùng của nó.
