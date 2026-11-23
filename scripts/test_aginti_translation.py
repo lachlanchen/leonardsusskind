@@ -23,6 +23,9 @@ class AgintiTranslationTests(unittest.TestCase):
         probe = patch.object(p, 'check_codex_quota', side_effect=AssertionError)
         self.probe = probe.start()
         self.addCleanup(probe.stop)
+        aginti = patch.object(p.shutil, 'which', return_value='/verified/bin/aginti')
+        aginti.start()
+        self.addCleanup(aginti.stop)
         self.addCleanup(p.PROVIDER_STOP.clear)
         p.PROVIDER_STOP.clear()
 
@@ -36,12 +39,10 @@ class AgintiTranslationTests(unittest.TestCase):
         with patch.object(p.subprocess, 'run', return_value=self.run_result()) as run:
             self.assertEqual(p.chat('Source text', self.dest, self.args), p.read(self.dest))
         command, = run.call_args.args
-        self.assertIn('--no-wrappers', command)
-        self.assertIn('--no-shell', command)
-        self.assertIn('--no-file-tools', command)
-        self.assertIn('--stdin', command)
+        self.assertEqual(command[0], 'node')
+        self.assertTrue(command[1].endswith('/aginti_openai_completion.mjs'))
+        self.assertEqual(command[2:], ['/verified/bin/aginti', 'gpt-5.4', 'high', '60'])
         self.assertIn('Source text', run.call_args.kwargs['input'])
-        self.assertEqual(run.call_args.kwargs['env']['AGINTI_EXECUTION_TIER'], 'focused')
         self.assertNotIn('Source text', command)
         self.probe.assert_not_called()
 
@@ -50,7 +51,7 @@ class AgintiTranslationTests(unittest.TestCase):
             with self.assertRaisesRegex(p.ProviderUnavailable, 'requested OpenAI provider and model'):
                 p.chat('Review text', self.dest, self.args, model='review-model')
         command, = run.call_args.args
-        self.assertEqual(command[command.index('--model') + 1], 'review-model')
+        self.assertEqual(command[3], 'review-model')
         self.assertFalse(self.dest.exists())
 
     def test_billing_429_stops_but_transient_429_is_retryable(self):

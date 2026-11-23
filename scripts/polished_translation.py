@@ -810,21 +810,17 @@ def codex_chat(prompt, dest, args, model):
 
 
 def aginti_openai_chat(prompt, dest, args, model):
-    """Ask AgInTi's API provider for text only, without Codex or agent tools."""
+    """Use AgInTi's provider client, not the interactive agent/planning loop."""
     cwd = WORK / 'aginti-cwd'
     cwd.mkdir(mode=0o700, parents=True, exist_ok=True)
-    command = [
-        os.environ.get('TRANSLATION_AGINTI_BIN', 'aginti'), 'run', '--stdin', '--json',
-        '--cwd', str(cwd), '--provider', 'openai', '--model', model,
-        '--main-reasoning', args.reasoning, '--routing', 'manual', '--task-profile', 'chatops',
-        '-s', 'safe', '--sandbox-mode', 'host', '--no-scs', '--no-shell', '--no-file-tools',
-        '--no-web-search', '--no-mcp', '--no-wrappers', '--no-parallel-scouts',
-        '--no-auxiliary-tools', '--no-auto-update',
-    ]
+    aginti = shutil.which(os.environ.get('TRANSLATION_AGINTI_BIN', 'aginti'))
+    if not aginti:
+        raise ProviderUnavailable('Cannot find AgInTi; verify TRANSLATION_AGINTI_BIN and PATH')
+    command = ['node', str(ROOT / 'scripts/aginti_openai_completion.mjs'),
+               os.path.abspath(aginti), model, args.reasoning, str(args.aginti_timeout)]
     try:
         run = subprocess.run(command, cwd=cwd, input=prompt + '\nReturn only the requested JSON object.',
-                             capture_output=True, text=True, encoding='utf-8', timeout=args.aginti_timeout,
-                             env={**os.environ, 'AGINTI_EXECUTION_TIER': 'focused'})
+                             capture_output=True, text=True, encoding='utf-8', timeout=args.aginti_timeout)
     except subprocess.TimeoutExpired as exc:
         raise ProviderUnavailable('APITimeoutError: AgInTi OpenAI request timed out') from exc
     except OSError as exc:
@@ -837,7 +833,7 @@ def aginti_openai_chat(prompt, dest, args, model):
         reply = {}
     if run.returncode or reply.get('ok') is not True or reply.get('failed') or reply.get('stopped'):
         # Classify diagnostics without copying raw subprocess output (potentially sensitive).
-        diagnostic = f'{reply.get("reason", "")}\n{run.stderr}'.lower()
+        diagnostic = f'{reply.get("status", "")} {reply.get("reason", "")}\n{run.stderr}'.lower()
         if re.search(r'insufficient.quota|billing|payment|credit balance|hard limit|exceeded your current quota', diagnostic):
             raise ProviderUnavailable('AgInTi OpenAI API billing or quota blocked; no new requests scheduled')
         if re.search(r'\b(?:401|403)\b|api.key|unauthori[sz]ed|authentication', diagnostic):
@@ -846,9 +842,7 @@ def aginti_openai_chat(prompt, dest, args, model):
             raise ProviderUnavailable('APIConnectionError: AgInTi OpenAI transport or rate limit')
         if reply.get('reason') == 'empty_result':
             raise InvalidReply('AgInTi returned no text')
-        session = str(reply.get('sessionId', ''))
-        trace = f'; AgInTi session {session}' if re.fullmatch(r'[A-Za-z0-9-]{8,80}', session) else ''
-        raise ProviderUnavailable(f'AgInTi OpenAI request failed (exit {run.returncode}){trace}')
+        raise ProviderUnavailable(f'AgInTi OpenAI request failed (exit {run.returncode}, HTTP {reply.get("status") if isinstance(reply.get("status"), int) else "unknown"})')
     if reply.get('provider') != 'openai' or reply.get('model') != model:
         raise ProviderUnavailable('AgInTi did not confirm the requested OpenAI provider and model')
     try:
