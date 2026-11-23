@@ -1,0 +1,541 @@
+\chapter{Các đại lượng quan sát Hermite, spin và quy tắc xác suất}
+
+\lectureoverview{Cơ học lượng tử là một phép tính xác suất. Để sử dụng nó mà không thay thế sự hiểu biết bằng những khẩu hiệu, ta cần một chuỗi toán học cô đọng: pha phức, trạng thái chuẩn hóa, đại lượng quan sát Hermite, trị riêng và vectơ riêng, tính trực giao, cùng quy tắc Born. Sau đó, ba ma trận Pauli sẽ biến chuỗi này thành những dự đoán cụ thể về spin của electron.}
+
+\section{Số phức ở dạng cực}
+
+Trước hết, hãy loại bỏ một trở ngại nhỏ trong đại số. Số phức
+\begin{equation}
+  z=x+iy
+\end{equation}
+là một điểm trên mặt phẳng phức, trong đó \(x\) nằm trên trục thực còn \(y\) nằm trên trục ảo. Nếu điểm này có tọa độ cực \((r,\theta)\), thì
+\begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation}
+và do đó
+\begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}
+Ký hiệu Euler rất hữu ích vì các công thức cộng góc được gói gọn trong quy luật nhân hàm mũ
+\begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation}
+Thật vậy, nhân hai biểu thức lượng giác cho ta
+\begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}
+Các công thức cộng quen thuộc đều nằm trong phép nhân này.
+
+Phép liên hợp phức phản chiếu điểm qua trục thực:
+\begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}
+Do đó,
+\begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+Các số có dạng \(e^{i\theta}\) nằm trên đường tròn đơn vị và được gọi là \emph{pha thuần}. Mọi số phức khác không đều là tích của một môđun dương với một pha thuần:
+\begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:36}
+\audiencequestion{Việc đổi \(\theta\) thành \(-\theta\) có tương ứng với sự đảo chiều quay trên mặt phẳng phức không?}
+\lecturerresponse{Có. Các góc pha dương và âm lần lượt vạch đường tròn đơn vị theo hai chiều ngược nhau. Phép liên hợp phức biến \(e^{i\theta}\) thành \(e^{-i\theta}\), là điểm phản chiếu và cũng là pha nghịch đảo.}
+\end{classroomqa}
+
+Đó là toàn bộ phần chuẩn bị về số phức cần dùng hôm nay: môđun, pha, phép liên hợp và đường tròn đơn vị.
+
+\section{Cơ học lượng tử như một phép tính xác suất}
+
+Giờ ta xét các tiên đề. Một hệ vật lý được chuẩn bị ở một \emph{trạng thái}; phép đo hỏi giá trị của một \emph{đại lượng quan sát}; cơ học lượng tử cung cấp xác suất cho những đáp án có thể có.
+
+Các trạng thái là những vectơ trong một không gian vectơ phức. Với hệ spin hai mức,
+\begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}
+Các hệ số xác định xác suất lên/xuống,
+\begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}
+vì vậy trạng thái phải được chuẩn hóa:
+\begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}
+Số chiều ở đây chỉ số phương án độc lập trong không gian trạng thái, chứ không phải số chiều của không gian thông thường. Một hệ có ba trạng thái cơ sở loại trừ lẫn nhau sẽ dùng ba cột trực chuẩn và ba biên độ.
+
+Xác suất không xác định đầy đủ các biên độ. Nhân với một pha thuần không làm thay đổi độ lớn:
+\begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+Vì thế, các biên độ chứa thông tin vượt ra ngoài xác suất trong riêng cơ sở này. Vai trò của chúng sẽ hiện rõ khi xét những phép đo khác nhau và, về sau, sự tiến hóa theo thời gian.
+
+Các trạng thái cơ sở trực chuẩn:
+\begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}
+Tính trực giao của chúng thuộc về không gian phức của các trạng thái. Chưa nên nhầm điều này với hai mũi tên vuông góc trong không gian thông thường ba chiều; sự phân biệt đó sẽ trở nên quyết định ở gần cuối bài giảng.
+
+\section{Vì sao các đại lượng quan sát là Hermite}
+
+Kết quả thực nghiệm có thể được ghi lại dưới dạng số thực. Ta có thể gộp hai số thực thành một số phức cho tiện, nhưng các số chỉ thị của thiết bị đo luôn có thể được tách thành các đại lượng thực. Trong không gian hữu hạn chiều, các đại lượng quan sát lượng tử được biểu diễn bằng một lớp toán tử tuyến tính đặc biệt: ma trận Hermite.
+
+Để định nghĩa chúng, trước hết lấy chuyển vị của một ma trận bằng cách đổi hàng thành cột:
+\begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}
+Một ma trận thực thỏa mãn \(M^T=M\) là ma trận đối xứng. Với ma trận phức, phép toán tương ứng là chuyển vị liên hợp Hermite,
+\begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}
+\caption{Phép chuyển vị, tính đối xứng và bước chuyển sang phép chuyển vị liên hợp Hermite được trình bày trên cùng một bố cục bảng.}
+\lectureframe{00:23:06}
+\end{figure}
+
+\begin{definition}
+Ma trận \(M\) là \emph{Hermite} nếu
+\begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}
+\end{definition}
+
+Các phần tử trên đường chéo là số thực, vì \(M_{ii}=M_{ii}^*\). Các phần tử ngoài đường chéo đối xứng qua đường chéo chính tạo thành từng cặp liên hợp. Do đó, dạng tổng quát của ma trận hai nhân hai là
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}
+Tính Hermite là dạng tương tự ma trận của điều kiện thực; nó không đòi hỏi từng phần tử riêng lẻ đều là số thực.
+
+Kết quả hữu ích đầu tiên suy ra từ hai đồng nhất thức liên hợp cơ bản:
+\begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}
+và với mọi \(M\),
+\begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}
+Biểu thức \(\bra B M\ket A\) là một số, cụ thể là phần tử ma trận \(BA\) của \(M\). Nếu \(M\) là Hermite và \(B=A\), thì
+\begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}
+Vì vậy, biểu thức này là số thực.
+
+\begin{proposition}
+Với mọi ma trận Hermite \(M\), giá trị kỳ vọng
+\begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}
+là số thực trong mọi trạng thái chuẩn hóa \(\ket A\).
+\end{proposition}
+
+Ta sẽ tìm hiểu sâu hơn ý nghĩa xác suất của giá trị kỳ vọng, nhưng tính thực của nó đã giải thích vì sao toán tử Hermite là lựa chọn tự nhiên cho các đại lượng quan sát.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:22}
+\audiencequestion{Ký hiệu ngoặc nhọn dùng cho giá trị trung bình có bắt nguồn từ ký hiệu bra--ket không?}
+\lecturerresponse{Đúng. Ký hiệu ngoặc Dirac cung cấp chính cặp ngoặc đó. Trong \(\bra A M\ket A\), toán tử được kẹp giữa bra và ket biểu diễn trạng thái, và kết quả là giá trị kỳ vọng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:31}
+\audiencequestion{Bản thân một đại lượng vật lý có thể có giá trị đo được là số ảo không? Nếu các phép đo cho kết quả thực, tại sao cơ học lượng tử cần đến số phức?}
+\lecturerresponse{Một tập hợp các kết quả đo luôn có thể được ghi lại bằng các số thực, ngay cả khi ta chọn gói một cặp số thành một số phức. Câu hỏi sâu hơn là tại sao lý thuyết buộc phải dùng đến các biên độ phức. Hãy tạm gác câu hỏi đó: câu trả lời gắn với sự tiến hóa theo thời gian thuận nghịch, điều chưa được giới thiệu. Nếu giới hạn lý thuyết vào các vectơ thực, ta sẽ đánh mất những khả năng quan trọng.}
+\end{classroomqa}
+
+Toán học không phải thứ tô điểm. Nếu thiếu nó, ta có thể khiến rối lượng tử nghe có vẻ bí ẩn mà vẫn không định nghĩa được. Ta tiếp tục trong bối cảnh đơn giản nhất có thể, chỉ một hệ hai mức, để sau này có thể kết hợp hai hệ như vậy một cách chặt chẽ.
+
+\section{Trị riêng là những kết quả đo có thể có}
+
+\begin{definition}
+Một vectơ khác không \(\ket a\) là vectơ riêng của \(M\) với trị riêng \(\lambda_a\) nếu
+\begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}
+\end{definition}
+Ma trận có thể làm thay đổi độ dài hoặc pha của vectơ, nhưng không biến nó thành một hướng khác trong không gian trạng thái.
+
+Với ma trận Hermite, trị riêng là số thực. Nhân hai vế của Phương trình~\eqref{eq:l03-eigenvalue-equation} từ bên trái với \(\bra a\) cho
+\begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}
+Vế trái là số thực do tính Hermite, còn chuẩn ở vế phải là số thực dương. Do đó,
+\begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+Sau đây là phát biểu vật lý: khi \(M\) biểu diễn một đại lượng quan sát, các trị riêng của nó là những giá trị mà phép đo \(M\) có thể trả về. Vectơ riêng ứng với \(\lambda_a\) là trạng thái trong đó giá trị ấy xuất hiện chắc chắn.
+
+Ví dụ đơn giản nhất là một ma trận đường chéo:
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}
+\caption{Phương trình trị riêng trừu tượng được đặt phía trên ví dụ đường chéo đầu tiên.}
+\lectureframe{00:44:04}
+\end{figure}
+
+Nhân trực tiếp ta được
+\begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}
+\caption{Vectơ cơ sở phía dưới biến đổi trở lại thành chính nó nhân với phần tử đường chéo phía dưới.}
+\lectureframe{00:45:58}
+\end{figure}
+
+Với ma trận đường chéo lớn hơn, quy tắc vẫn vậy: các phần tử trên đường chéo là trị riêng, còn các cột đơn vị chuẩn tắc chỉ có một phần tử khác không là các vectơ riêng.
+
+\section{Ba ma trận spin}
+
+Với spin electron theo trục thứ ba, ta chọn
+\begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}
+Các trạng thái riêng là \(\ket u=(1,0)^T\) với trị riêng \(+1\) và \(\ket d=(0,1)^T\) với trị riêng \(-1\). Như vậy, hai giá trị có thể có trên máy dò chính là hai trị riêng.
+
+Ma trận spin theo trục thứ nhất là
+\begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}
+Trước hết, ta viết các vectơ riêng ứng viên chưa chuẩn hóa, vì nhân một vectơ riêng với bất kỳ vô hướng khác không nào cũng vẫn cho một vectơ riêng. Tuy nhiên, các trạng thái vật lý phải được chuẩn hóa:
+\begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}
+\caption{Ma trận ngoài đường chéo và ứng viên có trọng số bằng nhau xuất hiện trước khi tích được tính xong.}
+\lectureframe{00:50:29}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:45}
+\audiencequestion{Có thể nhận ra các vectơ riêng của \(\sigma_1\) bằng hình học thay vì tìm chúng bằng đại số không?}
+\lecturerresponse{Trong cách biểu diễn hai thành phần thực, \(\sigma_1\) hoán đổi các hướng cơ sở \(E_1\) và \(E_2\). Hướng chéo \((1,1)^T\) được giữ nguyên, còn hướng chéo kia \((1,-1)^T\) bị đảo chiều. Vì vậy, chúng là các vectơ riêng có trị riêng lần lượt là \(+1\) và \(-1\). Đây là hình dung trong không gian thành phần, chưa phải phát biểu về kim chỉ thị spin vật lý.}
+\end{classroomqa}
+
+Ma trận còn lại là
+\begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}
+với các vectơ riêng đã chuẩn hóa
+\begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}
+Các trị riêng của chúng một lần nữa là \(+1\) và \(-1\).
+
+Cả ba ma trận đều bình phương thành ma trận đơn vị:
+\begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}
+Nếu \(\sigma_i\ket a=\lambda\ket a\), thì áp dụng \(\sigma_i\) hai lần cho \(\lambda^2=1\), nên \(\lambda=\pm1\). Các phổ giống nhau là dấu hiệu đầu tiên cho thấy những ma trận này biểu diễn các thành phần spin theo những trục không gian tương đương.
+
+\section{Các kết quả khác nhau đòi hỏi các trạng thái trực giao}
+
+Trước khi chứng minh định lý tiếp theo, hãy nêu ý nghĩa của nó. Nếu cùng một đại lượng quan sát cho hai đáp án xác định khác nhau trong hai trạng thái, thì phép đo đại lượng đó có thể phân biệt hai trạng thái một cách hoàn hảo. Cơ học lượng tử diễn đạt khả năng phân biệt hoàn hảo này bằng tính trực giao.
+
+\begin{theorem}
+Cho \(M\) là Hermite, với
+\begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}
+Nếu \(\lambda_A\ne\lambda_B\), thì
+\begin{equation}
+  \braket{B}{A}=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Nhân phương trình trị riêng thứ nhất từ bên trái với \(\bra B\) ta được
+\begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}
+Tính Hermite cùng với phương trình trị riêng thứ hai cho cùng phần tử ma trận dưới dạng
+\begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}
+bởi vì \(\lambda_B\) là số thực. Lấy hai biểu thức trừ nhau, ta được
+\begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}
+Các trị riêng khác nhau, vì vậy tích vô hướng phải bằng không.
+\end{proof}
+
+Các vectơ riêng của \(\sigma_1\) cho ta một phép kiểm tra trực tiếp:
+\begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}
+Ngược lại, với hai trạng thái trực giao, luôn tồn tại một phép đo phân biệt được chúng. Vì vậy, tính trực giao không chỉ là một thuật ngữ hình học; nó còn có ý nghĩa thao tác.
+
+\section{Tiên đề xác suất}
+
+Giả sử hệ được chuẩn bị ở trạng thái chuẩn hóa \(\ket B\). Gọi \(M\) là một đại lượng quan sát, và \(\ket A\) là một vectơ riêng đã chuẩn hóa của \(M\) với trị riêng \(\lambda_A\). Khi đó, xác suất để phép đo \(M\) cho kết quả \(\lambda_A\) là
+\begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}
+Tích này là số thực không âm. Với các vectơ đã chuẩn hóa, nó không vượt quá một.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}
+\caption{Quy tắc xác suất được viết dưới dạng tích của một độ chồng lấp với số phức liên hợp của nó.}
+\lectureframe{01:16:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:19}
+\audiencequestion{Đây có phải là bình phương cosin của góc giữa hai trạng thái không?}
+\lecturerresponse{Với các vectơ thực đơn vị trong không gian Euclid thông thường, tích vô hướng bằng cosin của một góc. Ở đây, tích vô hướng nói chung là số phức, nên không có góc không gian thông thường nào mà nó là cosin của góc đó. Đại lượng tương tự hữu ích là độ lớn của độ chồng lấp, còn xác suất là bình phương môđun của đại lượng ấy.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:20:18}
+\audiencequestion{Nếu trạng thái được chuẩn bị là một vectơ riêng khác của \(M\) với trị riêng khác thì sao?}
+\lecturerresponse{Khi đó, hai vectơ riêng trực giao với nhau. Độ chồng lấp giữa chúng bằng không, nên xác suất thu được \(\lambda_A\) bằng không. Chuẩn bị một trạng thái có giá trị xác định sẽ loại trừ một giá trị xác định khác của cùng một đại lượng quan sát được.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:23}
+\audiencequestion{Quy tắc này có áp dụng được cho trường hợp chuẩn bị trạng thái mà không kết quả nào là chắc chắn không?}
+\lecturerresponse{Có. Đó là trường hợp tổng quát: \(\ket B\) không nhất thiết là trạng thái riêng của \(M\). Độ chồng lấp của nó với các vectơ riêng đã chuẩn hóa cho ta xác suất của những kết quả tương ứng. Ta bắt đầu với ví dụ có hai kết quả trước khi xét các phân bố phức tạp hơn.}
+\end{classroomqa}
+
+Bài giảng áp dụng quy tắc cho một số trạng thái chuẩn bị, thay vì giấu nó trong một công thức duy nhất.
+
+Trước hết, chuẩn bị \(\sigma_3=+1\):
+\begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}
+Đo \(\sigma_1\). Với vectơ riêng ứng với \(+1\),
+\begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}
+nên
+\begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}
+Thay \(\ket{x+}\) bằng \(\ket{x-}\) vẫn cho cùng một xác suất. Đảo ngược thứ tự chuẩn bị và phép đo cũng cho một phần hai, vì bình phương môđun của độ chồng lấp là đối xứng.
+
+Để có một ví dụ thực sự phức, chuẩn bị \(\ket{x+}\) và đo \(\sigma_2\). Khi đó
+\begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}
+Vì vậy, chuẩn bị spin theo một trục rồi đo theo một trục vuông góc cho xác suất bằng nhau đối với hai kết quả.
+
+\section{Kim chỉ thị, trạng thái và các trục tùy ý}
+
+Có thể hiểu nhầm câu vừa rồi nếu không dùng thuật ngữ chính xác. Mômen từ có một hướng trong không gian, ta sẽ gọi hướng đó là \emph{kim chỉ thị}. Ket là một vectơ trong không gian trạng thái phức. Hai kim chỉ thị trong không gian có thể vuông góc, trong khi hai vectơ trạng thái có thể trực giao. Đây là hai phát biểu khác nhau trong hai không gian khác nhau.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:25}
+\audiencequestion{Nếu hai hướng spin vật lý cách nhau chín mươi độ thì các vectơ trạng thái của chúng có trực giao với nhau không?}
+\lecturerresponse{Không. Các trạng thái spin hướng lên dọc theo những trục không gian vuông góc có bình phương độ chồng lấp bằng \(1/2\), chứ không bằng không. Trạng thái trực giao với spin hướng lên dọc theo một trục là spin hướng xuống dọc theo chính trục đó. Ta dành từ \emph{vuông góc} cho các kim chỉ trong không gian thông thường, còn từ \emph{trực giao} dùng cho các trạng thái phân biệt được hoàn toàn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:25}
+\audiencequestion{Ta có thể dùng từ \emph{độc lập} thay cho từ \emph{trực giao} không?}
+\lecturerresponse{Không. Độc lập tuyến tính chỉ có nghĩa là không vectơ nào là bội vô hướng của các vectơ còn lại; điều đó không đòi hỏi các tích vô hướng phải bằng không. Trực giao là một điều kiện mạnh hơn và ở đây mang ý nghĩa vật lý là có thể phân biệt hoàn toàn.}
+\end{classroomqa}
+
+Cho \(\hat n=(n_1,n_2,n_3)\) là một kim chỉ thị đơn vị trong không gian thông thường:
+\begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+Toán tử biểu diễn spin theo hướng đó là dạng tương tự có giá trị ma trận của tích vô hướng:
+\begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}
+Toán tử này là Hermite: các phần tử trên đường chéo là số thực, còn các phần tử ngoài đường chéo là những cặp liên hợp.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}
+\caption{Kim chỉ thị đơn vị trong không gian, tổng các toán tử và ma trận Hermite tường minh của tổng được trình bày cùng nhau.}
+\lectureframe{01:38:00}
+\end{figure}
+
+Để tìm các giá trị có thể có, hãy bình phương biểu thức trước khi thay các phần tử ma trận vào. Thứ tự ma trận có ý nghĩa, nên các số hạng chéo xuất hiện dưới dạng phản giao hoán tử:
+\begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}
+Các ma trận Pauli khác nhau phản giao hoán:
+\begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}
+Bài giảng kiểm tra tường minh một trường hợp:
+\begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}
+\caption{Nhân \(\sigma_1\) và \(\sigma_3\) theo hai thứ tự ngược nhau cho ra các ma trận chỉ khác nhau một dấu trừ.}
+\lectureframe{01:44:50}
+\end{figure}
+
+Các số hạng chéo trong Phương trình~\eqref{eq:l03-axis-square-expanded} triệt tiêu, còn \(\sigma_i^2=I\). Do đó,
+\begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}
+Mọi trị riêng vì vậy đều thỏa mãn \(\lambda^2=1\):
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Dù thiết bị chọn trục không gian nào, máy dò vẫn chỉ có hai kết quả \(+1\) và \(-1\). Mối liên hệ giữa các hướng gần nhau không xuất hiện dưới dạng một giá trị đo trung gian, mà thể hiện qua xác suất của hai kết quả cố định ấy.

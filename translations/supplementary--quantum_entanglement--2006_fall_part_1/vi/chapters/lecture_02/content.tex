@@ -1,0 +1,427 @@
+\chapter{Qubit, vectơ trạng thái phức và các đại lượng quan sát được}
+
+\lectureoverview{Spin của một electron là bit lượng tử thực sự đầu tiên. Có thể chuẩn bị spin theo bất kỳ hướng không gian nào, nhưng một máy dò cố định chỉ cho hai kết quả. Ta sẽ để bức tranh từ tính cổ điển bộc lộ sự bất cập, rồi xây dựng không gian vectơ phức, quy tắc xác suất và ngôn ngữ ma trận cần thiết để mô tả điều thực sự diễn ra trong thí nghiệm.}
+
+\section{Một spin và hai nghĩa của vectơ}
+
+Một bit cổ điển có hai trạng thái khả dĩ, không có trạng thái nào ở giữa. Ta có thể gọi chúng là \(0\) và \(1\), sấp và ngửa, hoặc lên và xuống; những tên gọi này là nhãn cho hai điểm phân biệt trong không gian trạng thái cổ điển. Bit lượng tử cũng cho hai khả năng khi được đo theo một cách cố định, nhưng không thể mô tả nó chỉ bằng hai điểm trong không gian trạng thái. Ví dụ đơn giản nhất là spin của electron.
+
+Trong ví dụ này có hai khái niệm vectơ khác nhau; nếu nhầm lẫn chúng, mọi điều tiếp theo sẽ trở nên bí ẩn một cách không cần thiết. Trước hết là một \emph{vectơ không gian} thông thường: một mũi tên trong không gian ba chiều, có độ lớn và hướng. Electron có mômen từ, xét ở đây, ứng xử như một nam châm tí hon. Độ lớn của nó cố định, còn hướng không gian có thể được ấn định thông qua một quy trình chuẩn bị.
+
+Đối tượng thứ hai là một vectơ trừu tượng trong không gian vectơ phức. \emph{Vectơ trạng thái} này dùng để mô tả trạng thái lượng tử. Nó không đơn thuần là mũi tên từ tính được viết bằng một ký hiệu khác. Mối liên hệ giữa các hướng không gian và vectơ trạng thái là có thật và quan trọng, nhưng hai đối tượng ấy không đồng nhất. Ta sẽ từng bước thiết lập mối liên hệ đó.
+
+\section{Để bức tranh cổ điển bộc lộ sự bất cập}
+
+Trước hết, hãy chủ ý bắt đầu bằng một câu chuyện cổ điển. Đặt một nam châm tí hon trong từ trường ngoài mạnh. Nếu chưa thẳng hàng với từ trường, nó sẽ tiến động quanh hướng từ trường. Khi bức xạ năng lượng, chuyển động tiến động tắt dần và nam châm ổn định ở hướng có năng lượng thấp nhất. Bằng cách chọn hướng của từ trường đặt vào, chờ quá trình thư giãn rồi bỏ từ trường đi, dường như ta có thể chuẩn bị mômen từ theo bất kỳ hướng nào mong muốn.
+
+Cùng thiết bị ấy gợi ra một phương pháp phát hiện. Bật từ trường theo hướng đã chọn và quan sát bức xạ phát ra khi nam châm nhỏ ổn định. Một nam châm cổ điển thẳng hàng với từ trường sẽ không phát năng lượng. Nam châm ban đầu hướng ngược với từ trường sẽ phát lượng năng lượng lớn nhất, còn góc ban đầu trung gian sẽ cho lượng phát xạ trung gian. Theo bức tranh này, năng lượng bức xạ biến thiên liên tục theo góc.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[>=Latex,thick,scale=0.92]
+  \draw[rounded corners] (-0.2,-0.2) rectangle (3.0,3.4);
+  \node at (1.4,3.05) {\small preparation};
+  \draw[->,very thick] (1.4,0.45) -- (1.4,2.55);
+  \node[right] at (1.4,2.35) {\small applied field};
+  \fill (1.4,1.35) circle (2.3pt);
+  \draw[->,very thick] (1.4,1.35) -- (2.25,1.95);
+  \node[below] at (1.4,0.15) {\small choose a direction and wait};
+
+  \draw[->] (3.25,1.6) -- (4.25,1.6);
+
+  \draw[rounded corners] (4.5,-0.2) rectangle (8.8,3.4);
+  \node at (6.65,3.05) {\small measurement in a fixed direction};
+  \draw[->,very thick] (5.15,0.45) -- (5.15,2.55);
+  \fill (5.15,1.35) circle (2.3pt);
+  \node[anchor=west] at (5.7,2.0) {no photon};
+  \node[anchor=west] at (5.7,1.25) {one photon of fixed energy};
+\node[anchor=west] at (5.7,0.5) {no intermediate outcome};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Câu đố thực nghiệm. Quá trình chuẩn bị biến thiên liên tục, nhưng máy dò chỉ có hai đầu ra khả dĩ.}
+\end{figure}
+
+Dự đoán cổ điển ấy sai đối với electron. Khi bật từ trường của máy dò, chỉ có hai kết quả xảy ra:
+\begin{enumerate}
+  \item không phát ra photon;
+  \item phát ra một photon có năng lượng cố định, bằng độ chênh lệch năng lượng giữa mức spin xuống và mức spin lên.
+\end{enumerate}
+Không bao giờ có photon mang một phần năng lượng tùy ý. Đáp ứng liên tục theo dự đoán cổ điển đã biến thành câu trả lời lượng tử nhị phân.
+
+Hướng dùng khi chuẩn bị không trở nên không liên quan. Nó quyết định \emph{xác suất} của hai kết quả. Chuẩn bị electron ở trạng thái spin lên theo hướng của máy dò thì chắc chắn thu được kết quả lên. Chuẩn bị ở trạng thái spin xuống thì chuyển mức chắc chắn xảy ra. Nếu chuẩn bị theo phương ngang, máy dò theo phương thẳng đứng sẽ cho hai kết quả với tần suất bằng nhau:
+\begin{equation}
+  P(\text{up})=\frac12,
+  \qquad
+  P(\text{down})=\frac12.
+  \label{eq:l02-horizontal-probabilities}
+\end{equation}
+Như vậy, một họ phép chuẩn bị biến thiên liên tục dẫn đến phép đo hai giá trị, với thống kê biến thiên liên tục.
+
+\begin{classroomqa}
+\lecturetimestamp{00:21:23}
+\audiencequestion{Có thể dùng một vật nhỏ khác, chẳng hạn một electron thứ hai, để tạo từ trường thay cho nam châm vĩ mô không?}
+\lecturerresponse{Có thể, nhưng khi ấy hai electron tạo thành một hệ lượng tử chung và có thể trở nên vướng víu. Đó chính là hướng đi của khóa học này. Ta sẽ tạm gác lại cho đến khi nắm vững không gian trạng thái của một electron.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:17}
+\audiencequestion{Có phải cần lặp lại toàn bộ quá trình chuẩn bị và đo để tìm phân bố xác suất không? Nếu đo lại chính electron ấy thì chuyện gì xảy ra?}
+\lecturerresponse{Đúng, muốn xác định phân bố ban đầu thì cần lặp lại các phép thử được chuẩn bị giống hệt nhau. Sau phép đo đầu tiên, nếu đo lại cùng đại lượng trên electron ấy, ta sẽ thu được cùng kết quả; phép đo đã chuẩn bị trạng thái của nó theo hướng của máy dò đó. Chờ chuyển mức bức xạ tự nó cũng là một quy trình chuẩn bị khả dĩ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:23:48}
+\audiencequestion{Ta đang xét electron tự do phải không, và từ trường có được duy trì liên tục không?}
+\lecturerresponse{Ta cô lập bậc tự do spin và bỏ qua vị trí của electron, bất kể nó chuyển động tự do hay bị ràng buộc theo cách nào khác. Có thể bật một nam châm điện lớn thật nhanh để chuẩn bị hoặc đo. Thí nghiệm giản lược này chỉ nhằm khảo sát spin.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:25:22}
+\audiencequestion{Nếu electron được chuẩn bị chính xác ở trạng thái xuống rồi đảo chiều từ trường, photon có được phát ra chắc chắn không, và năng lượng photon đến từ đâu?}
+\lecturerresponse{Nếu hai hướng đối nhau chính xác, chuyển mức xảy ra với xác suất bằng một. Với trạng thái chuẩn bị xiên góc, xác suất này nhỏ hơn. Năng lượng cuối cùng đến từ công thực hiện để thiết lập hoặc đảo chiều từ trường ngoài; khi tính năng lượng, cần kể cả thiết bị.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:27:31}
+\audiencequestion{Photon xuất hiện khi nào? Chuyển mức có tức thời không?}
+\lecturerresponse{Thời điểm phát xạ là ngẫu nhiên, giống như thời điểm phân rã của một trạng thái không bền. Có thể xác định thời gian sống đặc trưng hoặc chu kỳ bán rã; từ trường mạnh hơn làm thang thời gian ấy ngắn lại. Độ bất định năng lượng--thời gian đi vào mô tả chi tiết hơn, nhưng những sự kiện thực nghiệm cần quan tâm ở đây là hai đầu ra khả dĩ và tần suất đo được của chúng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:17}
+\audiencequestion{Một chùm gồm một triệu electron được chuẩn bị giống hệt nhau có tạo ra cường độ ánh sáng đo được không?}
+\lecturerresponse{Có. Cường độ của cả tập hợp cho biết xác suất chuyển mức trung bình, trong khi thời điểm phát xạ của từng electron cụ thể vẫn ngẫu nhiên. Một tập hợp cho thấy phân bố mà một phép thử đơn lẻ không thể hiện được.}
+\end{classroomqa}
+
+Đây là điểm khởi đầu. Hai điểm cổ điển biệt lập có thể mã hóa các kết quả của máy dò, nhưng không thể mã hóa mọi cách chuẩn bị làm thay đổi xác suất của những kết quả ấy. Ta cần một không gian trạng thái khác.
+
+\section{Số phức và hình học của không gian trạng thái}
+
+Không gian trạng thái cần dùng là tuyến tính: các phần tử của nó có thể được cộng với nhau và nhân với các vô hướng. Các vô hướng ở đây là số phức. Viết
+\begin{equation}
+  z=a+ib,
+  \qquad
+  i^2=-1,
+  \qquad
+  z^*=a-ib,
+  \label{eq:l02-complex-number}
+\end{equation}
+trong đó \(a\) và \(b\) là số thực. Lấy liên hợp phức cho đại lượng dương
+\begin{align}
+  z^*z
+  &=(a-ib)(a+ib) \notag\\
+  &=a^2+b^2.
+  \label{eq:l02-complex-norm}
+\end{align}
+Phép triệt tiêu đơn giản này là hạt mầm đại số của quy tắc xác suất.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\linewidth]{lecture_02_figure_02.png}
+\caption{Phép liên hợp phức và \(z^*z\) được trình bày trên bảng trước khi diễn giải các biên độ thành xác suất.}
+\lectureframe{00:37:10}
+\end{figure}
+
+Không gian vectơ phức chứa các đối tượng \(\ket a,\ket b,\ldots\) sao cho
+\begin{equation}
+  c\ket a,
+  \qquad
+  \ket a+\ket b
+\end{equation}
+cũng là các vectơ khi \(c\) là số phức. Vectơ cột là một cách biểu diễn cụ thể:
+\begin{equation}
+  \begin{aligned}
+    \ket a&=
+    \begin{pmatrix}
+      a_1\\a_2\\ \vdots\\a_n
+    \end{pmatrix},
+    &
+    c\ket a&=
+    \begin{pmatrix}
+      ca_1\\ca_2\\ \vdots\\ca_n
+    \end{pmatrix},\\[0.7em]
+    \ket a+\ket b&=
+    \begin{pmatrix}
+      a_1+b_1\\a_2+b_2\\ \vdots\\a_n+b_n
+    \end{pmatrix}.
+  \end{aligned}
+  \label{eq:l02-vector-operations}
+\end{equation}
+Ngay cả các số phức cũng tạo thành một không gian vectơ phức một chiều. Với spin của electron, ta sẽ cần không gian hai chiều.
+
+Với mỗi ket dạng cột, ta ghép một bra dạng hàng liên hợp:
+\begin{equation}
+  \ket a=
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  \quad\longleftrightarrow\quad
+  \bra a=
+  \begin{pmatrix}a_1^*&a_2^*\end{pmatrix}.
+  \label{eq:l02-bra-ket-components}
+\end{equation}
+Khi đó, tích vô hướng là
+\begin{equation}
+  \braket{b}{a}=b_1^*a_1+b_2^*a_2,
+  \label{eq:l02-inner-product}
+\end{equation}
+và bình phương chuẩn là
+\begin{equation}
+  \braket{a}{a}=|a_1|^2+|a_2|^2.
+  \label{eq:l02-norm}
+\end{equation}
+Đại lượng này là số thực không âm vì mỗi số hạng có dạng \(z^*z\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:24}
+\audiencequestion{Tại sao ký hiệu bra không có dấu sao tường minh?}
+\lecturerresponse{Chuyển ket thành bra vốn đã có nghĩa là chuyển vị và lấy liên hợp phức. Việc đổi chiều dấu ngoặc là ký hiệu cho phép biến đổi ấy, nên thêm một dấu sao nữa sẽ lặp lại điều đã được ngầm hiểu.}
+\end{classroomqa}
+
+\section{Cơ sở qubit và quy tắc Born}
+
+Giờ hãy quay lại máy dò. Gọi \(\ket{+}\) là trạng thái spin lên của nó và \(\ket{-}\) là trạng thái spin xuống. Một trạng thái spin tổng quát là tổ hợp tuyến tính
+\begin{equation}
+  \ket\psi=a_+\ket{+}+a_-\ket{-}
+  \quad\longleftrightarrow\quad
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-general-qubit}
+\end{equation}
+Dấu cộng và dấu trừ bên trong các ket là nhãn, không phải phép toán số học. Khi đã chọn cơ sở có thứ tự này,
+\begin{equation}
+  \ket{+}=
+  \begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{-}=
+  \begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l02-basis-columns}
+\end{equation}
+Thật vậy,
+\begin{equation}
+  a_+\begin{pmatrix}1\\0\end{pmatrix}
+  +a_-\begin{pmatrix}0\\1\end{pmatrix}
+  =
+  \begin{pmatrix}a_+\\a_-\end{pmatrix}.
+  \label{eq:l02-basis-expansion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_02_figure_03.png}
+\caption{Các trạng thái của máy dò được chọn là hai vectơ cột cơ sở chuẩn.}
+\lectureframe{00:58:10}
+\end{figure}
+
+Các hệ số là biên độ xác suất. Xác suất của mỗi kết quả đo bằng bình phương độ lớn của biên độ tương ứng:
+\begin{equation}
+  P(+)=|a_+|^2,
+  \qquad
+  P(-)=|a_-|^2.
+  \label{eq:l02-born-rule}
+\end{equation}
+Vì đây là những kết quả duy nhất có thể xảy ra,
+\begin{equation}
+  \begin{gathered}
+    |a_+|^2+|a_-|^2=1,\\
+    \text{or equivalently}\qquad \braket{\psi}{\psi}=1.
+  \end{gathered}
+  \label{eq:l02-normalization}
+\end{equation}
+Do đó, vectơ trạng thái vật lý được chuẩn hóa.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:54}
+\audiencequestion{Dấu cộng và dấu trừ có ý nghĩa đại số nào trong các thành phần không?}
+\lecturerresponse{Ở đây chúng đánh dấu hai trạng thái cơ sở và các hệ số của chúng. Ta cũng có thể gọi chúng là \(1\) và \(2\), hoặc lên và xuống. Cụ thể, \(-\ket{+}\) là một bội vô hướng hợp lệ của \(\ket{+}\); nó không phải là trạng thái \(\ket{-}\).}
+\end{classroomqa}
+
+Nhân một trạng thái với số phức có môđun bằng một không làm thay đổi bất kỳ xác suất nào của nó:
+\begin{equation}
+  \ket\psi\longmapsto e^{i\phi}\ket\psi,
+  \qquad
+  |e^{i\phi}a_\pm|^2=|a_\pm|^2.
+  \label{eq:l02-global-phase}
+\end{equation}
+Vì thế, hai vectơ chỉ khác nhau bởi một pha tổng thể biểu diễn cùng một trạng thái vật lý. Pha \emph{tương đối} thì khác. Chẳng hạn, chỉ thay \(a_-\) bằng \(-a_-\) nhìn chung không thể được loại bỏ bằng cách nhân toàn bộ vectơ với một pha duy nhất; điều đó có thể làm thay đổi kết quả đo trong một cơ sở khác.
+
+\begin{classroomqa}
+\lecturetimestamp{00:59:54}
+\audiencequestion{\(\ket{+}\), \(-\ket{+}\) và \(e^{i\phi}\ket{+}\) có phải là các trạng thái khác nhau không? Còn nếu đổi dấu một số hạng trong chồng chập thì sao?}
+\lecturerresponse{Chúng là các vectơ toán học khác nhau, nhưng nếu hệ số nhân với toàn bộ vectơ có môđun bằng một thì chúng mô tả cùng một trạng thái vật lý. Dấu hoặc pha tương đối giữa các số hạng lên và xuống có thể được quan sát trong những phép đo thích hợp, nên làm thay đổi trạng thái.}
+\end{classroomqa}
+
+Cơ sở là trực chuẩn:
+\begin{align}
+  \braket{+}{+}&=1,
+  &\braket{-}{-}&=1,
+  \notag\\
+  \braket{+}{-}&=0,
+  &\braket{-}{+}&=0.
+  \label{eq:l02-orthonormality}
+\end{align}
+Chẳng hạn,
+\begin{equation}
+  \braket{+}{-}
+  =
+  \begin{pmatrix}1&0\end{pmatrix}
+  \begin{pmatrix}0\\1\end{pmatrix}
+  =0.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_02_figure_04.png}
+\caption{Bốn tích vô hướng của cơ sở lên/xuống được kiểm tra trực tiếp trên bảng.}
+\lectureframe{01:05:00}
+\end{figure}
+
+Trên bảng, trạng thái có trọng số bằng nhau là ví dụ hiệu chỉnh đầu tiên rất hữu ích. Cột
+\begin{equation}
+  \begin{pmatrix}1\\1\end{pmatrix}
+\end{equation}
+có bình phương chuẩn bằng \(2\), chứ không phải \(1\), nên chưa được chuẩn hóa. Chia cho \(\sqrt2\) sẽ chuẩn hóa nó:
+\begin{equation}
+  \ket{\rightarrow}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =
+  \frac{\ket{+}+\ket{-}}{\sqrt2}.
+  \label{eq:l02-horizontal-state}
+\end{equation}
+Trạng thái này cho \(P(+)=P(-)=1/2\) khi đo bằng máy dò theo phương thẳng đứng và tương ứng với một phép chuẩn bị theo phương ngang. Việc hiệu chỉnh từ \((1,1)^T\) thành \(2^{-1/2}(1,1)^T\) không chỉ là hình thức: chuẩn hóa giúp bình phương các biên độ tạo thành một phân bố xác suất đầy đủ.
+
+Sau giờ nghỉ, nên quay lại hai nghĩa của vectơ. Mũi tên không gian có ba thành phần thực. Vectơ trạng thái qubit có hai thành phần phức, tức bốn số thực trước khi áp điều kiện chuẩn hóa và đồng nhất các trạng thái chỉ khác pha tổng thể. Hai đối tượng có liên hệ với nhau, nhưng đối tượng này không đơn thuần là cách gán nhãn lại đối tượng kia. Hiện giờ ta chưa cần ánh xạ hình học đầy đủ giữa chúng.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:56}
+\audiencequestion{Làm thế nào biết số chiều của không gian trạng thái đối với một hệ lượng tử khác?}
+\lecturerresponse{Thực nghiệm cho biết một phép đo đầy đủ có thể phân biệt bao nhiêu kết quả loại trừ lẫn nhau. Spin electron có hai kết quả như vậy nên không gian trạng thái phức của nó có hai chiều. Hệ spin một có ba kết quả trong phép đo tương ứng và cần ba thành phần.}
+\end{classroomqa}
+
+\section{Các đại lượng quan sát được cổ điển và giá trị trung bình trên tập hợp}
+
+Sau khi mô tả trạng thái, ta chuyển sang các đại lượng có thể đo. Trong một hệ cổ điển có các trạng thái rời rạc \(n\), một đại lượng quan sát được là hàm nhận giá trị thực \(f_n\) trên các trạng thái ấy. Nếu trạng thái chưa xác định và được mô tả bằng các xác suất \(p_n\), giá trị trung bình trên tập hợp là
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =\sum_n p_n f_n.
+  \label{eq:l02-classical-expectation}
+\end{equation}
+Ký hiệu này không hàm ý rằng một phép đo đơn lẻ nhất thiết phải cho đúng giá trị ấy.
+
+Với một đồng xu, gán \(f_+=+1\) và \(f_-=-1\). Khi đó,
+\begin{equation}
+  \langle f\rangle_{\mathrm{ens}}
+  =p_+-p_-.
+  \label{eq:l02-coin-expectation}
+\end{equation}
+Đồng xu cân bằng có giá trị trung bình bằng không. Nếu \(p_+=3/4\) và \(p_-=1/4\), giá trị trung bình là \(1/2\). Cả \(0\) lẫn \(1/2\) đều không phải là kết quả của một lần tung; mỗi giá trị tóm tắt nhiều kết quả \(+1\) và \(-1\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:23:30}
+\audiencequestion{Làm sao giá trị kỳ vọng có thể bằng không hoặc một phần hai khi cả hai giá trị đều không thể xuất hiện trong một phép thử đơn lẻ?}
+\lecturerresponse{Cụm từ “giá trị kỳ vọng” có thể gây hiểu lầm. Nó có nghĩa là giá trị trung bình của một tập hợp lớn, chứ không phải giá trị ta nên mong đợi ở lần thử tiếp theo. Một chuỗi kết quả \(+1\) và \(-1\) với tần suất bằng nhau có giá trị trung bình bằng không; còn khi số kết quả lệch nhau theo tỷ lệ ba trên một, giá trị trung bình bằng một phần hai.}
+\end{classroomqa}
+
+Một đại lượng quan sát được đặc biệt hữu ích là hàm chỉ thị cho một trạng thái:
+\begin{equation}
+  \chi_k(n)=
+  \begin{cases}
+    1,&n=k,\\
+    0,&n\ne k.
+  \end{cases}
+\end{equation}
+Giá trị trung bình của nó là
+\begin{equation}
+  \langle\chi_k\rangle_{\mathrm{ens}}=p_k.
+\end{equation}
+Vì vậy, biết giá trị trung bình của mọi đại lượng quan sát được cổ điển thì cũng bao gồm cả việc biết phân bố xác suất.
+
+\section{Ma trận và các đại lượng quan sát được lượng tử}
+
+Trong cơ học lượng tử, các đại lượng quan sát được được biểu diễn bằng toán tử tuyến tính, chứ không phải bằng hàm trên các điểm của không gian trạng thái. Trong không gian trạng thái hữu hạn chiều, các toán tử ấy là ma trận. Ma trận \(M\) biến đổi một vectơ thành một vectơ khác:
+\begin{equation}
+  M\ket a=\ket{a'}.
+  \label{eq:l02-matrix-action}
+\end{equation}
+Với hai thành phần,
+\begin{equation}
+  \begin{pmatrix}
+    m_{11}&m_{12}\\
+    m_{21}&m_{22}
+  \end{pmatrix}
+  \begin{pmatrix}a_1\\a_2\end{pmatrix}
+  =
+  \begin{pmatrix}
+    m_{11}a_1+m_{12}a_2\\
+    m_{21}a_1+m_{22}a_2
+  \end{pmatrix}.
+  \label{eq:l02-matrix-components}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_02_figure_05.png}
+\caption{Tác dụng của ma trận được khai triển theo từng hàng thành hai thành phần của vectơ sau biến đổi.}
+\lectureframe{01:32:10}
+\end{figure}
+
+Vectơ thực hai chiều giúp hình học trở nên trực quan. Các ma trận
+\begin{equation}
+  \begin{pmatrix}2&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}1&0\\0&2\end{pmatrix},
+  \qquad
+  \begin{pmatrix}2&0\\0&1\end{pmatrix}
+\end{equation}
+lần lượt co giãn đồng đều theo mọi hướng, chỉ co giãn thành phần \(y\) và chỉ co giãn thành phần \(x\). Ma trận
+\begin{equation}
+  \begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+hoán đổi hai thành phần và phản xạ mặt phẳng qua đường \(x=y\). Trong khi đó,
+\begin{equation}
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  \begin{pmatrix}v_x\\v_y\end{pmatrix}
+  =
+  \begin{pmatrix}v_y\\-v_x\end{pmatrix}
+  \label{eq:l02-quarter-turn}
+\end{equation}
+quay các vectơ theo chiều kim đồng hồ một góc một phần tư vòng trong quy ước dùng trên bảng. Phép biến dạng trượt là một ví dụ tuyến tính khác, dù ma trận của nó được để lại làm bài tập. Điều kiện cốt yếu là tính tuyến tính: không phải mọi phép biến đổi có thể hình dung trên mặt phẳng đều được biểu diễn bằng ma trận.
+
+Các đại lượng quan sát được lượng tử thuộc một lớp đặc biệt.
+
+\begin{definition}
+Một ma trận \(M\) được gọi là \emph{Hermite} nếu
+\begin{equation}
+  M_{ij}=M_{ji}^*.
+  \label{eq:l02-hermitian-condition}
+\end{equation}
+\end{definition}
+
+Điều kiện trên đường chéo \(M_{ii}=M_{ii}^*\) buộc mọi phần tử đường chéo phải là số thực. Các phần tử ngoài đường chéo xuất hiện thành từng cặp liên hợp. Chẳng hạn,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    r&4+i\\
+    4-i&s
+  \end{pmatrix},
+  \qquad r,s\in\mathbb R,
+  \label{eq:l02-hermitian-example}
+\end{equation}
+là ma trận Hermite. Nếu mọi phần tử đều là số thực thì Hermite đồng nghĩa với đối xứng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\linewidth]{lecture_02_figure_06.png}
+\caption{Điều kiện liên hợp đối xứng qua đường chéo, \(M_{ij}=M_{ji}^*\), được nhấn mạnh riêng ở cuối bài giảng.}
+\lectureframe{01:42:50}
+\end{figure}
+
+Ma trận Hermite sẽ biểu diễn các đại lượng có thể đo, bao gồm spin theo các hướng \(x\), \(y\) và \(z\). Không nên nhầm chúng với các toán tử mô tả một cú tác động vật lý hoặc sự tiến triển theo thời gian.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:49}
+\audiencequestion{Nếu một ma trận tác động lên trạng thái và biến nó thành trạng thái khác, nó có phải bảo toàn chuẩn hóa không? Ma trận Hermite có làm được điều đó không?}
+\lecturerresponse{Một tác động vật lý phải bảo toàn độ dài của vectơ trạng thái, nhưng ma trận Hermite tổng quát thì không. Các phép biến đổi bảo toàn độ dài là các phép biến đổi unita. Toán tử Hermite biểu diễn các đại lượng quan sát được; toán tử unita biểu diễn những phép biến đổi thuận nghịch tác dụng lên trạng thái. Mối liên hệ chi tiết giữa chúng sẽ được trình bày tiếp theo.}
+\end{classroomqa}
+
+Ta đã có ngôn ngữ tối thiểu cần thiết cho bước tiếp theo. Qubit là một vectơ đã chuẩn hóa trong không gian vectơ phức hai chiều; các biên độ xác định xác suất; và các đại lượng quan sát được là ma trận Hermite. Với những thành phần ấy, ta có thể bàn về spin theo các hướng tùy ý và cuối cùng là các cặp vướng víu mà không cần quay lại bức tranh cổ điển vốn đã bộc lộ sự bất cập.

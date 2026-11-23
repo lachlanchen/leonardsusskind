@@ -1,0 +1,722 @@
+\chapter{Ma trận mật độ, entropy vướng víu và sự tiến hóa unita}
+
+Ma trận mật độ xuất hiện trước hết như mô tả tự nhiên cho sự chuẩn bị không đầy đủ: một hệ lượng tử đã được chuẩn bị, nhưng ta không biết chính xác nó được chuẩn bị như thế nào. Vướng víu trao cho cùng đối tượng toán học ấy một vai trò sâu sắc hơn. Ngay cả khi trạng thái của một hệ hợp thành đã được biết hoàn toàn, nói chung mỗi hệ con không có vectơ trạng thái riêng. Ma trận mật độ rút gọn của nó chứa mọi điều có thể dự đoán cục bộ. Ta sẽ suy ra kết quả này theo các thành phần, kiểm tra nó với hai trạng thái spin, rồi dùng entropy để phân biệt trạng thái tích với trạng thái vướng víu. Sau đó, ta sẽ chuyển sang câu hỏi thứ hai: trạng thái lượng tử thay đổi theo thời gian như thế nào. Việc bảo toàn tích vô hướng sẽ dẫn đến tính unita, một toán tử sinh Hermite và phương trình Schr\"odinger.
+
+\section{Ma trận mật độ và sự chuẩn bị không đầy đủ}
+
+Giả sử một electron được đặt trong từ trường mạnh và để cho spin định hướng theo từ trường. Một người khác đã chọn hướng từ trường và chuẩn bị electron, nhưng không cho ta biết hướng đó. Vì vậy, spin có thể ở trong một trạng thái thuần xác định hoàn toàn, dù ta không biết đó là trạng thái nào. Ta có thể biết phân bố xác suất trên các khả năng chuẩn bị, hoặc hoàn toàn không biết gì. Ma trận mật độ \(\rho\) là mô tả lượng tử chính xác cho loại thông tin không đầy đủ này.
+
+Đối tượng tương tự trong cơ học cổ điển là mật độ xác suất trên không gian pha hoặc phân bố xác suất trên các cấu hình rời rạc. Đối tượng lượng tử là một toán tử có ba tính chất cốt yếu:
+\begin{equation}
+\rho^\dagger=\rho,
+\qquad
+\operatorname{Tr}\rho=1,
+\qquad
+\lambda_i\geq 0,
+\end{equation}
+trong đó \(\lambda_i\) là các trị riêng của \(\rho\). Tính Hermite khiến các trị riêng là số thực và cung cấp một cơ sở trực chuẩn gồm các vectơ riêng. Tính dương khiến chúng là những xác suất hợp lệ, còn điều kiện chuẩn hóa cho ta
+\begin{equation}
+\sum_{i=1}^{n}\lambda_i=1.
+\end{equation}
+Trong cơ sở riêng của \(\rho\), \(\lambda_i\) là xác suất gán cho trạng thái riêng thứ \(i\).
+
+Không biết gì hoàn toàn là trường hợp không có hướng nào trong không gian Hilbert được ưu tiên:
+\begin{equation}
+\rho_{\mathrm{max}}=\frac{1}{n}I.
+\end{equation}
+Mọi trị riêng đều bằng \(1/n\). Ở thái cực ngược lại, hiểu biết hoàn toàn được biểu diễn bằng trạng thái chuẩn hóa \(\ket{\psi}\), với
+\begin{equation}
+\rho_\psi=\ket{\psi}\bra{\psi}.
+\end{equation}
+Đây là toán tử chiếu lên không gian con một chiều do \(\ket{\psi}\) sinh ra.
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:47}
+\audiencequestion{Có thể mô tả một phép chuẩn bị là lựa chọn ngang nhau giữa hai trạng thái không trực giao, chẳng hạn hai hướng spin tạo với nhau góc \(45^\circ\) không?}
+\lecturerresponse{Có thể thực hiện quy trình chuẩn bị như vậy, nhưng hai trọng số đó nói chung không phải là các trị riêng của ma trận mật độ thu được. Trước tiên, ta lập tổng có trọng số của các toán tử chiếu rồi chéo hóa nó. Cách diễn giải các trị riêng như xác suất một cách rõ ràng áp dụng cho cơ sở riêng trực chuẩn của \(\rho\), chứ không nhất thiết áp dụng cho các trạng thái không trực giao mà người chuẩn bị nêu ra.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:07:47}
+\audiencequestion{Điều gì phân biệt trạng thái thuần với trạng thái hỗn hợp?}
+\lecturerresponse{Ma trận mật độ của trạng thái thuần có một trị riêng khác không, bằng \(1\). Trạng thái hỗn hợp có nhiều hơn một trị riêng khác không. Tài liệu cũ dùng từ tiếng Đức \emph{Gemisch}; thuật ngữ hiện đại chỉ đơn giản là \emph{trạng thái hỗn hợp}.}
+\end{classroomqa}
+
+Ta hãy kiểm tra phổ của toán tử chiếu lên trạng thái thuần. Điều kiện chuẩn hóa cho
+\begin{equation}
+\rho_\psi\ket{\psi}
+=\ket{\psi}\braket{\psi}{\psi}
+=\ket{\psi},
+\end{equation}
+vậy \(\ket{\psi}\) là vectơ riêng có trị riêng \(1\). Nếu \(\ket{\phi}\) trực giao với \(\ket{\psi}\), thì
+\begin{equation}
+\rho_\psi\ket{\phi}
+=\ket{\psi}\braket{\psi}{\phi}
+=0.
+\end{equation}
+Do đó, mọi hướng trực giao với \(\ket{\psi}\) đều có trị riêng bằng không.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_06.png}\caption{Ma trận mật độ của trạng thái thuần hoạt động như một toán tử chiếu: \(\rho\ket{\psi}=\ket{\psi}\)}\lectureframe{00:09:32}\end{figure}
+
+\section{Giá trị kỳ vọng tính bằng vết}
+
+Quy tắc thao tác đối với ma trận mật độ là
+\begin{equation}
+\overline{M}=\operatorname{Tr}(\rho M),
+\end{equation}
+trong đó \(M\) là một đại lượng quan sát được. Với hai thừa số, tính chất tuần hoàn của vết cho
+\begin{equation}
+\operatorname{Tr}(\rho M)=\operatorname{Tr}(M\rho),
+\end{equation}
+dù \(\rho\) và \(M\) có giao hoán với nhau hay không.
+
+Trong một cơ sở trực chuẩn bất kỳ \(\{\ket{i}\}\),
+\begin{equation}
+\operatorname{Tr}X=\sum_i\bra{i}X\ket{i}.
+\end{equation}
+Giá trị số không phụ thuộc vào cơ sở. Với trạng thái thuần,
+\begin{align}
+\overline{M}
+&=\operatorname{Tr}\!\left(\ket{\psi}\bra{\psi}M\right) \\
+&=\sum_i\braket{i}{\psi}\bra{\psi}M\ket{i} \\
+&=\bra{\psi}M\left(\sum_i\ket{i}\bra{i}\right)\ket{\psi} \\
+&=\bra{\psi}M\ket{\psi}.
+\end{align}
+Phép phân giải đơn vị,
+\begin{equation}
+\sum_i\ket{i}\bra{i}=I,
+\end{equation}
+giúp đưa quy tắc dùng ma trận mật độ trở về giá trị kỳ vọng quen thuộc của trạng thái thuần.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_07.png}\caption{Phép tính vết cho toán tử chiếu lên trạng thái thuần và phép phân giải đơn vị.}\lectureframe{00:14:25}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:38}
+\audiencequestion{Đại lượng ở vế trái có phải là \(\overline{M}\), giá trị trung bình của \(M\) không?}
+\lecturerresponse{Phải. Vết không phải chính toán tử \(M\); nó là giá trị kỳ vọng vô hướng \(\overline{M}\).}
+\end{classroomqa}
+
+Với ma trận mật độ tổng quát, hãy chọn cơ sở riêng của nó:
+\begin{equation}
+\rho\ket{j}=\lambda_j\ket{j}.
+\end{equation}
+Chèn một tập trạng thái đầy đủ vào giữa \(\rho\) và \(M\):
+\begin{align}
+\overline{M}
+&=\sum_i\bra{i}\rho M\ket{i} \\
+&=\sum_{i,j}\bra{i}\rho\ket{j}\bra{j}M\ket{i} \\
+&=\sum_{i,j}\lambda_j\delta_{ij}\bra{j}M\ket{i} \\
+&=\sum_j\lambda_j\bra{j}M\ket{j}.
+\end{align}
+Đây là một giá trị trung bình có trọng số thông thường: \(\lambda_j\) là xác suất của trạng thái riêng thứ \(j\), còn \(\bra{j}M\ket{j}\) là giá trị kỳ vọng của \(M\) trong trạng thái đó.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:12}
+\audiencequestion{Vì sao cả hai chỉ số trong phần tử ma trận cuối cùng đều trở thành \(j\), và chỉ số nào vẫn còn được lấy tổng?}
+\lecturerresponse{Vì \(\rho\) là ma trận đường chéo trong cơ sở này, \(\bra{i}\rho\ket{j}=\lambda_j\delta_{ij}\), nên chỉ các số hạng có \(i=j\) mới còn lại. Tổng kép ban đầu thu về một tổng duy nhất, có thể gọi là tổng theo \(j\). Tên của một chỉ số lấy tổng giả không có ý nghĩa vật lý.}
+\end{classroomqa}
+
+\section{Entropy với vai trò thông tin còn thiếu}
+
+Với một phân bố xác suất cổ điển \(\{p_i\}\), ta định nghĩa
+\begin{equation}
+S=-\sum_i p_i\log p_i,
+\end{equation}
+trong đó \(0\log 0\) được hiểu là giá trị giới hạn \(0\). Nếu một xác suất bằng \(1\) và mọi xác suất khác đều bằng không, thì \(S=0\): trạng thái đã được biết. Nếu cả \(n\) khả năng đều có xác suất như nhau,
+\begin{equation}
+p_i=\frac{1}{n},
+\qquad
+S=-n\left(\frac{1}{n}\log\frac{1}{n}\right)=\log n.
+\end{equation}
+Vì thế, entropy tăng lên khi phân bố xác suất trải rộng trên nhiều khả năng đáng kể hơn. Nói gần đúng, \(e^S\) là số trạng thái hiệu dụng có trọng số tương đương khi dùng logarit tự nhiên.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_08.png}\caption{Entropy của một phân bố xác suất và giá trị khi các xác suất bằng nhau \(S=\log n\).}\lectureframe{00:21:08}\end{figure}
+
+Với ma trận mật độ, ta áp dụng cùng định nghĩa cho các trị riêng của nó:
+\begin{equation}
+S(\rho)=-\sum_i\lambda_i\log\lambda_i
+=-\operatorname{Tr}(\rho\log\rho).
+\end{equation}
+Biểu thức đầu tiên là biểu thức ta cần ngay lúc này; dạng viết bằng vết nhấn mạnh rằng kết quả không phụ thuộc vào cơ sở.
+
+\section{Hệ hợp thành và phép đo cục bộ}
+
+Xét hai hệ con, \(A\) và \(B\). Ta viết một vectơ cơ sở là \(\ket{a,b}\). Nếu \(A\) có \(N\) trạng thái cơ sở và \(B\) có \(n\) trạng thái cơ sở, hệ hợp thành có \(Nn\) trạng thái cơ sở. Hai hệ không nhất thiết phải giống nhau: một hệ có thể là spin hai trạng thái, còn hệ kia là nguyên tử ba trạng thái.
+
+Trạng thái thuần tổng quát nhất của cặp hệ là
+\begin{equation}
+\ket{\Psi}
+=\sum_{a,b}\psi(a,b)\ket{a,b},
+\qquad
+\sum_{a,b}|\psi(a,b)|^2=1.
+\end{equation}
+Bây giờ, Alice đo một đại lượng quan sát được \(M_A\) chỉ tác dụng lên hệ con \(A\). Trên không gian Hilbert hợp thành, toán tử tương ứng là \(M_A\otimes I_B\). Các phần tử ma trận của nó là
+\begin{equation}
+\bra{a',b'}M_A\otimes I_B\ket{a,b}
+=\bra{a'}M_A\ket{a}\,\delta_{b'b}.
+\end{equation}
+Chỉ số \(B\) là chỉ số thụ động.
+
+Viết đầy đủ giá trị kỳ vọng:
+\begin{align}
+\expect{M_A}
+&=\bra{\Psi}M_A\otimes I_B\ket{\Psi} \\
+&=\sum_{a',b'}\sum_{a,b}
+\psi^*(a',b')\psi(a,b)
+\bra{a'}M_A\ket{a}\delta_{b'b} \\
+&=\sum_{a',a,b}
+\psi^*(a',b)\psi(a,b)
+\bra{a'}M_A\ket{a}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:12}
+\audiencequestion{Vì sao các chỉ số trên bra có dấu phẩy còn các chỉ số trên ket thì không?}
+\lecturerresponse{Bra và ket là hai tổng độc lập trước khi tính phần tử ma trận, vì vậy chúng cần các chỉ số giả riêng biệt. Dấu phẩy phân biệt các chỉ số của bra với các chỉ số của ket. Sau đó, toán tử và các tích vô hướng xác định những chỉ số nào phải trùng nhau.}
+\end{classroomqa}
+
+Giữ cố định \(a\) và \(a'\) rồi thực hiện phép lấy tổng theo \(b\). Kết quả là một ma trận trên hệ con \(A\):
+\begin{equation}
+\boxed{
+\rho_A(a,a')
+=\sum_b\psi(a,b)\psi^*(a',b)
+}.
+\end{equation}
+Đây là ma trận mật độ rút gọn của \(A\), hay tương đương, vết riêng phần theo \(B\) của toán tử chiếu lên trạng thái thuần:
+\begin{equation}
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}.
+\end{equation}
+Giá trị kỳ vọng cục bộ trở thành
+\begin{equation}
+\expect{M_A}
+=\sum_{a,a'}\rho_A(a,a')\bra{a'}M_A\ket{a}
+=\operatorname{Tr}_A(\rho_A M_A).
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_09.png}\caption{Chỉ số \(B\) được lấy tổng đi, để lại một ma trận theo hai chỉ số \(A\).}\lectureframe{00:33:50}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:35:39}
+\audiencequestion{Đại lượng quan sát được cục bộ có đơn giản là toán tử đơn vị trên hệ con \(B\) không?}
+\lecturerresponse{Đúng vậy. \(M_A\otimes I_B\) có thể làm thay đổi tọa độ \(A\), nhưng không làm thay đổi cũng như không phụ thuộc theo cách nào khác vào \(b\). Vì thế, phần tử ma trận trong không gian \(B\) của nó là \(\delta_{b'b}\).}
+\end{classroomqa}
+
+Vì thế, mọi dự đoán cho các thí nghiệm chỉ giới hạn trong \(A\) đều nằm trong \(\rho_A\). Bob không cần đo phân hệ của mình. Chỉ cần không dùng đến các bậc tự do của \(B\) thì mô tả của Alice buộc phải có dạng ma trận mật độ.
+
+\section{Toàn hệ thuần nhưng các phần có thể hỗn hợp}
+
+Hệ tổng hợp ở trạng thái thuần \(\ket{\Psi}\), nhưng nói chung \(\rho_A\) sẽ có nhiều trị riêng khác không. Biết hoàn toàn trạng thái của toàn hệ không có nghĩa là mỗi phần đều có một vectơ trạng thái. Con mèo và khẩu súng có thể cùng tạo thành một vectơ trạng thái vướng víu; khi ấy, riêng con mèo được mô tả bằng một ma trận mật độ rút gọn.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:25}
+\audiencequestion{Có thể thay \(\operatorname{Tr}(M\rho)\) bằng \((\operatorname{Tr}M)(\operatorname{Tr}\rho)\) không?}
+\lecturerresponse{Không. Vết của một tích nói chung không bằng tích các vết. Tính tuần hoàn cho phép viết \(\operatorname{Tr}(M\rho)=\operatorname{Tr}(\rho M)\), nhưng không làm cho vết phân tích thành tích.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:49}
+\audiencequestion{Ban đầu ta chỉ xét trạng thái cơ sở \(\ket{a,b}\), hay trạng thái thuần tổng quát nhất?}
+\lecturerresponse{Ta xét trạng thái thuần tổng quát nhất của hệ hợp thành: \(\ket{\Psi}=\sum_{a,b}\psi(a,b)\ket{a,b}\). Một \(\ket{a,b}\) duy nhất chỉ là một vectơ cơ sở. Điều đáng ngạc nhiên là ngay cả vectơ hợp thành được xác định hoàn toàn này cũng có thể cho trạng thái rút gọn hỗn hợp.}
+\end{classroomqa}
+
+Sự tương phản với cơ học cổ điển rất rõ rệt. Thông tin cổ điển đầy đủ về một hệ hợp thành xác định từng tọa độ của nó, và do đó xác định từng hệ con. Ta tất nhiên có thể lấy phân bố biên của một phân bố xác suất cổ điển, nhưng nếu phân bố ban đầu tập trung tại một điểm trong không gian pha thì mọi phân bố biên cũng tập trung tại một giá trị xác định. Trạng thái thuần lượng tử không nhất thiết có tính chất đó.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:46}
+\audiencequestion{Lấy tổng theo \(B\) khác gì với phép lấy tích phân một phân bố cổ điển theo vị trí--vận tốc theo biến vận tốc?}
+\lecturerresponse{Các phép toán trông tương tự nhau, nhưng giới hạn trạng thái thuần của chúng khác nhau. Một điểm pha cổ điển được biết hoàn toàn xác định cả vị trí lẫn vận tốc, nên mỗi phân bố biên vẫn có giá trị xác định. Một trạng thái lượng tử vướng víu được biết hoàn toàn vẫn có thể cho trạng thái hỗn hợp không tầm thường của mỗi hệ con. Vì thế, vết riêng phần cho thấy mệnh đề cổ điển “toàn hệ thuần thì từng phần cũng thuần” không còn đúng trong lượng tử.}
+\end{classroomqa}
+
+\section{Trạng thái tích: trường hợp đặc biệt}
+
+Khi nào \(\rho_A\) vẫn là trạng thái thuần? Câu trả lời là hàm sóng phải phân tích được thành tích:
+\begin{equation}
+\psi(a,b)=\phi(a)\chi(b).
+\end{equation}
+Giả sử \(\phi\) và \(\chi\) được chuẩn hóa riêng. Thay vào ma trận mật độ rút gọn, ta được
+\begin{align}
+\rho_A(a,a')
+&=\sum_b\phi(a)\chi(b)\phi^*(a')\chi^*(b) \\
+&=\phi(a)\phi^*(a')\sum_b|\chi(b)|^2 \\
+&=\phi(a)\phi^*(a').
+\end{align}
+Do đó
+\begin{equation}
+\rho_A=\ket{\phi}\bra{\phi}.
+\end{equation}
+Ma trận này có một trị riêng \(1\), mọi trị riêng còn lại bằng \(0\), và entropy bằng không.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_10.png}\caption{Với hàm sóng phân tích được thành tích, tổng theo \(B\) rút về điều kiện chuẩn hóa của \(\chi\).}\lectureframe{00:46:35}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:44:17}
+\audiencequestion{Bản thân \(\phi(a)\) có phải là trạng thái của hệ \(A\) không?}
+\lecturerresponse{Đó là thành phần hàm sóng của trạng thái ấy. Cụ thể hơn, \(\ket{\phi}=\sum_a\phi(a)\ket{a}\), và tương tự \(\ket{\chi}=\sum_b\chi(b)\ket{b}\). Phân tích thành tích có nghĩa là \(\ket{\Psi}=\ket{\phi}\otimes\ket{\chi}\), một trạng thái tích không có vướng víu giữa \(A\) và \(B\).}
+\end{classroomqa}
+
+Với mọi đại lượng quan sát được cục bộ,
+\begin{equation}
+\expect{M_A}
+=\operatorname{Tr}(\rho_A M_A)
+=\bra{\phi}M_A\ket{\phi}.
+\end{equation}
+Hệ con \(A\) hoạt động đúng như trạng thái thuần \(\ket{\phi}\). Vì vậy, với trạng thái thuần hai phần, entropy của \(\rho_A\) là phép thử cấu trúc tích: entropy bằng không nghĩa là trạng thái tích, còn entropy khác không nghĩa là có vướng víu. Các giá trị gần không biểu thị vướng víu yếu; các giá trị gần cực đại biểu thị trạng thái cách xa mọi trạng thái tích theo phép phân chia hai phần này.
+
+\section{Trạng thái đơn tuyến: toàn hệ thuần, từng phần không biết gì cực đại}
+
+Xét trạng thái đơn tuyến của hai spin
+\begin{equation}
+\ket{\Psi^-}
+=\frac{1}{\sqrt{2}}
+\left(
+\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}
+\right).
+\end{equation}
+Các thành phần hàm sóng khác không là
+\begin{equation}
+\psi(\uparrow,\downarrow)=\frac{1}{\sqrt{2}},
+\qquad
+\psi(\downarrow,\uparrow)=-\frac{1}{\sqrt{2}},
+\end{equation}
+trong khi \(\psi(\uparrow,\uparrow)=\psi(\downarrow,\downarrow)=0\).
+
+Lấy vết theo spin \(2\). Các phần tử đường chéo là
+\begin{align}
+\rho_1(\uparrow,\uparrow)
+&=|\psi(\uparrow,\uparrow)|^2
+ +|\psi(\uparrow,\downarrow)|^2
+=\frac{1}{2}, \\
+\rho_1(\downarrow,\downarrow)
+&=|\psi(\downarrow,\uparrow)|^2
+ +|\psi(\downarrow,\downarrow)|^2
+=\frac{1}{2}.
+\end{align}
+Phần tử ngoài đường chéo là
+\begin{align}
+\rho_1(\uparrow,\downarrow)
+&=\psi(\uparrow,\uparrow)\psi^*(\downarrow,\uparrow)
+ +\psi(\uparrow,\downarrow)\psi^*(\downarrow,\downarrow) \\
+&=0,
+\end{align}
+và phần tử liên hợp của nó cũng bằng không. Do đó
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&0\\[2pt]
+0&\frac12
+\end{pmatrix}
+=\frac12 I.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_11.png}\caption{Bốn phần tử của ma trận mật độ rút gọn cho một spin trong trạng thái đơn tuyến.}\lectureframe{00:55:35}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:58}
+\audiencequestion{Entropy của trạng thái rút gọn cho một spin là bao nhiêu?}
+\lecturerresponse{Hai trị riêng của nó đều bằng \(1/2\), nên
+\[
+S_1=-2\left(\frac12\log\frac12\right)=\log 2.
+\]
+Đây là entropy cực đại có thể có của một hệ con hai trạng thái. Các trị riêng \emph{bằng nhau}, chứ không phải các phần tử ma trận bằng nhau trong một cơ sở tùy ý, là đặc trưng của trạng thái hỗn hợp cực đại.}
+\end{classroomqa}
+
+Giá trị kỳ vọng spin bằng không theo mọi trục:
+\begin{equation}
+\expect{\bm{\sigma}\cdot\hat{\bm n}}
+=\operatorname{Tr}\!\left(
+\rho_1\,\bm{\sigma}\cdot\hat{\bm n}
+\right)
+=\frac12\operatorname{Tr}
+\left(\bm{\sigma}\cdot\hat{\bm n}\right)
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:58:37}
+\audiencequestion{Vì sao vết của \(\bm{\sigma}\cdot\hat{\bm n}\) bằng không theo mọi hướng?}
+\lecturerresponse{Mỗi ma trận Pauli đều có vết bằng không. Vì \(\bm{\sigma}\cdot\hat{\bm n}=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3\), tính tuyến tính của phép lấy vết cho kết quả bằng không với mọi vectơ đơn vị \(\hat{\bm n}\). Do đó, xác suất đo được spin song song hay ngược chiều với một trục tùy chọn là như nhau.}
+\end{classroomqa}
+
+Cặp spin toàn phần có trạng thái thuần xác định và entropy bằng không. Riêng mỗi spin ở trạng thái hỗn hợp cực đại. Đây không phải là sự không biết do hồ sơ chuẩn bị bị thiếu sót; đó là trạng thái cục bộ mà vướng víu kéo theo.
+
+\section{Trạng thái tích có biên độ bằng nhau}
+
+Bây giờ, xét
+\begin{equation}
+\ket{\Phi}
+=\frac12\left(
+\ket{\uparrow\uparrow}
++\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}
++\ket{\downarrow\downarrow}
+\right).
+\end{equation}
+Cả bốn biên độ đều bằng \(1/2\), nên trạng thái được chuẩn hóa nhờ bốn số hạng, mỗi số hạng đóng góp \(1/4\). Lấy vết theo spin \(2\), ta được
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}.
+\end{equation}
+Vết của nó bằng \(1\), nhưng
+\begin{equation}
+\det\rho_1
+=\frac14-\frac14
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:23}
+\audiencequestion{Ở đây, vết và định thức xác định hai trị riêng như thế nào?}
+\lecturerresponse{Với ma trận \(2\times2\), tổng các trị riêng bằng vết và tích của chúng bằng định thức. Vì vậy, \(\lambda_1+\lambda_2=1\) và \(\lambda_1\lambda_2=0\), buộc cặp trị riêng phải là \(\{1,0\}\). Trạng thái rút gọn là trạng thái thuần và entropy bằng không.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:18}
+\audiencequestion{Hai spin không vướng víu thực sự đang ở trạng thái nào?}
+\lecturerresponse{Cả hai đều hướng dọc theo trục \(x\) dương. Có thể nhận ra câu trả lời bằng cách phân tích thành tích,
+\[
+\ket{\Phi}
+=\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2}
+\otimes
+\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2},
+\]hoặc xác lập bằng thực nghiệm thông qua việc tính các giá trị kỳ vọng của ma trận Pauli.}
+\end{classroomqa}
+
+Với thành phần \(z\),
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\[2pt]
+0&-1
+\end{pmatrix},
+\qquad
+\operatorname{Tr}(\rho_1\sigma_3)=0.
+\end{equation}
+Với thành phần \(x\),
+\begin{equation}
+\sigma_1=
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix},
+\end{equation}và
+\begin{align}
+\rho_1\sigma_1
+&=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}, \\
+\operatorname{Tr}(\rho_1\sigma_1)&=1.
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}\caption{Phép tính ma trận \(\sigma_1\) cho trạng thái rút gọn có biên độ bằng nhau.}\lectureframe{01:05:13}\end{figure}
+
+Do đó, \(\expect{\sigma_1}=1\) trong khi \(\expect{\sigma_2}=\expect{\sigma_3}=0\). Nhiễu loạn các biên độ khiến chúng không còn phân tích chính xác thành tích thường làm các trị riêng thay đổi từ \(\{1,0\}\) thành hai giá trị khác không. Entropy nhỏ thu được đo mức vướng víu nhỏ.
+
+\section{Entropy thuộc về hệ nào?}
+
+Entropy vừa tính là entropy của một hệ con. Trong ví dụ trạng thái đơn tuyến,
+\begin{equation}
+S(\rho_{12})=0,
+\qquad
+S(\rho_1)=S(\rho_2)=\log 2.
+\end{equation}
+Toàn hệ thuần trong khi mỗi phần đều hỗn hợp. Vì vậy, entropy vướng víu không tuân theo quy tắc cộng đơn giản \(S_{12}=S_1+S_2\). Với trạng thái thuần hai phần, hai ma trận mật độ rút gọn có cùng các trị riêng khác không, nên entropy của chúng bằng nhau dù entropy của toàn hệ bằng không.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:03}
+\audiencequestion{Rốt cuộc, mọi ma trận mật độ có phải đều là ma trận mật độ do vướng víu không?}
+\lecturerresponse{Về mặt thao tác, ta có thể mô tả sự bất định thông thường mà không cần theo dõi nơi lưu giữ thông tin còn thiếu. Nếu đưa thiết bị chuẩn bị, môi trường hoặc người quan sát vào hệ, sự bất định đó thường có thể được xem là vướng víu với các bậc tự do không được quan sát. Về mặt toán học, ý tưởng này chính xác: mọi ma trận mật độ đều có thể được tinh khiết hóa trong một không gian Hilbert lớn hơn, dù phép tinh khiết hóa đó không xác định duy nhất lịch sử chuẩn bị vật lý.}
+\end{classroomqa}
+
+\section{Từ chuyển động cổ điển rời rạc đến chuyển động lượng tử}
+
+Bây giờ, ta tạm rời chủ đề vướng víu để hỏi các trạng thái thay đổi theo thời gian như thế nào. Với một hệ cổ điển có hữu hạn cấu hình, sự tiến hóa thuận nghịch là một phép hoán vị. Mỗi trạng thái có đúng một trạng thái kế tiếp và một trạng thái trước đó; chuyển động phân rã thành các chu trình.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_12.png}\caption{Sự tiến hóa thuận nghịch cổ điển được biểu diễn bằng các mũi tên giữa những cấu hình rời rạc.}\lectureframe{01:11:40}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:51}
+\audiencequestion{Vì sao các bước thời gian cũng phải rời rạc nếu các cấu hình là rời rạc?}
+\lecturerresponse{Một mô hình hai trạng thái thuần cổ điển không có cấu hình trung gian để một quỹ đạo liên tục đi qua. Làm một đồng xu vật lý quay chậm đòi hỏi đưa hướng của nó vào như một tọa độ liên tục bổ sung, nên hệ không còn là mô hình hai cấu hình. Hệ lượng tử hai trạng thái thì khác: không gian Hilbert của nó chứa một họ liên tục các trạng thái chồng chập, dù cơ sở trực chuẩn chỉ có hai phần tử.}
+\end{classroomqa}
+
+Trạng thái spin \(\tfrac12\) có thể quay liên tục từ \(\ket{\uparrow}\) về phía \(\ket{\downarrow}\) thông qua các trạng thái chồng chập. Số chiều hữu hạn không có nghĩa là chỉ có hữu hạn vectơ trạng thái. Điều này cho phép sự tiến hóa theo thời gian liên tục trong một hệ lượng tử rời rạc.
+
+Động lực học vi mô thuận nghịch cũng bảo toàn sự phân biệt. Hai điều kiện ban đầu cổ điển khác nhau không nhập lại thành cùng một trạng thái vi mô, vì như vậy sẽ xóa mất thông tin về điều kiện ban đầu nào đã xảy ra. Trong cơ học Hamilton, tính khả nghịch này đi kèm định lý Liouville: thể tích không gian pha được bảo toàn.
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:26}
+\audiencequestion{Còn các phân nhánh phi tuyến, trong đó nhiều điều kiện ban đầu tiến đến cùng một trạng thái dừng, thì sao?}
+\lecturerresponse{Các trạng thái hút xuất hiện trong những mô tả tiêu tán hiệu dụng, nơi các bậc tự do của môi trường đã bị loại bỏ. Sự tiến hóa Hamilton vi mô cơ bản vẫn khả nghịch; thông tin có thể được truyền sang các biến không quan sát được, nhưng những trạng thái toàn phần khác nhau không thực sự trở thành cùng một trạng thái toàn phần.}
+\end{classroomqa}
+
+Phát biểu lượng tử là tính unita. Các trạng thái ban đầu trực giao tiến hóa thành các trạng thái cuối trực giao, và tổng quát hơn, mọi tích vô hướng đều được bảo toàn.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:50}
+\audiencequestion{Hai trạng thái có phải chịu đúng cùng một tác động không? Các trạng thái ban đầu \(z\)-lên và \(z\)-xuống sẽ ra sao trong từ trường hướng theo \(x\)?}
+\lecturerresponse{Cùng một toán tử tiến hóa phải tác dụng lên cả hai trạng thái. Trong từ trường ngang, hai spin tiến động, nhưng các vectơ Bloch của chúng vẫn đối nhau và các vectơ trạng thái vẫn trực giao. Áp dụng những lịch sử tác động bên ngoài khác nhau đồng nghĩa với việc so sánh các toán tử tiến hóa khác nhau.}
+\end{classroomqa}
+
+\section{Tính tuyến tính và tính unita}
+
+Nguyên lý đầu tiên của sự tiến hóa lượng tử theo thời gian là tính tuyến tính:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+Toán tử phụ thuộc vào thời gian đã trôi qua và thỏa mãn
+\begin{equation}
+U(0)=I.
+\end{equation}
+Cũng như tính tuyến tính của bản thân cơ học lượng tử, quy tắc này được biện minh bởi sự phù hợp với thực nghiệm.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_13.png}\caption{Trạng thái tại thời điểm \(t\) được thu từ trạng thái ban đầu bằng toán tử tuyến tính \(U(t)\) tác dụng lên nó.}\lectureframe{01:19:00}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:01}
+\audiencequestion{Tại \(U(t)\) phải là gì khi \(t=0\)?}
+\lecturerresponse{Nó phải là toán tử đơn vị. Khi thời gian đã trôi qua bằng không, trạng thái không đổi với mọi vectơ ban đầu có thể có.}
+\end{classroomqa}
+
+Nguyên lý thứ hai là bảo toàn tích vô hướng:
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Khi \(\phi=\psi\), điều này bảo toàn chuẩn hóa và do đó bảo toàn xác suất toàn phần. Khi các trạng thái ban đầu trực giao, tính phân biệt hoàn hảo của chúng được bảo toàn. Với các trạng thái bất kỳ, toàn bộ quan hệ hình học giữa chúng được giữ nguyên.
+
+Bra tiến hóa theo quy luật
+\begin{equation}
+\bra{\phi(t)}
+=\bra{\phi(0)}U^\dagger(t),
+\end{equation}
+nên
+\begin{align}
+\braket{\phi(t)}{\psi(t)}
+&=\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)} \\
+&=\braket{\phi(0)}{\psi(0)}.
+\end{align}
+Vì đẳng thức này đúng với mọi cặp vectơ ban đầu,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_04.png}\caption{Sự tiến hóa của ket, sự tiến hóa của bra và điều kiện tích vô hướng dẫn đến \(U^\dagger U=I\).}\lectureframe{01:23:30}\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:22:10}
+\audiencequestion{Vì sao bra nhận \(U^\dagger\) thay vì \(U\)?}
+\lecturerresponse{Lấy liên hợp Hermite làm đảo thứ tự các thừa số và thay mỗi toán tử bằng liên hợp Hermite của nó:
+\[
+\bigl(U\ket{\phi}\bigr)^\dagger
+=\bra{\phi}U^\dagger.
+\]
+Đó là tác động đối ngẫu cần có để tích vô hướng nhất quán.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:34}
+\audiencequestion{Nếu \(U\) chỉ là một số phức, thì \(U^\dagger U=1\) có nghĩa là gì?}
+\lecturerresponse{Điều đó có nghĩa là \(|U|=1\), nên \(U=e^{i\theta}\) nằm trên đường tròn đơn vị. Ma trận unita là đối tượng tương tự toán tử của một pha thuần: nó bảo toàn độ dài và tích vô hướng.}
+\end{classroomqa}
+
+\section{Tiến hóa vi phân và Hamiltonian}
+
+Gọi \(\epsilon\) là một khoảng thời gian rất nhỏ. Vì \(U(0)=I\), ta viết khai triển bậc nhất
+\begin{equation}
+U(\epsilon)=I-i\epsilon h+O(\epsilon^2).
+\end{equation}
+Dấu trừ và thừa số \(i\) là các quy ước thuận tiện. Lấy liên hợp Hermite, ta được
+\begin{equation}
+U^\dagger(\epsilon)
+=I+i\epsilon h^\dagger+O(\epsilon^2).
+\end{equation}
+Tính unita khi đó đòi hỏi
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon) \\
+&=\left(I+i\epsilon h^\dagger\right)
+\left(I-i\epsilon h\right)+O(\epsilon^2) \\
+&=I+i\epsilon(h^\dagger-h)+O(\epsilon^2).
+\end{align}
+Số hạng bậc nhất phải triệt tiêu:
+\begin{equation}
+\boxed{h^\dagger=h}.
+\end{equation}
+Toán tử sinh vi phân là Hermite.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_14.png}\caption{Tính unita ở bậc nhất buộc toán tử sinh vi phân phải là Hermite.}\lectureframe{01:29:35}\end{figure}
+
+Theo quy ước tạm thời ở trên, \(h\) có đơn vị tần số góc. Khôi phục các đơn vị vật lý, ta định nghĩa toán tử năng lượng
+\begin{equation}
+H=\hbar h.
+\end{equation}
+Toán tử Hermite này là Hamiltonian, và các trị riêng của nó là các mức năng lượng.
+
+Áp dụng toán tử vi phân lên một trạng thái:
+\begin{equation}
+\ket{\psi(\epsilon)}
+=\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(0)}
++O(\epsilon^2).
+\end{equation}
+Lấy hiệu với trạng thái ban đầu, chia cho \(\epsilon\) rồi lấy giới hạn:
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+Tương đương,
+\begin{equation}
+\boxed{
+i\hbar\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+Đây là phương trình Schr\"odinger tổng quát.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_15.png}\caption{Thương sai phân vi phân trở thành đạo hàm theo thời gian của trạng thái.}\lectureframe{01:32:18}\end{figure}
+
+Hamiltonian phụ thuộc vào thiết lập vật lý. Nó có thể thay đổi theo thời gian nếu từ trường bên ngoài hoặc một tác nhân điều khiển khác thay đổi. Khi thiết lập không đổi theo thời gian, \(H\) là toán tử Hermite cố định.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:30}
+\audiencequestion{Việc bảo toàn tích vô hướng có kéo theo rằng các hệ ban đầu không vướng víu sẽ vẫn không vướng víu không?}
+\lecturerresponse{Không. Tính unita bảo toàn tích vô hướng giữa các vectơ trạng thái toàn phần, chứ không bảo toàn cấu trúc tích của một phép phân chia đã chọn. Hamiltonian tương tác có thể biến một trạng thái tích thành trạng thái vướng víu. Nếu toán tử unita không thể làm điều đó thì phép đo không thể tạo tương quan giữa một hệ và thiết bị đo.}
+\end{classroomqa}
+
+\section{Đơn vị của entropy}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:08}
+\audiencequestion{Vướng víu có đơn vị vật lý như joule không?}
+\lecturerresponse{Entropy vướng víu là đại lượng đo thông tin, không phải năng lượng. Dùng logarit tự nhiên thì đơn vị là nat; dùng logarit cơ số hai thì đơn vị là bit. Cả hai đều là quy ước đếm không thứ nguyên.}
+\end{classroomqa}
+
+Ký hiệu nhiệt động lực học có thể che khuất điểm này vì hằng số Boltzmann chuyển đổi giữa nhiệt độ đo bằng kelvin và năng lượng:
+\begin{equation}
+\expect{K}_{\mathrm{monatomic}}
+=\frac32 k_{\mathrm B}T.
+\end{equation}
+Quan hệ nhiệt thuận nghịch là
+\begin{equation}
+\delta Q_{\mathrm{rev}}=T\,\mathrm dS_{\mathrm{th}}.
+\end{equation}
+Nếu entropy thông tin là
+\begin{equation}
+S_{\mathrm{info}}=-\sum_i p_i\log p_i,
+\end{equation}
+thì entropy nhiệt động lực học quy ước là
+\begin{equation}
+S_{\mathrm{th}}=k_{\mathrm B}S_{\mathrm{info}}.
+\end{equation}
+Đặt \(k_{\mathrm B}=1\) thì nhiệt độ được đo bằng đơn vị năng lượng và entropy trở thành không thứ nguyên. Khi đó, ta hiểu hằng số Boltzmann là hệ số chuyển đổi chứ không phải một loại đơn vị vướng víu mới. Ghi chú lịch sử liên hệ các ý tưởng thống kê của Boltzmann với công trình năm 1905 của Einstein về chuyển động Brown không làm thay đổi định nghĩa entropy theo lý thuyết thông tin.
+
+\section{Trạng thái riêng năng lượng và pha}
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:54}
+\audiencequestion{Vì sao toán tử sinh Hermite \(H\) được đồng nhất với năng lượng?}
+\lecturerresponse{Chỉ riêng tính unita chứng minh được rằng toán tử sinh là Hermite. Việc đồng nhất nó với năng lượng là một phát biểu vật lý bổ sung: năng lượng sinh ra các phép tịnh tiến theo thời gian. Với Hamiltonian không phụ thuộc thời gian, cùng một toán tử chi phối sự tiến hóa cũng là đại lượng bảo toàn, và các trị riêng của nó là những mức năng lượng dừng. Các Hamiltonian cụ thể cung cấp nội dung thực nghiệm cho sự đồng nhất đó.}
+\end{classroomqa}
+
+Quan hệ giữa các hằng số Planck và tần số là
+\begin{equation}
+E=h\nu=\hbar\omega,
+\qquad
+\omega=2\pi\nu,
+\qquad
+h=2\pi\hbar.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:30}
+\audiencequestion{Phương trình tiến hóa nên chứa \(h\), \(\hbar\), hay thêm một thừa số \(2\pi\)?}
+\lecturerresponse{Nếu dùng tần số góc \(\omega\), phương trình là \(E=\hbar\omega\), và phương trình Schr\"odinger chứa \(\hbar\). Nếu dùng tần số thông thường \(\nu\), hệ thức tương đương là \(E=h\nu\). Thừa số \(2\pi\) được giải thích hoàn toàn bởi \(\omega=2\pi\nu\) và \(h=2\pi\hbar\).}
+\end{classroomqa}
+
+Giả sử trạng thái ban đầu là một vectơ riêng năng lượng:
+\begin{equation}
+H\ket{\psi(0)}=E\ket{\psi(0)}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:18}
+\audiencequestion{Nếu trạng thái vẫn là một vectơ riêng năng lượng, điều đó có nghĩa là nó không thay đổi sao?}
+\lecturerresponse{Nó có thể nhận một thừa số phức phụ thuộc thời gian mà vẫn là một vectơ riêng với cùng trị riêng. Tính unita buộc thừa số ấy phải là một pha. Vì vậy tia là bất động ngay cả khi ket vẫn quay theo pha.}
+\end{classroomqa}
+
+Viết
+\begin{equation}
+\ket{\psi(t)}=f(t)\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_05.png}
+\caption{Một trạng thái riêng năng lượng vẫn nằm theo cùng một hướng trong không gian Hilbert, chỉ khác bởi một thừa số vô hướng \(f(t)\).}
+\lectureframe{01:43:54}
+\end{figure}
+
+Thế vào phương trình Schr\"odinger ta được
+\begin{align}
+i\hbar\frac{\mathrm d f}{\mathrm dt}\ket{\psi(0)}
+&=f(t)H\ket{\psi(0)} \\
+&=E f(t)\ket{\psi(0)}.
+\end{align}
+Khử vectơ chung:
+\begin{equation}
+\frac{\mathrm d f}{\mathrm dt}
+=-\frac{iE}{\hbar}f(t).
+\end{equation}
+Với \(f(0)=1\),
+\begin{equation}
+f(t)=e^{-iEt/\hbar},
+\qquad
+\ket{\psi(t)}=e^{-iEt/\hbar}\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_16.png}
+\caption{Phương trình trị riêng năng lượng và sự tiến hóa pha hệ quả của nó.}
+\lectureframe{01:46:10}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{Hệ số của \(t\) trong pha \(e^{-iEt/\hbar}\) là gì?}
+\lecturerresponse{Đó là tần số góc,
+\[
+\omega=\frac{E}{\hbar}.
+\]
+Tương đương, \(E=\hbar\omega\). Một hệ số thực trong số mũ sẽ mô tả tốc độ tăng hoặc suy giảm; số mũ ảo ở đây mô tả sự quay pha unita.}
+\end{classroomqa}
+
+Hệ thức pha–tần số này và phương trình Schr\"odinger là hai dạng của cùng một định luật tiến hóa theo thời gian. Phương trình đó là tổng quát; một hạt tự do, một hạt trong thế, và một spin trong từ trường khác nhau thông qua các Hamiltonian của chúng. Chọn và giải các Hamiltonian ấy là bước tiếp theo.

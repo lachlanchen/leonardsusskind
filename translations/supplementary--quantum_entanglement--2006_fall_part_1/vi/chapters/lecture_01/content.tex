@@ -1,0 +1,444 @@
+\chapter{Thông tin cổ điển, động lực học thuận nghịch và ma trận}
+
+\lectureoverview{Cơ học lượng tử đòi hỏi ta lập luận vượt ra ngoài phạm vi mà trực giác thông thường được hình thành để xử lý. Vì vậy, ta bắt đầu sớm hơn một bước, với thông tin cổ điển: bit, cấu hình và các quy luật cập nhật thuận nghịch. Từ đây, ta tự nhiên đi đến vectơ và ma trận, ngôn ngữ sẽ dùng để mô tả bit lượng tử.}
+
+\section{Trực giác được hình thành cho một thế giới khác}
+
+Trực giác vật lý của chúng ta đã hình thành từ rất lâu. Từ trước khi có ai viết phương trình, một con vật đuổi theo con mồi đã phải ước lượng tốc độ tương đối và hướng chuyển động. Nếu sư tử đang đuổi kịp linh dương, thì nó đang phản ứng trước sự thay đổi khoảng cách giữa hai con vật, và do đó, theo một cách ngầm định, trước vận tốc tương đối. Những hệ thần kinh xử lý tốt các phán đoán như vậy có lợi thế sinh tồn; những hệ xử lý kém thì chẳng để lại nhiều hậu duệ. Phần lớn điều ta gọi là lẽ thường về chuyển động được hình thành trong thế giới đời thường này.
+
+Di sản ấy hữu ích, nhưng có phạm vi hẹp. Trong đời sống thường ngày, không vật nào chuyển động gần tốc độ ánh sáng, nên tiến hóa không tạo cho ta trực giác về không-thời gian tương đối tính. Nhà vật lý trước hết học hình học trừu tượng, rồi chỉ sau đó mới hình thành trực giác mới về nó. Cơ học lượng tử còn khó hơn. Hình dung quen thuộc của ta về hạt bắt nguồn từ đá và mũi tên: ở mỗi thời điểm, vật có một vị trí; chuỗi vị trí tạo thành quỹ đạo; và sự thay đổi vị trí xác định vận tốc. Electron không chiều theo ta để vừa khít với hình dung ấy. Bất định vị trí và sự vắng mặt của quỹ đạo cổ điển không có gì tương tự trong những trải nghiệm đã định hình các giác quan của ta.
+
+Trực giác thất bại ở đây không có gì nghịch lý. Chỉ có nghịch lý nếu bản năng thích nghi với đá, động vật và tốc độ vừa phải lại biết trước về electron. Cách ứng phó đúng là xây dựng một trực giác khác từ một số ít quy tắc chính xác. Ở đây, trọng tâm không phải là lối tiếp cận quen thuộc qua cơ học sóng và phương trình Schr\"odinger. Ta sẽ tập trung vào cấu trúc logic của cơ học lượng tử và thông tin lượng tử. Trước khi hỏi bit lượng tử là gì, ta phải hiểu chính xác một bit thông thường hoạt động ra sao.
+
+\section{Bit và lượng thông tin}
+
+Vật lý không thể tách rời thông tin. Đôi khi thông tin ấy được biểu diễn bằng một số thực, nhưng mẩu thông tin đơn giản nhất có thể có là câu trả lời cho một câu hỏi chỉ có hai khả năng: có hoặc không, sấp hoặc ngửa, lên hoặc xuống.
+
+\begin{definition}Một \emph{bit cổ điển} là một câu hỏi vật lý có đúng hai câu trả lời khả dĩ.\end{definition}
+
+Ta có thể gán nhãn cho các câu trả lời ấy là \(0\) và \(1\). Bản thân các nhãn không mang ý nghĩa nào; chọn hai ký hiệu phân biệt bất kỳ cũng được. Vì ký hiệu Dirac sẽ sớm trở nên không thể thiếu, ta giới thiệu nó ngay cả khi lúc này còn thừa:
+\begin{equation}
+  \ket{0},
+  \qquad
+  \ket{1}.
+\end{equation}
+Vạch đứng và dấu ngoặc nhọn tạo thành một \emph{ket}, nửa bên phải của bra--ket. Việc đổi ký hiệu không tự nó đưa yếu tố lượng tử nào vào.
+
+Với nhiều bit phân biệt được, hãy viết các câu trả lời theo một thứ tự cố định. Chẳng hạn, cấu hình của sáu đồng xu phân biệt được có thể viết là
+\begin{equation}
+  \ket{0\,1\,1\,0\,1\,0}.
+\end{equation}
+Khi đã rõ thứ tự, có thể bỏ dấu phẩy. Một bit có hai trạng thái khả dĩ, hai bit có bốn trạng thái, và mỗi bit thêm vào làm số trạng thái tăng gấp đôi. Do đó, hệ \(n\) bit có
+\begin{equation}
+  N_s=2^n
+  \label{eq:l01-state-count}
+\end{equation}
+trạng thái. Ngược lại,
+\begin{equation}
+  n=\log_2 N_s.
+  \label{eq:l01-bits-from-states}
+\end{equation}
+
+Phương trình~\eqref{eq:l01-bits-from-states} gợi ý một định nghĩa hữu ích ngay cả khi số trạng thái không phải lũy thừa của hai:
+\begin{equation}
+  I=\log_2 N_s.
+  \label{eq:l01-information}
+\end{equation}
+Vì vậy, một con xúc xắc sáu mặt mang \(\log_2 6\) bit thông tin. Kết quả không nhất thiết là số nguyên. Các hệ được cấu tạo thực sự từ công tắc nhị phân là những ví dụ thuận tiện, nhưng logarit mới là thước đo tổng quát hơn.
+
+\section{Mã hóa một thế giới tưởng như liên tục}
+
+Bit không chỉ giới hạn ở đồng xu. Mọi đại lượng đo được với độ chính xác hữu hạn đều có thể viết thành một chuỗi nhị phân hữu hạn. Chẳng hạn, giả sử ta chỉ cần biết nhiệt độ phòng đến một số chữ số có nghĩa đã chọn. Hãy biểu diễn giá trị đo được trong hệ cơ số hai rồi giữ lại số chữ số cần cho độ chính xác đó. Muốn độ chính xác cao hơn thì cần chuỗi dài hơn, nhưng nguyên tắc vẫn vậy.
+
+Ta có thể xử lý trường biến thiên theo vị trí theo cách tương tự. Chia căn phòng thành một mạng ô có thứ tự và đủ mịn, ghi giá trị trường tại mỗi ô với độ chính xác hữu hạn, rồi nối các chuỗi nhị phân thu được lại. Làm các ô nhỏ hơn sẽ tăng độ phân giải không gian; giữ thêm chữ số nhị phân sẽ tăng độ phân giải của giá trị trường. Có thể mã hóa trường nhiệt độ, trường điện và trường từ theo cách này với bất kỳ độ chính xác hữu hạn nào đã định.
+
+Cấu hình hạt cho ta một hình dung nhị phân cụ thể hơn nữa. Chia không gian thành các ô sao cho mỗi ô đủ nhỏ để chứa nhiều nhất một hạt. Gán
+\begin{equation}
+  n_i=
+  \begin{cases}
+    1,&\text{cell \(i\) is occupied},\\
+    0,&\text{cell \(i\) is empty}.
+  \end{cases}
+  \label{eq:l01-occupancy-bit}
+\end{equation}
+Cấu hình đầy đủ là chuỗi có thứ tự
+\begin{equation}
+  \ket{n_1n_2n_3\cdots}.
+\end{equation}
+Đó là câu trả lời rất dài cho một dãy câu hỏi có hoặc không: ô thứ nhất có hạt không, ô thứ hai có hạt không, và cứ thế tiếp tục? Đây là phiên bản vật lý của trò \emph{Hai mươi câu hỏi}, chỉ khác là số câu hỏi có thể rất lớn.
+
+Cách xây dựng này giải thích vì sao máy tính số có thể mô phỏng vật lý. Máy tính lưu các chuỗi hữu hạn, còn độ phân giải hữu hạn biến các đại lượng đo được và các trường thành chính những chuỗi như vậy. Có thể cải thiện phép gần đúng một cách hệ thống bằng cách làm lưới mịn hơn, giảm bước thời gian hoặc giữ lại nhiều chữ số hơn.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:43}
+\audiencequestion{Độ chính xác của cách biểu diễn nhiệt độ có thể tùy ý chọn sao?}
+\lecturerresponse{Ta chọn độ chính xác theo phép gần đúng mong muốn. Chuỗi hữu hạn cho độ chính xác hữu hạn; giữ thêm chữ số nhị phân sẽ cho phép gần đúng tinh hơn. Ở đây không có khẳng định rằng một chuỗi hữu hạn xác định chính xác một số thực cổ điển bất kỳ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:30:11}
+\audiencequestion{Với một số thực bất kỳ, đặc biệt là số vô tỉ, thì sao?}
+\lecturerresponse{Một số thực chính xác có thể cần vô hạn bit. Một số khai triển nhị phân của số hữu tỉ lặp lại, còn khai triển của số vô tỉ nói chung không bao giờ kết thúc. Máy tính thực tế luôn chỉ giữ hữu hạn chữ số. Ý ở đây là mọi độ chính xác hữu hạn được chỉ định đều có thể mã hóa, chứ không phải mọi số thực cổ điển đều có mô tả chính xác hữu hạn.}
+\end{classroomqa}
+
+\section{Trạng thái và quy luật chuyển động}
+
+Cho đến đây, ta mới mô tả hệ tại một thời điểm. Để có chuyển động, cần thêm một thành phần nữa.
+
+\begin{definition}Một \emph{cấu hình} là trạng thái đầy đủ của một hệ tại một thời điểm xác định. Quy luật chuyển động theo thời gian rời rạc là quy tắc ánh xạ mỗi cấu hình sang cấu hình ở bước thời gian kế tiếp.\end{definition}
+
+Sự phân biệt này cơ bản nhưng thiết yếu. Ảnh chụp phân bố electron là một cấu hình; nó chưa phải quỹ đạo. Nếu thay không gian bằng một mạng ô và thời gian bằng một dãy \(t_0,t_1,t_2,\ldots\), thì chuyển động là chuỗi kế tiếp nhau
+\begin{equation}
+  \ket{s(t_0)}
+  \longmapsto
+  \ket{s(t_1)}
+  \longmapsto
+  \ket{s(t_2)}
+  \longmapsto\cdots.
+  \label{eq:l01-discrete-motion}
+\end{equation}
+Vì vậy, một mô hình vật lý cần cả tập hợp các trạng thái khả dĩ lẫn quy tắc cập nhật.
+
+\begin{classroomqa}
+\lecturetimestamp{00:31:12}
+\audiencequestion{Cách mô tả bằng ô này giải thích thế nào việc electron chuyển động trên quỹ đạo?}
+\lecturerresponse{Trước hết, chỉ xác định cấu hình tại một thời điểm: những ô nào có hạt, với hạt nhân cố định nếu mô hình có giả thiết đó. Sau đó, rời rạc hóa thời gian. Chuyển động quỹ đạo là quy tắc cập nhật chuỗi ô có hạt này thành chuỗi kế tiếp. Quy tắc có thể phức tạp do thứ tự các ô, nhưng vẫn là một phép cập nhật thông tin.}
+\end{classroomqa}
+
+Ta có thể hình dung bằng cách vẽ một \emph{không gian trạng thái} trừu tượng. Mỗi điểm trong không gian này biểu thị toàn bộ một cấu hình, chứ không phải một vị trí trong không gian thông thường. \(10\times10\) mạng ô có một trăm bit và do đó có \(2^{100}\) cấu hình khả dĩ.\editorialnote{Trong lúc trình bày ví dụ, bài giảng nói thoáng qua \(10^{100}\); số bit xác định giá trị đúng dự định là \(2^{100}\).} Mỗi cấu hình ấy tương ứng với một điểm duy nhất trong không gian trạng thái.
+
+Với một bit, chỉ có hai điểm. Quy luật đồng nhất giữ nguyên cả hai:
+\begin{equation}
+  0\mapsto0,
+  \qquad
+  1\mapsto1.
+  \label{eq:l01-identity-update}
+\end{equation}
+Khả năng thuận nghịch còn lại là hoán đổi chúng:
+\begin{equation}
+  0\mapsto1,
+  \qquad
+  1\mapsto0.
+  \label{eq:l01-flip-update}
+\end{equation}
+Đây là một hệ lật trạng thái. Một ví dụ vật lý tự diễn biến không dễ tìm bằng công tắc đèn được người điều khiển, vì sự can thiệp ấy sẽ làm hệ mở rộng. Ngày và đêm tạo thành một chu kỳ hai trạng thái gần đúng; con lắc cũng luân phiên giữa hai vị trí biên, dù trạng thái đầy đủ của nó bao gồm mọi vị trí và vận tốc trung gian.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:38}
+\audiencequestion{Công tắc đèn thông thường có phải là ví dụ về quy luật lật trạng thái không?}
+\lecturerresponse{Không, nếu có người gạt công tắc, vì khi đó công tắc không tự tiến hóa; người đó thuộc về hệ động lực học mở rộng. Ta đang tìm một hệ kín có quy luật riêng làm trạng thái luân phiên. Ngày và đêm gợi ra ý tưởng ấy, còn con lắc nhắc ta rằng ví dụ thực tế thường có nhiều hơn hai trạng thái.}
+\end{classroomqa}
+
+Hệ hai bit có bốn cấu hình. Một quy luật cập nhật có thể đưa cả bốn đi hết một chu kỳ duy nhất. Một quy luật khác có thể gồm hai chu kỳ riêng, mỗi chu kỳ có hai trạng thái. Đây là các vòng lặp trong không gian logic của các cấu hình, không nhất thiết là vòng lặp trong không gian vật lý. Các mũi tên biểu thị quy luật: bất kể hệ bắt đầu ở đâu, đi theo mũi tên sẽ cho biết lịch sử tiếp theo của nó.
+
+\section{Tính thuận nghịch và sự bảo toàn các phân biệt}
+
+Không phải sơ đồ mũi tên nào cũng có cùng ý nghĩa vật lý. Xét quy tắc trong đó hai trạng thái khác nhau nhập vào cùng một trạng thái kế tiếp:
+\begin{equation}
+  a\mapsto c,
+  \qquad
+  b\mapsto c.
+  \label{eq:l01-merging-update}
+\end{equation}
+Trạng thái kế tiếp được xác định dù ta bắt đầu từ \(a\) hay \(b\), nhưng khi đã đến \(c\), ta không thể xác định quá khứ nào đã xảy ra. Sự phân biệt giữa \(a\) và \(b\) đã biến mất.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_01_figure_02.png}
+\caption{Trong lúc thảo luận về tính thuận nghịch, một số sơ đồ cập nhật vẫn được giữ trên bảng. Các chu trình kín cùng tồn tại với một dạng nhập trạng thái, và thuật ngữ lượng tử \emph{tính unita} được viết bên cạnh chúng.}
+\lectureframe{00:53:21}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,thick,node distance=1.15cm]
+  \node[circle,fill,inner sep=1.8pt,label=above:\(1\)] (r1) {};
+  \node[circle,fill,inner sep=1.8pt,right=of r1,label=above:\(2\)] (r2) {};
+  \node[circle,fill,inner sep=1.8pt,below=of r2,label=below:\(3\)] (r3) {};
+  \node[circle,fill,inner sep=1.8pt,left=of r3,label=below:\(4\)] (r4) {};
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r1);
+  \node[below=0.5cm of r4,anchor=north west] {\small reversible cycle};
+
+  \node[circle,fill,inner sep=1.8pt,right=4.2cm of r1,label=above:\(a\)] (a) {};
+  \node[circle,fill,inner sep=1.8pt,below=1.25cm of a,label=below:\(b\)] (b) {};
+  \node[circle,fill,inner sep=1.8pt,right=1.6cm of a,yshift=-0.625cm,label=above:\(c\)] (c) {};
+  \node[circle,fill,inner sep=1.8pt,right=of c,label=above:\(d\)] (d) {};
+  \draw[->] (a) -- (c);
+  \draw[->] (b) -- (c);
+  \draw[->] (c) -- (d);
+  \node[below=0.55cm of b,anchor=north west] {\small information-losing merge};
+\end{tikzpicture}
+\caption{Quy tắc thuận nghịch gán cho mỗi trạng thái đúng một trạng thái tiền nhiệm và một trạng thái kế tiếp. Quy tắc nhập trạng thái có tương lai duy nhất nhưng quá khứ không xác định duy nhất.}
+\end{figure}
+
+Động lực học cổ điển cơ bản không cho phép mất mát này khi mọi bậc tự do đều được giữ lại. Tính chất cần có gồm hai phần:
+\begin{equation}
+  \boxed{\begin{gathered}
+    \text{one unique future and one unique past}\\
+    \text{for every state}
+  \end{gathered}.}
+  \label{eq:l01-reversibility}
+\end{equation}
+Vì vậy, với không gian trạng thái hữu hạn, phép cập nhật phải là một hoán vị. Mỗi trạng thái có đúng một mũi tên đi ra và đúng một mũi tên đi vào, nên sơ đồ phân rã thành các chu trình rời nhau.
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:32}
+\audiencequestion{Sơ đồ nhập trạng thái khác ở điểm nào?}
+\lecturerresponse{Nó không hoàn toàn gồm các vòng lặp. Quan trọng hơn, khi tìm thấy hệ ở trạng thái nhập, ta không biết trạng thái tiền nhiệm của nó là trạng thái nào. Ta có thể xác định tương lai, nhưng không thể dựng lại quá khứ. Một bit phân biệt lịch sử đã bị mất.}
+\end{classroomqa}
+
+Đây là khái niệm \emph{thuận nghịch theo thời gian}, không nhất thiết là đối xứng đảo thời gian chính xác. Một chu trình theo chiều kim đồng hồ có hướng tiến xác định. Quy luật ban đầu không đưa hệ chạy ngược chiều kim đồng hồ, nhưng có thể xây dựng một quy luật nghịch đảo làm điều đó. Đối xứng đảo thời gian chính xác đặt thêm một câu hỏi: sau khi áp dụng phép đảo thích hợp, ta có thu được chính các quy luật động lực học ấy không? Tính thuận nghịch chỉ hỏi liệu lịch sử có thể được chạy ngược lại một cách duy nhất hay không.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:58}
+\audiencequestion{Tính duy nhất của quá khứ có phải chỉ là đối xứng đảo thời gian không?}
+\lecturerresponse{Không hẳn. Mũi tên của một chu trình có thể chỉ theo một chiều, nên quy luật có hướng xác định. Tính thuận nghịch có nghĩa là có thể xây dựng một quy luật nghịch đảo xác định bằng cách đảo mọi mũi tên. Điều đó tự nó không có nghĩa quy luật nghịch đảo giống hệt quy luật ban đầu.}
+\end{classroomqa}
+
+Ta cũng không nên sửa sơ đồ bất thuận nghịch bằng cách đặt hai mũi tên đi ra tại trạng thái nhập. Làm vậy sẽ khiến chuyển động ngược trở nên không xác định theo một cách khác: hệ sẽ cần một chỉ dẫn xác suất, chẳng hạn chọn một nhánh \(30\%\) thời gian và nhánh kia \(70\%\). Ta vẫn đang xây dựng động lực học cổ điển tất định, trong đó một trạng thái hiện tại xác định một tương lai và một quá khứ duy nhất.
+
+Rốt cuộc, mọi hệ thực đều tuân theo cơ học lượng tử. Vì sao các vật thể lớn có vẻ cổ điển, và vì sao các khả năng lượng tử của chúng trở nên khó quan sát, là câu hỏi sẽ bàn sau. Nguyên lý lượng tử tương ứng sẽ bảo toàn cùng một cốt lõi logic. Nửa đùa nửa thật, ta có thể gọi tính duy nhất của quá khứ và tương lai là \emph{tính duy nhất đôi}. Tên gọi thực sự của nó là \emph{tính unita}: sự tiến hóa lượng tử có thể được chạy duy nhất theo chiều thuận hoặc chiều ngược.
+
+\section{Mất thông tin biểu kiến và phép lấy trung bình thô}
+
+Trải nghiệm vĩ mô dường như mâu thuẫn với tính thuận nghịch. Gom mọi phân tử khí vào góc trái của căn phòng kín rồi thả chúng ra. Chẳng bao lâu, khí lan khắp phòng. Nếu thay vào đó bắt đầu từ góc phải, bức tranh vĩ mô cuối cùng trông cũng như vậy. Hai trạng thái ban đầu khác nhau đã nhập làm một sao?
+
+Chỉ sau khi ta đã bỏ qua các chi tiết. Một trạng thái vi mô chỉ rõ từng phân tử. Nếu có thể theo dõi mọi vị trí và vận tốc với độ chính xác đủ cao, đảo ngược các chuyển động ấy sẽ phân biệt được hai cách chuẩn bị. Trên thực tế, phép tính khó đến mức không thể thực hiện, và độ chính xác cần thiết tăng rất nhanh, nhưng bất khả thi trên thực tế không đồng nghĩa với xóa bỏ về mặt cơ bản. Mệnh đề vĩ mô \emph{không khí lấp đầy căn phòng} gộp một số lượng khổng lồ các cấu hình vi mô khác nhau thành một trạng thái lấy trung bình thô.
+
+Đây là lúc định luật thứ hai của nhiệt động lực học xuất hiện. Ta mất khả năng phân biệt các trạng thái chi tiết vì không theo dõi hết mọi biến vi mô. Thông tin có vẻ biến mất vì mô tả của ta là mô tả lấy trung bình thô, chứ không phải vì quy luật tất định ở mức vi mô nhập các điểm khác nhau làm một.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:11}
+\audiencequestion{Theo dõi mọi phân tử trong một căn phòng cổ điển có cần vô hạn bit không?}
+\lecturerresponse{Có, nếu muốn mô tả cổ điển chính xác. Vị trí và vận tốc là các số thực, và việc theo dõi một hệ nhiều hạt hỗn loạn trong thời gian dài hơn đòi hỏi độ chính xác ngày càng cao. Cơ học lượng tử làm thay đổi kết luận này: đối với một vùng kín có năng lượng bị chặn, mô tả các trạng thái phân biệt được về mặt vật lý có thể rời rạc, thay vì là một danh sách tùy ý gồm các số thực cổ điển chính xác.}
+\end{classroomqa}
+
+Vấn đề này không chỉ có ý nghĩa học thuật. Khả năng hố đen phá hủy thông tin đã gây tranh cãi trong nhiều thập kỷ; ban đầu Stephen Hawking lập luận rằng điều đó có thể xảy ra. Tranh cãi ấy đặt câu hỏi liệu sự nhập trạng thái biểu kiến chỉ là một mô tả khác đã lấy trung bình thô, hay là vi phạm thực sự tính unita của cơ học lượng tử. Ta sẽ chưa giải quyết được vấn đề trước khi cơ học lượng tử cung cấp ngôn ngữ chính xác, nhưng nó cho thấy những sơ đồ mũi tên đơn giản này liên quan đến nhiều điều đến mức nào.
+
+\section{Hàng, cột và tích vô hướng}
+
+Trước khi thay bit cổ điển bằng bit lượng tử, ta cần biết một ít đại số tuyến tính. Trong phạm vi hiện tại, có thể xem vectơ đơn giản là một danh sách hữu hạn có thứ tự gồm các số thực. Vectơ có bốn thành phần có thể viết theo hàng ngang,
+\begin{equation}
+  A^{\mathsf T}=(A_1,A_2,A_3,A_4),
+  \label{eq:l01-row-vector}
+\end{equation}
+hoặc theo cột dọc,
+\begin{equation}
+  A=
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}.
+  \label{eq:l01-column-vector}
+\end{equation}
+Cụm từ \emph{bốn chiều} ở đây chỉ có nghĩa là có bốn thành phần. Không cần hình dung đó là một mũi tên trong không gian thông thường. Đối tượng nằm ngang là vectơ hàng, còn đối tượng thẳng đứng là vectơ cột.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{lecture_01_figure_03.png}
+\caption{Cùng các thành phần được viết dưới dạng hàng và cột. Ở giai đoạn này, chúng là số thực nên không có phép liên hợp phức.}
+\lectureframe{01:03:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:14}
+\audiencequestion{Chẳng phải vectơ hàng là chuyển vị liên hợp của vectơ cột sao?}
+\lecturerresponse{Đó sẽ là cách diễn đạt phù hợp khi các thành phần là số phức. Khi ấy, phép chuyển vị phải đi kèm phép liên hợp phức. Hiện giờ các phần tử là số thực, nên ta chỉ cần phân biệt cách sắp xếp theo hàng với cách sắp xếp theo cột.}
+\end{classroomqa}
+
+Cho
+\begin{equation}
+  B=(B_1,B_2,B_3,B_4)
+\end{equation}
+là một hàng có cùng số phần tử với cột \(A\). Tích của chúng được xác định bằng cách ghép các vị trí tương ứng rồi lấy tổng:
+\begin{align}
+  BA
+  &=
+  (B_1,B_2,B_3,B_4)
+  \begin{pmatrix}
+    A_1\\ A_2\\ A_3\\ A_4
+  \end{pmatrix}\\
+  &=B_1A_1+B_2A_2+B_3A_3+B_4A_4.
+  \label{eq:l01-inner-product}
+\end{align}
+Kết quả là một số, không phải một vectơ hay ma trận khác. Trong không gian vectơ trừu tượng, phép toán này được gọi là tích vô hướng.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:44}
+\audiencequestion{Đây có phải là tích vô hướng quen thuộc không?}
+\lecturerresponse{Đúng. Với các vectơ thông thường trong không gian ba chiều, đây là tích vô hướng quen thuộc. Tên gọi \emph{tích vô hướng} nhấn mạnh rằng cùng phép nhân hàng với cột này áp dụng được trong các không gian vectơ có mọi số chiều hữu hạn.}
+\end{classroomqa}
+
+\section{Ma trận như những bộ máy cập nhật trạng thái}
+
+Ma trận là một mảng số vuông tác dụng lên một vectơ để tạo ra vectơ khác. Hãy hình dung nó như một bộ máy: đưa cột cũ vào, áp dụng một quy tắc cố định rồi nhận được cột mới. Trong bốn chiều,
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}&M_{13}&M_{14}\\
+    M_{21}&M_{22}&M_{23}&M_{24}\\
+    M_{31}&M_{32}&M_{33}&M_{34}\\
+    M_{41}&M_{42}&M_{43}&M_{44}
+  \end{pmatrix}.
+  \label{eq:l01-general-matrix}
+\end{equation}
+Chỉ số thứ nhất cho biết hàng, chỉ số thứ hai cho biết cột. Có thể xem \(M\) là tập hợp các cột hoặc tập hợp các hàng; cả hai cách nhìn đều hữu ích.
+
+Để tính \(A'=MA\), lấy tích vô hướng giữa từng hàng của \(M\) và cột đầu vào:
+\begin{equation}
+  A'_i=(MA)_i=\sum_{j=1}^{4}M_{ij}A_j.
+  \label{eq:l01-matrix-vector}
+\end{equation}
+Chẳng hạn,
+\begin{align}
+  A'_1&=M_{11}A_1+M_{12}A_2+M_{13}A_3+M_{14}A_4,\\
+  A'_2&=M_{21}A_1+M_{22}A_2+M_{23}A_3+M_{24}A_4.
+\end{align}
+Tính hai thành phần thứ ba và thứ tư theo cùng cách.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_01_figure_04.png}
+\caption{Ma trận tác dụng lên vectơ cột theo từng hàng. Hai thành phần đầu ra thứ nhất và thứ hai được khai triển rõ trên bảng.}
+\lectureframe{01:12:45}
+\end{figure}
+
+\subsection{Mã hóa một cấu hình cổ điển}
+
+Giả sử một hệ có bốn trạng thái khả dĩ. Biểu diễn chúng bằng các vectơ cột một thành phần khác không:
+\begin{equation}
+  e_1=
+  \begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+  \quad
+  e_2=
+  \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+  \quad
+  e_3=
+  \begin{pmatrix}0\\0\\1\\0\end{pmatrix},
+  \quad
+  e_4=
+  \begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+  \label{eq:l01-one-hot}
+\end{equation}
+Vị trí của thành phần \(1\) cho biết cấu hình cổ điển nào đang hiện diện.
+
+Xét phép cập nhật theo chu trình
+\begin{equation}
+  1\longrightarrow2\longrightarrow3\longrightarrow4\longrightarrow1.
+  \label{eq:l01-four-cycle}
+\end{equation}
+Nó được biểu diễn bằng
+\begin{equation}
+  P=
+  \begin{pmatrix}
+    0&0&0&1\\
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&1&0
+  \end{pmatrix}.
+  \label{eq:l01-permutation-matrix}
+\end{equation}
+Thật vậy,
+\begin{equation}
+  \begin{aligned}
+    Pe_1&=e_2, & Pe_2&=e_3,\\
+    Pe_3&=e_4, & Pe_4&=e_1.
+  \end{aligned}
+\end{equation}
+Khi được viết ra, cấu trúc trên bảng được chỉnh sửa: ban đầu là năm trạng thái, sau đó là bốn. Phương trình~\eqref{eq:l01-permutation-matrix} ghi lại quy tắc chu trình đã chốt, chứ không phải mảng trung gian đã bị bỏ.
+
+Cùng ma trận ấy tác dụng lên một cột bất kỳ:
+\begin{equation}
+  P
+  \begin{pmatrix}A\\B\\C\\D\end{pmatrix}
+  =
+  \begin{pmatrix}D\\A\\B\\C\end{pmatrix}.
+  \label{eq:l01-cyclic-shift}
+\end{equation}
+Với một trạng thái cổ điển, chỉ có một thành phần là \(1\); nhưng khi cho phép các thành phần tổng quát, phép biến đổi tuyến tính nền tảng sẽ hiện rõ. Các phép cập nhật tất định cổ điển dùng những ma trận đặc biệt chỉ có các phần tử không hoặc một, với đúng một phần tử \(1\) trong mỗi hàng và mỗi cột. Cơ học lượng tử vẫn giữ cách tiến hóa bằng ma trận, nhưng mở rộng đáng kể tập hợp các phần tử được phép.
+
+\subsection{Phép hợp thành là phép nhân ma trận}
+
+Nếu một bước thời gian là
+\begin{equation}
+  V'=MV,
+\end{equation}
+thì áp dụng thêm một lần nữa cho ta
+\begin{equation}
+  V''=MV'=M(MV)=M^2V.
+  \label{eq:l01-two-updates}
+\end{equation}
+Vì vậy, nhân ma trận không phải một trò chơi đại số tùy tiện. Nó hợp thành các phép cập nhật vật lý. Năm bước thời gian được biểu diễn bằng \(M^5\).
+
+Với hai ma trận \(2\times2\)
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    M_{11}&M_{12}\\
+    M_{21}&M_{22}
+  \end{pmatrix},
+  \qquad
+  N=
+  \begin{pmatrix}
+    N_{11}&N_{12}\\
+    N_{21}&N_{22}
+  \end{pmatrix},
+\end{equation}
+tích \(C=MN\) có các phần tử
+\begin{equation}
+  C_{ij}=\sum_k M_{ik}N_{kj}.
+  \label{eq:l01-matrix-product}
+\end{equation}
+Cụ thể,
+\begin{align}
+  C_{11}&=M_{11}N_{11}+M_{12}N_{21},\\
+  C_{12}&=M_{11}N_{12}+M_{12}N_{22},\\
+  C_{21}&=M_{21}N_{11}+M_{22}N_{21},\\
+  C_{22}&=M_{21}N_{12}+M_{22}N_{22}.
+\end{align}
+Mỗi phần tử được tính bằng một hàng của ma trận bên trái nhân với một cột của ma trận bên phải. Tương đương, cho \(M\) tác dụng lên từng cột của \(N\) rồi đặt các cột kết quả cạnh nhau.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{lecture_01_figure_05.png}
+\caption{Phép nhân ma trận được tổ chức thành các phép nhân ma trận với cột lặp lại. Hàng thứ nhất và các cột của ma trận thứ hai được đánh dấu để chỉ ra nguồn gốc của từng phần tử trong tích.--}
+\lectureframe{01:26:30}
+\end{figure}
+
+Vectơ hàng cũng có thể tác dụng từ bên trái. Nếu \(B=(B_1,\ldots,B_4)\) thì \(BM\) là một vectơ hàng khác với
+\begin{equation}
+  (BM)_j=\sum_i B_iM_{ij}.
+  \label{eq:l01-row-times-matrix}
+\end{equation}
+Một lần nữa, quy tắc là hàng nhân với cột. Kích thước của các đối tượng cho biết hình dạng kết quả:
+\begin{equation}
+\begin{array}{c@{\qquad}c}
+\text{row}\times\text{column}&=\text{number},\\
+\text{matrix}\times\text{column}&=\text{column},\\
+\text{row}\times\text{matrix}&=\text{row},\\
+\text{matrix}\times\text{matrix}&=\text{matrix}.
+\end{array}
+\label{eq:l01-shape-rules}
+\end{equation}
+
+Đáng nên luyện các phép toán này bằng những ví dụ số nhỏ kích thước \(2\times2\) và \(3\times3\). Cùng với một ít phép tính vi phân và tích phân, phép nhân hàng--cột là thói quen toán học mới chủ yếu cần có cho phần cơ học lượng tử tiếp theo.
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:50}
+\audiencequestion{Tính thuận nghịch đặt ra giới hạn nào cho ma trận cập nhật?}
+\lecturerresponse{Nó phải khả nghịch. Ma trận nghịch đảo thực hiện phép cập nhật ngược và đưa mỗi trạng thái trở về trạng thái tiền nhiệm duy nhất của nó. Không phải ma trận nào cũng khả nghịch, nên đại số tái hiện sự phân biệt đã nêu trước đó bằng các sơ đồ mũi tên. Với ví dụ chu trình, \(P^{-1}=P^3\) và \(P^4=\mathbb{1}\).}
+\end{classroomqa}
+
+\section{Vì sao cần chuẩn bị đại số trước khi học qubit?}
+
+Giờ học đầu tiên đưa ra một trình bày định tính về vật lý cổ điển tất định bằng bit và các mũi tên thuận nghịch. Phần toán học còn lại chuyển cách trình bày ấy sang dạng có thể tiếp tục dùng khi chuyển sang cơ học lượng tử. Cấu hình trở thành một cột; quy luật một bước trở thành ma trận; sự tiến hóa theo thời gian lặp lại trở thành tích các ma trận; tính thuận nghịch trở thành sự tồn tại của ma trận nghịch đảo.
+
+Ta vẫn chưa dùng đến quy tắc lượng tử nào. Sự trì hoãn đó là có chủ ý. Tiếp theo, ta thay các khả năng cổ điển \(\ket{0}\) và \(\ket{1}\) bằng một qubit rồi hỏi những trạng thái mới nào có thể tồn tại. Các vectơ hàng, vectơ cột, tích vô hướng và ma trận được giới thiệu ở đây sẽ cho thấy vì sao thông tin lượng tử khác biệt sâu sắc với một chuỗi bit cổ điển.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:00}
+\audiencequestion{Vì sao phải giới thiệu cả phần đại số ma trận này trước khi nói nó dùng để làm gì?}
+\lecturerresponse{Ta bắt đầu từ vấn đề định tính: nên biểu diễn vật lý tất định bằng trạng thái và quy luật cập nhật như thế nào? Phần đại số là bước chuẩn bị cho nội dung tiếp theo. Một khi qubit được giới thiệu, các phép toán này sẽ không còn có vẻ rời rạc; chúng sẽ là ngôn ngữ tự nhiên để mô tả trạng thái lượng tử và sự tiến hóa của chúng.}
+\end{classroomqa}

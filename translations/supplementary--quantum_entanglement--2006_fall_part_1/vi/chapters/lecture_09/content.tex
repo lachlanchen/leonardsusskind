@@ -1,0 +1,583 @@
+\chapter{Tiến hóa theo thời gian, bảo toàn và các spin tương tác}
+
+Trạng thái lượng tử không phải là một điểm cố định trong không gian Hilbert. Theo thời gian, nó biến đổi, nhưng sự biến đổi ấy phải bảo toàn chuẩn hóa, xác suất và tính phân biệt được mã hóa trong các tích vô hướng. Những yêu cầu này gần như xác định dạng thức của động lực học lượng tử. Tính tuyến tính dẫn đến toán tử tiến hóa theo thời gian; bảo toàn xác suất khiến toán tử đó là đơn nhất; còn một phép biến đổi đơn nhất vô cùng nhỏ được sinh bởi một toán tử Hermite. Toán tử đó là Hamiltonian. Ta sẽ suy ra phương trình Schr\"odinger từ những nhận định này, tìm hiểu cách các trạng thái riêng năng lượng tích lũy pha, rồi áp dụng hình thức luận vào hai phép tính cụ thể: sự tiến động của một spin trong từ trường và dao động giữa hai trạng thái của một cặp spin tương tác.
+
+\section{Chuyển động tuyến tính trong không gian Hilbert}
+
+Gọi trạng thái tại thời điểm \(t\) là \(\ket{\psi(t)}\). Ta giả định trạng thái này liên hệ tuyến tính với trạng thái tại thời điểm không:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+Tính tuyến tính là một tiên đề, không phải định lý suy ra từ một điều gì cơ bản hơn. Đây là một phần của cơ học lượng tử đã được thực nghiệm xác nhận; những nỗ lực thay thế nó thường khiến xác suất hoặc các định luật bảo toàn gặp nguy cơ bị vi phạm. Trong một cơ sở đã chọn, \(U(t)\) đơn giản là một ma trận phụ thuộc thời gian.
+
+Vectơ đối ngẫu tuân theo quy tắc liên hợp. Nếu
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)},
+\end{equation}
+thì
+\begin{equation}
+\bra{\phi(t)}=\bra{\phi(0)}U^\dagger(t).
+\end{equation}
+Với ma trận, dấu dagger chỉ phép lấy liên hợp phức rồi chuyển vị. Vì vậy, bra tuân theo cùng một quy luật tiến hóa như ket, nhưng được biểu diễn trong không gian đối ngẫu.
+
+\subsection{Bảo toàn xác suất kéo theo tính đơn nhất}
+
+Một trạng thái chuẩn hóa biểu diễn tổng xác suất bằng một:
+\begin{equation}
+\braket{\psi(t)}{\psi(t)}=1.
+\end{equation}
+Sự tiến hóa theo thời gian phải bảo toàn chuẩn này. Thực ra, một ánh xạ tuyến tính bảo toàn chuẩn của mọi vectơ cũng bảo toàn mọi tích vô hướng. Xét về hình học, bảo toàn độ dài của hai vectơ và hiệu của chúng đồng nghĩa với việc bảo toàn tam giác do chúng tạo thành, và do đó bảo toàn góc giữa chúng. Trong không gian vectơ phức, cũng có thể suy ra kết luận tương tự bằng cách xét thêm các tổ hợp có thừa số \(i\).
+
+Do đó, với \(\ket{\phi}\) và \(\ket{\psi}\) bất kỳ,
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Thay các quy luật tiến hóa vào, ta được
+\begin{equation}
+\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+Vì phương trình này đúng với mọi cặp vectơ,
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+Toán tử như vậy là toán tử đơn nhất. Đại lượng vô hướng tương ứng là một số phức có môđun bằng một,
+\begin{equation}
+e^{i\theta}\bigl(e^{i\theta}\bigr)^*=1.
+\end{equation}
+Toán tử đơn nhất là sự khái quát hóa của một pha thuần túy cho ma trận: nó có thể làm trạng thái quay trong không gian Hilbert, nhưng không thể kéo giãn hay thu nhỏ trạng thái.
+
+\section{Toán tử sinh vô cùng nhỏ}
+
+Tiến hóa hữu hạn được tạo thành từ những bước thời gian rất nhỏ. Gọi khoảng thời gian đã trôi qua là \(\epsilon\), đủ nhỏ để có thể bỏ qua các số hạng bậc \(\epsilon^2\). Khi khoảng thời gian đã trôi qua bằng không thì không có gì xảy ra, vì thế
+\begin{equation}
+U(0)=I.
+\end{equation}
+Số hạng hiệu chỉnh dẫn đầu phải tỉ lệ với \(\epsilon\). Ta viết nó theo dạng quy ước
+\begin{equation}
+\boxed{U(\epsilon)=I-\frac{i\epsilon}{\hbar}H}.
+\end{equation}
+Ở giai đoạn này, chỉ có thừa số \(\epsilon\) là bắt buộc. Ta chọn \(i\), \(\hbar\) và ký hiệu \(H\) sao cho đại lượng còn lại sau cùng có chuẩn hóa thông dụng và là Hermite.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:46}
+\audiencequestion{Vì sao hằng số Planck lại nhỏ đến thế một cách đáng kinh ngạc khi biểu diễn theo những đơn vị quen thuộc?}
+\lecturerresponse{Độ lớn bằng số phản ánh hệ đơn vị do con người lựa chọn. Các nhà hóa học chọn những lượng vật chất vĩ mô vừa với các bình cỡ cầm tay, trong khi nguyên tử nhỏ hơn con người rất nhiều. Theo các đơn vị thích hợp với những thang vĩ mô đó, lượng tác dụng lượng tử ở cấp nguyên tử tất yếu có vẻ rất nhỏ. Đây không phải là một bí ẩn động lực học riêng biệt; phần lớn điều này bắt nguồn từ thang đo lịch sử do con người đặt ra trong hệ đơn vị.}
+\end{classroomqa}
+
+Lấy liên hợp Hermite,
+\begin{equation}
+U^\dagger(\epsilon)
+=I+\frac{i\epsilon}{\hbar}H^\dagger.
+\end{equation}
+Bây giờ nhân hai biểu thức và chỉ giữ các số hạng bậc nhất:
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(I+\frac{i\epsilon}{\hbar}H^\dagger\right)
+\left(I-\frac{i\epsilon}{\hbar}H\right) \\
+&=
+I+\frac{i\epsilon}{\hbar}\left(H^\dagger-H\right)
++O(\epsilon^2).
+\end{align}
+Tính đơn nhất đòi hỏi tích này bằng \(I\), do đó
+\begin{equation}
+\boxed{H^\dagger=H}.
+\end{equation}
+Toán tử sinh vô cùng nhỏ của sự tiến hóa theo thời gian là Hermite. Vì các toán tử Hermite biểu diễn những đại lượng quan sát được, mọi hệ động lực đều có một đại lượng quan sát được sinh ra sự biến đổi của hệ theo thời gian. Đó là Hamiltonian. Ta dùng \(H\) để chỉ toán tử và dành \(E\) cho các giá trị đo có thể có của nó, tức các trị riêng.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:34}
+\audiencequestion{Vì sao gọi toán tử sinh này là năng lượng? Chẳng phải năng lượng là \(p^2/2m\), hay khả năng thực hiện công sao?}
+\lecturerresponse{Đó là những cách mô tả hữu ích trong một số tình huống cổ điển cụ thể, chứ không phải định nghĩa tổng quát. Biểu thức \(p^2/2m\) chỉ là động năng của một hạt tự do phi tương đối tính, và không thể dùng để định nghĩa những thứ như năng lượng tích trữ trong trường điện từ. Với một hệ trừu tượng, tính chất phổ quát đầu tiên cần đòi hỏi ở năng lượng là sự bảo toàn. Chẳng bao lâu nữa ta sẽ chứng minh rằng giá trị kỳ vọng của \(H\) được bảo toàn, và pha của các trạng thái riêng cũng sẽ thỏa mãn \(E=\hbar\omega\). Hai sự kiện đó xác định toán tử sinh chính là năng lượng.}
+\end{classroomqa}
+
+\section{Từ bước nhỏ đến phương trình Schr\"odinger}
+
+Phép cập nhật vô cùng nhỏ thực chất đã ẩn chứa một phương trình vi phân. Tại một thời điểm gốc bất kỳ,
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+\lim_{\epsilon\to0}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}.
+\end{equation}
+Ban đầu trên bảng viết biểu thức này tại \(t=0\); dịch chuyển gốc thời gian sẽ cho dạng tổng quát ở trên.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_03.png}\caption{Thương sai phân biến sự tiến hóa vô cùng nhỏ thành phương trình vi phân.}\lectureframe{00:22:15}\end{figure}
+
+Đặt
+\begin{equation}
+\ket{\psi(t+\epsilon)}
+=
+\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}.
+\end{equation}
+Khi đó
+\begin{align}
+\frac{d}{dt}\ket{\psi(t)}
+&=
+\lim_{\epsilon\to0}
+\frac{\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}
+-\ket{\psi(t)}}{\epsilon} \\
+&=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{align}
+Tương đương,
+\begin{equation}
+\boxed{
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+Đây là phương trình Schr\"odinger. Khi đã biết \(H\) và trạng thái tại một thời điểm, phương trình xác định trạng thái ở những thời điểm sau đó. Từ đó, xác suất của các phép đo về sau được suy ra theo những quy tắc đo thông thường.
+
+\section{Trạng thái riêng năng lượng và pha quay}
+
+Lời giải đơn giản nhất bắt đầu từ một vectơ riêng của Hamiltonian:
+\begin{equation}
+H\ket{\psi_E}=E\ket{\psi_E}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.70\textwidth]{lecture_09_figure_04.png}\caption{Phương trình trị riêng năng lượng trên bảng.}\lectureframe{00:28:22}\end{figure}
+
+Vì \(H\) đưa \(\ket{\psi_E}\) trở lại cùng một phương, một chiều, nên sự tiến hóa theo thời gian không thể trộn nó với vectơ riêng khác. Trạng thái chỉ có thể được nhân với một đại lượng vô hướng:
+\begin{equation}
+\ket{\psi_E(t)}=f(t)\ket{\psi_E}.
+\end{equation}
+Thay vào phương trình Schr\"odinger, ta được
+\begin{align}
+i\hbar\,\dot f(t)\ket{\psi_E}
+&=
+f(t)H\ket{\psi_E} \\
+&=
+E f(t)\ket{\psi_E}.
+\end{align}
+Do đó
+\begin{equation}
+\dot f(t)=-\frac{iE}{\hbar}f(t),
+\qquad
+f(t)=e^{-iEt/\hbar},
+\end{equation}
+và
+\begin{equation}
+\boxed{
+\ket{\psi_E(t)}
+=e^{-iEt/\hbar}\ket{\psi_E(0)}
+}.
+\end{equation}
+Trạng thái riêng năng lượng là trạng thái dừng theo nghĩa tia của nó trong không gian Hilbert không chuyển động. Tuy vậy, ket của trạng thái vẫn tích lũy pha.
+
+Có thể viết hàm mũ dưới dạng
+\begin{equation}
+e^{-iEt/\hbar}
+=
+\cos\!\left(\frac{Et}{\hbar}\right)
+-i\sin\!\left(\frac{Et}{\hbar}\right).
+\end{equation}
+Dấu trừ và việc không có thêm thừa số \(i\) bên trong hàm sin đã được sửa trong lúc tính toán trên bảng. Tần số góc là
+\begin{equation}
+\omega=\frac{E}{\hbar},
+\qquad
+\boxed{E=\hbar\omega}.
+\end{equation}
+Tương đương, khi dùng tần số thông thường \(\nu=\omega/(2\pi)\), ta có \(E=h\nu\).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_05.png}\caption{Nghiệm pha và quan hệ giữa năng lượng--tần số được triển khai trên hai bảng liền kề.}\lectureframe{00:36:19}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{00:34:43}\audiencequestion{Vì sao đưa các thừa số \(i\) và \(\hbar\) vào toán tử vô cùng nhỏ trước khi phép tính đòi hỏi chúng?}\lecturerresponse{Đó là những quy ước được chọn khi đã biết dạng thức của đáp án. Nếu không có \(i\), tính đơn nhất sẽ khiến toán tử sinh phản Hermite. Nhân với \(i\) biến nó thành một đại lượng quan sát được Hermite với các trị riêng thực. Thừa số \(\hbar\) khiến các trị riêng có đơn vị và quy ước chuẩn hóa của năng lượng. Phát biểu vật lý cốt yếu là tính đơn nhất; các thừa số này đưa toán tử sinh của nó về dạng chuẩn.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{00:36:18}\audiencequestion{\(E=\hbar\omega\) chỉ áp dụng cho sóng điện từ và photon thôi sao?}\lecturerresponse{Không. Photon là một trường hợp quan trọng, nhưng mối liên hệ này tổng quát hơn. Mọi trạng thái riêng của Hamiltonian đều nhận một pha có tần số góc \(E/\hbar\). Muốn liên hệ tần số của một mode trường điện từ với tần số của photon tương ứng cần thêm các kiến thức vật lý khác, nhưng bản thân quan hệ năng lượng--pha đã suy ra từ sự tiến hóa lượng tử theo thời gian.}\end{classroomqa}
+
+\section{Chồng chập trong cơ sở năng lượng}
+
+Một trạng thái riêng năng lượng chỉ biến đổi bằng một pha tổng thể, mà pha tổng thể không thể ảnh hưởng đến xác suất. Động lực học đáng chú ý bắt đầu khi trạng thái chứa nhiều vectơ riêng năng lượng. Vì Hamiltonian Hermite có một cơ sở riêng trực chuẩn đầy đủ,
+\begin{equation}
+H\ket{\psi_n}=E_n\ket{\psi_n},
+\qquad
+\ket{\psi(0)}=\sum_n\alpha_n\ket{\psi_n}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_06.png}\caption{Khai triển trạng thái bất kỳ theo các vectơ riêng của Hamiltonian.}\lectureframe{00:38:35}\end{figure}
+
+Tính tuyến tính cho phép từng thành phần tiến hóa riêng biệt:
+\begin{equation}
+\boxed{
+\ket{\psi(t)}
+=
+\sum_n\alpha_n e^{-iE_n t/\hbar}\ket{\psi_n}
+}.
+\end{equation}
+Các thành phần năng lượng cao quay nhanh quanh mặt phẳng phức; các thành phần năng lượng thấp quay chậm hơn. Điều làm thay đổi xác suất có thể đo được không phải là pha chung cho toàn trạng thái, mà là các pha tương đối thay đổi giữa những thành phần có \(E_n\) khác nhau.
+
+Trong cơ sở năng lượng,
+\begin{equation}
+\begin{aligned}
+H&=
+\begin{pmatrix}
+E_1&0&\cdots\\
+0&E_2&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix},\\[0.6em]
+U(t)&=
+\begin{pmatrix}
+e^{-iE_1t/\hbar}&0&\cdots\\
+0&e^{-iE_2t/\hbar}&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+Có thể tóm tắt cùng nhận định này mà không cần chọn cơ sở:
+\begin{equation}
+\boxed{U(t)=e^{-iHt/\hbar}},
+\end{equation}
+đối với Hamiltonian không phụ thuộc thời gian.
+
+\begin{classroomqa}\lecturetimestamp{00:40:17}\audiencequestion{Phân tích này về cơ bản có phải là một chuỗi Fourier không, và nó có tương tự các phép phân tích dùng trong dẫn nhiệt không?}\lecturerresponse{Đúng vậy, đây là một dạng phân tích theo thời gian giống Fourier: mỗi vectơ riêng năng lượng mang một tần số xác định. Các phương pháp Fourier và Laplace cũng tách các mode trong nhiều phương trình cổ điển, trong đó có phương trình khuếch tán. Sự tương đồng về toán học là có thật, nhưng cần xem xét từng trường hợp để xác định đại lượng vật lý nào tương ứng với tần số. Trong cơ học lượng tử, mối liên hệ cụ thể được xác định bởi phương trình Schr\"odinger.}\end{classroomqa}
+
+\subsection{Tổ hợp các hệ}
+
+Với hai hệ không tương tác \(A\) và \(B\), Hamiltonian của hệ kết hợp là tổng các toán tử sinh riêng tác dụng trên không gian tích:
+\begin{equation}
+H_{AB}
+=
+H_A\otimes I_B+I_A\otimes H_B.
+\end{equation}
+Nếu
+\begin{equation}
+H_A\ket{a}=E_a\ket{a},
+\qquad
+H_B\ket{b}=E_b\ket{b},
+\end{equation}
+thì
+\begin{equation}
+H_{AB}\ket{a,b}=(E_a+E_b)\ket{a,b}.
+\end{equation}
+Năng lượng, và do đó cả tần số pha, cộng lại đối với các hệ tách biệt, không tương tác. Tương tác bổ sung một số hạng \(H_{\mathrm{int}}\), nên tổng đơn giản này không còn biểu diễn toàn bộ năng lượng.
+
+\begin{classroomqa}\lecturetimestamp{00:56:20}\audiencequestion{Nếu hai hệ riêng biệt có các thành phần cùng tần số, điều gì xảy ra khi ghép chúng lại?}\lecturerresponse{Với các hệ không tương tác, các trị riêng năng lượng của hệ kết hợp là tổng các trị riêng riêng lẻ. Hai tần số bằng nhau có thể tạo ra suy biến, nhưng tự nó không làm trộn các vectơ riêng tương ứng. Muốn có sự trộn lẫn cần có số hạng tương tác hoặc cần chọn cơ sở bên trong một không gian con suy biến. Khi các hệ tương tác, phải chéo hóa Hamiltonian mở rộng như một bài toán mới.}\end{classroomqa}
+
+\section{Giá trị kỳ vọng và giao hoán tử}
+
+Ta đã theo dõi trạng thái trong khi giữ các đại lượng quan sát được cố định. Đây là bức tranh Schr\"odinger. Gọi \(A\) là một đại lượng quan sát được không phụ thuộc tường minh vào thời gian. Giá trị kỳ vọng của nó là
+\begin{equation}
+\langle A\rangle_t
+=
+\bra{\psi(t)}A\ket{\psi(t)}.
+\end{equation}
+Lấy đạo hàm theo thời gian của cả bra lẫn ket:
+\begin{equation}
+\frac{d}{dt}\langle A\rangle_t
+=
+\bra{\dot\psi}A\ket{\psi}
++
+\bra{\psi}A\ket{\dot\psi}.
+\end{equation}
+Phương trình Schr\"odinger và liên hợp Hermite của nó cho
+\begin{equation}
+\ket{\dot\psi}
+=-\frac{i}{\hbar}H\ket{\psi},
+\qquad
+\bra{\dot\psi}
+=\frac{i}{\hbar}\bra{\psi}H.
+\end{equation}
+Suy ra
+\begin{align}
+\frac{d}{dt}\langle A\rangle_t
+&=
+\frac{i}{\hbar}\bra{\psi}HA\ket{\psi}
+-\frac{i}{\hbar}\bra{\psi}AH\ket{\psi} \\
+&=
+\frac{i}{\hbar}\bra{\psi}(HA-AH)\ket{\psi}.
+\end{align}
+Định nghĩa giao hoán tử
+\begin{equation}
+[H,A]=HA-AH.
+\end{equation}
+Khi đó, phương trình chuyển động của giá trị kỳ vọng là
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle A\rangle_t
+=
+\frac{i}{\hbar}\langle[H,A]\rangle_t
+}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_07.png}\caption{Phương trình giá trị kỳ vọng và giao hoán tử \(AB-BA=[A,B]\).}\lectureframe{00:51:05}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{00:49:13}\audiencequestion{Vì sao giao hoán tử trong phương trình này lại nằm bên trong giá trị kỳ vọng?}\lecturerresponse{Giao hoán tử là một toán tử. Bất kỳ toán tử nào đặt giữa \(\bra{\psi}\) và \(\ket{\psi}\) cũng có giá trị kỳ vọng, vì vậy \(\bra{\psi}[H,A]\ket{\psi}\) đơn giản là giá trị trung bình của giao hoán tử đó trong trạng thái hiện tại.}\end{classroomqa}
+
+\subsection{Các định luật bảo toàn}
+
+Đặt \(A=H\). Một toán tử luôn giao hoán với chính nó:
+\begin{equation}
+[H,H]=HH-HH=0.
+\end{equation}
+Do đó
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle H\rangle_t=0
+}.
+\end{equation}
+Giá trị kỳ vọng của Hamiltonian được bảo toàn. Đây là cơ sở mang tính cấu trúc mà ta đã hứa sẽ đưa ra để đồng nhất \(H\) với năng lượng. Mọi hệ cô lập đều có Hamiltonian, và mọi Hamiltonian không phụ thuộc thời gian đều kéo theo định luật bảo toàn này.
+
+Tổng quát hơn,
+\begin{equation}
+[H,A]=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\langle A\rangle_t=0.
+\end{equation}
+
+\begin{classroomqa}\lecturetimestamp{00:51:41}\audiencequestion{Tập hợp tất cả các toán tử giao hoán với \(H\) có ý nghĩa vật lý gì, và nó có bao gồm những đại lượng ngoài năng lượng không?}\lecturerresponse{Đó là các đại lượng quan sát được được bảo toàn của hệ. Những đại lượng nào xuất hiện tùy thuộc vào Hamiltonian. Hạt tự do bảo toàn động lượng, trong khi lực có thể phá vỡ sự bảo toàn đó. Năng lượng luôn có mặt vì \(H\) giao hoán với chính nó; các toán tử giao hoán bổ sung biểu thị những đối xứng và định luật bảo toàn khác.}\end{classroomqa}
+
+\section{Một spin trong từ trường}
+
+Xét một spin với các toán tử Pauli
+\begin{equation}
+\boldsymbol{\sigma}
+=(\sigma_1,\sigma_2,\sigma_3)
+\end{equation}
+trong từ trường ngoài cố định \(\mathbf B\). Mômen từ tỉ lệ với spin. Theo quy ước dùng ở đây,
+\begin{equation}
+\boxed{
+H=\frac{\mu}{2}\boldsymbol{\sigma}\cdot\mathbf B
+}.
+\end{equation}
+Thừa số \(1/2\), dấu và hệ số tỉ lệ phụ thuộc điện tích có thể được gộp vào định nghĩa của \(\mu\). Ta xử lý trường theo cách cổ điển: một nam châm lớn, ổn định tạo ra \(\mathbf B\), và ta không mô hình hóa trạng thái lượng tử của nam châm đó.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.68\textwidth]{lecture_09_figure_08.png}\caption{Toán tử mômen từ tương tác với từ trường ngoài.}\lectureframe{01:01:45}\end{figure}
+
+Chọn từ trường hướng theo trục thứ ba,
+\begin{equation}
+\mathbf B=B\hat{\mathbf z},
+\qquad
+H=\frac{\mu B}{2}\sigma_3.
+\end{equation}
+Ta sẽ theo dõi các giá trị kỳ vọng của ba thành phần spin. Để các phương trình gọn hơn, đặt
+\begin{equation}
+s_i(t)=\langle\sigma_i\rangle_t.
+\end{equation}
+Thành phần dọc tuân theo
+\begin{equation}
+\dot s_3
+=
+\frac{i}{\hbar}\langle[H,\sigma_3]\rangle
+=0,
+\end{equation}
+vì \(H\) tỉ lệ với \(\sigma_3\). Hình chiếu của spin lên phương từ trường là cố định. Xét về hình học, đầu mút của spin trung bình phải luôn nằm trên một hình nón có góc mở không đổi quanh trục từ trường.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.58\textwidth]{lecture_09_figure_09.png}\caption{Spin dọc không đổi nên chuyển động diễn ra trên một hình nón quanh trục từ trường.}\lectureframe{01:04:45}\end{figure}
+
+Đối với thành phần ngang thứ nhất,
+\begin{equation}
+\dot s_1
+=
+\frac{i\mu B}{2\hbar}
+\langle[\sigma_3,\sigma_1]\rangle.
+\end{equation}
+Có thể kiểm tra trực tiếp giao hoán tử từ
+\begin{equation}
+\begin{aligned}
+\sigma_3&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+&
+\sigma_1&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.5em]
+\sigma_2&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\end{aligned}
+\end{equation}
+Thật vậy,
+\begin{equation}
+\sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_3=-i\sigma_2,
+\end{equation}
+nên
+\begin{equation}
+[\sigma_3,\sigma_1]=2i\sigma_2.
+\end{equation}
+Do đó,
+\begin{equation}
+\dot s_1=-\frac{\mu B}{\hbar}s_2.
+\end{equation}
+Tương tự, dùng \([\sigma_3,\sigma_2]=-2i\sigma_1\), ta được
+\begin{equation}
+\dot s_2=\frac{\mu B}{\hbar}s_1.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_10.png}\caption{Phép tính giao hoán tử Pauli dẫn đến phương trình chuyển động ngang.}\lectureframe{01:09:35}\end{figure}
+
+Đặt
+\begin{equation}
+\Omega=\frac{\mu B}{\hbar}.
+\end{equation}
+Ba phương trình là
+\begin{equation}
+\dot s_1=-\Omega s_2,
+\qquad
+\dot s_2=\Omega s_1,
+\qquad
+\dot s_3=0.
+\end{equation}
+Một nghiệm có biên độ ngang \(s_\perp\) là
+\begin{equation}
+s_1(t)=s_\perp\cos(\Omega t+\varphi),
+\qquad
+s_2(t)=s_\perp\sin(\Omega t+\varphi),
+\end{equation}
+trong đó \(s_3\) không đổi.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.64\textwidth]{lecture_09_figure_11.png}\caption{Các thành phần spin ngang tạo thành một cặp sin--cos với tần số góc \(\mu B/\hbar\).}\lectureframe{01:11:45}\end{figure}
+
+Vì thế, spin trung bình tiến động quanh từ trường như một con quay hồi chuyển. Việc chọn từ trường dọc theo \(z\) chỉ nhằm thuận tiện cho phép tính. Với từ trường theo bất kỳ hướng nào, thành phần song song với \(\mathbf B\) được bảo toàn, còn thành phần vuông góc quay quanh hướng đó.
+
+\begin{classroomqa}\lecturetimestamp{01:13:02}\audiencequestion{Nghiệm sin và cos có cần chứa thêm một pha không?}\lecturerresponse{Có. Pha \(\varphi\) xác định hướng ban đầu trong mặt phẳng ngang, hoặc tương đương, xác định thời điểm được chọn làm \(t=0\). Đặt pha này bằng không chỉ đơn thuần là chọn spin bắt đầu dọc theo một trục ngang cụ thể.}\end{classroomqa}
+
+\subsection{Chuẩn bị và phép đo}
+
+Giả sử ta chuẩn bị một tập hợp các hệ ở trạng thái riêng \(+1\) của \(\sigma_1\). Tại \(t=0\), phép đo \(\sigma_1\) chắc chắn cho kết quả \(+1\), trong khi phép đo \(\sigma_2\) hoặc \(\sigma_3\) cho xác suất bằng nhau để thu được \(\pm1\). Sau một phần tư chu kỳ tiến động, trạng thái đã quay thành trạng thái riêng \(+1\) của \(\sigma_2\): khi đó, \(\sigma_2\) chắc chắn có giá trị xác định, còn \(\sigma_1\) hoàn toàn bất định. Sau thêm một phần tư chu kỳ nữa, trạng thái đạt đến trạng thái riêng \(-1\) của \(\sigma_1\). Vì vậy, các giá trị kỳ vọng quay có ý nghĩa thực nghiệm trực tiếp.
+
+\begin{classroomqa}\lecturetimestamp{01:14:04}\audiencequestion{Nếu cần nhiều electron để xác định giá trị kỳ vọng, chẳng phải mỗi electron trong tập hợp sẽ có pha khác nhau và làm mất sự tiến động sao?}\lecturerresponse{Không, nếu cùng một thí nghiệm được thực hiện trên từng electron. Khi được chuẩn bị giống nhau, mọi electron đều có cùng trạng thái ban đầu và do đó tiến hóa với cùng pha. Nếu pha ban đầu của chúng không được kiểm soát, tập hợp đó không phải là một trạng thái chuẩn bị thuần; đó là một trạng thái hỗn hợp, và sự mất kết hợp pha có thể làm giảm giá trị trung bình ngang.}\end{classroomqa}
+
+\section{Hai spin tương tác}
+
+Bây giờ xét hai spin. Chỉ nói rằng chúng vướng víu thì chưa đủ để dự đoán chúng sẽ diễn biến ra sao. Muốn xác định động lực học, cần có Hamiltonian.
+
+\begin{classroomqa}\lecturetimestamp{01:16:49}\audiencequestion{Nếu hai electron vướng víu sao cho kết quả đo dọc theo mọi trục chung luôn trái dấu, điều đó có nghĩa là chuyển động của chúng luôn lệch pha \(180^\circ\) sao?}\lecturerresponse{Chỉ từ sự vướng víu thì không thể rút ra kết luận nào về động lực học. Tính tương quan ngược vừa nêu mô tả trạng thái singlet, nhưng diễn biến tiếp theo của trạng thái phụ thuộc vào toán tử năng lượng. Trước tiên, ta phải xác định có từ trường ngoài, tương tác giữa các spin, hay cả hai.}\end{classroomqa}
+
+Xét tương tác đẳng hướng đơn giản, trong đó mỗi spin tạo ra trường hiệu dụng mà spin kia cảm nhận:
+\begin{equation}
+\boxed{
+H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}
+=
+J\left(
+\sigma_1\tau_1+\sigma_2\tau_2+\sigma_3\tau_3
+\right)
+}.
+\end{equation}
+Các toán tử \(\boldsymbol{\sigma}\) tác dụng lên spin thứ nhất, còn \(\boldsymbol{\tau}\) tác dụng lên spin thứ hai. Hệ số liên kết \(J\) xác định thang năng lượng; ở đây chưa quy định giá trị hay dấu của nó.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.75\textwidth]{lecture_09_figure_12.png}\caption{Tương tác đẳng hướng giữa hai spin \(H\propto\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\).}\lectureframe{01:19:20}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{01:17:49}\audiencequestion{Đặt hai electron vướng víu trong từ trường đều có nhất thiết làm chúng mất vướng víu không?}\lecturerresponse{Không nhất thiết. Từ trường làm thay đổi Hamiltonian và có thể khiến các spin có xu hướng thẳng hàng, đặc biệt nếu trường mạnh, nhưng sự tiến hóa đơn nhất trong từ trường đều tự nó không đảm bảo rằng vướng víu sẽ mất đi. Câu trả lời phụ thuộc vào Hamiltonian đầy đủ và trạng thái ban đầu.}\end{classroomqa}
+
+\subsection{Năng lượng singlet và triplet}
+
+Không gian Hilbert của hai spin có số chiều là bốn. Tương tác này chéo hóa trong cơ sở triplet--singlet:
+\begin{align}
+\ket{T_+}&=\ket{\uparrow\uparrow}, \\
+\ket{T_0}&=
+\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt2}, \\
+\ket{T_-}&=\ket{\downarrow\downarrow}, \\
+\ket{S}&=
+\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{align}
+Ba trạng thái triplet có chung năng lượng \(E_T\); trạng thái singlet có năng lượng \(E_S\) khác. Như vậy, có bốn vectơ riêng độc lập nhưng chỉ có hai mức năng lượng phân biệt. Mức triplet suy biến bậc ba.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_13.png}\caption{Hamiltonian của hai spin tương tác có một mức triplet suy biến và một mức singlet riêng biệt.}\lectureframe{01:20:30}\end{figure}
+
+\begin{classroomqa}\lecturetimestamp{01:21:16}\audiencequestion{Điều gì xảy ra nếu trạng thái ban đầu vốn đã là trạng thái riêng năng lượng singlet?}\lecturerresponse{Trạng thái vẫn là singlet và chỉ tích lũy pha \(e^{-iE_St/\hbar}\). Cũng như với mọi trạng thái riêng năng lượng đơn, các tính chất có thể đo của nó không thay đổi chỉ vì ket được nhân với pha chung đó.}\end{classroomqa}
+
+\begin{classroomqa}\lecturetimestamp{01:21:54}\audiencequestion{Trong phép tính này, từ trường ngoài có cung cấp năng lượng cho hệ hai spin không?}\lecturerresponse{Ví dụ đang giải không có từ trường ngoài. Trường duy nhất được xét ở đây là tương tác tương hỗ biểu diễn bởi \(J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\). Thêm từ trường ngoài sẽ bổ sung một số hạng khác vào \(H\) và xác định một bài toán khác.}\end{classroomqa}
+
+\subsection{Bắt đầu với một spin lên và một spin xuống}
+
+Trạng thái riêng năng lượng chỉ tích lũy pha, vì vậy hãy chọn một trạng thái tích không phải là trạng thái riêng năng lượng:
+\begin{equation}
+\ket{\psi(0)}=\ket{\uparrow\downarrow}.
+\end{equation}
+Khai triển trạng thái này theo hai vectơ riêng liên quan:
+\begin{equation}
+\boxed{
+\ket{\uparrow\downarrow}
+=
+\frac{1}{\sqrt2}\ket{T_0}
++
+\frac{1}{\sqrt2}\ket{S}
+}.
+\end{equation}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_14.png}\caption{Trạng thái tích \(\ket{\uparrow\downarrow}\) khai triển thành các thành phần triplet và singlet.}\lectureframe{01:24:30}\end{figure}
+
+Giờ đây mỗi thành phần năng lượng nhận một pha riêng:
+\begin{equation}
+\ket{\psi(t)}
+=
+\frac{e^{-iE_Tt/\hbar}}{\sqrt2}\ket{T_0}
++
+\frac{e^{-iE_St/\hbar}}{\sqrt2}\ket{S}.
+\end{equation}
+
+\begin{classroomqa}\lecturetimestamp{01:25:59}\audiencequestion{Năng lượng triplet \(E_T\) hay năng lượng singlet \(E_S\) lớn hơn?}\lecturerresponse{Điều đó phụ thuộc vào dấu của hệ số liên kết. Với \(H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\) và \(J>0\), singlet có năng lượng thấp hơn còn triplet có năng lượng cao hơn; đổi dấu sẽ đảo ngược thứ tự này. Cộng một hằng số vào cả hai năng lượng chỉ làm thay đổi pha tổng thể, nên có thể chọn một trong hai mức bằng không mà không làm thay đổi xác suất chuyển trạng thái.}\end{classroomqa}
+
+Trở lại cơ sở tích:
+\begin{align}
+\ket{\psi(t)}
+&=
+\frac12
+\left(
+e^{-iE_Tt/\hbar}+e^{-iE_St/\hbar}
+\right)\ket{\uparrow\downarrow} \\
+&\quad+
+\frac12
+\left(
+e^{-iE_Tt/\hbar}-e^{-iE_St/\hbar}
+\right)\ket{\downarrow\uparrow}.
+\end{align}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_15.png}\caption{Trạng thái đã tiến hóa được viết lại trong cơ sở \(\ket{\uparrow\downarrow}\), \(\ket{\downarrow\uparrow}\).}\lectureframe{01:30:40}\end{figure}
+
+Tại \(t=0\), hệ số của \(\ket{\downarrow\uparrow}\) bằng không, đúng như phải vậy. Ở các thời điểm sau đó, pha tương đối giữa các thành phần singlet và triplet khiến hệ số này tăng lên. Đặt năng lượng trung bình và độ chênh năng lượng là
+\begin{equation}
+\overline E=\frac{E_T+E_S}{2},
+\qquad
+\Delta E=E_T-E_S.
+\end{equation}
+Tách pha ứng với năng lượng trung bình ra, ta được
+\begin{equation}
+\boxed{
+\begin{aligned}
+\ket{\psi(t)}
+&=e^{-i\overline E t/\hbar}\Biggl[
+\cos\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\uparrow\downarrow}
+\\
+&\qquad
+-i\sin\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\downarrow\uparrow}
+\Biggr]
+\end{aligned}
+}.
+\end{equation}
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_16.png}\caption{Năng lượng trung bình tạo thành pha chung, còn độ tách mức singlet--triplet thể hiện trong các biên độ sin và cos.}\lectureframe{01:35:15}\end{figure}
+
+Thừa số \(e^{-i\overline E t/\hbar}\) chung cho toàn bộ ket nên triệt tiêu khỏi mọi xác suất. Các xác suất đo được là
+\begin{equation}
+P_{\uparrow\downarrow}(t)
+=
+\cos^2\!\left(\frac{\Delta E\,t}{2\hbar}\right),
+\qquad
+P_{\downarrow\uparrow}(t)
+=
+\sin^2\!\left(\frac{\Delta E\,t}{2\hbar}\right).
+\end{equation}
+Trạng thái dao động từ \(\ket{\uparrow\downarrow}\) sang \(\ket{\downarrow\uparrow}\) rồi trở lại, với tốc độ chỉ do độ chênh năng lượng quyết định. Ở những thời điểm trung gian, cả hai biên độ đều khác không, và trừ một số thời điểm đặc biệt, hai spin ở trạng thái vướng víu.
+
+Phép tính này minh họa một phương pháp tổng quát. Chọn cơ sở phù hợp với câu hỏi vật lý, khai triển trạng thái ban đầu theo các vectơ riêng của Hamiltonian, để mỗi vectơ riêng nhận pha của nó, rồi tổ hợp các thành phần trở lại trong cơ sở đo. Khi đã chéo hóa Hamiltonian, động lực học lượng tử trở nên có hệ thống; mọi chuyển động quan sát được đều do pha tương đối chi phối.

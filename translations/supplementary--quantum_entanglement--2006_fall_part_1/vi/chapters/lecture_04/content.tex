@@ -1,0 +1,723 @@
+\chapter{Hình học spin và trạng thái vướng víu đầu tiên}
+
+\lectureoverview{Vướng víu là tính chất của các hệ gồm nhiều phần, nhưng không thể khảo sát trung thực bài toán hai spin khi chưa hoàn tất phần cơ sở về một spin. Vì vậy, ta bắt đầu với spin theo một trục tùy ý, suy ra xác suất chuyển tiếp giữa hai hướng, diễn giải phép đo như một bộ lọc, rồi xác định tính giao hoán là tiêu chuẩn cho các đại lượng quan sát tương thích. Sau đó, một lập luận đếm cho thấy hai spin có nhiều trạng thái thuần hơn số trạng thái có thể tạo ra bằng cách chuẩn bị riêng từng spin. Những trạng thái dư ra là các trạng thái vướng víu; ví dụ đơn giản nhất đã có tương quan cặp xác định, trong khi mỗi electron riêng lẻ hoàn toàn không phân cực.}
+
+\section{Hoàn tất bài toán một spin}
+
+Định lý Bell có thể để sau. Bản thân vướng víu bắt đầu từ hai electron, nhưng phần cấu trúc còn lại của một electron sẽ xuất hiện trong mọi phép tính. Vì thế, ta hãy hoàn tất hệ hai trạng thái trước khi ghép hai bản sao của nó lại.
+
+Chọn một vectơ đơn vị thông thường trong không gian:
+\begin{equation}
+  \hat n=(n_1,n_2,n_3),
+  \qquad
+  n_1^2+n_2^2+n_3^2=1.
+  \label{eq:l04-unit-pointer}
+\end{equation}
+Các nhãn \(1,2,3\) cũng có thể gọi là \(x,y,z\). Điều quan trọng là các trục phải tạo thành một hệ tọa độ thuận nhất quán.
+
+\begin{classroomqa}
+\lecturetimestamp{00:02:33}
+\audiencequestion{Bộ ba trục tọa độ vẽ trên bảng có thuận không?}
+\lecturerresponse{Hình phác đầu tiên là hệ tọa độ nghịch. Đảo chiều trục thứ hai hoặc đổi nhãn hai trục một cách nhất quán sẽ khắc phục được điều đó. Phép tính dưới đây chỉ dùng một quy ước thuận cố định; hướng vô tình của hình vẽ không mang ý nghĩa vật lý nào.}
+\end{classroomqa}
+
+Spin có ba thành phần quan sát được, được biểu diễn bằng các ma trận Pauli:
+\begin{equation}
+  \begin{aligned}
+    \sigma_1&=
+    \begin{pmatrix}0&1\\1&0\end{pmatrix},
+    &
+    \sigma_2&=
+    \begin{pmatrix}0&-i\\i&0\end{pmatrix},\\[0.5em]
+    \sigma_3&=
+    \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+  \end{aligned}
+\end{equation}
+Thành phần theo \(\hat n\) là tích vô hướng thông thường trong không gian của con trỏ với vectơ ma trận này:
+\begin{equation}
+  \sigma_{\hat n}
+  \equiv
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3.
+  \label{eq:l04-sigma-dot-n}
+\end{equation}
+Đây là tích vô hướng trong không gian vật lý ba chiều, không phải tích vô hướng của hai vectơ trạng thái.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_02.png}
+\caption{Thành phần không gian theo \(\hat n\) trở thành tổ hợp tuyến tính của ba đại lượng quan sát dạng ma trận.}
+\lectureframe{00:05:09}
+\end{figure}
+
+Thay các ma trận Pauli vào ta được:
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3 & n_1-in_2\\
+    n_1+in_2 & -n_3
+  \end{pmatrix}.
+  \label{eq:l04-sigma-n-matrix}
+\end{equation}
+Để tiện, đặt:
+\begin{equation}
+  n_-=n_1-in_2,
+  \qquad
+  n_+=n_1+in_2=n_-^*,
+\end{equation}
+Khi đó:
+\begin{equation}
+  \sigma_{\hat n}
+  =
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}.
+\end{equation}
+Các phần tử đường chéo thực và các phần tử ngoài đường chéo liên hợp cho thấy toán tử này là Hermite.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_03.png}
+\caption{Đại lượng spin theo trục tùy ý, viết tường minh dưới dạng ma trận hai chiều.}
+\lectureframe{00:07:34}
+\end{figure}
+
+Xét về thao tác thực nghiệm, đo \(\sigma_{\hat n}\) nghĩa là định hướng một từ trường mạnh theo \(\hat n\) rồi quan sát đáp ứng phụ thuộc spin, được biểu diễn trong bài giảng bằng việc photon có phát ra hay không. Ma trận và câu hỏi đặt ra trong phòng thí nghiệm là hai cách mô tả cùng một phép đo.
+
+Hai đồng nhất thức đơn giản sẽ giúp ta thực hiện phần còn lại của phép tính. Thứ nhất:
+\begin{equation}
+  \sigma_{\hat n}^{\,2}=I.
+  \label{eq:l04-sigma-n-square}
+\end{equation}
+Có thể suy ra điều này bằng cách nhân Equation~\eqref{eq:l04-sigma-n-matrix} với chính nó, hoặc dùng:
+\begin{equation}
+  \sigma_i^2=I,
+  \qquad
+  \sigma_i\sigma_j=-\sigma_j\sigma_i
+  \quad(i\ne j).
+\end{equation}
+Vì vậy, mọi trị riêng \(\lambda\) của \(\sigma_{\hat n}\) đều thỏa \(\lambda^2=1\), nên các kết quả có thể có chỉ là:
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+Thứ hai:
+\begin{equation}
+  n_+n_-
+  =n_1^2+n_2^2
+  =1-n_3^2
+  =(1-n_3)(1+n_3).
+  \label{eq:l04-nplus-nminus}
+\end{equation}
+Đây không phải định lý sâu sắc, nhưng chính đồng nhất thức này giúp phép tính đại số với vectơ riêng không trở nên rối rắm.
+
+\section{Từ trạng thái chuẩn bị đến xác suất}
+
+Chuẩn bị electron ở trạng thái spin \(+1\) theo \(\hat n\), rồi đo theo một hướng khác \(\hat m\). Câu hỏi cốt yếu về một spin là:
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  P(\sigma_{\hat m}=+1\mid\sigma_{\hat n}=+1).
+  \label{eq:l04-central-probability}
+\end{equation}
+Tính đối xứng gợi ý rằng câu trả lời chỉ nên phụ thuộc vào góc giữa \(\hat n\) và \(\hat m\), và việc đổi chỗ hai hướng không làm thay đổi kết quả. Những kỳ vọng đó là phép kiểm tra hữu ích, chứ không thể thay thế tiên đề xác suất.
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:03}
+\audiencequestion{Bản thân cơ học lượng tử cho ta biết ba ma trận Pauli là toán tử spin, hay ta biết điều đó từ thực nghiệm?}
+\lecturerresponse{Việc đồng nhất này là một phần của cấu trúc thực nghiệm được tích lũy trong cơ học lượng tử, chứ không phải kết quả của một thí nghiệm riêng lẻ. Các thí nghiệm spin lặp đi lặp lại bộc lộ những quy luật xác suất; hình thức ma trận được xây dựng qua công trình của Einstein, Born, Heisenberg, Dirac và những người khác để mô tả các quy luật ấy. Các tiên đề là những giả thuyết có mức độ thành công đặc biệt cao, được dữ liệu thực nghiệm ràng buộc.}
+\end{classroomqa}
+
+Đặt:
+\begin{equation}
+  \sigma_{\hat n}\ket{n,+}=\ket{n,+},
+  \qquad
+  \sigma_{\hat m}\ket{m,+}=\ket{m,+}.
+  \label{eq:l04-nm-eigenstates}
+\end{equation}
+Các ký hiệu \(n,+\) và \(m,+\) là nhãn bên trong ket. Chúng chỉ các trạng thái riêng có trị riêng là \(+1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_04.png}
+\caption{Các trạng thái riêng \(+1\) của spin theo \(\hat n\) và \(\hat m\).}
+\lectureframe{00:17:36}
+\end{figure}
+
+Đại lượng đầu tiên cần tính là biên độ xác suất:
+\begin{equation}
+  \mathcal A(m,+\mid n,+)=\braket{m,+}{n,+}.
+\end{equation}
+Xác suất là bình phương môđun của biên độ đó:
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \left|\braket{m,+}{n,+}\right|^2.
+  \label{eq:l04-born-nm}
+\end{equation}
+Trước hết là biên độ, sau đó mới đến xác suất: thứ tự ấy là bước cốt yếu của cơ học lượng tử.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_04_figure_05.png}
+\caption{Tích chồng lấp giữa trạng thái \(n\) được chuẩn bị và trạng thái \(m\) được kiểm tra chính là biên độ xác suất.}
+\lectureframe{00:19:59}
+\end{figure}
+
+\subsection{Giải trạng thái riêng}
+
+Viết một vectơ riêng \(+1\) khả dĩ của \(\sigma_{\hat n}\) dưới dạng:
+\begin{equation}
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix}.
+\end{equation}
+Chưa cần chuẩn hóa, và pha tổng thể không có ảnh hưởng vật lý. Vì vậy, trong miền tọa độ không chứa cực nam, ta có thể chọn \(\alpha=1\) và viết \(\beta=z\). Thành phần trên của:
+\begin{equation}
+  \begin{pmatrix}
+    n_3&n_-\\
+    n_+&-n_3
+  \end{pmatrix}
+  \begin{pmatrix}1\\z\end{pmatrix}
+  =
+  \begin{pmatrix}1\\z\end{pmatrix}
+\end{equation}
+cho ta:
+\begin{equation}
+  n_3+n_-z=1,
+  \qquad
+  z=\frac{1-n_3}{n_-}.
+  \label{eq:l04-z-solution}
+\end{equation}
+Thành phần dưới cũng cho cùng điều kiện khi dùng Equation~\eqref{eq:l04-nplus-nminus}.
+
+Bình phương chuẩn của vectơ chưa chuẩn hóa là:
+\begin{align}
+  \begin{pmatrix}
+    1&\dfrac{1-n_3}{n_+}
+  \end{pmatrix}
+  \begin{pmatrix}
+    1\\[3pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}
+  &=
+  1+\frac{(1-n_3)^2}{n_+n_-}
+  \notag\\
+  &=
+  1+\frac{1-n_3}{1+n_3}
+  =
+  \frac{2}{1+n_3}.
+  \label{eq:l04-unnormalized-norm}
+\end{align}
+Do đó, một lựa chọn đã chuẩn hóa là:
+\begin{equation}
+  \ket{n,+}
+  =
+  \sqrt{\frac{1+n_3}{2}}
+  \begin{pmatrix}
+    1\\[5pt]\dfrac{1-n_3}{n_-}
+  \end{pmatrix}.
+  \label{eq:l04-normalized-n-state}
+\end{equation}
+Tại \(n_3=-1\), biểu thức tọa độ này bị kỳ dị dù trạng thái không kỳ dị; trạng thái riêng đơn giản là \(\ket d=(0,1)^T\). Điểm kỳ dị thuộc về quy ước pha, không thuộc về spin.
+
+Thay \(n\) bằng \(m\) rồi lấy liên hợp, ta được:
+\begin{equation}
+  \bra{m,+}
+  =
+  \sqrt{\frac{1+m_3}{2}}
+  \begin{pmatrix}
+    1&
+    \dfrac{1-m_3}{m_+}
+  \end{pmatrix}.
+\end{equation}
+Biểu thức tích chồng lấp trông đã phức tạp, nhân nó với liên hợp lại còn rắc rối hơn. Dùng Equation~\eqref{eq:l04-nplus-nminus} nhiều lần, ta rút gọn được:
+\begin{equation}
+  \begin{aligned}
+    P(m,+\mid n,+)
+    &=\frac{1+n_1m_1+n_2m_2+n_3m_3}{2}\\
+    &=\frac{1+\hat n\cdot\hat m}{2}.
+  \end{aligned}
+  \label{eq:l04-spin-transition-probability}
+\end{equation}
+Nếu \(\theta_{nm}\) là góc giữa hai hướng trong không gian,
+\begin{equation}
+  P(m,+\mid n,+)
+  =
+  \frac{1+\cos\theta_{nm}}{2}
+  =
+  \cos^2\frac{\theta_{nm}}{2}.
+  \label{eq:l04-half-angle-probability}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:32:47}
+\audiencequestion{Tích chồng lấp có phải bằng không vì hai trạng thái trực giao không?}
+\lecturerresponse{Không. Các nhãn \(m,+\) và \(n,+\) chỉ hai trục đo khác nhau, chứ không chỉ hai trị riêng của cùng một đại lượng quan sát cố định. Nếu \(m=n\), hai trạng thái trùng nhau và tích chồng lấp bằng một. Chúng chỉ trực giao khi hai hướng vật lý đối nhau, sao cho một trạng thái là trạng thái \(+1\) còn trạng thái kia là trạng thái \(-1\) của cùng một thành phần spin.}
+\end{classroomqa}
+
+\section{Ý nghĩa của công thức xác suất}
+
+Equation~\eqref{eq:l04-spin-transition-probability} vượt qua ngay ba phép kiểm tra:
+\begin{align}
+  \hat m=\hat n
+  &\quad\Longrightarrow\quad P=1,
+  \notag\\
+  \hat m=-\hat n
+  &\quad\Longrightarrow\quad P=0,
+  \notag\\
+  \hat m\cdot\hat n=0
+  &\quad\Longrightarrow\quad P=\frac12.
+\end{align}
+Câu trả lời chỉ phụ thuộc vào góc tương đối và đối xứng dưới phép đổi \(m\leftrightarrow n\). Xoay toàn bộ thiết bị không làm thay đổi dự đoán nào.
+
+Đây là sự dung hòa đáng chú ý của spin một phần hai. Theo mọi trục, kết quả quan sát vẫn là \(+1\) hoặc \(-1\), không bao giờ là một giá trị spin phân số. Sự phụ thuộc trơn theo phép quay thay vào đó xuất hiện trong xác suất của hai kết quả rời rạc ấy.
+
+\begin{classroomqa}
+\lecturetimestamp{00:39:20}
+\audiencequestion{Làm sao biết các lần thử lặp lại đều đo cùng một electron, và xác suất được đo như thế nào?}
+\lecturerresponse{Có thể giam một electron trong một hốc và theo dõi điện tích bảo toàn qua thông lượng điện của nó, chuẩn bị lại electron đó theo \(\hat n\), rồi lặp lại phép đo theo \(\hat m\). Một cách tương đương là chuẩn bị một tập hợp lớn electron giống hệt nhau và đo mỗi electron một lần. Tỷ lệ dài hạn của các kết quả cộng và trừ là như nhau trong cả hai quy trình, trong phạm vi sai số thống kê.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:41:29}
+\audiencequestion{Có phải đo tất cả các hạt trong tập hợp bằng một phép đo tập thể duy nhất không?}
+\lecturerresponse{Không. Mỗi hạt được chuẩn bị theo cùng một quy trình rồi đo riêng. Một triệu lần thử như vậy chỉ tạo thành một thí nghiệm thống kê theo nghĩa là tần suất các kết quả của chúng dùng để ước lượng cùng một xác suất.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:42:23}
+\audiencequestion{Nếu dùng lại một electron thì nó có thể phát ra bao nhiêu photon?}
+\lecturerresponse{Không có hạn mức cố định về số lần phát trong suốt thời gian tồn tại. Mỗi chu kỳ đều cần công từ bên ngoài khi bật từ trường. Nếu spin ở hướng có năng lượng cao hơn, năng lượng được cung cấp đó có thể thoát ra dưới dạng photon trong quá trình hồi giãn. Vì vậy, về nguyên tắc, thiết bị có thể lặp lại chu kỳ chuẩn bị và phát xạ vô hạn lần.}
+\end{classroomqa}
+
+Khi đã biết tính bất biến quay, có thể suy ra công thức rất nhanh: chọn \(\hat n\) làm trục thứ ba, khi đó \(\ket{n,+}=(1,0)^T\), rồi đọc xác suất từ thành phần trên của \(\ket{m,+}\). Nhưng dùng ngay lối tắt ấy từ đầu sẽ mặc nhiên giả định tính đối xứng mà phép tính tường minh vừa chứng minh.
+
+\begin{classroomqa}
+\lecturetimestamp{00:43:33}
+\audiencequestion{Chọn một cơ sở tốt hơn có thể loại bỏ các vectơ riêng theo trục tùy ý phức tạp không?}
+\lecturerresponse{Có. Khi đã có khái niệm phép quay và biến đổi unita, ta có thể đặt một trục tọa độ trùng với một trong các hướng để phép tính trở nên ngắn gọn. Ở giai đoạn này, phép tính tường minh có một mục đích: xác nhận rằng các ma trận Pauli đã chọn thực sự cho câu trả lời bất biến quay, thay vì giả định điều đó.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:48:30}
+\audiencequestion{Lý do vật lý nào khiến câu trả lời chỉ phụ thuộc vào góc?}
+\lecturerresponse{Lời giải thích về mặt cấu trúc thuộc về lý thuyết đối xứng lượng tử: phép quay không gian được biểu diễn bằng các biến đổi unita tác động lên trạng thái và đại lượng quan sát spin. Ta sẽ bàn đến cách diễn đạt ấy sau. Còn lúc này, sự phụ thuộc vào góc là kết quả đã được phép tính ma trận Pauli xác lập.}
+\end{classroomqa}
+
+\section{Phép đo là một bộ lọc}
+
+Phép đo không chỉ cho biết một con số. Nếu đo \(\sigma_{\hat m}\) và thu được kết quả \(+1\), electron sẽ ở lại trong trạng thái \(\ket{m,+}\). Thiết bị vừa đóng vai trò máy dò, vừa chuẩn bị trạng thái, giống như kính phân cực kiểm tra photon rồi để photon truyền qua bị phân cực theo chính trục của nó.
+
+Quy tắc biến đổi trạng thái này khiến bài toán đo đồng thời trở nên cụ thể. Hai đại lượng quan sát chỉ có thể cùng có giá trị xác định và lặp lại được nếu tồn tại các trạng thái là vectơ riêng của cả hai.
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:29}
+\audiencequestion{Một phép đo có thể đồng thời xác định hai thành phần spin khác nhau, chẳng hạn \(\sigma_1\) và \(\sigma_2\), không?}
+\lecturerresponse{Không. Các vectơ riêng của chúng khác nhau. Phép đo một thành phần đưa electron về trạng thái riêng của thành phần đó, nhưng trạng thái ấy không phải trạng thái riêng của thành phần kia. Vì vậy, phép đo thứ nhất phá hủy tính xác định cần có cho phép đo thứ hai.}
+\end{classroomqa}
+
+Phát biểu tổng quát trong không gian hữu hạn chiều được nêu gọn nhất cho các toán tử Hermite.
+
+\begin{theorem}
+Hai toán tử Hermite \(A\) và \(B\) đồng thời chéo hóa được khi và chỉ khi chúng giao hoán:
+\begin{equation}
+  [A,B]\equiv AB-BA=0.
+  \label{eq:l04-commutator}
+\end{equation}
+Tương đương, chúng có một cơ sở riêng trực chuẩn chung đầy đủ.
+\end{theorem}
+
+Để chứng minh chiều thuận đơn giản, giả sử:
+\begin{equation}
+  A\ket{\alpha_i}=\lambda_i\ket{\alpha_i},
+  \qquad
+  B\ket{\alpha_i}=\mu_i\ket{\alpha_i}
+\end{equation}
+cho một cơ sở đầy đủ. Khi đó:
+\begin{align}
+  AB\ket{\alpha_i}
+  &=\lambda_i\mu_i\ket{\alpha_i},
+  \notag\\
+  BA\ket{\alpha_i}
+  &=\mu_i\lambda_i\ket{\alpha_i},
+\end{align}
+vì vậy \(AB\) và \(BA\) tác động như nhau lên mọi vectơ cơ sở. Do đó \(AB=BA\). Ngược lại, nếu các toán tử Hermite \(A\) và \(B\) giao hoán, thì \(B\) bảo toàn từng không gian riêng của \(A\); chéo hóa \(B\) trong từng không gian riêng suy biến sẽ tạo ra một cơ sở riêng chung.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\linewidth]{lecture_04_figure_06.png}
+\caption{Hai đại lượng quan sát có thể có cùng vectơ riêng nhưng gán cho chúng các trị riêng khác nhau.}
+\lectureframe{00:55:45}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:53:56}
+\audiencequestion{Ta có thể đồng thời áp dụng từ trường theo \(x\) và \(y\) rồi gọi đó là phép đo đồng thời không?}
+\lecturerresponse{Các từ trường cộng lại thành một hướng tổng hợp. Khi đó, thiết bị đo spin theo trục tổng hợp ấy, có thể là \(45^\circ\), chứ không đo riêng \(\sigma_x\) và \(\sigma_y\). Cách bố trí đó tạo ra một đại lượng quan sát thứ ba, chứ không cho hai kết quả đo tương thích.}
+\end{classroomqa}
+
+\section{Mọi trạng thái thuần một spin đều có một trục}
+
+Giờ hãy đảo ngược bài toán vectơ riêng. Với một spinor chuẩn hóa tùy ý:
+\begin{equation}
+  \ket\psi=
+  \begin{pmatrix}\alpha\\\beta\end{pmatrix},
+  \qquad
+  |\alpha|^2+|\beta|^2=1,
+  \label{eq:l04-general-spinor}
+\end{equation}
+Có tồn tại hướng không gian nào \(\hat n\) thỏa mãn:
+\begin{equation}
+  \sigma_{\hat n}\ket\psi=\ket\psi?
+  \label{eq:l04-reverse-eigenproblem}
+\end{equation}
+Có. Ban đầu, bài giảng lý giải điều này bằng phép đếm. Hai thành phần phức chứa bốn số thực. Điều kiện chuẩn hóa bỏ đi một bậc tự do, còn pha tổng thể không có ý nghĩa vật lý bỏ đi thêm một bậc nữa, nên còn lại hai. Một con trỏ đơn vị cũng có hai tham số thực độc lập, chẳng hạn kinh độ và vĩ độ.
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:52}
+\audiencequestion{Làm sao trạng thái chỉ có hai bậc tự do khi \(\alpha\) và \(\beta\) đều là số phức?}
+\lecturerresponse{Ban đầu chúng có tổng cộng bốn thành phần thực. Điều kiện chuẩn hóa loại bỏ một bậc tự do thực; nhân toàn bộ trạng thái với \(e^{i\theta}\) không làm thay đổi xác suất, nên pha chung loại bỏ thêm một bậc nữa. Còn lại hai tham số có ý nghĩa vật lý, tương ứng với hai góc xác định hướng của một con trỏ đơn vị.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:04:20}
+\audiencequestion{Ta cũng cần giải tìm trị riêng chứ?}
+\lecturerresponse{Ở đây, trị riêng cần xét đã cố định bằng \(+1\). Ta chỉ tìm hướng mà trạng thái spin lên theo hướng đó chính là spinor đã cho. Con trỏ ngược hướng sẽ mô tả cùng một tia trạng thái dưới dạng spin xuống, với trị riêng \(-1\).}
+\end{classroomqa}
+
+Phép đếm giải thích vì sao sự tương ứng này nên tồn tại. Một phép dựng trực tiếp xác nhận điều đó. Đặt:
+\begin{align}
+  n_1&=\bra\psi\sigma_1\ket\psi
+      =2\operatorname{Re}(\alpha^*\beta),
+  \notag\\
+  n_2&=\bra\psi\sigma_2\ket\psi
+      =2\operatorname{Im}(\alpha^*\beta),
+  \notag\\
+  n_3&=\bra\psi\sigma_3\ket\psi
+      =|\alpha|^2-|\beta|^2.
+  \label{eq:l04-bloch-components}
+\end{align}
+Điều kiện chuẩn hóa cho \(n_1^2+n_2^2+n_3^2=1\), và thay trực tiếp vào ta thu được Equation~\eqref{eq:l04-reverse-eigenproblem}. Do đó, mọi trạng thái thuần một spin đều là trạng thái spin lên theo một trục không gian nào đó.
+
+Có một cách diễn giải gắn với thao tác thực nghiệm. Chuẩn bị nhiều bản sao của cùng một trạng thái thuần chưa biết. Đo từng nhóm theo các hướng thử, điều chỉnh nam châm và tìm hướng mà mọi kết quả đều là spin lên. Dữ liệu hữu hạn chỉ xác định được hướng trong phạm vi độ bất định, nhưng trạng thái lý tưởng có một trục chính xác.
+
+Những câu hỏi là một phần của phương pháp này, chứ không làm gián đoạn nó. Một đoạn trao đổi ngắn trong lớp nhắc đến những em mười tuổi thoải mái đặt câu hỏi về lý thuyết dây, các chiều phụ và việc neutrino xung quanh có gây đau đầu hay không. Nội dung một câu hỏi có thể chưa đúng; sự sẵn lòng nêu ra điểm chưa hiểu vẫn rất đáng quý.
+
+\section{Hai spin và các toán tử cục bộ}
+
+Trước khi ghép hai spin, hãy ghi lại cách các ma trận Pauli tác động lên cơ sở \(\sigma_3\):
+\begin{align}
+  \sigma_1\ket u&=\ket d,
+  &
+  \sigma_1\ket d&=\ket u,
+  \notag\\
+  \sigma_2\ket u&=i\ket d,
+  &
+  \sigma_2\ket d&=-i\ket u,
+  \notag\\
+  \sigma_3\ket u&=\ket u,
+  &
+  \sigma_3\ket d&=-\ket d.
+  \label{eq:l04-pauli-action-table}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\linewidth]{lecture_04_figure_07.png}
+\caption{Bảng tác động Pauli viết lại các ma trận thành những quy tắc trên cơ sở spin lên/spin xuống.}
+\lectureframe{01:09:35}
+\end{figure}
+
+Giờ hãy hình dung hai electron được giữ ở những vị trí phân biệt được, sao cho chỉ spin của chúng thay đổi. Bốn trạng thái cơ sở là:
+\begin{equation}
+  \ket{uu},
+  \qquad
+  \ket{du},
+  \qquad
+  \ket{ud},
+  \qquad
+  \ket{dd}.
+  \label{eq:l04-two-spin-basis}
+\end{equation}
+Nhãn thứ nhất thuộc về electron \(1\), nhãn thứ hai thuộc về electron \(2\). Chúng trực chuẩn từng đôi một vì biểu diễn các kết quả chung khác nhau của hai phép đo thành phần thứ ba.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_08.png}
+\caption{Bốn nhãn trong cơ sở tích tensor sinh ra không gian trạng thái của hệ hai spin.}
+\lectureframe{01:11:40}
+\end{figure}
+
+Gọi các toán tử tác động lên electron \(1\) là \(\sigma_i\), còn các toán tử trên electron \(2\) là \(\tau_i\). Cụ thể hơn:
+\begin{equation}
+  \sigma_i\equiv\sigma_i\otimes I,
+  \qquad
+  \tau_i\equiv I\otimes\sigma_i.
+\end{equation}
+Tập thứ nhất chỉ tác động lên nhãn thứ nhất, còn tập thứ hai chỉ tác động lên nhãn thứ hai:
+\begin{align}
+  \sigma_1\ket{ud}&=\ket{dd},
+  &
+  \sigma_1\ket{dd}&=\ket{ud},
+  \notag\\
+  \sigma_3\ket{dd}&=-\ket{dd},
+  &
+  \tau_2\ket{ud}&=-i\ket{uu}.
+  \label{eq:l04-local-operator-examples}
+\end{align}
+Khi đã biết tác động của một toán tử lên bốn trạng thái cơ sở, tính tuyến tính sẽ xác định tác động của nó lên mọi trạng thái hai spin.
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:47}
+\audiencequestion{Vì sao thừa số \(-i\) được viết bên ngoài ket? Nó có tác động lên cả hai electron không?}
+\lecturerresponse{Các ký hiệu bên trong ket là nhãn của một cấu hình cơ sở. Một vô hướng phức nhân với toàn bộ vectơ trạng thái, nên theo quy ước ta đặt nó bên ngoài. Ở đây, thừa số đó xuất hiện do tác động của \(\tau_2\) lên nhãn thứ hai; viết nó bên ngoài không có nghĩa là đã áp dụng một phép biến đổi vật lý riêng lên cả hai electron.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:44}
+\audiencequestion{Phép nhân với \(i\) có biểu diễn một phép quay electron trong không gian thông thường không?}
+\lecturerresponse{Không, nếu xét riêng nó. Đây là phép nhân với một vô hướng phức trong không gian trạng thái. Sau này, các phép quay không gian sẽ được biểu diễn bằng những toán tử unita cụ thể; một thừa số \(i\) đứng riêng trong bảng tác động này không phải là một lần quay thực sự trong không gian.}
+\end{classroomqa}
+
+\section{Sáu tham số, không phải bốn}
+
+Một trạng thái thuần tổng quát của cặp là:
+\begin{equation}
+  \ket\Psi
+  =
+  c_{uu}\ket{uu}
+  +c_{du}\ket{du}
+  +c_{ud}\ket{ud}
+  +c_{dd}\ket{dd}.
+  \label{eq:l04-general-two-spin-state}
+\end{equation}
+Bốn hệ số phức cho tám số thực. Điều kiện chuẩn hóa bỏ đi một, pha tổng thể bỏ đi một nữa:
+\begin{equation}
+  8-1-1=6.
+  \label{eq:l04-two-spin-parameter-count}
+\end{equation}
+Một trạng thái thuần được chuẩn bị riêng cho electron \(1\) cần hai tham số thực, electron \(2\) cần thêm hai tham số nữa, tổng cộng chỉ có bốn. Hai tham số còn thiếu không phải sai sót trong phép đếm. Chúng báo hiệu những trạng thái thuần của cả cặp không thể gán thành các trạng thái thuần riêng biệt cho từng phần.
+
+Trước hết, hãy xác định những trạng thái thực sự có thể tạo ra bằng cách chuẩn bị riêng từng electron. Nếu:
+\begin{equation}
+  \ket{\psi_1}=\alpha_1\ket u+\beta_1\ket d,
+  \qquad
+  \ket{\psi_2}=\alpha_2\ket u+\beta_2\ket d,
+\end{equation}
+thì:
+\begin{align}
+  \ket{\psi_1}\otimes\ket{\psi_2}
+  &=
+  \alpha_1\alpha_2\ket{uu}
+  +\alpha_1\beta_2\ket{ud}
+  \notag\\
+  &\quad
+  +\beta_1\alpha_2\ket{du}
+  +\beta_1\beta_2\ket{dd}.
+  \label{eq:l04-product-expansion}
+\end{align}
+Đây là một \emph{trạng thái tích}. Mỗi electron có trục phân cực riêng, như thể hai phép chuẩn bị từ tính được tiến hành độc lập.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_09.png}
+\caption{Tích hai trạng thái một spin tạo thành một trạng thái tích bốn hạng có dạng giới hạn.}
+\lectureframe{01:25:15}
+\end{figure}
+
+Nếu sắp xếp bốn hệ số thành ma trận:
+\begin{equation}
+  C=
+  \begin{pmatrix}
+    c_{uu}&c_{ud}\\
+    c_{du}&c_{dd}
+  \end{pmatrix},
+\end{equation}
+thì trạng thái là trạng thái tích khi và chỉ khi \(C\) có hạng bằng một, tương đương với điều kiện:
+\begin{equation}
+  c_{uu}c_{dd}-c_{ud}c_{du}=0.
+  \label{eq:l04-product-condition}
+\end{equation}
+Phần lớn các lựa chọn hệ số biên độ không thỏa điều kiện này. Chúng là các trạng thái vướng víu.
+
+\section{Trạng thái vướng víu đầu tiên}
+
+Ví dụ đầu tiên trong bài giảng là:
+\begin{equation}
+  \ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}+\ket{du}\right).
+  \label{eq:l04-psi-plus}
+\end{equation}
+Trạng thái này không thể phân tích thành một trạng thái cho electron \(1\) và một trạng thái cho electron \(2\). Nếu phép đo theo trục thứ ba cho thấy electron \(2\) ở trạng thái spin xuống thì electron \(1\) ở trạng thái spin lên; nếu phép đo cho thấy electron \(2\) ở trạng thái spin lên thì electron \(1\) ở trạng thái spin xuống. Cặp này mang thông tin xác định mà từng hạt riêng lẻ không có.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_04_figure_10.png}
+\caption{Chồng chập vướng víu đầu tiên gồm một spin lên và một spin xuống, nhưng không gán trước kết quả nào cho từng hạt.}
+\lectureframe{01:29:30}
+\end{figure}
+
+Để biết riêng từng electron trông như thế nào, hãy tính ba giá trị kỳ vọng cục bộ. Với thành phần thứ nhất:
+\begin{equation}
+  \sigma_1\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{dd}+\ket{uu}\right),
+\end{equation}
+Biểu thức này trực giao với \(\ket{\psi_+}\). Vì vậy:
+\begin{equation}
+  \bra{\psi_+}\sigma_1\ket{\psi_+}=0.
+\end{equation}
+Tương tự:
+\begin{equation}
+  \sigma_2\ket{\psi_+}
+  =
+  \frac{i}{\sqrt2}
+  \left(\ket{dd}-\ket{uu}\right),
+\end{equation}
+nên:
+\begin{equation}
+  \bra{\psi_+}\sigma_2\ket{\psi_+}=0.
+\end{equation}
+Với thành phần thứ ba:
+\begin{equation}
+  \sigma_3\ket{\psi_+}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right),
+\end{equation}
+và hai số hạng đường chéo triệt tiêu nhau:
+\begin{equation}
+  \bra{\psi_+}\sigma_3\ket{\psi_+}
+  =\frac12(1-1)=0.
+\end{equation}
+Do đó:
+\begin{equation}
+  \begin{aligned}
+    \bra{\psi_+}\sigma_i\ket{\psi_+}&=0,\\
+    \bra{\psi_+}\tau_i\ket{\psi_+}&=0,
+    \qquad i=1,2,3.
+  \end{aligned}
+  \label{eq:l04-zero-local-spin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_11.png}
+\caption{Trạng thái sau biến đổi và sự triệt tiêu \(1-1=0\) xác lập rằng các giá trị kỳ vọng spin cục bộ bằng không.}
+\lectureframe{01:35:50}
+\end{figure}
+
+Với mọi hướng:
+\begin{equation}
+  \bra{\psi_+}\sigma_{\hat n}\ket{\psi_+}=0,
+  \qquad
+  \bra{\psi_+}\tau_{\hat n}\ket{\psi_+}=0.
+  \label{eq:l04-zero-arbitrary-local-spin}
+\end{equation}
+Vì mỗi phép đo cục bộ chỉ cho các kết quả \(\pm1\), giá trị kỳ vọng bằng không có nghĩa là:
+\begin{equation}
+  P(\sigma_{\hat n}=+1)
+  =
+  P(\sigma_{\hat n}=-1)
+  =
+  \frac12,
+\end{equation}
+và tương tự với electron thứ hai. Không có hướng nào làm phân cực riêng từng electron. Điều này không thể xảy ra với trạng thái thuần một spin, nhưng hoàn toàn có thể xảy ra với một phần của trạng thái thuần vướng víu.
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:23}
+\audiencequestion{Kết quả cục bộ có xác suất một nửa cho mỗi khả năng và việc đo một electron cho ta biết về electron kia có phải là cùng một nhận định không?}
+\lecturerresponse{Không. Trước hết, hãy bỏ qua electron \(2\): phép đo theo bất kỳ hướng nào chỉ trên electron \(1\) đều cho phân bố một nửa cho mỗi kết quả. Điều đó xác lập rằng không có phân cực cục bộ. Tương quan là một nhận định chung riêng biệt về mối liên hệ giữa hai kết quả được ghi nhận. Vướng víu tạo ra cả hai đặc tính, nhưng không nên lấy đặc tính này thay cho việc chứng minh đặc tính kia.}
+\end{classroomqa}
+
+\section{Tương quan trước định lý Bell}
+
+Bản thân tương quan không chỉ có trong lượng tử. Hãy trộn một đồng xu penny với một đồng xu dime, tách chúng ra mà không nhìn, rồi kiểm tra một đồng. Trước khi kiểm tra, mỗi đồng có xác suất năm mươi phần trăm là đồng penny; nhưng nếu tìm thấy đồng penny ở đây thì ta biết đồng ở xa là dime. Cặp này chứa thông tin xác định dù từng phần riêng lẻ không có thông tin ấy.
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:45}
+\audiencequestion{Suy luận từ cặp penny và dime có chỉ đúng khi ta biết cặp ban đầu có chính xác mỗi loại một đồng không?}
+\lecturerresponse{Đúng vậy. Suy luận cổ điển phụ thuộc vào việc tin cậy khâu chuẩn bị. Tương tự, dự đoán tương quan lượng tử chỉ áp dụng khi hệ hai electron đã được chuẩn bị ở trạng thái chung được chỉ định.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:09}
+\audiencequestion{Với \(\ket{\psi_+}\), xác suất cả hai phép đo thành phần thứ ba đều cho kết quả spin lên có bằng không không? Điều đó có chứng minh spin ngược nhau theo mọi trục không?}
+\lecturerresponse{Xác suất thu được \(uu\) trong cơ sở trục thứ ba bằng không, và hai kết quả theo trục thứ ba đối nhau. Nhưng với trạng thái dấu cộng này, kết luận thứ hai là quá mạnh. Spin cục bộ của trạng thái bằng không theo mọi hướng, còn tương quan chung phụ thuộc vào hướng. Tính chất luôn cho kết quả ngược nhau thuộc về trạng thái singlet dấu trừ, sẽ được giới thiệu ở cuối bài giảng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:51}
+\audiencequestion{Ta có thể hình dung cặp cổ điển như hai đồng xu được hàn với nhau sao cho hai mặt luôn đối nhau không?}
+\lecturerresponse{Đó là một cơ chế cổ điển có thể tạo ra tương quan ngược cố định, miễn là việc lắc không làm hỏng mối nối. Dù vậy, đó vẫn là một cách sắp đặt cổ điển ẩn được thiết lập từ lúc chuẩn bị. Phép tương tự này chỉ mang tính tạm thời có chủ ý; định lý Bell sẽ kiểm tra giới hạn mà mọi cách giải thích cổ điển kiểu đó đều thất bại.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:32}
+\audiencequestion{Định luật số lớn có vai trò gì nếu kết quả của một hạt đã xác định kết quả của hạt kia?}
+\lecturerresponse{Sự chắc chắn có điều kiện là nhận định về một lần thử, khi đã biết trạng thái chung và một kết quả. Vẫn cần lặp lại các lần thử để kiểm chứng bằng thực nghiệm rằng tương quan dự đoán là đáng tin cậy, đồng thời ước lượng giá trị kỳ vọng và xác suất không hoàn hảo. Định luật số lớn liên hệ tần suất qua nhiều lần thử với phân bố lý thuyết.}
+\end{classroomqa}
+
+Hai người quan sát có thể ở cách nhau một khoảng cách khổng lồ. Quan sát một kết quả làm thay đổi điều người quan sát tại chỗ biết về kết quả kia, nhưng không gửi được một thông điệp có thể điều khiển đến người quan sát ở xa. Ở giai đoạn này, tình huống vẫn giống cặp penny và dime được tách rời.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:46}
+\audiencequestion{Có nên xem hình ảnh cặp penny và dime tách rời là cách hiểu đúng về cặp lượng tử không?}
+\lecturerresponse{Đó là phép so sánh cổ điển ban đầu phù hợp, chứ không phải lời giải thích lượng tử cuối cùng. Định lý Bell xét sự khác biệt có thể đo được giữa một cặp mang các tính chất cổ điển có sẵn từ trước và một cặp lượng tử vướng víu. Ta sẽ để dành việc phân biệt ấy đến khi đã tính được các tương quan cần thiết.}
+\end{classroomqa}
+
+\section{Trạng thái singlet và cách chuẩn bị}
+
+Ở cuối phép tính trên bảng, hãy thay dấu cộng bằng dấu trừ:
+\begin{equation}
+  \ket{\psi_-}
+  =
+  \frac{1}{\sqrt2}
+  \left(\ket{ud}-\ket{du}\right).
+  \label{eq:l04-singlet}
+\end{equation}
+Sự thay đổi này giữ nguyên các giá trị kỳ vọng trong Equation~\eqref{eq:l04-zero-local-spin} bằng không và vẫn cho hai kết quả đối nhau theo trục thứ ba. Tuy nhiên, nó làm thay đổi các tương quan chung theo phương ngang. Trạng thái dấu trừ này là trạng thái singlet spin, trạng thái bất biến quay trong đó hai spin ngược nhau theo mọi trục đo chung.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_04_figure_12.png}
+\caption{Thay đổi cuối cùng trên bảng biến chồng chập đối xứng thành trạng thái singlet dấu trừ, đồng thời giữ spin cục bộ bằng không.}
+\lectureframe{01:47:25}
+\end{figure}
+
+Trong mô hình vật lý đơn giản hóa được dùng ở đây, khi đưa hai mômen từ của electron định xứ lại đủ gần để tương tác, cấu hình định hướng có năng lượng cao hơn sẽ hồi giãn bằng cách phát photon. Khi không có trục ngoài nào được ưu tiên, trạng thái spin thấp hơn được biểu diễn bằng trạng thái singlet đối xứng quay. Tương tác chính xác và lý do pha tương đối phải âm cần được khảo sát bằng một phép tính tiếp theo.
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:02}
+\audiencequestion{Trong thực tế, chỉ cần đưa hai electron lại gần nhau rồi chờ thôi sao?}
+\lecturerresponse{Trong mô hình lý tưởng hóa này thì đúng: để tương tác spin-spin tác động và cho phép hồi giãn bức xạ xuống trạng thái thấp hơn. Chỉ cần đưa các electron đủ gần trong thời gian đủ lâu để tương tác từ của chúng phát huy tác dụng. Quy trình chuẩn bị thực tế cũng phải kiểm soát trạng thái quỹ đạo và các tương tác cạnh tranh.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:49:16}
+\audiencequestion{Đây có phải chỉ là nguyên lý loại trừ Pauli không?}
+\lecturerresponse{Không. Hai electron đã được đặt ở những vị trí không gian có thể phân biệt, nên khi bàn về spin của chúng, ta chưa cần phản đối xứng hóa các hàm sóng quỹ đạo chồng lấp. Nguyên lý loại trừ trở nên quan trọng khi các electron đồng nhất chiếm những trạng thái một hạt chồng lấp; lập luận về rối lượng tử ở đây đã đúng ngay cả khi các vị trí tách biệt.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:31}
+\audiencequestion{Một chùm electron thông thường có tự nhiên chứa những cặp tương tác như vậy không?}
+\lecturerresponse{Thường là không. Chùm electron loãng, và các electron điển hình ở cách nhau quá xa để tương tác spin-spin đáng kể trong thời gian bay sẵn có. Va chạm hoặc một tương tác giam giữ được chủ động tạo ra có thể sinh ra các cặp rối, nhưng chỉ cùng thuộc một chùm thì không đủ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:51:45}
+\audiencequestion{Cần khoảng cách bao nhiêu để có tương tác từ?}
+\lecturerresponse{Không có một ngưỡng cắt rõ rệt áp dụng chung; đại lượng quyết định là thang thời gian tương tác. Bài giảng đưa ra một ước lượng vi mô sơ bộ cỡ \(10^{-11}\,\mathrm{cm}\) cho sự ghép nối nhanh. Khi khoảng cách lớn hơn, độ tách mức năng lượng nhỏ hơn, photon phát ra có bước sóng dài hơn và quá trình hồi phục mất nhiều thời gian hơn. Về nguyên tắc, có thể bù lại bằng cách chờ đủ lâu, còn một chùm electron thông thường thì không cho đủ thời gian.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:53:10}
+\audiencequestion{Vì sao trạng thái đơn tuyến phải có dấu trừ chứ không phải dấu cộng?}
+\lecturerresponse{Điều đó không hiển nhiên từ thống kê cục bộ một nửa-một nửa, vì thống kê ấy giống hệt nhau với cả hai pha tương đối. Câu trả lời nằm ở cách trạng thái biến đổi dưới các phép quay và cách tương tác chọn spin toàn phần bằng không. Phần suy dẫn sẽ có trong bài giảng tiếp theo.}
+\end{classroomqa}
+
+Khóa học giờ đây đã vượt qua ngưỡng dự kiến. Một spin thuần đơn lẻ luôn có một trục lên xác định. Một cặp thuần không nhất thiết gán cho từng thành viên một trạng thái thuần, nhưng vẫn có thể mã hóa những quan hệ chính xác giữa các kết quả đo của chúng. Cấu trúc bổ sung ấy là sự rối lượng tử; định lý Bell sẽ cho thấy vì sao không câu chuyện cổ điển nào về đồng xu và đồng xu mệnh giá nhỏ có thể tái tạo được tất cả những điều đó.
