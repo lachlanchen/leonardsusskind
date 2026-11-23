@@ -204,6 +204,12 @@ entire packet first, backs up changed caches, and schedules every repair for
 additional semantic review. Replacing already accepted text also requires its
 `previous_sha256`. No full-chapter regeneration is required.
 
+During an active queue, put only trusted, source-checked repair packets in
+`.translation-work/pending-reviewed-repairs/<language>/`. The repair sweep
+applies them under the queue lock, archives the packets, and gives the normal
+pipeline a chance to validate the updated books before asking a repair agent.
+Packets for a different language or an already validated edition are rejected.
+
 On 2026-10-12, ten Advanced Quantum Mechanics segments were checked against the
 English source. Most failures were overly restrictive numerical/order checks;
 one Chinese paragraph repeated a Hamiltonian token and was rewritten to use it

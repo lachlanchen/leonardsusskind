@@ -619,6 +619,29 @@ class TranslationTests(unittest.TestCase):
             p.accept_candidates(prepared, fresh, {'1': prepared['parts'][1]}, {'1': r['accepted']['1']}, 'ko', 'writer')
             self.assertEqual(fresh['review_ids'], ['1'])
 
+    def test_queued_repairs_are_scoped_to_unpublished_selected_editions(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch.object(p, 'WORK', root), patch.object(p, 'OUT', root / 'out'), \
+                    patch.object(p, 'MANIFEST', root / 'manifest'), patch.object(p, 'apply_reviewed_repairs') as apply:
+                p.write(p.MANIFEST, {'books': [{'id': 'book'}]})
+                inbox = root / 'pending-reviewed-repairs' / 'vi'
+                packet = inbox / 'sample.json'
+                p.write(packet, {'book': 'book', 'repairs': [{'lang': 'ko'}]})
+                with self.assertRaisesRegex(ValueError, 'outside the selected language'):
+                    p.apply_queued_repairs('vi')
+                p.write(packet, {'book': 'book', 'repairs': [{'lang': 'vi'}]})
+                quality = root / 'out/book/vi/quality.json'
+                p.write(quality, {'status': 'validated'})
+                with self.assertRaisesRegex(ValueError, 'validated edition'):
+                    p.apply_queued_repairs('vi')
+                apply.assert_not_called()
+                p.write(quality, {'status': 'blocked'})
+                self.assertEqual(p.apply_queued_repairs('vi'), 1)
+                self.assertEqual(p.apply_queued_repairs('vi'), 0)
+                apply.assert_called_once_with(packet)
+                self.assertEqual(len(list((inbox / 'applied').glob('*.json'))), 1)
+
     def test_language_recheck_refuses_stale_source_and_dry_run_never_writes(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)

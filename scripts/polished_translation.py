@@ -708,6 +708,28 @@ def apply_reviewed_repairs(path):
     print(f'Applied {len(packet["repairs"])} reviewed repairs', flush=True)
 
 
+def apply_queued_repairs(lang):
+    """Consume trusted, source-bound packets at a repair boundary under queue.lock."""
+    inbox = WORK / 'pending-reviewed-repairs' / lang
+    applied = 0
+    for path in sorted(inbox.glob('*.json')):
+        packet = read(path)
+        rows = packet['repairs']
+        book_id = packet['book']
+        if (not rows or any(row['lang'] != lang for row in rows)
+                or not any(book['id'] == book_id for book in read(MANIFEST)['books'])):
+            raise ValueError(f'Queued repair outside the selected language or book: {path.name}')
+        quality = OUT / book_id / lang / 'quality.json'
+        if quality.is_file() and read(quality).get('status') == 'validated':
+            raise ValueError(f'Refusing a queued repair to a validated edition: {book_id}/{lang}')
+        apply_reviewed_repairs(path)
+        archive = inbox / 'applied'
+        archive.mkdir(exist_ok=True)
+        path.replace(archive / f'{path.stem}-{digest(path.read_text())[:16]}.json')
+        applied += 1
+    return applied
+
+
 def _parse_json_message(text):
     text = text.strip()
     if text.startswith('```'):
@@ -1995,6 +2017,7 @@ def main():
     parser.add_argument('--evidence', help='Human review note; required for approving the pilot')
     parser.add_argument('--repairs', type=Path, help='Source-bound reviewed repair JSON')
     parser.add_argument('--dry-run', action='store_true', help='Preview a cache recheck without writes or model calls')
+    parser.add_argument('--apply-queued-repairs', action='store_true', help='Apply trusted repair inbox before recheck')
     args = parser.parse_args()
     if not 1 <= args.workers <= 5:
         parser.error('Use 1 to 5 workers')
@@ -2009,6 +2032,8 @@ def main():
     with ExitStack() as stack:
         if args.dry_run and args.command != 'recheck':
             parser.error('--dry-run is only supported with recheck')
+        if args.apply_queued_repairs and (args.command != 'recheck' or args.dry_run or not args.language):
+            parser.error('--apply-queued-repairs requires recheck --language without --dry-run')
         if args.command in {'prepare', 'compile', 'approve-pilot', 'repair', 'review'} or (
                 args.command == 'recheck' and not args.dry_run):
             WORK.mkdir(parents=True, exist_ok=True)
@@ -2029,7 +2054,9 @@ def main():
         elif args.command == 'recheck':
             if not args.language or args.book:
                 parser.error('recheck requires --language and operates on the entire language')
+            applied = apply_queued_repairs(args.language) if args.apply_queued_repairs else 0
             print(json.dumps({'language': args.language, 'dry_run': args.dry_run,
+                              'applied_packets': applied,
                               'recoverable' if args.dry_run else 'recovered': recheck_language(args.language, args.dry_run)}))
         elif args.command == 'review':
             book = next(b for b in read(MANIFEST)['books'] if b['id'] == args.book)

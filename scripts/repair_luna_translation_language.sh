@@ -14,7 +14,12 @@ case "$language" in fr|es|de|zh-Hant|ko|vi|ru|ar) ;; *) exit 2 ;; esac
 
 # The normal worker has exited. Retry cached content under the same queue lock
 # before spending a model call; recovered passages still go to semantic review.
-"$python" scripts/polished_translation.py recheck --language "$language"
+recheck="$("$python" scripts/polished_translation.py recheck --language "$language" --apply-queued-repairs)"
+printf '%s\n' "$recheck"
+if printf '%s\n' "$recheck" | tail -n 1 | jq -e '.applied_packets > 0 or .recovered > 0' >/dev/null; then
+  printf 'Local repairs made progress; retrying normal validation before invoking a repair agent.\n'
+  exit 0
+fi
 
 if [[ "$provider" == codex ]]; then
   model=gpt-6-luna
@@ -71,8 +76,9 @@ force-push, or rewrite existing commits. Do not change the model or reasoning.
 Do not create a new worktree or copy of this repository. If $provider is
 aginti-openai, do not invoke Codex, inspect its quota, or change billing settings.
 
-The local recheck has already reconsidered saved drafts without using inference.
-Passages it recovered are in review_ids and must pass normal semantic review.
+The local recheck has already applied queued source-bound corrections and
+reconsidered saved drafts without inference. Recovered and corrected passages
+are in review_ids and must pass normal semantic review.
 For remaining numerical errors, compare the English and the saved draft in
 context, including sign, negation, magnitude, and limiting language. Do not
 spell out an unsupported quantity merely to get it through the digit check.
