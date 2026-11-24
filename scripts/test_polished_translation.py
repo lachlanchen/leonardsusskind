@@ -248,9 +248,13 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(actual.count('\\-'), 2)
         self.assertEqual(actual.replace('\\-', ''), rows)
         standard = {'id': 'supplementary--particle_physics_2_standard_model--2010_winter'}
-        phrase = 'Её время--пространственные компоненты'
+        phrase = r'\(F_{\mu\mu}=0\). Её время--пространственные компоненты'
         self.assertEqual(p.layout_repairs(standard, 'ru', 'chapters/lecture_07/content.tex', phrase),
-                         'Её время--\\allowbreak{}пространственные компоненты')
+                         phrase.replace('. Её', '.\n\nЕё'))
+        cosmology = {'id': 'core--cosmology--2009_winter_legacy_cosmology'}
+        question = 'Как выглядит горизонт на пространственно-временной диаграмме?'
+        self.assertEqual(p.layout_repairs(cosmology, 'ru', 'chapters/lecture_08/content.tex', question),
+                         question.replace('пространственно', 'простран\\-ственно'))
         special = {'id': 'core--special_relativity--2012_spring_theoretical_minimum'}
         anchor = '\\begin{classroomqa}\n\\audiencequestion{Не потерялся ли знак минус, когда взаимодействие'
         self.assertEqual(p.layout_repairs(special, 'ru', 'chapters/lecture_05/content.tex', anchor),
@@ -263,6 +267,29 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(p.layout_repairs(book, 'ru', rel, heading), '\\enlargethispage{1pt}\n' + heading)
         self.assertEqual(p.layout_repairs(book, 'vi', rel, heading), heading)
         self.assertEqual(p.layout_repairs(book, 'ru', 'chapters/lecture_08/content.tex', heading), heading)
+
+    def test_refresh_rebuilds_only_a_blocked_pdf_with_changed_render(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rel = 'chapter/content.tex'
+            book = {'id': 'book', 'course': 'demo', 'source_files': {rel: p.digest('Source')}}
+            manifest = root / 'manifest.json'
+            quality = root / 'out/book/ru/quality.json'
+            p.write(manifest, {'books': [book]})
+            p.textwrite(root / 'generated_course_notes/demo' / rel, 'Source')
+            p.textwrite(quality.parent / rel, 'Previous render')
+            with patch.object(p, 'ROOT', root), patch.object(p, 'OUT', root / 'out'), \
+                    patch.object(p, 'MANIFEST', manifest), patch.object(p, 'render_translation_tex') as render:
+                p.write(quality, {'status': 'validated'})
+                self.assertEqual(p.changed_layout_books('ru'), [])
+                render.assert_not_called()
+                p.write(quality, {'status': 'blocked', 'error': 'PDF quality gate needs repair: quality.json'})
+                render.return_value = 'Previous render'
+                self.assertEqual(p.changed_layout_books('ru'), [])
+                render.return_value = 'New render'
+                self.assertEqual(p.changed_layout_books('ru'), ['book'])
+                p.textwrite(root / 'generated_course_notes/demo' / rel, 'Changed source')
+                self.assertEqual(p.changed_layout_books('ru'), [])
 
     def test_traditional_chinese_overflow_break_is_bound_to_failing_references(self):
         cosmology = next(b for b in p.read(p.MANIFEST)['books']

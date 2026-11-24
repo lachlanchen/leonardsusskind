@@ -129,7 +129,7 @@ elif args[0] != 'status':
         self.executable('recheck', '''
 import os, sys
 assert sys.argv[1:] == ['scripts/polished_translation.py', 'recheck', '--language', 'vi', '--apply-queued-repairs']
-print('{"applied_packets":' + os.environ.get('APPLIED', '0') + ',"recovered":0}')
+print('{"applied_packets":' + os.environ.get('APPLIED', '0') + ',"recovered":0,"layout_rebuilds":' + os.environ.get('LAYOUTS', '[]') + '}')
 ''')
         self.executable('aginti-test', '''
 import json, os, sys
@@ -150,11 +150,12 @@ print(json.dumps({'ok': True, 'failed': False, 'stopped': False,
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual((self.root / '.translation-work/language-repairs/vi/round-1-result.md').read_text(),
                          'repair evidence\n')
-        result = subprocess.run(['bash', f'scripts/{script}', 'vi', '2'], cwd=self.root,
-                                env={**env, 'APPLIED': '2', 'TRANSLATION_AGINTI_BIN': str(self.bin/'no-codex')},
-                                capture_output=True, text=True, timeout=20)
-        self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('retrying normal validation', result.stdout)
+        for evidence in ({'APPLIED': '2'}, {'LAYOUTS': '["book"]'}):
+            result = subprocess.run(['bash', f'scripts/{script}', 'vi', '2'], cwd=self.root,
+                                    env={**env, **evidence, 'TRANSLATION_AGINTI_BIN': str(self.bin/'no-codex')},
+                                    capture_output=True, text=True, timeout=20)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn('retrying normal validation', result.stdout)
 
     def test_stop_marker_is_not_removed(self):
         stop = self.root / '.translation-work/STOP'

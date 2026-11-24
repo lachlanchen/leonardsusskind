@@ -209,6 +209,9 @@ During an active queue, put only trusted, source-checked repair packets in
 applies them under the queue lock, archives the packets, and gives the normal
 pipeline a chance to validate the updated books before asking a repair agent.
 Packets for a different language or an already validated edition are rejected.
+If a blocked PDF's source-checked TeX has changed since the failed build, the
+repair sweep tries the updated render before starting an agent. An unchanged
+failed render is not retried on that basis.
 
 On 2026-10-12, ten Advanced Quantum Mechanics segments were checked against the
 English source. Most failures were overly restrictive numerical/order checks;

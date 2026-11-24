@@ -16,7 +16,7 @@ case "$language" in fr|es|de|zh-Hant|ko|vi|ru|ar) ;; *) exit 2 ;; esac
 # before spending a model call; recovered passages still go to semantic review.
 recheck="$("$python" scripts/polished_translation.py recheck --language "$language" --apply-queued-repairs)"
 printf '%s\n' "$recheck"
-if printf '%s\n' "$recheck" | tail -n 1 | jq -e '.applied_packets > 0 or .recovered > 0' >/dev/null; then
+if printf '%s\n' "$recheck" | tail -n 1 | jq -e '.applied_packets > 0 or .recovered > 0 or (.layout_rebuilds|length) > 0' >/dev/null; then
   printf 'Local repairs made progress; retrying normal validation before invoking a repair agent.\n'
   exit 0
 fi

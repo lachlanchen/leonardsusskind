@@ -1453,7 +1453,7 @@ def layout_repairs(book, lang, rel, text):
         # Flush the earlier float rather than squeeze two large board figures.
         replacements.append((anchor, '\\clearpage\n' + anchor))
     if (book['id'] == 'core--statistical_mechanics--2013_spring_theoretical_minimum'
-            and lang == 'es' and rel == 'chapters/lecture_06/content.tex'):
+            and lang in {'es', 'ru'} and rel == 'chapters/lecture_06/content.tex'):
         anchor = '\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.90\\textwidth]{lecture_06_figure_16.png}'
         # Keep the final large board figure off the page already carrying figures 14 and 15.
         replacements.append((anchor, '\\clearpage\n' + anchor))
@@ -1521,8 +1521,12 @@ def layout_repairs(book, lang, rel, text):
                 replacements.append((f'  {word} & ', f'  {broken} & '))
     if (book['id'] == 'supplementary--particle_physics_2_standard_model--2010_winter'
             and lang == 'ru' and rel == 'chapters/lecture_07/content.tex'):
-        anchor = 'Её время--пространственные компоненты'
-        replacements.append((anchor, 'Её время--\\allowbreak{}пространственные компоненты'))
+        anchor = r'\(F_{\mu\mu}=0\). Её время--пространственные компоненты'
+        replacements.append((anchor, anchor.replace('. Её', '.\n\nЕё')))
+    if (book['id'] == 'core--cosmology--2009_winter_legacy_cosmology'
+            and lang == 'ru' and rel == 'chapters/lecture_08/content.tex'):
+        anchor = 'Как выглядит горизонт на пространственно-временной диаграмме?'
+        replacements.append((anchor, anchor.replace('пространственно', 'простран\\-ственно')))
     if (book['id'] == 'core--general_relativity--2012_fall_theoretical_minimum'
             and lang == 'ru' and rel == 'chapters/lecture_09/content.tex'):
         anchor = '\\section{Космологическая постоянная}'
@@ -1560,29 +1564,51 @@ def layout_repairs(book, lang, rel, text):
     return text
 
 
+def render_translation_tex(book, lang, rel, source):
+    prepared = read(WORK / 'prepared' / book['id'] / (rel + '.json'))
+    result = load_results(book, lang, rel, prepared)
+    translated = ''.join(result['accepted'][str(i)] if needs_translation(part) else part
+                         for i, part in enumerate(prepared['parts']))
+    # Font substitution affects translated prose only, never frozen math.
+    masked = re.sub(r'[\u0370-\u03ff]', lambda m: '{\\proseunicodefont ' + m.group() + '}',
+                    clean_prose_line_endings(translated))
+    rendered = restore(masked, prepared['protected'])
+    return layout_repairs(book, lang, rel, restore_layout_arguments(source, rendered))
+
+
+def changed_layout_books(lang):
+    """Find blocked PDF renders that can be retried with new deterministic layout."""
+    books = []
+    for book in read(MANIFEST)['books']:
+        dst = OUT / book['id'] / lang
+        quality = dst / 'quality.json'
+        if not quality.is_file():
+            continue
+        report = read(quality)
+        if report.get('status') != 'blocked' or not report.get('error', '').startswith('PDF quality gate needs repair:'):
+            continue
+        src = ROOT / 'generated_course_notes' / book['course']
+        try:
+            verify_sources(book)
+            if any((dst / rel).read_text() != render_translation_tex(book, lang, rel, (src / rel).read_text())
+                   for rel in book['source_files'] if rel.endswith('content.tex')):
+                books.append(book['id'])
+        except (OSError, ValueError, KeyError, RuntimeError) as exc:
+            print(f'Cannot preflight changed layout: {book["id"]}/{lang}: {exc}', flush=True)
+    return books
+
+
 def assemble(book, lang, args=None):
     src = ROOT / 'generated_course_notes' / book['course']
     dst = OUT / book['id'] / lang
     for rel, expected in book['source_files'].items():
-        if digest((src / rel).read_text()) != expected:
+        source = (src / rel).read_text()
+        if digest(source) != expected:
             raise ValueError(f'English source changed: {rel}')
         if rel == 'common_preamble.tex':
-            textwrite(dst / rel, translated_preamble((src / rel).read_text(), lang))
+            textwrite(dst / rel, translated_preamble(source, lang))
             continue
-        p = read(WORK / 'prepared' / book['id'] / (rel + '.json'))
-        result = load_results(book, lang, rel, p)
-        translated = []
-        for i, part in enumerate(p['parts']):
-            if needs_translation(part):
-                translated.append(result['accepted'][str(i)])
-            else:
-                translated.append(part)
-        # Font substitution affects translated prose only, never frozen math.
-        masked = re.sub(r'[\u0370-\u03ff]', lambda m: '{\\proseunicodefont ' + m.group() + '}',
-                        clean_prose_line_endings(''.join(translated)))
-        rendered = restore(masked, p['protected'])
-        rendered = restore_layout_arguments((src / rel).read_text(), rendered)
-        rendered = layout_repairs(book, lang, rel, rendered)
+        rendered = render_translation_tex(book, lang, rel, source)
         if rel == 'course.tex':
             def graphic_paths(match):
                 paths = re.findall(r'\{([^{}]*)\}', match.group(1))
@@ -2142,6 +2168,7 @@ def main():
             applied = apply_queued_repairs(args.language) if args.apply_queued_repairs else 0
             print(json.dumps({'language': args.language, 'dry_run': args.dry_run,
                               'applied_packets': applied,
+                              'layout_rebuilds': changed_layout_books(args.language) if args.apply_queued_repairs else [],
                               'recoverable' if args.dry_run else 'recovered': recheck_language(args.language, args.dry_run)}))
         elif args.command == 'review':
             book = next(b for b in read(MANIFEST)['books'] if b['id'] == args.book)
