@@ -276,6 +276,14 @@ and every rich expression must render with the app's KaTeX configuration.
 Matched passage IDs and old content-addressed files remain valid for readers.
 No new translation calls are made by the reader importer.
 
+To add further published languages without replacing existing Bunko passages,
+use `scripts/sync_bunko_layers.py`. Pass the verified Susskind publication
+commit with `--source-commit` and use `--report` to record accepted and held
+layers. Add `--apply` only with a clean, up-to-date `bunko-books` checkout.
+The exporter checks source segments, equation and figure alignment, KaTeX, and
+the Bunko bundle schema, then preserves older chapter files, passage IDs and
+sentence maps. Rebuild `reader-index.json` in `bunko-books` before publishing.
+
 Release commands after the queue has exited:
 
 ```bash
