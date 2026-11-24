@@ -217,6 +217,17 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(p.layout_repairs(cosmology, 'es', 'chapters/lecture_08/content.tex', heading),
                          '\\enlargethispage{1pt}\n' + heading)
 
+    def test_vietnamese_special_relativity_layout_repair_preserves_qa(self):
+        book = {'id': 'core--special_relativity--2012_spring_theoretical_minimum'}
+        rel = 'chapters/lecture_09/content.tex'
+        anchor = ('\\begin{classroomqa}\n'
+                  '\\audiencequestion{Liệu \\(F_{00}\\) cũng bằng 0 không?}')
+        self.assertEqual(p.layout_repairs(book, 'vi', rel, anchor),
+                         '\\enlargethispage{2pt}\n' + anchor)
+        self.assertEqual(p.layout_repairs(book, 'ja', rel, anchor), anchor)
+        with self.assertRaisesRegex(ValueError, 'layout anchor changed'):
+            p.layout_repairs(book, 'vi', rel, anchor + anchor)
+
     def test_german_layout_repairs_preserve_prose_and_column_widths(self):
         books = {book['id']: book for book in p.read(p.MANIFEST)['books']}
         heading = r'\section{Moden, Orthogonalität und Vollständigkeit}'

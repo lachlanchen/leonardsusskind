@@ -1488,6 +1488,12 @@ def layout_repairs(book, lang, rel, text):
         anchor = '\\section{Các mức thấp nhất của dây mở}'
         # Printed page 85 needs 0.138 pt more room for three timestamp/editorial footnotes.
         replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
+    if (book['id'] == 'core--special_relativity--2012_spring_theoretical_minimum'
+            and lang == 'vi' and rel == 'chapters/lecture_09/content.tex'):
+        anchor = ('\\begin{classroomqa}\n'
+                  '\\audiencequestion{Liệu \\(F_{00}\\) cũng bằng 0 không?}')
+        # Printed page 285 needs 1.224 pt more depth alongside the timestamp footnote.
+        replacements.append((anchor, '\\enlargethispage{2pt}\n' + anchor))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'
