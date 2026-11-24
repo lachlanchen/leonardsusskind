@@ -1,0 +1,561 @@
+\chapter{Từ đối xứng thông thường đến đại số Grassmann}
+
+\lectureoverview{Siêu đối xứng là một đối xứng, vì vậy trước hết ta nhắc lại từ đó có nghĩa gì trong cơ học lượng tử. Một phép biến đổi vật lý được biểu diễn trên không gian Hilbert bởi một toán tử unita; các phép biến đổi liên tục được sinh ra ở bậc vô cùng bé, và các giao hoán tử của chúng mã hoá cách các phép biến đổi hợp thành. Một đối xứng đúng nghĩa bảo toàn năng lượng, điều này tương đương với việc giao hoán với Hamiltonian. Khi đó, siêu đối xứng thay đổi một giả thiết mà mọi ví dụ quen thuộc đều cùng chia sẻ: các bộ sinh của nó biến boson thành fermion và fermion thành boson. Việc xây dựng các bộ sinh như vậy tự nhiên dẫn đến các toán tử tạo và hủy, các phản giao hoán tử, và đại số Grassmann hữu hạn trong đó các đại lượng lẻ bình phương bằng không.}
+
+\section{Đối xứng liên hệ các cấu hình khác nhau}
+
+Một đối xứng không chỉ đơn thuần là một sự đều đặn có tính trang trí. Nó là một phép toán liên hệ một cấu hình vật lý này với một cấu hình khác. Chẳng hạn, phép phản xạ trái-phải liên hệ hai bàn tay. Nếu con người đó và các định luật của môi trường xung quanh đều có đối xứng trái-phải chính xác, thì các tính chất tương ứng của hai bàn tay sẽ trùng nhau. Tổng quát hơn, các vật thể hay trạng thái được nối với nhau bởi một đối xứng chính xác phải có chung những đại lượng vật lý mà đối xứng đó bảo toàn. Trong vật lý hạt, điều đó thường có nghĩa là các khối lượng bằng nhau; trong vật lý nguyên tử, điều đó có nghĩa là các năng lượng bằng nhau đối với các trạng thái nằm trong cùng một đa bội quay.
+
+Mục tiêu của chúng ta là siêu đối xứng, nhưng trước hết vẫn hữu ích khi nhắc lại các đối xứng liên tục như phép quay và phép tịnh tiến. Câu hỏi liệu siêu đối xứng có phải là “liên tục” theo nghĩa thông thường hay không đã có phần gượng gạo. Các tham số vô cùng bé của nó không phải là những số thực giao hoán thông thường. Tốt nhất nên xem nó như một mở rộng phân bậc của đối xứng liên tục, và phép tính Grassmann được giới thiệu bên dưới làm cho phát biểu đó đủ chính xác cho mục đích hiện tại của ta. \editorialnote{Thuật ngữ hiện đại mô tả siêu đối xứng như một đối xứng phân bậc liên tục. Sự hạn định này giải thích lời lưu ý trong bài giảng rằng câu hỏi quen thuộc đối lập liên tục với rời rạc không áp vào siêu đối xứng một cách gọn ghẽ.}
+
+\section{Các phép biến đổi unita trên không gian Hilbert}
+
+Một hệ lượng tử được biểu diễn bởi một vectơ trạng thái \(\ket{\psi}\). Một phép đối xứng vật lý được biểu diễn bởi một toán tử \(U\) tác dụng lên trạng thái đó:
+\begin{equation}
+\ket{\psi}\longmapsto U\ket{\psi}.
+\end{equation}
+Đối với một phép quay trong không gian, trục và góc xác định \(U\). Nếu một trạng thái chứa các hạt ở nhiều vị trí, thì ket đã biến đổi biểu diễn tất cả chúng ở các vị trí đã quay của chúng. Một phép tịnh tiến cũng hoạt động tương tự: nó thay trạng thái bằng một trạng thái trong đó toàn bộ cấu hình đã được tịnh tiến.
+
+\begin{classroomqa}
+\audiencequestion{Vectơ trạng thái thuộc về một không gian Hilbert thường là vô hạn chiều. Ta đang quay không gian Hilbert hay không gian ba chiều thông thường? \lecturetimestamp{00:04:20}}
+\lecturerresponse{Hai cách mô tả đó nói về cùng một phép toán ở những mức khác nhau. Phép biến đổi unita tác dụng lên vectơ trong không gian Hilbert và biểu diễn phép quay vật lý của cấu hình trong không gian thông thường. Nó không phải theo nghĩa đen là một phép quay ba chiều của không gian Hilbert trừu tượng; nó là sự biểu diễn ở đó của một phép quay trong không gian.}
+\end{classroomqa}
+
+Điều kiện cốt yếu là tính unita:
+\begin{equation}
+U^\dagger U=UU^\dagger=\mathbf 1,
+\qquad
+U^{-1}=U^\dagger.
+\end{equation}
+Điều này bảo toàn các tích vô hướng và do đó bảo toàn xác suất:
+\begin{equation}
+\braket{U\psi}{U\psi}
+=\bra{\psi}U^\dagger U\ket{\psi}
+=\braket{\psi}{\psi}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.56\textwidth]{lecture_04_figure_02.png}
+\lectureframe{00:05:56.420}
+\caption{Khung bảng ban đầu chuyển từ một trạng thái đã biến đổi sang điều kiện unita. Ket và tích có dấu dagger còn nhìn thấy được, nhưng giảng viên che khuất phần tận cùng bên phải của chúng; các phương trình đầy đủ xuất hiện trong phép suy ra bên dưới.}
+\end{figure}
+
+Nói chính xác hơn, định lý Wigner cũng cho phép các đối xứng phản unita như phép đảo thời gian. Các phép biến đổi nối liên tục với phép đồng nhất, vốn là chủ đề ở đây, được biểu diễn bằng các toán tử unita. \editorialnote{Khả năng phản unita là một điều kiện kèm theo tiêu chuẩn; nó không làm thay đổi phần thảo luận của bài giảng về phép quay, phép tịnh tiến hay các bộ sinh siêu đối xứng.}
+
+\section{Các phép biến đổi vô cùng bé và các bộ sinh}
+
+Việc không làm gì cả được biểu diễn bởi \(U=\mathbf 1\), chứ không phải \(U=0\). Một phép biến đổi đủ nhỏ khác phép đồng nhất ở một hạng tử tuyến tính theo tham số nhỏ của nó. Đối với một phép quay qua một góc nhỏ \(\epsilon\),
+\begin{equation}
+U(\epsilon)=\mathbf 1+i\epsilon L+O(\epsilon^2).
+\end{equation}
+Tính unita ở bậc một đòi hỏi
+\begin{align}
+U^\dagger U
+&=\left(\mathbf 1-i\epsilon L^\dagger\right)
+  \left(\mathbf 1+i\epsilon L\right)+O(\epsilon^2)\\
+&=\mathbf 1+i\epsilon(L-L^\dagger)+O(\epsilon^2),
+\end{align}
+và do đó
+\begin{equation}
+L^\dagger=L.
+\end{equation}
+Toán tử \(L\) là bộ sinh vô cùng bé.
+
+Các phép quay cần ba bộ sinh, một cho mỗi trục độc lập:
+\begin{equation}
+L_x,\qquad L_y,\qquad L_z.
+\end{equation}
+Một phép quay quanh một trục tùy ý \(\widehat{\bm n}\) được sinh bởi
+\begin{equation}
+L_{\widehat{\bm n}}=\widehat{\bm n}\cdot\bm L.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Có thể cộng các bộ sinh cho các trục \(x\), \(y\) và \(z\) để tạo thành một phép quay quanh một trục khác không? \lecturetimestamp{00:07:50}}
+\lecturerresponse{Có. Các tổ hợp tuyến tính của chúng sinh ra các phép quay quanh các trục trung gian. Ba thành phần độc lập là đủ để xây dựng mọi phép quay không gian vô cùng bé.}
+\end{classroomqa}
+
+Đối với phép quay, các bộ sinh này là các thành phần của mômen động lượng. Ký hiệu này còn hữu ích một cách tổng quát hơn vì mọi đối xứng liên tục đều được hiểu cục bộ thông qua các bộ sinh của nó.
+
+\section{Giao hoán tử như một bảng nhân}
+
+Các bộ sinh quay tuân theo
+\begin{align}
+[L_x,L_y]&=iL_z,&
+[L_y,L_z]&=iL_x,&
+[L_z,L_x]&=iL_y,
+\end{align}
+hay, viết gọn,
+\begin{equation}
+[L_i,L_j]=i\epsilon_{ijk}L_k.
+\end{equation}
+Ký hiệu Levi-Civita bằng không nếu hai chỉ số trùng nhau và bằng \(+1\) hoặc \(-1\) đối với các hoán vị chẵn hay lẻ của \(1,2,3\). Sự kiện cấu trúc quan trọng là tính khép kín: giao hoán tử của hai bộ sinh lại là một bộ sinh khác.
+
+Vì sao một giao hoán tử lại mô tả hình học của các phép quay? Hãy thực hiện một phép quay nhỏ quanh \(x\), rồi một phép quay quanh \(y\), hoàn tác phép quay \(x\), và cuối cùng hoàn tác phép quay \(y\). Các phép toán không triệt tiêu nhau vì các phép quay quanh những trục khác nhau không giao hoán.
+
+\begin{classroomqa}
+\audiencequestion{Có thể hình dung sự không giao hoán này qua các chuyển động lăn, chúc-ngẩng và quay hướng của một chiếc máy bay không? \lecturetimestamp{00:12:36}}
+\lecturerresponse{Có. Các phép quay liên tiếp quanh các trục gắn với vật cho một minh hoạ hình học trực tiếp rằng việc đổi thứ tự sẽ làm đổi phương hướng cuối cùng. Đại số bên dưới là phiên bản vô cùng bé của sự kiện quen thuộc ấy.}
+\end{classroomqa}
+
+Đặt
+\begin{equation}
+U_x(\epsilon)=\mathbf 1+i\epsilon L_x,
+\qquad
+U_y(\delta)=\mathbf 1+i\delta L_y.
+\end{equation}
+Vì các toán tử tác dụng lên ket từ phải sang trái, nên chuỗi đã nêu được biểu diễn bởi
+\begin{equation}
+\mathcal C
+=U_y^{-1}(\delta)U_x^{-1}(\epsilon)
+ U_y(\delta)U_x(\epsilon).
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Tại sao có thể viết các phép hoàn tác bằng nghịch đảo thay vì bằng dagger? \lecturetimestamp{00:13:25}}
+\lecturerresponse{Vì các phép biến đổi là unita: \(U^\dagger=U^{-1}\). Đối với một phép biến đổi vô cùng bé, việc lấy nghịch đảo đơn giản chỉ đảo dấu của hạng tử bậc một, \(U_x^{-1}=\mathbf 1-i\epsilon L_x+O(\epsilon^2)\).}
+\end{classroomqa}
+
+Việc nhân bốn thừa số trên bảng đã trở thành một bài tập khá sôi nổi: mọi hạng tử tuyến tính theo \(\epsilon\) hoặc \(\delta\) đều triệt tiêu, cả phòng cùng theo dõi các hạng tử hỗn hợp, và một lúc lúng túng về hệ số 2 cho thấy việc làm mất thứ tự toán tử dễ đến mức nào. Kết quả bậc hai gọn gàng là
+\begin{align}
+\mathcal C
+&=\mathbf 1+\epsilon\delta[L_x,L_y]
+  +O(\epsilon^2\delta,\epsilon\delta^2)\\
+&=\mathbf 1+i\epsilon\delta L_z
+  +O(\epsilon^2\delta,\epsilon\delta^2).
+\end{align}
+Vì vậy chuỗi khép kín để lại một phép quay nhỏ quanh \(z\) qua một góc tỉ lệ với \(\epsilon\delta\). \editorialnote{Phép nhân được trình bày cố định lại thứ tự và hệ số sau phép tính thăm dò trên lớp. Đảo ngược quy ước cho chuỗi sẽ đảo dấu nhưng không làm thay đổi kết luận rằng phép biến đổi còn dư được chi phối bởi giao hoán tử.}
+
+\begin{classroomqa}
+\audiencequestion{Nếu đổi thứ tự của các phép nghịch đảo thì tích có trở thành phép đồng nhất không? \lecturetimestamp{00:25:23}}
+\lecturerresponse{Nếu mỗi phép biến đổi được đặt ngay cạnh nghịch đảo của chính nó thì từng cặp sẽ triệt tiêu. Chuỗi giao hoán tử không tầm thường cố ý tách các cặp đó ra; việc nó không rút gọn chính là thước đo của sự phụ thuộc vào thứ tự.}
+\end{classroomqa}
+
+Các tích dài hơn quả thật trở nên phức tạp hơn, nhưng chúng không chứa nguyên lý mới nào.
+
+\begin{classroomqa}
+\audiencequestion{Điều gì xảy ra khi có nhiều hơn ba bộ sinh hoặc có rất nhiều phép biến đổi nhỏ? \lecturetimestamp{00:25:34}}
+\lecturerresponse{Sẽ có nhiều giao hoán tử hơn và nhiều hạng tử phải theo dõi hơn, nhưng việc biết đại số khép kín cho phép ta xác định cách kết hợp của một số tùy ý các phép biến đổi vô cùng bé. Các phép biến đổi hữu hạn có thể được ghép từ nhiều phép biến đổi nhỏ.}
+\end{classroomqa}
+
+Theo nghĩa này, đại số giao hoán tử là bảng nhân của một nhóm liên tục được viết gần phép đồng nhất.
+
+\section{Các phép tịnh tiến hoàn chỉnh ví dụ không gian}
+
+Các phép tịnh tiến trong không gian được sinh bởi động lượng. Với quy ước dấu dùng trong bài giảng,
+\begin{equation}
+\begin{aligned}
+T_x(a)&=\mathbf 1+iaP_x+O(a^2),\\
+T_y(b)&=\mathbf 1+ibP_y+O(b^2),
+\end{aligned}
+\end{equation}
+trong đó \(a\) và \(b\) là các khoảng cách chứ không phải các góc.
+
+Hai phép tịnh tiến giao hoán. Dời một điểm theo \(x\), rồi theo \(y\), hoàn tác phép tịnh tiến \(x\), rồi hoàn tác phép tịnh tiến \(y\); điểm đó trở về gốc của nó:
+\begin{equation}
+[P_i,P_j]=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Việc tịnh tiến hay quay một vật thể vật lý có đòi hỏi lực để bắt đầu và dừng chuyển động không? \lecturetimestamp{00:28:45}}
+\lecturerresponse{Đó không phải phép toán đang được định nghĩa. Một phép biến đổi đối xứng so sánh trạng thái ban đầu với trạng thái toán học trong đó toàn bộ cấu hình đã được tịnh tiến hoặc quay. Nó không mô tả một quỹ đạo động lực học, gia tốc, hay công được thực hiện trong khi di chuyển thiết bị.}
+\end{classroomqa}
+
+Một phép quay và một phép tịnh tiến không giao hoán. Tịnh tiến một điểm, quay nó quanh gốc tọa độ, tịnh tiến ngược lại dọc theo trục ban đầu, rồi hoàn tác phép quay; điểm đó không trở về nơi nó bắt đầu. Đại số hỗn hợp là
+\begin{equation}
+[L_i,P_j]=i\epsilon_{ijk}P_k.
+\end{equation}
+Hệ thức này nói rằng bản thân động lượng biến đổi như một vectơ dưới các phép quay. Bài tập về chỉ số cụ thể ở đây kém quan trọng hơn bài học tổng quát: các phép biến đổi của không gian Euclid được mã hoá trong các giao hoán tử giữa các bộ sinh quay và tịnh tiến của chúng.
+
+\section{Một đối xứng phải bảo toàn năng lượng}
+
+Giờ đây ta chuyển từ sự hợp thành của các phép biến đổi sang động lực học. Nếu \(U\) thật sự là một đối xứng của một hệ, thì việc áp dụng nó không thể làm thay đổi năng lượng. Gọi \(\ket{E}\) là một trạng thái riêng năng lượng:
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+Ký hiệu \(E\) ở vế phải là một con số; \(\ket{E}\) là một vectơ được gắn nhãn bởi trị riêng đó.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{0.43\textwidth}
+\centering
+\includegraphics[width=\linewidth]{lecture_04_figure_03.png}
+\lectureframe{00:34:38.239}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.50\textwidth}
+\centering
+\includegraphics[width=\linewidth]{lecture_04_figure_04.png}
+\lectureframe{00:36:22.376}
+\end{minipage}
+\caption{Ket đã biến đổi \(U\ket{E}\) và phương trình trị riêng định nghĩa \(H\ket{E}=E\ket{E}\), được tách riêng trong các khung bảng kế tiếp nhau.}
+\end{figure}
+
+Nếu \(U\) là một đối xứng, thì \(U\ket{E}\) có cùng trị riêng:
+\begin{equation}
+HU\ket{E}=EU\ket{E}.
+\end{equation}
+Vì \(E\) là một đại lượng vô hướng nên nó giao hoán với \(U\), và ta có thể dùng phương trình trị riêng ban đầu:
+\begin{align}
+HU\ket{E}
+&=EU\ket{E}\\
+&=UE\ket{E}\\
+&=UH\ket{E}.
+\end{align}
+Do đó
+\begin{equation}
+(HU-UH)\ket{E}=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Có thể lặp lại phép suy ra bắt đầu từ hệ thức đầu tiên của nó không? \lecturetimestamp{00:35:55}}
+\lecturerresponse{Bắt đầu với \(H\ket{E}=E\ket{E}\). Tính đối xứng nói rằng \(U\ket{E}\) có cùng năng lượng, nên \(HU\ket{E}=EU\ket{E}\). Chuyển đại lượng vô hướng \(E\) qua \(U\), thay \(E\ket{E}\) bằng \(H\ket{E}\), rồi lấy hiệu. Kết quả là \((HU-UH)\ket{E}=0\).}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_04_figure_05.png}
+\lectureframe{00:38:51.066}
+\caption{Phép suy ra đầy đủ trên bảng. Các dấu chỉ dẫn cong nối mệnh đề năng lượng bằng nhau với phép thế \(E\ket{E}=H\ket{E}\); dòng cuối là \((HU-UH)\ket{E}=0\).}
+\end{figure}
+
+Lập luận này đúng với mọi trạng thái riêng năng lượng. Giả sử các trạng thái ấy tạo thành một cơ sở đầy đủ, thì một toán tử triệt tiêu từng trạng thái trong số đó là toán tử không:
+\begin{equation}
+[H,U]=0.
+\end{equation}
+Đây là tiêu chuẩn để một phép biến đổi unita không phụ thuộc thời gian là một đối xứng của Hamiltonian.
+
+Đối với một phép biến đổi vô cùng bé,
+\begin{equation}
+U(\epsilon)=\mathbf 1+i\epsilon L_i+O(\epsilon^2),
+\end{equation}
+phép đồng nhất vốn đã giao hoán với \(H\), nên mỗi bộ sinh phải thoả mãn
+\begin{equation}
+[L_i,H]=0.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.47\textwidth]{lecture_04_figure_06.png}
+\lectureframe{00:42:14.296}
+\caption{Tiêu chuẩn đối xứng được cô đọng trên bảng: \([U,H]=0\), tiếp theo là dạng theo bộ sinh của nó, được chuẩn hoá từ nhãn phía dưới hơi mờ thành \([L_i,H]=0\).}
+\end{figure}
+
+Nếu \(L_i\) không phụ thuộc tường minh vào thời gian, thì phương trình Heisenberg cho
+\begin{equation}
+\frac{dL_i}{dt}
+=i[H,L_i]=0
+\qquad(\hbar=1).
+\end{equation}
+Do đó, các bộ sinh đối xứng là các điện tích bảo toàn. Đối xứng tịnh tiến trong không gian cho bảo toàn động lượng; đối xứng quay cho bảo toàn mômen động lượng. \editorialnote{Điều kiện về đạo hàm theo thời gian tường minh là điều chuẩn và được ngầm hiểu trong phát biểu về định luật bảo toàn của bài giảng.}
+
+\section{Biến đổi toàn bộ hệ vật lý}
+
+Cụm từ “phép quay là một đối xứng” có thể bị dùng sai nếu chỉ biến đổi một phần của bố trí thí nghiệm. Một spin tự do có thể bị quay mà không làm thay đổi năng lượng của nó. Tuy nhiên, nếu đặt nó trong một từ trường cố định rồi chỉ quay spin, thì năng lượng Zeeman của nó thay đổi. Điều đó không bác bỏ đối xứng quay; nó có nghĩa là từ trường đã bị giữ cố định trong khi spin bị quay tương đối so với trường. Nếu quay spin và trường cùng nhau, hoặc dùng một trường ngoài mà bản thân nó bất biến, thì năng lượng không đổi.
+
+Cùng vấn đề ấy cũng xuất hiện trong nguyên tử hydro. Chỉ tịnh tiến electron tương đối so với proton sẽ làm thay đổi khoảng cách giữa chúng và vì thế làm thay đổi năng lượng Coulomb. Đối xứng tịnh tiến tác dụng lên toàn bộ hệ electron-proton, dời cả hai đi cùng một lượng.
+
+\begin{classroomqa}
+\audiencequestion{Bản thân một trường ngoài có nhất thiết phải có đối xứng đó không? \lecturetimestamp{00:43:09}}
+\lecturerresponse{Hoặc trường ngoài cố định ấy vốn đã bất biến dưới phép biến đổi đó, hoặc nó phải được biến đổi cùng với phần còn lại của hệ. Một phép quay tương đối giữa spin và một trường không bị quay là một cấu hình vật lý khác, chứ không phải phép biến đổi đối xứng của toàn bộ cách bố trí.}
+\end{classroomqa}
+
+Sự suy biến quay trong một nguyên tử cho một ví dụ khẳng định rất rõ. Với một mômen động lượng cố định \(l\), các phép quay trộn các trạng thái có các số lượng tử từ
+\begin{equation}
+m=-l,-l+1,\ldots,l.
+\end{equation}
+Khi không có từ trường hay điện trường ngoài, mọi thành viên của đa bội đều có cùng năng lượng:
+\begin{equation}
+E_{l,m}=E_l.
+\end{equation}
+Đối xứng liên hệ các trạng thái khác nhau và buộc chúng phải suy biến.
+
+\section{Siêu đối xứng thay đổi điều gì}
+
+Mọi đối xứng quen thuộc đã được thảo luận cho đến nay đều bảo toàn tính chất boson hay fermion. Một phép quay biến một electron thành một electron khác, chứ không thành một photon. Các phép quay màu trộn ba màu của một quark nhưng không biến quark thành gluon. Các đối xứng nội bộ và đối xứng không-thời gian thông thường có thể trộn các thành phần hay các nhãn lượng tử, nhưng các bộ sinh của chúng là bosonic và không làm thay đổi tính chẵn lẻ fermion.
+
+Siêu đối xứng thì khác:
+\begin{equation}
+Q\ket{B}\sim\ket{F},
+\qquad
+Q\ket{F}\sim\ket{B}.
+\end{equation}
+Các đa bội của nó vượt qua ranh giới giữa boson và fermion. Trong một lý thuyết siêu đối xứng chính xác, các đối tác trong cùng một đa bội có cùng khối lượng. Đây chính xác là sự ghép cặp mà các bài giảng trước đòi hỏi: các vòng boson và fermion được ghép tương ứng có thể triệt tiêu các hiệu chỉnh tử ngoại lớn đối với khối lượng vô hướng. Cấu trúc ấy khó hình dung trực quan vì không có chuyển động không gian thông thường nào biến một trạng thái spin nguyên thành một trạng thái spin bán nguyên. Vì vậy ta sẽ tiến hành theo cách đại số.
+
+\section{Một siêu tích nguyên mẫu}
+
+Cho \(A,A^\dagger\) lần lượt hủy và tạo một boson, và cho \(C,C^\dagger\) lần lượt hủy và tạo một fermion. Toán tử Hermite đơn giản nhất hoán đổi các trạng thái một hạt của chúng là
+\begin{equation}
+Q=C^\dagger A+A^\dagger C.
+\end{equation}
+Hạng thứ nhất lấy đi một boson và tạo ra một fermion; hạng thứ hai lấy đi một fermion và tạo ra một boson. Nếu \(Q\) tác dụng lên một trạng thái một-boson, thì hạng \(A^\dagger C\) triệt tiêu vì không có fermion nào để hủy, còn \(C^\dagger A\) thực hiện phép chuyển đổi. Trên một trạng thái một-fermion thì vai trò đảo lại.
+
+\begin{classroomqa}
+\audiencequestion{Cấu trúc này có tạo ra một hạt đơn lẻ là chồng chập của một boson và một fermion không? \lecturetimestamp{00:52:37}}
+\lecturerresponse{\(Q\) là một toán tử, không phải một trạng thái. Tác dụng lên một trạng thái boson thuần, nó tạo ra một trạng thái fermion, và tác dụng lên một trạng thái fermion thuần, nó tạo ra một trạng thái boson. Tác dụng tuyến tính lên một chồng chập tổng quát đã có sẵn thì nó cho ra một chồng chập khác, đúng như mọi toán tử tuyến tính vẫn làm.}
+\end{classroomqa}
+
+Tiếp đó, cả lớp xét trạng thái chân không. Vì cả hai toán tử hủy đều triệt tiêu nó,
+\begin{equation}
+A\ket{0}=0,\qquad C\ket{0}=0,
+\end{equation}
+ta có
+\begin{equation}
+Q\ket{0}=0.
+\end{equation}
+Kết quả là vectơ không, không phải một bản sao thứ hai của chân không.
+
+Nguyên mẫu này cố ý chỉ mang tính sơ đồ. Một boson spin không có thể được ánh xạ vào một trong hai thành phần của một fermion spin một nửa, nên bản thân bộ sinh cần một chỉ số spinor:
+\begin{equation}
+Q_\alpha\ket{B}\sim\ket{F_\alpha}.
+\end{equation}
+Trong mô tả hai thành phần đơn giản hóa của bài giảng,
+\begin{equation}
+Q_\alpha\ket{F_\beta}\sim\delta_{\alpha\beta}\ket{B}.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Làm sao số chiều của không gian trạng thái có thể khớp nhau khi một boson spin không có một thành phần spin còn một fermion spin một nửa có hai? \lecturetimestamp{00:55:02}}
+\lecturerresponse{Một \(Q\) đơn lẻ không có chỉ số là không đủ. Có các thành phần spinor \(Q_\alpha\), mỗi thành phần có thể tạo ra một thành phần spin của fermion. Bản thân siêu tích mang nửa đơn vị spin vì nó làm thay đổi spin đi nửa đơn vị.}
+\end{classroomqa}
+
+Các \(Q_\alpha\) là các toán tử fermionic, hay chính xác hơn là các toán tử lẻ Grassmann. Mỗi hạng trong chúng chứa một số lẻ toán tử fermion, đó là lý do chúng đảo tính chẵn lẻ fermion. Các đại lượng quan sát được thông thường là chẵn. Cần phân biệt một siêu tích lẻ với tham số biến đổi lẻ của nó: một phép biến đổi siêu đối xứng hữu hạn được xây dựng từ một tổ hợp chẵn như \(\epsilon^\alpha Q_\alpha+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\), trong đó cả \(\epsilon\) lẫn \(Q\) đều lẻ. \editorialnote{Bài giảng gọi một cách không chặt chẽ các bộ sinh là các số Grassmann. Chính xác hơn, các siêu tích là các toán tử lẻ, còn các tham số phản giao hoán là các số Grassmann; tích của chúng là chẵn và có thể xuất hiện trong một phép biến đổi hữu hạn.}
+
+\section{Đại số toán tử bosonic và fermionic}
+
+Đối với các mode boson được gán nhãn bởi \(i,j\),
+\begin{align}
+[A_i,A_j]&=0,&
+[A_i^\dagger,A_j^\dagger]&=0,&
+[A_i,A_j^\dagger]&=\delta_{ij}.
+\end{align}
+Các nhãn ấy có thể chỉ động lượng, vị trí, spin, hoặc bất kỳ cơ sở một-hạt đầy đủ nào. Vì các toán tử tạo giao hoán với nhau,
+\begin{equation}
+A_i^\dagger A_j^\dagger\ket{0}
+=A_j^\dagger A_i^\dagger\ket{0}.
+\end{equation}
+Trạng thái hai boson là đối xứng dưới phép hoán đổi.
+
+Các toán tử fermion tuân theo các quan hệ phản giao hoán:
+\begin{align}
+\{C_i,C_j\}&=0,&
+\{C_i^\dagger,C_j^\dagger\}&=0,&
+\{C_i,C_j^\dagger\}&=\delta_{ij},
+\end{align}
+trong đó
+\begin{equation}
+\{X,Y\}=XY+YX.
+\end{equation}
+Đối với một mode đơn,
+\begin{equation}
+\{C^\dagger,C^\dagger\}=2(C^\dagger)^2=0,
+\end{equation}
+nên
+\begin{equation}
+(C^\dagger)^2=0.
+\end{equation}
+Bản thân toán tử không bằng không; bình phương của nó mới bằng không. Nó có thể tạo ra một fermion trong mode ấy, nhưng lần tác dụng thứ hai cho ra không. Đây là nguyên lý loại trừ Pauli trong ngôn ngữ toán tử.
+
+Với các nhãn khác nhau,
+\begin{equation}
+C_i^\dagger C_j^\dagger\ket{0}
+=-C_j^\dagger C_i^\dagger\ket{0},
+\end{equation}
+đó chính là tính phản đối xứng của trạng thái hai fermion. Sự thay thế đại số
+\begin{equation}
+\begin{gathered}
+\text{bosons: commutators}\\
+\Updownarrow\\
+\text{fermions: anticommutators}
+\end{gathered}
+\end{equation}
+mã hóa sự khác biệt về thống kê.
+
+Nhiều boson có thể chiếm cùng một mode. Vì vậy, một số chiếm photon lớn có thể ứng xử như một trường điện từ cổ điển với một biên độ số thông thường. Fermion không thể tích tụ trong một mode, và một trường fermion lẻ không nhận một giá trị cổ điển giao hoán thông thường. Điều này thúc đẩy một kiểu số học khác cho việc xử lý fermion.
+
+\section{Số Grassmann và tính chẵn lẻ}
+
+Các số thông thường giao hoán:
+\begin{equation}
+\alpha_i\alpha_j=\alpha_j\alpha_i.
+\end{equation}
+Các phần tử sinh Grassmann phản giao hoán:
+\begin{equation}
+\theta_i\theta_j=-\theta_j\theta_i.
+\end{equation}
+Lấy \(i=j\), trên một hệ số mà \(2\neq0\), ta được
+\begin{equation}
+\theta_i^2=0.
+\end{equation}
+Không thể gán cho \(\theta_i\) một giá trị số thông thường nào như sáu hay bảy. Những ký hiệu này tạo thành một đại số được thiết kế để theo dõi các dấu fermion.
+
+Các hệ số thông thường giao hoán với các phần tử sinh Grassmann:
+\begin{equation}
+\alpha\theta_i=\theta_i\alpha.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Khi một số thông thường nhân với một số Grassmann thì kết quả là loại đối tượng gì? \lecturetimestamp{01:12:32}}
+\lecturerresponse{Nó vẫn là lẻ Grassmann. Nhân với một hệ số thông thường làm thay đổi độ lớn của nó, chứ không làm thay đổi tính chẵn lẻ. Bao tuyến tính của các phần tử sinh là một không gian vectơ trên các số thông thường.}
+\end{classroomqa}
+
+Đại số này có tính chẵn lẻ \(\mathbb Z_2\). Các hệ số thông thường và tích của một số chẵn phần tử sinh là chẵn; một phần tử sinh hoặc tích của một số lẻ phần tử sinh là lẻ:
+\begin{equation}
+\begin{aligned}
+\text{even}\cdot\text{even}&=\text{even},\\
+\text{even}\cdot\text{odd}&=\text{odd},\\
+\text{odd}\cdot\text{odd}&=\text{even}.
+\end{aligned}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Điều này có tương tự với các quy tắc nhân của số thực và số ảo, hay là một sự khái quát hóa giống như việc đưa vào \(i\)? \lecturetimestamp{01:14:25}}
+\lecturerresponse{Đó là một sự khái quát của số học, nhưng không nên đẩy phép tương tự ấy đi quá xa. Số ảo vẫn giao hoán và thỏa mãn \(i^2=-1\); các đại lượng lẻ Grassmann phản giao hoán và bình phương bằng không. Mẫu nhân chẵn-lẻ chung đó không làm cho các đại số trở nên giống hệt nhau.}
+\end{classroomqa}
+
+Một tích như \(\theta_1\theta_2\) là chẵn và giao hoán với mọi phần tử thuần nhất của đại số Grassmann, nhưng nó không phải là một số thông thường. Nó khác không trong khi
+\begin{equation}
+(\theta_1\theta_2)^2=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Nếu \(\theta_1\theta_2\) là chẵn, tại sao nó không đơn giản là một số thông thường? \lecturetimestamp{01:17:36}}
+\lecturerresponse{Tính chẵn có nghĩa là nó giao hoán trong đại số phân bậc; điều đó không có nghĩa rằng nó là một vô hướng thực hay phức. Tính lũy linh của nó ngay lập tức phân biệt nó với một số thông thường khác không.}
+\end{classroomqa}
+
+\section{Hàm của các biến Grassmann}
+
+Với một phần tử sinh, mọi đa thức đều dừng lại sau bậc nhất:
+\begin{equation}
+f(\theta)=\alpha+\beta\theta.
+\end{equation}
+Mọi lũy thừa \(\theta^n\) với \(n\geq2\) đều triệt tiêu. Với hai phần tử sinh, phần tử tổng quát nhất là
+\begin{equation}
+f(\theta_1,\theta_2)
+=\alpha+\beta_1\theta_1+\beta_2\theta_2
++\gamma\theta_1\theta_2.
+\end{equation}
+Viết đơn thức cuối cùng theo thứ tự đảo ngược sẽ đổi dấu của nó:
+\begin{equation}
+\theta_2\theta_1=-\theta_1\theta_2.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Nhân \(\theta_1\) với một hệ số \(\beta\) có tạo ra một biến Grassmann độc lập thứ ba không? \lecturetimestamp{01:18:39}}
+\lecturerresponse{Không. Nó tạo ra một vectơ khác trong bao tuyến tính của \(\theta_1\), chứ không phải một phần tử sinh cơ sở mới. Với hai phần tử sinh độc lập, mọi hạng tuyến tính lẻ đều là \(\beta_1\theta_1+\beta_2\theta_2\).}
+\end{classroomqa}
+
+Đối với ba phần tử sinh, cơ sở có thứ tự là
+\begin{equation}
+1,\quad
+\theta_1,\theta_2,\theta_3,\quad
+\theta_1\theta_2,\theta_1\theta_3,\theta_2\theta_3,\quad
+\theta_1\theta_2\theta_3.
+\end{equation}
+Nói chung, \(n\) phần tử sinh cho ra \(2^n\) đơn thức cơ sở có thứ tự. Mọi hàm giải tích của hữu hạn phần tử sinh Grassmann đều bị cắt cụt thành một đa thức như vậy vì các phần tử sinh lặp lại đều triệt tiêu. \editorialnote{Cơ sở \(2^n\) chiều này phát biểu tường minh mẫu hình mà bài giảng xây dựng cho một, hai và ba phần tử sinh.}
+
+\section{Phép đạo hàm Grassmann}
+
+Đối với một biến, định nghĩa
+\begin{equation}
+\frac{\partial}{\partial\theta}\alpha=0,
+\qquad
+\frac{\partial}{\partial\theta}\theta=1,
+\end{equation}
+để cho
+\begin{equation}
+\frac{\partial}{\partial\theta}
+(\alpha+\beta\theta)=\beta.
+\end{equation}
+Với hai biến, chọn đạo hàm trái và giữ thứ tự chuẩn tắc \(\theta_1\theta_2\):
+\begin{align}
+\frac{\partial^L f}{\partial\theta_1}
+&=\beta_1+\gamma\theta_2,\\
+\frac{\partial^L f}{\partial\theta_2}
+&=\beta_2-\gamma\theta_1.
+\end{align}
+Dấu trừ ở dòng thứ hai xuất hiện vì đạo hàm lẻ phải đi qua \(\theta_1\) trước khi đạo hàm \(\theta_2\).
+
+Điều này được biểu diễn bằng quy tắc tích có phân bậc. Nếu \(A\) có tính chẵn lẻ \(|A|\in\{0,1\}\), thì
+\begin{equation}
+\frac{\partial^L}{\partial\theta}(AB)
+=\left(\frac{\partial^L A}{\partial\theta}\right)B
++(-1)^{|A|}A
+\left(\frac{\partial^L B}{\partial\theta}\right).
+\end{equation}
+Về tinh thần, quy tắc ấy là thông thường nhưng chứa dấu mà phản giao hoán đòi hỏi. Phép tích phân Grassmann cũng có thể được định nghĩa và, vì không gian hàm là hữu hạn, quy về một bảng ngắn. Bài giảng hoãn lại bảng ấy.
+
+\section{Câu đố về hàm mũ, được giải quyết}
+
+Với một phần tử sinh Grassmann duy nhất và hệ số thông thường \(a\),
+\begin{equation}
+e^{a\theta}
+=1+a\theta,
+\end{equation}
+vì mọi lũy thừa bậc cao hơn đều triệt tiêu. Hai hàm mũ chứa cùng một phần tử sinh tuân theo
+\begin{align}
+e^{a\theta}e^{b\theta}
+&=(1+a\theta)(1+b\theta)\\
+&=1+(a+b)\theta\\
+&=e^{(a+b)\theta}.
+\end{align}
+
+Tiếp đó, cả lớp thử với các phần tử sinh khác nhau. Nhân trực tiếp cho
+\begin{equation}
+e^{\theta_1}e^{\theta_2}
+=(1+\theta_1)(1+\theta_2)
+=1+\theta_1+\theta_2+\theta_1\theta_2.
+\end{equation}
+Thoạt đầu, phép khai triển trên bảng gợi ý rằng bình phương của \(\theta_1+\theta_2\) có thể cung cấp hạng cuối. Một người nghe nhận ra dấu:
+\begin{equation}
+(\theta_1+\theta_2)^2
+=\theta_1^2+\theta_1\theta_2
+ +\theta_2\theta_1+\theta_2^2
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Có phải hạng bình phương triệt tiêu vì nó chứa \(\theta_1\theta_2+\theta_2\theta_1\) không? \lecturetimestamp{01:24:00}}
+\lecturerresponse{Đúng. Sự hiệu chỉnh ấy làm thay đổi kết luận: \(e^{\theta_1+\theta_2}=1+\theta_1+\theta_2\), trong khi tích theo thứ tự \(e^{\theta_1}e^{\theta_2}\) cũng chứa \(\theta_1\theta_2\). Quy luật cộng mũ ngây thơ không áp dụng cho các số mũ phản giao hoán khác nhau.}
+\end{classroomqa}
+
+Không có mâu thuẫn nào cả. Ngay cả các ma trận thông thường cũng chỉ thỏa \(e^Ae^B=e^{A+B}\) khi \(A\) và \(B\) giao hoán. Ở đây
+\begin{equation}
+[\theta_1,\theta_2]
+=\theta_1\theta_2-\theta_2\theta_1
+=2\theta_1\theta_2.
+\end{equation}
+Giao hoán tử này là chẵn và giao hoán với cả hai phần tử sinh, nên chuỗi Baker-Campbell-Hausdorff dừng lại:
+\begin{equation}
+e^{\theta_1}e^{\theta_2}
+=\exp\left(
+\theta_1+\theta_2+\frac12[\theta_1,\theta_2]
+\right)
+=e^{\theta_1+\theta_2+\theta_1\theta_2}.
+\end{equation}
+Vì số mũ ở vế phải là lũy linh, nó khai triển đúng thành
+\(1+\theta_1+\theta_2+\theta_1\theta_2\). \editorialnote{Phép tính BCH này cung cấp lời giải mà bài giảng trực tiếp để lại như một câu hỏi. Bài giảng phát hiện đúng sự thất bại của quy luật ngây thơ nhưng kết thúc trước khi xác định hạng giao hoán tử còn thiếu.}
+
+\begin{classroomqa}
+\audiencequestion{\(1+\theta_1\) là loại số gì, và có được phép cộng phần thông thường với phần Grassmann không? \lecturetimestamp{01:26:16}}
+\lecturerresponse{Nó là một phần tử không thuần nhất của đại số Grassmann, với phần chẵn \(1\) và phần lẻ \(\theta_1\). Những tổng như vậy được phép, nhưng chúng không phải là các vô hướng thông thường cũng không phải là các phần tử lẻ thuần nhất.}
+\end{classroomqa}
+
+Gần cuối, một nghịch lý bề ngoài khác được kiểm tra:
+\begin{equation}
+(\theta_1+\theta_2)^2=0.
+\end{equation}
+Điều này không hàm ý \(\theta_1\theta_2=0\), vì hai hạng chéo triệt tiêu lẫn nhau chứ không tự triệt tiêu riêng rẽ.
+
+\begin{classroomqa}
+\audiencequestion{Nếu mọi phần tử Grassmann lẻ đều có bình phương bằng không, điều đó có nghĩa là tích của bất kỳ hai bộ sinh Grassmann nào cũng bằng không không? \lecturetimestamp{01:32:19}}
+\lecturerresponse{Không. Phương trình \((\theta_1+\theta_2)^2=0\) cho biết \(\theta_1\theta_2+\theta_2\theta_1=0\). Nó chứng minh tính phản giao hoán, chứ không phải rằng từng tích có thứ tự riêng rẽ đều triệt tiêu. Các bộ sinh phân biệt có thể có tích khác không.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Khi viết các hàm mũ này, có phải ta đang giả sử định nghĩa chuỗi lũy thừa thông thường không? \lecturetimestamp{01:34:42}}
+\lecturerresponse{Vâng, và định nghĩa đó là nhất quán vì mọi chuỗi đều kết thúc. Điều không đúng không phải là bản thân hàm mũ, mà là đồng nhất thức không được biện minh \(e^Ae^B=e^{A+B}\) đối với \(A\) và \(B\) không giao hoán. Số hạng hiệu chỉnh bằng giao hoán tử khôi phục quy luật hợp thành đúng.}
+\end{classroomqa}
+
+Phần kết thúc mang tính thăm dò này là thích hợp. Các đối xứng thông thường đã đưa ta từ các phép biến đổi unita đến các bộ sinh và các giao hoán tử; siêu đối xứng đã đưa ta từ các bộ sinh lẻ đến các biến phản giao hoán. Trong cả hai trường hợp, quy luật nhân là đối tượng trung tâm. Đối với các phép quay, nó xuất hiện trong \([L_i,L_j]\); đối với các hàm mũ Grassmann, nó xuất hiện trong số hạng giao hoán tử ngăn cản phép cộng ngây thơ. Đại số này không quen thuộc, nhưng nó mạch lạc, hữu hạn, và hoàn toàn thích hợp với các phép biến đổi fermionic mà siêu đối xứng đòi hỏi.

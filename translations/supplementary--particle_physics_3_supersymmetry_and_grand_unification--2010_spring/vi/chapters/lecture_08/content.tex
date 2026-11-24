@@ -1,0 +1,516 @@
+\chapter{Siêu đối xứng bốn chiều và mô hình Wess--Zumino}
+
+\lectureoverview{Đại số siêu đối xứng một chiều của bài giảng trước chỉ chứa Hamiltonian. Bất biến Lorentz giờ buộc năng lượng phải tái hợp với xung lượng không gian, và các siêu điện tích phải trở thành các spinor hai thành phần. Ta đi tới đại số đó bằng cách trước hết quay lại fermion Weyl không khối lượng và Hamiltonian \(H=\boldsymbol{\sigma}\cdot\mathbf p\) của nó. Sau đó ta biểu diễn các siêu điện tích như những toán tử vi phân trên siêu không gian bốn chiều, tách ra các siêu trường chiral bằng ràng buộc \(\bar D_{\dot\alpha}\Phi=0\), và dùng phép tích phân trên siêu không gian để xây dựng một lý thuyết trường cụ thể. Các lựa chọn kế tiếp \(\Phi^\dagger\Phi\), \(\Phi^2\), và \(\Phi^3\) tạo ra sự lan truyền, các khối lượng boson--fermion bằng nhau, các tương tác Yukawa, và một tương tác vô hướng liên hệ với chúng. Trường phụ trợ \(F\) làm cho các quan hệ này trở nên minh bạch, trong khi các giản đồ vòng kín ở cuối cho thấy vì sao siêu đối xứng làm giảm độ nhạy tử ngoại.}
+
+\section{Vì sao Hamiltonian không thể đứng một mình}
+
+Trong mô hình đồ chơi, không gian đã bị lược bỏ và hệ thức cơ bản là
+\begin{equation}
+\{Q,Q^\dagger\}=2H.
+\label{eq:l8-time-only-algebra}
+\end{equation}
+Dạng đó là đủ khi thời gian là tọa độ duy nhất. Tuy nhiên, trong một lý thuyết tương đối tính, \(H=P_0\) là một thành phần của bốn-xung lượng \(P_\mu\). Một phép boost Lorentz trộn nó với \(P_i\). Một đại số mà vế phải tách riêng \(P_0\) thì không thể biến đổi hiệp biến.
+
+Vì vậy, cách sửa phải đồng thời làm hai việc. Nó phải thay \(H\) bằng cả bốn thành phần \(P_\mu\), và nó phải cung cấp các chỉ số ở vế trái sao cho có thể ghép với một vectơ Lorentz ở vế phải. Phương trình Dirac không khối lượng cung cấp manh mối cần thiết: một fermion tương đối tính có thể được mô tả bằng một spinor hai thành phần, và các ma trận \(\sigma^\mu\) biến một chỉ số vectơ thành một cặp chỉ số spinor.
+
+\section{Fermion không khối lượng, helicity và chirality}
+
+Hãy bắt đầu với sự phân biệt vật lý giữa hạt có khối lượng và hạt không khối lượng. Xét một hạt spin-\(\tfrac12\) có khối lượng chuyển động theo hướng spin của nó. Vì tốc độ của nó nhỏ hơn tốc độ ánh sáng, một quan sát viên có thể vượt qua nó. Trong hệ quy chiếu mới, xung lượng đảo chiều còn spin thì không, nên helicity đảo chiều. Do đó, một lý thuyết có khối lượng bất biến Lorentz tất yếu phải chứa cả hai helicity.
+
+Không quan sát viên nào có thể vượt qua một hạt không khối lượng. Các biến đổi Lorentz chính tắc không thể đảo xung lượng của nó so với spin của nó, nên một biểu diễn không khả quy không khối lượng có thể mang chỉ một helicity. Một phép quay không gian có thể xoay ngược hướng bay, nhưng nó không biến bàn tay phải thành bàn tay trái.
+
+\begin{classroomqa}
+\audiencequestion{Lập luận về việc vượt qua thực sự nói về helicity chứ không phải chirality sao? \lecturetimestamp{00:05:42}}
+\lecturerresponse{Đúng. Helicity là hình chiếu của spin dọc theo xung lượng, còn chirality là trị riêng của ma trận chiral, theo quy ước là \(\gamma^5\). Đối với một mode không khối lượng, hai nhãn này gắn chặt với nhau, đó là lý do trong ví dụ này ngôn ngữ có thể nghe như dùng thay thế cho nhau. Đối với một hạt có khối lượng, chúng là khác nhau.}
+\end{classroomqa}
+
+Việc đếm số trạng thái đòi hỏi một lưu ý.\editorialnote{Một trường Weyl không khối lượng đơn lẻ có một helicity hạt và helicity phản hạt đối ngược. Vì thế, "ít hơn một nửa số trạng thái" ám chỉ sự rút giảm từ một trường Dirac bốn thành phần xuống một trường Weyl hai thành phần; điều đó không có nghĩa là các trạng thái phản hạt đã biến mất.}
+
+Hãy viết trường Weyl được dùng trong lập luận mở đầu này là
+\begin{equation}
+\chi=
+\begin{pmatrix}
+\chi_1\\
+\chi_2
+\end{pmatrix},
+\end{equation}
+Bài giảng ký hiệu trường này là \(\psi_\alpha\); ở đây ta gọi nó là \(\chi\) để nó không bị nhầm với biểu diễn Weyl liên hợp theo quy ước được đặt trong siêu trường chiral ở bên dưới.
+\begin{equation}
+H\chi=\boldsymbol{\sigma}\cdot\mathbf p\,\chi.
+\label{eq:l8-weyl-hamiltonian}
+\end{equation}
+Đối với xung lượng \(\mathbf p\), ma trận \(\boldsymbol{\sigma}\cdot\mathbf p\) có các trị riêng \(\pm|\mathbf p|\). Nhánh tần số dương cung cấp mode hạt; nhánh tần số âm được diễn giải lại thông qua cách xây dựng phản hạt thay vì được giữ lại như một phổ không bị chặn từ dưới.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_02.png}
+\lectureframe{00:07:44.271}
+\caption{Spinor chiral hai thành phần và Hamiltonian \(H=\boldsymbol{\sigma}\cdot\mathbf p\). Ký hiệu xung lượng cuối cùng bị che khuất một phần, nhưng phương trình được nói ra xác định nó.}
+\end{figure}
+
+Nhãn thuận tay cũng phụ thuộc vào quy ước.\editorialnote{Trên bảng, một tính thuận tay được gắn trực tiếp với trị riêng dương của \(\boldsymbol{\sigma}\cdot\mathbf p\). Chirality nào nhận dấu đó phụ thuộc vào các định nghĩa của \(\sigma^\mu\), \(\bar\sigma^\mu\) và trường Weyl. Chúng tôi giữ nguyên phát biểu về trị riêng nhưng không gắn cho nó một nhãn trái/phải độc lập với quy ước.}
+
+Thay \(H\) bằng \(i\partial_t\) và \(\mathbf p\) bằng \(-i\nabla\) ta được
+\begin{equation}
+i\partial_t\chi=-i\boldsymbol{\sigma}\cdot\nabla\chi.
+\end{equation}
+Đặt
+\begin{equation}
+\begin{aligned}
+\sigma^\mu&=(\mathbf 1,\boldsymbol{\sigma}),\\
+\bar\sigma^\mu&=(\mathbf 1,-\boldsymbol{\sigma}),\\
+\eta_{\mu\nu}&=\operatorname{diag}(1,-1,-1,-1).
+\end{aligned}
+\label{eq:l8-sigma-convention}
+\end{equation}
+Khi đó phương trình vừa thu được là
+\begin{equation}
+i\sigma^\mu\partial_\mu\chi=0.
+\label{eq:l8-weyl-equation}
+\end{equation}
+Biểu diễn Weyl liên hợp dùng \(\bar\sigma^\mu\). Chính biểu diễn liên hợp này, được gọi là \(\psi_\alpha\) ở dưới, có phương trình tự do là \(i\bar\sigma^\mu\partial_\mu\psi=0\). Việc chứng minh tính hiệp biến đòi hỏi biểu diễn spinor của nhóm Lorentz, nhưng điều quan trọng ở đây là cấu trúc: bốn ma trận \(\sigma^\mu\) nối một chỉ số không-thời gian với hai chỉ số spinor.
+
+\section{Siêu đại số bốn chiều}
+
+Các tọa độ lẻ giờ phải biến đổi như các spinor Weyl:
+\begin{equation}
+\theta^\alpha=(\theta^1,\theta^2),
+\qquad
+\bar\theta^{\dot\alpha}=(\bar\theta^{\dot1},\bar\theta^{\dot2}).
+\end{equation}
+Dấu gạch trên biểu thị liên hợp phức, còn dấu chấm phân biệt biểu diễn Lorentz liên hợp. Có hai thành phần Grassmann phức, tức bốn thành phần Grassmann thực. Vì vậy, một siêu trường chẵn tổng quát
+\begin{equation}
+\mathcal S=\mathcal S(x^\mu,\theta^\alpha,\bar\theta^{\dot\alpha})
+\end{equation}
+có khai triển Grassmann hữu hạn. Đơn thức bậc cao nhất của nó là
+\begin{equation}
+\theta^2\bar\theta^2
+\equiv
+(\theta^1\theta^2)(\bar\theta^{\dot1}\bar\theta^{\dot2}),
+\end{equation}
+là tích của cả bốn tọa độ lẻ độc lập. Hệ số của đơn thức này thường được gọi là thành phần \(D\).
+
+Các siêu điện tích cũng mang chỉ số spinor. Trong siêu đối xứng \(N=1\) bốn chiều, đại số của chúng là
+\begin{align}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+&=2\sigma^\mu_{\alpha\dot\beta}P_\mu,
+\label{eq:l8-superalgebra-main}\\
+\{Q_\alpha,Q_\beta\}&=0,
+&
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}&=0,
+\label{eq:l8-superalgebra-nilpotent}\\
+[P_\mu,Q_\alpha]&=0,
+&
+[P_\mu,\bar Q_{\dot\alpha}]&=0,
+&
+[P_\mu,P_\nu]&=0.
+\label{eq:l8-superalgebra-commutators}
+\end{align}
+Hệ số 2 là quy ước. Ma trận
+\(\sigma^\mu_{\alpha\dot\beta}\)
+co chỉ số vectơ trên \(P_\mu\) và để lại đúng hai chỉ số spinor xuất hiện ở vế trái.
+
+\begin{classroomqa}
+\audiencequestion{Các \(\alpha\) và \(\beta\) trên ma trận sigma có phải là các chỉ số ma trận của nó không? \lecturetimestamp{00:22:01}}
+\lecturerresponse{Đúng. Chính xác hơn, một cái là chỉ số Weyl không chấm và cái kia là chỉ số liên hợp có chấm; \(\mu\) là chỉ số vectơ không-thời gian. Ma trận sigma là cầu nối giữa các cách mô tả đó.}
+\end{classroomqa}
+
+Ký hiệu đã được làm sạch làm cho cầu nối đó trở nên tường minh.\editorialnote{Bài giảng cố ý lược bỏ các chỉ số có chấm và tranh luận về thứ tự \(\alpha\beta\) so với \(\beta\alpha\) trên bảng. Các phương trình~\eqref{eq:l8-superalgebra-main} và \eqref{eq:l8-superalgebra-commutators} khôi phục ký hiệu có chấm/không chấm chuẩn mà không làm thay đổi lập luận đang được nêu.}
+
+Dòng cuối cùng nói rằng các siêu điện tích được bảo toàn và tương thích với các phép tịnh tiến. Các thành phần xung lượng giao hoán vì các đại diện dưới dạng đạo hàm của chúng giao hoán. Trong quy ước vi phân dùng bên dưới,
+\begin{equation}
+P_\mu=i\partial_\mu,
+\end{equation}
+nên phương trình~\eqref{eq:l8-superalgebra-main} cũng có thể được viết thành
+\begin{equation}
+\{Q_\alpha,\bar Q_{\dot\beta}\}
+=2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu.
+\end{equation}
+
+\section{Siêu điện tích như các đạo hàm trên siêu không gian}
+
+Một xung lượng tịnh tiến một tọa độ thông thường; một siêu điện tích tịnh tiến một tọa độ lẻ đồng thời cũng dịch chuyển không-thời gian. Lấy quy ước đạo hàm Grassmann trái và định nghĩa
+\begin{align}
+Q_\alpha
+&=\partial_\alpha
+-i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-Q}\\
+\bar Q_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
++i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Qbar}
+\end{align}
+Tác dụng bằng \(\epsilon^\alpha Q_\alpha+
+\bar\epsilon_{\dot\alpha}\bar Q^{\dot\alpha}\) cho biến thiên siêu đối xứng vô cùng bé của một siêu trường. Các thành phần của nó đơn giản là các hệ số của những đơn thức Grassmann độc lập, và các toán tử vi phân trộn lẫn các hệ số đó.
+
+\begin{classroomqa}
+\audiencequestion{Trong dạng viết tắt \(\bar\theta\sigma\partial\), đạo hàm theo \(x\) nào được hiểu? \lecturetimestamp{00:25:40}}
+\lecturerresponse{Cả bốn. \(\mu\) lặp lại trong \(\bar\theta^{\dot\alpha}\sigma^\mu_{\alpha\dot\alpha}\partial_\mu\) được lấy tổng, nên mỗi thành phần của \(\sigma^\mu\) được ghép với đạo hàm tương ứng \(\partial/\partial x^\mu\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Điện tích liên hợp có phải chứa \(\theta\) chứ không phải thêm một \(\bar\theta\) không? \lecturetimestamp{00:26:16}}
+\lecturerresponse{Đúng. \(Q\) lấy đạo hàm theo \(\theta\) và chứa \(\bar\theta\); \(\bar Q\) lấy đạo hàm theo \(\bar\theta\) và chứa \(\theta\). Chúng là các toán tử liên hợp của nhau.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có phải \(\sigma^\mu\) là đối xứng không? \lecturetimestamp{00:27:04}}
+\lecturerresponse{Các ma trận Pauli là Hermite. Ba trong bốn ma trận trong \((\mathbf1,\boldsymbol{\sigma})\) là đối xứng, còn \(\sigma^2\) là phản đối xứng dưới phép chuyển vị thông thường. Tính Hermite, cùng với vị trí các chỉ số có chấm và không chấm, là tính chất liên hợp thích đáng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ma trận sigma trong phương trình liên hợp có mang các chỉ số theo thứ tự ngược lại không? \lecturetimestamp{00:27:13}}
+\lecturerresponse{Phép liên hợp hoán đổi các biểu diễn có chấm và không chấm, nên ký hiệu an toàn là \(\sigma^\mu_{\alpha\dot\alpha}\) và liên hợp của nó \(\bar\sigma^{\mu\,\dot\alpha\alpha}\), thay vì coi hai nhãn đó là các khe ma trận có thể hoán đổi cho nhau.}
+\end{classroomqa}
+
+Các công thức trong các phương trình~\eqref{eq:l8-Q} và \eqref{eq:l8-Qbar} khác với dạng viết tắt dùng trên bảng ở những dấu bề ngoài. Những dấu ấy gắn với việc \(P_\mu\) là \(+i\partial_\mu\) hay \(-i\partial_\mu\), với việc các đạo hàm tác dụng từ trái hay từ phải, và với cách sắp thứ tự các biến lẻ liên hợp. Điều quan trọng là một quy ước phải thỏa toàn bộ đại số cùng một lúc.
+
+\section{Một ràng buộc được bảo toàn dưới siêu đối xứng}
+
+Một siêu trường tổng quát chứa nhiều thành phần. Ta tìm một lớp nhỏ hơn mà không phá hủy đối xứng. Bài giảng trước hết đưa ra một phép tương tự thông thường. Với một vectơ \(\mathbf V\), ràng buộc
+\begin{equation}
+V_x=0
+\end{equation}
+không bất biến quay: sau một phép quay, \(V_y\) đóng góp vào thành phần \(x\) mới. Trái lại,
+\begin{equation}
+\mathbf V^2=1
+\end{equation}
+là bất biến và loại bỏ một bậc tự do độc lập. Một ràng buộc hữu ích phải biến các trường thỏa ràng buộc thành các trường vẫn thỏa ràng buộc dưới đối xứng.
+
+Giả sử một toán tử lẻ tuyến tính \(\bar D_{\dot\alpha}\) xác định
+\begin{equation}
+\bar D_{\dot\alpha}\Phi=0.
+\label{eq:l8-chiral-constraint}
+\end{equation}
+Sau một biến thiên siêu đối xứng \(\delta\Phi=Q\Phi\), điều kiện đó vẫn sẽ đúng nếu \(\bar D\) phản giao hoán với các siêu điện tích:
+\begin{equation}
+\bar D(Q\Phi)=-Q(\bar D\Phi)=0.
+\end{equation}
+Đây là phép kiểm tra nhất quán trừu tượng thúc đẩy cách xây dựng này, chứ không phải một định nghĩa được nêu ra mà không giải thích.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao có thể đổi chỗ \(Q\) và \(\bar D\) trong biểu thức cuối cùng? \lecturetimestamp{00:36:56}}
+\lecturerresponse{Chúng là các toán tử lẻ được chọn sao cho phản giao hoán. Vì vậy, việc đổi thứ tự của chúng đưa vào một dấu trừ; một khi \(\bar D\) đi tới \(\Phi\), ràng buộc ban đầu làm cho kết quả bằng không.}
+\end{classroomqa}
+
+Các đạo hàm hiệp biến cần thiết thu được bằng cách đảo dấu của các hạng đạo hàm không-thời gian so với các siêu điện tích:
+\begin{align}
+D_\alpha
+&=\partial_\alpha
++i\sigma^\mu_{\alpha\dot\alpha}
+\bar\theta^{\dot\alpha}\partial_\mu,
+\label{eq:l8-D}\\
+\bar D_{\dot\alpha}
+&=-\bar\partial_{\dot\alpha}
+-i\theta^\alpha\sigma^\mu_{\alpha\dot\alpha}\partial_\mu.
+\label{eq:l8-Dbar}
+\end{align}
+Chúng thỏa
+\begin{align}
+\{D_\alpha,\bar D_{\dot\beta}\}
+&=-2i\sigma^\mu_{\alpha\dot\beta}\partial_\mu,\\
+\{D_\alpha,Q_\beta\}
+&=\{D_\alpha,\bar Q_{\dot\beta}\}=0,\\
+\{\bar D_{\dot\alpha},Q_\beta\}
+&=\{\bar D_{\dot\alpha},\bar Q_{\dot\beta}\}=0.
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Có phải thay đổi duy nhất từ \(\bar Q\) sang \(\bar D\) là dấu của hạng đạo hàm không-thời gian không? \lecturetimestamp{00:37:58}}
+\lecturerresponse{Chính xác. Sự đảo dấu đó làm cho các hạng chéo triệt tiêu khi phản giao hoán \(D\) với một trong hai siêu điện tích.}
+\end{classroomqa}
+
+Ta chỉ áp đặt phương trình~\eqref{eq:l8-chiral-constraint}. Nếu áp đặt cả \(D_\alpha\Phi=0\) và \(\bar D_{\dot\alpha}\Phi=0\) thì, thông qua phản giao hoán tử của chúng, sẽ buộc \(\partial_\mu\Phi=0\), chỉ còn lại nhiều nhất một phần còn lại độc lập với không-thời gian.
+\editorialnote{Trên bảng có nói rằng áp đặt cả hai ràng buộc sẽ buộc \(\Phi=0\). Về mặt đại số, điều bị buộc một cách chặt chẽ là tính độc lập với không-thời gian; khi đó các điều kiện biên hay điều kiện thành phần bổ sung mới có thể làm trường giảm thêm nữa.}
+
+\section{Giải ràng buộc chiral}
+
+Định nghĩa tọa độ dịch chuyển
+\begin{equation}
+y^\mu=x^\mu+i\theta\sigma^\mu\bar\theta.
+\label{eq:l8-chiral-coordinate}
+\end{equation}
+Với quy ước đạo hàm trái ở trên, một hàm
+\begin{equation}
+\Phi=\Phi(y,\theta)
+\label{eq:l8-chiral-solution}
+\end{equation}
+thỏa \(\bar D_{\dot\alpha}\Phi=0\). Quy tắc dây chuyền làm cho sự triệt tiêu hiện ra tường minh. Lấy đạo hàm qua \(y^\mu\) cho đúng hạng \(i\theta\sigma^\mu\partial_\mu\Phi\) xuất hiện với dấu ngược lại trong \(\bar D_{\dot\alpha}\).
+
+Do đó, một siêu trường chiral không có sự phụ thuộc độc lập nào vào \(\bar\theta\). Nó vẫn có thể chứa \(\bar\theta\), nhưng chỉ thông qua tổ hợp \(y^\mu\). Khai triển hữu hạn của nó là
+\begin{equation}
+\Phi(y,\theta)
+=\phi(y)+\sqrt2\,\theta\psi(y)+\theta^2F(y).
+\label{eq:l8-chiral-expansion-y}
+\end{equation}
+Ba loại thành phần là một vô hướng phức \(\phi\), một fermion Weyl \(\psi_\alpha\), và một vô hướng phức \(F\). Thành phần cuối cùng là phụ trợ chứ không phải một boson lan truyền thứ hai.
+
+\begin{classroomqa}
+\audiencequestion{Có phải \(x\) đã được thay bằng một tọa độ mới \(y\) trực giao với nó không? \lecturetimestamp{00:49:08}}
+\lecturerresponse{Không. \(y^\mu\) là cách viết tắt cho tổ hợp cụ thể trong phương trình ~\eqref{eq:l8-chiral-coordinate}; nó không phải là một phương không-thời gian bổ sung. Làm việc trong \(y\) làm cho tính chiral trở nên đơn giản, và khi xây dựng lý thuyết trường thông thường chúng ta chuyển ngược về \(x\).}
+\end{classroomqa}
+
+Khai triển phương trình ~\eqref{eq:l8-chiral-expansion-y} tại \(x\) cố định, ta được
+\begin{align}
+\Phi(x,\theta,\bar\theta)
+={}&\phi
++\sqrt2\,\theta\psi
++\theta^2F
++i\theta\sigma^\mu\bar\theta\,\partial_\mu\phi
+\notag\\
+&-\frac{i}{\sqrt2}\theta^2
+\partial_\mu\psi\,\sigma^\mu\bar\theta
++\frac14\theta^2\bar\theta^2\Box\phi.
+\label{eq:l8-chiral-expansion-x}
+\end{align}
+Tất cả các trường thành phần ở vế phải đều được lấy tại \(x\). Trường phản chiral liên hợp phụ thuộc vào
+\(\bar y^\mu=x^\mu-i\theta\sigma^\mu\bar\theta\) và \(\bar\theta\). Một siêu trường chiral không thể nhất quán là thực, vì liên hợp của nó thỏa mãn điều kiện chiral ngược lại.
+
+\section{Tích phân trong siêu không gian}
+
+Một hàm tác dụng trên toàn siêu không gian có dạng
+\begin{equation}
+S_D=\int d^4x\,d^2\theta\,d^2\bar\theta\;K,
+\label{eq:l8-D-term-action}
+\end{equation}
+trong đó \(K\) là một siêu trường thực. Tích phân Berezin chọn hệ số \(\theta^2\bar\theta^2\) của nó. Sau các phép tích phân theo các biến lẻ, chỉ còn lại một Lagrangian không-thời gian thông thường.
+
+Có một cách xây dựng bất biến thứ hai. Nếu \(W(\Phi)\) là chiral, thì
+\begin{equation}
+S_F=\int d^4x\,d^2\theta\;W(\Phi)
++\int d^4x\,d^2\bar\theta\;\overline{W}(\Phi^\dagger)
+\label{eq:l8-F-term-action}
+\end{equation}
+là siêu đối xứng. Tích phân thứ nhất chọn thành phần \(\theta^2\) và tích phân thứ hai chọn liên hợp của nó.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao lại hợp lệ khi chỉ tích phân theo \(d^2\theta\) trong khi biểu thức không phụ thuộc \(\bar\theta\)? \lecturetimestamp{01:16:30}}
+\lecturerresponse{Tính chiral được bảo toàn bởi siêu đối xứng, và thành phần \(\theta\) bậc cao nhất của một siêu trường chiral chỉ biến đổi bởi một đạo hàm toàn phần theo không-thời gian. Vì vậy tích phân không-thời gian của nó là bất biến, cũng như tích phân đầy đủ của thành phần \(D\) là bất biến.}
+\end{classroomqa}
+
+\section{Đa bội chiral tự do}
+
+Hãy xét biểu thức có vẻ không có cấu trúc
+\begin{equation}
+S_{\mathrm{free}}
+=\int d^4x\,d^2\theta\,d^2\bar\theta\;
+\Phi^\dagger\Phi.
+\label{eq:l8-free-superaction}
+\end{equation}
+Hai thừa số phụ thuộc vào các tọa độ bị dịch theo hai hướng ngược nhau:
+\begin{equation}
+\Phi=\Phi(x+i\theta\sigma\bar\theta,\theta),
+\qquad
+\Phi^\dagger
+=\Phi^\dagger(x-i\theta\sigma\bar\theta,\bar\theta).
+\end{equation}
+Bên trong tích phân không-thời gian, ta có thể dịch biến giả \(x\). Một phép dịch có thể loại bỏ độ dời Grassmann khỏi một thừa số, nhưng khi đó nó lại nhân đôi độ dời tương đối ở thừa số kia. Khai triển Taylor theo độ dời lũy linh đó dừng lại sau hữu hạn số hạng.
+
+Đây là nguồn gốc của các đạo hàm. Biểu thức siêu không gian \(\Phi^\dagger\Phi\) không chứa đạo hàm không-thời gian tường minh nào, nhưng các đối số bị dịch tạo ra các đạo hàm bậc nhất và bậc hai của các trường thành phần. Nhân các khai triển với nhau và chỉ giữ lại thành phần bậc cao nhất thì thu được, theo quy ước của phương trình ~\eqref{eq:l8-sigma-convention},
+\begin{equation}
+\mathcal L_{\mathrm{free}}
+=\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F.
+\label{eq:l8-free-component-lagrangian}
+\end{equation}
+Lên đến phép tích phân từng phần, phần vô hướng cũng có thể được viết về mặt ký hiệu là \(-\phi^\ast\Box\phi\), đây là dạng mà phép tính trên bảng tiến tới.
+
+\begin{classroomqa}
+\audiencequestion{Dòng thứ hai trong khai triển Taylor của siêu trường xuất phát từ đâu? \lecturetimestamp{01:03:00}}
+\lecturerresponse{Nó xuất phát từ khai triển thành phần \(\Phi(y,\theta)=\phi(y)+\sqrt2\theta\psi(y)+\theta^2F(y)\). Sau đó, mỗi thành phần được khai triển Taylor vì \(y\) khác \(x\) bởi một song tuyến Grassmann lũy linh.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Thành phần cuối cùng đó có nên mang \(\theta^2\) không? \lecturetimestamp{01:04:54}}
+\lecturerresponse{Có. Thành phần phụ trợ là \(F\theta^2\). Vì nó đã chứa cả hai \(\theta\) độc lập, nên mọi phép dịch Taylor tiếp theo mang thêm một \(\theta\) nữa đều triệt tiêu.}
+\end{classroomqa}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\lectureframe{01:08:57.900}
+\caption{Khai triển theo tọa độ dịch chuyển được gom thành các hạng vô hướng, fermion và phụ trợ của Lagrangian thông thường.}
+\end{figure}
+
+Hai hạng đầu tiên trong phương trình ~\eqref{eq:l8-free-component-lagrangian} cho các phương trình Klein--Gordon và Weyl không khối lượng. Hạng cuối cùng không chứa đạo hàm:
+\begin{equation}
+\frac{\partial\mathcal L}{\partial F}=F^\ast=0,
+\qquad
+\frac{\partial\mathcal L}{\partial F^\ast}=F=0.
+\label{eq:l8-free-F-equation}
+\end{equation}
+Nó không đưa vào dữ liệu ban đầu nào và cũng không có hạt on-shell nào.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_04.png}
+\lectureframe{01:11:32.360}
+\caption{Hạng phụ trợ không có đạo hàm \(F^\ast F\) ở cuối Lagrangian thành phần.}
+\end{figure}
+
+Trong ngôn ngữ bộ truyền, điều đó cũng là như vậy. Toán tử nghịch đảo của phần bậc hai đối với \(F\) không phụ thuộc xung lượng. Biến đổi Fourier của nó là địa phương:
+\begin{equation}
+\langle F(x)F^\ast(y)\rangle
+\propto \delta^{(4)}(x-y).
+\label{eq:l8-F-contact}
+\end{equation}
+Một đường \(F\) có thể được dùng để dựng một giản đồ, nhưng hai đầu mút của nó trùng nhau. Đó là một co rút tiếp xúc, không phải quỹ đạo của một hạt vật lý.
+
+\section{Siêu thế bậc hai và các khối lượng bằng nhau}
+
+Sự lan truyền đến từ một hạng \(D\). Khối lượng đến từ tích phân chiral. Chọn chuẩn hóa quy ước
+\begin{equation}
+W_2(\Phi)=\frac12m\Phi^2.
+\end{equation}
+Thành phần \(\theta^2\) là
+\begin{equation}
+\left.W_2(\Phi)\right|_{\theta^2}
+=m\phi F-\frac12m\psi\psi.
+\end{equation}
+Cùng với hạng liên hợp, Lagrangian thành phần trở thành
+\begin{align}
+\mathcal L
+={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi
++F^\ast F
+\notag\\
+&+m\phi F+m^\ast\phi^\ast F^\ast
+-\frac12m\psi\psi
+-\frac12m^\ast\bar\psi\bar\psi.
+\label{eq:l8-mass-offshell}
+\end{align}
+Song tuyến fermion là một hạng khối lượng Majorana cho trường Weyl. Các phương trình của \(F\) là đại số:
+\begin{equation}
+F^\ast=-m\phi,
+\qquad
+F=-m^\ast\phi^\ast.
+\label{eq:l8-mass-F-equations}
+\end{equation}
+Thế vào cho
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\mathrm{on\ shell}}={}&
+\partial_\mu\phi^\ast\partial^\mu\phi
++i\bar\psi\bar\sigma^\mu\partial_\mu\psi\\
+&-|m|^2|\phi|^2\\
+&-\frac12\left(m\psi\psi+m^\ast\bar\psi\bar\psi\right).
+\end{aligned}
+\label{eq:l8-mass-onshell}
+\end{equation}
+Do đó khối lượng vô hướng và khối lượng fermion đều bằng \(|m|\). Theo ngôn ngữ giản đồ trên bảng, một vô hướng chuyển cục bộ thành \(F\) qua một chèn \(m\phi F\) rồi lập tức chuyển ngược lại qua liên hợp của nó. Hai chèn tạo ra \(|m|^2|\phi|^2\), đúng chính là hạng khối lượng vô hướng tìm được khi giải phương trình ~\eqref{eq:l8-mass-F-equations}.
+
+Giờ đây có thể phát biểu chuẩn hóa một cách chính xác.\editorialnote{Bài giảng cố ý lược bỏ các hệ số số học khi nhân các siêu trường. Các thừa số \(1/2\), \(1/3\) và \(\sqrt2\) được dùng ở đây là chuẩn hóa Wess--Zumino quy ước; chúng làm cho các khối lượng và hằng số ghép ở mức thành phần có giá trị chính xác, đồng thời bảo toàn mọi bước định tính của phép suy dẫn trên bảng.}
+
+\section{Siêu thế bậc ba và các tương tác}
+
+Bây giờ thêm
+\begin{equation}
+W(\Phi)=\frac12m\Phi^2+\frac13g\Phi^3.
+\label{eq:l8-superpotential}
+\end{equation}
+Với \(W\) chỉnh hình tổng quát, thành phần \(F\) là
+\begin{equation}
+\left.W(\Phi)\right|_{\theta^2}
+=F W'(\phi)-\frac12W''(\phi)\psi\psi.
+\label{eq:l8-W-components}
+\end{equation}
+Ở đây
+\begin{equation}
+W'(\phi)=m\phi+g\phi^2,
+\qquad
+W''(\phi)=m+2g\phi.
+\end{equation}
+Trước khi khử \(F\), hạng bậc ba chứa
+\begin{equation}
+g\phi^2F-g\phi\psi\psi+\text{h.c.}
+\label{eq:l8-cubic-offshell}
+\end{equation}
+Hạng thứ hai là một đỉnh Yukawa nối một đường vô hướng với hai đường fermion. Hạng thứ nhất nối hai vô hướng với một đường phụ trợ.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95,>=Latex]
+  \coordinate (vone) at (0,0);
+  \draw[->,thick] (-2,1.1) -- (vone);
+  \draw[->,thick] (vone) -- (-2,-1.1);
+  \draw[thick,dashed] (vone) -- (2,0);
+  \node[left] at (-2,1.1) {\(\psi\)};
+  \node[left] at (-2,-1.1) {\(\psi\)};
+  \node[right] at (2,0) {\(\phi\)};
+  \node[below=8pt of vone] {\(-g\phi\psi\psi\)};
+\end{tikzpicture}
+\caption{Cách vẽ lại có tính sư phạm của tương tác Yukawa: hai chân fermion và một chân vô hướng gặp nhau với hằng số ghép tỉ lệ với \(g\).}
+\end{figure}
+
+Phương trình đầy đủ của trường phụ trợ là
+\begin{equation}
+F^\ast=-W'(\phi)=-(m\phi+g\phi^2).
+\label{eq:l8-general-F-equation}
+\end{equation}
+Khử nó cho ra thế vô hướng
+\begin{equation}
+V(\phi)=|W'(\phi)|^2
+=|m\phi+g\phi^2|^2.
+\label{eq:l8-scalar-potential}
+\end{equation}
+Ngoài hạng khối lượng, biểu thức này còn chứa các hạng vô hướng bậc ba tỉ lệ với \(m^\ast g\) và một hạng bậc bốn
+\begin{equation}
+V(\phi)\supset |g|^2|\phi|^4.
+\label{eq:l8-quartic}
+\end{equation}
+Trong bức tranh đường phụ trợ, hai đỉnh \(\phi^2F\) được nối bởi co rút \(F\) địa phương. Vì phương trình ~\eqref{eq:l8-F-contact} buộc vị trí của chúng trùng nhau, kết quả chính xác là một đỉnh tiếp xúc bốn vô hướng.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (vfour) at (0,0);
+  \foreach \angle in {35,145,215,325}
+    \draw[thick,dashed] (vfour) -- (\angle:1.9);
+  \fill (vfour) circle (1.5pt);
+  \node[below=8pt of vfour] {\(-|g|^2|\phi|^4\)};
+\end{tikzpicture}
+\caption{Sau khi trường phụ trợ bị khử, hai đỉnh \(F\) địa phương trở thành một tương tác tiếp xúc bốn vô hướng.}
+\end{figure}
+
+Siêu đối xứng đã làm nhiều hơn là chỉ đặt một boson và một fermion vào cùng một lý thuyết. Nó buộc khối lượng của chúng phải bằng nhau, ràng buộc hằng số ghép Yukawa với \(g\), và cố định hằng số ghép vô hướng bậc bốn bằng \(|g|^2\). Những quan hệ này có thể được kiểm nghiệm qua khối lượng, biên độ tán xạ và các phân rã; chúng không phải là những trùng hợp số học tùy ý.
+
+\section{Hiệu ứng vòng lặp theo cặp}
+
+Các quan hệ này trở nên hữu ích nhất khi các tương tác hiệu chỉnh khối lượng hạt. Tự năng của vô hướng nhận một vòng boson từ đỉnh bậc bốn và một vòng fermion từ hai đỉnh Yukawa. Mỗi cái đều mang hai lũy thừa của cùng một hằng số ghép. Một vòng fermion kín có dấu trừ tương đối do thống kê Fermi đòi hỏi.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \begin{scope}[xshift=-3.3cm]
+    \draw[thick,dashed] (-2,0)--(0,0)--(2,0);
+    \draw[thick,dashed] (0,0) .. controls (-0.9,1.7) and (0.9,1.7) .. (0,0);
+    \fill (0,0) circle (1.4pt);
+    \node at (0,-0.55) {bosonic loop};
+  \end{scope}
+  \begin{scope}[xshift=3.3cm]
+    \draw[thick,dashed] (-2,0)--(-0.8,0);
+    \draw[thick,dashed] (0.8,0)--(2,0);
+    \draw[->,thick] (-0.8,0) arc[start angle=180,end angle=0,x radius=0.8,y radius=0.8];
+    \draw[->,thick] (0.8,0) arc[start angle=0,end angle=-180,x radius=0.8,y radius=0.8];
+    \fill (-0.8,0) circle (1.4pt);
+    \fill (0.8,0) circle (1.4pt);
+    \node at (0,-1.35) {fermionic loop};
+  \end{scope}
+\end{tikzpicture}
+\caption{Các cơ chế tự năng vô hướng theo cặp trong bài giảng. Siêu đối xứng cố định các hằng số ghép tương đối, còn vòng fermion kín cung cấp dấu ngược lại.}
+\end{figure}
+
+Ở một vòng, các phần dẫn đầu nhạy với tử ngoại triệt tiêu giữa các đóng góp boson đầy đủ và fermion đầy đủ. Cùng đối xứng ấy chi phối các bậc cao hơn thông qua các đồng nhất thức Ward và các tính chất không tái chuẩn hóa. Mệnh đề này nói về các tổng được liên hệ bởi đối xứng, không phải về sự triệt tiêu từng-một theo nghĩa đen của mọi giản đồ; sự tái chuẩn hóa hàm sóng, các hiệu ứng hữu hạn và những hiệu chỉnh khác bảo toàn đối xứng vẫn có thể còn lại. Đây là sức mạnh thực tiễn của việc xây dựng lý thuyết trong siêu không gian: sự bằng nhau của các khối lượng và các quan hệ giữa các hằng số ghép được áp đặt trước khi bất kỳ tích phân Feynman riêng lẻ nào được tính.\editorialnote{Trên bảng, sự triệt tiêu được phát biểu rộng hơn; phần văn bản chính bổ sung sự bảo lưu chuẩn.}
+
+\section{Phần tiếp theo}
+
+Mô hình được xây dựng ở đây là lý thuyết chiral tương tác đơn giản nhất, thường được gọi là mô hình Wess--Zumino. Nó là một ví dụ, không phải lý thuyết trường siêu đối xứng tổng quát nhất, nhưng khuôn mẫu ấy vẫn giữ nguyên: biểu diễn các trường bằng các siêu đa bội, viết các tích phân siêu không gian bất biến, và để khai triển Grassmann áp đặt các quan hệ giữa các thành phần.
+
+Siêu đối xứng chính xác không hiện ra trong phổ hạt quan sát được, nên vấn đề tiếp theo là làm thế nào để phá vỡ đối xứng ấy mà vẫn giữ lại đủ khả năng kiểm soát tử ngoại của nó để hữu ích. Hướng đi còn lại đã được báo trước là thống nhất lớn: làm thế nào
+\begin{equation}
+SU(3)\times SU(2)\times U(1)
+\end{equation}
+có thể khớp vào một nhóm lớn hơn như \(SU(5)\), và thành phần hạt siêu đối xứng làm thay đổi bức tranh thống nhất đó như thế nào. Đó là những câu hỏi mà các bài giảng còn lại hướng tới.
