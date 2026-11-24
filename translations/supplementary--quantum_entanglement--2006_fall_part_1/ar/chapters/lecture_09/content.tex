@@ -1,0 +1,691 @@
+\chapter{التطور الزمني، والانحفاظ، واللفّات المغزلية المقترنة}
+
+الحالة الكمومية ليست نقطة ثابتة في فضاء هيلبرت. ومع مرور الزمن تتحرك، لكنها يجب أن تتحرك من دون أن تفقد التطبيع أو الاحتمالات أو قابلية التمييز المشفَّرة في الجداءات الداخلية. وهذه المتطلبات تكاد تحدد شكل الديناميكيات الكمومية. فالخطية تعطي مؤثر تطور زمني، وانحفاظ الاحتمال يجعل ذلك المؤثر وحدويًا، والتحويل الوحدوي المتناهي الصغر يولِّده مؤثر هيرميتي. وهذا المؤثر هو الهاملتوني. وسنشتق معادلة Schr\"odinger من هذه العبارات، ونرى كيف تكتسب الحالات الذاتية للطاقة طورًا، ثم نحوّل هذه الصياغة إلى حسابين ملموسين: ترنح لفّ مغزلي واحد في مجال مغناطيسي، والتذبذب بين حالتين لزوج مقترن من اللفّات المغزلية.
+
+\section{الحركة الخطية في فضاء هيلبرت}
+
+لتكن الحالة عند الزمن \(t\) هي \(\ket{\psi(t)}\). ونفترض أن علاقتها بالحالة عند الزمن صفر خطية:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+الخطية مسلّمة، وليست مبرهنة مشتقة من شيء أكثر أولية. وهي جزء ناجح تجريبيًا من ميكانيكا الكم، ومحاولات استبدالها تعرّض عادةً إما الاحتمال وإما قوانين الانحفاظ للخطر. وفي أساس مختار، تكون \(U(t)\) ببساطة مصفوفة تعتمد على الزمن.
+
+يخضع المتجه المزدوج للقاعدة المرافقة. فإذا كان
+\begin{equation}
+\ket{\phi(t)}=U(t)\ket{\phi(0)},
+\end{equation}
+فإن
+\begin{equation}
+\bra{\phi(t)}=\bra{\phi(0)}U^\dagger(t).
+\end{equation}
+وبالنسبة إلى المصفوفة، تعني إشارة الخنجر أخذ المرافق المركب ثم النقل. ولذلك يخضع البرا لقانون التطور نفسه الذي يخضع له الكت، لكن معبَّرًا عنه في الفضاء المزدوج.
+
+\subsection{انحفاظ الاحتمال يقتضي الوحدوية}
+
+تمثل الحالة المطبَّعة احتمالًا كليًا مقداره واحد:
+\begin{equation}
+\braket{\psi(t)}{\psi(t)}=1.
+\end{equation}
+ويجب أن يحفظ التطور الزمني هذا المعيار. وفي الواقع، فإن أي تحويل خطي يحفظ معيار كل متجه يحفظ أيضًا كل جداء داخلي. ومن الناحية الهندسية، فإن حفظ طولي متجهين وفرقِهما يحفظ المثلث المتشكل منهما، ومن ثم الزاوية بينهما. وفي فضاء متجهي عقدي، تتبع النتيجة نفسها أيضًا من النظر في تراكيب يدخل فيها عامل \(i\).
+
+وهكذا، لأيّ \(\ket{\phi}\) و\(\ket{\psi}\) اعتباطيين،
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+وبالتعويض بقوانين التطور نحصل على
+\begin{equation}
+\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)}
+=
+\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+ولأن هذه المعادلة تصح لكل زوج من المتجهات،
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+فمثل هذا المؤثر وحدوي. والنظير القياسي له هو عدد مركب مقداره واحد،
+\begin{equation}
+e^{i\theta}\bigl(e^{i\theta}\bigr)^*=1.
+\end{equation}
+والمؤثر الوحدوي هو التعميم المصفوفي لطور خالص: يمكنه أن يدير الحالة عبر فضاء هيلبرت، لكنه لا يستطيع أن يمدها أو يقلصها.
+
+\section{المولِّد المتناهي الصغر}
+
+يُبنى التطور المنتهي من خطوات زمنية صغيرة جدًا. ليكن الزمن المنقضي \(\epsilon\)، صغيرًا بما يكفي لإهمال حدود الرتبة \(\epsilon^2\). وعند انعدام الزمن المنقضي لا يحدث شيء، لذا
+\begin{equation}
+U(0)=I.
+\end{equation}
+ويجب أن يكون التصحيح الرائد متناسبًا مع \(\epsilon\). ونكتبه بالشكل الاصطلاحي
+\begin{equation}
+\boxed{U(\epsilon)=I-\frac{i\epsilon}{\hbar}H}.
+\end{equation}
+وفي هذه المرحلة لا يكون مفروضًا إلا عامل \(\epsilon\). أما \(i\) و\(\hbar\) والاسم \(H\) فاختيرت بحيث يكون المقدار الذي يبقى في النهاية ذا تقييس قياسي وهيرميتيًا.
+
+\begin{classroomqa}
+\lecturetimestamp{00:12:46}
+\audiencequestion{لماذا يكون ثابت بلانك عددًا صغيرًا على نحو لافت في الوحدات المألوفة؟}
+\lecturerresponse{يعكس هذا المقدار العددي الوحدات التي اختارها البشر. فقد اختار الكيميائيون مقادير عيانية تلائم أوعية بحجم اليد، بينما الذرات أصغر من البشر بكثير. وفي وحدات مكيفة مع تلك المقاييس العيانية، لا بد أن يبدو كمّ الفعل الذري صغيرًا جدًا. وليس هذا لغزًا ديناميكيًا مستقلًا؛ بل هو إلى حد بعيد المقياس التاريخي والبشري المدمج في الوحدات.}
+\end{classroomqa}
+
+بأخذ المرافق الهيرميتي،
+\begin{equation}
+U^\dagger(\epsilon)
+=I+\frac{i\epsilon}{\hbar}H^\dagger.
+\end{equation}
+والآن نضرب ونحتفظ بحدود الرتبة الأولى فقط:
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(I+\frac{i\epsilon}{\hbar}H^\dagger\right)
+\left(I-\frac{i\epsilon}{\hbar}H\right) \\
+&=
+I+\frac{i\epsilon}{\hbar}\left(H^\dagger-H\right)
++O(\epsilon^2).
+\end{align}
+وتقتضي الوحدوية أن يساوي هذا الحاصل \(I\)، ومن ثم
+\begin{equation}
+\boxed{H^\dagger=H}.
+\end{equation}
+إذن فمولِّد التطور الزمني المتناهي الصغر هيرميتي. وبما أن المؤثرات الهيرميتية تمثل المرصودات، فإن كل نظام ديناميكي يمتلك مرصودًا يولِّد حركته في الزمن. وهذا هو الهاملتوني. ونستعمل \(H\) للمؤثر، ونحتفظ بالرمز \(E\) لقيمه المقاسة الممكنة، أي القيم الذاتية.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:34}
+\audiencequestion{لماذا ينبغي أن يُسمّى هذا المولِّد طاقة؟ أليست الطاقة هي \(p^2/2m\)، أو القدرة على بذل شغل؟}
+\lecturerresponse{تلك أوصاف مفيدة في سياقات كلاسيكية خاصة، لا تعريف عام. فالتعبير \(p^2/2m\) ليس إلا الطاقة الحركية لجسيم حر غير نسبي، وهو لا يعرّف أشياء مثل الطاقة المختزنة في مجال كهرومغناطيسي. وبالنسبة إلى نظام مجرد، فأول سمة عامة ينبغي أن نطلبها من الطاقة هي الانحفاظ. وسنبرهن بعد قليل أن القيمة المتوقعة لـ\(H\) محفوظة، وأن أطوار حالاته الذاتية ستحقق أيضًا \(E=\hbar\omega\). وهاتان الحقيقتان تحددان هذا المولِّد بوصفه طاقة.}
+\end{classroomqa}
+
+\section{من خطوة صغيرة إلى معادلة Schr\"odinger}
+
+إن التحديث المتناهي الصغر هو أصلًا معادلة تفاضلية متنكرة. وعند مبدأ زمني اعتباطي،
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+\lim_{\epsilon\to0}
+\frac{\ket{\psi(t+\epsilon)}-\ket{\psi(t)}}{\epsilon}.
+\end{equation}
+يُكتب هذا على اللوح أولًا عند \(t=0\)؛ وبإزاحة المبدأ نحصل على الصيغة العامة أعلاه.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_03.png}
+\caption{نسبة الفرق التي تحوِّل التطور المتناهي الصغر إلى معادلة تفاضلية.}
+\lectureframe{00:22:15}
+\end{figure}
+
+استخدم
+\begin{equation}
+\ket{\psi(t+\epsilon)}
+=
+\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}.
+\end{equation}
+فنحصل على
+\begin{align}
+\frac{d}{dt}\ket{\psi(t)}
+&=
+\lim_{\epsilon\to0}
+\frac{\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(t)}
+-\ket{\psi(t)}}{\epsilon} \\
+&=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{align}
+وبصورة مكافئة،
+\begin{equation}
+\boxed{
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+هذه هي معادلة Schr\"odinger. وما إن يُعرف \(H\) والحالة عند لحظة واحدة حتى تحدد المعادلة الحالة عند الأزمنة اللاحقة. ثم تتبع احتمالات القياسات اللاحقة من قواعد القياس المعتادة.
+
+\section{الحالات الذاتية للطاقة والطور الدوّار}
+
+أبسط حل يبدأ بمتجه ذاتي للهاملتوني:
+\begin{equation}
+H\ket{\psi_E}=E\ket{\psi_E}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_09_figure_04.png}
+\caption{معادلة القيم الذاتية للطاقة على اللوح.}
+\lectureframe{00:28:22}
+\end{figure}
+
+بما أن \(H\) يعيد \(\ket{\psi_E}\) إلى الاتجاه الأحادي البعد نفسه، فلا يمكن للتطور الزمني أن يمزجه بمتجه ذاتي آخر. وكل ما يمكنه فعله هو ضربه بعدد قياسي:
+\begin{equation}
+\ket{\psi_E(t)}=f(t)\ket{\psi_E}.
+\end{equation}
+وبالتعويض في معادلة Schr\"odinger نحصل على
+\begin{align}
+i\hbar\,\dot f(t)\ket{\psi_E}
+&=
+f(t)H\ket{\psi_E} \\
+&=
+E f(t)\ket{\psi_E}.
+\end{align}
+ومن ثم
+\begin{equation}
+\dot f(t)=-\frac{iE}{\hbar}f(t),
+\qquad
+f(t)=e^{-iEt/\hbar},
+\end{equation}
+و
+\begin{equation}
+\boxed{
+\ket{\psi_E(t)}
+=e^{-iEt/\hbar}\ket{\psi_E(0)}
+}.
+\end{equation}
+تكون الحالة الذاتية للطاقة ساكنة بمعنى أن شعاعها في فضاء هيلبرت لا يتحرك. ومع ذلك فإن متجه الكت الخاص بها يكتسب طورًا.
+
+يمكن كتابة الدالة الأسية على الصورة
+\begin{equation}
+e^{-iEt/\hbar}
+=
+\cos\!\left(\frac{Et}{\hbar}\right)
+-i\sin\!\left(\frac{Et}{\hbar}\right).
+\end{equation}
+وقد صُحِّحت الإشارة السالبة وعدم وجود \(i\) إضافية داخل الجيب أثناء الحساب على اللوح. ويكون التردد الزاوي
+\begin{equation}
+\omega=\frac{E}{\hbar},
+\qquad
+\boxed{E=\hbar\omega}.
+\end{equation}
+وبصورة مكافئة، باستخدام التردد العادي \(\nu=\omega/(2\pi)\)، يكون لدينا \(E=h\nu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_09_figure_05.png}
+\caption{يُطوَّر حل الطور وعلاقة الطاقة--التردد على لوحين متجاورين.}
+\lectureframe{00:36:19}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:43}
+\audiencequestion{لماذا أُدخل العاملان \(i\) و\(\hbar\) في المؤثر المتناهي الصغر قبل أن يقتضيهما الحساب؟}
+\lecturerresponse{إنهما اصطلاحان اختيرا مع وضع الجواب في الحسبان. فبدون \(i\)، ستجعل الوحدوية المولِّد مضادًا للهيرميتية. والضرب في \(i\) يحوله إلى مرصود هيرميتي ذي قيم ذاتية حقيقية. أما العامل \(\hbar\) فيمنح تلك القيم الذاتية وحدات الطاقة واصطلاح تقييسها. والعبارة الفيزيائية هي الوحدوية؛ وهذه العوامل تضع مولِّدها في الصورة القياسية.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:18}
+\audiencequestion{هل تخص \(E=\hbar\omega\) الموجات الكهرومغناطيسية والفوتونات وحدها؟}
+\lecturerresponse{كلا. الفوتونات حالة مهمة، لكن العلاقة أعم من ذلك. فأي حالة ذاتية للهاملتوني تكتسب طورًا بتردد زاوي \(E/\hbar\). وربط تردد نمط لمجال كهرومغناطيسي بتردد فوتونه يتطلب فيزياء إضافية، لكن علاقة الطاقة--الطور نفسها تنتج بالفعل من التطور الزمني الكمي.}
+\end{classroomqa}
+
+\section{التراكب في أساس الطاقة}
+
+إن الحالة الذاتية المفردة للطاقة لا تتغير إلا بطور عام، ومثل هذا الطور لا يمكن أن يؤثر في احتمال. ويبدأ السلوك الديناميكي المثير للاهتمام عندما تحتوي الحالة على عدة متجهات ذاتية للطاقة. ولأن الهاملتوني الهيرميتي يملك أساسًا ذاتيًا كاملًا متعامدًا معياريًا،
+\begin{equation}
+H\ket{\psi_n}=E_n\ket{\psi_n},
+\qquad
+\ket{\psi(0)}=\sum_n\alpha_n\ket{\psi_n}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_06.png}
+\caption{توسيع حالة اعتباطية على متجهات الهاملتوني الذاتية.}
+\lectureframe{00:38:35}
+\end{figure}
+
+تسمح الخطية بأن يتطور كل مركِّب على حدة:
+\begin{equation}
+\boxed{
+\ket{\psi(t)}
+=
+\sum_n\alpha_n e^{-iE_n t/\hbar}\ket{\psi_n}
+}.
+\end{equation}
+تدور المركبات عالية الطاقة سريعًا في المستوى العقدي؛ أما المركبات منخفضة الطاقة فتدور ببطء أكبر. وما يغيّر الاحتمالات القابلة للقياس ليس طورًا تشترك فيه الحالة كلها، بل الأطوار النسبية المتغيرة بين المركبات ذات \(E_n\) المختلفة.
+
+في أساس الطاقة،
+\begin{equation}
+\begin{aligned}
+H&=
+\begin{pmatrix}
+E_1&0&\cdots\\
+0&E_2&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix},\\[0.6em]
+U(t)&=
+\begin{pmatrix}
+e^{-iE_1t/\hbar}&0&\cdots\\
+0&e^{-iE_2t/\hbar}&\cdots\\
+\vdots&\vdots&\ddots
+\end{pmatrix}.
+\end{aligned}
+\end{equation}
+ويُلخَّص المعنى نفسه من دون اختيار أساس بواسطة
+\begin{equation}
+\boxed{U(t)=e^{-iHt/\hbar}},
+\end{equation}
+لهاملتوني مستقل عن الزمن.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:17}
+\audiencequestion{هل هذا التحليل هو في جوهره متسلسلة فورييه، وهل هو مماثلًا للتحليلات المستخدمة في التوصيل الحراري؟}
+\lecturerresponse{إنه بالفعل تحليل شبيه بفورييه في الزمن: فكل متجه ذاتي للطاقة يحمل ترددًا محددًا. كما تفصل طرائق فورييه وLaplace الأنماط في كثير من المعادلات الكلاسيكية، ومنها الانتشار. والتشابه الرياضي حقيقي، لكن الادعاءات المتعلقة بأي كمية فيزيائية تقابل التردد يجب التحقق منها من حالة إلى أخرى. في ميكانيكا الكم تُحدَّد العلاقة الخاصة بواسطة معادلة Schr\"odinger.}
+\end{classroomqa}
+
+\subsection{تركيب الأنظمة}
+
+بالنسبة إلى نظامين غير متفاعلين \(A\) و\(B\)، يكون الهاملتوني المركب مجموع المولدين المنفصلين على فضاء الجداء:
+\begin{equation}
+H_{AB}
+=
+H_A\otimes I_B+I_A\otimes H_B.
+\end{equation}
+إذا كان
+\begin{equation}
+H_A\ket{a}=E_a\ket{a},
+\qquad
+H_B\ket{b}=E_b\ket{b},
+\end{equation}
+فإن
+\begin{equation}
+H_{AB}\ket{a,b}=(E_a+E_b)\ket{a,b}.
+\end{equation}
+تُجمع الطاقات، ومن ثم ترددات الطور، في الأنظمة المنفصلة غير المتفاعلة. ويضيف التآثر حدًّا آخر هو \(H_{\mathrm{int}}\)، ولذلك لم يعد هذا الجمع البسيط يعطي الطاقة كلها.
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:20}
+\audiencequestion{إذا احتوى نظامان منفصلان على مركبات لها التردد نفسه، فما الذي يحدث عندما يُجمع النظامان معًا؟}
+\lecturerresponse{بالنسبة إلى الأنظمة غير المتفاعلة، تكون القيم الذاتية للطاقة للنظام المركب مجاميع القيم الذاتية المنفصلة. وقد يؤدي تساوي ترددين إلى انحلال، لكنه لا يخلط بحد ذاته المتجهات الذاتية المناظرة. ويتطلب الخلط حدَّ تآثر أو اختيار أساس داخل فضاء جزئي منحَل. وما إن تتفاعل الأنظمة حتى يجب قطرنة الهاملتوني الموسع بوصفه مسألة جديدة.}
+\end{classroomqa}
+
+\section{القيم المتوقعة والمبدلات}
+
+لقد تتبعنا الحالة مع إبقاء المرصودات ثابتة. وهذه هي صورة Schr\"odinger. لتكن \(A\) مرصودًا لا يعتمد صراحةً على الزمن. قيمته المتوقعة هي
+\begin{equation}
+\langle A\rangle_t
+=
+\bra{\psi(t)}A\ket{\psi(t)}.
+\end{equation}
+نشتق كلًّا من البرا والكيت:
+\begin{equation}
+\frac{d}{dt}\langle A\rangle_t
+=
+\bra{\dot\psi}A\ket{\psi}
++
+\bra{\psi}A\ket{\dot\psi}.
+\end{equation}
+تعطي معادلة Schr\"odinger ومرافقها الهرميتي
+\begin{equation}
+\ket{\dot\psi}
+=-\frac{i}{\hbar}H\ket{\psi},
+\qquad
+\bra{\dot\psi}
+=\frac{i}{\hbar}\bra{\psi}H.
+\end{equation}
+ومن ثم
+\begin{align}
+\frac{d}{dt}\langle A\rangle_t
+&=
+\frac{i}{\hbar}\bra{\psi}HA\ket{\psi}
+-\frac{i}{\hbar}\bra{\psi}AH\ket{\psi} \\
+&=
+\frac{i}{\hbar}\bra{\psi}(HA-AH)\ket{\psi}.
+\end{align}
+نعرّف المبدلة
+\begin{equation}
+[H,A]=HA-AH.
+\end{equation}
+وعندئذ تكون معادلة الحركة للقيمة المتوقعة
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle A\rangle_t
+=
+\frac{i}{\hbar}\langle[H,A]\rangle_t
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_07.png}
+\caption{معادلة القيمة المتوقعة والمبدلة \(AB-BA=[A,B]\).}
+\lectureframe{00:51:05}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:13}
+\audiencequestion{لماذا تظهر المبدلة في هذه المعادلة نفسها داخل قيمة متوقعة؟}
+\lecturerresponse{المبدلة مؤثر. وأي مؤثر يوضع بين \(\bra{\psi}\) و\(\ket{\psi}\) تكون له قيمة متوقعة، لذا فإن \(\bra{\psi}[H,A]\ket{\psi}\) هو ببساطة متوسط تلك المبدلة في الحالة الراهنة.}
+\end{classroomqa}
+
+\subsection{قوانين الانحفاظ}
+
+ضع \(A=H\). فالمؤثر يبدل دائمًا مع نفسه:
+\begin{equation}
+[H,H]=HH-HH=0.
+\end{equation}
+ولذلك
+\begin{equation}
+\boxed{
+\frac{d}{dt}\langle H\rangle_t=0
+}.
+\end{equation}
+القيمة المتوقعة للهاملتوني محفوظة. وهذا هو السبب البنيوي الموعود لاعتبار \(H\) طاقةً. لكل نظام معزول هاملتوني، وكل هاملتوني مستقل عن الزمن يوفّر قانون الانحفاظ هذا.
+
+وبصورة أعم،
+\begin{equation}
+[H,A]=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\langle A\rangle_t=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:51:41}
+\audiencequestion{ما التفسير الفيزيائي لمجموعة جميع المؤثرات التي تبدل مع \(H\)، وهل تتضمن كميات تتجاوز الطاقة؟}
+\lecturerresponse{إنها المرصودات المحفوظة للنظام. وأيّها يوجد يعتمد على الهاملتوني. يحفظ الجسيم الحر كمية الحركة، في حين يمكن لقوة أن تدمر ذلك الانحفاظ. الطاقة موجودة دائمًا لأن \(H\) يبدل مع نفسه؛ وتعبر المؤثرات الإضافية التي تبدل معه عن تناظرات إضافية وقوانين انحفاظ إضافية.}
+\end{classroomqa}
+
+\section{سبين واحد في مجال مغناطيسي}
+
+اعتبر سبينًا ذي مؤثرات باولي
+\begin{equation}
+\boldsymbol{\sigma}
+=(\sigma_1,\sigma_2,\sigma_3)
+\end{equation}
+في مجال مغناطيسي خارجي ثابت \(\mathbf B\). يتناسب العزم المغناطيسي مع السبين. وفي الاصطلاح المستخدم هنا،
+\begin{equation}
+\boxed{
+H=\frac{\mu}{2}\boldsymbol{\sigma}\cdot\mathbf B
+}.
+\end{equation}
+يمكن امتصاص العامل \(1/2\)، والإشارة، والمقياس المعتمد على الشحنة في تعريف \(\mu\). ويُعامَل المجال معاملةً كلاسيكية: فمغناطيس كبير مستقر يزوّدنا بـ\(\mathbf B\)، ونحن لا ننمذج الحالة الكمومية لذلك المغناطيس.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_09_figure_08.png}
+\caption{يقترن مؤثر العزم المغناطيسي بالمجال المغناطيسي الخارجي.}
+\lectureframe{01:01:45}
+\end{figure}
+
+اختر المجال على طول المحور الثالث،
+\begin{equation}
+\mathbf B=B\hat{\mathbf z},
+\qquad
+H=\frac{\mu B}{2}\sigma_3.
+\end{equation}
+سنتتبع القيم المتوقعة لمركبات السبين الثلاث. ولتقليص المعادلات، اكتب
+\begin{equation}
+s_i(t)=\langle\sigma_i\rangle_t.
+\end{equation}
+وتخضع المركبة الطولية للعلاقة
+\begin{equation}
+\dot s_3
+=
+\frac{i}{\hbar}\langle[H,\sigma_3]\rangle
+=0,
+\end{equation}
+لأن \(H\) يتناسب مع \(\sigma_3\). وإسقاط السبين على طول المجال ثابت. ومن الناحية الهندسية، يجب أن يبقى طرف السبين المتوسط على مخروط ذي زاوية فتح ثابتة حول محور المجال.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_09_figure_09.png}
+\caption{ثبات المركبة الطولية للسبين يُبقي الحركة على مخروط حول محور المجال المغناطيسي.}
+\lectureframe{01:04:45}
+\end{figure}
+
+بالنسبة إلى المركبة المستعرضة الأولى،
+\begin{equation}
+\dot s_1
+=
+\frac{i\mu B}{2\hbar}
+\langle[\sigma_3,\sigma_1]\rangle.
+\end{equation}
+ويمكن التحقق من المبدلة مباشرةً من
+\begin{equation}
+\begin{aligned}
+\sigma_3&=
+\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+&
+\sigma_1&=
+\begin{pmatrix}0&1\\1&0\end{pmatrix},\\[0.5em]
+\sigma_2&=
+\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\end{aligned}
+\end{equation}
+وفعلًا،
+\begin{equation}
+\sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_3=-i\sigma_2,
+\end{equation}
+ومن ثم
+\begin{equation}
+[\sigma_3,\sigma_1]=2i\sigma_2.
+\end{equation}
+وبالتالي،
+\begin{equation}
+\dot s_1=-\frac{\mu B}{\hbar}s_2.
+\end{equation}
+وبالمثل، باستخدام \([\sigma_3,\sigma_2]=-2i\sigma_1\)،
+\begin{equation}
+\dot s_2=\frac{\mu B}{\hbar}s_1.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_09_figure_10.png}
+\caption{حساب مبدلة باولي المؤدي إلى معادلة الحركة للمركبة المستعرضة.}
+\lectureframe{01:09:35}
+\end{figure}
+
+لتكن
+\begin{equation}
+\Omega=\frac{\mu B}{\hbar}.
+\end{equation}
+المعادلات الثلاث هي
+\begin{equation}
+\dot s_1=-\Omega s_2,
+\qquad
+\dot s_2=\Omega s_1,
+\qquad
+\dot s_3=0.
+\end{equation}
+وأحد الحلول بسعة مستعرضة \(s_\perp\) هو
+\begin{equation}
+s_1(t)=s_\perp\cos(\Omega t+\varphi),
+\qquad
+s_2(t)=s_\perp\sin(\Omega t+\varphi),
+\end{equation}
+مع ثبات \(s_3\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.64\textwidth]{lecture_09_figure_11.png}
+\caption{تشكل المركبتان المستعرضتان للسبين زوجًا من جيب -- جيب تمام بتردد زاوي \(\mu B/\hbar\).}
+\lectureframe{01:11:45}
+\end{figure}
+
+وعليه يخضع السبين المتوسط لحركة سبق حول المجال المغناطيسي مثل الجيروسكوب. وكان اختيار المجال على طول \(z\) مجرد تيسير. وبالنسبة إلى مجال في أي اتجاه، تُحفظ المركبة الموازية لـ\(\mathbf B\) وتدور المركبة العمودية حوله.
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:02}
+\audiencequestion{هل ينبغي أن يحتوي حل الجيب وجيب التمام على طور إضافي؟}
+\lecturerresponse{نعم. يحدد الطور \(\varphi\) الاتجاه الابتدائي في المستوى المستعرض، أو على نحو مكافئ اختيار اللحظة المسماة \(t=0\). وجعلُه صفرًا لا يفعل إلا اختيار أن يبدأ السبين على طول محور مستعرض معين.}
+\end{classroomqa}
+
+\subsection{التحضير والقياس}
+
+افترض أن مجموعةً قد حُضّرت في الحالة الذاتية \(+1\) لـ\(\sigma_1\). عند \(t=0\)، يكون قياس \(\sigma_1\) مؤكدًا في إعطاء \(+1\)، في حين تعطي قياسات \(\sigma_2\) أو \(\sigma_3\) احتمالات متساوية لـ\(\pm1\). وبعد ربع دورة من حركة السبق، تكون الحالة قد تطورت إلى الحالة الذاتية \(+1\) لـ\(\sigma_2\): وعندئذ يكون \(\sigma_2\) مؤكدًا ويكون \(\sigma_1\) في أقصى لايقين. وبعد ربع دورة آخر تصل إلى الحالة الذاتية \(-1\) لـ\(\sigma_1\). ومن ثم فالقيم المتوقعة الدوارة ذات معنى إجرائي مباشر.
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:04}
+\audiencequestion{إذا كانت القيم المتوقعة تتطلب عددًا كبيرًا من الإلكترونات، أفلا تحمل عناصر المجموعة أطوارًا مختلفة فتطمس حركة السبق؟}
+\lecturerresponse{ليس الأمر كذلك حين تُجرى التجربة نفسها على كل عنصر. فالتحضير المتماثل يعطي كل إلكترون الحالة الابتدائية نفسها، ومن ثم التطور الطوري نفسه. وإذا كانت أطوارها الابتدائية غير مضبوطة، فليست المجموعة تحضيرًا نقيًا؛ بل هي حالة مختلطة، ويمكن لفقدان الاتساق الطوري أن يقلل المتوسط المستعرض.}
+\end{classroomqa}
+
+\section{سبينان مقترنان}
+
+والآن اعتبر سبينين. إن مجرد القول إنهما متشابكان لا يكفي للتنبؤ بما سيفعلانه. فالديناميكيات تتطلب هاملتونيًا.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:49}
+\audiencequestion{إذا كان إلكترونان متشابكان بحيث تظهر نتائج متعاكسة على أي محور مشترك، فهل يعني ذلك أن حركتيهما تكونان دائمًا بينهما فرق طور مقداره \(180^\circ\)؟}
+\lecturerresponse{لا يلزم أي استنتاج ديناميكي من التشابك وحده. فالتضاد المذكور يصف الحالة الأحادية، لكن تطورها اللاحق يعتمد على مؤثر الطاقة. ويجب أولًا أن نحدد هل يوجد مجال خارجي، أو تآثر بين السبينين، أو كلاهما.}
+\end{classroomqa}
+
+خذ التآثر البسيط متساوي الخواص الذي يزوّد فيه كل سبين الآخر بالمجال الفعّال الذي يشعر به:
+\begin{equation}
+\boxed{
+H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}
+=
+J\left(
+\sigma_1\tau_1+\sigma_2\tau_2+\sigma_3\tau_3
+\right)
+}.
+\end{equation}
+تعمل المؤثرات \(\boldsymbol{\sigma}\) على السبين الأول و\(\boldsymbol{\tau}\) على الثاني. ويحدد ثابت الاقتران \(J\) مقياس الطاقة؛ وتُترك قيمته وإشارته دون تحديد.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{lecture_09_figure_12.png}
+\caption{التآثر متساوي الخواص بين سبينين \(H\propto\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\).}
+\lectureframe{01:19:20}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:49}
+\audiencequestion{هل يؤدي وضع إلكترونين متشابكين في مجال مغناطيسي منتظم بالضرورة إلى فك تشابكهما؟}
+\lecturerresponse{ليس بالضرورة. فالمجال يغيّر الهاملتوني وقد يميل إلى محاذاة السبينين، وخصوصًا إذا كان قويًا، لكن التطور الوحدوي في مجال منتظم لا يضمن بذاته زوال التشابك. وتعتمد الإجابة على الهاملتوني الكامل والحالة الابتدائية.}
+\end{classroomqa}
+
+\subsection{طاقات الثلاثي والأحادي}
+
+لفضاء هيلبرت الخاص بسبينين بعده أربعة. ويكون التآثر قطريًا في أساس الثلاثي--الأحادي:
+\begin{align}
+\ket{T_+}&=\ket{\uparrow\uparrow}, \\
+\ket{T_0}&=
+\frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt2}, \\
+\ket{T_-}&=\ket{\downarrow\downarrow}, \\
+\ket{S}&=
+\frac{\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{align}
+تشترك الحالات الثلاثية الثلاث في طاقة واحدة هي \(E_T\)؛ وللأحادي طاقة أخرى هي \(E_S\). وهكذا توجد أربعة متجهات ذاتية مستقلة، ولكن يوجد مستويان متميزان للطاقة فقط. والمستوى الثلاثي ذو انحطاط ثلاثي.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_09_figure_13.png}
+\caption{لهاملتوني اللفين المغزليين المقترنين مستوى ثلاثي منحط ومستوى أحادي منفصل.}
+\lectureframe{01:20:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:16}
+\audiencequestion{ماذا يحدث إذا كانت الحالة الابتدائية أصلًا هي الحالة الأحادية الذاتية للطاقة؟}
+\lecturerresponse{إنها تبقى الحالة الأحادية ولا تكتسب إلا الطور \(e^{-iE_St/\hbar}\). وكما هي الحال لأي حالة ذاتية مفردة للطاقة، فإن خواصها القابلة للقياس لا تتغير لمجرد أن الكيت كله يُضرب بذلك الطور المشترك.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:54}
+\audiencequestion{هل يزوّد مجال مغناطيسي خارجي منظومة السبينين بالطاقة أثناء هذا الحساب؟}
+\lecturerresponse{لا يوجد مجال خارجي في المثال الجاري حلّه. والمجال الوحيد محل النقاش هو التآثر المتبادل المُمثَّل بـ \(J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\). وستضيف إضافة مجال خارجي حدًا آخر إلى \(H\) وتعرّف مسألة مختلفة.}
+\end{classroomqa}
+
+\subsection{البدء بسبين واحد إلى أعلى وآخر إلى أسفل}
+
+إن الحالة الذاتية للطاقة لن تكتسب إلا طورًا، لذا نختار حالة جداء ليست حالة ذاتية للطاقة:
+\begin{equation}
+\ket{\psi(0)}=\ket{\uparrow\downarrow}.
+\end{equation}
+ونفككها إلى المتجهين الذاتيين ذوي الصلة:
+\begin{equation}
+\boxed{
+\ket{\uparrow\downarrow}
+=
+\frac{1}{\sqrt2}\ket{T_0}
++
+\frac{1}{\sqrt2}\ket{S}
+}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_14.png}
+\caption{فُكِّكت حالة الجداء \(\ket{\uparrow\downarrow}\) إلى مركبتيها الثلاثية والأحادية.}
+\lectureframe{01:24:30}
+\end{figure}
+
+تكتسب كل مركبة طاقية الآن طورها الخاص:
+\begin{equation}
+\ket{\psi(t)}
+=
+\frac{e^{-iE_Tt/\hbar}}{\sqrt2}\ket{T_0}
++
+\frac{e^{-iE_St/\hbar}}{\sqrt2}\ket{S}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:25:59}
+\audiencequestion{أيهما أكبر: طاقة الثلاثي \(E_T\) أم طاقة الأحادي \(E_S\)؟}
+\lecturerresponse{يتوقف ذلك على إشارة الاقتران. بالنسبة إلى \(H=J\,\boldsymbol{\sigma}\cdot\boldsymbol{\tau}\) مع \(J>0\)، يكون الأحادي أخفض والثلاثي أعلى؛ وعكس الإشارة يعكس هذا الترتيب. وإضافة ثابت إلى كلتا الطاقتين لا تغيّر إلا طورًا كليًا، لذا يمكن جعل أيٍّ من المستويين مساويًا للصفر من دون تغيير احتمالات الانتقال.}
+\end{classroomqa}
+
+نعود إلى أساس الجداء:
+\begin{align}
+\ket{\psi(t)}
+&=
+\frac12
+\left(
+e^{-iE_Tt/\hbar}+e^{-iE_St/\hbar}
+\right)\ket{\uparrow\downarrow} \\
+&\quad+
+\frac12
+\left(
+e^{-iE_Tt/\hbar}-e^{-iE_St/\hbar}
+\right)\ket{\downarrow\uparrow}.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_15.png}
+\caption{أُعيد تركيب الحالة المتطوِّرة في أساس \(\ket{\uparrow\downarrow}\)، \(\ket{\downarrow\uparrow}\).}
+\lectureframe{01:30:40}
+\end{figure}
+
+عند \(t=0\)، ينعدم معامل \(\ket{\downarrow\uparrow}\)، كما يجب. وفي الأزمنة اللاحقة يجعل الطور النسبي بين المركبتين الأحادية والثلاثية هذا المعامل يزداد. نعرّف متوسط الطاقة والانقسام،
+\begin{equation}
+\overline E=\frac{E_T+E_S}{2},
+\qquad
+\Delta E=E_T-E_S.
+\end{equation}
+وباستخراج طور متوسط الطاقة نحصل على
+\begin{equation}
+\boxed{
+\begin{aligned}
+\ket{\psi(t)}
+&=e^{-i\overline E t/\hbar}\Biggl[
+\cos\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\uparrow\downarrow}
+\\
+&\qquad
+-i\sin\!\left(\frac{\Delta E\,t}{2\hbar}\right)
+\ket{\downarrow\uparrow}
+\Biggr]
+\end{aligned}
+}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_09_figure_16.png}
+\caption{يصبح متوسط الطاقة طورًا مشتركًا، بينما يظهر انقسام الأحادي--الثلاثي في سعتي الجيب والجيب التمام.}
+\lectureframe{01:35:15}
+\end{figure}
+
+العامل \(e^{-i\overline E t/\hbar}\) مشترك في الكيت كله ويسقط من كل احتمال. والاحتمالات القابلة للقياس هي
+\begin{equation}
+P_{\uparrow\downarrow}(t)
+=
+\cos^2\!\left(\frac{\Delta E\,t}{2\hbar}\right),
+\qquad
+P_{\downarrow\uparrow}(t)
+=
+\sin^2\!\left(\frac{\Delta E\,t}{2\hbar}\right).
+\end{equation}
+تتذبذب الحالة من \(\ket{\uparrow\downarrow}\) إلى \(\ket{\downarrow\uparrow}\) ثم تعود، بمعدل يحدده فرق الطاقة وحده. وفي الأزمنة المتوسطة تكون السعتان غير صفريتين، ويكون السبينان متشابكين إلا عند لحظات خاصة.
+
+يوضح هذا الحساب منهجًا عامًا. اختر الأساس الذي تُصاغ فيه المسألة الفيزيائية، ووسّع الحالة الابتدائية بدلالة المتجهات الذاتية للهاملتوني، ودَعْ كل متجه ذاتي يكتسب طوره الخاص، ثم أعد تركيب الأجزاء في أساس القياس. تصبح الديناميكيات الكمومية منهجيةً بمجرد جعل الهاملتوني قطريًا؛ والطور النسبي هو الذي يحمل كل حركة قابلة للرصد.

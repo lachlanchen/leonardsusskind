@@ -1,0 +1,772 @@
+\chapter{الحالات المختزلة، وإنتروبيا التشابك، والتطور الوحدوي}
+
+تظهر مصفوفة الكثافة أولًا بوصفها الوصف الطبيعي لتحضير غير كامل: فقد جرى تحضير نظام كمي، لكننا لا نعرف على وجه الدقة كيف تم ذلك. ويمنح التشابك هذا الكائن الرياضي نفسه دورًا أعمق. فحتى عندما تكون حالة نظام مركب معروفة معرفة تامة، فإن النظام الفرعي لا يملك عمومًا متجه حالة خاصًا به. وتحتوي مصفوفة كثافته المختزلة على كل ما يمكن التنبؤ به محليًا. وسوف نشتق هذه العبارة بالمركبات، ونختبرها على حالتي لف مغزلي، ونستخدم الإنتروبيا للتمييز بين الحالات الجداءية والحالات المتشابكة. ثم ننتقل إلى سؤال ثانٍ: كيف تتغير حالة كمومية مع الزمن. وسيقودنا حفظ الجداءات الداخلية إلى الوحدوية، وإلى مولِّد هيرميتي، وإلى معادلة Schr\"odinger.
+
+\section{مصفوفات الكثافة والتحضير غير الكامل}
+
+لنفترض أن إلكترونًا وُضع في مجال مغناطيسي قوي وتُرك ليصطف معه. وقد اختار شخص آخر اتجاه المجال وحضّر الإلكترون، لكنه لم يخبرنا بذلك الاتجاه. لذلك قد يكون اللف المغزلي في حالة نقية محددة تمامًا، مع أننا لا نعرف أيَّ حالة هي. وقد نعرف توزيعًا احتماليًا على التحضيرات الممكنة، أو قد لا نعرف شيئًا على الإطلاق. وتكون مصفوفة الكثافة \(\rho\) هي الوصف الكمومي لهذا النوع تحديدًا من المعلومات غير الكاملة.
+
+النظير الكلاسيكي هو كثافة احتمالية على فضاء الطور أو توزيع احتمالي على تهيئات متقطعة. أما الكائن الكمومي فهو مؤثر له ثلاث خصائص أساسية:
+\begin{equation}
+\rho^\dagger=\rho,
+\qquad
+\operatorname{Tr}\rho=1,
+\qquad
+\lambda_i\geq 0,
+\end{equation}
+حيث إن \(\lambda_i\) هي القيم الذاتية لـ \(\rho\). وتجعل الهيرميتية القيم الذاتية حقيقية وتوفّر أساسًا ذاتيًا متعامدًا معياريًا. وتجعل الإيجابية تلك القيم احتمالات مقبولة، ويعطي التطبيع
+\begin{equation}
+\sum_{i=1}^{n}\lambda_i=1.
+\end{equation}
+وفي الأساس الذاتي لـ \(\rho\) تكون \(\lambda_i\) هي الاحتمال المسند إلى الحالة الذاتية ذات الفهرس \(i\).
+
+الجهل التام هو الحالة التي لا يكون فيها أي اتجاه في فضاء هيلبرت مفضَّلًا:
+\begin{equation}
+\rho_{\mathrm{max}}=\frac{1}{n}I.
+\end{equation}
+وكل قيمة ذاتية هي \(1/n\). وعند الطرف المقابل، تُمثَّل المعرفة التامة بحالة مطبَّعة \(\ket{\psi}\)، بحيث
+\begin{equation}
+\rho_\psi=\ket{\psi}\bra{\psi}.
+\end{equation}
+وهذا هو المسقط على الفضاء الجزئي أحادي البعد الذي يولّده \(\ket{\psi}\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:47}
+\audiencequestion{هل يمكن وصف تحضير ما بأنه اختيار متساوٍ بين حالتين غير متعامدتين، مثل اتجاهين للَّف المغزلي يفصل بينهما \(45^\circ\)؟}
+\lecturerresponse{مثل هذا الإجراء التحضيري ممكن، لكن هذين الوزنين ليسا عمومًا القيم الذاتية لمصفوفة الكثافة الناتجة. نكوّن أولًا المجموع الموزون للمساقط ثم نُجري له التحليل القطري. والتفسير الاحتمالي الواضح للقيم الذاتية يخص الأساس الذاتي المتعامد المعياري لـ \(\rho\)، وليس بالضرورة الحالات غير المتعامدة التي سمّاها القائم بالتحضير.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:07:47}
+\audiencequestion{ما الذي يميز الحالة النقية عن الحالة المختلطة؟}
+\lecturerresponse{تملك مصفوفة الكثافة الخاصة بحالة نقية قيمةً ذاتيةً واحدة غير صفرية، تساوي \(1\). أما الحالة المختلطة فلها أكثر من قيمة ذاتية غير صفرية واحدة. استُخدمت في الأدبيات الأقدم الكلمة الألمانية \emph{Gemisch}؛ أما المصطلح الحديث فهو ببساطة \emph{mixed state}.}
+\end{classroomqa}
+
+لنتحقق من طيف مسقط الحالة النقية. يعطي التطبيع
+\begin{equation}
+\rho_\psi\ket{\psi}
+=\ket{\psi}\braket{\psi}{\psi}
+=\ket{\psi},
+\end{equation}
+ولذلك يكون \(\ket{\psi}\) متجهًا ذاتيًا بقيمة ذاتية \(1\). وإذا كان \(\ket{\phi}\) متعامدًا مع \(\ket{\psi}\)، فإن
+\begin{equation}
+\rho_\psi\ket{\phi}
+=\ket{\psi}\braket{\psi}{\phi}
+=0.
+\end{equation}
+ومن ثم فإن كل اتجاه متعامد مع \(\ket{\psi}\) له قيمة ذاتية صفر.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_08_figure_06.png}
+\caption{تعمل مصفوفة كثافة الحالة النقية بوصفها مسقطًا: \(\rho\ket{\psi}=\ket{\psi}\).}
+\lectureframe{00:09:32}
+\end{figure}
+
+\section{قيم التوقع من الأثر}
+
+القاعدة العملية لمصفوفة الكثافة هي
+\begin{equation}
+\overline{M}=\operatorname{Tr}(\rho M),
+\end{equation}
+حيث إن \(M\) مرصود. وبالنسبة إلى عاملين، تعطي الخاصية الدورية للأثر
+\begin{equation}
+\operatorname{Tr}(\rho M)=\operatorname{Tr}(M\rho),
+\end{equation}
+سواء أكان \(\rho\) و\(M\) متبادلين أم لا.
+
+في أي أساس متعامد معياري \(\{\ket{i}\}\)،
+\begin{equation}
+\operatorname{Tr}X=\sum_i\bra{i}X\ket{i}.
+\end{equation}
+ولا تعتمد القيمة العددية على الأساس. وفي حالة نقية،
+\begin{align}
+\overline{M}
+&=\operatorname{Tr}\!\left(\ket{\psi}\bra{\psi}M\right) \\
+&=\sum_i\braket{i}{\psi}\bra{\psi}M\ket{i} \\
+&=\bra{\psi}M\left(\sum_i\ket{i}\bra{i}\right)\ket{\psi} \\
+&=\bra{\psi}M\ket{\psi}.
+\end{align}
+ويعيد تحليل المؤثر الواحد،
+\begin{equation}
+\sum_i\ket{i}\bra{i}=I,
+\end{equation}
+قاعدةَ مصفوفة الكثافة مرة أخرى إلى قيمة التوقع المألوفة للحالة النقية.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_07.png}
+\caption{حساب الأثر لمسقط حالة نقية وتحليل المؤثر الواحد.}
+\lectureframe{00:14:25}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:14:38}
+\audiencequestion{ألا ينبغي أن تكون الكمية في الطرف الأيسر هي \(\overline{M}\)، أي متوسط \(M\)؟}
+\lecturerresponse{بلى. فالأثر ليس هو المؤثر \(M\) نفسه؛ بل هو قيمة التوقع العددية \(\overline{M}\).}
+\end{classroomqa}
+
+بالنسبة إلى مصفوفة كثافة عامة، اختر أساسها الذاتي:
+\begin{equation}
+\rho\ket{j}=\lambda_j\ket{j}.
+\end{equation}
+وأدخل مجموعةً كاملة من الحالات بين \(\rho\) و\(M\):
+\begin{align}
+\overline{M}
+&=\sum_i\bra{i}\rho M\ket{i} \\
+&=\sum_{i,j}\bra{i}\rho\ket{j}\bra{j}M\ket{i} \\
+&=\sum_{i,j}\lambda_j\delta_{ij}\bra{j}M\ket{i} \\
+&=\sum_j\lambda_j\bra{j}M\ket{j}.
+\end{align}
+وهذا متوسط موزون عادي: فـ \(\lambda_j\) هو احتمال الحالة الذاتية ذات الفهرس \(j\)، و\(\bra{j}M\ket{j}\) هي قيمة توقع \(M\) في تلك الحالة.
+
+\begin{classroomqa}
+\lecturetimestamp{00:18:12}
+\audiencequestion{لماذا يتحول كلا الوسمين في عنصر المصفوفة الأخير إلى \(j\)، وأي فهرس ما يزال يُجمع عليه؟}
+\lecturerresponse{لأن \(\rho\) قطري في هذا الأساس، \(\bra{i}\rho\ket{j}=\lambda_j\delta_{ij}\)، فلا يبقى إلا الحدود التي فيها \(i=j\). وينهار الجمع المزدوج الأصلي إلى جمع واحد، ويمكن تسميته جمعًا على \(j\). وليس لاسم فهرس الجمع الصوري أي دلالة فيزيائية.}
+\end{classroomqa}
+
+\section{الإنتروبيا بوصفها معلومات مفقودة}
+
+لتوزيع احتمالي كلاسيكي \(\{p_i\}\)، نعرّف
+\begin{equation}
+S=-\sum_i p_i\log p_i,
+\end{equation}
+على أن \(0\log 0\) يُفهم على أنه قيمته الحدية \(0\). وإذا كان أحد الاحتمالات يساوي \(1\) وتنعدم جميع الاحتمالات الأخرى، فحينئذٍ \(S=0\): تكون الحالة معلومة. وإذا كانت جميع الإمكانات \(n\) متساوية الاحتمال،
+\begin{equation}
+p_i=\frac{1}{n},
+\qquad
+S=-n\left(\frac{1}{n}\log\frac{1}{n}\right)=\log n.
+\end{equation}
+وهكذا تنمو الإنتروبيا كلما توزّع التوزيع الاحتمالي على عدد أكبر من الإمكانات ذات الوزن المعتبر. وعلى نحو تقريبي، فإن \(e^S\) هو العدد الفعّال للحالات ذات الأوزان المتقاربة عندما تُستخدم اللوغاريتمات الطبيعية.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_08_figure_08.png}
+\caption{إنتروبيا توزيع احتمالي وقيمتها عند تساوي الاحتمالات \(S=\log n\).}
+\lectureframe{00:21:08}
+\end{figure}
+
+بالنسبة إلى مصفوفة كثافة، يُطبَّق التعريف نفسه على قيمها الذاتية:
+\begin{equation}
+S(\rho)=-\sum_i\lambda_i\log\lambda_i
+=-\operatorname{Tr}(\rho\log\rho).
+\end{equation}
+والتعبير الأول هو المطلوب مباشرةً هنا؛ أما صيغة الأثر فتؤكد أن الجواب مستقل عن الأساس.
+
+\section{نظام مركب وتجربة محلية}
+
+لننظر في نظامين فرعيين، \(A\) و\(B\). ويُكتب متجه أساس على صورة \(\ket{a,b}\). وإذا كان لدى \(A\) عدد \(N\) من حالات الأساس، وكان لدى \(B\) عدد \(n\)، فإن للنظام المركب \(Nn\) من حالات الأساس. ولا يلزم أن يكون النظامان متماثلين: فقد يكون أحدهما لفًّا مغزليًا ثنائي الحالة والآخر ذرة ثلاثية الحالات.
+
+أعمّ حالة نقية للزوج هي
+\begin{equation}
+\ket{\Psi}
+=\sum_{a,b}\psi(a,b)\ket{a,b},
+\qquad
+\sum_{a,b}|\psi(a,b)|^2=1.
+\end{equation}
+والآن لتقم أليس بقياس مرصود \(M_A\) يؤثر فقط في النظام الفرعي \(A\). وعلى فضاء هيلبرت المركب يكون المؤثر هو \(M_A\otimes I_B\). وعناصر مصفوفتِه هي
+\begin{equation}
+\bra{a',b'}M_A\otimes I_B\ket{a,b}
+=\bra{a'}M_A\ket{a}\,\delta_{b'b}.
+\end{equation}
+أما وسم \(B\) فهو خامل.
+
+لنكتب قيمة التوقع كاملةً:
+\begin{align}
+\expect{M_A}
+&=\bra{\Psi}M_A\otimes I_B\ket{\Psi} \\
+&=\sum_{a',b'}\sum_{a,b}
+\psi^*(a',b')\psi(a,b)
+\bra{a'}M_A\ket{a}\delta_{b'b} \\
+&=\sum_{a',a,b}
+\psi^*(a',b)\psi(a,b)
+\bra{a'}M_A\ket{a}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:12}
+\audiencequestion{لماذا تحمل الوسوم على البرا شرطات بينما لا تحملها الوسوم على الكيت؟}
+\lecturerresponse{البرا والكيت مجموعان مستقلان قبل أن يُقيَّم عنصر المصفوفة، ولذلك يحتاجان إلى وسوم صورية منفصلة. وتميّز الشرطاتُ فهارسَ البرا من فهارس الكيت. ثم يحدّد المؤثر والجداءات الداخلية أيَّ هذه الوسوم يجب أن تتطابق.}
+\end{classroomqa}
+
+ثبّت \(a\) و\(a'\) وأجرِ الجمع على \(b\). وتكون النتيجة مصفوفة على النظام الفرعي \(A\):
+\begin{equation}
+\boxed{
+\rho_A(a,a')
+=\sum_b\psi(a,b)\psi^*(a',b)
+}.
+\end{equation}
+وهذه هي مصفوفة الكثافة المختزلة لـ \(A\)، أو على نحو مكافئ الأثر الجزئي لمسقط الحالة النقية على \(B\):
+\begin{equation}
+\rho_A=\operatorname{Tr}_B\ket{\Psi}\bra{\Psi}.
+\end{equation}
+وتصبح قيمة التوقع المحلية
+\begin{equation}
+\expect{M_A}
+=\sum_{a,a'}\rho_A(a,a')\bra{a'}M_A\ket{a}
+=\operatorname{Tr}_A(\rho_A M_A).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_09.png}
+\caption{يُجمع على فهرس \(B\) فيختفي، وتتبقى مصفوفة في فهرسي \(A\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:35:39}
+\audiencequestion{هل المرصود المحلي هو ببساطة مؤثر الهوية على النظام الفرعي \(B\)؟}
+\lecturerresponse{تمامًا. قد يغيّر \(M_A\otimes I_B\) فهرس \(A\)، لكنه لا يغيّر \(b\) ولا يعتمد عليه على أي نحو آخر. ولذلك يكون عنصر مصفوفتِه في فضاء \(B\) هو \(\delta_{b'b}\).}
+\end{classroomqa}
+
+ولذلك فإن كل تنبؤ بالتجارب المحصورة في \(A\) موجود في \(\rho_A\). وليس على بوب أن يقيس نظامه الفرعي. فمجرد الامتناع عن استخدام درجات الحرية الخاصة بـ \(B\) يفرض على وصف أليس أن يتخذ صيغة مصفوفة كثافة.
+
+\section{قد يكون الكل نقيًا وأجزاؤه مختلطة}
+
+يكون النظام المركب في الحالة النقية \(\ket{\Psi}\)، ومع ذلك فإن \(\rho_A\) سيكون له عمومًا عدة قيم ذاتية غير صفرية. فالمعرفة التامة بالكل لا تستلزم وجود متجه حالة لكل جزء. وقد يكون للقط والبندقية متجه حالة متشابك واحد؛ وعندئذٍ يُوصَف القط وحده بمصفوفة كثافة مختزلة.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:25}
+\audiencequestion{هل يمكن استبدال \(\operatorname{Tr}(M\rho)\) بـ \((\operatorname{Tr}M)(\operatorname{Tr}\rho)\)؟}
+\lecturerresponse{لا. أثر حاصل الضرب ليس عمومًا حاصلَ ضرب الأثرين. تتيح الخاصية الدورية \(\operatorname{Tr}(M\rho)=\operatorname{Tr}(\rho M)\)، لكنها لا تفكك الأثر إلى عوامل.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:49}
+\audiencequestion{هل بدأنا فقط بحالة الأساس \(\ket{a,b}\)، أم بالحالة النقية الأكثر عمومية؟}
+\lecturerresponse{بدأنا بالحالة النقية الأكثر عمومية للنظام المركب: \(\ket{\Psi}=\sum_{a,b}\psi(a,b)\ket{a,b}\). إن \(\ket{a,b}\) ليس إلا متجه أساس واحدًا. والمفاجأة أن هذا المتجه المركب المحدد تمامًا يمكن مع ذلك أن يعطي حالة مختزلة مختلطة.}
+\end{classroomqa}
+
+التباين مع الميكانيكا الكلاسيكية حاد. فالمعلومات الكلاسيكية الكاملة عن نظام مركب تحدد كل إحداثي من إحداثياته، ومن ثم تحدد كل منظومة فرعية. ويمكن بالطبع أخذ الهامش لتوزيع احتمالي كلاسيكي، لكن إذا كان التوزيع الأصلي متمركزًا عند نقطة واحدة في فضاء الطور، فإن كل توزيع هامشي يتمركز أيضًا عند قيمة محددة واحدة. أما الحالات النقية الكمومية فلا يلزم أن تكون لها هذه الخاصية.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:46}
+\audiencequestion{كيف يختلف الجمع على \(B\) عن تكامل توزيع موضع--سرعة كلاسيكي على السرعة؟}
+\lecturerresponse{تبدو العمليتان متشابهتين، لكن نهايتيهما في الحالة النقية مختلفتان. فنقطة فضاء طور كلاسيكية معلومة تمامًا تحدد كلًّا من الموضع والسرعة، لذا يبقى أي توزيع هامشي محددًا. أما الحالة الكمومية المتشابكة المعلومة تمامًا فيمكن أن تعطي حالة مختلطة غير تافهة لأي من المنظومتين الفرعيتين. لذلك يكشف الأثر الجزئي عن فشل كمومي للاستلزام الكلاسيكي من كون الكل نقيًا إلى كون الأجزاء نقية.}
+\end{classroomqa}
+
+\section{الحالات الجدائية: الحالة الاستثنائية}
+
+متى تبقى \(\rho_A\) نقية؟ الجواب هو أن الدالة الموجية يجب أن تنفك إلى حاصل ضرب:
+\begin{equation}
+\psi(a,b)=\phi(a)\chi(b).
+\end{equation}
+افترض أن \(\phi\) و\(\chi\) مطبَّعتان كلٌّ منهما على حدة. وبالتعويض في مصفوفة الكثافة المختزلة نحصل على
+\begin{align}
+\rho_A(a,a')
+&=\sum_b\phi(a)\chi(b)\phi^*(a')\chi^*(b) \\
+&=\phi(a)\phi^*(a')\sum_b|\chi(b)|^2 \\
+&=\phi(a)\phi^*(a').
+\end{align}
+ومن ثم
+\begin{equation}
+\rho_A=\ket{\phi}\bra{\phi}.
+\end{equation}
+لها قيمة ذاتية واحدة هي \(1\)، وجميع القيم الذاتية المتبقية \(0\)، وإنتروبيتها صفر.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_10.png}
+\caption{في حالة دالة موجية متفككة، يختزل المجموع على \(B\) إلى تطبيع \(\chi\).}
+\lectureframe{00:46:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:44:17}
+\audiencequestion{هل \(\phi(a)\) هي نفسها حالة منظومة \(A\)؟}
+\lecturerresponse{إنها مركبة الدالة الموجية لتلك الحالة. وبصورة أوضح، \(\ket{\phi}=\sum_a\phi(a)\ket{a}\)، وبالمثل \(\ket{\chi}=\sum_b\chi(b)\ket{b}\). ويعني هذا التفكك أن \(\ket{\Psi}=\ket{\phi}\otimes\ket{\chi}\)، أي حالة جدائية لا يوجد فيها تشابك بين \(A\) و\(B\).}
+\end{classroomqa}
+
+بالنسبة إلى كل مرصود محلي،
+\begin{equation}
+\expect{M_A}
+=\operatorname{Tr}(\rho_A M_A)
+=\bra{\phi}M_A\ket{\phi}.
+\end{equation}
+تتصرف المنظومة الفرعية \(A\) تمامًا كما لو كانت في الحالة النقية \(\ket{\phi}\). ولحالة نقية ثنائية الجزء، تختبر إنتروبيا \(\rho_A\) إذن البنية الجدائية: فالصفر يعني حالة جدائية، في حين تعني الإنتروبيا غير الصفرية وجود تشابك. وتشير القيم القريبة من الصفر إلى تشابك ضعيف؛ أما القيم القريبة من القيمة العظمى فتدل على حالة بعيدة عن أي حالة جدائية عبر هذا التقسيم الثنائي.
+
+\section{الحالة المفردة: كلٌّ نقي وجهل محلي أعظمي}
+
+لنأخذ الحالة المفردة للّفين
+\begin{equation}
+\ket{\Psi^-}
+=\frac{1}{\sqrt{2}}
+\left(
+\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}
+\right).
+\end{equation}
+مركبات دالتها الموجية غير المنعدمة هي
+\begin{equation}
+\psi(\uparrow,\downarrow)=\frac{1}{\sqrt{2}},
+\qquad
+\psi(\downarrow,\uparrow)=-\frac{1}{\sqrt{2}},
+\end{equation}
+بينما \(\psi(\uparrow,\uparrow)=\psi(\downarrow,\downarrow)=0\).
+
+خذ الأثر على اللف \(2\). العناصر القطرية هي
+\begin{align}
+\rho_1(\uparrow,\uparrow)
+&=|\psi(\uparrow,\uparrow)|^2
+ +|\psi(\uparrow,\downarrow)|^2
+=\frac{1}{2}, \\
+\rho_1(\downarrow,\downarrow)
+&=|\psi(\downarrow,\uparrow)|^2
+ +|\psi(\downarrow,\downarrow)|^2
+=\frac{1}{2}.
+\end{align}
+والعنصر غير القطري هو
+\begin{align}
+\rho_1(\uparrow,\downarrow)
+&=\psi(\uparrow,\uparrow)\psi^*(\downarrow,\uparrow)
+ +\psi(\uparrow,\downarrow)\psi^*(\downarrow,\downarrow) \\
+&=0,
+\end{align}
+ومرافقه المركب ينعدم أيضًا. ومن ثم
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&0\\[2pt]
+0&\frac12
+\end{pmatrix}
+=\frac12 I.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_11.png}
+\caption{العناصر الأربعة لمصفوفة الكثافة المختزلة لأحد اللفين في الحالة المفردة.}
+\lectureframe{00:55:35}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:58}
+\audiencequestion{ما إنتروبيا الحالة المختزلة للّف الواحد؟}
+\lecturerresponse{قيمتاها الذاتيتان كلتاهما \(1/2\)، لذا
+\[
+S_1=-2\left(\frac12\log\frac12\right)=\log 2.
+\]
+وهذه هي الإنتروبيا العظمى المتاحة لمنظومة فرعية ذات حالتين. إن تساوي \emph{القيم الذاتية}، لا تساوي عناصر المصفوفة في أساس اعتباطي، هو ما يميز الحالة المختلطة اختلاطًا أعظميًا.}
+\end{classroomqa}
+
+تنعدم قيمة توقع اللف على امتداد كل محور:
+\begin{equation}
+\expect{\bm{\sigma}\cdot\hat{\bm n}}
+=\operatorname{Tr}\!\left(
+\rho_1\,\bm{\sigma}\cdot\hat{\bm n}
+\right)
+=\frac12\operatorname{Tr}
+\left(\bm{\sigma}\cdot\hat{\bm n}\right)
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:58:37}
+\audiencequestion{لماذا يكون أثر \(\bm{\sigma}\cdot\hat{\bm n}\) صفرًا في كل اتجاه؟}
+\lecturerresponse{كل مصفوفة من مصفوفات باولي عديمة الأثر. وبما أن \(\bm{\sigma}\cdot\hat{\bm n}=n_1\sigma_1+n_2\sigma_2+n_3\sigma_3\)، فإن خطية الأثر تعطي الصفر لكل متجه وحدة \(\hat{\bm n}\). ولذا يكون من المتساوي الاحتمال إيجاد اللف موازيًا أو معاكسًا لأي محور مختار.}
+\end{classroomqa}
+
+للزوج بأكمله حالة نقية محددة وإنتروبيته صفر. وأي لف بمفرده مختلط اختلاطًا أعظميًا. وليس هذا جهلًا سببه سجل إعداد معيب؛ بل هو الحالة المحلية التي يقتضيها التشابك.
+
+\section{حالة جدائية متساوية السعات}
+
+لننظر الآن في
+\begin{equation}
+\ket{\Phi}
+=\frac12\left(
+\ket{\uparrow\uparrow}
++\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}
++\ket{\downarrow\downarrow}
+\right).
+\end{equation}
+جميع السعات الأربع تساوي \(1/2\)، لذا ينتج التطبيع من أربع مساهمات مقدار كل منها \(1/4\). وأخذ الأثر على اللف \(2\) يعطي
+\begin{equation}
+\rho_1
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}.
+\end{equation}
+أثرها هو \(1\)، لكن
+\begin{equation}
+\det\rho_1
+=\frac14-\frac14
+=0.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:23}
+\audiencequestion{كيف يحدد الأثر والمحدد القيمتين الذاتيتين هنا؟}
+\lecturerresponse{بالنسبة إلى مصفوفة \(2\times2\)، يكون مجموع القيم الذاتية هو الأثر وحاصل ضربها هو المحدد. ومن ثم \(\lambda_1+\lambda_2=1\) و\(\lambda_1\lambda_2=0\)، وهو ما يفرض الزوج \(\{1,0\}\). الحالة المختزلة نقية وإنتروبيتها صفر.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:03:18}
+\audiencequestion{ماذا يفعل اللفان غير المتشابكين فعليًا؟}
+\lecturerresponse{هما كلاهما مصطفّان على امتداد المحور \(x\) الموجب. ويمكن التعرف إلى الجواب من خلال التفكك،
+\[
+\ket{\Phi}
+=\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2}
+\otimes
+\frac{\ket{\uparrow}+\ket{\downarrow}}{\sqrt2},
+\]
+أو إثباته تجريبيًا بحساب قيم توقع مصفوفات باولي.}
+\end{classroomqa}
+
+بالنسبة إلى المركبة \(z\)،
+\begin{equation}
+\sigma_3=
+\begin{pmatrix}
+1&0\\[2pt]
+0&-1
+\end{pmatrix},
+\qquad
+\operatorname{Tr}(\rho_1\sigma_3)=0.
+\end{equation}
+وبالنسبة إلى المركبة \(x\)،
+\begin{equation}
+\sigma_1=
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix},
+\end{equation}
+و
+\begin{align}
+\rho_1\sigma_1
+&=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}
+\begin{pmatrix}
+0&1\\[2pt]
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+\frac12&\frac12\\[2pt]
+\frac12&\frac12
+\end{pmatrix}, \\
+\operatorname{Tr}(\rho_1\sigma_1)&=1.
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_03.png}
+\caption{حساب مصفوفة \(\sigma_1\) للحالة المختزلة متساوية السعات.}
+\lectureframe{01:05:13}
+\end{figure}
+
+ومن ثم \(\expect{\sigma_1}=1\) بينما \(\expect{\sigma_2}=\expect{\sigma_3}=0\). إن إزاحة السعات قليلًا بعيدًا عن التفكك التام تغيّر القيم الذاتية عمومًا من \(\{1,0\}\) إلى قيمتين غير صفريتين. وتقيس الإنتروبيا الصغيرة الناتجة مقدارًا صغيرًا من التشابك.
+
+\section{لمن تعود هذه الإنتروبيا؟}
+
+الإنتروبيا التي حُسبت للتو تخص منظومة فرعية. ففي مثال الحالة المفردة،
+\begin{equation}
+S(\rho_{12})=0,
+\qquad
+S(\rho_1)=S(\rho_2)=\log 2.
+\end{equation}
+الكل نقي بينما كل جزء مختلط. لذلك فإن إنتروبيا التشابك لا تطيع القاعدة الجمعية الساذجة \(S_{12}=S_1+S_2\). وبالنسبة إلى حالة نقية ثنائية الجزء، تمتلك مصفوفتا الكثافة المختزلتان القيم الذاتية غير الصفرية نفسها، ولذلك تتساوى إنتروبيتاهما على الرغم من انعدام إنتروبيا الكل.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:03}
+\audiencequestion{هل كل مصفوفة كثافة هي في نهاية المطاف مصفوفة كثافة للتشابك؟}
+\lecturerresponse{من الناحية التشغيلية، يمكن وصف عدم يقين عادي من دون تتبّع ما الذي يحمل السجل المفقود. وإذا أُدرج جهاز الإعداد أو البيئة أو الراصد، أمكن في كثير من الأحيان النظر إلى ذلك اللايقين على أنه تشابك مع درجات حرية غير مرصودة. أما رياضيًا فالفكرة دقيقة تمامًا: فكل مصفوفة كثافة تقبل تنقية على فضاء هلبرت أكبر، مع أن تلك التنقية لا تحدد على نحو وحيد تاريخ إعداد فيزيائيًا.}
+\end{classroomqa}
+
+\section{من الحركة الكلاسيكية المتقطعة إلى الحركة الكمومية}
+
+نترك الآن التشابك مؤقتًا ونسأل كيف تتغير الحالات مع الزمن. بالنسبة إلى نظام كلاسيكي ذي عدد منتهٍ من التهيئات، يكون التطور القابل للعكس تبديلًا. لكل حالة لاحقة واحدة وسابقة واحدة؛ وتتفكك الحركة إلى دورات.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_12.png}
+\caption{التطور الكلاسيكي القابل للعكس ممثَّل بأسهم بين تهيئات متقطعة.}
+\lectureframe{01:11:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:11:51}
+\audiencequestion{لماذا يجب أن تكون خطوات الزمن أيضًا متقطعة إذا كانت التهيئات متقطعة؟}
+\lecturerresponse{إن نموذجًا كلاسيكيًا ذا حالتين على نحو صارم لا يحتوي أي تهيئات وسيطة يمكن لمسار مستمر أن يمر عبرها. إن إدارة قطعة نقدية فعلية ببطء تُدخل اتجاهها بوصفه إحداثيًا مستمرًا إضافيًا، ولذا لم يعد ذلك نموذجًا ذي تهيئتين. أما النظام الكمومي ذو الحالتين فمختلف: إذ يحتوي فضاء هلبرت الخاص به على عائلة مستمرة من التراكبات رغم أن أساسًا متعامدًا معياريًا لا يضم إلا عنصرين.}
+\end{classroomqa}
+
+يمكن لحالة لف \(\tfrac12\) أن تدور على نحو مستمر من \(\ket{\uparrow}\) نحو \(\ket{\downarrow}\) عبر تراكبات. ولا يستلزم البعد المنتهي مجموعة منتهية من متجهات الحالة. وهذا ما يسمح بتطور زمني مستمر في نظام كمومي متقطع.
+
+تحفظ الحركيات المجهرية القابلة للعكس الفوارق أيضًا. فلا تندمج حالتان ابتدائيتان كلاسيكيتان مختلفتان في حالة مجهرية واحدة، لأن ذلك سيمحو أي حالة ابتدائية قد حدثت. وفي الميكانيكا الهاملتونية تقترن هذه القابلية للعكس بمبرهنة ليوفيل: يُحفَظ حجم فضاء الطور.
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:26}
+\audiencequestion{وماذا عن التشعبات غير الخطية التي تقترب فيها عدة شروط ابتدائية من الحالة المستقرة نفسها؟}
+\lecturerresponse{تظهر الجاذبات في الأوصاف الفعالة التبديدية، حيث تكون درجات حرية البيئة قد أُهملت. أمّا التطور الهاملتوني المجهري الأساسي فيبقى قابلاً للعكس؛ فقد تُنقل المعلومات إلى متغيرات غير مرصودة، لكن الحالات الكاملة المتميزة لا تصبح حرفيًا حالة كاملة واحدة.}
+\end{classroomqa}
+
+العبارة الكمية المقابلة هي الوحدوية. فالحالات الابتدائية المتعامدة تتطور إلى حالات نهائية متعامدة، وبصورة أعم يُحفَظ كل حاصل ضرب داخلي.
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:50}
+\audiencequestion{هل يجب أن تتعرض الحالتان للتأثير نفسه تمامًا؟ ماذا يحدث لحالتي السبين الابتدائيتين لأعلى على محور \(z\) ولأسفل على محور \(z\) في مجال مغناطيسي موجَّه على امتداد \(x\)؟}
+\lecturerresponse{يجب أن يؤثر مؤثر التطور نفسه في كلتا الحالتين. ففي المجال المستعرض يدور السبينان ترنحيًا، لكن متجهي بلوخ لهما يظلان متعاكسين وتظل متجهات الحالة متعامدة. أمّا اعتماد تاريخين خارجيين مختلفين فسيعني مقارنة مؤثري تطور مختلفين.}
+\end{classroomqa}
+
+\section{الخطية والوحدوية}
+
+المبدأ الأول للتطور الزمني الكمي هو الخطية:
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\end{equation}
+يعتمد هذا المؤثر على الزمن المنقضي ويحقق
+\begin{equation}
+U(0)=I.
+\end{equation}
+ومثل خطية ميكانيكا الكم نفسها، تُبرَّر هذه القاعدة بنجاحها التجريبي.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_13.png}
+\caption{تُحصَل الحالة عند الزمن \(t\) بتأثير مؤثر خطي \(U(t)\) في الحالة الابتدائية.}
+\lectureframe{01:19:00}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:01}
+\audiencequestion{ماذا يجب أن يكون \(U(t)\) عند \(t=0\)؟}
+\lecturerresponse{يجب أن يكون مؤثر الهوية. فعند انقضاء زمن صفري لا تتغير الحالة لأي متجه ابتدائي ممكن.}
+\end{classroomqa}
+
+المبدأ الثاني هو حفظ حواصل الضرب الداخلية:
+\begin{equation}
+\braket{\phi(t)}{\psi(t)}
+=\braket{\phi(0)}{\psi(0)}.
+\end{equation}
+عندما \(\phi=\psi\)، فإن هذا يحفظ التطبيع، ومن ثم الاحتمال الكلي. وعندما تكون الحالتان الابتدائيتان متعامدتين، فإنه يحفظ قابلية التمييز التامة بينهما. وبالنسبة إلى حالات اعتباطية، فإنه يحفظ علاقتهما الهندسية كاملةً.
+
+يتطور البرا وفقًا لـ
+\begin{equation}
+\bra{\phi(t)}
+=\bra{\phi(0)}U^\dagger(t),
+\end{equation}
+ولذا
+\begin{align}
+\braket{\phi(t)}{\psi(t)}
+&=\bra{\phi(0)}U^\dagger(t)U(t)\ket{\psi(0)} \\
+&=\braket{\phi(0)}{\psi(0)}.
+\end{align}
+وبما أن هذه المساواة تصح لكل زوج من المتجهات الابتدائية، فإن
+\begin{equation}
+\boxed{U^\dagger(t)U(t)=I}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.74\textwidth]{lecture_08_figure_04.png}
+\caption{تطور الكيت، وتطور البرا، وشرط حاصل الضرب الداخلي الذي يؤدي إلى \(U^\dagger U=I\).}
+\lectureframe{01:23:30}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:22:10}
+\audiencequestion{لماذا يكتسب البرا \(U^\dagger\) لا \(U\)؟}
+\lecturerresponse{إن أخذ المرافق الهيرميتي يعكس ترتيب العوامل ويستبدل بكل مؤثر مرافقه الهيرميتي:
+\[
+\bigl(U\ket{\phi}\bigr)^\dagger
+=\bra{\phi}U^\dagger.
+\]
+وهذا هو الفعل المزدوج اللازم لاتساق حواصل الضرب الداخلية.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:34}
+\audiencequestion{لو كان \(U\) مجرد عدد مركب، فماذا يعني \(U^\dagger U=1\)؟}
+\lecturerresponse{فهذا يعني \(|U|=1\)، لذا فإن \(U=e^{i\theta}\) يقع على دائرة الوحدة. والمصفوفة الوحدوية هي النظير المؤثري لطور خالص: فهي تحفظ الأطوال وحواصل الضرب الداخلية.}
+\end{classroomqa}
+
+\section{التطور المتناهي الصغر والهاملتوني}
+
+لتكن \(\epsilon\) فترة زمنية صغيرة جدًا. وبما أن \(U(0)=I\)، فاكتب التوسع حتى الرتبة الأولى
+\begin{equation}
+U(\epsilon)=I-i\epsilon h+O(\epsilon^2).
+\end{equation}
+إشارة السالب والعامل \(i\) اصطلاحان ملائمان. وأخذ المرافق الهيرميتي يعطي
+\begin{equation}
+U^\dagger(\epsilon)
+=I+i\epsilon h^\dagger+O(\epsilon^2).
+\end{equation}
+ثم تقتضي الوحدوية
+\begin{align}
+I
+&=U^\dagger(\epsilon)U(\epsilon) \\
+&=\left(I+i\epsilon h^\dagger\right)
+\left(I-i\epsilon h\right)+O(\epsilon^2) \\
+&=I+i\epsilon(h^\dagger-h)+O(\epsilon^2).
+\end{align}
+ويجب أن ينعدم الحد من الرتبة الأولى:
+\begin{equation}
+\boxed{h^\dagger=h}.
+\end{equation}
+إذن المولِّد المتناهي الصغر هيرميتي.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_14.png}
+\caption{تفرض الوحدوية عند الرتبة الأولى أن يكون المولِّد المتناهي الصغر هيرميتيًا.}
+\lectureframe{01:29:35}
+\end{figure}
+
+في الاصطلاح المؤقت أعلاه، لـ \(h\) وحدات التردد الزاوي. ومع استعادة الوحدات الفيزيائية، نعرِّف مؤثر الطاقة
+\begin{equation}
+H=\hbar h.
+\end{equation}
+هذا المؤثر الهيرميتي هو الهاملتوني، وقيمه الذاتية هي مستويات الطاقة.
+
+طبِّق المؤثر المتناهي الصغر على حالة:
+\begin{equation}
+\ket{\psi(\epsilon)}
+=\left(I-\frac{i\epsilon}{\hbar}H\right)\ket{\psi(0)}
++O(\epsilon^2).
+\end{equation}
+اطرح الحالة الابتدائية، واقسم على \(\epsilon\)، ثم خذ النهاية:
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+وبصورة مكافئة،
+\begin{equation}
+\boxed{
+i\hbar\frac{\mathrm d}{\mathrm dt}\ket{\psi(t)}
+=H\ket{\psi(t)}
+}.
+\end{equation}
+هذه هي معادلة Schr\"odinger العامة.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_15.png}
+\caption{يتحول خارج قسمة الفارق المتناهي الصغر إلى مشتقة الحالة بالنسبة إلى الزمن.}
+\lectureframe{01:32:18}
+\end{figure}
+
+يعتمد الهاملتوني على الإعداد الفيزيائي. وقد يتغير مع الزمن إذا تغيّر مجال مغناطيسي خارجي أو تغيّر متحكِّم آخر. وعندما يكون الإعداد مستقلًا عن الزمن، يكون \(H\) مؤثرًا هيرميتيًا ثابتًا.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:30}
+\audiencequestion{هل يقتضي حفظ حواصل الضرب الداخلية أن تبقى الأنظمة غير المتشابكة ابتداءً غير متشابكة؟}
+\lecturerresponse{لا. فالوحدوية تحفظ حواصل الضرب الداخلية بين متجهات الحالة الكاملة، لا بنية الجداء في تقسيم مختار. ويمكن لهاملتوني تآثر أن يحوّل حالة جداء إلى حالة متشابكة. ولو لم تستطع المؤثرات الوحدوية فعل ذلك، لما استطاعت القياسات أن تُنشئ ترابطًا بين نظام وجهاز.}
+\end{classroomqa}
+
+\section{وحدات الإنتروبيا}
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:08}
+\audiencequestion{هل للتشابك وحدة فيزيائية مثل الجول؟}
+\lecturerresponse{إنتروبيا التشابك مقياس معلوماتي، وليست طاقة. ومع اللوغاريتمات الطبيعية تُقاس بالناتات؛ ومع اللوغاريتمات ذات الأساس اثنين تُقاس بالبتات. وكلاهما اصطلاحان للعد بلا أبعاد.}
+\end{classroomqa}
+
+قد يحجب الترميز الديناميكي الحراري هذه النقطة لأن ثابت بولتزمان يقوم بالتحويل بين درجة الحرارة المقاسة بالكلفن والطاقة:
+\begin{equation}
+\expect{K}_{\mathrm{monatomic}}
+=\frac32 k_{\mathrm B}T.
+\end{equation}
+وعلاقة الحرارة العكوسة هي
+\begin{equation}
+\delta Q_{\mathrm{rev}}=T\,\mathrm dS_{\mathrm{th}}.
+\end{equation}
+فإذا كانت إنتروبيا المعلومات هي
+\begin{equation}
+S_{\mathrm{info}}=-\sum_i p_i\log p_i,
+\end{equation}
+فإن الإنتروبيا الديناميكية الحرارية المألوفة هي
+\begin{equation}
+S_{\mathrm{th}}=k_{\mathrm B}S_{\mathrm{info}}.
+\end{equation}
+وجعل \(k_{\mathrm B}=1\) يعني قياس درجة الحرارة بوحدات الطاقة ويترك الإنتروبيا بلا أبعاد. وعندئذ يُفهم ثابت بولتزمان على أنه عامل تحويل، لا نوع جديد من وحدات التشابك. ولا يغيّر الاستطراد التاريخي الذي يصل بين أفكار بولتزمان الإحصائية وعمل آينشتاين 1905 حول الحركة البراونية التعريف المعلوماتي.
+
+\section{الحالات الذاتية للطاقة والطور}
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:54}
+\audiencequestion{لماذا يُعرَّف المولِّد الهيرميتي \(H\) بأنه الطاقة؟}
+\lecturerresponse{الوحدوية وحدها لا تثبت إلا أن المولِّد هيرميتي. أمّا تعريفه بأنه الطاقة فهو عبارة فيزيائية إضافية: فالطاقة تولِّد إزاحات الزمن. وبالنسبة إلى هاملتوني مستقل عن الزمن، فإن المؤثر نفسه الذي يحكم التطور يكون محفوظًا، وتكون قيمه الذاتية هي مستويات الطاقة الساكنة. وتوفّر الهاملتونيات الملموسة المضمون التجريبي لهذا التعريف.}
+\end{classroomqa}
+
+العلاقة بين ثوابتي بلانك والتردد هي
+\begin{equation}
+E=h\nu=\hbar\omega,
+\qquad
+\omega=2\pi\nu,
+\qquad
+h=2\pi\hbar.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:30}
+\audiencequestion{هل ينبغي أن تحتوي معادلة التطور على \(h\) أم \(\hbar\) أم عامل إضافي هو \(2\pi\)؟}
+\lecturerresponse{عند استخدام التردد الزاوي \(\omega\) تكون المعادلة \(E=\hbar\omega\)، وتحتوي معادلة Schr\"odinger على \(\hbar\). وعند استخدام التردد العادي \(\nu\) تكون العلاقة المكافئة \(E=h\nu\). أمّا العامل \(2\pi\) فيُؤخذ كله بالحسبان من خلال \(\omega=2\pi\nu\) و\(h=2\pi\hbar\).}
+\end{classroomqa}
+
+افترض أن الحالة الابتدائية متجه ذاتي للطاقة:
+\begin{equation}
+H\ket{\psi(0)}=E\ket{\psi(0)}.
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:18}
+\audiencequestion{إذا ظلت الحالة متجهًا ذاتيًا للطاقة، فهل يعني ذلك أنها لا تتغير؟}
+\lecturerresponse{قد تكتسب عاملًا مركبًا معتمدًا على الزمن وتبقى متجهًا ذاتيًا بالقيمة الذاتية نفسها. وتقيّد الوحدوية هذا العامل ليكون طورًا. وهكذا يكون الشعاع ساكنًا حتى بينما يدور الكيت في الطور.}
+\end{classroomqa}
+
+اكتب
+\begin{equation}
+\ket{\psi(t)}=f(t)\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{lecture_08_figure_05.png}
+\caption{تبقى الحالة الذاتية للطاقة على الاتجاه نفسه في فضاء هيلبرت حتى عامل قياسي \(f(t)\).}
+\lectureframe{01:43:54}
+\end{figure}
+
+بالتعويض في معادلة Schr\"odinger نحصل على
+\begin{align}
+i\hbar\frac{\mathrm d f}{\mathrm dt}\ket{\psi(0)}
+&=f(t)H\ket{\psi(0)} \\
+&=E f(t)\ket{\psi(0)}.
+\end{align}
+ألغِ المتجه المشترك:
+\begin{equation}
+\frac{\mathrm d f}{\mathrm dt}
+=-\frac{iE}{\hbar}f(t).
+\end{equation}
+ومع \(f(0)=1\)،
+\begin{equation}
+f(t)=e^{-iEt/\hbar},
+\qquad
+\ket{\psi(t)}=e^{-iEt/\hbar}\ket{\psi(0)}.
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{lecture_08_figure_16.png}
+\caption{معادلة القيمة الذاتية للطاقة وتطور الطور الناتج عنها.}
+\lectureframe{01:46:10}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{ما معامل \(t\) في الطور \(e^{-iEt/\hbar}\)؟}
+\lecturerresponse{إنه التردد الزاوي،
+\[
+\omega=\frac{E}{\hbar}.
+\]
+وبصورة مكافئة، \(E=\hbar\omega\). ولو كان المعامل في الأس حقيقيًا لوصف معدل نمو أو اضمحلال؛ أمّا الأس التخيلي هنا فيصف دورانًا وحدويًا في الطور.}
+\end{classroomqa}
+
+هذه العلاقة بين الطور والتردد ومعادلة Schr\"odinger هما صورتان للقانون نفسه للتطور الزمني. فالمعادلة عامة؛ إذ يختلف الجسيم الحر، والجسيم في جهد، والسبين في مجال مغناطيسي من خلال هاملتونياتها. والخطوة التالية هي اختيار تلك الهاملتونيات وحلّها.

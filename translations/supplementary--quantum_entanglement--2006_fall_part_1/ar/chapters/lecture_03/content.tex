@@ -1,0 +1,541 @@
+\chapter{المرصودات الهيرميتية، واللفّ المغزلي، وقاعدة الاحتمال}
+
+\lectureoverview{ميكانيكا الكم هي حساب للاحتمالات. ولكي نستخدمها من دون أن نستبدل الفهم بالشعارات، نحتاج إلى سلسلة رياضية موجزة: الأطوار المركبة، والحالات المطبَّعة، والمرصودات الهيرميتية، والقيم الذاتية والمتجهات الذاتية، والتعامد، وقاعدة بورن. ثم تحوّل مصفوفات باولي الثلاث هذه السلسلة إلى تنبؤات ملموسة بشأن لفّ الإلكترون المغزلي.}
+
+\section{الأعداد المركبة في الصورة القطبية}
+
+لنبدأ بإزالة مصدر صغير واحد من الاحتكاك الجبري. فالعدد المركب
+\begin{equation}
+  z=x+iy
+\end{equation}
+هو نقطة في المستوى المركب، بحيث يقع \(x\) على المحور الحقيقي و\(y\) على المحور التخيلي. وإذا كانت لهذه النقطة الإحداثيات القطبية \((r,\theta)\)، فإن
+\begin{equation}
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+\end{equation}
+ومن ثم
+\begin{equation}
+  z=r(\cos\theta+i\sin\theta)=re^{i\theta}.
+  \label{eq:l03-polar-form}
+\end{equation}
+وتكون كتابة أويلر مفيدة لأن صيغ جمع الزوايا تتحول إلى القانون الأسي
+\begin{equation}
+  e^{i\theta}e^{i\phi}
+  =e^{i(\theta+\phi)}.
+  \label{eq:l03-phase-product}
+\end{equation}
+وفي الواقع، فإن ضرب الصيغتين المثلثيتين يعطي
+\begin{align}
+& (\cos\theta+i\sin\theta)(\cos\phi+i\sin\phi)
+\notag\\
+&\qquad=\cos(\theta+\phi)+i\sin(\theta+\phi).
+\end{align}
+وجميع صيغ الجمع المألوفة متضمَّنة في عملية الضرب الواحدة هذه.
+
+يعكس أخذ المرافق المركب النقطة عبر المحور الحقيقي:
+\begin{equation}
+  z^*=x-iy,
+  \qquad
+  (e^{i\theta})^*=e^{-i\theta}.
+\end{equation}
+وبالتالي،
+\begin{equation}
+  e^{i\theta}e^{-i\theta}=1.
+\end{equation}
+وتقع الأعداد من الشكل \(e^{i\theta}\) على دائرة الوحدة وتسمى \emph{أطوارًا خالصة}. وكل عدد مركب غير صفري هو مطلق موجب مضروب في طور خالص:
+\begin{equation}
+  z=|z|e^{i\theta},
+  \qquad
+  |z|^2=z^*z=x^2+y^2.
+  \label{eq:l03-modulus-phase}
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:06:36}
+\audiencequestion{هل يقابل تغيير \(\theta\) إلى \(-\theta\) عكس اتجاه الدوران في المستوى المركب؟}
+\lecturerresponse{نعم. ترسم زوايا الطور الموجبة والسالبة دائرة الوحدة باتجاهين متعاكسين. ويحوّل أخذ المرافق المركب \(e^{i\theta}\) إلى \(e^{-i\theta}\)، وهي النقطة المنعكسة والطور المعكوس.}
+\end{classroomqa}
+
+هذا هو كل ما نحتاجه اليوم تمهيدًا من الأعداد المركبة: المطلق، والطور، والمرافق، ودائرة الوحدة.
+
+\section{ميكانيكا الكم بوصفها حسابًا للاحتمالات}
+
+ننتقل الآن إلى المسلَّمات. يُحضَّر نظام فيزيائي في \emph{حالة}؛ ويطلب القياس قيمة \emph{مرصود}؛ وتزوّدنا ميكانيكا الكم باحتمالات الإجابات الممكنة.
+
+الحالات متجهات في فضاء متجهي مركب. وبالنسبة إلى نظام لفّ مغزلي ذي مستويين،
+\begin{equation}
+  \ket\psi=\alpha\ket{u}+\beta\ket{d},
+  \qquad
+  \ket{u}=\begin{pmatrix}1\\0\end{pmatrix},
+  \qquad
+  \ket{d}=\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-two-level-state}
+\end{equation}
+تحدِّد المعاملات احتمالي حالتي الأعلى والأسفل،
+\begin{equation}
+  P(u)=|\alpha|^2,
+  \qquad
+  P(d)=|\beta|^2,
+\end{equation}
+ولذلك يجب أن تكون الحالة مطبَّعة:
+\begin{equation}
+  \braket{\psi}{\psi}
+  =|\alpha|^2+|\beta|^2
+  =1.
+  \label{eq:l03-state-normalization}
+\end{equation}
+ويشير البعد هنا إلى عدد البدائل المستقلة في فضاء الحالات، لا إلى بعد الفضاء العادي. أما نظام له ثلاث حالات أساس متنافية على نحو متبادل فسيستخدم ثلاثة أعمدة متعامدة ومتطبَّعة وثلاث سعات.
+
+لا تحدد الاحتمالات السعات تحديدًا كاملًا. فالضرب في طور خالص لا يغيّر المقدار:
+\begin{equation}
+  |e^{i\theta}\alpha|^2=|\alpha|^2.
+\end{equation}
+ولذلك تحتوي السعات على معلومات تتجاوز الاحتمالات في هذا الأساس الواحد. وسيظهر دور هذه المعلومات عندما ننظر في قياسات مختلفة، ولاحقًا، في التطور الزمني.
+
+حالات الأساس متعامدة ومتطبَّعة:
+\begin{equation}
+  \braket{u}{u}=\braket{d}{d}=1,
+  \qquad
+  \braket{u}{d}=\braket{d}{u}=0.
+\end{equation}
+وينتمي تعامدها إلى الفضاء المركب للحالات. ولا ينبغي بعدُ الخلط بينه وبين سهمين متعامدين في الفضاء الثلاثي الأبعاد العادي؛ فهذا التمييز سيغدو حاسمًا قرب نهاية المحاضرة.
+
+\section{لماذا تكون المرصودات هيرميتية}
+
+يمكن تسجيل النتائج التجريبية على هيئة أعداد حقيقية. وقد نضم عددين حقيقيين في عدد مركب واحد من باب الملاءمة، لكن قراءات المؤشر نفسها يمكن دائمًا فصلها إلى كميات حقيقية. وفي الأبعاد المنتهية، تُمثَّل المرصودات الكمية بفئة خاصة من المؤثرات الخطية: المصفوفات الهيرميتية.
+
+ولتعريفها، ننقل أولًا مصفوفةً بتبادل الصفوف والأعمدة:
+\begin{equation}
+  (M^T)_{ij}=M_{ji}.
+  \label{eq:l03-transpose}
+\end{equation}
+وإذا حققت مصفوفة حقيقية \(M^T=M\) فهي متناظرة. أما للمصفوفات المركبة فالعملية المناظرة هي المرافق الهيرميتي،
+\begin{equation}
+  M^\dagger=(M^T)^*,
+  \qquad
+  (M^\dagger)_{ij}=M_{ji}^*.
+  \label{eq:l03-dagger}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\linewidth]{lecture_03_figure_02.png}
+\caption{يشترك المنقول، والتناظر، والانتقال إلى المرافق الهيرميتي في ترتيب واحد على اللوح.}
+\lectureframe{00:23:06}
+\end{figure}
+
+\begin{definition}
+تكون المصفوفة \(M\) \emph{هيرميتية} إذا كان
+\begin{equation}
+  M^\dagger=M,
+  \qquad\text{equivalently}\qquad
+  M_{ij}=M_{ji}^*.
+  \label{eq:l03-hermitian}
+\end{equation}
+\end{definition}
+
+العناصر القطرية حقيقية، لأن \(M_{ii}=M_{ii}^*\). والعناصر المنعكسة خارج القطر تأتي في أزواج مترافقة. ومن ثم فإن الصيغة العامة لمصفوفة ذات صفين وعمودين هي
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    a&z\\
+    z^*&b
+  \end{pmatrix},
+  \qquad a,b\in\mathbb R.
+  \label{eq:l03-hermitian-two}
+\end{equation}
+الهيرميتية هي النظير المصفوفي لشرط الواقعية؛ وهي لا تقتضي أن يكون كل عنصر، على حدة، حقيقيًا.
+
+وتأتي أول ثمرة من هويتين أوليتين للمرافق:
+\begin{equation}
+  \braket{B}{A}=\braket{A}{B}^*,
+  \label{eq:l03-inner-conjugation}
+\end{equation}
+ولأي \(M\)،
+\begin{equation}
+  \bra B M\ket A
+  =
+  \bigl(\bra A M^\dagger\ket B\bigr)^*.
+  \label{eq:l03-matrix-element-conjugation}
+\end{equation}
+والتعبير \(\bra B M\ket A\) هو عدد، أي عنصر المصفوفة \(BA\) الخاص بـ \(M\). فإذا كان \(M\) هيرميتيًا و\(B=A\)، فإن
+\begin{equation}
+  \bra A M\ket A
+  =
+  \bigl(\bra A M\ket A\bigr)^*.
+\end{equation}
+ولذلك فهو حقيقي.
+
+\begin{proposition}
+لكل \(M\) هيرميتي، تكون القيمة المتوقعة
+\begin{equation}
+  \expect{M}_A=\bra A M\ket A
+  \label{eq:l03-expectation}
+\end{equation}
+حقيقية في كل حالة مطبَّعة \(\ket A\).
+\end{proposition}
+
+سيجري تطوير المعنى الاحتمالي للقيمة المتوقعة بمزيد من التفصيل، لكن حقيقيتها تفسّر بالفعل لماذا تُعد المؤثرات الهيرميتية مرشحين طبيعيين لتمثيل المرصودات.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:22}
+\audiencequestion{هل تأتي كتابة الأقواس الزاوية للمتوسط من ترميز برا--كيت؟}
+\lecturerresponse{نعم. إن ترميز الأقواس لديراك يوفّر الأقواس نفسها. ففي \(\bra A M\ket A\)، يُحصر المؤثر بين البرا والكيت اللذين يمثلان الحالة، والنتيجة هي القيمة المتوقعة.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:34:31}
+\audiencequestion{هل يمكن أن تكون للكمية الفيزيائية نفسها قيمة مقاسة تخيلية؟ وإذا كانت القياسات حقيقية، فلماذا نحتاج إلى الأعداد المركبة في ميكانيكا الكم؟}
+\lecturerresponse{يمكن دائمًا تسجيل مجموعة من النتائج المقاسة على هيئة أعداد حقيقية، حتى إذا اخترنا أن نضم زوجًا منها في عدد مركب واحد. لكن السؤال الأدق هو لماذا تُدفَع النظرية إلى السعات المركبة. احتفظ بهذا السؤال: فالجواب مرتبط بالتطور الزمني القابل للعكس، وهو ما لم نُدخله بعد. إن قصر النظرية على متجهات حقيقية سيفقدها إمكانات مهمة.}
+\end{classroomqa}
+
+الرياضيات ليست زينة. فمن دونها يمكن جعل التشابك يبدو غامضًا مع بقائه غير معرَّف. ونواصل في أبسط إعداد ممكن، أي نظام واحد ذي مستويين، حتى يمكن لاحقًا تركيب نظامين من هذا النوع على نحو سليم.
+
+\section{القيم الذاتية هي نتائج القياس الممكنة}
+
+\begin{definition}
+يكون المتجه غير الصفري \(\ket a\) متجهًا ذاتيًا لـ \(M\) بقيمة ذاتية \(\lambda_a\) إذا كان
+\begin{equation}
+  M\ket a=\lambda_a\ket a.
+  \label{eq:l03-eigenvalue-equation}
+\end{equation}
+\end{definition}
+قد تغيّر المصفوفة طول المتجه أو طوره، لكنها لا تحوّله إلى اتجاه مختلف في فضاء الحالات.
+
+بالنسبة إلى مصفوفة هيرميتية، تكون القيمة الذاتية حقيقية. وبضرب المعادلة ~\eqref{eq:l03-eigenvalue-equation} من اليسار بـ \(\bra a\) نحصل على
+\begin{equation}
+  \bra a M\ket a
+  =\lambda_a\braket{a}{a}.
+\end{equation}
+والطرف الأيسر حقيقي بسبب الهيرميتية، كما أن المعيار في الطرف الأيمن حقيقي وموجب. ومن ثم
+\begin{equation}
+  \lambda_a
+  =
+  \frac{\bra a M\ket a}{\braket{a}{a}}
+  \in\mathbb R.
+  \label{eq:l03-real-eigenvalue}
+\end{equation}
+
+والآن تأتي العبارة الفيزيائية: عندما يمثّل \(M\) مرصودًا، فإن قيمه الذاتية هي القيم التي يمكن لقياس \(M\) أن يعيدها. والمتجه الذاتي المنتمي إلى \(\lambda_a\) هو حالة تقع فيها تلك القيمة بيقين.
+
+أبسط مثال هو مصفوفة قطرية:
+\begin{equation}
+  M=
+  \begin{pmatrix}
+    m_{11}&0\\
+    0&m_{22}
+  \end{pmatrix}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_03.png}
+\caption{توضَع معادلة القيمة الذاتية المجرَّدة فوق أول مثال قطري.}
+\lectureframe{00:44:04}
+\end{figure}
+
+يعطي الضرب المباشر
+\begin{align}
+  M\begin{pmatrix}1\\0\end{pmatrix}
+  &=m_{11}\begin{pmatrix}1\\0\end{pmatrix},
+  \notag\\
+  M\begin{pmatrix}0\\1\end{pmatrix}
+  &=m_{22}\begin{pmatrix}0\\1\end{pmatrix}.
+  \label{eq:l03-diagonal-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_04.png}
+\caption{يُستعاد متجه الأساس السفلي مضروبًا في العنصر القطري السفلي.}
+\lectureframe{00:45:58}
+\end{figure}
+
+وبالنسبة إلى مصفوفة قطرية أكبر، تبقى القاعدة نفسها صحيحة: عناصرها القطرية هي القيم الذاتية، وأعمدة الأساس القياسية التي لها واحد وحيد هي المتجهات الذاتية.
+
+\section{مصفوفات اللفّ المغزلي الثلاث}
+
+بالنسبة إلى لفّ الإلكترون المغزلي على طول المحور الثالث، نختار
+\begin{equation}
+  \sigma_3=
+  \begin{pmatrix}
+    1&0\\
+    0&-1
+  \end{pmatrix}.
+\end{equation}
+وحالتاه الذاتيتان هما \(\ket u=(1,0)^T\) بقيمة ذاتية \(+1\) و\(\ket d=(0,1)^T\) بقيمة ذاتية \(-1\). ومن ثم فإن قيمتي الكاشف الممكنتين هما القيمتان الذاتيتان.
+
+مصفوفة اللفّ المغزلي على المحور الأول هي
+\begin{equation}
+  \sigma_1=
+  \begin{pmatrix}
+    0&1\\
+    1&0
+  \end{pmatrix}.
+\end{equation}
+وتُكتب متجهاتها الذاتية المرشحة أولًا من دون تطبيع، لأن ضرب متجه ذاتي بأي عدد سلمي غير صفري يبقيه متجهًا ذاتيًا. أما الحالات الفيزيائية، فيجب أن تكون مطبَّعة:
+\begin{align}
+  \ket{x+}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
+  &
+  \sigma_1\ket{x+}&=+\ket{x+},
+  \notag\\
+  \ket{x-}
+  &=\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},
+  &
+  \sigma_1\ket{x-}&=-\ket{x-}.
+  \label{eq:l03-sigma-one-eigenvectors}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\linewidth]{lecture_03_figure_05.png}
+\caption{تظهر المصفوفة غير القطرية والمرشَّح متساوي الأوزان قبل اكتمال حاصل الضرب.}
+\lectureframe{00:50:29}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:56:45}
+\audiencequestion{هل يمكن رؤية متجهات \(\sigma_1\) الذاتية هندسيًا بدلًا من إيجادها جبريًا؟}
+\lecturerresponse{في الصورة الحقيقية ذات المركبتين، يبدِّل \(\sigma_1\) بين اتجاهي الأساس \(E_1\) و\(E_2\). ويبقى الاتجاه القطري \((1,1)^T\) ثابتًا، بينما ينعكس القطري الآخر \((1,-1)^T\). ولذلك فهما متجهان ذاتيان بقيمتين ذاتيتين \(+1\) و\(-1\). وهذه صورة في فضاء المركبات، وليست بعدُ عبارة عن بيان بشأن مؤشر اللفّ المغزلي الفيزيائي.}
+\end{classroomqa}
+
+المصفوفة المتبقية هي
+\begin{equation}
+  \sigma_2=
+  \begin{pmatrix}
+    0&-i\\
+    i&0
+  \end{pmatrix},
+\end{equation}
+ولها متجهات ذاتية مطبَّعة
+\begin{equation}
+  \ket{y+}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},
+  \qquad
+  \ket{y-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}.
+  \label{eq:l03-sigma-two-eigenvectors}
+\end{equation}
+وقيمها الذاتية مرة أخرى هي \(+1\) و\(-1\).
+
+تربيع كل واحدة من المصفوفات الثلاث يعطي مصفوفة الوحدة:
+\begin{equation}
+  \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
+  \label{eq:l03-pauli-squares}
+\end{equation}
+إذا كان \(\sigma_i\ket a=\lambda\ket a\)، فإن تطبيق \(\sigma_i\) مرتين يعطي \(\lambda^2=1\)، ومن ثم \(\lambda=\pm1\). وتطابق الأطياف هو أول إشارة إلى أن هذه المصفوفات تمثل مركبات اللفّ المغزلي على محاور مكانية متكافئة.
+
+\section{النتائج المتميزة تتطلب حالات متعامدة}
+
+قبل برهنة المبرهنة التالية، لنبيّن معناها. إذا أعطى مرصود واحد إجابتين محددتين مختلفتين في حالتين، أمكن لقياس ذلك المرصود أن يميز بين الحالتين تمييزًا تامًا. وتعبِّر ميكانيكا الكم عن هذا التمييز التام بالتعامد.
+
+\begin{theorem}
+ليكن \(M\) مؤثرًا هيرميتيًا، بحيث
+\begin{equation}
+  M\ket A=\lambda_A\ket A,
+  \qquad
+  M\ket B=\lambda_B\ket B.
+\end{equation}
+فإذا كان \(\lambda_A\ne\lambda_B\)، فإن
+\begin{equation}
+  \braket{B}{A}=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+بضرب معادلة القيمة الذاتية الأولى من اليسار بـ \(\bra B\) نحصل على
+\begin{equation}
+  \bra B M\ket A=\lambda_A\braket{B}{A}.
+\end{equation}
+وتعطي الهيرميتية ومعادلة القيمة الذاتية الثانية عنصر المصفوفة نفسه على الصورة
+\begin{equation}
+  \bra B M\ket A=\lambda_B\braket{B}{A},
+\end{equation}
+لأن \(\lambda_B\) حقيقي. وبالطرح نحصل على
+\begin{equation}
+  (\lambda_A-\lambda_B)\braket{B}{A}=0.
+\end{equation}
+والقيمتان الذاتيتان مختلفتان، لذا لا بد أن ينعدم الجداء الداخلي.
+\end{proof}
+
+تعطي متجهات \(\sigma_1\) الذاتية تحققًا مباشرًا:
+\begin{equation}
+  \braket{x+}{x-}
+  =
+  \frac12
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\-1\end{pmatrix}
+  =\frac12-\frac12=0.
+\end{equation}
+وعلى العكس، بالنسبة إلى حالتين متعامدتين توجد عملية قياس تميز بينهما تمييزًا تامًا. ولذلك فالتعامد ليس مجرد لفظ هندسي؛ بل له معنى إجرائي.
+
+\section{مسلَّمة الاحتمال}
+
+افترض أن النظام أُعِدَّ في الحالة المطبَّعة \(\ket B\). وليكن \(M\) مرصودًا، وليكن \(\ket A\) متجهًا ذاتيًا مطبَّعًا لـ \(M\) ذي القيمة الذاتية \(\lambda_A\). عندئذ يكون احتمال أن يعطي قياس \(M\) القيمة \(\lambda_A\) هو
+\begin{equation}
+  P(\lambda_A\mid B)
+  =
+  |\braket{A}{B}|^2
+  =
+  \braket{A}{B}\braket{B}{A}.
+  \label{eq:l03-born-rule}
+\end{equation}
+وهذا الجداء حقيقي وغير سالب. وبالنسبة إلى المتجهات المطبَّعة، لا يتجاوز واحدًا.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\linewidth]{lecture_03_figure_06.png}
+\caption{تُكتب قاعدة الاحتمال على هيئة تراكب مضروب في مرافقه العقدي.}
+\lectureframe{01:16:40}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:19}
+\audiencequestion{هل هذا هو مربع جيب تمام الزاوية بين الحالتين؟}
+\lecturerresponse{بالنسبة إلى متجهات الوحدة الحقيقية في الفضاء الإقليدي العادي، يكون الجداء الداخلي هو جيب تمام زاوية. أما هنا فالجداء الداخلي مركب عمومًا، ولذلك لا توجد زاوية مكانية عادية يكون هو جيب تمامها. والنظير المفيد هو مقدار التراكب، والاحتمال هو مربعه المطلق.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:20:18}
+\audiencequestion{ماذا لو كانت الحالة المُعَدَّة متجهًا ذاتيًا آخر لـ \(M\) ذي قيمة ذاتية مختلفة؟}
+\lecturerresponse{عندئذ يكون المتجهان الذاتيان متعامدين. وتراكبهما يساوي صفرًا، لذا فإن احتمال الحصول على \(\lambda_A\) يساوي صفرًا. إن إعداد حالة ذات قيمة محددة واحدة يستبعد قيمة محددة مختلفة للمرصود نفسه.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:23}
+\audiencequestion{هل تستطيع القاعدة نفسها أن تتعامل مع إعداد لا تكون فيه أي نتيجة مؤكدة؟}
+\lecturerresponse{نعم. هذه هي الحالة العامة: ليس من الضروري أن تكون \(\ket B\) حالة ذاتية لـ \(M\). وتُعطي تراكباتها مع المتجهات الذاتية المطبَّعة احتمالات النتائج المناظرة. ونحن نبدأ بمثال ذي نتيجتين قبل معالجة توزيعات أكثر تفصيلًا.}
+\end{classroomqa}
+
+تطبِّق المحاضرة القاعدة على عدة إعدادات بدلًا من إخفائها داخل صيغة واحدة.
+
+أولًا، أعدّ \(\sigma_3=+1\):
+\begin{equation}
+  \ket B=\ket{u}=\begin{pmatrix}1\\0\end{pmatrix}.
+\end{equation}
+قِس \(\sigma_1\). وبالنسبة إلى متجهه الذاتي ذي القيمة \(+1\)،
+\begin{equation}
+  \braket{x+}{u}
+  =
+  \frac{1}{\sqrt2}
+  \begin{pmatrix}1&1\end{pmatrix}
+  \begin{pmatrix}1\\0\end{pmatrix}
+  =\frac{1}{\sqrt2},
+\end{equation}
+ومن ثم
+\begin{equation}
+  P(\sigma_1=+1\mid\sigma_3=+1)=\frac12.
+\end{equation}
+ويعطي استبدال \(\ket{x+}\) بـ \(\ket{x-}\) الاحتمال نفسه. كما أن عكس الإعداد والقياس يعطي النصف أيضًا، لأن المربع المطلق للتراكب متماثل.
+
+ولأخذ مثال مركب حقًا، أعدّ \(\ket{x+}\) وقِس \(\sigma_2\). عندئذ
+\begin{align}
+  \braket{y+}{x+}
+  &=
+  \frac12
+  \begin{pmatrix}1&-i\end{pmatrix}
+  \begin{pmatrix}1\\1\end{pmatrix}
+  =\frac{1-i}{2},
+  \notag\\
+  P(\sigma_2=+1\mid\sigma_1=+1)
+  &=\left|\frac{1-i}{2}\right|^2
+  =\frac14+\frac14
+  =\frac12.
+  \label{eq:l03-complex-probability-example}
+\end{align}
+ولذلك فإن إعداد اللفّ المغزلي على أحد المحاور وقياسه على محور عمودي عليه يعطي احتمالات متساوية للنتيجتين.
+
+\section{المؤشرات والحالات والمحاور الاعتباطية}
+
+يمكن إساءة فهم الجملة السابقة ما لم نضبط المصطلحات. للعزم المغناطيسي اتجاه مكاني، وسنسميه \emph{مؤشرًا}. وأما الكيت فهو متجه في فضاء الحالات المركب. وقد يكون مؤشِّران مكانيان عموديين، بينما قد يكون متجهَا حالة متعامدين. وهذان حكمان مختلفان في فضاءين مختلفين.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:25}
+\audiencequestion{إذا كان اتجاهان فيزيائيان للَّفّ المغزلي يفصل بينهما تسعون درجة، فهل ينبغي أن يكون متجها حالتيهما متعامدين؟}
+\lecturerresponse{لا. إن حالات اللفّ المغزلي للأعلى على محاور مكانية عمودية لها مربع تراكب يساوي \(1/2\)، لا صفرًا. والحالة المتعامدة مع حالة اللفّ المغزلي للأعلى على أحد المحاور هي حالة اللفّ المغزلي للأسفل على ذلك المحور نفسه. ونحتفظ بلفظ \emph{عمودي} للمؤشرات في الفضاء العادي وبلفظ \emph{متعامد} للحالات القابلة للتمييز التام.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:31:25}
+\audiencequestion{هل يمكننا أن نستعمل \emph{مستقل} بدلًا من \emph{متعامد}؟}
+\lecturerresponse{لا. فالاستقلال الخطي لا يقول إلا إن أي متجه ليس مضاعفًا قياسيًا للآخرين؛ وهو لا يقتضي انعدام الجداءات الداخلية. والتعامد شرط أقوى، ويحمل هنا المعنى الفيزيائي للتمييز التام.}
+\end{classroomqa}
+
+ليكن \(\hat n=(n_1,n_2,n_3)\) مؤشرًا ذا طول وحدة في الفضاء العادي:
+\begin{equation}
+  n_1^2+n_2^2+n_3^2=1.
+\end{equation}
+المؤثر الموافق للَّفّ المغزلي على ذلك الاتجاه هو النظير ذو القيم المصفوفية للجداء النقطي:
+\begin{equation}
+  \boldsymbol{\sigma}\cdot\hat n
+  =
+  n_1\sigma_1+n_2\sigma_2+n_3\sigma_3
+  =
+  \begin{pmatrix}
+    n_3&n_1-in_2\\
+    n_1+in_2&-n_3
+  \end{pmatrix}.
+  \label{eq:l03-spin-arbitrary-axis}
+\end{equation}
+وهو هيرميتي: عناصره القطرية حقيقية، وعناصره خارج القطر مترافقة.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{lecture_03_figure_07.png}
+\caption{يُطوَّر معًا مؤشر الوحدة المكاني، ومجموع المؤثرات، ومصفوفته الهيرميتية الصريحة.}
+\lectureframe{01:38:00}
+\end{figure}
+
+ولإيجاد قيمه الممكنة، ربِّعه قبل إدخال عناصر المصفوفة. فترتيب المصفوفات مهم، ولذلك تظهر الحدود المتقاطعة على هيئة مبدِّلات مضادة:
+\begin{align}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  &=
+  n_1^2\sigma_1^2+n_2^2\sigma_2^2+n_3^2\sigma_3^2
+  \notag\\
+  &\quad
+  +n_1n_2(\sigma_1\sigma_2+\sigma_2\sigma_1)
+  \notag\\
+  &\quad
+  +n_2n_3(\sigma_2\sigma_3+\sigma_3\sigma_2)
+  \notag\\
+  &\quad
+  +n_1n_3(\sigma_1\sigma_3+\sigma_3\sigma_1).
+  \label{eq:l03-axis-square-expanded}
+\end{align}
+ومصفوفات باولي المختلفة تتضادّ تبديليًا:
+\begin{equation}
+  \sigma_i\sigma_j+\sigma_j\sigma_i=0
+  \qquad(i\ne j).
+  \label{eq:l03-pauli-anticommutation}
+\end{equation}
+وتتحقق المحاضرة من حالة واحدة صراحةً:
+\begin{equation}
+  \sigma_1\sigma_3
+  =
+  \begin{pmatrix}0&-1\\1&0\end{pmatrix},
+  \qquad
+  \sigma_3\sigma_1
+  =
+  \begin{pmatrix}0&1\\-1&0\end{pmatrix}
+  =-\sigma_1\sigma_3.
+  \label{eq:l03-order-check}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{lecture_03_figure_08.png}
+\caption{إن ضرب \(\sigma_1\) و\(\sigma_3\) بترتيبين متعاكسين ينتج مصفوفتين تختلفان بإشارة سالبة.}
+\lectureframe{01:44:50}
+\end{figure}
+
+تتلاشى الحدود المتقاطعة في المعادلة~\eqref{eq:l03-axis-square-expanded}، بينما \(\sigma_i^2=I\). ومن ثم
+\begin{equation}
+  (\boldsymbol{\sigma}\cdot\hat n)^2
+  =(n_1^2+n_2^2+n_3^2)I
+  =I.
+\end{equation}
+ولذلك تحقق كل قيمة ذاتية \(\lambda^2=1\):
+\begin{equation}
+  \lambda=\pm1.
+\end{equation}
+وأيًّا كان المحور المكاني الذي يختاره الجهاز، فلا يزال الكاشف لا يملك إلا النتيجتين \(+1\) و\(-1\). وتظهر العلاقة بين الاتجاهات المتقاربة لا على هيئة قيمة مقاسة وسيطة، بل في احتمالات هذين الجوابين الثابتين.
