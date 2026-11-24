@@ -1,0 +1,62 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 317,
+  "outline_entries": 112,
+  "target_characters": 284761,
+  "image_placements": 39,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Vật lý hạt 1: Các khái niệm cơ bản",
+  "pdf_sha256": "971f84873f0e7debef47db0dec1b71f1e8e0b1d7c9910d292496cba86b004ad3",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 346,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "ed06f8aa95686da76ce564e1c6a2087b350e3c9b5eeac6eb692c3e4dd27a9955",
+    "chapters/lecture_01/content.tex": "eac83d7194ac448d6982b2203362f87f93b470aacebb9dc451bbaeb1cc0336ef",
+    "chapters/lecture_02/content.tex": "7355eae6a548cb1861a208aeacbba7f0d1ec5aea70e72b66d4f4863e84e5d75d",
+    "chapters/lecture_03/content.tex": "f987a876a8e1f7dd139ac20ed48c88e9917336c1365e9bc92b372a66e0330594",
+    "chapters/lecture_04/content.tex": "5dc0594174ca5c343d843ee2324d36cf65c12cdb7b9efd3357f71c4ce28d9969",
+    "chapters/lecture_05/content.tex": "299afcb4f0b5e8ebc6d9a72fa8cfff2cb3ae05973eb3c225b35456c69c0c9583",
+    "chapters/lecture_06/content.tex": "7475455ab0d85f419fee6acdb84cf78e9cac5003988b49c218b4c4a7cb5d318d",
+    "chapters/lecture_07/content.tex": "8a8f953a066f87699f9c5bd82a9ec7b78b5ad5fd216f0b88d08217e2654af374",
+    "chapters/lecture_08/content.tex": "fc0e1153c7bb6e2443028d2f0083559967174e21009e65f0402bdb8ee691194c",
+    "chapters/lecture_09/content.tex": "fd139a5f667681b5abc257dea1a2cb64a68fa207e316188424c2bd77c8858481",
+    "chapters/lecture_10/content.tex": "25867611da76f52e6345f200fc01bfbd408ba26364c6b3d78fd52bdba6419757"
+  },
+  "source_files": {
+    "course.tex": "dc42e540a0bc79fdab59e7bd43426338338d50df09222f6b6e5c6ae177e45290",
+    "common_preamble.tex": "6fd30b9ea7d9cc069be8e4914c1fff00ba4579520736c97dd95ec8c2b42e6f7a",
+    "chapters/lecture_01/content.tex": "0168f17df959777cee2dba4b4093459cab8fc04f98506b74fc5fd64e03ec1fb4",
+    "chapters/lecture_02/content.tex": "0ae860e93950e14434366100c530c263c768514655a173cf226725e6952c8392",
+    "chapters/lecture_03/content.tex": "6df31480e87aaa1e1b31e73b61da0a2d7b0c5979435601050e7006b049d1b1b3",
+    "chapters/lecture_04/content.tex": "a005a359c36efa48de67858008ed250233bf425ce6578a19a7054769631cf98e",
+    "chapters/lecture_05/content.tex": "318110d457d742edb6b3c1a643e8144d802bee7a5d49d526f4de5f647ab8e261",
+    "chapters/lecture_06/content.tex": "63f5b6caf9b867fcb5796388fb1d007abdc48a95defe08e9ed32051d2dde7127",
+    "chapters/lecture_07/content.tex": "533cbc05a0ec4a1772fe1d8c138dc40714ab79a090de752acc6d7ad9043fbd6a",
+    "chapters/lecture_08/content.tex": "0c702e6593e13c4dfd9618a9166f3c97032117f6c91fa7d388a58f37eb171c99",
+    "chapters/lecture_09/content.tex": "b4437710b164dfa3ca36e09a51962521992f1bb021682224b53cbe6ce09afc3d",
+    "chapters/lecture_10/content.tex": "bbe5422d69016188d7e93516dba6851102cae9b3e3c68d284e0632f7cf60ded9"
+  },
+  "translated_tex": {
+    "cover.tex": "00e7429741b4fe1adc072d7ecbd9b44e519c4c12030420583729ec0e2faa473d",
+    "common_preamble.tex": "9d44ed2e8365833b4c30888608ff45f98e5ee4205a6287035521db598a22b4d0",
+    "course.tex": "ecff2d7f565875fcd45512ac86609141bbd2735c7c2391254c164dcda0a3be07",
+    "chapters/lecture_07/content.tex": "5c14a15cad0160342ff235061f2678e2b9fa0e0fb40327acdf0dcb70f0c8abb5",
+    "chapters/lecture_02/content.tex": "97e007edc273d3e1cfd3c1b6882d3c05018d80dbe2ab975b1d85c9884ec593fa",
+    "chapters/lecture_09/content.tex": "7f2c779b6978ceca761289d87b4a57d44b3dd526a53b6bef496cd767ffc357bb",
+    "chapters/lecture_01/content.tex": "da0c31c3f627ffd70ad4b98eba79cd8150b34f361a5e6423a9075bbef64ad7c9",
+    "chapters/lecture_10/content.tex": "bb01581af404c34628032a4000f1a9dbb2739302643b5f1d06f9ee002d729969",
+    "chapters/lecture_03/content.tex": "52656755f94bed19ef4ff7ff54d0583fae084a7d592e3e49753fd06bad9b704b",
+    "chapters/lecture_08/content.tex": "fc777cfc10fb8a648c4e56c5c2a9bce2f836fc219a8062cb13a6a982d69b491c",
+    "chapters/lecture_05/content.tex": "51a5bddea7172252bf2a13abd8f4d46c6adead02eb2efff7dd6d90e748706401",
+    "chapters/lecture_04/content.tex": "8d3197f2a8b292c77e856281a26a79b8b0aa1da33db193b599961d326b654743",
+    "chapters/lecture_06/content.tex": "2d8199b22dadec62701762428fb4dabf514bbcc95d580231686b3d572c81e98f"
+  }
+}

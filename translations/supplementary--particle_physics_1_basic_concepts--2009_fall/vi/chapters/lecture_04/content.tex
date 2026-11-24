@@ -1,0 +1,693 @@
+\chapter{Hàm delta, trường lượng tử và các định luật bảo toàn}
+
+Trường lượng tử đơn giản được giới thiệu trước đó là đủ để mô tả phác thảo sự tán xạ, sự tạo ra và sự hủy đi, nhưng còn có thể rút ra được nhiều điều hơn từ nó. Đặc biệt, nó cho thấy các định luật bảo toàn đi vào các quá trình hạt như thế nào. Một khóa học đầy đủ về lý thuyết trường lượng tử kéo dài lâu hơn nhiều so với vài bài giảng; ở đây mục tiêu hẹp hơn. Chúng ta sẽ dùng trường đơn giản nhất để thấy, một cách cơ học, bảo toàn năng lượng xuất phát từ đâu, vì sao một bia cố định không nhất thiết bảo toàn xung lượng của hạt bị tán xạ, và tính bất biến pha mã hóa sự bảo toàn điện tích như thế nào.
+
+Trước khi quay lại với trường, cần có hai mẩu toán học: hàm delta Dirac và tác dụng của các toán tử tạo và hủy lên các vectơ bra.
+
+\section{Hàm delta Dirac}
+
+Hãy gọi tọa độ là \(y\), chưa cần quyết định về sau nó sẽ biểu diễn vị trí, số sóng hay một thứ gì khác. Bắt đầu với một hàm thông thường có dạng một đỉnh tập trung gần \(y=a\). Hãy làm đỉnh ấy hẹp dần, hẹp dần. Nếu giữ nguyên chiều cao của nó, diện tích sẽ co về 0, nên hãy tăng chiều cao khi bề rộng giảm, đồng thời giữ cho tích của chiều cao và bề rộng bằng 1. Đối tượng giới hạn là hàm delta Dirac \(\delta(y-a)\).
+
+Nó bằng không ở ngoài \(y=a\), tập trung sắc nhọn vô hạn tại \(y=a\), và có diện tích đơn vị:
+\begin{equation}
+\delta(y-a)=0\quad (y\neq a),
+\qquad
+\int_{-\infty}^{\infty}dy\,\delta(y-a)=1.
+\end{equation}
+Điểm quan trọng là sự kết hợp giữa tính định xứ và diện tích cố định. Làm hẹp đỉnh không làm nó biến mất, vì đồng thời độ cao của nó tăng lên.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.68\textwidth]{lecture_04_figure_02.png}
+\caption{Đỉnh nhọn của hàm delta có diện tích đơn vị, tâm tại \(y=a\).}
+\lectureframe{00:05:50}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.1,0) -- (3.3,0) node[right] {$y$};
+\draw[very thick] (0,0) -- (0,2.9);
+\draw (0,-0.15) node[below] {$y=a$};
+\node at (1.35,1.65) {$\delta(y-a)$};
+\end{tikzpicture}
+\caption{Sự định xứ lý tưởng hóa của \(\delta(y-a)\) tại điểm không của đối số của nó.}
+\end{figure}
+
+Hàm delta xuất hiện một cách tự nhiên trong các tích phân Fourier. Hãy tạm quay lại một khoảng không gian tuần hoàn có tổng chiều dài \(L\). Một mode tuần hoàn là
+\begin{equation}
+e^{ikx},
+\end{equation}
+trong đó \(k\) là một trong các số sóng được phép
+\begin{equation}
+k_n=\frac{2\pi n}{L},
+\qquad n\in\mathbb Z.
+\end{equation}
+Khoảng ấy có thể được biểu diễn là \(0\leq x<L\), nhưng đối xứng hơn nếu đặt gốc tọa độ ở giữa và dùng
+\begin{equation}
+-\frac L2\leq x<\frac L2.
+\end{equation}
+Hai đầu mút được đồng nhất: đi qua \(L/2\) thì quay trở lại \(-L/2\).
+
+Hãy lấy tích phân của một mode được phép trên toàn bộ khoảng tuần hoàn:
+\begin{equation}
+I_L(k)=\int_{-L/2}^{L/2}dx\,e^{ikx}.
+\end{equation}
+Nếu \(k=0\), hàm dưới dấu tích phân đồng nhất bằng 1 và kết quả là \(L\). Nếu \(k\neq0\) là một giá trị được phép, các phần dương và âm của dao động triệt tiêu nhau trên trọn số chu kỳ. Do đó
+\begin{equation}
+I_L(k)=
+\begin{cases}
+L,&k=0,\\[4pt]
+0,&k\neq0,
+\end{cases}
+\qquad
+k=\frac{2\pi n}{L}.
+\end{equation}
+
+Bây giờ hãy xem \(I_L(k)\) như một hàm trên tập rời rạc các \(k\) được phép. Khoảng cách giữa hai giá trị lân cận là
+\begin{equation}
+\Delta k=\frac{2\pi}{L}.
+\end{equation}
+Tại \(k=0\), hàm có độ cao \(L\); tại mọi giá trị được phép khác nó bằng 0. Để vẽ đỉnh rời rạc này, hãy cho nó một bề rộng bằng một khoảng cách theo \(k\). Khi đó diện tích của nó là
+\begin{equation}
+(\text{height})(\text{width})
+=L\frac{2\pi}{L}=2\pi.
+\end{equation}
+Khi \(L\) tăng lên, độ cao tăng, khoảng cách thu nhỏ lại, và diện tích vẫn là \(2\pi\). Trong giới hạn thể tích vô hạn, đỉnh ấy trở thành \(2\pi\delta(k)\), cho đẳng thức Fourier hình thức
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,e^{ikx}=2\pi\delta(k).
+\end{equation}
+Các biến \(x\) và \(k\) xuất hiện đối xứng trong số mũ. Hoán đổi vai trò của chúng cho ta đẳng thức đi kèm
+\begin{equation}
+\int_{-\infty}^{\infty}dk\,e^{ikx}=2\pi\delta(x).
+\end{equation}
+Hai quy tắc sơ cấp này sắp tới sẽ biến một tích phân trên mọi thời điểm tương tác thành một điều kiện bảo toàn năng lượng.
+
+\section{Bra, ket và các toán tử tác dụng sang trái}
+
+Một ket là ký hiệu tượng trưng cho một trạng thái lượng tử. Với mục đích hiện tại, trạng thái đầu sẽ được viết dưới dạng ket và trạng thái cuối dưới dạng bra. Ghép một bra với một ket lại cho ta một tích vô hướng, tức là một số. Chính những số đó, hoặc bình phương trị tuyệt đối của chúng, rốt cuộc mới là thứ có thể so sánh với thực nghiệm.
+
+\begin{classroomqa}
+\lecturetimestamp{00:15:30}
+\audiencequestion{Liệu từ ``ket'' thực ra đã được giới thiệu trước đó chưa?}
+\lecturerresponse{Rồi. Ket là một nửa của ký pháp bra-ket; nửa kia, được đưa vào bây giờ, là bra.}
+\end{classroomqa}
+
+Đối với dao động tử điều hòa, các trạng thái số chiếm đóng có thể được viết hoặc dưới dạng ket \(\lvert n\rangle\) hoặc dưới dạng bra \(\langle n\rvert\). Tích vô hướng của chúng là
+\begin{equation}
+\langle m\vert n\rangle=\delta_{mn}
+=\begin{cases}
+1,&m=n,\\
+0,&m\neq n.
+\end{cases}
+\end{equation}
+Delta Kronecker \(\delta_{mn}\) là tương tự rời rạc của hàm delta Dirac.
+
+Các toán tử tạo và hủy tác dụng lên các ket theo cách quen thuộc:
+\begin{align}
+a^\dagger\lvert n\rangle&=\sqrt{n+1}\,\lvert n+1\rangle,\\
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle.
+\end{align}
+Các toán tử tạo và hủy cũng có thể được ký hiệu là \(a^+\) và \(a^-\); ở đây \(a^\dagger\) và \(a\) sẽ được dùng xuyên suốt.
+
+Các toán tử ấy nên tác dụng lên các bra như thế nào? Ký hiệu đặt một toán tử ở bên phải một bra khi nó tác dụng sang trái. Định nghĩa được chọn sao cho một phần tử ma trận có cùng giá trị dù toán tử được áp dụng trước hết lên ket hay trước hết lên bra. Xét
+\begin{equation}
+\langle n\rvert a^\dagger\lvert m\rangle.
+\end{equation}
+Tác dụng lên ket cho
+\begin{align}
+\langle n\rvert a^\dagger\lvert m\rangle
+&=\sqrt{m+1}\,\langle n\vert m+1\rangle\\
+&=\sqrt{m+1}\,\delta_{n,m+1}.
+\end{align}
+Biểu thức này chỉ khác không nếu \(n=m+1\), hay tương đương nếu \(m=n-1\). Để tái tạo cùng điều kiện khi tác dụng lên bra, \(a^\dagger\) phải hạ nhãn của nó:
+\begin{equation}
+\langle n\rvert a^\dagger
+=\sqrt n\,\langle n-1\rvert.
+\end{equation}
+Hệ số số học là \(\sqrt n\), vì trên phần tử ma trận khác không thì \(n=m+1\). Toán tử hủy tuân theo quy tắc bổ sung
+\begin{equation}
+\langle n\rvert a
+=\sqrt{n+1}\,\langle n+1\rvert.
+\end{equation}
+Vì vậy \(a^\dagger\) nâng một ket nhưng hạ một bra, còn \(a\) hạ một ket nhưng nâng một bra.
+
+Ưu điểm thể hiện rõ trong phần tử ma trận của toán tử số
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle.
+\end{equation}
+Khi tác dụng sang phải,
+\begin{align}
+a\lvert n\rangle&=\sqrt n\,\lvert n-1\rangle,\\
+a^\dagger\lvert n-1\rangle&=\sqrt n\,\lvert n\rangle,
+\end{align}
+nên
+\begin{equation}
+\langle n\rvert a^\dagger a\lvert n\rangle
+=n\langle n\vert n\rangle=n.
+\end{equation}
+Nếu thay vào đó tác dụng sang trái,
+\begin{align}
+\langle n\rvert a^\dagger&=\sqrt n\,\langle n-1\rvert,\\
+\langle n-1\rvert a&=\sqrt n\,\langle n\rvert,
+\end{align}
+và lại thu được cùng kết quả. Không cần quyết định chiều nào cơ bản hơn; phép tính được sắp đặt sao cho theo chiều nào cũng cho ra cùng một số.
+
+\section{Một trường lượng tử trong không gian và thời gian}
+
+Lý do của cách sắp đặt ký hiệu này chính là vật lý hạt. Ở các thang vi mô, phương tiện thực nghiệm chủ yếu là cho các hạt va chạm rồi quan sát cái gì xuất hiện ở đầu ra. Một trạng thái đầu với 1 hoặc 2 hạt có thể biến thành một trạng thái với 4, 5, 7, 9 hay một số lượng khác. Các trường lượng tử, được xây dựng từ các toán tử tạo và hủy, cung cấp một ngôn ngữ cho những quá trình như vậy.
+
+Trước hết hãy làm việc trong 1 chiều không gian. Không có gì cốt yếu ngăn cản việc dùng 3 chiều: \(x\) và \(k\) đơn giản chỉ trở thành các vectơ có 3 thành phần. Cũng thuận tiện khi dùng các đơn vị sao cho
+\begin{equation}
+\hbar=1.
+\end{equation}
+Khi đó xung lượng và vectơ sóng có cùng giá trị số,
+\begin{equation}
+\vec p=\vec k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.58\textwidth]{lecture_04_figure_03.png}
+\caption{Đơn vị tự nhiên \(\hbar=1\) và sự đồng nhất \(\vec p=\vec k\).}
+\lectureframe{00:36:56}
+\end{figure}
+
+Quy ước rằng \(\psi\) hủy còn \(\psi^\dagger\) tạo:
+\begin{align}
+\psi(x)&=\sum_k a(k)e^{ikx},\\
+\psi^\dagger(x)&=\sum_k a^\dagger(k)e^{-ikx}.
+\end{align}
+Tổng chạy trên \(k=2\pi n/L\) trong không gian tuần hoàn và trở thành liên tục trong không gian vô hạn. Phương trình thứ hai là liên hợp Hermite của phương trình thứ nhất. Nó cũng có thể được xem như tương tự ở mức toán tử của phép liên hợp phức.\footnote{Trên bảng, khai triển của trường tạo \(\sum_k a^\dagger(k)e^{-ikx}\) tạm thời được gắn nhãn \(\Psi\), và về sau còn lưỡng lự về việc gán dấu dagger. Ở đây các ký hiệu được cố định nhất quán trong toàn bộ văn bản sao cho \(\psi\) hủy còn \(\psi^\dagger\) tạo, đúng như trong phép tính tán xạ ở phần sau.}
+
+Vì sao lại định nghĩa như vậy? Ở giai đoạn này, câu trả lời hay nhất là: vì nó hữu ích. Đó là một tổng đơn giản trên các mode xung lượng, và các hệ số của nó chính xác là những toán tử loại bỏ hoặc thêm hạt. Sự biện minh chi tiết đến từ động lực học và từ những phép tính mà nó cho phép thực hiện.
+
+\editorialnote{Một đoạn ngắn của bản gốc ngay sau khi trường không gian liên hợp được đưa vào không đủ rõ ràng để làm cơ sở cho một phát biểu bổ sung về chuẩn hóa hay diễn giải. Nội dung chắc chắn tiếp tục lại từ tính hữu ích của định nghĩa này.}
+
+Cho đến đây các trường phụ thuộc vào vị trí nhưng chưa phụ thuộc vào thời gian. Trường dao động, và mỗi số sóng \(k\) có một tần số đi kèm \(\omega(k)\). Một đối tượng có tần số xác định \(\omega\) có phụ thuộc thời gian là
+\begin{equation}
+e^{i\omega t}=\cos(\omega t)+i\sin(\omega t).
+\end{equation}
+Hãy gắn các pha liên hợp vào hai khai triển trường:
+\begin{align}
+\psi(x,t)&=\sum_k a(k)e^{ikx}e^{-i\omega(k)t},\\
+\psi^\dagger(x,t)&=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Bây giờ mỗi mode không gian dao động với tần số thích hợp với số sóng của nó, và trường phụ thuộc vào cả không gian lẫn thời gian.
+
+\section{Phương trình trường phi tương đối tính}
+
+Quan hệ giữa \(\omega\) và \(k\) quyết định phương trình vi phân mà trường tuân theo. Đối với một lượng tử đơn lẻ, các hệ thức sóng-hạt là
+\begin{equation}
+E=\hbar\omega,
+\qquad
+p=\hbar k.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_04_figure_04.png}
+\caption{Các hệ thức năng lượng-tần số và xung lượng-số sóng \(E=\hbar\omega\) và \(p=\hbar k\).}
+\lectureframe{00:41:28}
+\end{figure}
+
+Khi \(\hbar=1\), năng lượng chính là tần số và xung lượng chính là số sóng:
+\begin{equation}
+E=\omega,
+\qquad
+p=k.
+\end{equation}
+Đối với một hạt phi tương đối tính chuyển động chậm hơn ánh sáng rất nhiều, động năng và xung lượng tuân theo
+\begin{equation}
+E=\frac{p^2}{2m}.
+\end{equation}
+Đây cũng là quan hệ thu được từ \(E=\tfrac12 mv^2\) và \(p=mv\). Kết hợp các quan hệ này cho ta hệ thức tán sắc phi tương đối tính
+\begin{equation}
+\omega(k)=\frac{k^2}{2m}.
+\end{equation}
+
+Đối với trường tạo, khai triển mode là
+\begin{equation}
+\psi^\dagger(x,t)=\sum_k a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.66\textwidth]{lecture_04_figure_05.png}
+\caption{Khai triển mode phụ thuộc thời gian được dùng để bắt đầu suy ra phương trình trường phi tương đối tính.}
+\lectureframe{00:43:23}
+\end{figure}
+
+Lấy đạo hàm theo thời gian:
+\begin{equation}
+\dot\psi^\dagger(x,t)
+=\sum_k i\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Lấy một đạo hàm theo vị trí:
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial x}
+=\sum_k(-ik)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{equation}
+Không có quan hệ trực tiếp bậc nhất giữa các đạo hàm này vì đạo hàm theo thời gian kéo xuống \(\omega(k)\), trong khi một đạo hàm không gian kéo xuống \(k\). Để thấy rõ sự khác nhau này, hãy tưởng tượng hệ thức tán sắc tuyến tính
+\begin{equation}
+\omega(k)=k.
+\end{equation}
+Khi đó đạo hàm theo thời gian sẽ kéo xuống \(i\omega=ik\), còn đạo hàm không gian bậc nhất kéo xuống \(-ik\). Theo từng mode,
+\begin{equation}
+\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{\partial\psi^\dagger}{\partial x}.
+\end{equation}
+Trường giả định đó sẽ thỏa mãn một phương trình bậc nhất. Tuy nhiên, ở đây \(\omega=k^2/(2m)\), nên cần một đạo hàm không gian bậc hai:
+\begin{align}
+\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=\sum_k(-k^2)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}\\
+&=-2m\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:14}
+\audiencequestion{Dấu trừ do các đạo hàm theo không gian sinh ra ở đó thực sự là đúng chứ?}
+\lecturerresponse{Đúng. Mỗi đạo hàm theo \(x\) của \(e^{-ikx}\) kéo xuống \(-ik\), và hai đạo hàm cho \((-ik)^2=-k^2\). Vì vậy, thế \(k^2=2m\omega\) vào thì được \(-2m\omega\).}
+\end{classroomqa}
+
+Nhân đạo hàm theo thời gian với \(i\) cho cùng hệ số mode như khi chia đạo hàm không gian bậc hai cho \(2m\):
+\begin{align}
+i\dot\psi^\dagger
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t},\\
+\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}
+&=-\sum_k\omega(k)a^\dagger(k)e^{-ikx}e^{i\omega(k)t}.
+\end{align}
+Do đó
+\begin{equation}
+i\frac{\partial\psi^\dagger}{\partial t}
+=\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2},
+\end{equation}
+hay, tương đương,
+\begin{equation}
+-i\frac{\partial\psi^\dagger}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi^\dagger}{\partial x^2}.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_04_figure_06.png}
+\caption{Các đạo hàm theo thời gian và theo không gian của khai triển mode của trường tạo.}
+\lectureframe{00:49:06}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:43}
+\audiencequestion{Hệ số có phải là \(1/(2m)^2\) không?}
+\lecturerresponse{Không. Nó là \(1/(2m)\).}
+\end{classroomqa}
+
+Trường hủy liên hợp tuân theo dạng quen thuộc của phương trình Schr\"odinger
+\begin{equation}
+i\frac{\partial\psi}{\partial t}
+=-\frac{1}{2m}\frac{\partial^2\psi}{\partial x^2}.
+\end{equation}
+Hai phương trình trường là các liên hợp Hermite của nhau.\footnote{Trong lúc kiểm tra dấu, trên bảng đã thoáng viết hạng không gian với dấu ngược lại. Việc lấy đạo hàm trực tiếp các pha mode đã hiển thị cho cặp phương trình liên hợp được viết ở đây.}
+
+Phương trình này có cùng dạng với phương trình Schr\"odinger của cơ học lượng tử sơ cấp, nhưng đối tượng thỏa mãn nó thì khác. Trong cơ học lượng tử sơ cấp, hàm sóng là một hàm nhận giá trị phức mà bình phương trị tuyệt đối của nó được diễn giải theo xác suất. Ở đây \(\psi\) và \(\psi^\dagger\) là các toán tử: \(\psi\) loại bỏ một hạt còn \(\psi^\dagger\) thêm vào một hạt. Cặp liên hợp này tạo nên một mối liên hệ trực tiếp giữa hạt và trường.
+
+Khi nhiều lượng tử chiếm các mode thích hợp, một trường có thể cư xử gần đúng như cổ điển, cũng như một dao động tử điều hòa bị kích thích mạnh có thể trông như cổ điển trong khi một dao động tử 1 lượng tử thì không. Số chiếm đóng lớn cho phép xuất hiện một thang độ cổ điển lớn và có thể làm cho những thăng giáng tương đối thích hợp trở nên nhỏ.
+
+\editorialnote{Bản thân mức chiếm đóng lớn không đủ để có một trường cổ điển. Còn cần một trạng thái bán cổ điển kết hợp pha; một trạng thái riêng số không có pha xác định và không nhất thiết phải có trường trung bình khác không.}
+
+\section{Bia cố định và một biên độ tán xạ}
+
+Các trường này được dùng như thế nào? Hãy xét quá trình tán xạ đơn giản nhất có thể. Một hạt gặp một bia nặng đến mức có thể bỏ qua sự giật lùi của nó. Bia được xem là cố định trong không gian mãi mãi. Hạt có thể bị phản xạ, truyền qua hoặc đổi hướng; trong ba chiều, hướng đi ra của nó có thể khác với hướng đi vào.
+
+Động lượng của hạt không nhất thiết phải giống nhau trước và sau va chạm. Động lượng được bảo toàn đối với toàn bộ hệ vật lý, nhưng bia hấp thụ phần động lượng bị thiếu. Một khi chuyển động của bia bị lược bỏ khỏi mô tả toán học, thì động lượng của riêng hạt không còn được bảo toàn.
+
+Năng lượng của nó lại ứng xử khác trong mô hình lý tưởng hóa này. Hãy hình dung ném một quả bóng tennis vào tường. Một quả bóng tennis thực sẽ nóng lên và biến dạng, nhưng nếu bỏ qua các hiệu ứng đó thì nó bật trở lại với cùng động năng dù động lượng của nó đảo chiều. Mô hình bia cố định được xây dựng để tái hiện đúng sự phân biệt ấy: năng lượng của hạt được bảo toàn trong khi động lượng của nó có thể thay đổi.
+
+Hãy vẽ không gian theo phương ngang và thời gian theo phương thẳng đứng. Bia là đường thẳng đứng \(x=0\). Một trạng thái một-hạt đi vào có động lượng \(k_i\) tới bia, và một trạng thái một-hạt đi ra có động lượng \(k_f\) rời bia.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (-3.2,0) -- (3.2,0) node[right] {space};
+\draw[->] (0,-0.3) -- (0,4.2) node[above] {time};
+\draw[very thick] (0,0) -- (0,3.8);
+\node[left] at (-0.15,3.55) {$x=0$};
+\draw[thick,->] (-2.2,0.8) -- (0,2.0);
+\node[below] at (-1.45,1.05) {$k_i$};
+\draw[thick,->] (0,2.0) -- (2.2,3.2);
+\node[above] at (1.5,2.9) {$k_f$};
+\fill (0,2.0) circle (1.4pt);
+\end{tikzpicture}
+\caption{Một hạt có động lượng \(k_i\) tán xạ trên một bia cố định tại \(x=0\) và đi ra với động lượng \(k_f\).}
+\end{figure}
+
+Hãy dùng ngôn ngữ hấp thụ và phát xạ lại. Bia hủy hạt đi vào và ngay lập tức tạo ra hạt đi ra, có thể với một động lượng khác. Đây chỉ là một mô hình toán học của sự kiện tán xạ; chẳng hạn, một nguyên tử thực có thể hấp thụ một photon, duy trì trạng thái kích thích trong một khoảng thời gian, rồi mới phát xạ.
+
+\begin{classroomqa}
+\lecturetimestamp{01:02:28}
+\audiencequestion{Vì sao hạt phải bị hấp thụ và phát xạ lại ngay lập tức?}
+\lecturerresponse{Trong tự nhiên thì không nhất thiết. Sự hấp thụ và phát xạ lại tức thời tại một điểm là mô hình đơn giản hóa đang được dùng ở đây.}
+\end{classroomqa}
+
+Trạng thái đầu chứa 1 hạt trong mốt \(k_i\) và không chứa hạt nào trong bất kỳ mốt nào khác. Trong ngôn ngữ số chiếm chỗ, mọi ô đều bằng 0 ngoại trừ ô gắn với \(k_i\), bằng 1. Chỉ cần rút gọn toàn bộ danh sách thành
+\begin{equation}
+\lvert k_i\rangle=a^\dagger(k_i)\lvert0\rangle.
+\end{equation}
+Tương tự,
+\begin{equation}
+\langle k_f\rvert=\langle0\rvert a(k_f).
+\end{equation}
+
+Sự hủy tại bia ở thời điểm \(t\) được biểu diễn bởi \(\psi(0,t)\); việc tái tạo ngay lập tức tại cùng điểm và cùng thời điểm được biểu diễn bởi \(\psi^\dagger(0,t)\). Không có thời điểm ưu tiên nào mà sự kiện xảy ra. Nó có thể xảy ra bất cứ khi nào hạt đi vào tới bia, với cùng độ mạnh tương tác ở mọi thời điểm. Để biểu thị việc không có một thời điểm đặc biệt như vậy, hãy lấy tích phân trên mọi \(t\):
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,\psi^\dagger(0,t)\psi(0,t).
+\end{equation}
+Khi tác dụng lên ket ban đầu, toán tử này tạo ra một trạng thái. Độ chồng lấp của nó với bra cuối là biên độ cho chuyển tiếp đã chỉ định. Chỉ sau khi lấy bình phương môđun của biên độ thì mới thu được xác suất.
+
+Cần thêm một đại lượng nữa. Gọi \(g\) là đại lượng đo cường độ tương tác giữa hạt và bia. Trong mô hình ghi sổ này, hãy viết biên độ đầu bậc một cách sơ đồ như sau\footnote{Các hệ số chuẩn hóa trạng thái và hệ số tổng quát quy ước của lý thuyết nhiễu loạn bậc nhất được lược bỏ; phép tính ở đây chỉ dùng các quy tắc chọn của toán tử và miền hỗ trợ của điều kiện bảo toàn năng lượng.}
+\begin{equation}
+\mathcal A_{i\to f}
+=g\left\langle k_f\left|
+\int_{-\infty}^{\infty}dt\,
+\psi^\dagger(0,t)\psi(0,t)
+\right|k_i\right\rangle.
+\end{equation}
+Hệ số \(g\) được gọi là hằng số ghép. Với một bia mang điện tán xạ photon, điện tích cung cấp thước đo thích hợp cho cường độ tương tác: điện tích tăng thì xu hướng tán xạ tăng.
+
+Các tương tác khác nhau có các độ ghép rất khác nhau. Một meson tới proton sẽ chịu tương tác mạnh và có cường độ tán xạ tương đối lớn. Một photon bị tán xạ bởi một proton mang điện có độ ghép điện từ nhỏ hơn. Một neutrino tương tác với proton còn có độ ghép nhỏ hơn nữa.
+
+\begin{classroomqa}
+\lecturetimestamp{01:09:09}
+\audiencequestion{Mô hình đơn giản này có đúng cho electron không?}
+\lecturerresponse{Chỉ như một mô hình đại diện đơn giản hóa cho một vài kiểu tán xạ. Chưa nên hiểu nó như một lý thuyết hiện thực về electron, hay về bất kỳ một bia cụ thể nào.}
+\end{classroomqa}
+
+Tán xạ hấp dẫn của một graviton trên một hạt nhân sẽ cực kỳ yếu. Các ví dụ này không cùng chia sẻ một \(g\) phổ quát duy nhất; vật lý hạt có nhiều hằng số ghép.
+
+Hơn nữa, một độ ghép hiệu dụng cũng không nhất thiết luôn độc lập với tần số.
+
+\begin{classroomqa}
+\lecturetimestamp{01:10:31}
+\audiencequestion{Tại sao lại lấy \(g\) là một hằng số chứ không phải là một hàm của \(\omega\) hoặc \(k\)?}
+\lecturerresponse{Không phải lúc nào nó cũng phải là hằng số. Nếu một photon được một nguyên tử hấp thụ, nguyên tử ở lại trong trạng thái kích thích một thời gian, rồi photon mới được phát ra sau đó, thì tán xạ hiệu dụng có thể phụ thuộc vào tần số. Hằng số \(g\) thuộc về mô hình tức thời hiện tại.}
+\end{classroomqa}
+
+Tạm thời, hãy giữ \(g\) là hằng số và tính các hệ quả của lựa chọn đơn giản nhất này.
+
+\begin{classroomqa}
+\lecturetimestamp{01:12:32}
+\audiencequestion{Nếu \(g=1\), xác suất tán xạ có bắt buộc phải bằng 1 không?}
+\lecturerresponse{Không. Biểu thức đang được tính chỉ là gần đúng đầu bậc đối với \(g\) nhỏ. Nếu độ ghép không nhỏ, cần dùng lý thuyết nhiễu loạn bậc cao hơn; một xác suất lớn hơn 1 sẽ báo hiệu sự phá vỡ của gần đúng một bước, chứ không phải một xác suất vật lý.}
+\end{classroomqa}
+
+\section{Rút gọn các tổng trên các mốt}
+
+Tại \(x=0\), các pha không gian đều bằng 1, nên
+\begin{align}
+\psi(0,t)&=\sum_k a(k)e^{-i\omega(k)t},\\
+\psi^\dagger(0,t)&=\sum_\ell a^\dagger(\ell)e^{i\omega(\ell)t}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:13:58}
+\audiencequestion{Vì bia ở \(x=0\), có nên bỏ hàm mũ không gian đi không?}
+\lecturerresponse{Có. Tại bia thì \(e^{ikx}=e^{ik0}=1\), và thừa số không gian liên hợp cũng bằng 1.}
+\end{classroomqa}
+
+Dùng các nhãn giả khác nhau \(k\) và \(\ell\) trong hai tổng. Thế vào ta được
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt
+\sum_{\ell,k}
+e^{i\omega(\ell)t}e^{-i\omega(k)t}
+\langle k_f\rvert a^\dagger(\ell)a(k)\lvert k_i\rangle.
+\end{align}
+Hạng nào trong tổng theo \(k\) có thể còn lại? Một toán tử hủy cho 0 trong mọi mốt trống. Trạng thái đầu chỉ chứa một hạt trong mốt \(k_i\), nên \(k=k_i\). Hạng nào trong tổng theo \(\ell\) có thể còn lại? Khi tác dụng sang trái, \(a^\dagger(\ell)\) phải khử hạt được biểu diễn bởi bra cuối, nên \(\ell=k_f\). Cả hai tổng đều rút gọn:
+\begin{align}
+\mathcal A_{i\to f}
+&=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+\langle k_f\rvert a^\dagger(k_f)a(k_i)\lvert k_i\rangle.
+\end{align}
+Toán tử hủy biến ket một-hạt ban đầu thành chân không,
+\begin{equation}
+a(k_i)\lvert k_i\rangle=\lvert0\rangle,
+\end{equation}
+và toán tử tạo, khi tác dụng sang trái, biến bra một-hạt cuối thành bra chân không,
+\begin{equation}
+\langle k_f\rvert a^\dagger(k_f)=\langle0\rvert.
+\end{equation}
+Vì thế phần tử ma trận của chúng là
+\begin{equation}
+\langle0\vert0\rangle=1.
+\end{equation}
+Toàn bộ việc theo dõi toán tử rút về 1; độ ghép cung cấp \(g\), và phần không tầm thường còn lại là tích phân theo thời gian:
+\begin{equation}
+\mathcal A_{i\to f}
+=g\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}.
+\end{equation}
+
+\editorialnote{Một câu hỏi ngắn của người nghe tại 01:18:40 không thể phục hồi từ nguồn. Phần trả lời phân biệt phép tính một-hạt này với một vấn đề tương đối tính hoặc nhiều-hạt; không thể tái dựng chắc chắn một trao đổi chính xác hơn.}
+
+Bây giờ đồng nhất thức hàm delta ở trên áp dụng trực tiếp:
+\begin{equation}
+\int_{-\infty}^{\infty}dt\,
+e^{i(\omega_f-\omega_i)t}
+=2\pi\delta(\omega_f-\omega_i).
+\end{equation}
+Vì vậy
+\begin{equation}
+\boxed{
+\mathcal A_{i\to f}
+=2\pi g\,\delta(\omega_f-\omega_i)
+}.
+\end{equation}
+Biên độ triệt tiêu trừ khi
+\begin{equation}
+\omega_f=\omega_i.
+\end{equation}
+Vì \(\hbar=1\), điều này là \(E_f=E_i\). Sự bảo toàn năng lượng xuất hiện vì mọi thời điểm tương tác đều được đối xử như nhau. Nếu phép tích phân theo thời gian bị giới hạn trong một khoảng hữu hạn, nó sẽ cho ra một hàm bị làm rộng ra chứ không phải một hàm delta chính xác. Chính tính bất biến chính xác dưới các phép tịnh tiến thời gian cho điều kiện bảo toàn năng lượng chính xác.
+
+\begin{classroomqa}
+\lecturetimestamp{01:21:30}
+\audiencequestion{Biên độ phải được bình phương để thu được xác suất. Hàm delta sẽ ra sao khi bị bình phương?}
+\lecturerresponse{Hàm delta bị bình phương đòi hỏi phải xử lý cẩn thận hơn. Điều cần ở đây là chắc chắn: kết quả bằng 0 trừ khi năng lượng đầu và cuối bằng nhau. Trên miền hỗ trợ của điều kiện bảo toàn năng lượng, thừa số bình phương sơ đồ chứa \(4\pi^2g^2\).}
+\end{classroomqa}
+
+\editorialnote{Không thể thu được một xác suất hay tốc độ chuyển tiếp đã chuẩn hóa chỉ bằng cách bỏ \(\delta(\omega_f-\omega_i)^2\). Việc đó đòi hỏi sự chính quy hóa trong thời gian hữu hạn và chuẩn hóa trạng thái nhất quán. Vì thế \(4\pi^2g^2\) chỉ được giữ lại như thừa số bình phương sơ đồ được nhấn mạnh trong nguồn.}
+
+Trong tương tác với bia điểm này, ngoài điều kiện năng lượng ra không có gì phân biệt một động lượng cuối này với động lượng cuối khác. Vì vậy, trong ba chiều, mô hình gán cùng trọng số đầu bậc cho mọi động lượng đi ra có cùng năng lượng --- tương đương, cho mọi hướng đi ra trên mặt cầu năng lượng cố định. Tính đẳng hướng đó là tính chất của tâm tán xạ điểm rất đơn giản này, không phải của mọi bia thực.
+
+Phép tính này đã cung cấp 3 ý tưởng liên kết với nhau. Hệ số \(g\) đo cường độ tương tác. Một biểu thức bra-toán tử-ket là một biên độ tán xạ mà bình phương môđun của nó đi vào xác suất. Quan trọng nhất, tích phân trên mọi thời điểm tạo ra hàm delta năng lượng: đối xứng tịnh tiến theo thời gian áp đặt sự bảo toàn năng lượng.
+
+\section{Điều gì thay đổi khi bia hoặc độ ghép thay đổi?}
+
+Gốc \(x=0\) chỉ được chọn cho tiện. Đặt bia tại \(x=x_{\mathrm T}\). Các thừa số không gian trong \(\psi^\dagger(x_{\mathrm T},t)\psi(x_{\mathrm T},t)\) cho
+\begin{equation}
+e^{-ik_f x_{\mathrm T}}e^{ik_i x_{\mathrm T}}
+=e^{i(k_i-k_f)x_{\mathrm T}}.
+\end{equation}
+Vì thế biên độ trở thành
+\begin{equation}
+\mathcal A_{i\to f}(x_{\mathrm T})
+=e^{i(k_i-k_f)x_{\mathrm T}}
+\mathcal A_{i\to f}(0).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:37}
+\audiencequestion{Có phải lúc nào cũng có thể chọn lại vị trí sao cho bia ở \(x=0\) không?}
+\lecturerresponse{Đối với bia cố định đơn lẻ này thì có. Nếu để nó ở \(x_{\mathrm T}\neq0\), vị trí của nó xuất hiện trong biên độ dưới dạng pha \(e^{i(k_i-k_f)x_{\mathrm T}}\). Nhân với pha liên hợp phức sẽ khử nó khỏi xác suất.}
+\end{classroomqa}
+
+Thật vậy,
+\begin{equation}
+\left|e^{i(k_i-k_f)x_{\mathrm T}}\right|^2=1.
+\end{equation}
+Biên độ còn ghi nhớ vị trí của bia, nhưng xác suất một-bia này thì không.
+
+Bây giờ hãy đảo ngược sự bất đối xứng. Giả sử một tương tác có thể xảy ra ở mọi vị trí nhưng chỉ tại một thời điểm được chọn riêng. Tích phân theo vị trí sẽ cho
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,
+e^{i(k_i-k_f)x}
+=2\pi\delta(k_i-k_f),
+\end{equation}
+trong khi việc cố định thời gian sẽ loại bỏ hàm delta năng lượng.
+
+\begin{classroomqa}
+\lecturetimestamp{01:26:41}
+\audiencequestion{Nếu không quan trọng tương tác xảy ra ở đâu, nhưng nó chỉ xảy ra tại một thời điểm cố định, thì có một đại lượng khác được bảo toàn không?}
+\lecturerresponse{Có. Tích phân trên mọi vị trí sẽ áp đặt sự bảo toàn động lượng, còn thời điểm tương tác được chọn riêng sẽ loại bỏ sự bảo toàn năng lượng chính xác. Trong một bài toán hai hạt đầy đủ, tương tác có thể xảy ra ở bất kỳ thời điểm nào và tại bất kỳ nơi nào.}
+\end{classroomqa}
+
+Điều này cũng cho một diễn giải vật lý về sự phụ thuộc tường minh theo thời gian. Nếu độ ghép là \(g(t)\), hoặc một can thiệp từ bên ngoài đột ngột làm cho tán xạ trở nên khả dĩ, thì không phải mọi thời điểm đều tương đương. Khi đó mô tả rút gọn có thể trao đổi năng lượng với phần động lực học bên ngoài đã bị bỏ qua.
+
+\begin{classroomqa}
+\lecturetimestamp{01:28:29}
+\audiencequestion{Các hằng số ghép phần lớn có đến từ thực nghiệm không, và độ ghép phụ thuộc thời gian có nghĩa là gì?}
+\lecturerresponse{Có, các giá trị của chúng được xác định bằng thực nghiệm. Sự phụ thuộc tường minh theo thời gian thường có nghĩa là một phần nào đó của hệ đang chuyển động hoặc biến đổi đã bị bỏ ra ngoài, giống như sự giật lùi của bia đã bị bỏ khỏi mô hình bia cố định. Năng lượng tưởng như bị thiếu thực ra thuộc về các bậc tự do bị bỏ qua đó.}
+\end{classroomqa}
+
+Một bia chuyển động là ví dụ đơn giản nhất.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:23}
+\audiencequestion{Đánh trúng một bia đang chuyển động có phải là một ví dụ trong đó năng lượng của hạt không được bảo toàn không?}
+\lecturerresponse{Đúng. Nếu chuyển động đã được ấn định của bia bị lược bỏ khỏi việc cân đối năng lượng, nó có thể cung cấp năng lượng cho hạt hoặc lấy bớt năng lượng khỏi hạt.}
+\end{classroomqa}
+
+Tính chất điểm của bia là một sự đơn giản hóa khác.
+
+\begin{classroomqa}
+\lecturetimestamp{01:29:43}
+\audiencequestion{Khi nào kích thước của bia phải được so sánh với kích thước hoặc bước sóng của sóng tới?}
+\lecturerresponse{Trong mô hình hiện tại, bia có kích thước bằng 0. Kích thước hữu hạn của bia quả thật tạo ra thêm các hiệu ứng khi đem so với bước sóng, nhưng sự tinh chỉnh đó được hoãn lại.}
+\end{classroomqa}
+
+Bây giờ hãy quay lại bia chuyển động. Hãy hình dung một bức tường đang chuyển động về phía một quả bóng tennis. Bức tường có thể truyền năng lượng cho quả bóng. Nếu chuyển động của bức tường được cho sẵn và năng lượng của nó bị bỏ qua, thì riêng năng lượng của quả bóng không được bảo toàn. Về mặt toán học, đó là sự phụ thuộc theo thời gian của vị trí bia, chứ không nhất thiết là của \(g\).
+
+Vì vậy, các toán tử tạo và hủy đã làm đúng chính xác điều mong muốn: chúng mô tả một chuyển tiếp từ trạng thái một hạt này sang một trạng thái một hạt khác, còn sự phụ thuộc không-thời gian của các trường quyết định những điều kiện bảo toàn nào đi kèm với chuyển tiếp đó.
+
+\section{Đếm điện tích và tính bất biến pha}
+
+Mỗi loại hạt có trường riêng của nó. Chẳng hạn, electron và photon không được mô tả bởi cùng một \(\psi\). Để làm rõ việc đếm điện tích bằng đại số đã có sẵn, tạm thời cho \(\psi\) biểu thị một trường kiểu electron: \(\psi\) hủy một hạt mang điện như vậy và \(\psi^\dagger\) tạo ra một hạt như vậy. Đây là một vật thay thế kiểu boson cho việc theo dõi; trường electron fermion đích thực đòi hỏi thứ đại số chưa được giới thiệu.
+
+Thừa số cho bia cố định
+\begin{equation}
+\psi^\dagger\psi
+\end{equation}
+hủy một hạt và tạo một hạt. Một electron đi vào và một electron đi ra, nên điện tích do loại hạt này mang không thay đổi.
+
+Bây giờ hãy hình dung một electron đi vào và hai electron đi ra từ cùng một điểm. Tích toán tử tương ứng sẽ chứa một trường hủy và hai trường tạo,
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Đối với một trường electron, điều này sẽ tạo ra một electron ròng và sẽ vi phạm sự bảo toàn điện tích. Thay vào đó, hai electron vào và hai electron ra có thể được biểu diễn bởi
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+vốn có số lượng bằng nhau của các trường tạo và trường hủy. Hai vào và ba ra sẽ cần
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi^\dagger\psi\psi,
+\end{equation}
+và một lần nữa lại làm thay đổi điện tích ròng. Quy tắc trực tiếp thì đơn giản: một tương tác bảo toàn điện tích chứa cùng số lượng \(\psi\) và \(\psi^\dagger\).
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:27}
+\audiencequestion{Thứ tự của các toán tử trường có quan trọng đối với phép kiểm tra bảo toàn điện tích này không?}
+\lecturerresponse{Phép kiểm tra trực tiếp liên quan đến số lượng các thừa số \(\psi\) và \(\psi^\dagger\), chứ không liên quan đến thứ tự của chúng. Việc các tích với thứ tự khác nhau ngoài ra có đồng nhất với nhau hay không là một câu hỏi riêng.}
+\end{classroomqa}
+
+Có một tiêu chuẩn toán học sâu hơn việc chỉ đơn thuần đếm. Hãy nhân trường với một pha hằng:
+\begin{equation}
+\psi\longrightarrow e^{i\alpha}\psi.
+\end{equation}
+Vì \(\psi^\dagger\) là liên hợp Hermite, nó biến đổi với pha liên hợp,
+\begin{equation}
+\psi^\dagger\longrightarrow e^{-i\alpha}\psi^\dagger.
+\end{equation}
+Một biểu thức có số lượng bằng nhau của hai trường thì không đổi. Chẳng hạn,
+\begin{align}
+\psi^\dagger\psi
+&\longrightarrow
+e^{-i\alpha}e^{i\alpha}\psi^\dagger\psi
+=\psi^\dagger\psi,\\
+\psi^\dagger\psi^\dagger\psi\psi
+&\longrightarrow
+e^{-2i\alpha}e^{2i\alpha}
+\psi^\dagger\psi^\dagger\psi\psi
+=\psi^\dagger\psi^\dagger\psi\psi.
+\end{align}
+Một biểu thức có số lượng không bằng nhau thì thay đổi. Do đó
+\begin{equation}
+\psi^\dagger\psi^\dagger\psi
+\longrightarrow
+e^{-i\alpha}\psi^\dagger\psi^\dagger\psi.
+\end{equation}
+Các tương tác được phép bảo toàn điện tích chính xác là những tương tác bất biến dưới sự thay đổi pha toàn cục này. Tính bất biến pha và sự bảo toàn điện tích là hai cách mô tả cùng một quy tắc trong ngôn ngữ trường đơn giản này.
+
+Tổ hợp
+\begin{equation}
+\psi+\psi^\dagger
+\end{equation}
+không bất biến dưới một phép quay pha tùy ý.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:53}
+\audiencequestion{Chẳng phải đó là phần thực của \(\psi\) sao?}
+\lecturerresponse{Đúng. Nó tỉ lệ với phần thực của \(\psi\), và việc nhân \(\psi\) với một pha làm thay đổi phần thực ấy. Vì vậy nó không bất biến pha.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:38:05}
+\audiencequestion{Nếu một electron đập vào bia và nhiều electron thứ cấp được phát ra, làm sao điện tích vẫn có thể được bảo toàn?}
+\lecturerresponse{Bia không thụ động trong quá trình đó. Nếu một nguyên tử phát ra nhiều electron, bản thân nguyên tử cũng thay đổi điện tích và trạng thái. Phải đưa động lực học của nó vào, và bia cũng phải được mô tả bằng các trường lượng tử.}
+\end{classroomqa}
+
+Đến đây có thể thấy ba mối tương ứng. Tính bất biến đối với tịnh tiến thời gian tương ứng với sự bảo toàn năng lượng. Tính bất biến pha toàn cục tương ứng với sự bảo toàn điện tích. Tính bất biến đối với tịnh tiến không gian tương ứng với sự bảo toàn động lượng, mặc dù phép tính không gian đầy đủ vẫn còn phải được thực hiện.
+
+\section{Thứ tự toán tử và những giới hạn của mô hình bậc thấp nhất}
+
+Để đơn giản, các tích ở trên đặt tất cả các trường tạo sang trái và tất cả các trường hủy sang phải. Một tích đan xen vẫn có thể có số lượng bằng nhau và do đó vượt qua phép kiểm tra đếm điện tích, nhưng thứ tự toán tử có thể ảnh hưởng đến biểu thức theo những cách khác.
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:02}
+\audiencequestion{Cùng loại quá trình ấy có thể được viết bằng các thừa số đan xen như \(\psi\psi^\dagger\psi\psi^\dagger\) không?}
+\lecturerresponse{Nó vẫn có số lượng bằng nhau nên thỏa mãn quy tắc điện tích, nhưng nhìn chung không phải cùng một biểu thức như một biểu thức có tất cả các dagger ở bên trái. Việc sắp xếp lại các thứ tự khác nhau được để lại về sau.}
+\end{classroomqa}
+
+\editorialnote{Cách diễn đạt của một câu hỏi từ người nghe tại 01:41:10 bị hỏng quá nặng nên không thể phục dựng. Phần trả lời còn khôi phục được lặp lại rằng số lượng bằng nhau của \(\psi\) và \(\psi^\dagger\) kéo theo tính bất biến pha và sự bảo toàn điện tích, còn số lượng không bằng nhau thì không kéo theo điều nào cả.}
+
+Những mối liên hệ giữa các đối xứng và các định luật bảo toàn này là những trường hợp của định lý Noether. Trong cơ học cổ điển, định lý ấy cho khuôn khổ tổng quát; ở đây, cùng mối liên hệ đó đã được trình bày trực tiếp thông qua các pha và các hàm delta của các trường lượng tử.
+
+Kết quả bậc dẫn cho bia cố định cũng có một miền hiệu lực hiển nhiên. Một thừa số tiền nhân xác suất mang tính sơ đồ như \(4\pi^2g^2\) không còn đáng tin một khi nó tiến gần đến hoặc vượt quá đơn vị.
+
+\begin{classroomqa}
+\lecturetimestamp{01:43:33}
+\audiencequestion{Kết quả sơ đồ này có nghĩa là \(g\) phải nhỏ hơn xấp xỉ \(1/(2\pi)\) không?}
+\lecturerresponse{Hoặc \(g\) đủ nhỏ để số hạng đầu tiên này có ích, hoặc mô hình là chưa đầy đủ. Một hạt có thể tán xạ một lần, quay lại và tán xạ hai lần, rồi ba lần, v.v. Biên độ đầy đủ là một chuỗi vô hạn. Chỉ khi \(g\) nhỏ thì số hạng đơn giản nhất mới trội; nếu không thì phải cộng nhiều giản đồ Feynman.}
+\end{classroomqa}
+
+Những hình ảnh không-thời gian đơn giản là những khởi đầu của các giản đồ Feynman. Các đỉnh của chúng xác định các khả năng sơ cấp: một hạt vào và một hạt ra tương ứng với một thừa số như \(\psi^\dagger\psi\); hai vào và hai ra tương ứng với một thừa số như \(\psi^\dagger\psi^\dagger\psi\psi\). Các đỉnh lặp lại sinh ra những lũy thừa cao hơn của hằng số ghép và các số hạng bậc cao hơn trong chuỗi.
+
+\begin{classroomqa}
+\lecturetimestamp{01:45:39}
+\audiencequestion{Hằng số ghép có thể có thành phần ảo không?}
+\lecturerresponse{Các hằng số ghép phức có thể xuất hiện. Các tổ hợp pha lẻ theo \(T\) không thể khử được có thể báo hiệu sự vi phạm tính bất biến đảo thời gian: quá trình đảo thời gian không nhất thiết mang biên độ liên hệ bởi đối xứng.}
+\end{classroomqa}
+
+\editorialnote{Tham số \(\theta\) của QCD đã được nhắc đến trong trao đổi này, nhưng đó là một hệ số thực nhân với một tương tác lẻ theo \(T\), chứ không phải một thành phần ảo của hằng số ghép. Bản thân một pha có thể khử được hoặc một pha phức hấp thụ không tự nó xác lập sự vi phạm \(T\). Suy luận ấy chỉ áp dụng cho các tổ hợp pha lẻ theo \(T\) không thể khử được.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:02}
+\audiencequestion{Hạt đi ra có thể được phát ra trước hoặc sau khi hạt đi vào bị hấp thụ, thay vì đúng cùng một thời điểm, hay không?}
+\lecturerresponse{Đó là một câu hỏi hợp lý, nhưng mô hình tức thời không đề cập đến điều đó. Thứ tự thời gian tổng quát hơn được để lại về sau.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:47:44}
+\audiencequestion{Cách xây dựng này được tương đối tính hóa như thế nào?}
+\lecturerresponse{Chỉ dẫn ngắn gọn là ghép các phần liên hợp với nhau và thêm một mẫu số có chứa căn bậc hai của \(\omega(k)\). Cách xây dựng đầy đủ được để lại về sau.}
+\end{classroomqa}
+
+\editorialnote{Công thức tương đối tính ngắn gọn được nói ra không thể phục dựng đủ chắc chắn để sắp chữ. Chỉ giữ lại các thành phần đã được nêu và việc hoãn lại.}
+
+Cũng phải phân biệt rạch ròi sự bảo toàn điện tích với sự bảo toàn khối lượng nghỉ.
+
+\begin{classroomqa}
+\lecturetimestamp{01:48:22}
+\audiencequestion{Khối lượng nghỉ có được bảo toàn theo cùng một nghĩa cấu trúc như điện tích không?}
+\lecturerresponse{Không. Trong cơ học phi tương đối tính Galilei, khối lượng là một đại lượng cộng được và được bảo toàn. Trong các phản ứng tương đối tính, tổng khối lượng nghỉ của các hạt riêng lẻ không nhất thiết được bảo toàn. Một electron và một positron có thể hủy thành hai photon trong khi điện tích vẫn được bảo toàn.}
+\end{classroomqa}
+
+\editorialnote{Đối với một hệ tương đối tính kín hoàn chỉnh, tổng bốn-xung lượng được bảo toàn, nên khối lượng bất biến của hệ ấy là cố định. Ví dụ hủy cặp nói trên liên quan đến tổng các khối lượng nghỉ của từng hạt, chứ không phải khối lượng bất biến của hệ kín.}
+
+Vì vậy, sự bảo toàn khối lượng cộng tính là một thực tế hiệu dụng phi tương đối tính, không phải là một quy tắc cơ bản cùng địa vị với sự bảo toàn điện tích. Tính bất biến pha tìm thấy ở trên biểu đạt đối xứng điện tích sâu hơn.
+
+Các bước tiếp theo là thay vật thay thế kiểu boson bằng các trường fermion và cho phép nhiều loại hạt---electron, muon, quark, photon và những loại khác---mỗi loại có trường riêng và các tương tác được phép riêng của mình.
+
+\begin{classroomqa}
+\lecturetimestamp{01:50:39}
+\audiencequestion{Có chính đáng không khi gọi ví dụ trước đó là một trường electron trong khi cho đến nay mới chỉ phát triển các trường boson?}
+\lecturerresponse{Chỉ theo nghĩa đó là một phiên bản kiểu boson, hay vật thay thế, cho electron. Lý thuyết fermion đích thực vẫn chưa được giới thiệu.}
+\end{classroomqa}
