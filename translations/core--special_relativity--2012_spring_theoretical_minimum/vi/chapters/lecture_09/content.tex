@@ -1,0 +1,1020 @@
+\chapter{Sóng điện từ và tác dụng Maxwell}
+
+\lectureoverview{Trước hết ta giải các phương trình Maxwell không nguồn cho một sóng phẳng và để các phương trình quyết định phân cực, hình học của trường và tốc độ của nó. Sau đó ta đặt ra một câu hỏi sâu hơn: tác dụng địa phương, bất biến Lorentz, bất biến chuẩn nào sinh ra các phương trình Maxwell động lực học? Câu trả lời gắn trường điện từ, sự bảo toàn điện tích và tính bất biến chuẩn vào một cấu trúc duy nhất.}
+
+\section{Hai họ phương trình Maxwell}
+
+Ta bắt đầu với một sóng điện từ phẳng. Ở đây \emph{plane} là từ hình học, chứ không phải \emph{plain} theo nghĩa không tô điểm. Những câu hỏi đặt ra ngay lập tức là rất cụ thể: một sóng như vậy trông ra sao, và dạng của nó suy ra từ các phương trình Maxwell như thế nào?
+
+Sẽ hữu ích nếu đặt các phương trình thành hai cột trước khi làm bất cứ điều gì với sóng. Trong không gian trống, chúng là
+\begin{align}
+\nabla\cdot\mathbf B&=0,
+&
+\dot{\mathbf B}&=\nabla\times\mathbf E,
+\label{eq:homogeneous-vector}
+\\
+\nabla\cdot\mathbf E&=0,
+&
+\dot{\mathbf E}&=-\,\nabla\times\mathbf B.
+\label{eq:dynamical-vector-vacuum}
+\end{align}
+Ta dùng metric mostly-plus
+\begin{equation}
+\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)
+\end{equation}
+và quy ước của môn học
+\begin{equation}
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\qquad
+F_{0i}=E_i,
+\qquad
+F_{ij}=\epsilon_{ijk}B_k.
+\label{eq:course-f-convention}
+\end{equation}
+Khi đó cùng hai họ phương trình ấy có thể được viết thành
+\begin{align}
+\partial_\mu F_{\nu\sigma}
++\partial_\nu F_{\sigma\mu}
++\partial_\sigma F_{\mu\nu}
+&=0,
+\label{eq:bianchi-l9}
+\\
+\partial_\mu F^{\mu\nu}
+&=0.
+\label{eq:vacuum-maxwell-covariant}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_01.png}
+\caption{Hai họ phương trình Maxwell chân không và các dạng hiệp biến của chúng. Phương trình tuần hoàn là một đồng nhất thức; phương trình co là động lực học.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:03:30.}
+\end{figure}
+
+Sự phân biệt giữa hai hàng này là quan trọng. Phương trình \eqref{eq:bianchi-l9} suy ra đồng nhất từ sự tồn tại của thế \(A_\mu\): mỗi hạng đều là một đạo hàm bậc hai, và các hạng triệt tiêu từng cặp. Vì vậy nó là một đồng nhất thức Bianchi. Trái lại, phương trình \eqref{eq:vacuum-maxwell-covariant} là một phương trình chuyển động. Nếu thay đổi Lagrangian điện từ, thì đây là họ phương trình sẽ thay đổi.
+
+Có một nhận xét nhỏ trên bảng sẽ làm hai việc trong chương này. Mọi trường trong các phương trình Maxwell đều xuất hiện dưới dấu đạo hàm. Sự kiện ấy sẽ ràng buộc các pha tương đối của một sóng phẳng, và về sau nó sẽ làm cho tính bất biến chuẩn trở nên tự nhiên.
+
+\section{Một sóng phẳng dọc theo trục \texorpdfstring{\(z\)}{z}}
+
+Chọn hệ tọa độ sao cho sóng truyền dọc theo trục \(z\). Điều này không làm mất tính tổng quát; một sóng theo hướng khác có thể được đưa về dạng này bằng cách quay các trục. Gọi \(k\) là số sóng của nó,
+\begin{equation}
+\lambda=\frac{2\pi}{k},
+\end{equation}
+và gọi \(\omega\) là tần số của nó. Trước khi áp đặt bất kỳ phương trình chuyển động nào, hãy viết cả sáu thành phần trường với cùng một pha
+\begin{equation}
+\theta=kz-\omega t:
+\end{equation}
+\begin{align}
+E_x(z,t)&=\epsilon_x\sin\theta,
+&
+B_x(z,t)&=\beta_x\sin\theta,
+\nonumber\\
+E_y(z,t)&=\epsilon_y\sin\theta,
+&
+B_y(z,t)&=\beta_y\sin\theta,
+\label{eq:plane-wave-ansatz}\\
+E_z(z,t)&=\epsilon_z\sin\theta,
+&
+B_z(z,t)&=\beta_z\sin\theta.
+\nonumber
+\end{align}
+Sáu chữ cái Hy Lạp là các biên độ hằng.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_02.png}
+\caption{Ansatz sóng phẳng sáu thành phần trước khi các phương trình Maxwell loại bỏ các biên độ bị cấm.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:08:45.}
+\end{figure}
+
+Vì sao lại bắt đầu với cùng một sự phụ thuộc hình sin cho \(\mathbf E\) và \(\mathbf B\)? Giả sử một trường mang \(\sin\theta\) còn trường kia mang \(\cos\theta\). Khi đó một đạo hàm theo thời gian ở một vế của phương trình rotor và một đạo hàm theo không gian ở vế kia sẽ cho ra các hàm lượng giác khác nhau. Đẳng thức ấy không thể đúng với mọi \(z\) và \(t\). Cho phép có một pha hằng chung, nhưng dịch gốc của tọa độ \(z\) sẽ loại bỏ nó. Vì thế ansatz này không phải là một định luật động lực bổ sung; nó là đại diện đơn giản nhất của quan hệ pha mà các phương trình vi phân sẽ đòi hỏi.
+
+Chưa có phương trình Maxwell nào được dùng đến. Ta mới chỉ chọn một hướng, một bước sóng và một gốc pha thuận tiện. Bây giờ các phương trình sẽ quyết định những biên độ nào còn lại.
+
+\subsection{Các ràng buộc phân kỳ}
+
+Vì các trường chỉ phụ thuộc vào \(z\) và \(t\),
+\begin{equation}
+\nabla\cdot\mathbf E
+=
+\partial_xE_x+\partial_yE_y+\partial_zE_z
+=
+\partial_zE_z.
+\end{equation}
+Trong không gian trống, biểu thức này phải triệt tiêu với mọi pha, nên
+\begin{equation}
+\epsilon_z=0.
+\label{eq:epsilon-z-zero}
+\end{equation}
+Lập luận y hệt cho từ trường cho
+\begin{equation}
+\beta_z=0.
+\label{eq:beta-z-zero}
+\end{equation}
+Không trường nào có thành phần dọc theo hướng truyền. Sóng là sóng ngang.
+
+Vẫn còn một tự do quay trong mặt phẳng ngang \(xy\). Cặp \((\epsilon_x,\epsilon_y)\) là một vectơ hai chiều thông thường, nên hãy quay các trục ngang cho đến khi
+\begin{equation}
+\epsilon_y=0,
+\qquad
+\epsilon_x\ne0.
+\label{eq:polarization-axis}
+\end{equation}
+Đây là một lựa chọn phân cực thẳng, không phải một hạn chế đối với vật lý.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_03.png}
+\caption{Các biên độ dọc đã triệt tiêu và trục điện trường ngang đã được chọn.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:14:30.}
+\end{figure}
+
+\subsection{Các phương trình rotor}
+
+Xét thành phần \(x\) của \(\dot{\mathbf E}=-\nabla\times\mathbf B\). Vì các trường chỉ biến thiên theo \(z\),
+\begin{equation}
+\dot E_x
+=
+-\left(\nabla\times\mathbf B\right)_x
+=
+\partial_zB_y.
+\end{equation}
+Thay ansatz vào cho
+\begin{align}
+-\omega\epsilon_x\cos\theta
+&=
+k\beta_y\cos\theta,
+\nonumber\\
+\beta_y
+&=
+-\,\epsilon_x\frac{\omega}{k}.
+\label{eq:beta-y-epsilon}
+\end{align}
+Thành phần \(y\) của cùng phương trình Maxwell ấy là
+\begin{equation}
+\dot E_y
+=
+-\left(\partial_zB_x\right).
+\end{equation}
+Vế trái bằng 0 do lựa chọn phân cực của ta, nên
+\begin{equation}
+\beta_x=0.
+\label{eq:beta-x-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_04.png}
+\caption{Một phép tính rotor theo từng thành phần liên hệ \(\epsilon_x\) với \(\beta_y\) và loại bỏ biên độ từ còn lại.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:20:15.}
+\end{figure}
+
+Vì thế hình học đã được cố định:
+\begin{equation}
+\mathbf E\parallel\hat{\mathbf x},
+\qquad
+\mathbf B\parallel\hat{\mathbf y},
+\qquad
+\mathbf k\parallel\hat{\mathbf z}.
+\end{equation}
+Điện trường, từ trường và hướng truyền đôi một vuông góc.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_09_figure_05.png}
+\caption{Hình vẽ trên bảng của các dao động điện và từ ngang tiến dọc theo trục \(z\).}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:23:15.}
+\end{figure}
+
+Phương trình rotor còn lại cho một quan hệ biên độ độc lập. Thành phần \(y\) của nó là
+\begin{equation}
+\dot B_y=(\nabla\times\mathbf E)_y=\partial_zE_x,
+\end{equation}
+và do đó
+\begin{align}
+-\omega\beta_y\cos\theta
+&=
+k\epsilon_x\cos\theta,
+\nonumber\\
+\epsilon_x
+&=
+-\,\beta_y\frac{\omega}{k}.
+\label{eq:epsilon-beta-y}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_06.png}
+\caption{Các quan hệ biên độ đối ứng phía trên phác họa sóng ngang.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:25:00.}
+\end{figure}
+
+Kết hợp các phương trình \eqref{eq:beta-y-epsilon} và \eqref{eq:epsilon-beta-y} cho quan hệ tán sắc
+\begin{equation}
+\left(\frac{\omega}{k}\right)^2=1.
+\end{equation}
+Đối với sóng tần số dương chuyển động theo hướng đã chọn,
+\begin{equation}
+\omega=k
+\qquad
+(c=1).
+\label{eq:omega-k}
+\end{equation}
+Do đó pha chung là
+\begin{equation}
+\theta=k(z-t).
+\end{equation}
+Khôi phục các đơn vị thông thường cho
+\begin{equation}
+\omega=ck,
+\qquad
+\theta=k(z-ct).
+\label{eq:restore-c-wave}
+\end{equation}
+Vì vậy biên dạng tịnh tiến nguyên dạng với tốc độ ánh sáng. Trong hệ đơn vị dùng trên bảng, biên độ điện và từ có cùng độ lớn. Dấu trừ tương đối giữa chúng là một quy ước định hướng: nó cho biết trục \(y\) đã chọn hướng theo chiều nào, chứ không phải một trường trễ hơn trường kia một phần tư chu kỳ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_07.png}
+\caption{Dạng sóng phẳng cuối cùng sau khi đã áp đặt \(\omega=k\).}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:26:45.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Chẳng phải \(\omega\) và \(k\) có đơn vị khác nhau sao?}
+\lecturerresponse{Có, trong các đơn vị thông thường: \(\omega\) là nghịch đảo thời gian còn \(k\) là nghịch đảo độ dài. Với \(c=1\), thời gian và độ dài có cùng đơn vị. Khôi phục \(c\) biến \(\omega=k\) thành \(\omega=ck\), đúng như phân tích thứ nguyên đòi hỏi. \lecturetimestamp{00:25:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Điện trường và từ trường trong một sóng phẳng có luôn cùng pha không?}
+\lecturerresponse{Chúng có cùng phụ thuộc pha. Các biên độ có dấu của chúng có thể khác nhau bởi một dấu trừ, điều này có thể được mô tả như một sự đảo \(180^\circ\), nhưng các phương trình Maxwell không cho phép một độ trễ \(90^\circ\) kiểu sine--cosine đối với sóng phẳng phân cực thẳng này. Phân cực tròn được ghép từ các thành phần ngang và đòi hỏi ngôn ngữ cẩn thận hơn, nhưng nó không làm thay đổi quan hệ Maxwell theo từng thành phần này. \lecturetimestamp{00:27:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu cả hai trường cùng đi qua 0, năng lượng vẫn được bảo toàn chứ?}
+\lecturerresponse{Có. Mật độ năng lượng tại một điểm cố định dao động khi sóng đi qua, nhưng năng lượng đã di chuyển chứ không biến mất. Cái chiếm một vùng ở một thời điểm sẽ chiếm một vùng lân cận ở khoảnh khắc ngay sau đó. Sự vận chuyển năng lượng cục bộ, được biểu diễn đầy đủ hơn bởi thông lượng Poynting, dung hòa mật độ đang thay đổi với sự bảo toàn.
+\lecturetimestamp{00:28:15}}
+\end{classroomqa}
+
+Các phương trình Maxwell là tuyến tính. Biên độ \(\epsilon_x\) có thể lớn hoặc nhỏ, \(\beta_y\) suy ra từ nó, và mọi tổng hoặc hiệu của các nghiệm lại vẫn là một nghiệm. Vì thế có thể chồng chất các sóng truyền theo những hướng khác nhau. Phép tính ngắn này đáng để làm: một trình bày về điện từ học không nên để sóng điện từ như một phát biểu được trích dẫn mà không giải thích.
+
+\begin{classroomqa}
+\audiencequestion{Ngay từ đầu phép suy ra có giả sử rằng \(\mathbf E\) và \(\mathbf B\) có cùng pha không?}
+\lecturerresponse{Pha chung đã được viết như một ansatz, nhưng nó không phải là một giả thiết vật lý độc lập. Bởi vì mỗi vế của các phương trình rotor đều lấy đạo hàm của một trường, các phương trình ấy loại bỏ một pha tương đối không tầm thường. Khi đó có thể loại bỏ một độ dời pha chung bằng cách tịnh tiến gốc tọa độ. \lecturetimestamp{00:29:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Quan hệ thứ hai \(\epsilon_x=-\beta_y\omega/k\) đến từ đâu?}
+\lecturerresponse{Quan hệ thứ nhất đến từ \(\dot{\mathbf E}=-\nabla\times\mathbf B\). Quan hệ thứ hai đến từ phương trình đi kèm \(\dot{\mathbf B}=\nabla\times\mathbf E\), với \(\mathbf E\) và \(\mathbf B\) được hoán đổi cho nhau trong cùng một phép tính theo thành phần. Cả hai đều cần thiết để thu được \(\omega^2=k^2\).
+\lecturetimestamp{00:30:25}}
+\end{classroomqa}
+
+\section{Vì sao chỉ phương trình vi phân là chưa đủ}
+
+Bây giờ ta chuyển từ một nghiệm cụ thể sang cấu trúc của lý thuyết. Nguyên lý tác dụng tối thiểu là điều tổ chức sự bảo toàn năng lượng, sự bảo toàn động lượng và quan hệ của chúng với các đối xứng không-thời gian. Người ta có thể bịa ra những phương trình vi phân không có năng lượng nào đáng gọi là được bảo toàn và cũng không có nguyên lý đối xứng hữu ích nào. Thay vào đó, các phương trình Maxwell phải phát sinh từ một Lagrangian.
+
+Chỉ cần sinh ra họ động lực học:
+\begin{equation}
+\partial_\mu F^{\mu\nu}=J^\nu.
+\label{eq:target-sourced-maxwell}
+\end{equation}
+Họ Bianchi đã suy ra sẵn từ định nghĩa của \(F_{\mu\nu}\). Trong ngôn ngữ ba-vectơ, quy ước của ta cho
+\begin{align}
+\nabla\cdot\mathbf E&=\rho,
+\label{eq:gauss-source}
+\\
+\dot{\mathbf E}+\nabla\times\mathbf B&=-\,\mathbf J.
+\label{eq:ampere-course-sign}
+\end{align}
+Dấu trừ trong \eqref{eq:ampere-course-sign} là quan trọng. Nó là dạng theo thành phần của \eqref{eq:target-sourced-maxwell} dưới \eqref{eq:course-f-convention}, và nó sẽ được tìm lại trong một phép kiểm tra dấu trực tiếp ở gần cuối.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_08.png}
+\caption{Toàn bộ bảng Maxwell tại điểm chuyển từ nghiệm sóng sang nguyên lý tác dụng.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:32:45.}
+\end{figure}
+
+\section{Lý thuyết trường tương đối tính địa phương}
+
+Nguyên tắc thứ nhất là tính địa phương. Một tác dụng là tích phân trên không-thời gian của một mật độ được xây từ các trường và các đạo hàm bậc nhất của chúng tại cùng một điểm:
+\begin{equation}
+S=\int d^4x\,\mathcal L(\phi,\phi_{,\mu}),
+\qquad
+\phi_{,\mu}\equiv\partial_\mu\phi.
+\label{eq:local-action}
+\end{equation}
+Dấu phẩy là ký hiệu đạo hàm gọn. Nguyên tắc thứ hai là bất biến Lorentz: \(\mathcal L\) phải là một vô hướng.
+
+\subsection{Tập dượt với trường vô hướng}
+
+Trước khi biến phân một bốn-vectơ, hãy tập dượt phương pháp với một trường vô hướng. Một vô hướng Lorentz địa phương có thể phụ thuộc vào một thế \(U(\phi)\) và vào phép co của hai đạo hàm:
+\begin{equation}
+\mathcal L_\phi
+=
+-\frac12\,\partial_\mu\phi\,\partial^\mu\phi-U(\phi).
+\label{eq:scalar-lagrangian}
+\end{equation}
+Với metric mostly-plus,
+\begin{equation}
+\partial_\mu\phi\,\partial^\mu\phi
+=
+-\dot\phi^{\,2}+|\nabla\phi|^2,
+\end{equation}
+nên
+\begin{equation}
+\mathcal L_\phi
+=
+\frac12\dot\phi^{\,2}
+-\frac12|\nabla\phi|^2
+-U(\phi).
+\end{equation}
+Đạo hàm theo thời gian với chỉ số nâng khác dấu với đạo hàm theo thời gian với chỉ số hạ; còn các đạo hàm không gian với chỉ số nâng hay hạ thì không.
+
+\begin{classroomqa}
+\audiencequestion{Việc đặt chỉ số đạo hàm ở trên thay vì ở dưới có mang ý nghĩa gì không?}
+\lecturerresponse{Có. Nâng chỉ số lên tức là co với metric nghịch đảo. Với signature \((-+++)\),
+\(\partial^0=-\partial_0\) còn
+\(\partial^i=\partial_i\). Đó là lý do hạng đạo hàm theo thời gian mang dấu ngược với ba hạng đạo hàm không gian.
+\lecturetimestamp{00:38:02}}
+\end{classroomqa}
+
+Phương trình Euler--Lagrange cho trường là
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial\phi_{,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial\phi}.
+\label{eq:field-el}
+\end{equation}
+Với \eqref{eq:scalar-lagrangian},
+\begin{equation}
+\frac{\partial\mathcal L_\phi}{\partial\phi_{,\mu}}
+=
+-\partial^\mu\phi,
+\qquad
+\frac{\partial\mathcal L_\phi}{\partial\phi}
+=
+-U'(\phi),
+\end{equation}
+và do đó
+\begin{equation}
+\Box\phi=U'(\phi),
+\qquad
+\Box\equiv\partial_\mu\partial^\mu.
+\end{equation}
+Tương đương,
+\begin{equation}
+\ddot\phi-\nabla^2\phi=-U'(\phi).
+\label{eq:scalar-wave}
+\end{equation}
+Trên bảng chỉ viết tường minh đạo hàm theo \(x\) trước khi để ngầm các hạng \(y\) và \(z\). Kết quả là phương trình sóng quen thuộc với một hạng lực từ thế.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_09.png}
+\caption{Tính địa phương, một Lagrangian vô hướng bất biến Lorentz, và phương trình Euler--Lagrange của lý thuyết trường.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:41:00.}
+\end{figure}
+
+Phép tính điện từ cũng là chính quá trình biến phân ấy nhưng với bốn trường và nhiều chỉ số hơn.
+
+\section{Bất biến chuẩn chọn ra đại lượng vô hướng Maxwell}
+
+Bổ sung một nguyên tắc thứ ba: bất biến chuẩn. Tạm thời đặt \(J^\mu=0\) và xét trường tự do. Một phép biến đổi chuẩn là
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\chi.
+\label{eq:gauge-transform}
+\end{equation}
+Tenxơ trường không thay đổi vì các đạo hàm bậc hai hỗn hợp giao hoán:
+\begin{align}
+F_{\mu\nu}
+&\longrightarrow
+F_{\mu\nu}
++\partial_\mu\partial_\nu\chi
+-\partial_\nu\partial_\mu\chi
+\nonumber\\
+&=F_{\mu\nu}.
+\end{align}
+
+Chỉ riêng tính bất biến Lorentz sẽ cho phép vô hướng
+\begin{equation}
+A_\mu A^\mu.
+\end{equation}
+Tuy vậy, trong lý thuyết Maxwell nó bị cấm vì nó biến đổi dưới
+\eqref{eq:gauge-transform}. Các chỉ số trong biểu thức này gắn nhãn các thành phần
+của trường; chúng không phải là đạo hàm. Một đạo hàm được ký hiệu bằng
+dấu phẩy, như trong \(A_{\nu,\mu}=\partial_\mu A_\nu\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_10.png}
+\caption{Phép biến đổi chuẩn và vô hướng Lorentz
+\(A_\mu A^\mu\), bị loại bỏ vì nó không bất biến chuẩn.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:43:40.}
+\end{figure}
+
+Vì vậy ta nên xây dựng Lagrangian tự do từ \(F_{\mu\nu}\).
+Vết tuyến tính không được:
+\begin{equation}
+F^\mu{}_\mu=0.
+\end{equation}
+Tính phản đối xứng buộc mọi thành phần đường chéo phải triệt tiêu:
+\begin{equation}
+F_{00}=F_{11}=F_{22}=F_{33}=0.
+\end{equation}
+Việc nâng một chỉ số có thể làm đổi dấu, nhưng không thể biến 0 thành thứ gì khác.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_11.png}
+\caption{Phép lấy vết tuyến tính được thử và các phần tử đường chéo triệt tiêu của
+tensor trường phản đối xứng.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:47:00.}
+\end{figure}
+
+Vô hướng Lorentz không triệt tiêu đầu tiên là bậc hai:
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}.
+\label{eq:f2-scalar}
+\end{equation}
+Ta hãy khai triển phép co này thay vì chỉ nêu kết quả. Các thành phần hỗn hợp
+chứa trường điện. Việc nâng chỉ số thời gian của chúng đưa vào một
+dấu trừ, và cả hai thứ tự \(0i\) và \(i0\) đều xuất hiện:
+\begin{equation}
+\sum_i\left(F_{0i}F^{0i}+F_{i0}F^{i0}\right)
+=-2E^2.
+\end{equation}
+Các thành phần thuần không gian chứa trường từ. Việc nâng
+các chỉ số không gian không làm đổi dấu, và cả hai thứ tự lại xuất hiện:
+\begin{equation}
+\sum_{i<j}\left(F_{ij}F^{ij}+F_{ji}F^{ji}\right)
+=2B^2.
+\end{equation}
+Vì vậy
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}=2(B^2-E^2),
+\qquad
+-F_{\mu\nu}F^{\mu\nu}=2(E^2-B^2).
+\label{eq:f2-eb}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_12.png}
+\caption{Phép co hoàn chỉnh theo các độ lớn của trường điện và trường từ.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:51:00.}
+\end{figure}
+
+\enlargethispage{2pt}
+\begin{classroomqa}
+\audiencequestion{Liệu \(F_{00}\) cũng bằng 0 không?}
+\lecturerresponse{Có. Mọi thành phần đường chéo của một tensor phản đối xứng đều triệt tiêu, kể cả \(F_{00}\). Chỉ các thành phần hỗn hợp ngoài đường chéo, mã hóa \(\mathbf E\), và các thành phần không gian ngoài đường chéo, mã hóa \(\mathbf B\), mới đóng góp.
+\lecturetimestamp{00:51:36}}
+\end{classroomqa}
+
+Chuẩn hóa quy ước là
+\begin{equation}
+\boxed{
+\mathcal L_{\mathrm{EM}}
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+}
+\label{eq:maxwell-lagrangian}
+\end{equation}
+hoặc
+\begin{equation}
+\mathcal L_{\mathrm{EM}}
+=
+\frac12(E^2-B^2).
+\label{eq:maxwell-lagrangian-eb}
+\end{equation}
+Dấu trừ làm cho hạng điện mang dấu dương quen thuộc. Hệ số \(1/4\) bù cho sự xuất hiện hai lần của mỗi cặp phản đối xứng và để lại hệ số quy ước \(1/2\). Việc nhân toàn bộ tác dụng tự do với một hằng số khác không sẽ không làm thay đổi các phương trình không nguồn của nó, nhưng đây là cách chuẩn hóa phù hợp với cách ghép nguồn tiêu chuẩn.
+
+\section{Biến phân trường điện từ tự do}
+
+Các trường độc lập là
+\begin{equation}
+A_0,\qquad A_x,\qquad A_y,\qquad A_z.
+\end{equation}
+Với mỗi thành phần \(A_\nu\), phương trình Euler--Lagrange là
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial A_{\nu,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial A_\nu},
+\qquad
+A_{\nu,\mu}\equiv\partial_\mu A_\nu.
+\label{eq:vector-el-comma}
+\end{equation}
+Cách đặt trong ký hiệu dấu phẩy đáng được đọc chậm: chỉ số thứ nhất gắn nhãn thành phần nào của \(A\) là trường; chỉ số thứ hai gắn nhãn tọa độ lấy đạo hàm.
+
+Với ký hiệu này,
+\begin{equation}
+F_{\mu\nu}
+=
+A_{\nu,\mu}-A_{\mu,\nu}.
+\label{eq:f-comma-consistent}
+\end{equation}
+Đây chính là \eqref{eq:course-f-convention}. Viết các chỉ số dấu phẩy
+trong thứ tự lời nói ngược lại sẽ làm đổi một dấu trừ trung gian, đó là lý do một phép tính theo thành phần là hữu ích.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_13.png}
+\caption{Tensor trường được biểu diễn bằng ký hiệu dấu phẩy sau khi bốn
+thành phần của thế đã được nhận diện là các trường độc lập.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:55:30.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_14.png}
+\caption{Lagrangian Maxwell được viết tường minh theo các đạo hàm
+của thế vectơ.}
+\par\smallskip
+\textit{Khung hình bài giảng: 00:56:45.}
+\end{figure}
+
+\subsection{Một đạo hàm tiêu biểu}
+
+Chọn đạo hàm \(A_{x,y}=\partial_yA_x\). Các hạng \(xy\) và \(yx\)
+trong tổng đầy đủ đóng góp
+\begin{align}
+\mathcal L_{\mathrm{EM}}
+&\supset
+-\frac14\left(F_{xy}F^{xy}+F_{yx}F^{yx}\right)
+\nonumber\\
+&=
+-\frac12F_{xy}^2
+\nonumber\\
+&=
+-\frac12\left(A_{x,y}-A_{y,x}\right)^2.
+\label{eq:isolated-xy-piece}
+\end{align}
+Đẳng thức cuối cùng là an toàn vì dấu biến mất khi bình phương:
+\(A_{x,y}-A_{y,x}=F_{yx}=-F_{xy}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_15.png}
+\caption{Đạo hàm \(A_{x,y}\) tiêu biểu và bình phương phản đối xứng được tách ra.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:00:45.}
+\end{figure}
+
+Lấy đạo hàm:
+\begin{align}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial A_{x,y}}
+&=
+-\left(A_{x,y}-A_{y,x}\right)
+\nonumber\\
+&=
+F_{xy}.
+\label{eq:component-variation}
+\end{align}
+Trên bảng, điều này được tóm tắt bằng một dấu trừ gắn với tensor có
+các chỉ số đi theo thứ tự đạo hàm trên bảng. Với định nghĩa dùng xuyên suốt môn học \eqref{eq:course-f-convention}, phát biểu bất biến là
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial(\partial_\mu A_\nu)}
+=
+-F^{\mu\nu}.
+\label{eq:maxwell-canonical-derivative}
+\end{equation}
+Đối với ví dụ \(\partial_yA_x\), điều này cho
+\(-F^{yx}=F^{xy}\), chính là
+\eqref{eq:component-variation}. Vì thế khác biệt dấu có vẻ như tồn tại
+chỉ là một vấn đề ghi chép về thứ tự chỉ số.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_16.png}
+\caption{Khai triển bình phương đã chọn trước khi lấy đạo hàm theo
+một đạo hàm của thế.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:03:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Thừa số \(1/2\) trong đạo hàm theo thành phần đã đi đâu?}
+\lecturerresponse{Lấy đạo hàm của bình phương sinh ra một thừa số 2,
+thừa số này khử \(1/2\):
+\[
+\frac{d}{dx}\left[-\frac12x^2\right]=-x.
+\]
+Sự thay đổi trước đó từ \(1/4\) thành \(1/2\) đến từ hai thành phần
+tensor có thứ tự \(xy\) và \(yx\). \lecturetimestamp{01:03:29}}
+\end{classroomqa}
+
+Trong Lagrangian chân không, không có thế nào không bị đạo hàm:
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}{\partial A_\nu}=0.
+\end{equation}
+Thế vào \eqref{eq:vector-el-comma} cho
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=0,
+\end{equation}
+hoặc tương đương
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=0.}
+\label{eq:free-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_17.png}
+\caption{Kết quả theo thành phần được khái quát hóa và thế vào phương trình
+Euler--Lagrange.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:09:00.}
+\end{figure}
+
+Cùng kết luận đó được suy ra gọn hơn bằng cách biến phân toàn bộ tác dụng:
+\begin{align}
+\delta S_{\mathrm{EM}}
+&=
+-\frac12\int d^4x\,
+F^{\mu\nu}
+\left(\partial_\mu\delta A_\nu
+-\partial_\nu\delta A_\mu\right)
+\nonumber\\
+&=
+-\int d^4x\,F^{\mu\nu}\partial_\mu\delta A_\nu
+\nonumber\\
+&=
+\int d^4x\,
+\left(\partial_\mu F^{\mu\nu}\right)\delta A_\nu,
+\label{eq:global-maxwell-variation}
+\end{align}
+trong đó hạng biên bị bỏ đi. Tính phản đối xứng gộp hai
+hạng ở dòng đầu. Vì \(\delta A_\nu\) là tùy ý,
+\eqref{eq:free-maxwell-from-action} suy ra.
+
+\begin{classroomqa}
+\audiencequestion{Bình phương được tách ra có ngầm giả sử rằng trường từ
+chỉ hướng theo phương \(z\) không?}
+\lecturerresponse{Không. Đó là một hạng được rút ra khỏi tổng đầy đủ để
+xem xét; sau nó phải có dấu ba chấm. Các cặp không gian còn lại
+give the other magnetic components, và các cặp thời gian--không gian cho các
+thành phần điện. \lecturetimestamp{01:08:05}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu chọn một chỉ số thời gian thay vì hai chỉ số không gian
+thì kết quả có thay đổi không?}
+\lecturerresponse{Nó cho cùng đạo hàm tổng quát ấy, với dấu của metric
+được xử lý bởi việc nâng chỉ số. Hai chỉ số không gian chọn một
+thành phần từ; một chỉ số thời gian và một chỉ số không gian chọn một
+thành phần điện. Công thức phản đối xứng
+\eqref{eq:maxwell-canonical-derivative} bao trùm cả hai.
+\lecturetimestamp{01:08:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ta vẫn đang giả sử \(J^\mu=0\) phải không?}
+\lecturerresponse{Chỉ đối với phép suy dẫn trường tự do này. Dòng điện đã
+được tạm thời đặt bằng 0 để có thể nhận diện hạng động học bất biến chuẩn.
+Bây giờ ta khôi phục nó và hỏi hạng bổ sung nào tạo ra vế phải của phương trình Maxwell. \lecturetimestamp{01:09:41}}
+\end{classroomqa}
+
+Phần đại số không khó, nhưng phải tự làm qua chứ không chỉ ngồi xem.
+Theo dõi một chuỗi chỉ số một lần chưa làm nó bền vững; tự tay tái lập
+chuỗi ấy thì có.
+
+\section{Bốn-dòng bảo toàn}
+
+Nguồn là bốn-dòng
+\begin{equation}
+J^\mu=(\rho,\mathbf J).
+\end{equation}
+Thành phần thời gian của nó là mật độ điện tích và các thành phần không gian của nó là các
+thông lượng điện tích qua ba cửa sổ vuông góc đôi một. Tương đương,
+đối với một hộp nhỏ cố định,
+\begin{equation}
+\frac{\partial\rho}{\partial t}
++\nabla\cdot\mathbf J=0.
+\label{eq:continuity-vector-l9}
+\end{equation}
+Điện tích bên trong hộp chỉ có thể giảm bằng cách chảy qua biên của nó.
+Trong ký hiệu hiệp biến,
+\begin{equation}
+\boxed{\partial_\mu J^\mu=0.}
+\label{eq:continuity-covariant-l9}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_18.png}
+\caption{Mật độ điện tích, dòng không gian và cách diễn giải bằng hộp nhỏ được
+nhắc lại trước khi đưa hạng ghép nguồn vào.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:14:45.}
+\end{figure}
+
+\section{Ghép nguồn và tính bất biến chuẩn}
+
+Vô hướng Lorentz địa phương đơn giản nhất, tuyến tính theo cả dòng và thế, là
+\begin{equation}
+S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu A_\mu.
+\label{eq:interaction-action}
+\end{equation}
+Dấu tổng thể là quy ước. Bài giảng đùa rằng việc lựa chọn dấu điện tích
+trong lịch sử rốt cuộc có thể đổ cho Benjamin Franklin; điểm thực sự là
+một quy ước dấu nhất quán phải được dùng ở mọi nơi.
+
+Thoạt đầu \eqref{eq:interaction-action} không có vẻ bất biến chuẩn.
+Dưới \eqref{eq:gauge-transform},
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu\partial_\mu\chi.
+\label{eq:gauge-variation-interaction}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_19.png}
+\caption{Tác dụng tương tác và biến thiên của nó dưới
+\(A_\mu\mapsto A_\mu+\partial_\mu\chi\).}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:16:45.}
+\end{figure}
+
+Để thấy cơ chế theo cách sơ cấp, hãy khai triển phép co:
+\begin{equation}
+J^\mu\partial_\mu\chi
+=
+J^0\partial_0\chi
++J^1\partial_1\chi
++J^2\partial_2\chi
++J^3\partial_3\chi.
+\end{equation}
+Giả sử dòng bị giới hạn trong một phòng thí nghiệm lớn hoặc giảm đủ nhanh
+để triệt tiêu ở biên. Lấy tích phân từng phần cho từng hạng.
+Chẳng hạn, đối với tọa độ không gian thứ nhất,
+\begin{align}
+-\int d^4x\,J^1\partial_1\chi
+&=
+-\int dt\,dx^2\,dx^3
+\left[J^1\chi\right]_{x^1=-\infty}^{x^1=+\infty}
+\nonumber\\
+&\quad
++\int d^4x\,\chi\,\partial_1J^1
+\nonumber\\
+&=
+\int d^4x\,\chi\,\partial_1J^1.
+\end{align}
+Phép thao tác tương tự áp dụng cho hạng thời gian và hai hạng không gian
+còn lại.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_20.png}
+\caption{Bốn hạng của biến thiên chuẩn được khai triển trước khi lấy tích phân từng
+phần.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:19:15.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_21.png}
+\caption{Một phép lấy tích phân từng phần tiêu biểu chuyển đạo hàm từ
+hàm chuẩn sang dòng.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:20:45.}
+\end{figure}
+
+Thu gộp cả bốn thành phần,
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+\int d^4x\,\chi\,\partial_\mu J^\mu.
+\label{eq:gauge-variation-continuity}
+\end{equation}
+Do đó,
+\begin{equation}
+\partial_\mu J^\mu=0
+\quad\Longrightarrow\quad
+\delta_\chi S_{\mathrm{int}}=0.
+\end{equation}
+Trong các điều kiện biên đã giả sử, tương tác nguồn bất biến chuẩn khi và chỉ khi
+bốn-dòng được bảo toàn cục bộ.
+
+\begin{classroomqa}
+\audiencequestion{Chỉ cần yêu cầu \(\nabla\cdot\mathbf J=0\) thôi có đủ không?}
+\lecturerresponse{Không. Cần đủ cả bốn hạng:
+\[
+\partial_\mu J^\mu
+=
+\dot\rho+\nabla\cdot\mathbf J=0.
+\]
+Hạng thứ nhất là sự biến thiên của mật độ điện tích trong hộp cố định. Một độ phân kỳ không gian khác không vẫn được phép khi nó được cân bằng bởi sự biến thiên đó. \lecturetimestamp{01:22:00}}
+\end{classroomqa}
+
+\section{Phương trình Maxwell có nguồn}
+
+Mật độ Lagrange điện từ đầy đủ là
+\begin{equation}
+\boxed{
+\mathcal L
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+-J^\mu A_\mu.
+}
+\label{eq:full-maxwell-lagrangian}
+\end{equation}
+Hạng nguồn không chứa đạo hàm của \(A_\nu\), vì vậy nó không làm thay đổi
+\eqref{eq:maxwell-canonical-derivative} và đóng góp
+\begin{equation}
+\frac{\partial\mathcal L}{\partial A_\nu}=-J^\nu.
+\end{equation}
+Do đó phương trình Euler--Lagrange cho
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=-J^\nu,
+\end{equation}
+hoặc
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=J^\nu.}
+\label{eq:sourced-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_22.png}
+\caption{Hạng tự do và hạng nguồn được trình bày cùng với các đạo hàm
+Euler--Lagrange tiêu biểu.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:25:00.}
+\end{figure}
+
+Một dòng cho trước mà không được bảo toàn sẽ gây ra hai sự thất bại cùng lúc.
+Tác dụng tương tác sẽ không bất biến chuẩn, và các phương trình Maxwell có nguồn
+sẽ không nhất quán. Điện tích không thể đơn giản biến mất bên trong một miền
+mà không có một thông lượng bù qua biên của miền đó.
+
+\section{Các phương trình Maxwell cho lại định luật bảo toàn}
+
+Tính tương thích có thể được đọc trực tiếp từ phương trình trường. Lấy
+\(\partial_\nu\) của \eqref{eq:sourced-maxwell-from-action} cho
+\begin{equation}
+\partial_\nu J^\nu
+=
+\partial_\nu\partial_\mu F^{\mu\nu}
+=0,
+\label{eq:antisymmetry-implies-continuity}
+\end{equation}
+vì các đạo hàm đối xứng dưới
+\(\mu\leftrightarrow\nu\) còn \(F^{\mu\nu}\) thì phản đối xứng.
+
+Bài giảng cũng kiểm tra điều này dưới dạng ba-vectơ, và phép kiểm tra đó làm lộ ra một lỗi dấu đang tồn tại. Bắt đầu với định luật Gauss:
+\begin{equation}
+\rho=\nabla\cdot\mathbf E.
+\end{equation}
+Lấy đạo hàm theo thời gian:
+\begin{equation}
+\dot\rho=\nabla\cdot\dot{\mathbf E}.
+\label{eq:rho-dot-div-edot}
+\end{equation}
+Phương trình tạm viết trên bảng là
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B+\mathbf J.
+\label{eq:provisional-wrong-source-sign}
+\end{equation}
+Lấy phân kỳ của nó thì sẽ được
+\begin{equation}
+\dot\rho=\nabla\cdot\mathbf J,
+\end{equation}
+vì phân kỳ của kết quả của phép lấy xoáy bằng không. Điều đó mâu thuẫn với
+\eqref{eq:continuity-vector-l9}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_23.png}
+\caption{Phương trình tạm thời trên bảng với dấu cộng trước
+\(\mathbf J\) tạo ra dấu sai trong phương trình liên tục.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:27:00.}
+\end{figure}
+
+Sự không khớp không bị che giấu. Phép tính được lần lại theo thời gian thực;
+phương trình liên tục cần có được phát biểu; và một người trong cử tọa
+kiểm tra phương trình rồi xác định dấu của nguồn. Phương trình theo thành phần
+nhất quán với quy ước là
+\begin{equation}
+\boxed{
+\dot{\mathbf E}+\nabla\times\mathbf B=-\,\mathbf J,
+}
+\label{eq:corrected-source-sign}
+\end{equation}
+hoặc
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B-\mathbf J.
+\end{equation}
+Bây giờ các phương trình \eqref{eq:rho-dot-div-edot} và
+\eqref{eq:corrected-source-sign} cho
+\begin{align}
+\dot\rho
+&=
+\nabla\cdot
+\left(-\nabla\times\mathbf B-\mathbf J\right)
+\nonumber\\
+&=
+-\nabla\cdot\mathbf J,
+\end{align}
+đúng chính là bảo toàn điện tích cục bộ.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_24.png}
+\caption{Dấu nguồn đã sửa và phương trình liên tục được khôi phục.}
+\par\smallskip
+\textit{Khung hình bài giảng: 01:31:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Hạng dòng ở vế phải có phải là
+\(-\mathbf J\) không?}
+\lecturerresponse{Đúng. Với quy ước tensor trường được dùng xuyên suốt
+môn học, phần không gian của
+\(\partial_\mu F^{\mu\nu}=J^\nu\) là
+\(\dot{\mathbf E}+\nabla\times\mathbf B=-\mathbf J\).
+Sự sửa chữa đó làm cho phép tính phân kỳ tái tạo
+\(\dot\rho+\nabla\cdot\mathbf J=0\) và không làm thay đổi phép suy dẫn
+hiệp biến từ tác dụng ở phần trước. \lecturetimestamp{01:30:17}}
+\end{classroomqa}
+
+\section{Nguyên lý nào là cơ bản?}
+
+\begin{classroomqa}
+\audiencequestion{Lập luận này có phải là luẩn quẩn không? Chúng ta đã dùng bảo toàn điện tích để làm cho tác dụng bất biến gauge, rồi dùng tác dụng để suy ra các phương trình Maxwell, và các phương trình Maxwell lại kéo theo bảo toàn điện tích.}
+\lecturerresponse{Những phát biểu này tương thích lẫn nhau, chứ không phải một chứng minh luẩn quẩn tự giả định kết luận của chính nó. Ta có thể bắt đầu từ các phương trình Maxwell đã biết từ quan sát và rút ra phương trình liên tục; khi đó \(-J^\mu A_\mu\) được nhận ra là một hạng tương tác bất biến gauge. Hoặc ta có thể bắt đầu từ tính địa phương, tính bất biến Lorentz, tính bất biến gauge và một tác dụng; tính bất biến gauge đòi hỏi một dòng được bảo toàn và tác dụng cho ra các phương trình Maxwell. Hoặc ta có thể coi sự kiện vật lý rằng điện tích không biến mất một cách cục bộ là điều cơ bản. Mỗi con đường đều đi tới cùng một cấu trúc. \lecturetimestamp{01:31:11}}
+\end{classroomqa}
+
+Nếu hỏi con đường xây dựng gọn nhất, thì sự kết hợp của tính địa phương, tính bất biến Lorentz, tính bất biến gauge và một nguyên lý Lagrangian chọn ra
+\begin{equation}
+-\frac14F_{\mu\nu}F^{\mu\nu}-J^\mu A_\mu
+\end{equation}
+và do đó dẫn tới phương trình động lực học Maxwell. Việc gọi một đỉnh nào đó trong tam giác này là cơ bản hơn phần nào là vấn đề sở thích. Điều quan trọng là các đỉnh ấy khớp với nhau.
+
+\section{Vì sao dùng từ \emph{Gauge}?}
+
+\begin{classroomqa}
+\audiencequestion{Toán học thì rõ ràng, nhưng ở đây từ \emph{gauge} có nghĩa là gì?}
+\lecturerresponse{Tên gọi này là một sự lạc thời về mặt lịch sử. Gauge có thể chỉ một mốc 0 được chọn, như khi áp suất được đo tương đối với một mốc tham chiếu. Ban đầu Hermann Weyl gắn ý tưởng này với một chuẩn độ dài cục bộ; cách hiểu đó không phải là vật lý đúng. Thuật ngữ ấy vẫn được giữ lại khi sự tự do này được gắn đúng đắn với pha của một hàm sóng lượng tử. Trong phép tính cổ điển hiện tại, thay đổi \(A_\mu\) bởi \(\partial_\mu\chi\) làm thay đổi mốc 0 của mô tả mà không làm thay đổi \(F_{\mu\nu}\). Ý nghĩa lượng tử sâu hơn sẽ được bàn sau.
+\lecturetimestamp{01:34:49}}
+\end{classroomqa}
+
+Tên gọi có tính lịch sử không nên che khuất phát biểu cốt lõi: các thế liên hệ với nhau bởi \eqref{eq:gauge-transform} mô tả cùng một trường điện từ. Vì vậy, tự do gauge là một sự dư thừa của mô tả bằng thế, còn tensor trường thì bất biến gauge.
+
+\section{Vì sao hai họ phương trình Maxwell trông bất đối xứng}
+
+\begin{classroomqa}
+\audiencequestion{Nếu điện trường và từ trường đối xứng với nhau đến vậy, thì tại sao một họ Maxwell lại xuất hiện như một đồng nhất thức Bianchi còn họ kia lại đến từ các phương trình chuyển động?}
+\lecturerresponse{Trong điện từ học không nguồn, ta có thể đưa vào một thế đối ngẫu để vai trò được hoán đổi: điều vốn là một phương trình chuyển động trở thành một đồng nhất thức Bianchi, và ngược lại. Sự bất đối xứng vật lý đi vào qua các nguồn. Các điện tích đã được quan sát, còn các đơn cực từ cơ bản thì chưa được quan sát. Nếu tồn tại một đối xứng thông thường chính xác hoán đổi điện tích và từ tích, thì ta sẽ kỳ vọng có các đối ứng từ tính với các phổ tương ứng, nhưng ta không quan sát thấy chúng. Các lý thuyết tinh vi hơn vẫn có thể chứa các điện tích từ hoặc các đối ngẫu điện--từ, nhưng điều đó vượt ra ngoài phép dẫn xuất hiện tại. \lecturetimestamp{01:37:11}}
+\end{classroomqa}
+
+Vì thế, các phương trình không nguồn có một cấu trúc hoán đổi điện--từ, trong khi phần nguồn được quan sát lại chọn một mô tả điện. Điều đó không chỉ là một quy ước trình bày, nhưng nó không làm mất hiệu lực của đối xứng thấy được trong một sóng phẳng tự do.
+
+\section{Những gì đã được tập hợp}
+
+Lộ trình của bài giảng giờ đây đã hoàn tất:
+\begin{enumerate}
+\item Các phương trình Maxwell buộc một sóng phẳng phải là sóng ngang, với điện trường và từ trường vuông góc nhau và hệ thức tán sắc
+      \(\omega=ck\).
+\item Các phương trình Bianchi là những đồng nhất thức suy ra từ thế; các phương trình co là các phương trình động lực học.
+\item Tính địa phương và tính bất biến Lorentz dẫn ta tới một mật độ tác dụng, còn tính bất biến gauge loại trừ \(A_\mu A^\mu\) và chọn ra một vô hướng được tạo từ \(F_{\mu\nu}\).
+\item Tác dụng tự do
+      \(-\tfrac14F_{\mu\nu}F^{\mu\nu}\) cho ra phương trình Maxwell chân không.
+\item Tương tác \(-J^\mu A_\mu\) là bất biến gauge khi và chỉ khi dòng thỏa mãn phương trình liên tục.
+\item Tác dụng có nguồn cho ra
+      \(\partial_\mu F^{\mu\nu}=J^\nu\), và tính phản đối xứng lại suy ra \(\partial_\mu J^\mu=0\).
+\end{enumerate}
+
+Đây là một lượng cấu trúc rất lớn: cơ học Lagrangian, lý thuyết trường tương đối tính, điện động lực học, tính bất biến Lorentz, tính bất biến gauge và bảo toàn điện tích cục bộ đã trở thành những phần của một lập luận duy nhất. Cách đáng tin cậy duy nhất để tiêu hóa được nó là bắt đầu lại từ các phương trình và tự tay theo dõi từng đạo hàm và từng dấu.

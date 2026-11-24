@@ -1,0 +1,798 @@
+\chapter{Các tensor và lực Lorentz tương đối tính}
+
+Tối nay chúng ta chuyển từ các trường vô hướng sang điện động lực học. Phần thảo luận trước đã thiết lập một khuôn mẫu hữu ích: một hàm tác dụng mô tả cả cách một trường tác dụng lên một hạt lẫn cách hạt tác dụng ngược trở lại lên trường. Cuối cùng chúng ta sẽ áp dụng khuôn mẫu đó cho trường điện từ, nhưng trước hết ta cần một hệ ký hiệu đủ mạnh để bộc lộ tính đối xứng của phép tính.
+
+Công việc chuẩn bị này không phải là thứ trang trí. Một dấu trừ, một số 0, một dấu bằng và ký hiệu vectơ, mỗi thứ đều nén lại một ý tưởng mà nếu không thì sẽ phải lặp lại bằng lời. Ký hiệu tensor cũng làm điều tương tự cho thuyết tương đối. Một khi các chỉ số trên và dưới, các phép co và các quy luật biến đổi đã được đặt vào đúng chỗ, các lực điện và từ sẽ tự kết hợp thành một phương trình bốn chiều duy nhất.
+
+\section{Bốn-vectơ và tính gọn của ký hiệu chỉ số}
+
+\subsection{Các thành phần trên và dưới}
+
+Các chỉ số Hy Lạp lấy cả bốn tọa độ không-thời gian, còn các chỉ số Latin chỉ lấy ba tọa độ không gian:
+\begin{equation}
+\mu,\nu,\rho,\sigma=0,1,2,3,
+\qquad
+m,n=1,2,3.
+\end{equation}
+Một bốn-vectơ phản biến tổng quát là \(A^\mu=(A^0,A^1,A^2,A^3)\).
+Với quy ước dùng ở đây,
+\begin{equation}
+\eta_{\mu\nu}
+=
+\begin{pmatrix}
+-1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+A_\mu=\eta_{\mu\nu}A^\nu .
+\label{eq:sr6-metric-lowering}
+\end{equation}
+Vì vậy, hạ một chỉ số làm đổi dấu thành phần thời gian và giữ nguyên các thành phần không gian:
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m.
+\label{eq:sr6-component-lowering}
+\end{equation}
+Đối với không-thời gian phẳng thì toàn bộ phép toán chỉ có vậy; tuy nhiên, trong thuyết tương đối rộng, cùng ký hiệu này sẽ mang một ý nghĩa hình học phong phú hơn.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_01.png}
+\caption{Metric Minkowski và quy tắc thành phần để hạ chỉ số của một bốn-vectơ.}
+\lectureframe{00:07:45}
+\end{figure}
+
+Quy ước tổng Einstein được dùng khi một chỉ số lặp lại một lần ở trên và một lần ở dưới. Vì thế, phép co
+\begin{equation}
+A_\mu B^\mu
+=
+-A^0B^0+A^1B^1+A^2B^2+A^3B^3
+\label{eq:sr6-vector-contraction}
+\end{equation}
+là một vô hướng. Nếu một tổng không có dạng lặp trên--dưới này, ta sẽ viết tường minh dấu tổng của nó.
+
+\subsection{Đạo hàm mang chỉ số dưới}
+
+Bốn toán tử đạo hàm được gom thành
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\end{equation}
+Khi tác dụng lên trường vô hướng \(\phi(x)\), chúng tạo thành vectơ hiệp biến \(\partial_\mu\phi\). Cách nhanh nhất để thấy vị trí của chỉ số là xét một độ dời vô cùng bé:
+\begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr6-total-differential}
+\end{equation}
+Vế trái là hiệu các giá trị vô hướng tại những sự kiện lân cận, nên là một vô hướng. Vì \(dx^\mu\) là phản biến, đối tượng co với nó phải là hiệp biến.
+
+\begin{classroomqa}
+\audiencequestion{Nếu \(x^\mu\) có chỉ số trên, tại sao lấy đạo hàm theo \(x^\mu\) lại cho ra chỉ số dưới?}
+\lecturerresponse{Bởi vì độ biến thiên vi phân \(d\phi=\partial_\mu\phi\,dx^\mu\) là một vô hướng. Một độ dời phản biến chỉ có thể tạo ra vô hướng đó bằng cách co với một gradient hiệp biến. Vì vậy vị trí của chỉ số đạo hàm được ấn định bởi quy luật biến đổi của nó, chứ không chỉ bởi cách trình bày của phân số. \lecturetimestamp{00:10:10}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_02.png}
+\caption{Vi phân vô hướng \(d\phi\) cho thấy \(\partial_\mu\phi\) là một vectơ hiệp biến.}
+\lectureframe{00:11:05}
+\end{figure}
+
+Quy tắc ấy cũng cho ta một vô hướng khác. Nếu \(B^\mu(x)\) là một trường bốn-vectơ, thì
+\begin{equation}
+\partial_\mu B^\mu
+\label{eq:sr6-four-divergence}
+\end{equation}
+là độ phân kỳ bốn chiều của nó. Nó kết hợp đạo hàm theo thời gian của thành phần thời gian với ba đạo hàm không gian của các thành phần không gian tương ứng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}
+\caption{Hai phép co vô hướng: \(A_\mu B^\mu\) và độ phân kỳ bốn chiều \(\partial_\mu B^\mu(x)\).}
+\lectureframe{00:14:00}
+\end{figure}
+
+Tất cả điều này đều có một đối ứng ba chiều. Trong không gian Euclid ba chiều, metric là ma trận đơn vị, nên việc nâng hay hạ một chỉ số Latin không làm thay đổi gì. Vì vậy ta sẽ chuyển các chỉ số không gian lên xuống khi thuận tiện, đồng thời vẫn tiếp tục phân biệt cẩn thận các chỉ số không-thời gian.
+
+\section{Các phép biến đổi Lorentz dưới dạng ma trận}
+
+Vô hướng và vectơ được định nghĩa bởi cách chúng biến đổi. Một vô hướng giữ nguyên giá trị, còn một bốn-vectơ phản biến tuân theo
+\begin{equation}
+(A^\mu)'=L^\mu{}_\nu A^\nu.
+\label{eq:sr6-vector-transform}
+\end{equation}
+Chỉ số hiện ra \(\mu\) là chỉ số tự do và xuất hiện ở cả hai vế. Chỉ số lặp lại \(\nu\) được lấy tổng và biến mất khỏi phương trình thành phần cuối cùng.
+
+Ở đây, \emph{phép biến đổi Lorentz} bao gồm cả các phép quay không gian lẫn các phép boost. Một phép boost có thể hướng theo bất kỳ trục nào; các phép quay có thể được hợp thành với các phép boost để tạo ra một phép biến đổi tổng quát. Bản thân một phép quay không gian không làm thay đổi tọa độ thời gian.
+
+\begin{classroomqa}
+\audiencequestion{Khi ta quay không gian, thời gian có hoàn toàn không bị ảnh hưởng không?}
+\lecturerresponse{Có. Trong một phép quay không gian thông thường, thành phần thời gian không đổi. Những phép quay như vậy được bao hàm trong nhóm Lorentz, cùng với những phép biến đổi trộn thời gian với không gian. \lecturetimestamp{00:16:27}}
+\end{classroomqa}
+
+Đối với một phép boost có tốc độ \(v\) dọc theo trục \(x\), với \(c=1\),
+\begin{equation}
+L^\mu{}_\nu
+=
+\begin{pmatrix}
+\gamma&-\gamma v&0&0\\
+-\gamma v&\gamma&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr6-boost-matrix}
+\end{equation}
+Nhân với \((t,x,y,z)^{\mathsf T}\) cho
+\begin{equation}
+\begin{aligned}
+t'&=\gamma(t-vx),\\
+x'&=\gamma(x-vt),\\
+y'&=y,\\
+z'&=z.
+\end{aligned}
+\end{equation}
+Trong lớp, các số 0 và hai phần tử đơn vị được bổ sung khi ma trận được hoàn thiện trên bảng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}
+\caption{Ma trận boost theo hướng \(x\) tác dụng lên cột \((t,x,y,z)^{\mathsf T}\).}
+\lectureframe{00:21:35}
+\end{figure}
+
+Còn một phép quay góc \(\theta\) trong mặt phẳng \(y\)--\(z\) có
+\begin{equation}
+R_{yz}(\theta)
+=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&\cos\theta&\sin\theta\\
+0&0&-\sin\theta&\cos\theta
+\end{pmatrix}.
+\label{eq:sr6-yz-rotation}
+\end{equation}
+Nó nói rằng
+\begin{equation}
+y'=y\cos\theta+z\sin\theta,
+\qquad
+z'=-y\sin\theta+z\cos\theta,
+\end{equation}
+trong khi \(t\) và \(x\) giữ nguyên. Các tích ma trận như \eqref{eq:sr6-boost-matrix} và \eqref{eq:sr6-yz-rotation} sinh ra các phép biến đổi Lorentz tổng quát hơn.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+\caption{Một phép quay thuần túy trong mặt phẳng \(y\)--\(z\), với \(t\) và \(x\) không đổi.}
+\lectureframe{00:23:10}
+\end{figure}
+
+Một vectơ hiệp biến biến đổi với một ma trận mang vị trí chỉ số ngược lại:
+\begin{equation}
+(A_\mu)'=M_\mu{}^\nu A_\nu.
+\label{eq:sr6-covector-transform}
+\end{equation}
+Một lời sửa của cử tọa trên bảng phát hiện một chỉ số tự do tạm thời bị lặp lại: \(\mu\) không được lấy tổng ở vế trái cũng phải là chỉ số không được lấy tổng ở vế phải. Hai ma trận biểu diễn cùng một sự thay đổi hệ quy chiếu vật lý và liên hệ với nhau bởi
+\begin{equation}
+M=\eta L\eta,
+\qquad
+\eta^{-1}=\eta.
+\label{eq:sr6-M-L-relation}
+\end{equation}
+Đồng nhất thức cuối cùng suy ra ngay vì mỗi phần tử trên đường chéo của \(\eta\) đều là nghịch đảo của chính nó.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+\caption{Các quy luật biến đổi phản biến và hiệp biến, liên hệ với nhau bởi \(M=\eta L\eta\).}
+\lectureframe{00:25:20}
+\end{figure}
+
+Ý tưởng trung tâm nay đã sẵn sàng: một bốn-vectơ là một đối tượng mà các thành phần của nó biến đổi theo cùng quy luật với các tọa độ không-thời gian.
+
+\section{Tensor: mỗi chỉ số ứng với một phép biến đổi}
+
+\subsection{Từ tích vectơ đến định nghĩa}
+
+Một vô hướng là tensor hạng không, một vectơ là tensor hạng một, và một đối tượng có hai chỉ số là tensor hạng hai. Hãy bắt đầu với hai vectơ và lập
+\begin{equation}
+T^{\mu\nu}=A^\mu B^\nu.
+\label{eq:sr6-simple-tensor}
+\end{equation}
+Có \(4\times4=16\) thành phần. Chúng chạy từ \(A^0B^0\) và
+\(A^0B^1\) đến \(A^3B^3\).
+Ký hiệu \(T^{\mu\nu}\) chỉ toàn bộ mảng này, chứ không phải một con số.
+
+Biến đổi từng vectơ riêng rẽ cho
+\begin{align}
+(A^\mu)'&=L^\mu{}_\sigma A^\sigma,\\
+(B^\nu)'&=L^\nu{}_\tau B^\tau,
+\end{align}
+và do đó
+\begin{equation}
+(T^{\mu\nu})'
+=
+L^\mu{}_\sigma L^\nu{}_\tau T^{\sigma\tau}.
+\label{eq:sr6-rank-two-transform}
+\end{equation}
+Mỗi chỉ số tensor nhận ma trận Lorentz riêng của nó. Các chỉ số câm \(\sigma\) và \(\tau\) có thể được đổi tên tùy ý, miễn là mỗi cặp vẫn nhất quán.
+
+\begin{classroomqa}
+\audiencequestion{Sự sắp xếp lại này có giả thiết rằng các ma trận và các thành phần vectơ giao hoán với nhau không?}
+\lecturerresponse{Đây là các số cổ điển thông thường, không phải các toán tử lượng tử không giao hoán, nên chúng giao hoán. Hơn nữa, cùng một ma trận Lorentz đang tác dụng lên cả hai chỉ số. Không có vấn đề về thứ tự trong phép tính này. \lecturetimestamp{00:31:56}}
+\end{classroomqa}
+
+Quy tắc mở rộng ngay lên hạng ba:
+\begin{equation}
+(T^{\mu\nu\lambda})'
+=
+L^\mu{}_\sigma
+L^\nu{}_\tau
+L^\lambda{}_\kappa
+T^{\sigma\tau\kappa},
+\label{eq:sr6-rank-three-transform}
+\end{equation}
+và tương tự cho mọi hạng. Chính quy luật biến đổi này, chứ không phải một phép phân tích thành thừa số cụ thể thành các vectơ, mới là định nghĩa của tensor. Chẳng hạn,
+\begin{equation}
+A^\mu B^\nu+C^\mu D^\nu
+\end{equation}
+vẫn là một tensor dù nói chung nó không thể được viết thành một tích duy nhất của hai vectơ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{Sơ đồ bậc thang trên bảng đi từ tích của các vectơ đến các quy luật biến đổi tensor hạng hai và hạng ba.}
+\lectureframe{00:33:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Nhân ma trận với một tensor hạng hai có nghĩa gì theo từng thành phần?}
+\lecturerresponse{Hãy giữ cố định hai chỉ số kết quả và lấy tổng trên hai chỉ số ẩn. Chẳng hạn,
+\[
+(T^{31})'=L^3{}_\sigma L^1{}_\tau T^{\sigma\tau}.
+\]
+Vì cả \(\sigma\) lẫn \(\tau\) đều nhận bốn giá trị, nên thành phần kết quả này chứa mười sáu hạng. \lecturetimestamp{00:34:35}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{Khai triển thành phần cố định \((T^{31})'\) làm hiển lộ tường minh hai phép tổng độc lập.}
+\lectureframe{00:35:55}
+\end{figure}
+
+Các phương trình tensor có một ưu thế quyết định. Nếu hai tensor có các thành phần bằng nhau trong một hệ quy chiếu, thì quy luật biến đổi khiến chúng bằng nhau trong mọi hệ quy chiếu. Tương đương, nếu mọi thành phần của một tensor đều triệt tiêu trong một hệ quy chiếu, thì toàn bộ tensor triệt tiêu trong mọi hệ quy chiếu. Chỉ một thành phần triệt tiêu thì không đủ; mọi thành phần đều phải triệt tiêu. Đó là lý do một phương trình viết giữa các tensor chuyển tính đúng đắn của nó từ hệ quán tính này sang hệ quán tính khác.
+
+\subsection{Nâng và hạ chỉ số tensor}
+
+Một chỉ số của tensor được hạ đúng như một chỉ số của vectơ:
+\begin{equation}
+T^\mu{}_\nu=T^{\mu\sigma}\eta_{\sigma\nu}.
+\label{eq:sr6-tensor-lowering}
+\end{equation}
+Với metric đường chéo trong \eqref{eq:sr6-metric-lowering}, mỗi chỉ số thời gian được hạ xuống đóng góp một dấu trừ. Do đó,
+\begin{equation}
+T_{00}=T^{00},
+\qquad
+T_{01}=-T^{01}.
+\label{eq:sr6-tensor-component-signs}
+\end{equation}
+Đẳng thức thứ nhất chứa hai lần đổi dấu; đẳng thức thứ hai chỉ chứa một lần.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+\caption{Ví dụ về việc hạ hai chỉ số tensor: hai chỉ số thời gian cho hai dấu trừ, còn một chỉ số thời gian cho một dấu trừ.}
+\lectureframe{00:41:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao việc giữ cả dạng hiệp biến lẫn phản biến lại hữu ích? Có gì hơn ngoài ký hiệu gọn không?}
+\lecturerresponse{Đối với phép tính hiện tại, lợi ích tức thì là phép co gọn và việc tự động xử lý các dấu Minkowski. Có một phân biệt hình học sâu hơn giữa vectơ và đối vectơ, nhưng điều đó nên được phát triển trong thuyết tương đối rộng. Trong không-thời gian phẳng, các quy tắc chỉ số hiệu quả đến mức người ta thường làm việc trực tiếp với chúng. \lecturetimestamp{00:41:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một tensor luôn có bốn thành phần, hay đó là điều riêng của thuyết tương đối?}
+\lecturerresponse{Miền giá trị của mỗi chỉ số được quyết định bởi số chiều của không gian. Một tensor hạng một trong không-thời gian bốn chiều có bốn thành phần; một tensor hạng hai có mười sáu. Trong ba chiều, các số lượng tương ứng là ba và chín. Bản thân quy tắc tensor không phụ thuộc số chiều. \lecturetimestamp{00:42:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể mô tả các đối tượng hiệp biến và phản biến theo cách hình học hơn không?}
+\lecturerresponse{Có, chúng có một cách diễn giải hình học, nhưng nếu theo đuổi điều đó ngay bây giờ thì điện động lực học sẽ còn bị trì hoãn hơn nữa. Đối với môn học này, các quy tắc biến đổi và thao tác chỉ số là đủ; sự phân biệt hình học sẽ trở nên không thể tránh khỏi trong thuyết tương đối rộng. \lecturetimestamp{00:43:51}}
+\end{classroomqa}
+
+\section{Đối xứng, phản đối xứng và tensor điện từ}
+
+Đối với một tensor hạng hai tổng quát, đổi chỗ hai chỉ số sẽ làm thay đổi thành phần:
+\begin{equation}
+T^{\mu\nu}\neq T^{\nu\mu}.
+\end{equation}
+Thật vậy, \(A^\mu B^\nu\) và \(A^\nu B^\mu\) nói chung là khác nhau; các thành phần cụ thể \(A^0B^1\) và \(A^1B^0\) không nhất thiết phải bằng nhau.
+
+Có hai trường hợp đặc biệt quan trọng. Một tensor đối xứng thỏa
+\begin{equation}
+T^{\mu\nu}=T^{\nu\mu},
+\end{equation}
+và một tổ hợp đối xứng cụ thể là
+\begin{equation}
+A^\mu B^\nu+A^\nu B^\mu.
+\end{equation}
+Một tensor phản đối xứng thỏa
+\begin{equation}
+F^{\mu\nu}=-F^{\nu\mu},
+\label{eq:sr6-antisymmetry}
+\end{equation}
+cũng như tổ hợp
+\begin{equation}
+A^\mu B^\nu-A^\nu B^\mu.
+\end{equation}
+Đặt hai chỉ số bằng nhau trong \eqref{eq:sr6-antisymmetry} cho
+\begin{equation}
+F^{00}=-F^{00},
+\qquad
+F^{00}=0,
+\end{equation}
+và cùng lập luận ấy loại bỏ mọi thành phần trên đường chéo. Vì thế một tensor phản đối xứng \(4\times4\) có sáu thành phần độc lập.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{Các tensor hạng hai đối xứng và phản đối xứng được so sánh trên bảng.}
+\lectureframe{00:47:20}
+\end{figure}
+
+Sáu thành phần đó vừa đúng đủ cho ba thành phần của điện trường và ba thành phần của từ trường. Với quy ước dấu được viết trên bảng,
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_1&-E_2&-E_3\\
+E_1&0&-B_3&B_2\\
+E_2&B_3&0&-B_1\\
+E_3&-B_2&B_1&0
+\end{pmatrix}.
+\label{eq:sr6-em-field-tensor}
+\end{equation}
+Phép phản xạ qua đường chéo đảo ngược mọi dấu. Vì vậy điện trường và từ trường không phải là các đối tượng tương đối tính độc lập. Một phép boost có thể trộn chúng đúng như nó trộn không gian và thời gian: một trường thuần điện trong một hệ quy chiếu có thể có một thành phần từ trong hệ khác.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+\caption{Mảng phản đối xứng hoàn chỉnh, với sáu phần tử độc lập là \(\mathbf E\) và \(\mathbf B\).}
+\lectureframe{00:50:20}
+\end{figure}
+
+Bảng có \eqref{eq:sr6-em-field-tensor} vẫn được giữ lại khi cuộc thảo luận chuyển sang động lực học hạt. Bây giờ ta dùng lại ký hiệu \(A_\mu\), không phải cho vectơ tổng quát của các ví dụ trước, mà cho thế bốn-vectơ điện từ.
+
+\section{Tác dụng của hạt mang điện}
+
+Có hai điểm xuất phát khả dĩ. Ta có thể nghiên cứu động lực học của chính trường, điều này sẽ dẫn đến các phương trình Maxwell, hoặc nghiên cứu một hạt mang điện chuyển động trong một trường cho trước, điều này dẫn đến lực Lorentz. Ta bắt đầu với hạt.
+
+Ở vận tốc thấp, biểu thức cần thu được là
+\begin{equation}
+m\mathbf a
+=
+e\left(\mathbf E+\mathbf v\times\mathbf B\right),
+\label{eq:sr6-nonrel-lorentz-force}
+\end{equation}
+trong đó ở dạng viết theo đơn vị Gaussian, hạng từ được nhân với một hệ số \(1/c\). Ta đặt \(c=1\). Hai hạng trong
+\eqref{eq:sr6-nonrel-lorentz-force} trông khác nhau trong ký hiệu ba-vectơ, nhưng thuyết tương đối phải cho thấy chúng là các phần của một đối tượng duy nhất.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{Lực Lorentz phi tương đối tính, kết quả mà tác dụng bất biến phải tái tạo.}
+\lectureframe{00:54:00}
+\end{figure}
+
+\subsection{Chuyển động tự do và thế vectơ}
+
+Đối với một hạt tương đối tính tự do,
+\begin{equation}
+S_{\mathrm{free}}
+=
+-m\int_1^2 d\tau
+=
+\int_{t_1}^{t_2}dt\,
+\left[-m\sqrt{1-\dot{\mathbf x}^{\,2}}\right],
+\label{eq:sr6-free-action}
+\end{equation}
+trong đó
+\begin{equation}
+\dot{\mathbf x}^{\,2}
+=
+(\dot x^1)^2+(\dot x^2)^2+(\dot x^3)^2.
+\end{equation}
+Đại lượng trong ngoặc vuông là Lagrangian của hạt tự do. Động lượng và năng lượng của nó đã được tìm ra trước đó; ta giữ lại tác dụng và hỏi có thể thêm hạng nào phụ thuộc vào trường.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{Tác dụng tự do như thời gian riêng tích lũy dọc theo một đường thế giới.}
+\lectureframe{00:55:10}
+\end{figure}
+
+Đại lượng điện từ cơ bản là thế bốn-vectơ \(A_\mu(x)\). Điện trường và từ trường sẽ được suy ra từ nó. Dọc theo một đoạn nhỏ của đường thế giới \(dx^\mu\), phép co
+\begin{equation}
+A_\mu(x)\,dx^\mu
+\end{equation}
+là một vô hướng. Cộng các số gia vô hướng đó từ đầu mút này đến đầu mút kia cho ta một tương tác bất biến Lorentz:
+\begin{equation}
+S_{\mathrm{int}}
+=
+-e\int_1^2 A_\mu(x)\,dx^\mu.
+\label{eq:sr6-interaction-action}
+\end{equation}
+Hệ số \(e\) là điện tích. Dấu tổng thể thuộc về quy ước điện tích mang tính lịch sử; đổi quy ước sẽ đổi dấu gán cho \(e\), chứ không đổi nội dung của lý thuyết.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{Một đoạn đường thế giới được co với thế bốn-vectơ để tạo thành số gia vô hướng \(A_\mu dx^\mu\).}
+\lectureframe{00:59:20}
+\end{figure}
+
+\subsection{Dạng theo thời gian thông thường}
+
+Để dùng các phương trình Euler--Lagrange quen thuộc, hãy chia rồi nhân \eqref{eq:sr6-interaction-action} với \(dt\). Vì
+\begin{equation}
+\frac{dx^0}{dt}=1,
+\qquad
+\frac{dx^m}{dt}=\dot x^m,
+\end{equation}
+nên tác dụng toàn phần là
+\begin{equation}
+S
+=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0(x,t)
+-e\dot x^m A_m(x,t)
+\right].
+\label{eq:sr6-complete-particle-action}
+\end{equation}
+Do đó
+\begin{equation}
+\boxed{
+L
+=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_0
+-e\dot x^mA_m
+}.
+\label{eq:sr6-charged-lagrangian}
+\end{equation}
+Hiện tại \(A_\mu(x,t)\) là một trường ngoài đã biết. Ta biến phân đường thế giới, không biến phân trường.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{Hạng ghép bất biến trên đường thế giới được viết lại thành một Lagrangian theo thời gian thông thường.}
+\lectureframe{01:05:20}
+\end{figure}
+
+\section{Tính ra lực Lorentz từng bước}
+
+Đối với một thành phần không gian \(x^m\), phương trình Euler--Lagrange có dạng
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x^m}
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr6-EL}
+\end{equation}
+Lấy đạo hàm theo vận tốc cho ta
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m.
+\label{eq:sr6-canonical-momentum}
+\end{equation}
+Đáng tiếc là chữ \(m\) lại được dùng vừa cho khối lượng vừa cho một chỉ số không gian. Ngữ cảnh phân biệt chúng: \(m\) đầu tiên trong
+\eqref{eq:sr6-canonical-momentum} là khối lượng; chỉ số dưới \(m\) đánh dấu một trong ba thành phần không gian.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{Đạo hàm của động lượng chứa cả hạng cơ học lẫn hạng thế vectơ.}
+\lectureframe{01:09:20}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Lần thử đầu tiên cho vế trái có thiếu một hạng không?}
+\lecturerresponse{Có. Nếu chỉ lấy đạo hàm của hạng hạt tự do thì sẽ bỏ sót sự phụ thuộc vào vận tốc của \(-e\dot x^mA_m\). Đạo hàm đầy đủ là \(m\dot x_m/\sqrt{1-\dot{\mathbf x}^{\,2}}-eA_m\). Hiệu chỉnh này là thiết yếu vì đạo hàm theo thời gian của nó cung cấp một phần của cả lực điện lẫn lực từ. \lecturetimestamp{01:08:18}}
+\end{classroomqa}
+
+Vế phải của \eqref{eq:sr6-EL} là
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-position-derivative}
+\end{equation}
+Vì vậy
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+\right)
+=
+-e\,\partial_mA_0
+-e\,\dot x^n\partial_mA_n.
+\label{eq:sr6-EL-expanded}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Trong phép tính này, có phải các thành phần không gian hiệp biến và phản biến đã bị đổi lẫn cho nhau không?}
+\lecturerresponse{Chúng quả là đã được nâng lên và hạ xuống, nhưng đối với các chỉ số không gian Latin, khối không gian Euclid của metric là ma trận đơn vị. Vì vậy \(x_m=x^m\) và \(A_m=A^m\). Chỉ chỉ số thời gian mới tạo ra sự đổi dấu. \lecturetimestamp{01:09:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các chỉ số Latin lặp lại cũng được lấy tổng chứ?}
+\lecturerresponse{Có. Một chỉ số Latin lặp lại được lấy tổng từ \(1\) đến \(3\); một chỉ số Hy Lạp lặp lại được lấy tổng từ \(0\) đến \(3\). Một chỉ số đơn lẻ như \(m\) dùng để gắn nhãn cho một phương trình không gian là chỉ số tự do và không bị lấy tổng. Ký hiệu khối lượng không phải là chỉ số. \lecturetimestamp{01:10:00}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_17.png}
+\caption{Phương trình Euler--Lagrange trước khi khai triển đạo hàm toàn phần theo thời gian của thế vectơ.}
+\lectureframe{01:14:20}
+\end{figure}
+
+\subsection{Quy tắc dây chuyền dọc theo đường thế giới đang chuyển động}
+
+Ngay cả một trường không phụ thuộc thời gian cũng thay đổi dọc theo quỹ đạo của hạt, vì hạt đi qua các vị trí khác nhau. Đạo hàm toàn phần là
+\begin{equation}
+\frac{dA_m(x(t),t)}{dt}
+=
+\partial_0A_m+\dot x^n\partial_nA_m.
+\label{eq:sr6-convective-derivative}
+\end{equation}
+Hạng thứ nhất là sự phụ thuộc tường minh vào thời gian; hạng thứ hai là sự phụ thuộc ngầm vào thời gian thông qua \(x^n(t)\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_18.png}
+\caption{Thế vectơ thay đổi một cách tường minh theo thời gian và một cách ngầm định khi hạt chuyển động qua không gian.}
+\lectureframe{01:17:20}
+\end{figure}
+
+Thay \eqref{eq:sr6-convective-derivative} vào
+\eqref{eq:sr6-EL-expanded} và chuyển các hạng trường sang vế phải ta được
+\begin{equation}
+\begin{aligned}
+m\frac{d}{dt}
+\left(
+\frac{\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+\right)
+&=
+e\left(\partial_0A_m-\partial_mA_0\right)
+\\
+&\quad +e\dot x^n
+\left(\partial_nA_m-\partial_mA_n\right).
+\end{aligned}
+\label{eq:sr6-grouped-force}
+\end{equation}
+Phép tính cuối cùng đã tìm ra nguyên tắc tổ chức của nó. Ngoặc thứ nhất không chứa vận tốc; ngoặc thứ hai tuyến tính theo vận tốc. Đây chính xác là sự tách giữa lực điện và lực từ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_19.png}
+\caption{Các hạng lực được nhóm thành một phần điện không phụ thuộc vận tốc và một phần phản đối xứng phụ thuộc vận tốc.}
+\lectureframe{01:23:40}
+\end{figure}
+
+Hãy định nghĩa các thành phần điện theo quy ước của phép suy ra bằng
+\begin{equation}
+E_m=\partial_0A_m-\partial_mA_0.
+\label{eq:sr6-electric-from-potential}
+\end{equation}
+Tổ hợp phản đối xứng không gian
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n
+\label{eq:sr6-spatial-curl-tensor}
+\end{equation}
+chứa ba thành phần độc lập của xoáy của thế vectơ. Chiều của nó được chọn sao cho
+\begin{equation}
+\dot x^nC_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\end{equation}
+Vì vậy, phương trình \eqref{eq:sr6-grouped-force} là dạng động lượng tương đối tính của \eqref{eq:sr6-nonrel-lorentz-force}. Thừa số dưới dấu đạo hàm theo thời gian là động lượng tương đối tính trên đơn vị khối lượng, chứ không chỉ là vận tốc Newton.
+
+Phép suy ra này đáng để tự làm lại bằng tay: bắt đầu từ
+\eqref{eq:sr6-charged-lagrangian}, tính cả hai vế của
+\eqref{eq:sr6-EL}, áp dụng quy tắc dây chuyền, rồi nhóm các hạng theo sự phụ thuộc của chúng vào vận tốc. Bài tập này đồng thời là sự rèn luyện về cơ học biến phân, giải tích nhiều biến và điện động lực học.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao chọn \(-e\int A_\mu dx^\mu\) làm tương tác điện từ?}
+\lecturerresponse{Rốt cuộc thực nghiệm quyết định cách ghép, nhưng hai yêu cầu cấu trúc khiến đây trở thành ứng viên đầu tiên tự nhiên. Tác dụng được ghép từ các số gia cục bộ dọc theo quỹ đạo, và mỗi số gia phải là một vô hướng. Vô hướng \(dx^\mu dx_\mu=d\tau^2\) đã được biểu diễn bởi tác dụng tự do. Lấy phép co \(dx^\mu\) với trường \(A_\mu\) là vô hướng phụ thuộc trường mới đơn giản nhất. Có thể viết các vô hướng phức tạp hơn, và bất biến chuẩn về sau sẽ làm cho lựa chọn này sắc nét hơn. \lecturetimestamp{01:25:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các phương trình Maxwell cũng có thể được suy ra từ nguyên lý tác dụng tối thiểu chứ?}
+\lecturerresponse{Có. Tác dụng hiện tại chi phối một hạt trong một trường điện từ cho trước. Để thu được các phương trình Maxwell, ta phải thêm tác dụng riêng của trường và biến phân chính trường đó, đúng như ta đã làm đối với trường vô hướng. \lecturetimestamp{01:28:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Phép lấy tổng trong phương trình lực đã nhóm nằm ở đâu?}
+\lecturerresponse{\(m\) tự do gắn nhãn cho một trong ba phương trình thành phần và không bị lấy tổng. \(n\) lặp lại trong \(\dot x^n(\partial_nA_m-\partial_mA_n)\) được lấy tổng trên \(1,2,3\). Nếu viết mà không dùng ký hiệu Einstein, hạng đó sẽ mang một \(\sum_{n=1}^{3}\) tường minh. \lecturetimestamp{01:29:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao nhận diện \(\partial_0A_m-\partial_mA_0\) là điện trường thay vì giả sử trước công thức quen thuộc?}
+\lecturerresponse{Tác dụng đã sinh ra một hạng lực phụ thuộc vào vị trí và thời gian nhưng không phụ thuộc vào vận tốc của hạt. Đó chính xác là vai trò thao tác của điện trường. Các hạng phản đối xứng còn lại nhân với vận tốc và vì thế mang vai trò từ trường. Có thể xem phép tính này là phát hiện ra các trường từ định luật lực, thay vì chèn sẵn các định nghĩa riêng rẽ ngay từ đầu. \lecturetimestamp{01:31:05}}
+\end{classroomqa}
+
+\section{Định luật lực hiệp biến tường minh}
+
+Vế trái của \eqref{eq:sr6-grouped-force} vẫn chưa được viết dưới một dạng rõ ràng là bốn chiều. Hãy đưa vào bốn-vận tốc
+\begin{equation}
+u^\mu=\frac{dx^\mu}{d\tau}.
+\label{eq:sr6-four-velocity}
+\end{equation}
+Các thành phần không gian của nó thỏa mãn
+\begin{equation}
+u^m
+=
+\frac{dx^m}{d\tau}
+=
+\frac{\dot x^m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}.
+\end{equation}
+Nhân phương trình không gian với \(dt/d\tau\) sẽ biến
+\(d/dt\) thành \(d/d\tau\):
+\begin{equation}
+\frac{dt}{d\tau}\frac{d}{dt}
+=
+\frac{d}{d\tau}.
+\end{equation}
+Vì thế vế trái trở thành phần không gian của gia tốc riêng,
+\begin{equation}
+m\frac{d^2x^m}{d\tau^2}.
+\end{equation}
+
+Vế phải có thể được viết mà không cần tách thời gian và không gian:
+\begin{equation}
+m\frac{d^2x^m}{d\tau^2}
+=
+e\left(\partial_\nu A_m-\partial_mA_\nu\right)
+\frac{dx^\nu}{d\tau}.
+\label{eq:sr6-spatial-covariant-force}
+\end{equation}
+Với \(\nu=0\), biểu thức này tái tạo ngoặc điện; với
+\(\nu=1,2,3\), nó tái tạo ngoặc từ.
+
+Bây giờ cả hai vế đều có tính chất biến đổi của một bốn-vectơ. Vì vậy, ba phương trình không gian là các thành phần của
+\begin{equation}
+\boxed{
+m\frac{d^2x^\mu}{d\tau^2}
+=
+e\left(\partial_\nu A^\mu-\partial^\mu A_\nu\right)u^\nu
+}.
+\label{eq:sr6-covariant-force}
+\end{equation}
+Nếu định nghĩa
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\label{eq:sr6-F-from-A}
+\end{equation}
+thì thứ tự chỉ số và dấu tương tác được dùng trong bài giảng này cho ta dạng gọn tương đương
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu.
+\label{eq:sr6-covariant-force-F}
+\end{equation}
+\editorialnote{Các giáo trình điện động lực học phân bố dấu khác nhau giữa chữ ký metric, định nghĩa của \(A_\mu\), điện tích và \(F_{\mu\nu}\). Các phương trình \eqref{eq:sr6-covariant-force} và \eqref{eq:sr6-covariant-force-F} giữ nguyên dấu và thứ tự chỉ số thu được từ tác dụng \(-e\int A_\mu dx^\mu\); nội dung bất biến là đạo hàm phản đối xứng hóa của thế.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_20.png}
+\caption{Ba phương trình không gian được ghép thành một phương trình bốn-vectơ bằng cách dùng thời gian riêng.}
+\lectureframe{01:42:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Tại sao lại hợp lệ khi thêm một phương trình thứ tư, tức thành phần thời gian? Liệu \(d^2x^0/d\tau^2\) có đơn giản bằng không không?}
+\lecturerresponse{Nó nói chung không bằng không: \(x^0=t\), nhưng \(dt/d\tau=\gamma\) thay đổi khi tốc độ của hạt thay đổi. Lập luận quyết định là tính hiệp biến. Tác dụng vô hướng bảo đảm các phương trình bất biến Lorentz; một khi các thành phần không gian được nhận ra là các thành phần của một phương trình bốn-vectơ duy nhất, các phép biến đổi Lorentz sẽ trộn chúng với thành phần thời gian. Phương trình thứ tư phải đi kèm ba phương trình kia. \lecturetimestamp{01:42:40}}
+\end{classroomqa}
+
+\subsection{Ý nghĩa của thành phần thứ tư}
+
+Ba thành phần không gian là phát biểu tương đối tính của
+\begin{equation}
+\frac{d\mathbf p}{dt}=\mathbf F.
+\end{equation}
+Năng lượng và động lượng bản thân chúng là các thành phần của một bốn-vectơ, nên thành phần thời gian phải mô tả cân bằng năng lượng tương ứng. Trong ngôn ngữ ba-vectơ,
+\begin{equation}
+\frac{dK}{dt}=\mathbf F\cdot\mathbf v.
+\label{eq:sr6-work-energy}
+\end{equation}
+Nó ghi lại tốc độ mà trường thực hiện công lên hạt. Phần đóng góp từ trường vuông góc với \(\mathbf v\) và không sinh công; phần đóng góp điện trường làm thay đổi năng lượng của hạt.
+
+\begin{classroomqa}
+\audiencequestion{Nếu tính hiệp biến cung cấp phương trình thứ tư về mặt hình thức, làm sao ta biết nó có ý nghĩa vật lý?}
+\lecturerresponse{Ba thành phần đầu nói rằng lực làm thay đổi động lượng. Thành phần thứ tư nói rằng công làm thay đổi năng lượng: \(dK/dt=\mathbf F\cdot\mathbf v\). Vì năng lượng và động lượng tạo thành một bốn-vectơ duy nhất, nên phản ứng của chúng với trường cũng phải là một phát biểu bốn thành phần duy nhất. \lecturetimestamp{01:45:20}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_21.png}
+\caption{Định luật không gian \(d\mathbf p/dt=\mathbf F\) và phương trình đi kèm cho thành phần thời gian, hệ thức công--năng lượng.}
+\lectureframe{01:47:10}
+\end{figure}
+
+Phương pháp quan trọng hơn dạng viết cô đọng cuối cùng. Ta đòi hỏi tác dụng phải là một vô hướng trước khi biến phân nó. Khi đó các phương trình thu được có thể được sắp xếp lại thành tensor mà không phải sửa chữa tính đối xứng của chúng về sau. Trong lý thuyết trường hiện đại, điều này trở thành một quy tắc thiết kế tổng quát: hãy xây dựng Lagrangian sao cho tôn trọng các đối xứng của bài toán.
+
+\section{Tính địa phương, bất biến Lorentz và đối xứng tiếp theo}
+
+Ba nguyên lý lặp đi lặp lại trong toàn bộ lý thuyết trường tương đối tính. Hai trong số đó đã được dùng; nguyên lý thứ ba sẽ được triển khai tiếp theo.
+
+\subsection{Tính địa phương}
+
+Tính địa phương nói rằng sự biến đổi của một hạt hoặc trường được chi phối bởi những gì xảy ra ở lân cận vi phân trong không-thời gian. Một hạt đáp ứng với trường được lấy trên đường thế giới của nó, chứ không phải với một giá trị không liên quan ở xa. Một trường tại một điểm đáp ứng với trường và các đạo hàm của nó trong một lân cận của điểm đó, chứ không trực tiếp với các giá trị xa tùy ý hay với dữ liệu tương lai.
+
+Vì vậy, đối với một trường, tác dụng có dạng địa phương
+\begin{equation}
+S
+=
+\int d^3x\,dt\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr6-local-action}
+\end{equation}
+Phép tích phân cộng một đóng góp từ mỗi điểm không-thời gian. Các đạo hàm bậc nhất mã hóa sự so sánh với các điểm lân cận, và nguyên lý biến phân sinh ra các phương trình vi phân. Ta có thể hình dung các tích phi địa phương ghép các trường tại những điểm cách xa nhau, nhưng các phương trình của chúng sẽ làm cho đáp ứng tại đây phụ thuộc trực tiếp vào các điều kiện ở đó. Đó không phải là cấu trúc địa phương đang được áp đặt. Những tác dụng với các đạo hàm bậc cao hơn là khả dĩ và tạo thành một chủ đề thú vị, nhưng chúng không cần thiết cho việc xây dựng hiện tại.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_22.png}
+\caption{Tính địa phương được biểu diễn dưới dạng một tích phân trên không-thời gian của một mật độ được xây dựng từ các trường và các đạo hàm trong lân cận của chúng.}
+\lectureframe{01:51:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Có phải \(\partial_\mu\phi\) biểu thị bốn thành phần đạo hàm không?}
+\lecturerresponse{Có. Nó chỉ đạo hàm theo thời gian và ba đạo hàm theo không gian của \(\phi\), được gộp lại thành một bốn-vectơ hiệp biến. \lecturetimestamp{01:52:25}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Trong nguyên lý địa phương, \emph{lân cận} được lượng hóa như thế nào?}
+\lecturerresponse{Bằng các đạo hàm. Một đạo hàm bậc nhất so sánh trường tại một điểm với giá trị của nó tại các điểm lân cận vô cùng gần. Một Lagrangian địa phương phụ thuộc vào các trường và một tập hữu hạn các đạo hàm như vậy tại cùng một điểm không-thời gian. \lecturetimestamp{01:52:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Phiên bản của tính địa phương đối với trường được thể hiện như thế nào trong phép tính hạt vừa hoàn thành?}
+\lecturerresponse{Lagrangian của hạt là địa phương dọc theo đường thế giới: nó phụ thuộc vào các vị trí lân cận trên đường thế giới thông qua vận tốc, và vào thế điện từ được lấy tại vị trí hiện tại của hạt. Gia tốc của hạt tại đây không phụ thuộc trực tiếp vào trường tại một điểm xa. \lecturetimestamp{01:53:31}}
+\end{classroomqa}
+
+\subsection{Bất biến Lorentz}
+
+Bất biến Lorentz được thực hiện bằng cách xây dựng Lagrangian từ các vô hướng. Những người quan sát có thể biểu diễn các vô hướng đó bằng các thành phần thời gian và không gian khác nhau, nhưng họ vẫn nhất trí về tác dụng. Vì thế, các phương trình tensor thu được từ phép biến phân có cùng một dạng trong mọi hệ quy chiếu quán tính.
+
+\subsection{Bất biến chuẩn}
+
+Bất biến chuẩn là nguyên lý còn lại. Nó được nêu ra ở đây nhưng chưa được định nghĩa. Ở bước tiếp theo, nó sẽ ràng buộc những đặc trưng nào của bốn-thế là có ý nghĩa vật lý, đồng thời định hướng tác dụng trường sinh ra các phương trình Maxwell.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_23.png}
+\caption{Ba nguyên lý tổ chức: tính địa phương, bất biến Lorentz và bất biến chuẩn.}
+\lectureframe{01:55:40}
+\end{figure}
+
+Những nguyên lý này tái xuất hiện trong thuyết tương đối rộng, điện động lực học lượng tử, lý thuyết Yang--Mills và Mô hình Chuẩn. Các chi tiết như số loại hạt thay đổi từ lý thuyết này sang lý thuyết khác; tính địa phương và đối xứng cung cấp khuôn khổ sâu hơn. Vì vậy, bài tập thực hành là lần theo lại phép tính Euler--Lagrange cho đến khi có thể giải thích được mọi chỉ số và mọi hạng tử được nhóm lại. Khi đó, bất biến chuẩn sẽ xuất hiện như ràng buộc tiếp theo lên chính tác dụng điện từ đó.

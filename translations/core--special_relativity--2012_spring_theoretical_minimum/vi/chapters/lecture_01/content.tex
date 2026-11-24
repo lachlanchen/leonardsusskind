@@ -1,0 +1,568 @@
+\chapter{Hệ quy chiếu, ánh sáng và hình học của không-thời gian}
+
+\section{Học phần lại bắt đầu với thuyết tương đối}
+
+Trong học kỳ này, ta quay lại vật lý cổ điển, nhưng không quay lại bức tranh Newton, trong đó không gian và thời gian là độc lập và phổ quát. Các chủ đề trực tiếp là thuyết tương đối hẹp và lý thuyết trường cổ điển, đặc biệt là điện từ học. Sẽ không dùng cơ học lượng tử. Học phần cơ học trước đó đã cung cấp nguyên lý tác dụng cùng các mô tả Hamilton và Lagrange; học phần lượng tử đã cung cấp các nguyên lý cơ bản của cơ học lượng tử, dù ngay cả dao động tử điều hòa cũng phải để lại cho một lần quay lại sau này. Ánh sáng cũng phần lớn vắng mặt. Nay sự thiếu sót ấy được bù lại, vì ánh sáng vốn mang bản chất tương đối tính.
+
+Phần lớn lớp học đã từng gặp thuyết tương đối hẹp trước đây. Tuy vậy, biểu quyết bằng cách giơ tay cho thấy đa số muốn dựng lại nó từ đầu. Đó là lựa chọn hữu ích. Phép biến đổi Lorentz không nên xuất hiện như một công thức để học thuộc. Nó phải nảy sinh vì các phép đo mang tính thao tác của không gian và thời gian không thể đồng thời thỏa mãn cả động học Galileo lẫn định luật lan truyền ánh sáng đã được quan sát.
+
+\subsection{Tọa độ như một thiết bị vật lý}
+
+Hãy bắt đầu với một hệ Descartes: một gốc tọa độ, ba trục có định hướng, và các tọa độ \(x,y,z\). Một hiện thực hóa cụ thể sẽ lấp đầy không gian bằng một mạng lưới cứng các thước mét. Để xác định một sự kiện chứ không chỉ một vị trí, mỗi điểm của mạng lưới ấy còn mang theo một đồng hồ. Khi đó, một sự kiện được gắn nhãn
+\begin{equation}
+(x,y,z,t).
+\end{equation}
+Các đồng hồ phải được đồng bộ theo một quy trình nêu rõ; yêu cầu đó chẳng bao lâu nữa sẽ trở thành phần tinh tế của phép dựng này.
+
+\begin{definition}
+Hệ quy chiếu là một mạng tọa độ không gian cùng với một hệ đồng hồ đồng bộ được phân bố khắp nơi. Hệ quán tính là một hệ không quay, không gia tốc, trong đó mọi hạt không chịu lực đều chuyển động với vận tốc không đổi.
+\end{definition}
+
+Hai hệ chuyển động thẳng đều tương đối với nhau gán những tọa độ khác nhau cho cùng một sự kiện. Một điểm đứng yên trong hệ chuyển động có tọa độ không đổi \(x'\), ngay cả khi tọa độ không dấu phẩy của nó thay đổi. Trong vật lý Newton, quan hệ không gian cho chuyển động dọc theo phương \(x\) là
+\begin{equation}
+x'=x-vt.
+\label{eq:sr1-galilean-space}
+\end{equation}
+Giả định Newton ít lộ rõ hơn là mọi đồng hồ được chỉnh đúng đều vẫn đồng bộ một cách phổ quát:
+\begin{equation}
+t'=t.
+\label{eq:sr1-absolute-time}
+\end{equation}
+
+\subsection{Nguyên lý tương đối}
+
+Thuyết tương đối không bắt đầu từ Einstein. Galileo và Newton đã dùng nguyên lý rằng các định luật vật lý có cùng dạng trong mọi hệ quán tính. Định luật Newton \(F=ma\), định luật hấp dẫn tỉ lệ nghịch với bình phương khoảng cách, và lực Coulomb không khoác lên một dạng mới chỉ vì phòng thí nghiệm chuyển động thẳng đều.
+
+Phép kiểm tra quen thuộc là một toa tàu kín. Nếu đoàn tàu chuyển động êm và các cửa sổ không cho thấy gì ở bên ngoài, thì việc tung hứng diễn ra hệt như trong một căn phòng đứng yên. Các quả bóng bay lên, rơi xuống và trở lại bàn tay theo cách thông thường. Một thí nghiệm bị giới hạn trong toa tàu không thể làm lộ ra vận tốc thẳng đều của nó. Có thể phát hiện gia tốc hoặc chuyển động quay từ bên trong; còn chuyển động tịnh tiến đều thì không.
+
+Einstein thêm một định luật vật lý vào nguyên lý cũ này: ánh sáng trong chân không truyền với tốc độ
+\begin{equation}
+c \simeq 1.86\times 10^5\ {\rm miles/s}
+   \simeq 3.00\times 10^8\ {\rm m/s}.
+\end{equation}
+Nếu đó là một định luật của tự nhiên và các định luật là như nhau trong mọi hệ quán tính, thì mọi người quan sát quán tính đều phải đo được cùng một \(c\).
+
+\section{Vì sao phép biến đổi Galileo thất bại}
+
+Một chiều không gian là đủ để làm lộ ra xung đột. Hãy vẽ một giản đồ không-thời gian với tọa độ ngang \(x\) và tọa độ dọc \(t\). Một xung ánh sáng phát ra từ gốc và truyền sang phải tuân theo
+\begin{equation}
+x=ct.
+\label{eq:sr1-light-right}
+\end{equation}
+Một hệ chuyển động sang phải với tốc độ \(v\) có gốc của nó nằm trên
+\begin{equation}
+x=vt,
+\qquad
+x'=0.
+\label{eq:sr1-moving-origin}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_01.png}
+\caption{Tia sáng chuyển động sang phải và gốc chuyển động \(x=vt\), mà người quan sát trong hệ có dấu phẩy gán nhãn là \(x'=0\).}
+\lectureframe{00:15:24}
+\end{figure}
+
+Áp dụng các quy tắc Galileo \eqref{eq:sr1-galilean-space}--\eqref{eq:sr1-absolute-time} cho tia sáng:
+\begin{align}
+x'&=x-vt=(c-v)t,\\
+t'&=t.
+\end{align}
+Vì thế, người quan sát trong hệ có dấu phẩy sẽ suy ra
+\begin{equation}
+x'=(c-v)t',
+\end{equation}
+nên ánh sáng truyền sang phải sẽ có tốc độ \(c-v\). Đối với một tia truyền sang trái \(x=-ct\),
+\begin{equation}
+x'=-(c+v)t',
+\end{equation}
+độ lớn tốc độ của nó là \(c+v\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_02.png}
+\caption{Phép thế Galileo dự đoán \(c-v\) cho tia sáng truyền sang phải, mâu thuẫn với tốc độ ánh sáng độc lập với hệ quy chiếu.}
+\lectureframe{00:17:23}
+\end{figure}
+
+Quy tắc cộng vận tốc thông thường là một xấp xỉ rất tốt cho chuyển động cơ học chậm, nhưng các phép đo ánh sáng không cho thấy các giá trị dự đoán \(c-v\) và \(c+v\). Cần xem xét lại quy luật biến đổi, chứ không phải tiên đề ánh sáng. Nghi phạm trung tâm là mệnh đề có vẻ vô hại \(t'=t\): nó khẳng định một quan niệm tuyệt đối về tính đồng thời.
+
+\section{Đồng bộ hóa các đồng hồ ở xa}
+
+Để nói rằng hai đồng hồ ở các vị trí khác nhau chỉ cùng một thời gian thì cần một thí nghiệm. Hãy đặt một người quan sát thứ ba ở trung điểm giữa chúng, với các khoảng cách bằng nhau được xác lập bằng thước mét. Bảo hai đồng hồ ở hai đầu phát chớp sáng khi mỗi chiếc chỉ đúng mười hai giờ. Nếu các chớp sáng đến trung điểm cùng lúc, ta gọi hai đồng hồ ấy là đồng bộ.
+
+Đây không phải là một định nghĩa mang tính triết học áp lên vật lý. Đó là một thao tác có thể tái lập được, được tạo nên từ đồng hồ, khoảng cách và tín hiệu ánh sáng.
+
+Bây giờ hãy để một người quan sát đi ngang qua trung điểm đó. Hai chớp sáng đến cùng lúc tại trung điểm đứng yên lại không đến cùng lúc đối với người quan sát đang chuyển động: trong khi ánh sáng đang bay, người ấy chuyển động về phía một chớp và rời xa chớp kia. Vì vậy, những sự kiện được các đồng hồ đứng yên đánh giá là đồng thời lại không đồng thời theo quy trình đồng bộ hóa cũng hoàn toàn hợp lệ của hệ chuyển động.
+
+Trong hệ không dấu phẩy, một đường gồm các sự kiện đồng thời là
+\begin{equation}
+t=\text{constant}.
+\end{equation}
+Đường tương ứng trong hệ có dấu phẩy sẽ bị nghiêng trong giản đồ \(x\)-\(t\). Trước khi hỏi các công thức biến đổi là gì, ta có thể dựng độ nghiêng đó bằng các tín hiệu ánh sáng.
+
+\section{Dựng hệ chuyển động bằng ánh sáng}
+
+Đặt \(c=1\). Ta có thể đo khoảng cách bằng giây ánh sáng khi thời gian được đo bằng giây, hoặc đo thời gian bằng thời gian ánh sáng đi qua một đơn vị độ dài đã chọn. Theo bất kỳ quy ước nào, các tia sáng đều có
+\begin{equation}
+x=\pm t,
+\label{eq:sr1-light-units}
+\end{equation}
+và do đó là các đường \(45^\circ\) trên những trục có cùng tỉ lệ.
+
+Hãy vẽ các tia sáng trước. Sau đó vẽ một họ người quan sát đứng yên trong hệ chuyển động:
+\begin{equation}
+x=vt,\qquad x=vt+1,\qquad x=vt+2.
+\label{eq:sr1-moving-family}
+\end{equation}
+Các đường thế giới của họ song song vì những người quan sát ấy duy trì các khoảng cách cố định trong mạng lưới quán tính của chính mình.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_03.png}
+\caption{Các tia sáng ở góc \(45^\circ\) và các đường thế giới song song \(x=vt\), \(x=vt+1\) và \(x=vt+2\) của mạng tọa độ chuyển động.}
+\lectureframe{00:29:55}
+\end{figure}
+
+\subsection{Fred, Mary và Seymour}
+
+Cho Fred ở trên \(x=vt\), Mary ở trên \(x=vt+1\), và Seymour ở trên \(x=vt+2\). Tại gốc \(O\), Fred gửi một tín hiệu ánh sáng truyền sang phải đến Mary. Seymour gửi một tín hiệu truyền sang trái sao cho hai chớp sáng đến Mary tại cùng một sự kiện \(a\). Theo quy tắc đồng bộ hóa theo trung điểm của hệ chuyển động, sự kiện phát xạ của Seymour \(b\) là đồng thời với phát xạ của Fred tại \(O\). Vì thế, đường thẳng đi qua \(O\) và \(b\) là \(t'=0\).
+
+Sự kiện \(a\) nằm đồng thời trên cả
+\begin{equation}
+x=t
+\end{equation}
+và
+\begin{equation}
+x=vt+1.
+\end{equation}
+Do đó,
+\begin{equation}
+t_a=x_a=\frac{1}{1-v}.
+\label{eq:sr1-event-a}
+\end{equation}
+
+Tia sáng truyền sang trái đi qua \(a\) thỏa mãn
+\begin{equation}
+x+t=x_a+t_a=\frac{2}{1-v}.
+\label{eq:sr1-ab-light}
+\end{equation}
+Sự kiện \(b\) cũng nằm trên đường thế giới của Seymour,
+\begin{equation}
+x-vt=2.
+\label{eq:sr1-seymour-line}
+\end{equation}
+Giải \eqref{eq:sr1-ab-light} và \eqref{eq:sr1-seymour-line} ta được
+\begin{align}
+t_b&=\frac{2v}{1-v^2},\\
+x_b&=\frac{2}{1-v^2}.
+\label{eq:sr1-event-b}
+\end{align}
+Vì vậy, hệ số góc của đường thẳng từ \(O\) đến \(b\) là
+\begin{equation}
+\frac{t_b}{x_b}=v,
+\end{equation}
+nên đường đồng thời của hệ chuyển động là
+\begin{equation}
+t=vx,
+\qquad
+t'=0.
+\label{eq:sr1-moving-simultaneity}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.93\textwidth]{lecture_01_figure_04.png}
+\caption{Phép dựng đồng bộ Fred--Mary--Seymour. Các tín hiệu ánh sáng đến đồng thời xác định \(O\) và \(b\) là đồng thời trong hệ chuyển động, suy ra \(t=vx\).}
+\lectureframe{00:44:38}
+\end{figure}
+
+Hai trục của hệ có dấu phẩy giờ đây có các dạng song hành:
+\begin{align}
+x'=0 &\quad\Longleftrightarrow\quad x=vt,\\
+t'=0 &\quad\Longleftrightarrow\quad t=vx.
+\end{align}
+Chúng là ảnh gương của nhau qua đường ánh sáng truyền sang phải \(x=t\). Hình học ở đây đã thay thế tính đồng thời phổ quát.
+
+\begin{classroomqa}
+\audiencequestion{Điều gì xảy ra với phép dựng khi \(v=1\) hoặc \(v=-1\)?}
+\lecturerresponse{Các mẫu số trong \eqref{eq:sr1-event-a}--\eqref{eq:sr1-event-b} triệt tiêu, và các giao điểm liên quan lùi ra vô cực. Tại \(\lvert v\rvert=1\), một người quan sát vật chất sẽ chuyển động trên một tia sáng và không thể hoàn tất phép trao đổi trung điểm thông thường. Hành vi kỳ dị này là lời cảnh báo hình học đầu tiên rằng \(c\) là một tốc độ giới hạn. \lecturetimestamp{00:40:43}}
+\end{classroomqa}
+
+\section{Suy ra phép biến đổi Lorentz}
+
+Điều kiện \(x'=0\) trên \(x=vt\) đòi hỏi \(x'\) phải chứa thừa số \(x-vt\). Tương tự, \(t'=0\) trên \(t=vx\) đòi hỏi thừa số \(t-vx\). Tính đồng nhất của không-thời gian làm cho phép biến đổi là tuyến tính, nên viết
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)g(v).
+\label{eq:sr1-linear-ansatz}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_05.png}
+\caption{Phép biến đổi tuyến tính được dựng từ hai điều kiện triệt tiêu, với các hệ số tỉ lệ phụ thuộc vận tốc \(f(v)\) và \(g(v)\).}
+\lectureframe{00:49:35}
+\end{figure}
+
+Dọc theo một tia sáng truyền sang phải \(x=t\), tính bất biến của tốc độ ánh sáng đòi hỏi \(x'=t'\). Phương trình~\eqref{eq:sr1-linear-ansatz} khi đó trở thành
+\begin{align}
+x'&=(1-v)x f(v),\\
+t'&=(1-v)x g(v),
+\end{align}
+và do đó
+\begin{equation}
+f(v)=g(v).
+\label{eq:sr1-f-equals-g}
+\end{equation}
+Vì vậy chỉ còn lại một hệ số tỉ lệ chung:
+\begin{align}
+x'&=(x-vt)f(v),\\
+t'&=(t-vx)f(v).
+\label{eq:sr1-direct-unscaled}
+\end{align}
+Đây về cơ bản là lối lập luận cô đọng mà Einstein đã dùng trong bài báo đầu tiên của ông về thuyết tương đối: tính đồng thời theo thao tác và tốc độ ánh sáng bất biến quyết định phép biến đổi.
+
+\subsection{Tính đối ứng xác định hệ số tỉ lệ}
+
+Không có hệ quán tính nào được ưu tiên là \emph{thực sự chuyển động}. Nếu hệ có dấu phẩy chuyển động với \(v\) so với hệ không dấu phẩy, thì hệ không dấu phẩy chuyển động với \(-v\) so với hệ có dấu phẩy. Vì thế, ánh xạ nghịch đảo phải có cùng dạng khi đảo dấu của \(v\):
+\begin{align}
+x&=(x'+vt')f(v),\\
+t&=(t'+vx')f(v).
+\label{eq:sr1-inverse-unscaled}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_06.png}
+\caption{Tính đối ứng cho phép biến đổi nghịch đảo bằng cách đảo dấu vận tốc tương đối mà vẫn giữ nguyên cùng một hệ số tỉ lệ.}
+\lectureframe{00:55:12}
+\end{figure}
+
+Thế \eqref{eq:sr1-direct-unscaled} vào phương trình đầu tiên của \eqref{eq:sr1-inverse-unscaled}:
+\begin{align}
+x
+&=\left[(x-vt)f(v)+v(t-vx)f(v)\right]f(v)\\
+&=x(1-v^2)f(v)^2.
+\end{align}
+Vì phép hợp thành này phải là ánh xạ đồng nhất,
+\begin{equation}
+(1-v^2)f(v)^2=1,
+\end{equation}
+và do đó
+\begin{equation}
+f(v)=\pm\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr1-factor-roots}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_07.png}
+\caption{Hợp thành phép biến đổi thuận và nghịch xác định độ lớn của hệ số chung \(f(v)\).}
+\lectureframe{00:59:31}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao loại bỏ căn bậc hai âm trong \eqref{eq:sr1-factor-roots}?}
+\lecturerresponse{Khi vận tốc tương đối bằng không, phép biến đổi phải tiến liên tục đến ánh xạ đồng nhất, \(x'=x\) và \(t'=t\). Nhánh âm thay vào đó cho \(x'=-x\) và \(t'=-t\), tức là đảo ngược cả hai hướng tọa độ. Chọn nó sẽ đưa vào một phép phản xạ đột ngột thay vì một hệ chuyển động liên tục. \lecturetimestamp{00:59:27}}
+\end{classroomqa}
+
+Với nhánh dương, phép biến đổi Lorentz trong đơn vị \(c=1\) là
+\begin{align}
+x'&=\frac{x-vt}{\sqrt{1-v^2}},&
+t'&=\frac{t-vx}{\sqrt{1-v^2}}.
+\label{eq:sr1-lorentz-c1}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_08.png}
+\caption{Phép biến đổi Lorentz hoàn chỉnh trong các đơn vị mà tốc độ ánh sáng bằng một.}
+\lectureframe{01:02:05}
+\end{figure}
+
+\subsection{Khôi phục các đơn vị thông thường}
+
+Phân tích thứ nguyên khôi phục các đơn vị thông thường. Mẫu số chỉ có thể phụ thuộc vào tỉ số không thứ nguyên \(v^2/c^2\), còn \(vx\) trong phương trình thời gian phải trở thành \(vx/c^2\):
+\begin{align}
+x'&=\gamma(x-vt),&
+t'&=\gamma\left(t-\frac{vx}{c^2}\right),
+\label{eq:sr1-lorentz-dimensional}\\
+\gamma&=\frac{1}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr1-gamma}
+\end{align}
+Phép biến đổi nghịch đảo là
+\begin{align}
+x&=\gamma(x'+vt'),&
+t&=\gamma\left(t'+\frac{vx'}{c^2}\right).
+\label{eq:sr1-lorentz-inverse-dimensional}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_09.png}
+\caption{Các công thức Lorentz với \(c\) được khôi phục: \(v^2/c^2\) chi phối hệ số tỉ lệ và \(vx/c^2\) trộn vị trí vào thời gian.}
+\lectureframe{01:05:01}
+\end{figure}
+
+Với \(v\ll c\),
+\begin{equation}
+\gamma=1+\frac{1}{2}\frac{v^2}{c^2}+O\!\left(\frac{v^4}{c^4}\right),
+\end{equation}
+và phép biến đổi rút về
+\begin{equation}
+x'\approx x-vt,
+\qquad
+t'\approx t.
+\end{equation}
+Ở các tốc độ trong điều kiện trên Trái Đất, các tỉ số này thường rất nhỏ, giải thích thành công của động học Newton. Gần \(c\), các hiệu chỉnh trở nên lớn.
+
+Chuyển động đã được chọn dọc theo trục \(x\). Một thanh đo theo phương ngang không thể phân biệt hệ quán tính này với hệ kia mà không vi phạm tính đối ứng, nên
+\begin{equation}
+y'=y,
+\qquad
+z'=z.
+\end{equation}
+
+\section{Đo một thanh đang chuyển động}
+
+Chiều dài là khoảng cách giữa hai đầu mút được đo tại cùng một thời điểm trong hệ thực hiện phép đo. Nó không có nghĩa là kích thước góc biểu kiến của một vật được chụp ảnh, vì độ trễ do thời gian truyền của ánh sáng tạo ra một bài toán quang học riêng biệt.
+
+Xét một thanh đứng yên trong hệ không phẩy với hai đầu mút
+\begin{equation}
+x=0,
+\qquad
+x=1.
+\end{equation}
+Người quan sát trong hệ có phẩy đo các biến cố ở hai đầu mút trên cùng một lát cắt đồng thời của hệ đó, chẳng hạn \(t'=0\). Ở đầu xa \(x=1\),
+\begin{equation}
+t'=0
+\quad\Longrightarrow\quad
+t=\frac{vx}{c^2}.
+\end{equation}
+Tạm thời trở lại \(c=1\), biến cố này có \(t=v\), và
+\begin{equation}
+x'=\frac{x-vt}{\sqrt{1-v^2}}
+   =\frac{1-v^2}{\sqrt{1-v^2}}
+   =\sqrt{1-v^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_10.png}
+\caption{Các đường thế giới \(x=0\) và \(x=1\) của một thanh đứng yên trong hệ không phẩy; một người quan sát chuyển động phải so sánh chúng trên một lát cắt \(t'\).}
+\lectureframe{01:11:14}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_11.png}
+\caption{Phép đo đồng thời hai đầu mút trong hệ có phẩy cho hệ số co \(\sqrt{1-v^2}\) trong hệ đơn vị \(c=1\).}
+\lectureframe{01:16:03}
+\end{figure}
+
+Khôi phục đơn vị và lấy độ dài riêng tổng quát \(L_0\),
+\begin{equation}
+L=\frac{L_0}{\gamma}
+ =L_0\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr1-length-contraction}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Nếu đầu xa của thanh ở \(x=1\), thì tọa độ của nó chẳng phải cũng phải là \(x'=1\) sao?}
+\lecturerresponse{Không. Thanh đứng yên trong hệ không phẩy, nên \(x=0\) và \(x=1\) gắn nhãn các đầu mút cố định của nó ở đó. Tọa độ có phẩy của đầu xa thay đổi theo thời gian. Giá trị của nó trên lát cắt đo \(t'=0\) chính là điều mà phép biến đổi Lorentz tính ra. \lecturetimestamp{01:14:24}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Làm sao mỗi quan sát viên quán tính lại có thể nhất quán nói rằng thanh của người kia ngắn hơn?}
+\lecturerresponse{Họ đo các cặp biến cố đầu mút khác nhau. Quan sát viên không phẩy đòi hỏi \(t\) bằng nhau; quan sát viên có phẩy đòi hỏi \(t'\) bằng nhau. Vì tính đồng thời phụ thuộc vào hệ quy chiếu, hai cặp đầu mút đó không phải là cùng một cặp biến cố. Do đó tính tương hỗ không tạo ra mâu thuẫn nào. \lecturetimestamp{01:16:28}}
+\end{classroomqa}
+
+Cách phát biểu theo thao tác đo này đáng được nêu tường minh. Hãy bố trí các đồng hồ đã đồng bộ và các trợ lý dọc theo hệ quy chiếu dùng để đo. Vào một thời điểm địa phương đã định trước, mỗi trợ lý ghi lại vị trí của đầu mút đi ngang gần mình. Lấy hiệu hai vị trí được ghi đồng thời đó cho ta chiều dài của thanh trong hệ ấy. Không điều gì phụ thuộc vào việc thanh trông ra sao.
+
+\begin{classroomqa}
+\audiencequestion{Khi \(c=1\), có phải một thanh đơn vị phải dài một giây ánh sáng không?}
+\lecturerresponse{Chỉ nếu thời gian được đo bằng giây. Thay vào đó, ta có thể dùng mét cho độ dài và đo thời gian bằng thời gian ánh sáng truyền qua một mét. Việc đặt \(c=1\) gắn đơn vị thời gian và độ dài với nhau; nó không quy định phải chọn đơn vị vật lý nào trước. \lecturetimestamp{01:21:17}}
+\end{classroomqa}
+
+\section{Một đồng hồ chuyển động và câu hỏi về cặp song sinh}
+
+Bây giờ hãy theo dõi một đồng hồ đứng yên trong hệ có phẩy. Dọc theo đường thế giới của nó,
+\begin{equation}
+x'=0.
+\end{equation}
+Hãy so sánh biến cố tại đó nó chỉ \(t'=1\) với gốc tọa độ. Phép biến đổi nghịch cho
+\begin{equation}
+t=\gamma\left(t'+\frac{vx'}{c^2}\right)=\gamma.
+\end{equation}
+Vì vậy, một đơn vị thời gian trôi qua trên đồng hồ chuyển động tương ứng với \(\gamma\) đơn vị thời gian tọa độ của hệ không phẩy:
+\begin{equation}
+\Delta t=\gamma\,\Delta\tau,
+\qquad
+\Delta\tau=\frac{\Delta t}{\gamma}.
+\label{eq:sr1-time-dilation}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_12.png}
+\caption{Một đồng hồ được mang theo trên \(x'=0\) ghi lại thời gian trôi qua ít hơn giữa cùng hai biến cố so với thời gian tọa độ của hệ đứng yên: \(t=\gamma t'\).}
+\lectureframe{01:26:42}
+\end{figure}
+
+Hiệu ứng này liên quan đến mọi đồng hồ vật lý, chứ không chỉ một cơ cấu được dán nhãn là đồng hồ. Một đồng hồ đeo tay, một chuyển mức nguyên tử, sự trao đổi chất và sự lão hóa sinh học đều tuân theo cùng một thời gian riêng. Một chiếc đồng hồ rẻ tiền mua trên đường phố New York sẽ không thoát khỏi thuyết tương đối chỉ vì nó là một chiếc Rolex rởm; nó có thể chạy không chính xác, nhưng bất kể nó dùng quá trình nào, quá trình ấy vẫn chịu cùng một động học.
+
+\begin{classroomqa}
+\audiencequestion{Nếu mỗi quan sát viên quán tính đều thấy đồng hồ của người kia chạy chậm, thì tại sao người song sinh đi du hành lại trở về trẻ hơn?}
+\lecturerresponse{Một chuyến khứ hồi không phải là sự so sánh giữa hai đường thế giới quán tính tương đương toàn cục. Người du hành phải quay đầu và chuyển sang một hệ quy chiếu quán tính khác, trong khi người ở nhà vẫn ở trên một đường thế giới quán tính duy nhất. Sự quay đầu phá vỡ đối xứng trao đổi, nên các thời gian riêng tích lũy có thể khác nhau. \lecturetimestamp{01:26:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có phải chính gia tốc trong lúc quay đầu là nguyên nhân gây ra chênh lệch tuổi tác không?}
+\lecturerresponse{Gia tốc đánh dấu nơi đối xứng bị phá vỡ, nhưng chênh lệch tuổi tác được tính bằng cách lấy tích phân thời gian riêng dọc theo toàn bộ các đường đi. Việc quay đầu có thể được làm rất ngắn hoặc được xem như sự chuyển đổi giữa các chặng quán tính; các đường đi không-thời gian không bằng nhau vẫn có các thời gian riêng không bằng nhau. \lecturetimestamp{01:29:20}}
+\end{classroomqa}
+
+\section{Hình học bất biến}
+
+Sơ đồ giãn thời gian trông nghịch lý nếu đọc nó bằng hình học Euclid. Đường nghiêng có vẻ như cạnh huyền, nhưng lại ứng với ít thời gian riêng hơn đường thẳng đứng. Cách giải quyết không phải là một mẹo trong đại số. Không-thời gian có một metric khác.
+
+Trong một mặt phẳng Euclid, một phép quay làm thay đổi \(x\) và \(y\) nhưng bảo toàn
+\begin{equation}
+x'^2+y'^2=x^2+y^2.
+\label{eq:sr1-euclidean-invariant}
+\end{equation}
+Điều tự nhiên là kiểm tra xem một phép biến đổi Lorentz có bảo toàn \(t^2+x^2\) hay không. Nó không bảo toàn đại lượng đó. Trong hệ đơn vị \(c=1\),
+\begin{align}
+t'^2
+&=\frac{t^2-2vtx+v^2x^2}{1-v^2},\\
+x'^2
+&=\frac{x^2-2vtx+v^2t^2}{1-v^2}.
+\end{align}
+Cộng chúng lại thì các hệ số không đúng. Ngược lại, phép trừ triệt tiêu các hạng chéo và cho
+\begin{align}
+t'^2-x'^2
+&=
+\frac{t^2-2vtx+v^2x^2-x^2+2vtx-v^2t^2}{1-v^2}\\
+&=t^2-x^2.
+\label{eq:sr1-interval-invariance}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_13.png}
+\caption{Lấy hiệu các tọa độ đã biến đổi bình phương triệt tiêu các hạng chéo và làm lộ ra đại lượng bất biến \(t^2-x^2\).}
+\lectureframe{01:38:07}
+\end{figure}
+
+Các tọa độ là các thành phần phụ thuộc hệ quy chiếu. Tổ hợp
+\begin{equation}
+\Delta s^2=c^2\Delta t^2-\Delta x^2
+\label{eq:sr1-spacetime-interval}
+\end{equation}
+có cùng giá trị trong mọi hệ quy chiếu quán tính. Với nhiều chiều không gian hơn,
+\begin{equation}
+\Delta s^2
+=c^2\Delta t^2-\Delta x^2-\Delta y^2-\Delta z^2.
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Tại sao lại hợp lệ khi từ bỏ quy tắc hình học thông thường rằng cạnh huyền dài hơn?}
+\lecturerresponse{Quy tắc đó thuộc về metric Euclid xác định dương. Các tọa độ ở đây được định nghĩa theo thao tác bằng thước, đồng hồ và tín hiệu ánh sáng, và phép biến đổi của chúng bảo toàn một hiệu các bình phương. Hình học Minkowski không được giả định để né tránh nghịch lý; nó được rút ra từ những phép đo đó. \lecturetimestamp{01:43:21}}
+\end{classroomqa}
+
+\subsection{Thời gian riêng}
+
+Xét hai biến cố trên đường thế giới của một đồng hồ, hãy chọn hệ nghỉ của đồng hồ. Khi đó \(\Delta x'=0\), nên tính bất biến cho
+\begin{equation}
+c^2\Delta\tau^2
+=c^2\Delta t^2-\Delta x^2,
+\end{equation}
+hay
+\begin{equation}
+\Delta\tau
+=\sqrt{\Delta t^2-\frac{\Delta x^2}{c^2}}.
+\label{eq:sr1-proper-time}
+\end{equation}
+Đây là thời gian thực sự mà đồng hồ ghi lại giữa hai biến cố.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_14.png}
+\caption{Trong hệ nghỉ của đồng hồ, độ phân cách không gian triệt tiêu, nên khoảng không-thời gian bất biến trở thành bình phương của thời gian riêng của nó.}
+\lectureframe{01:41:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Thời gian riêng phải là \(t^2-x^2/c^2\) hay căn bậc hai của nó?}
+\lecturerresponse{Hiệu các bình phương là bình phương của thời gian riêng. Thời gian trôi qua mà một đồng hồ chỉ là \(\tau=\sqrt{t^2-x^2/c^2}\) đối với các độ phân cách được đo từ một gốc chung. Căn bậc hai bị thiếu trong cách phát biểu ban đầu phải được khôi phục. \lecturetimestamp{01:51:02}}
+\end{classroomqa}
+
+\subsection{Phân cách dạng thời, null và dạng không gian}
+
+Hai biến cố phân biệt có thể có khoảng không-thời gian bằng 0. Trong hệ đơn vị \(c=1\),
+\begin{equation}
+\Delta t^2-\Delta x^2=0
+\quad\Longleftrightarrow\quad
+\Delta x=\pm\Delta t.
+\end{equation}
+Những biến cố như vậy được nối với nhau bởi một tia sáng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_15.png}
+\caption{Các sự kiện cách nhau kiểu không nằm trên \(x=\pm t\), tại đó khoảng không-thời gian và thời gian riêng của quỹ đạo ánh sáng đều bằng không.}
+\lectureframe{01:46:40}
+\end{figure}
+
+Nếu ánh sáng có thể mang theo một đồng hồ thông thường, thì sẽ không có một nhịp thời gian riêng nào xảy ra giữa lúc phát và lúc hấp thụ. Đây không phải là một hệ nghỉ hợp lệ của ánh sáng; đó là phát biểu giới hạn rằng mọi đoạn null đều có thời gian riêng bằng 0.
+
+Các tia sáng chia không-thời gian thành ba lớp bất biến:
+\begin{align}
+c^2\Delta t^2-\Delta x^2&>0
+&&\text{timelike},\\
+c^2\Delta t^2-\Delta x^2&=0
+&&\text{null},\\
+c^2\Delta t^2-\Delta x^2&<0
+&&\text{spacelike}.
+\end{align}
+Một đồng hồ vật lý có thể nối các biến cố phân cách dạng thời, và khoảng bất biến dương xác định thời gian riêng của nó. Không vật thể nào dưới tốc độ ánh sáng có thể nối các biến cố phân cách dạng không gian. Với một cặp dạng không gian, ta có thể chọn một hệ trong đó các biến cố là đồng thời và định nghĩa khoảng cách riêng
+\begin{equation}
+\ell_{\rm proper}
+=\sqrt{\Delta x^2-c^2\Delta t^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_01_figure_16.png}
+\caption{Nón ánh sáng tách các cặp dạng thời mà một đồng hồ có thể nối khỏi các cặp dạng không gian mà không vật thể nào dưới tốc độ ánh sáng có thể nối.}
+\lectureframe{01:48:47}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Khi nào đại lượng bất biến nên được gọi là thời gian riêng, và khi nào nên được gọi là khoảng cách riêng?}
+\lecturerresponse{Với một cặp dạng thời, có một hệ nghỉ trong đó cả hai biến cố xảy ra tại cùng một chỗ, và khoảng đó cho thời gian riêng. Với một cặp dạng không gian, có một hệ trong đó cả hai xảy ra tại cùng một thời điểm, và đại lượng bất biến với dấu ngược lại cho khoảng cách riêng của chúng. Phân cách null là ranh giới giữa hai trường hợp đó. \lecturetimestamp{01:47:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Khi các đơn vị không được chọn sao cho \(c=1\), thì \(c\) nằm ở đâu?}
+\lecturerresponse{Đại lượng bất biến là \(c^2\Delta t^2-\Delta x^2\), với thứ nguyên độ dài bình phương. Chia cho \(c^2\) ta được \(\Delta\tau^2=\Delta t^2-\Delta x^2/c^2\), với thứ nguyên thời gian bình phương. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\section{Đối xứng Lorentz và ý nghĩa lịch sử của nó}
+
+\begin{classroomqa}
+\audiencequestion{Có thể xem một phép biến đổi Lorentz như một phép quay không?}
+\lecturerresponse{Có, nhưng không phải là một phép quay Euclid thông thường. Nó là một phép quay hyperbolic bảo toàn \(t^2-x^2\). Về mặt lịch sử, có thể mô tả nó như một phép quay qua một góc ảo; độ nhanh cho tham số hóa thực hiện đại. \lecturetimestamp{01:51:40}}
+\end{classroomqa}
+
+Con đường của Einstein gắn chặt với điện từ học. Theo hồi tưởng về sau của ông, ngay từ khi còn là thiếu niên ông đã tự hỏi điều gì sẽ xảy ra nếu mình đuổi theo một sóng ánh sáng. Phép trừ vận tốc Galile sẽ khiến sóng có vẻ đứng yên, nhưng các phương trình Maxwell không có một sóng ánh sáng dao động đứng yên tương ứng nào trong chân không. Xung đột đó chỉ ra vấn đề nằm ở động học, chứ không phải ở một tính chất cơ học kỳ lạ nào của các thước đo.
+
+\begin{classroomqa}
+\audiencequestion{Lập luận của Einstein chủ yếu có phải là phản ứng trước các thí nghiệm như Michelson--Morley không?}
+\lecturerresponse{Bối cảnh thực nghiệm có tầm quan trọng về mặt lịch sử, nhưng lời chứng của chính Einstein nhấn mạnh cấu trúc của các phương trình Maxwell và thí nghiệm tư duy đuổi theo một chùm sáng. Mức độ ông biết đến hay dựa vào các kết quả giao thoa kế cụ thể đến đâu vẫn còn được tranh luận về mặt lịch sử, nên điểm vật lý cốt lõi là xung đột đối xứng giữa Maxwell và các phép biến đổi Galile. \lecturetimestamp{01:52:04}}
+\end{classroomqa}
+
+Các phương trình Maxwell bất biến dưới các phép biến đổi Lorentz chứ không phải các phép biến đổi Galile. Lorentz và FitzGerald đã tìm ra các công thức co liên quan từ trước, trong khi vẫn giữ lại ête và diễn giải sự co như một biến dạng động lực học do chuyển động xuyên qua môi trường ấy gây ra. Theo quan điểm đó, hiệu ứng có thể chỉ là một đáp ứng vật liệu gần đúng, với các hiệu chỉnh bổ sung nữa.
+
+Bước quyết định của Einstein là biến nguyên lý tương đối và tốc độ ánh sáng bất biến thành những nguyên lý động học chính xác. Khi đó, co độ dài và giãn thời gian áp dụng cho mọi thanh và đồng hồ thích hợp vì chúng biểu thị hình học liên hệ giữa các hệ quán tính, chứ không phải một lực đặc biệt do ête tác dụng. Nhiệm vụ tiếp theo là phát biểu chuyển động của hạt trong hình học này.

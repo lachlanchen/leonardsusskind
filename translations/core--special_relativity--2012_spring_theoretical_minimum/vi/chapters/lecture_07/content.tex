@@ -1,0 +1,948 @@
+\chapter{Bất biến chuẩn và sự cần thiết của thế vectơ}
+
+Trước khi bắt đầu vào phần vật lý, có hai việc thực tế cần nói. Buổi học tiếp theo sẽ nghỉ trong thời gian giảng viên ở Bỉ, nhưng khóa học sẽ tiếp tục cho đến khi đủ cả mười bài giảng. Các ghi chú viết tay cho buổi tối nay cũng đã được chuẩn bị rất gấp; ai sẵn lòng quét chúng lên trang web của lớp sẽ cứu chúng khỏi một máy quét chậm đến kinh ngạc.
+
+Bài giảng trước khá dày đặc về mặt toán học. Thay vì vờ như không phải vậy, chúng ta sẽ đi lại phép tính trung tâm của nó thêm một lần nữa. Mục tiêu của khóa học là một mức tối thiểu lý thuyết đúng nghĩa: đủ cấu trúc để đi tiếp lên mức sau. Nếu có thể bỏ phần toán mà không làm mất phần vật lý, thì hoàn toàn có lý do để bỏ nó đi. Nhưng các định luật chính xác đòi hỏi những phát biểu định lượng, và những phát biểu định lượng đòi hỏi toán học. Ký hiệu có thể trở nên rắc rối; điều đó không phải là bằng chứng cho thấy các nhà vật lý đang cố che giấu môn học đằng sau một thứ ngôn ngữ kiểu giáo sĩ.
+
+Có lẽ vẫn còn một cách phát biểu đơn giản hơn về tự nhiên cần được tìm ra. Như Feynman từng đùa, ta có thể bình phương mọi phương trình của vật lý, cộng các bình phương ấy lại, rồi đặt tổng bằng không. Làm vậy cho ra một phương trình, vì khi đó từng bình phương đều phải triệt tiêu, nhưng không đem lại hiểu biết mới nào. Tính đơn giản có nghĩa là tìm ra ý tưởng tổ chức, chứ không chỉ nén phần trình bày ký hiệu. Khi một người nghe phản đối gợi ý rằng một ý tưởng như thế nhất thiết phải đến từ người trẻ, điểm ấy được chấp nhận ngay: tuổi tác không liên quan đến sự thấu suốt.
+
+\lectureoverview{Trước hết chúng ta sẽ khôi phục ký hiệu chỉ số cần để nhận ra các vô hướng Lorentz. Sau đó ta phát biểu bốn nguyên lý cho một lý thuyết tương đối tính, lặp lại đầy đủ phép suy ra đối với hạt tích điện, và cuối cùng phát hiện bất biến chuẩn theo hai cách: như một số hạng ở đầu mút trong tác dụng và như tính bất biến của tenxơ trường điện từ.}
+
+\section{Xem lại ngôn ngữ chỉ số}
+
+\subsection{Vì sao một số chỉ số ở trên}
+
+Đặt
+\begin{equation}
+x^\mu=(t,x,y,z),
+\qquad
+\mu=0,1,2,3,
+\end{equation}
+với metric
+\begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr7-metric}
+\end{equation}
+Tọa độ và độ dời tọa độ được gán chỉ số trên:
+\begin{equation}
+dx^\mu=(dt,dx,dy,dz).
+\end{equation}
+Các đạo hàm theo những tọa độ đó mang chỉ số dưới:
+\begin{equation}
+\partial_\mu
+\equiv
+\frac{\partial}{\partial x^\mu}.
+\label{eq:sr7-gradient}
+\end{equation}
+Việc gọi họ nào là trên và họ nào là dưới là một quy ước, cũng giống như tên gọi trái và phải là quy ước. Tuy nhiên, một khi đã chọn, quy ước ấy phải được tuân theo nhất quán vì hai họ biến đổi khác nhau.
+
+\begin{classroomqa}
+\audiencequestion{Khi nào một chỉ số nên được viết ở trên, và khi nào nó nên ở dưới?}
+\lecturerresponse{Tọa độ, độ dời và các đối tượng biến đổi giống như chúng được gán chỉ số trên. Đạo hàm và các đối tượng biến đổi giống như đạo hàm được gán chỉ số dưới. Việc chọn họ nào được gọi là trên là quy ước, nhưng sự phân biệt giữa hai định luật biến đổi thì không phải. \lecturetimestamp{00:05:03}}
+\end{classroomqa}
+
+Đối với một hàm vô hướng \(s(x)\), vi phân toàn phần là
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial x^\mu}\,dx^\mu
+=
+\partial_\mu s\,dx^\mu.
+\label{eq:sr7-total-differential}
+\end{equation}
+Viết tường minh, ta có
+\begin{equation}
+ds
+=
+\frac{\partial s}{\partial t}\,dt
++\frac{\partial s}{\partial x}\,dx
++\frac{\partial s}{\partial y}\,dy
++\frac{\partial s}{\partial z}\,dz.
+\end{equation}
+Biểu thức gọn nói đúng y như vậy. Đây không phải là một định luật mới; nó là một cách để nhìn ra cấu trúc vô hướng mà không phải mang theo bốn hạng trong mọi dòng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_01.png}
+\caption{Vi phân vô hướng được tạo thành từ một gradient chỉ số dưới và một độ dời chỉ số trên.}
+\lectureframe{00:08:20}
+\end{figure}
+
+Quy ước của Einstein nay là trực tiếp: một chỉ số lặp lại một lần ở trên và một lần ở dưới thì được lấy tổng. Vì thế, phép co trong
+\eqref{eq:sr7-total-differential} là một vô hướng. Có một cách diễn giải hình học sâu hơn về vectơ và đồng vectơ, nhưng cuộc thảo luận ấy được hoãn đến thuyết tương đối rộng.
+
+\subsection{Nâng một chỉ số}
+
+Mọi bốn-vectơ đều có dạng chỉ số trên và chỉ số dưới liên hệ với nhau bởi metric:
+\begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\end{equation}
+Với \eqref{eq:sr7-metric},
+\begin{equation}
+A_0=-A^0,
+\qquad
+A_m=A^m,
+\qquad m=1,2,3.
+\label{eq:sr7-lowering}
+\end{equation}
+Vì vậy, việc nâng hoặc hạ một chỉ số làm đổi dấu thành phần thời gian và không làm gì với các thành phần không gian. Quy tắc tương tự cũng áp dụng cho đạo hàm:
+\begin{equation}
+\begin{aligned}
+\partial_\mu
+&=
+\left(
+\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right),\\[0.5em]
+\partial^\mu
+&=
+\left(
+-\frac{\partial}{\partial t},
+\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},
+\frac{\partial}{\partial z}
+\right).
+\end{aligned}
+\label{eq:sr7-raised-gradient}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_02.png}
+\caption{Các toán tử đạo hàm chỉ số dưới và chỉ số trên; chỉ thành phần thời gian đổi dấu.}
+\lectureframe{00:12:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Một đạo hàm riêng có luôn mang chỉ số dưới không, và nó cũng có thể được nâng lên không?}
+\lecturerresponse{Toán tử \(\partial/\partial x^\mu\) tự nhiên là
+\(\partial_\mu\), một đồng vectơ. Áp dụng metric cho ta
+\(\partial^\mu=\eta^{\mu\nu}\partial_\nu\); trong không-thời gian phẳng, điều này chỉ đơn thuần đảo dấu thành phần thời gian. \lecturetimestamp{00:11:00}}
+\end{classroomqa}
+
+Khoảng cách bất biến là ví dụ quen thuộc:
+\begin{equation}
+x_\mu x^\mu
+=
+x^2+y^2+z^2-t^2.
+\label{eq:sr7-interval}
+\end{equation}
+Phép co của một chỉ số trên với một chỉ số dưới tạo ra một vô hướng Lorentz. Quy tắc nhận biết đơn giản này là lý do phải mang theo ký hiệu một cách cẩn thận đến vậy.
+
+\section{Bốn nguyên lý để xây dựng một lý thuyết}
+
+Giả sử một thí nghiệm bộc lộ một hiện tượng mới và ta muốn xây dựng một lý thuyết cho nó. Bốn nguyên lý định hướng sự tìm kiếm. Rốt cuộc chúng có thể cần được tinh chỉnh, nhưng hiện nay mọi lý thuyết cơ bản thành công đều phù hợp với khuôn mẫu của chúng.
+
+\subsection{Nguyên lý tác dụng}
+
+Yêu cầu thứ nhất là phải có một tác dụng. Đối với cơ học hạt,
+\begin{equation}
+I[x]
+=
+\int dt\,L(x,\dot x),
+\label{eq:sr7-particle-action-general}
+\end{equation}
+và quỹ đạo vật lý là dừng dưới những biến phân giữ cố định các đầu mút của nó:
+\begin{equation}
+\delta I=0.
+\end{equation}
+Các phương trình thu được là
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+\frac{\partial L}{\partial x^m}.
+\label{eq:sr7-EL}
+\end{equation}
+
+Nguyên lý tác dụng không phải là một thứ trang sức thẩm mỹ. Nó là khuôn khổ nối các đối xứng với các định luật bảo toàn. Đối xứng tịnh tiến theo thời gian của một tác dụng dẫn đến bảo toàn năng lượng; các phép tịnh tiến trong không gian dẫn đến bảo toàn động lượng; những đối xứng liên quan làm nền cho các đại lượng bảo toàn khác. Bản thân tác dụng không phải là định luật bảo toàn, nhưng nó là cấu trúc thông qua đó đối xứng trở thành định luật ấy.
+
+\subsection{Tính địa phương}
+
+Yêu cầu thứ hai là tính địa phương. Nếu một điểm trên dây đàn violon bị nhiễu loạn, đoạn lân cận phản ứng trước. Đoạn lân cận của nó phản ứng tiếp theo, và nhiễu loạn lan truyền. Hiệu ứng cuối cùng có thể đến toàn bộ sợi dây, nhưng ảnh hưởng trực tiếp trong thời gian ngắn là địa phương.
+
+Đối với một hạt, tính địa phương được mã hóa bởi một Lagrangian được lấy dọc theo quỹ đạo. Nó phụ thuộc vào vị trí và vận tốc tại cùng một thời điểm, chứ không phụ thuộc vào những cặp thời điểm xa nhau tùy ý. Đối với một trường \(\phi(x)\),
+\begin{equation}
+I[\phi]
+=
+\int d^4x\,
+\mathcal L\!\left(\phi,\partial_\mu\phi\right).
+\label{eq:sr7-local-field-action}
+\end{equation}
+Mật độ tại một biến cố phụ thuộc vào trường và các đạo hàm bậc nhất của nó ngay tại đó. Nó không chứa tích trực tiếp của trường ở đây với trường tại một điểm xa xôi không liên hệ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_03.png}
+\caption{Các tác dụng của hạt và của trường được trình bày bên dưới nguyên lý tính địa phương.}
+\lectureframe{00:19:30}
+\end{figure}
+
+Đây là lý do các phương trình chuyển động địa phương là các phương trình vi phân. Các đạo hàm so sánh những giá trị lân cận vô cùng gần. Một phương án phi địa phương có thể liên hệ gia tốc lúc này với một lực tại một thời điểm hoàn toàn khác, hoặc liên hệ các vận tốc ở hai thời điểm xa nhau với một lực ở thời điểm thứ ba. Những định luật như vậy có thể hình dung được về mặt toán học, nhưng tính địa phương loại trừ chúng.
+
+\begin{classroomqa}
+\audiencequestion{Rối lượng tử có mâu thuẫn với nguyên lý tính địa phương này không?}
+\lecturerresponse{Không, theo nghĩa động lực học đang được dùng ở đây. Rối tạo ra các tương quan, nhưng một thao tác địa phương của Alice không thể được dùng để làm thay đổi trạng thái rút gọn của Bob hay gửi cho ông ấy một tín hiệu có thể điều khiển được một cách tức thời. Phép tương tự đồng xu nickel và dime làm nổi bật sự phân biệt ấy: nhìn một đồng xu cho biết người kia có đồng xu tương quan nào, nhưng không tác động lên đồng xu ở xa. Các tương quan lượng tử phong phú hơn phép tương tự cổ điển đó, tuy vậy chúng vẫn không cung cấp khả năng truyền tín hiệu siêu ánh sáng. \lecturetimestamp{00:20:02}}
+\end{classroomqa}
+
+\subsection{Bất biến Lorentz}
+
+Yêu cầu thứ ba là các định luật có cùng dạng trong mọi hệ quy chiếu quán tính. Quy tắc xây dựng thực hành rất đơn giản: Lagrangian phải là một vô hướng Lorentz, để tác dụng là bất biến. Các phép co chỉ số trên--dưới như \(\partial_\mu\phi\,\partial^\mu\phi\) cung cấp các khối xây dựng.
+
+Trong thuyết tương đối rộng, phát biểu này được mở rộng. Hàm dưới dấu tích phân là một mật độ vô hướng, và tính bất biến được mở rộng từ các phép biến đổi Lorentz sang các phép biến đổi tọa độ tùy ý. Sự tinh chỉnh đó không thay thế nguyên lý hiện tại; nó là dạng của nguyên lý ấy trong không-thời gian cong.
+
+\begin{classroomqa}
+\audiencequestion{Bất biến Lorentz có phải chỉ là một quy tắc của thuyết tương đối hẹp, chứ không phải một nguyên lý thật sự tổng quát không?}
+\lecturerresponse{Đối với một bài toán không hấp dẫn trong không-thời gian phẳng, bất biến Lorentz là phát biểu đúng. Trong không-thời gian cong, ta thay Lagrangian vô hướng bằng mật độ vô hướng thích hợp và đòi hỏi bất biến dưới các phép biến đổi tọa độ tùy ý. Ngoài sự tinh chỉnh đó, cùng một triết lý xây dựng vẫn còn nguyên. \lecturetimestamp{00:24:16}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Thứ nguyên của Lagrangian hạt và của mật độ Lagrangian trường là gì?}
+\lecturerresponse{Một Lagrangian hạt có thứ nguyên của năng lượng. Trong
+\(I=\int dt\,d^3x\,\mathcal L\), độ đo không gian cung cấp một thể tích, nên
+\(\mathcal L\) có thứ nguyên là năng lượng trên một đơn vị thể tích. Lấy tích phân nó theo không gian cho ta một Lagrangian thông thường có thứ nguyên của năng lượng.
+\lecturetimestamp{00:25:49}}
+\end{classroomqa}
+
+\subsection{Bất biến chuẩn}
+
+Yêu cầu thứ tư là bất biến chuẩn. Ở giai đoạn này, nó được cố ý để lại phần nào bí ẩn. Một người nghe đưa ra một dự đoán hữu ích: có lẽ người ta có thể thêm một số thứ nhất định vào Lagrangian mà không làm thay đổi vật lý. Điều đó khá gần, nhưng chính từ nhất định sẽ gánh gần như toàn bộ phần việc.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_04.png}
+\caption{Tính địa phương, cách xây dựng vô hướng, bất biến Lorentz và bất biến chuẩn được tập hợp trên bảng.}
+\lectureframe{00:27:00}
+\end{figure}
+
+Ta hoãn nêu định nghĩa vì phép tính đối với hạt tích điện đã chứa sẵn nó. Lặp lại phép tính ấy không phải là một vòng vo. Nó sẽ cho thấy vì sao thế vectơ bị buộc phải xuất hiện và vì sao, một khi đã được đưa vào, nó chứa một sự dư thừa.
+
+\section{Vì sao thế vectơ là cần thiết}
+
+Đối với một hạt tích điện chuyển động chậm, phương trình đích là định luật lực Lorentz quen thuộc
+\begin{equation}
+m\mathbf a
+=
+e\left(
+\mathbf E+\mathbf v\times\mathbf B
+\right).
+\label{eq:sr7-lorentz-target}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_05.png}
+\caption{Định luật lực quen thuộc, được viết ra trước khi thế vectơ được đưa trở lại.}
+\lectureframe{00:29:08.870}
+\end{figure}
+
+Không có thế vectơ nào xuất hiện trong \eqref{eq:sr7-lorentz-target}. Người ta có thể viết trực tiếp các phương trình chuyển động bằng \(\mathbf E\) và \(\mathbf B\). Khó khăn nằm ở cấp độ cấu trúc hơn: dưới các giả thiết về tính địa phương và bất biến Lorentz được dùng trong bài giảng, tương tác của một hạt tích điện không thể được viết thành một tác dụng đường thế giới trực tiếp chỉ theo các trường đó, vị trí và vận tốc. Cần đến thế \(A_\mu\) để xây dựng sự ghép cặp vô hướng địa phương.
+
+\begin{classroomqa}
+\audiencequestion{Nếu định luật lực đã chỉ chứa \(\mathbf E\) và \(\mathbf B\), tại sao lại đưa vào \(A_\mu\)?}
+\lecturerresponse{Bởi vì một phương trình chuyển động vẫn chưa phải là một nguyên lý tác dụng. Trong khuôn khổ địa phương và bất biến Lorentz của bài giảng này, tác dụng của hạt tích điện đòi hỏi bốn-thế. Chỉ riêng các trường có thể phát biểu lực, nhưng thế mới là đối tượng cho phép suy ra lực từ một tác dụng vô hướng trên đường thế giới. \lecturetimestamp{00:29:06}}
+\end{classroomqa}
+
+\subsection{Tác dụng đường thế giới}
+
+Tác dụng ứng viên có một phần tự do và một phần tương tác:
+\begin{equation}
+I[x]
+=
+-m\int d\tau
+-e\int A_\mu(x)\,dx^\mu.
+\label{eq:sr7-worldline-action}
+\end{equation}
+Hạng thứ nhất cộng độ dài theo thời gian riêng của từng đoạn vi phân trên quỹ đạo. Theo cách xây dựng, nó là một vô hướng. Trong hạng thứ hai,
+\(A_\mu(x)\) được lấy tại biến cố mà hạt chiếm giữ và được co với độ dời \(dx^\mu\). Số gia ấy cũng là một vô hướng và là địa phương dọc theo đường thế giới.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_06.png}
+\caption{Hai phần của tác dụng hạt tích điện và phép co địa phương \(A_\mu(x)dx^\mu\).}
+\lectureframe{00:31:20}
+\end{figure}
+
+\subsection{Viết lại tác dụng theo thời gian thông thường}
+
+Để dùng các phương trình Euler--Lagrange quen thuộc, hãy chia mỗi số gia trên đường thế giới cho \(dt\):
+\begin{equation}
+\frac{d\tau}{dt}
+=
+\sqrt{1-\dot{\mathbf x}^{\,2}},
+\qquad
+\dot{\mathbf x}^{\,2}
+=
+\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+Bốn thành phần của \(dx^\mu/dt\) là
+\begin{equation}
+\frac{dx^\mu}{dt}
+=
+\left(1,\dot x,\dot y,\dot z\right).
+\end{equation}
+Do đó,
+\begin{align}
+I
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-eA_\mu\frac{dx^\mu}{dt}
+\right]
+\notag\\
+&=
+\int dt\,
+\left[
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+-e\left(A_0+A_m\dot x^m\right)
+\right].
+\label{eq:sr7-action-in-t}
+\end{align}
+Vì thế Lagrangian theo thời gian thông thường là
+\begin{equation}
+\begin{aligned}
+L(x,\dot x,t)
+&=
+-m\sqrt{1-\dot{\mathbf x}^{\,2}}
+\\
+&\quad -e\left[
+A_0(x,t)+A_m(x,t)\dot x^m
+\right].
+\end{aligned}
+\label{eq:sr7-lagrangian}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_07.png}
+\caption{Tác dụng đường thế giới được viết lại thành một tích phân theo thời gian thông thường và Lagrangian được đọc ra từ hàm dưới dấu tích phân của nó.}
+\lectureframe{00:35:30}
+\end{figure}
+
+Đến giai đoạn này thì phần giàu tưởng tượng đã kết thúc. Một khi đã chọn Lagrangian, phần còn lại chỉ còn là thao tác cơ học. Những thao tác ấy có thể dài dòng và tẻ nhạt, nhưng sự tẻ nhạt đó không hề vô ích: chính nó làm lộ ra các cấu trúc điện, từ và tương đối tính. Giảng viên đùa rằng việc tìm ra nguyên lý là phần thú vị, còn suy ra mọi hệ quả của nó là việc người ta giao cho nghiên cứu sinh.
+
+\begin{classroomqa}
+\audiencequestion{Trong phép tính này, có thể chuyển chỉ số không gian của \(A_m\) hoặc \(\dot x^m\) lên trên hoặc xuống dưới không?}
+\lecturerresponse{Có. Metric không gian là ma trận đơn vị, nên việc nâng hoặc hạ một chỉ số Latin không làm thay đổi giá trị thành phần của nó. Chỉ số thời gian mới là chỉ số có dấu cần được xử lý cẩn thận. \lecturetimestamp{00:34:10}}
+\end{classroomqa}
+
+\section{Phép tính Euler--Lagrange}
+
+\subsection{Xung lượng chính tắc và một hiệu chỉnh ngay tại chỗ}
+
+Chọn một thành phần không gian \(x^m\). Lấy đạo hàm hạng tự do của
+\eqref{eq:sr7-lagrangian} cho ta
+\begin{equation}
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+=
+m u_m,
+\qquad
+u^\mu\equiv\frac{dx^\mu}{d\tau}.
+\end{equation}
+Lần viết đầu tiên trên bảng dừng lại ở đó. Một góp ý từ người nghe đã chỉ ra chỗ bị bỏ sót: hạng tương tác cũng phụ thuộc vào \(\dot x^m\). Đạo hàm đầy đủ là
+\begin{equation}
+\frac{\partial L}{\partial\dot x^m}
+=
+\frac{m\dot x_m}{\sqrt{1-\dot{\mathbf x}^{\,2}}}
+-eA_m
+=
+m u_m-eA_m.
+\label{eq:sr7-canonical-momentum}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Biểu thức đầu tiên cho \(\partial L/\partial\dot x^m\) có thiếu phần đóng góp từ hạng điện từ không?}
+\lecturerresponse{Có. Lấy đạo hàm
+\(-eA_n\dot x^n\) theo \(\dot x^m\) cho thêm
+\(-eA_m\). Xung lượng chính tắc đã hiệu chỉnh là
+\(m u_m-eA_m\), chứ không phải chỉ riêng xung lượng cơ học.
+\lecturetimestamp{00:37:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_08.png}
+\caption{Xung lượng chính tắc đã hiệu chỉnh, gồm cả hạng cơ học lẫn hạng thế.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\subsection{Lấy đạo hàm dọc theo quỹ đạo chuyển động}
+
+Vế trái của phương trình Euler--Lagrange là
+\begin{equation}
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial\dot x^m}
+\right)
+=
+m\frac{du_m}{dt}
+-e\frac{dA_m(x(t),t)}{dt}.
+\end{equation}
+Thế biến đổi vì hai lý do: nó có thể phụ thuộc tường minh vào thời gian, và hạt chuyển động qua sự biến thiên theo không gian của nó. Quy tắc dây chuyền cho
+\begin{equation}
+\frac{dA_m}{dt}
+=
+\partial_0A_m
++\dot x^n\partial_nA_m.
+\label{eq:sr7-chain-rule}
+\end{equation}
+Viết tường minh, hạng thứ hai có nghĩa là
+\begin{equation}
+\dot x\,\frac{\partial A_m}{\partial x}
++\dot y\,\frac{\partial A_m}{\partial y}
++\dot z\,\frac{\partial A_m}{\partial z}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_09.png}
+\caption{Các phần tường minh và đối lưu của đạo hàm theo thời gian của \(A_m\).}
+\lectureframe{00:42:10}
+\end{figure}
+
+Ở vế phải,
+\begin{equation}
+\frac{\partial L}{\partial x^m}
+=
+-e\partial_mA_0
+-e\dot x^n\partial_mA_n.
+\label{eq:sr7-spatial-derivative-L}
+\end{equation}
+Hạng tự do không phụ thuộc tường minh vào vị trí. Trong
+\eqref{eq:sr7-spatial-derivative-L}, \(m\) là chỉ số tự do chọn ra một phương trình; \(n\) là chỉ số câm lặp lại và được lấy tổng. Việc đổi tên chỉ số câm đó không làm thay đổi gì. Chính sự phân biệt này khiến giảng viên dừng lại ở các chữ cái ấy trước khi gộp các hạng.
+
+Đặt hai vế bằng nhau rồi sắp xếp lại, ta được
+\begin{equation}
+m\frac{du_m}{dt}
+=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)
++e\dot x^n
+\left(
+\partial_nA_m-\partial_mA_n
+\right).
+\label{eq:sr7-grouped-force}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_10.png}
+\caption{Lực được tách thành một ngoặc không phụ thuộc vận tốc và một ngoặc phản đối xứng tuyến tính theo vận tốc.}
+\lectureframe{00:49:30}
+\end{figure}
+
+\subsection{Nhận ra điện trường và từ trường}
+
+Ngoặc thứ nhất không chứa vận tốc của hạt. Với quy ước của tác dụng này, định nghĩa
+\begin{equation}
+E_m
+\equiv
+\partial_0A_m-\partial_mA_0.
+\label{eq:sr7-E-from-A}
+\end{equation}
+Nó có đúng vai trò thao tác của điện trường. Ngoặc thứ hai phản đối xứng theo các chỉ số không gian của nó:
+\begin{equation}
+C_{mn}
+\equiv
+\partial_nA_m-\partial_mA_n.
+\label{eq:sr7-C}
+\end{equation}
+Ba thành phần độc lập của nó là xoáy của thế không gian, với định hướng được chọn theo quy ước của bài giảng sao cho
+\begin{equation}
+\dot x^n C_{mn}
+=
+\left(\mathbf v\times\mathbf B\right)_m.
+\label{eq:sr7-magnetic-identification}
+\end{equation}
+Việc kiểm tra chi tiết theo từng thành phần được để lại như một bài tập trên bảng. Sự nhận diện về mặt cấu trúc đã hiện ra: một đạo hàm không gian phản đối xứng của một vectơ có ba thành phần, đúng bằng số thành phần mà \(\mathbf B\) có, và nó nhân với vận tốc.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_11.png}
+\caption{Hai ngoặc đạo hàm được nhận diện là phần điện và phần từ của lực Lorentz.}
+\lectureframe{00:52:00}
+\end{figure}
+
+Vì thế, phương trình \eqref{eq:sr7-grouped-force} đã khôi phục lực Lorentz từ tác dụng thế vectơ. Nó còn làm được một điều quan trọng hơn: bộc lộ các đạo hàm phản đối xứng hóa sẽ trở thành tensor trường.
+
+\section{Từ thời gian thông thường đến một phương trình bốn-vectơ}
+
+\subsection{Phép đổi sang thời gian riêng}
+
+Vế trái của \eqref{eq:sr7-grouped-force} không phải là gia tốc Newton \(d\mathbf v/dt\). Nó là đạo hàm theo thời gian thông thường của một thành phần bốn-vận tốc:
+\begin{equation}
+\frac{du^m}{dt}
+=
+\frac{du^m}{d\tau}\frac{d\tau}{dt}.
+\end{equation}
+Nhân phương trình với \(dt/d\tau\). Khi đó
+\begin{equation}
+\dot x^n\frac{dt}{d\tau}
+=
+\frac{dx^n}{dt}\frac{dt}{d\tau}
+=
+u^n,
+\qquad
+\frac{dt}{d\tau}=u^0.
+\end{equation}
+Phương trình không gian trở thành
+\begin{align}
+m\frac{du^m}{d\tau}
+&=
+e\left(
+\partial_0A_m-\partial_mA_0
+\right)u^0
+\notag\\
+&\quad
++e\left(
+\partial_nA_m-\partial_mA_n
+\right)u^n.
+\label{eq:sr7-proper-spatial}
+\end{align}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_12.png}
+\caption{Các thừa số \(dt/d\tau\) biến các vận tốc thông thường thành các thành phần của bốn-vận tốc.}
+\lectureframe{00:56:30}
+\end{figure}
+
+Vế trái là gia tốc riêng:
+\begin{equation}
+\frac{du^\mu}{d\tau}
+=
+\frac{d^2x^\mu}{d\tau^2}.
+\end{equation}
+Nó là một bốn-vectơ. Vì vậy, vế phải phải được ghép từ một tensor hạng hai tác dụng lên \(u^\nu\).
+
+\subsection{Tensor trường và định luật lực}
+
+Chọn quy ước
+\begin{equation}
+F_{\mu\nu}
+\equiv
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\label{eq:sr7-F-definition}
+\end{equation}
+Nó phản đối xứng:
+\begin{equation}
+F_{\mu\nu}=-F_{\nu\mu}.
+\end{equation}
+Dùng dấu tương tác trong \eqref{eq:sr7-worldline-action}, phương trình gọn là
+\begin{equation}
+\boxed{
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu
+}.
+\label{eq:sr7-covariant-force}
+\end{equation}
+Tương đương, trước khi đặt tên \(F_{\mu\nu}\),
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+e\left(
+\partial_\nu A^\mu-\partial^\mu A_\nu
+\right)u^\nu.
+\end{equation}
+Các quy ước khác nhau cho metric, điện tích và thế sẽ phân bố lại các dấu toàn cục. Nội dung bất biến là đạo hàm phản đối xứng hóa của thế và phép co của nó với bốn-vận tốc.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_13.png}
+\caption{Phương trình theo thời gian riêng được gói thành một tensor trường hạng hai tác dụng lên bốn-vận tốc.}
+\lectureframe{00:58:25}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Phép suy ra này tạo ra ba phương trình không gian. Vì sao lại được phép thêm phương trình thứ tư?}
+\lecturerresponse{Tác dụng vô hướng bảo đảm một kết quả hiệp biến Lorentz. Một khi hiệu của hai vế đã được nhận ra là một bốn-vectơ, các phép biến đổi Lorentz sẽ trộn các thành phần không gian và thời gian của nó. Một phương trình bốn-vectơ không thể nhất quán mà chỉ có ba thành phần; thành phần thời gian đi kèm với các thành phần không gian. \lecturetimestamp{00:59:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân một danh sách số cố định như \((1,2,3,4)\) có phải là một bốn-vectơ bất biến Lorentz không?}
+\lecturerresponse{Không. Những con số như vậy có thể là các thành phần của một vectơ trong một hệ quy chiếu đã chọn, nhưng các thành phần ấy biến đổi. Ngay cả trong hai chiều, vectơ có các thành phần \((1,2)\) có thể được mô tả trong một hệ trục quay thành \((0,\sqrt5)\). Vectơ hình học vẫn giữ nguyên; danh sách các thành phần số của nó thì không. \lecturetimestamp{01:00:28}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_14.png}
+\caption{Một vectơ hai thành phần được biểu diễn lại trong các trục thẳng hàng với chính nó.}
+\lectureframe{01:02:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Nếu mục tiêu là thay thời gian thông thường bằng thời gian riêng, vì sao \(\partial_0A_m=\partial A_m/\partial t\) vẫn còn xuất hiện?}
+\lecturerresponse{Mục tiêu không phải là xóa mọi chữ \(t\). Mà là viết động lực học dưới dạng ký hiệu bốn-vectơ hiển minh. Toán tử
+\(\partial_0\) là thành phần thời gian của bốn-gradient hiệp biến, cũng như
+\(\partial_m\) là các thành phần không gian của nó. Nó thuộc về tensor bốn chiều. \lecturetimestamp{01:05:10}}
+\end{classroomqa}
+
+Bài giảng dùng lúc này để nhắc lại tính địa phương. Một phương trình địa phương liên hệ gia tốc tại một biến cố với trường và vận tốc tại chính biến cố đó. Nó không nối gia tốc ở hiện tại với một lực tại một thời điểm xa.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_15.png}
+\caption{Phương trình lực hiệp biến được dùng để nhắc lại tính địa phương dưới dạng động lực học vi phân.}
+\lectureframe{01:05:50}
+\end{figure}
+
+\subsection{Hiển thị các thành phần điện từ}
+
+Đối với tensor có mọi chỉ số ở trên, quy ước dùng trên bảng cho
+\begin{equation}
+F^{\mu\nu}
+=
+\begin{pmatrix}
+0&-E_x&-E_y&-E_z\\
+E_x&0&B_z&-B_y\\
+E_y&-B_z&0&B_x\\
+E_z&B_y&-B_x&0
+\end{pmatrix}.
+\label{eq:sr7-F-matrix}
+\end{equation}
+Chỉ số hàng là \(\mu\), chỉ số cột là \(\nu\). Các phần tử thời gian--không gian hỗn hợp chứa điện trường; khối không gian--không gian chứa từ trường. Tính phản đối xứng làm cho đường chéo bằng không và rút mười sáu phần tử được hiển thị xuống còn sáu thành phần độc lập.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_16.png}
+\caption{Tensor điện từ đầy đủ, với các phần tử điện ở các ô thời gian--không gian và các phần tử từ ở khối không gian.}
+\lectureframe{01:12:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Có một quy tắc chuẩn nào quyết định chỉ số tensor nào gắn với hàng và chỉ số nào gắn với cột không?}
+\lecturerresponse{Đó là một quy ước trình bày. Ở đây chỉ số thứ nhất
+\(\mu\) chạy theo chiều dọc và chỉ số thứ hai \(\nu\) chạy theo chiều ngang. Một khi quy ước đó đã được nêu ra, mọi thành phần đều có thể được đọc một cách không mơ hồ. Việc nâng một chỉ số thời gian đưa vào một dấu, nhưng không làm thay đổi quy ước hàng--cột. \lecturetimestamp{01:09:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Những cách đặt chỉ số nào giữ được tính phản đối xứng?}
+\lecturerresponse{Các tensor \(F_{\mu\nu}\) và \(F^{\mu\nu}\) là phản đối xứng. Mảng hỗn hợp \(F^\mu{}_\nu\) không phản đối xứng dưới phép chuyển vị ma trận thông thường: việc nâng một chỉ số thời gian làm đổi các ô điện, khiến cặp thời gian--không gian trở nên đối xứng, trong khi khối từ thuần không gian vẫn phản đối xứng. Giảng viên đi đến kết luận này sau khi thử ngắn gọn rồi bác bỏ khả năng ngược lại trên bảng.
+\lecturetimestamp{01:13:18}}
+\end{classroomqa}
+
+\section{Điều gì được tính là một phép bất biến?}
+
+Chỉ đến bây giờ ta mới quay lại nguyên lý thứ tư. Một phép bất biến là một sự thay đổi vẫn để các phương trình chuyển động không đổi. Bản thân tác dụng có thể hoàn toàn không đổi, hoặc có thể đổi đi bởi một hạng biên không ảnh hưởng đến các phương trình biến phân.
+
+\subsection{Các dịch chuyển hằng của một trường vô hướng không khối lượng}
+
+Xét phương trình của trường vô hướng không khối lượng trong một chiều không gian,
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
+=0,
+\label{eq:sr7-wave}
+\end{equation}
+thu được từ
+\begin{equation}
+\mathcal L_0
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi.
+\label{eq:sr7-massless-L}
+\end{equation}
+Nếu \(\phi\) là một nghiệm, thì
+\begin{equation}
+\phi\longrightarrow\phi+c,
+\label{eq:sr7-constant-shift}
+\end{equation}
+cũng là một nghiệm, trong đó \(c\) là hằng số. Mọi đạo hàm của \(c\) đều triệt tiêu, nên cả phương trình lẫn Lagrangian chỉ chứa đạo hàm đều không thay đổi.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_17.png}
+\caption{Phương trình sóng không khối lượng, Lagrangian đạo hàm của nó, và phép dịch hằng \(\phi\mapsto\phi+c\).}
+\lectureframe{01:17:10}
+\end{figure}
+
+Bây giờ thêm một hạng khối lượng:
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\frac{\partial^2\phi}{\partial x^2}
++\mu^2\phi
+=0,
+\end{equation}
+\begin{equation}
+\mathcal L_\mu
+=
+-\frac12\partial_\mu\phi\,\partial^\mu\phi
+-\frac{\mu^2}{2}\phi^2.
+\label{eq:sr7-massive-L}
+\end{equation}
+Phần đạo hàm vẫn không đổi dưới phép
+\(\phi\mapsto\phi+c\), nhưng \(\phi^2\) thì không. Cả hai lý thuyết đều hợp lệ; một lý thuyết có tính bất biến dịch chuyển còn lý thuyết kia thì không.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_18.png}
+\caption{Hạng khối lượng phá vỡ tính bất biến đối với dịch chuyển hằng.}
+\lectureframe{01:18:50}
+\end{figure}
+
+\subsection{Một sinh viên đoán ra hạng biên}
+
+Một người nghe đề xuất một phép kiểm tra sắc hơn:
+\begin{equation}
+\phi(x,t)\longrightarrow\phi(x,t)+x.
+\label{eq:sr7-linear-shift}
+\end{equation}
+Các đạo hàm bậc hai của \(x\) đều triệt tiêu, nên phương trình sóng không khối lượng vẫn được thỏa mãn. Tác dụng cần được xem xét kỹ hơn. Vì \(x\) và \(t\) là các biến độc lập,
+\begin{equation}
+\frac{\partial x}{\partial t}=0,
+\qquad
+\frac{\partial x}{\partial x}=1.
+\end{equation}
+Phần không gian biến đổi theo
+\begin{align}
+-\frac12
+\left[
+\partial_x(\phi+x)
+\right]^2
+&=
+-\frac12
+\left(
+\partial_x\phi+1
+\right)^2
+\notag\\
+&=
+-\frac12(\partial_x\phi)^2
+-\partial_x\phi
+-\frac12.
+\label{eq:sr7-linear-shift-L}
+\end{align}
+Các hạng mới là một hằng số và một đạo hàm toàn phần. Hằng số không làm thay đổi phương trình Euler--Lagrange. Lấy tích phân
+\(\partial_x\phi\) chỉ cho ra các giá trị biên theo không gian, nên dưới các điều kiện biên cố định thông thường nó cũng không làm thay đổi phương trình chuyển động.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_19.png}
+\caption{Phép dịch chuyển được đề xuất \(\phi\mapsto\phi+x\) và bình phương đạo hàm làm lộ ra một hằng số cộng một đạo hàm toàn phần.}
+\lectureframe{01:22:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Phép \(\phi\mapsto\phi+x\) có bảo toàn phương trình trường không khối lượng dù nó làm thay đổi mật độ Lagrangian không?}
+\lecturerresponse{Có. Các đạo hàm bậc hai của \(x\) đều triệt tiêu, nên phương trình không đổi. Mật độ Lagrangian chỉ thay đổi bởi một hằng số và một đạo hàm toàn phần theo không gian. Chúng làm thay đổi tác dụng số trị bởi một hằng số cố định trong miền tích phân và các giá trị biên, nhưng không làm thay đổi phương trình Euler--Lagrange dưới các điều kiện biên cố định. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao \(\partial x/\partial t\) bằng không?}
+\lecturerresponse{Vì \(x\) và \(t\) là các tọa độ độc lập trong mô tả trường. Một đạo hàm riêng theo \(t\) giữ
+\(x\) cố định. \lecturetimestamp{01:22:22}}
+\end{classroomqa}
+
+Người sinh viên đã đi tới đúng thủ pháp cần cho điện từ học: một đạo hàm toàn phần có thể làm thay đổi dạng viết của tác dụng mà không làm thay đổi các quỹ đạo dừng của nó.
+
+\section{Tính bất biến gauge của hạt mang điện}
+
+\subsection{Cộng thêm một bốn-gradient}
+
+Trở lại hạng tương tác
+\begin{equation}
+I_{\mathrm{int}}
+=
+-e\int A_\mu\,dx^\mu.
+\end{equation}
+Cho \(\Lambda(x)\) là một vô hướng bất kỳ đủ trơn và biến đổi thế theo
+\begin{equation}
+A_\mu
+\longrightarrow
+A'_\mu
+=
+A_\mu+\partial_\mu\Lambda.
+\label{eq:sr7-gauge-transformation}
+\end{equation}
+Gradient \(\partial_\mu\Lambda\) có cùng cấu trúc chỉ số hiệp biến
+như \(A_\mu\), nên tổng này được xác định tốt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_20.png}
+\caption{Sự ghép cặp theo đường thế giới và phép biến đổi \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\).}
+\lectureframe{01:24:50}
+\end{figure}
+
+Sự thay đổi của tác dụng là
+\begin{align}
+\Delta I_{\mathrm{int}}
+&=
+-e\int \partial_\mu\Lambda\,dx^\mu
+\notag\\
+&=
+-e\int d\Lambda
+\notag\\
+&=
+-e\left[
+\Lambda(x_2)-\Lambda(x_1)
+\right].
+\label{eq:sr7-gauge-boundary}
+\end{align}
+Trên mỗi đoạn vi phân của đường thế giới, \(\partial_\mu\Lambda\,dx^\mu\) chính xác là số gia \(d\Lambda\). Cộng các số gia ấy lại thì tổng thu gọn đúng bằng hiệu giữa các giá trị tại đầu mút cuối và đầu mút đầu.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_21.png}
+\caption{Phần đóng góp gradient, khi được tích phân dọc theo quỹ đạo, cho ra hiệu ở điểm cuối \(\Lambda(x_2)-\Lambda(x_1)\).}
+\lectureframe{01:28:10}
+\end{figure}
+
+Nguyên lý biến phân so sánh các quỹ đạo lân cận với \(x_1\) và \(x_2\) được giữ cố định. Vì vậy hạng tử phụ thêm trong \eqref{eq:sr7-gauge-boundary} là như nhau đối với mọi biến phân được phép:
+\begin{equation}
+\delta\Delta I_{\mathrm{int}}=0.
+\end{equation}
+Quỹ đạo dừng không thay đổi. Đây là tính bất biến chuẩn được phát biểu như một mệnh đề về đầu mút.
+
+\begin{classroomqa}
+\audiencequestion{\(\Lambda\) có thể là một hàm vô hướng bất kỳ không?}
+\lecturerresponse{Có, với điều kiện thỏa các giả thiết về tính trơn và điều kiện biên cần cho các đạo hàm và tác dụng. Phép biến đổi là địa phương vì tham số là một hàm tùy ý của không-thời gian, chứ không chỉ là một hằng số toàn cục duy nhất. \lecturetimestamp{01:28:40}}
+\end{classroomqa}
+
+Phép cộng thêm một gradient vào \(A_\mu\) được gọi là một phép biến đổi chuẩn. Từ gauge là một di sản lịch sử; bài giảng cảnh báo, một cách hài hước nhưng dứt khoát, rằng không nên phát âm nó như thể đó là một từ tiếng Pháp. Tên gọi kém quan trọng hơn phép toán.
+
+\subsection{Chứng minh trực tiếp bằng tenxơ trường}
+
+Các phương trình chuyển động phụ thuộc vào \(F_{\mu\nu}\), chứ không phụ thuộc vào bản thân thế. Dưới \eqref{eq:sr7-gauge-transformation},
+\begin{align}
+F'_{\mu\nu}
+&=
+\partial_\mu
+\left(
+A_\nu+\partial_\nu\Lambda
+\right)
+-
+\partial_\nu
+\left(
+A_\mu+\partial_\mu\Lambda
+\right)
+\notag\\
+&=
+F_{\mu\nu}
++
+\partial_\mu\partial_\nu\Lambda
+-
+\partial_\nu\partial_\mu\Lambda
+\notag\\
+&=
+F_{\mu\nu}.
+\label{eq:sr7-F-gauge-invariant}
+\end{align}
+Đối với một vô hướng trơn trong không-thời gian phẳng thông thường, các đạo hàm riêng giao hoán. Hai hạng tử phụ thêm triệt tiêu nhau. Do đó tenxơ trường, các trường điện và từ mà nó chứa, và định luật lực đều bất biến chuẩn.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_07_figure_22.png}
+\caption{Hai đạo hàm bậc hai do một phép biến đổi chuẩn sinh ra triệt tiêu nhau vì các đạo hàm riêng giao hoán.}
+\lectureframe{01:33:50}
+\end{figure}
+
+Hai cách chứng minh khép lại cùng một vòng tròn từ hai hướng ngược nhau. Tác dụng chỉ thay đổi tại các đầu mút cố định, còn các phương trình chỉ phụ thuộc vào một tenxơ trường không đổi.
+
+\section{Ý nghĩa của sự dư thừa}
+
+\subsection{Vì sao giữ lại một đối tượng không duy nhất?}
+
+Sự phản đối hiển nhiên xuất hiện ngay lập tức. Nếu \(A_\mu\) không duy nhất, tại sao ta lại đưa nó vào? Bởi vì nó là không thể thiếu đối với tác dụng địa phương bất biến Lorentz mặc dù các giá trị thành phần của nó chứa thông tin dư thừa. Nhiều thế biểu diễn cùng một trường điện từ:
+\begin{equation}
+A_\mu
+\sim
+A_\mu+\partial_\mu\Lambda.
+\end{equation}
+Lớp tương đương mới là đối tượng vật lý; một đại diện cụ thể là một lựa chọn mô tả.
+
+\begin{classroomqa}
+\audiencequestion{Việc đổi chuẩn có giá trị thực tiễn không?}
+\lecturerresponse{Có. Một \(\Lambda\) thích hợp có thể đơn giản hóa một thành phần của thế hoặc làm sáng tỏ một đặc điểm của bài toán. Cục bộ, và với điều kiện biên thích hợp, ta thường có thể chọn một chuẩn sao cho một thành phần được chọn, kể cả \(A_0\), bằng không. Một chuẩn khác có thể làm hiện rõ một đặc điểm khác hơn. \lecturetimestamp{01:35:43}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Tính bất biến chuẩn có tương tự như việc mô tả cùng một thí nghiệm từ hai hệ Lorentz không?}
+\lecturerresponse{Không. Các phép biến đổi Lorentz so sánh những hệ quy chiếu có ý nghĩa vật lý gắn với những người quan sát khác nhau. Các phép biến đổi chuẩn là sự dư thừa bên trong một mô tả: các thế khác nhau mã hóa cùng một trường. Về mặt toán học cả hai đều là các tính bất biến, nhưng cách diễn giải của chúng khác nhau. \lecturetimestamp{01:37:07}}
+\end{classroomqa}
+
+Còn có một khác biệt về cấu trúc. Một phép quay dùng một góc toàn cục cố định; thông thường người ta không quay các trục theo những góc độc lập tại từng điểm. Một phép biến đổi chuẩn được tham số hóa bởi toàn bộ hàm \(\Lambda(x)\). Chính tự do phụ thuộc vị trí này làm cho nó trở thành một tính bất biến chuẩn địa phương.
+
+\begin{classroomqa}
+\audiencequestion{Việc cộng thêm một gradient có phải là định nghĩa tổng quát của tính bất biến chuẩn không?}
+\lecturerresponse{Đối với lý thuyết điện từ Abel, đó chính là phép biến đổi. Các lý thuyết Yang--Mills có một phiên bản phi Abel công phu hơn, trong đó thế mang thêm cấu trúc nội tại, nhưng cùng một ý tưởng vẫn còn: các mô tả địa phương khác nhau biểu diễn cùng một vật lý. \lecturetimestamp{01:39:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Phép biến đổi chuẩn chỉ đơn thuần là một công cụ toán học để làm nổi bật những phần khác nhau của một bài toán sao?}
+\lecturerresponse{Nó là một công cụ tính toán và diễn giải hữu ích, nhưng vai trò của nó bị ràng buộc: nó có thể đơn giản hóa các phương trình hoặc làm lộ ra một tính chất, nhưng không thể thay đổi bất kỳ tiên đoán cuối cùng nào bất biến chuẩn.
+\lecturetimestamp{01:40:22}}
+\end{classroomqa}
+
+\subsection{Các trường khác và các thế khác}
+
+Các thế chuẩn trong những lý thuyết khác cũng thường được ký hiệu bằng \(A\) và mang một chỉ số không-thời gian \(\mu\). Điều phân biệt chúng là cấu trúc nội tại bổ sung gắn với những đối xứng khác. Bài giảng hoãn lại phần cấu trúc đó thay vì đưa ra một công thức quá sớm.
+
+\begin{classroomqa}
+\audiencequestion{Các thế vectơ của những lý thuyết trường khác trông như thế nào?}
+\lecturerresponse{Chúng vẫn biến đổi như các vectơ không-thời gian và thường được viết là \(A_\mu\), nhưng mang thêm các nhãn và cấu trúc đại số gắn với các đối xứng nội tại. Đó là cánh cửa đi vào lý thuyết Yang--Mills và được cố ý hoãn lại. \lecturetimestamp{01:41:02}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thật là không thể viết trực tiếp tác dụng địa phương bất biến Lorentz của hạt mang điện chỉ bằng \(\mathbf E\) và \(\mathbf B\) không?}
+\lecturerresponse{Trong các giả thiết được nêu ở đây, câu trả lời là có. Bài giảng trình bày điều này như một định lý và không chứng minh nó. Việc giữ nguyên nguyên lý tác dụng, tính địa phương và bất biến Lorentz buộc phải đưa thế vào; sau đó sự dư thừa chuẩn tự động xuất hiện.
+\lecturetimestamp{01:42:18}}
+\end{classroomqa}
+
+\subsection{Có thể đo được gì?}
+
+Một giá trị địa phương của \(A_\mu\) tự nó không bất biến chuẩn. Nếu một phép đo vật lý xác định giá trị ấy một cách duy nhất, thì việc thay đổi nó bởi \(\partial_\mu\Lambda\) sẽ làm thay đổi một kết quả vật lý, trái với tính bất biến vừa được chứng minh. Các tiên đoán có thể đo được phải được xây dựng từ các đại lượng bất biến chuẩn, như \(F_{\mu\nu}\) trong thảo luận cổ điển hiện tại.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao tự nhiên lại kiên trì lựa chọn các lý thuyết chuẩn đến vậy?}
+\lecturerresponse{Ở mức cổ điển, bài giảng không đưa ra một lý do cuối cùng nào. Cơ học lượng tử cung cấp một góc nhìn sâu hơn, nhưng ngay cả ở đó câu trả lời bao quát vẫn chưa cạn kiệt. Điều đã rõ là vẻ đẹp, tính đối xứng và tính tiết kiệm khác thường của những lý thuyết được tổ chức bởi sự dư thừa chuẩn.
+\lecturetimestamp{01:43:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân thế vectơ có thể đo được không?}
+\lecturerresponse{Không, nếu xét như một giá trị thành phần địa phương phụ thuộc chuẩn. Một phép đo là một quá trình vật lý, và mọi tiên đoán vật lý đều phải không nhạy với \(A_\mu\mapsto A_\mu+\partial_\mu\Lambda\). Điều có thể đo được là những đặc trưng bất biến chuẩn của thế và trường.
+\lecturetimestamp{01:44:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Điều gì xảy ra nếu \(A_\mu\) bị thay đổi bởi một thứ không phải là gradient?}
+\lecturerresponse{Nói chung \(F_{\mu\nu}\) thay đổi, nên sự thay đổi ấy có thể phát hiện được. Trái lại, một thế thuần chuẩn \(A_\mu=\partial_\mu\Lambda\) có \(F_{\mu\nu}=0\) và không tác dụng lực điện từ; khi đó một hạt tự do chuyển động trên một đường thế giới thẳng. \lecturetimestamp{01:45:22}}
+\end{classroomqa}
+
+Vì thế, tính bất biến chuẩn không phải là một mẹo có thể bỏ đi. Điện động lực học, lý thuyết Yang--Mills, Mô hình Chuẩn và hấp dẫn đều có những dạng dư thừa chuẩn theo cách này hay cách khác. Mẫu hình ấy thật đặc biệt: cần một đại lượng phụ trợ để phát biểu lý thuyết, nhưng một phần của đại lượng đó lại có thể bị thay đổi mà vật lý không đổi. Chính sự đặc biệt ấy cũng là sức mạnh tổ chức.
+
+\section{Lôgic của tính bất biến chuẩn}
+
+Bài giảng đã đi theo một lộ trình cố ý gián tiếp. Trước hết, ta khôi phục ngôn ngữ chỉ số trên--dưới vì các phép co vô hướng là ngữ pháp của các tác dụng bất biến Lorentz. Sau đó, ta phát biểu bốn nguyên lý: tác dụng, tính địa phương, bất biến Lorentz và tính bất biến chuẩn. Nguyên lý thứ tư vẫn chưa được định nghĩa trong khi phép tính cho hạt mang điện được dựng lại.
+
+Phép tính đó bắt đầu từ tác dụng vô hướng địa phương
+\begin{equation}
+I
+=
+-m\int d\tau
+-e\int A_\mu dx^\mu,
+\end{equation}
+đi qua Lagrangian theo thời gian thông thường và mọi đạo hàm Euler--Lagrange, rồi thu lại lực Lorentz điện và từ. Sau đó, thời gian riêng gom kết quả thành
+\begin{equation}
+m\frac{du^\mu}{d\tau}
+=
+-eF^\mu{}_\nu u^\nu,
+\qquad
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{equation}
+
+Các ví dụ về trường vô hướng chuẩn bị cho bước cuối cùng: một đạo hàm toàn phần chỉ có thể làm thay đổi một tác dụng thông qua biên. Do đó,
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\Lambda
+\end{equation}
+chỉ làm thay đổi tác dụng đường thế giới bằng các giá trị cố định tại đầu mút và để \(F_{\mu\nu}\) không đổi vì các đạo hàm riêng hỗn hợp giao hoán. Vì thế, thế vectơ là cần thiết nhưng không duy nhất. Tính bất biến chuẩn là mệnh đề rằng sự không duy nhất này thuộc về mô tả, không thuộc về vật lý.

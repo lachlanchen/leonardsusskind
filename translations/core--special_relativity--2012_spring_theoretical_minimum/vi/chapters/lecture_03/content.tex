@@ -1,0 +1,857 @@
+\chapter{Cơ học hạt, bốn-xung lượng và năng lượng nghỉ}
+
+\section{Phép xấp xỉ mà ta sẽ dùng nhiều lần}
+
+Cơ học của một hạt tương đối tính phải trả lời những câu hỏi quen thuộc bằng một ngôn ngữ mới. Hạt chuyển động như thế nào? Xung lượng và năng lượng của nó là gì? Vì sao các đại lượng ấy ghép lại thành một bốn-vectơ, và \(E=mc^2\) xuất hiện từ bộ máy thông thường của cơ học như thế nào? Trước khi xét những câu hỏi đó, ta cần một phép xấp xỉ sơ cấp sẽ lặp lại xuyên suốt phép tính.
+
+Với mọi số mũ \(p\), khai triển nhị thức là
+\begin{equation}
+\begin{aligned}
+(1+\epsilon)^p
+&=1+p\epsilon\\
+&\quad+\frac{p(p-1)}{2!}\epsilon^2\\
+&\quad+\frac{p(p-1)(p-2)}{3!}\epsilon^3
++\cdots .
+\end{aligned}
+\label{eq:sr3-binomial}
+\end{equation}
+Số mũ có thể dương, âm, phân số, thậm chí phức. Khi \(\epsilon\) đủ nhỏ, chuỗi hội tụ nhanh và mỗi số hạng kế tiếp đều nhỏ hơn. Khi đó ta có thể dừng ở bất kỳ bậc nào mà độ chính xác mong muốn đòi hỏi. Số hạng bậc không thường là lớn nhất, nhưng trong các ứng dụng dưới đây nó thường là một hằng số và vì thế không đáng quan tâm về mặt động lực học. Hiệu chỉnh đầu tiên là nơi chuyển động xuất hiện.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_01.png}
+\caption{Khai triển nhị thức đến bậc ba, dùng để khôi phục cơ học phi tương đối tính từ các công thức tương đối tính.}
+\lectureframe{00:04:24}
+\end{figure}
+
+Ta thường đặt \(c=1\), nên một vận tốc \(v\) có nghĩa là phần \(v/c\) của tốc độ ánh sáng. Lấy \(\epsilon=-v^2\). Với \(p=\tfrac12\),
+\begin{equation}
+\sqrt{1-v^2}
+=
+1-\frac{v^2}{2}-\frac{v^4}{8}-\cdots
+\approx
+1-\frac{v^2}{2},
+\qquad |v|\ll 1.
+\label{eq:sr3-sqrt-expansion}
+\end{equation}
+Với \(p=-\tfrac12\), hai dấu trừ triệt tiêu nhau:
+\begin{equation}
+\frac{1}{\sqrt{1-v^2}}
+=
+1+\frac{v^2}{2}+\frac{3v^4}{8}+\cdots
+\approx
+1+\frac{v^2}{2}.
+\label{eq:sr3-gamma-expansion}
+\end{equation}
+Nhiều thừa số \(1/2\) trong cơ học cổ điển có thể được nhận ra, khi nhìn lại, như hiệu chỉnh đầu tiên trong một trong các khai triển tương đối tính này. Phép xấp xỉ mất hiệu lực khi \(v\) tiến tới một; khi đó không phép cắt cụt hữu hạn nào nắm bắt được hành vi kỳ dị của biểu thức chính xác.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_02.png}
+\caption{Cả hai công thức vận tốc thấp đều hiện rõ: \(\sqrt{1-v^2}\approx1-v^2/2\) và \((1-v^2)^{-1/2}\approx1+v^2/2\).}
+\lectureframe{00:07:39}
+\end{figure}
+
+\section{Thế nào được coi là một hạt?}
+
+Một hạt trong cơ học không nhất thiết phải là hạt sơ cấp. Nó có thể là electron, Mặt Trời, một hộp sôcôla, hoặc một chiếc bánh vòng. Điều quan trọng là vật ấy giữ được tính toàn khối đủ tốt để chuyển động tổng thể của nó có thể được mô tả bằng một khối tâm. Một chiếc bánh vòng là lời nhắc hữu ích rằng khối tâm không nhất thiết nằm trong chính vật liệu của nó.
+
+Trong cơ học Newton, các biến khối tâm tuân theo
+\begin{equation}
+\vec p=m\vec v,
+\qquad
+K=\frac12mv^2,
+\qquad
+\vec F=m\vec a.
+\label{eq:sr3-newtonian-particle}
+\end{equation}
+Các công thức này không quan tâm vật là sơ cấp hay hợp thành. Một vật hợp thành còn chứa năng lượng nội tại. Chẳng hạn, một chiếc bánh vòng đang chuyển động có động năng khối tâm cộng với năng lượng hóa học, nhiệt và liên kết:
+\begin{equation}
+E_{\text{Newtonian}}
+=
+E_{\text{internal}}+\frac12mv^2.
+\label{eq:sr3-newtonian-internal}
+\end{equation}
+Số hạng nội tại độc lập với vận tốc khối tâm tổng thể. Thuyết tương đối sẽ giữ lại sự phân biệt này nhưng sẽ cho thấy năng lượng nội tại góp phần vào khối lượng bất biến của toàn bộ vật.
+
+Các công cụ cần thiết cũng chính là những công cụ được dùng trong cơ học cổ điển: quỹ đạo, nguyên lý tác dụng dừng, các Lagrangian, xung lượng chính tắc, các Hamiltonian, và mối liên hệ giữa các đối xứng liên tục với các định luật bảo toàn.
+
+\section{Đường thế giới và phân cách nhân quả}
+
+Hãy biểu diễn vị trí của một hệ theo phương ngang và thời gian theo phương thẳng đứng. Khi đó lịch sử của nó là một đường cong trong không-thời gian. Đối với một hạt, đường cong này là \emph{đường thế giới} của nó. Khái niệm này có trong cơ học Newton, nhưng nó trở thành nền tảng trong thuyết tương đối vì các phép biến đổi Lorentz trộn lẫn không gian và thời gian.
+
+Xét hai biến cố cách nhau bởi
+\begin{equation}
+\Delta x^\mu=(\Delta t,\Delta\vec x),
+\qquad
+\Delta\vec x^{\,2}
+=
+(\Delta x)^2+(\Delta y)^2+(\Delta z)^2.
+\end{equation}
+Trong đơn vị \(c=1\), khoảng bất biến của chúng là
+\begin{equation}
+(\Delta\tau)^2
+=
+(\Delta t)^2-\Delta\vec x^{\,2}.
+\label{eq:sr3-interval}
+\end{equation}
+
+\subsection{Phân cách kiểu thời}
+
+Nếu \((\Delta t)^2>\Delta\vec x^{\,2}\), thì \((\Delta\tau)^2>0\) và sự phân cách là kiểu thời. Tồn tại một hệ quy chiếu Lorentz trong đó hai biến cố xảy ra tại cùng một điểm không gian. Trong hệ đó, đường nối chúng là thẳng đứng và một chiếc đồng hồ có thể đi từ biến cố này sang biến cố kia. Số chỉ trôi qua của nó là thời gian riêng \(\Delta\tau\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_03.png}
+\caption{Một khoảng kiểu thời có độ tách theo thời gian lớn hơn theo không gian; tồn tại một hệ nghỉ trong đó hai biến cố cùng một vị trí.}
+\lectureframe{00:14:42}
+\end{figure}
+
+\subsection{Phân cách kiểu không gian}
+
+Nếu \(\Delta\vec x^{\,2}>(\Delta t)^2\), khoảng là kiểu không gian. Không có hệ quy chiếu quán tính nào đặt cả hai biến cố tại cùng một điểm không gian, nhưng có một hệ trong đó chúng đồng thời. Các hệ khác có thể đảo ngược thứ tự thời gian của chúng. Vì vậy, đối với một cặp kiểu không gian, cả mệnh đề \emph{biến cố \(A\) xảy ra trước} lẫn mệnh đề \emph{biến cố \(B\) xảy ra trước} đều không phải là phát biểu bất biến. Đó là tính tương đối của sự đồng thời dưới dạng hình học.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_04.png}
+\caption{Đối với một khoảng kiểu không gian, việc đổi hệ quán tính có thể làm cho hai biến cố đồng thời hoặc đảo ngược thứ tự thời gian của chúng.}
+\lectureframe{00:17:01}
+\end{figure}
+
+Một hạt có khối lượng có đường thế giới kiểu thời: mọi đoạn đủ ngắn đều thỏa \(d\tau^2>0\). Ghép liên tiếp các vận tốc \(0.9c\) có thể đưa một hạt ngày càng gần \(c\), nhưng không bao giờ vượt qua nó. Sự tiến sát này gợi nhớ nghịch lý Zeno. Hạn chế nhân quả này không chỉ áp dụng cho các vật thể vật chất mà còn cho cả tín hiệu và thông tin, vì thông tin phải được mang bởi các hệ vật lý. Một tín hiệu nhanh hơn ánh sáng sẽ cho phép các hệ khác nhau bất đồng về việc đầu nào trong lịch sử của nó là nguyên nhân và đầu nào là kết quả.
+
+\section{Bốn-vận tốc}
+
+Hãy xét một đoạn kiểu thời ngắn. Trong đơn vị thông thường,
+\begin{equation}
+d\tau
+=
+\sqrt{dt^2-\frac{d\vec x^{\,2}}{c^2}}.
+\label{eq:sr3-proper-time-dimensional}
+\end{equation}
+Thừa số \(c^2\) được ấn định bởi thứ nguyên: \(dt^2\) có đơn vị là bình phương thời gian, còn \(d\vec x^{\,2}\) có đơn vị là bình phương độ dài.
+
+\begin{classroomqa}
+\audiencequestion{Khi viết khoảng trong đơn vị thông thường, phải chèn tốc độ ánh sáng vào đâu?}
+\lecturerresponse{Số hạng không gian phải được chia cho \(c^2\), nên ta có \(d\tau^2=dt^2-d\vec x^{\,2}/c^2\). Ta thường sẽ quay lại \(c=1\), nhưng tính nhất quán thứ nguyên luôn khôi phục được các thừa số bị thiếu. \lecturetimestamp{00:21:23}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_05.png}
+\caption{Một độ dời đường thế giới \(\Delta x^\mu=(\Delta t,\Delta\vec x)\) và số gia thời gian riêng gắn với nó.}
+\lectureframe{00:21:03}
+\end{figure}
+
+Vận tốc thông thường có ba thành phần không gian,
+\begin{equation}
+v^i=\frac{dx^i}{dt},
+\qquad i=1,2,3.
+\end{equation}
+Bốn-vận tốc thu được bằng cách lấy độ dời đầy đủ trong không-thời gian chia cho thời gian riêng bất biến:
+\begin{equation}
+u^\mu
+=
+\frac{dx^\mu}{d\tau},
+\qquad
+\mu=0,1,2,3.
+\label{eq:sr3-four-velocity-definition}
+\end{equation}
+Các chỉ số Hy Lạp chạy trên không-thời gian; các chỉ số Latin chạy trên không gian. Thành phần thứ không của vị trí là \(x^0=t\) trong đơn vị \(c=1\), nên
+\begin{equation}
+u^0=\frac{dt}{d\tau}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_06.png}
+\caption{Vận tốc thông thường lấy độ dời không gian chia cho thời gian tọa độ, còn bốn-vận tốc lấy cả bốn thành phần chia cho thời gian riêng.}
+\lectureframe{00:24:05}
+\end{figure}
+
+Để liên hệ \(u^\mu\) với \(\vec v\), hãy tách \(dt^2\) ra khỏi khoảng:
+\begin{align}
+d\tau^2
+&=dt^2-d\vec x^{\,2}\\
+&=dt^2\left(1-\frac{d\vec x^{\,2}}{dt^2}\right)
+=dt^2(1-v^2).
+\end{align}
+Lấy căn dương cho một đường thế giới hướng về tương lai,
+\begin{equation}
+\frac{d\tau}{dt}=\sqrt{1-v^2},
+\qquad
+\frac{dt}{d\tau}=\frac{1}{\sqrt{1-v^2}}
+\equiv\gamma.
+\label{eq:sr3-time-component}
+\end{equation}
+Đối với một thành phần không gian,
+\begin{equation}
+v^i
+=
+\frac{dx^i}{dt}
+=
+\frac{dx^i}{d\tau}\frac{d\tau}{dt}
+=u^i\sqrt{1-v^2}.
+\end{equation}
+Do đó
+\begin{equation}
+\boxed{
+u^\mu
+=
+\gamma(1,\vec v)
+},
+\qquad
+u^0=\gamma,
+\qquad
+u^i=\gamma v^i.
+\label{eq:sr3-four-velocity-components}
+\end{equation}
+Ở vận tốc thấp \(u^0\to1\) và \(u^i\to v^i\). Gần tốc độ ánh sáng, cả \(u^0\) lẫn độ lớn của phần không gian của bốn-vận tốc đều trở nên lớn mặc dù \(|\vec v|<1\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_07.png}
+\caption{Quan hệ đầy đủ giữa vận tốc thông thường và cả bốn thành phần của \(u^\mu\).}
+\lectureframe{00:30:40}
+\end{figure}
+
+\subsection{Vì sao chỉ có ba thành phần là độc lập}
+
+Bốn-vận tốc có bốn thành phần nhưng chỉ có ba bậc tự do độc lập. Chia đồng nhất thức của khoảng cho \(d\tau^2\) cho ta
+\begin{equation}
+1
+=
+\left(\frac{dt}{d\tau}\right)^2
+-\left(\frac{d\vec x}{d\tau}\right)^2,
+\end{equation}
+hoặc
+\begin{equation}
+\boxed{
+(u^0)^2-\vec u^{\,2}=1
+}.
+\label{eq:sr3-four-velocity-normalization}
+\end{equation}
+Một điều kiện chuẩn hóa loại bỏ một thành phần độc lập.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_08.png}
+\caption{Khoảng bất biến lập tức cho ra điều kiện chuẩn hóa \((u^0)^2-\vec u^{\,2}=1\).}
+\lectureframe{00:33:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Việc mất đi một thành phần độc lập có thể được hiểu từ phép lấy đạo hàm theo chính thời gian riêng hay không?}
+\lecturerresponse{Có. Thời gian riêng không phải là một tọa độ thứ năm độc lập; nó được cố định bởi khoảng không-thời gian dọc theo đường thế giới. Chia hệ thức định nghĩa đó cho \(d\tau^2\) sẽ ràng buộc bốn đạo hàm phải nằm trên mặt hyperboloid đơn vị kiểu thời \((u^0)^2-\vec u^{\,2}=1\). \lecturetimestamp{00:34:07}}
+\end{classroomqa}
+
+\section{Một tác dụng bất biến cho hạt tự do}
+
+Quy luật nào chi phối một đường thế giới không chịu lực? Ta giữ lại hai bài học từ cơ học cổ điển:
+\begin{enumerate}
+\item quỹ đạo vật lý làm cho một tác dụng dừng trong khi các đầu mút của nó được giữ cố định;
+\item tác dụng được xây dựng theo tính cộng từ các đoạn vi phân của quỹ đạo.
+\end{enumerate}
+Thuyết tương đối thêm một đòi hỏi thứ ba: mọi quan sát viên quán tính phải đồng ý về tác dụng. Vô hướng vi phân tự nhiên có sẵn trên một đường thế giới kiểu thời là \(d\tau\). Vì thế tác dụng của hạt tự do là
+\begin{equation}
+\boxed{
+S=-m\int_a^b d\tau
+}
+\qquad(c=1).
+\label{eq:sr3-invariant-action}
+\end{equation}
+Bức tranh tổng hữu hạn là
+\begin{equation}
+S=-m\lim_{N\to\infty}\sum_{k=1}^{N}\Delta\tau_k.
+\end{equation}
+Vì mọi quan sát viên đều đồng ý về từng số gia thời gian riêng, họ cũng đồng ý về quỹ đạo nào làm cho tổng ấy dừng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_09.png}
+\caption{Tác dụng được xây dựng như một tổng các số gia thời gian riêng bất biến dọc theo một đường thế giới biến phân với các đầu mút cố định.}
+\lectureframe{00:38:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Điều gì xảy ra với năng lượng nếu tác dụng được nhân với một hằng số tùy ý?}
+\lecturerresponse{Năng lượng không phải là bất biến xuất phát; nó sẽ được suy ra từ Lagrangian và Hamiltonian. Nhân toàn bộ tác dụng với một hằng số khác không không làm thay đổi các quỹ đạo dừng của nó, dù nó có đổi tỉ lệ các đại lượng chính tắc được định nghĩa từ tác dụng đó. Chuẩn hóa \(-m\) được chọn để các đại lượng suy ra ấy khớp với những quy ước Newton đã xác lập. \lecturetimestamp{00:39:47}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao một bất biến như thời gian riêng là một ứng viên tốt để xây dựng tác dụng?}
+\lecturerresponse{Bởi vì một định luật tác dụng dừng phải chọn cùng một quỹ đạo vật lý trong mọi hệ quy chiếu quán tính. Điều này tương tự như việc tìm đường cong ngắn nhất trong một mặt phẳng Euclid: các phép quay làm thay đổi các thành phần tọa độ nhưng không làm thay đổi từng độ dài vi phân, nên chúng không thể làm thay đổi đường nào là ngắn nhất. Thay độ dài Euclid bằng thời gian riêng cho ta cách xây dựng tương đối tính. \lecturetimestamp{00:40:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao chọn căn bậc hai dương cho thời gian riêng thay vì căn âm?}
+\lecturerresponse{Thời gian riêng được định nghĩa là số chỉ trôi qua dương của một chiếc đồng hồ được mang từ quá khứ đến tương lai. Nếu nhất quán chọn căn âm thì chỉ đơn thuần đảo dấu của tác dụng, biến cực tiểu thành cực đại mà không làm thay đổi đường thế giới dừng. Trong hệ nghỉ của đồng hồ, quy ước dương cho \(d\tau=dt\). \lecturetimestamp{00:42:59}}
+\end{classroomqa}
+
+Thừa số \(-m\) cũng là một quy ước chuẩn hóa được chọn để khôi phục cơ học Newton. Khôi phục đơn vị, tác dụng quy ước là
+\begin{equation}
+S=-mc^2\int_a^b d\tau.
+\label{eq:sr3-action-dimensional}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_10.png}
+\caption{Tổng hữu hạn theo thời gian riêng trở thành tích phân bất biến \(-m\int d\tau\) trong đơn vị tự nhiên.}
+\lectureframe{00:46:23}
+\end{figure}
+
+\section{Lagrangian tương đối tính}
+
+Để đưa tác dụng về dạng cơ học chuẩn, hãy tách \(dt\) ra khỏi \(d\tau\):
+\begin{equation}
+d\tau
+=dt\sqrt{1-\dot{\vec x}^{\,2}},
+\qquad
+\dot{\vec x}^{\,2}
+=\dot x^2+\dot y^2+\dot z^2.
+\end{equation}
+Khi đó
+\begin{equation}
+S
+=
+\int_a^b L\,dt,
+\qquad
+\boxed{
+L=-m\sqrt{1-v^2}
+}
+\quad(c=1).
+\label{eq:sr3-relativistic-lagrangian}
+\end{equation}
+Trong đơn vị thông thường,
+\begin{equation}
+L=-mc^2\sqrt{1-\frac{v^2}{c^2}}.
+\label{eq:sr3-relativistic-lagrangian-c}
+\end{equation}
+Đây là Lagrangian của một hạt tự do: nó phụ thuộc vào vận tốc nhưng không phụ thuộc vào vị trí. Chưa có lực hay thế năng nào được đưa vào.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_11.png}
+\caption{Việc tách \(dt\) ra cho thấy Lagrangian tương đối tính tự do như một hàm của ba thành phần vận tốc.}
+\lectureframe{00:49:57}
+\end{figure}
+
+\subsection{Khôi phục Lagrange và Newton}
+
+Thế \eqref{eq:sr3-sqrt-expansion} vào:
+\begin{align}
+L
+&=-m\sqrt{1-v^2}\\
+&\approx-m\left(1-\frac{v^2}{2}\right)\\
+&=-m+\frac12mv^2.
+\label{eq:sr3-lagrangian-low-speed}
+\end{align}
+Hằng số \(-m\) độc lập với cả vị trí lẫn vận tốc. Nó đóng góp cùng một lượng cho mọi quỹ đạo có cùng các thời điểm đầu mút và vì vậy bị khử khỏi các phương trình Euler--Lagrange. Phần mang nội dung động lực học chính là
+\begin{equation}
+L_{\mathrm{Newton}}=\frac12mv^2.
+\end{equation}
+Vì thế, dấu và chuẩn hóa theo khối lượng trong tác dụng bất biến đã được chọn đúng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_12.png}
+\caption{Khai triển vận tốc thấp để lại một hằng số \(-m\) và Lagrangian Newton của hạt tự do \(mv^2/2\).}
+\lectureframe{00:53:24}
+\end{figure}
+
+Đối với hạt tự do đang xét, các phương trình Euler--Lagrange sẽ chỉ nói rằng vận tốc là hằng số và đường thế giới trong không-thời gian là đường thẳng. Nhiệm vụ bộc lộ nhiều hơn là xác định xung lượng và năng lượng được bảo toàn.
+
+\section{Xung lượng chính tắc}
+
+Vì \(L\) không phụ thuộc vào vị trí, nên nó bất biến dưới các phép tịnh tiến trong không gian. Đại lượng bảo toàn tương ứng là động lượng. Ta không giả sử công thức Newton \(p_i=mv_i\); ta dùng định nghĩa chính tắc
+\begin{equation}
+p_i=\frac{\partial L}{\partial\dot x^i}.
+\label{eq:sr3-canonical-momentum}
+\end{equation}
+Với \(L=-m\sqrt{1-v^2}\),
+\begin{align}
+p_i
+&=
+-m\frac{1}{2\sqrt{1-v^2}}
+\frac{\partial}{\partial\dot x^i}(1-v^2)\\
+&=
+-m\frac{1}{2\sqrt{1-v^2}}(-2\dot x^i)\\
+&=
+\frac{mv_i}{\sqrt{1-v^2}}
+=m\gamma v_i.
+\label{eq:sr3-relativistic-momentum}
+\end{align}
+Vì \(u^i=\gamma v^i\),
+\begin{equation}
+\boxed{
+p^i=mu^i
+}.
+\label{eq:sr3-momentum-spatial}
+\end{equation}
+Ở tốc độ thấp, biểu thức này thu về \(p^i\approx mv^i\). Gần tốc độ ánh sáng, mẫu số giữ vai trò quyết định.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_13.png}
+\caption{Lấy đạo hàm chính tắc của Lagrangian dạng căn bậc hai cho \(p_x=mv_x/\sqrt{1-v^2}\).}
+\lectureframe{00:58:49}
+\end{figure}
+
+\subsection{Khối lượng, không phải khối lượng tương đối tính}
+
+Ở đây \(m\) đơn giản là khối lượng của hạt: một nhãn bất biến không thay đổi khi hạt chuyển động. Các văn bản cũ đôi khi gọi nó là \emph{khối lượng nghỉ} và gọi \(E/c^2\) là một \emph{khối lượng tương đối tính} phụ thuộc vào vận tốc. Cách dùng hiện đại tránh sự phân đôi đó. Chuyển động làm thay đổi năng lượng và động lượng, chứ không làm thay đổi khối lượng bất biến. Khối lượng của electron là cùng một tham số trong mọi hệ quy chiếu.
+
+\section{Từ động lượng ba chiều đến bốn động lượng}
+
+Một phát biểu về một thành phần của một bốn-vectơ nhìn chung là phụ thuộc hệ quy chiếu. Chẳng hạn, \(\Delta\vec x=0\) nói rằng hai sự kiện có cùng vị trí trong một hệ quy chiếu, nhưng một phép boost Lorentz làm nghiêng khoảng cách-thời gian ấy và khiến \(\Delta\vec x'\ne0\). Trái lại,
+\begin{equation}
+\Delta x^\mu=0
+\end{equation}
+là bất biến: nếu cả bốn thành phần đều triệt tiêu trong một hệ quy chiếu, thì cả bốn đều triệt tiêu trong mọi hệ quy chiếu. Tương tự, \(\vec u=0\) chỉ xác định hệ quy chiếu nghỉ của hạt; đó không phải là một mô tả bất biến của bốn-vận tốc.
+
+Đối với một hệ kín, định luật bảo toàn động lượng thông thường có dạng
+\begin{equation}
+\vec P_{\mathrm{initial}}-\vec P_{\mathrm{final}}=0.
+\label{eq:sr3-three-momentum-conservation}
+\end{equation}
+Đây là một phương trình vectơ ba chiều. Để biểu diễn sự bảo toàn theo cách hiển nhiên hiệp biến Lorentz, ta cần một thành phần thứ tư ghép với ba \(p^i=mu^i\). Sự bổ sung hiển nhiên là
+\begin{equation}
+p^\mu=mu^\mu.
+\label{eq:sr3-four-momentum}
+\end{equation}
+Trong đơn vị \(c=1\),
+\begin{equation}
+p^\mu=(p^0,\vec p)
+=
+m\gamma(1,\vec v).
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_14.png}
+\caption{Bảo toàn động lượng chỉ trở thành bất biến sau khi các thành phần không gian được bổ sung bởi một thành phần thứ tư.}
+\lectureframe{01:09:51}
+\end{figure}
+
+Thành phần còn thiếu ấy bản thân nó cũng phải được bảo toàn. Cơ học hạt đã chứa một đại lượng bảo toàn khác: năng lượng. Vấn đề là liệu \(p^0=mu^0=m\gamma\) có chính là năng lượng đó trong đơn vị tự nhiên hay không. Câu trả lời có hệ thống đến từ Hamiltonian.
+
+\section{Hamiltonian là năng lượng}
+
+Đối với mọi Lagrangian không phụ thuộc tường minh vào thời gian thuộc dạng này, Hamiltonian là
+\begin{equation}
+H=\sum_{i=1}^{3}\dot x^i p_i-L.
+\label{eq:sr3-hamiltonian-definition}
+\end{equation}
+Công thức này không phải riêng của cơ học Newton. Nó là phép biến đổi Legendre tổng quát từ các vận tốc sang các động lượng chính tắc và áp dụng bình đẳng cho Lagrangian tương đối tính.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_15.png}
+\caption{Công thức Hamiltonian tổng quát \(H=\sum_i\dot x^i p_i-L\).}
+\lectureframe{01:11:55}
+\end{figure}
+
+Thế \(p_i=m\dot x_i/\sqrt{1-v^2}\) và \(L=-m\sqrt{1-v^2}\) vào:
+\begin{align}
+H
+&=
+\frac{mv^2}{\sqrt{1-v^2}}
++m\sqrt{1-v^2}\\
+&=
+\frac{mv^2+m(1-v^2)}{\sqrt{1-v^2}}\\
+&=
+\boxed{\frac{m}{\sqrt{1-v^2}}}
+=m\gamma.
+\label{eq:sr3-hamiltonian-result}
+\end{align}
+Sự triệt tiêu là bước then chốt. So sánh với \(u^0=\gamma\),
+\begin{equation}
+H=mu^0=p^0.
+\end{equation}
+Vậy thành phần thứ tư là năng lượng:
+\begin{equation}
+p^\mu=(E,\vec p),
+\qquad
+E=H
+\qquad(c=1).
+\label{eq:sr3-four-momentum-natural}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_16.png}
+\caption{Hai số hạng trong Hamiltonian được gộp trên một mẫu số chung; các đóng góp \(mv^2\) triệt tiêu nhau.}
+\lectureframe{01:14:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Công thức \(H=\sum_i\dot x^i p_i-L\) có chỉ là công thức Hamiltonian cổ điển không?}
+\lecturerresponse{Đây là phép biến đổi Legendre tổng quát gắn với một Lagrangian, không phải một giả định phi tương đối tính đặc biệt. Dạng của \(L\) quyết định ta thu được cơ học nào. Ở đây Lagrangian căn bậc hai tương đối tính cho \(H=m/\sqrt{1-v^2}\). \lecturetimestamp{01:15:21}}
+\end{classroomqa}
+
+Mệnh đề bảo toàn bất biến bây giờ là
+\begin{equation}
+\sum_{\mathrm{initial}}p^\mu
+=
+\sum_{\mathrm{final}}p^\mu,
+\label{eq:sr3-four-momentum-conservation}
+\end{equation}
+bao hàm trong một phương trình bốn-vectơ duy nhất cả bảo toàn năng lượng lẫn bảo toàn cả ba thành phần của động lượng.
+
+\section{Năng lượng nghỉ và giới hạn Newton}
+
+Trong đơn vị tự nhiên, năng lượng chính xác là
+\begin{equation}
+E=\frac{m}{\sqrt{1-v^2}}.
+\end{equation}
+Dùng \eqref{eq:sr3-gamma-expansion},
+\begin{equation}
+E
+\approx
+m+\frac12mv^2+\frac38mv^4+\cdots .
+\label{eq:sr3-energy-natural-expansion}
+\end{equation}
+Số hạng thứ hai là động năng quen thuộc. Số hạng thứ nhất là năng lượng còn lại khi tâm khối đứng yên.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_17.png}
+\caption{Năng lượng chính xác khai triển thành \(m+mv^2/2+\cdots\) trong đơn vị \(c=1\).}
+\lectureframe{01:18:02}
+\end{figure}
+
+Khôi phục thứ nguyên trong biểu thức chính xác. Tỉ số dưới dấu căn phải là \(v^2/c^2\), và tử số phải có đơn vị năng lượng:
+\begin{equation}
+\boxed{
+E
+=
+\gamma mc^2
+=
+\frac{mc^2}{\sqrt{1-v^2/c^2}}
+}.
+\label{eq:sr3-energy-exact}
+\end{equation}
+Khai triển ở tốc độ thấp của nó là
+\begin{equation}
+\boxed{
+E
+=
+mc^2+\frac12mv^2
++\frac38m\frac{v^4}{c^2}
++\cdots
+}.
+\label{eq:sr3-energy-dimensional-expansion}
+\end{equation}
+Khi đứng yên,
+\begin{equation}
+\boxed{E_{\mathrm{rest}}=mc^2}.
+\label{eq:sr3-emc2}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_18.png}
+\caption{Việc khôi phục thứ nguyên biến số hạng hằng thành \(mc^2\), tiếp theo là động năng Newton \(mv^2/2\).}
+\lectureframe{01:19:16}
+\end{figure}
+
+Điều này áp dụng cho mọi vật thể kín, không chỉ cho một hạt cơ bản. \emph{Đứng yên} có nghĩa là tâm khối đứng yên. Các phân tử, nguyên tử và các trường bên trong vật thể vẫn có thể chuyển động và tương tác. Động năng nội, thế năng nội và năng lượng liên kết của chúng đều góp phần vào tổng năng lượng nghỉ và do đó vào khối lượng bất biến của vật thể.
+
+\begin{classroomqa}
+\audiencequestion{Hệ số quy đổi có thể đã là \(c^2\) chia cho một số tùy ý nào đó không?}
+\lecturerresponse{Chỉ riêng thứ nguyên xác định lũy thừa của \(c\), nhưng hệ số được ấn định bởi kết quả trong đơn vị tự nhiên. Công thức trong đơn vị thông thường phải rút về \(E=m\) khi \(c=1\), nên biểu thức được khôi phục là \(E=mc^2\) khi đứng yên, với hệ số bằng một. \lecturetimestamp{01:22:08}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Số 1 đứng đầu trong khai triển nhị thức có quan trọng về mặt vật lý không, và các số hạng bậc cao hơn có nghĩa gì?}
+\lecturerresponse{Có. Trong khai triển năng lượng, số 1 đứng đầu trở thành năng lượng nghỉ \(mc^2\). Số hạng kế tiếp là động năng Newton, còn mọi số hạng cao hơn đều là các hiệu chỉnh tương đối tính. Chúng không đáng kể đối với một quả bóng chày nhưng trở nên thiết yếu khi \(v\) tiến tới \(c\). \lecturetimestamp{01:22:37}}
+\end{classroomqa}
+
+Năng lượng và động lượng chính xác phân kỳ khi \(v\to c\):
+\begin{equation}
+\begin{aligned}
+E&=\gamma mc^2\longrightarrow\infty,\\
+\vec p&=\gamma m\vec v\longrightarrow\infty
+\qquad(m>0).
+\end{aligned}
+\end{equation}
+Vì vậy, để đạt tới tốc độ ánh sáng sẽ cần năng lượng và động lượng không bị chặn trên. Một lực hữu hạn tác dụng trong một thời gian hữu hạn chỉ cung cấp một xung lượng hữu hạn, nên một hạt có khối lượng có thể tiến gần \(c\) nhưng không thể đạt tới nó.
+
+\begin{classroomqa}
+\audiencequestion{Bây giờ điều gì áp đặt rào cản tốc độ ánh sáng?}
+\lecturerresponse{Chính bốn-động lượng chính xác. Cả năng lượng lẫn động lượng đều phân kỳ khi một hạt có khối lượng tiến gần \(c\), trong khi bảo toàn bốn-động lượng ràng buộc mọi tương tác. Chuẩn hóa bốn-vận tốc ở trên là cùng một mệnh đề dưới dạng động học. \lecturetimestamp{01:24:27}}
+\end{classroomqa}
+
+\section{Khối lượng của một hệ hợp thành}
+
+Giả sử hai hạt chuyển động với các động lượng bằng nhau và ngược chiều nhau. Tổng động lượng ba chiều của chúng triệt tiêu, nên ta đã ở trong hệ quy chiếu nghỉ của hệ kết hợp. Khối lượng bất biến \(M\) của hệ đó được định nghĩa bởi tổng năng lượng của nó trong hệ này:
+\begin{equation}
+Mc^2=E_{\mathrm{tot}}
+\qquad
+(\vec P_{\mathrm{tot}}=0).
+\end{equation}
+Tổng quát hơn,
+\begin{equation}
+M^2c^4
+=
+E_{\mathrm{tot}}^2-c^2\vec P_{\mathrm{tot}}^{\,2}.
+\label{eq:sr3-composite-mass}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Đối với hai hạt chuyển động theo các hướng ngược nhau, khối lượng của hệ kết hợp có lớn hơn tổng các khối lượng riêng lẻ của chúng không?}
+\lecturerresponse{Nếu chúng là tự do, có: trong hệ tâm-động lượng, động năng của chúng cộng vào tổng năng lượng nghỉ, nên \(M>m_1+m_2\). Năng lượng liên kết hút có thể làm giảm tổng đó thay vào đó, cho \(M<m_1+m_2\). Định nghĩa bất biến là tổng năng lượng trong hệ mà tổng động lượng bằng không. \lecturetimestamp{01:25:06}}
+\end{classroomqa}
+
+Đó là lý do không thể bỏ qua chuyển động nội và liên kết khi cân một vật thể hợp thành. Khối lượng bất biến thuộc về toàn bộ hệ kín, chứ không phải về một danh sách cộng số học đơn thuần các khối lượng cấu thành.
+
+\begin{classroomqa}
+\audiencequestion{Số hạng năng lượng nghỉ đóng vai trò gì trong pha của một trạng thái lượng tử?}
+\lecturerresponse{Một trạng thái có năng lượng xác định tiến hóa với pha \(\exp(-iEt/\hbar)\), nên một hạt đứng yên đóng góp \(\exp(-imc^2t/\hbar)\). Một pha tổng thể chung thì không quan sát được, nhưng các pha tương đối giữa những thành phần có năng lượng khác nhau thì có thể quan sát được. Hệ quả lượng tử này phù hợp với, nhưng không cần thiết cho, phép suy ra cổ điển ở đây. \lecturetimestamp{01:26:57}}
+\end{classroomqa}
+
+\section{Hệ thức năng lượng--động lượng}
+
+Việc chuẩn hóa bốn-vận tốc lập tức cho chuẩn bất biến của bốn-động lượng. Trong đơn vị \(c=1\),
+\begin{equation}
+(u^0)^2-\vec u^{\,2}=1.
+\end{equation}
+
+Nhân với \(m^2\) và dùng \(p^\mu=mu^\mu\),
+\begin{equation}
+\boxed{
+E^2-\vec p^{\,2}=m^2
+}
+\qquad(c=1).
+\label{eq:sr3-mass-shell-natural}
+\end{equation}
+Tương đương,
+\begin{equation}
+E=\sqrt{\vec p^{\,2}+m^2}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_19.png}
+\caption{Nhân chuẩn hóa bốn-vận tốc với \(m^2\) cho ra \(E^2-\vec p^{\,2}=m^2\).}
+\lectureframe{01:31:48}
+\end{figure}
+
+Khôi phục \(c\),
+\begin{equation}
+\boxed{
+E^2
+=
+\vec p^{\,2}c^2+m^2c^4
+},
+\qquad
+E=\sqrt{\vec p^{\,2}c^2+m^2c^4}.
+\label{eq:sr3-mass-shell}
+\end{equation}
+Công thức này biểu diễn năng lượng như một hàm của động lượng mà không cần viện đến vận tốc. Nó là tương tự tương đối tính của hệ thức Newton
+\begin{equation}
+K=\frac{\vec p^{\,2}}{2m}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_20.png}
+\caption{Hệ thức vỏ khối lượng với thứ nguyên được khôi phục: \(E=\sqrt{\vec p^{\,2}c^2+m^2c^4}\).}
+\lectureframe{01:32:38}
+\end{figure}
+
+\subsection{Các hạt không khối lượng}
+
+Công thức viết theo vận tốc \(E=\gamma mc^2\) trở thành dạng bất định \(0/0\) nếu \(m=0\) và \(v=c\). Vì thế, vận tốc là một nhãn kém thích hợp để phân biệt các hạt không khối lượng: mọi hạt không khối lượng lan truyền tự do trong chân không đều chuyển động với \(c\), vậy mà các photon khác nhau vẫn có thể có những năng lượng khác nhau.
+
+Hệ thức năng lượng--động lượng có một giới hạn không khối lượng trơn tru:
+\begin{equation}
+m=0
+\quad\Longrightarrow\quad
+\boxed{E=c|\vec p|}.
+\label{eq:sr3-massless-energy}
+\end{equation}
+Điều này áp dụng cho photon và, trong lý thuyết lý tưởng hóa không khối lượng, cho graviton. Nó là một xấp xỉ rất tốt cho một hạt tương đối tính mạnh bất cứ khi nào \(mc^2\ll E\), kể cả neutrino ở năng lượng đủ cao mặc dù chúng có các khối lượng nhỏ nhưng khác không.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_21.png}
+\caption{Giới hạn không khối lượng của hệ thức năng lượng--động lượng cho \(E=c|\vec p|\).}
+\lectureframe{01:33:48}
+\end{figure}
+
+\section{Phân rã của positronium}
+
+Xét positronium, một trạng thái liên kết của một electron và một positron. Khối lượng bất biến của nó nhỏ hơn \(2m_e\) một chút: các cấu phần có động năng nội dương nhưng năng lượng liên kết âm có độ lớn còn lớn hơn. Về mặt số học,
+\begin{equation}
+m_ec^2\approx0.511\ \mathrm{MeV},
+\qquad
+m_e\approx9.11\times10^{-31}\ \mathrm{kg},
+\end{equation}
+nhưng động học không phụ thuộc vào giá trị số này.
+
+Xét kênh phân rã hai photon trong hệ nghỉ của positronium:
+\begin{equation}
+\mathrm{Ps}\longrightarrow\gamma+\gamma.
+\end{equation}
+Ban đầu tổng động lượng bằng không. Vì vậy bảo toàn động lượng đòi hỏi các photon phải bay ra ngược hướng nhau với các động lượng bằng nhau và đối nhau:
+\begin{equation}
+\vec p_1=\vec p,
+\qquad
+\vec p_2=-\vec p.
+\label{eq:sr3-positronium-momentum}
+\end{equation}
+Nếu \(M\) là khối lượng của positronium, bảo toàn năng lượng cho
+\begin{equation}
+Mc^2
+=E_1+E_2
+=c|\vec p_1|+c|\vec p_2|
+=2c|\vec p|.
+\end{equation}
+Do đó
+\begin{equation}
+\boxed{
+|\vec p|=\frac{Mc}{2},
+\qquad
+E_1=E_2=\frac{Mc^2}{2}
+}.
+\label{eq:sr3-positronium-result}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_22.png}
+\caption{Một trạng thái positronium đứng yên phân rã thành hai photon có các động lượng bằng nhau và đối nhau; \(Mc^2=2c|\vec p|\).}
+\lectureframe{01:40:55}
+\end{figure}
+
+Quá trình này không có tương tự Newton nào trong đó tổng các khối lượng hạt được bảo toàn. Trạng thái đi vào có khối lượng bất biến khác không, trong khi mỗi photon đi ra lại không khối lượng. Đại lượng được bảo toàn là tổng bốn-động lượng. Năng lượng nghỉ được tích trữ đã trở thành năng lượng điện từ lan truyền. Với hệ thức lượng tử \(|\vec p|=h/\lambda\), cùng kết quả ấy cũng xác định bước sóng của photon; năng lượng photon tương ứng nằm cao hơn rất xa miền quang học.
+
+\begin{classroomqa}
+\audiencequestion{Làm thế nào mômen động lượng được bảo toàn trong phân rã?}
+\lecturerresponse{Bức xạ đi ra phải mang cùng tổng mômen động lượng như trạng thái ban đầu. Trong kênh hai photon, các helicity của photon và trạng thái quỹ đạo của chúng kết hợp theo cách thích hợp. Cụ thể hơn, para-positronium ở trạng thái singlet spin phân rã chủ yếu thành hai photon, còn ortho-positronium ở trạng thái triplet spin phân rã chủ yếu thành ba photon; kênh được phép tôn trọng mọi số lượng tử. \lecturetimestamp{01:42:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao một hạt chuyển động với tốc độ ánh sáng phải không khối lượng?}
+\lecturerresponse{Với năng lượng hữu hạn khác không, thừa số \(\gamma\) phân kỳ khi \(v\to c\). Hệ thức bất biến \(E^2-\vec p^{\,2}c^2=m^2c^4\) cho thấy rằng một hạt có bốn-động lượng null thì \(m=0\). Ngược lại, một hạt tự do không khối lượng có đường thế giới null và lan truyền với \(c\). \lecturetimestamp{01:42:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu cùng trạng thái trung hòa ấy có thể phân rã thành graviton thay vì photon không?}
+\lecturerresponse{Về nguyên tắc, các trạng thái cuối hấp dẫn được phép khi các số lượng tử cho phép, nhưng tỷ lệ phân nhánh hấp dẫn nhỏ hơn tỷ lệ điện từ đến mức phi thường. Việc hạch toán động học vẫn sẽ dùng cùng định luật bảo toàn bốn-động lượng và \(E=c|\vec p|\) cho mỗi lượng tử không khối lượng. \lecturetimestamp{01:43:20}}
+\end{classroomqa}
+
+\subsection{Một đỉnh phân rã}
+
+Phân rã là cục bộ: đường thế giới của hạt mẹ kết thúc tại một sự kiện không-thời gian, và các đường thế giới của các photon phát ra bắt đầu ở đó. Có thể ngoại suy ngược các tương tác tại đầu dò để tái dựng đỉnh chung ấy. Nếu hai photon được phát ra ở các sự kiện khác nhau, thì các quỹ đạo null được ngoại suy ngược của chúng sẽ không gặp nhau tại một điểm.
+
+\begin{classroomqa}
+\audiencequestion{Hai photon có nhất thiết phải được phát ra đồng thời trong mọi hệ quy chiếu không?}
+\lecturerresponse{Chúng bắt nguồn từ cùng một sự kiện không-thời gian, chứ không phải từ hai sự kiện tách biệt trong không gian mà tính đồng thời của chúng có thể phụ thuộc hệ quy chiếu. Mọi hệ Lorentz đều đồng ý rằng một sự kiện là một sự kiện. Cơ học lượng tử khiến hạt mẹ có một độ bất định vị trí hữu hạn, nên đỉnh được tái dựng là một phân bố chứ không phải một điểm cổ điển được biết chính xác hoàn toàn. \lecturetimestamp{01:44:01}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao chuẩn của bốn-vận tốc bằng một?}
+\lecturerresponse{Thời gian riêng được định nghĩa bởi \(d\tau^2=dt^2-d\vec x^{\,2}\) trong hệ đơn vị \(c=1\). Chia cho \(d\tau^2\) ta được \((dt/d\tau)^2-(d\vec x/d\tau)^2=1\), chính là \((u^0)^2-\vec u^{\,2}=1\). Vì vậy, sự chuẩn hóa đã được hàm chứa ngay trong định nghĩa của thời gian riêng. \lecturetimestamp{01:45:38}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(u^0=dt/d\tau\) có cho một cách hiểu sâu hơn về năng lượng không?}
+\lecturerresponse{Nó cho ta đồng nhất thức hữu ích \(E=mc^2\,dt/d\tau=\gamma mc^2\): khi đứng yên, tỉ số giữa thời gian tọa độ và thời gian riêng bằng một, còn khi chuyển động thì đó là hệ số Lorentz. Ngoài việc mã hóa sự phụ thuộc vào vận tốc ấy, bản thân đồng nhất thức này không bổ sung một nguyên lý động lực học riêng biệt nào. \lecturetimestamp{01:46:36}}
+\end{classroomqa}
+
+\section{Bảo toàn đòi hỏi một hệ kín}
+
+Mệnh đề
+\begin{equation}
+\sum p^\mu_{\mathrm{initial}}
+=
+\sum p^\mu_{\mathrm{final}}
+\end{equation}
+áp dụng cho một hệ cô lập bao gồm mọi thành phần có trao đổi năng lượng và động lượng. Các phòng thí nghiệm thực tế có điện trường và từ trường tản mạn, các hạt xung quanh, trọng lực, giá đỡ và đầu dò. Nếu bỏ các bậc tự do đó ra ngoài việc hạch toán, thì phân hệ có thể biểu lộ một mất cân bằng biểu kiến nhỏ; bốn-động lượng bị thiếu đã đi vào môi trường.
+
+\begin{classroomqa}
+\audiencequestion{Tổng động lượng của hai photon có thể khác không một lượng rất nhỏ không?}
+\lecturerresponse{Không, nếu xét hệ cô lập đầy đủ. Trong một thí nghiệm thực tế, một trường chưa được mô hình hóa hoặc độ giật lùi của thiết bị có thể mang phần dư rất nhỏ đó, nên phân hệ được chọn có thể không có vẻ là kín. Khi đã đưa mọi phần tương tác vào, tổng bốn-động lượng được bảo toàn. \lecturetimestamp{01:47:51}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nguyên lý bất định có làm suy yếu bảo toàn động lượng không?}
+\lecturerresponse{Không. Một trạng thái lượng tử có thể có vị trí hoặc động lượng bất định, và hiểu biết sắc nét hơn về đại lượng này sẽ làm rộng phân bố của đại lượng kia, nhưng đối xứng tịnh tiến vẫn cho bảo toàn chính xác tổng động lượng của một hệ cô lập. Độ bất định lượng tử liên quan đến các kết quả và các phân bố, chứ không phải sự thất bại của định luật bảo toàn. \lecturetimestamp{01:49:19}}
+\end{classroomqa}
+
+\section{Biểu thức năng lượng chính xác và gần đúng}
+
+Điều quan trọng là không được nhầm công thức chính xác với khai triển ở tốc độ thấp của nó:
+\begin{align}
+E_{\mathrm{exact}}
+&=
+\frac{mc^2}{\sqrt{1-v^2/c^2}},
+\label{eq:sr3-exact-repeated}\\
+E_{\mathrm{slow}}
+&=
+mc^2+\frac12mv^2
++O\!\left(\frac{mv^4}{c^2}\right).
+\label{eq:sr3-approx-repeated}
+\end{align}
+Biểu thức thứ nhất vẫn đúng với mọi \(v<c\). Biểu thức thứ hai chỉ hữu ích khi \(v/c\ll1\).
+
+\begin{classroomqa}
+\audiencequestion{Công thức năng lượng có phải chỉ là một xấp xỉ không?}
+\lecturerresponse{\(E=mc^2+mv^2/2+\cdots\) là biểu thức gần đúng. Kết quả chính xác là \(E=mc^2/\sqrt{1-v^2/c^2}\). Thừa số \(v^2/c^2\) làm cho mẫu số vô thứ nguyên, còn tử số \(mc^2\) mang đơn vị năng lượng. \lecturetimestamp{01:49:56}}
+\end{classroomqa}
+
+\subsection{Xem lại bức tranh không-thời gian}
+
+Hình phác trên bảng ở phần cuối trở lại hình học của thí nghiệm. Trước khi phân rã, positronium đứng yên đi theo một đường thế giới kiểu-thời gian thẳng đứng. Tại sự kiện phân rã, đường thế giới đó kết thúc và hai đường thế giới null của photon đi ra theo hai hướng không gian đối nhau.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_03_figure_23.png}
+\caption{Đường thế giới của positronium kết thúc tại một sự kiện phân rã, từ đó hai đường thế giới null của photon xuất phát.}
+\lectureframe{01:53:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Điều gì xác định trục dọc theo đó hai photon được phát ra?}
+\lecturerresponse{Đối với một trạng thái không phân cực, có một phân bố góc lượng tử, và một lần phân rã cụ thể chọn ngẫu nhiên một hướng từ phân bố đó. Bảo toàn động lượng buộc các photon phải đi ngược chiều nhau một khi một hướng đã được chọn ra; bản thân nó không chọn trước trục ấy. \lecturetimestamp{01:53:55}}
+\end{classroomqa}
+
+\section{Các phương trình chuyển động tự do cho biết điều gì}
+
+Tác dụng bất biến không được chọn bằng cách đoán một định luật lực. Nó được chọn như vô hướng Lorentz cục bộ đơn giản nhất tái tạo Lagrangian của hạt tự do Newton ở tốc độ thấp. Lấy biến phân nó cho
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot x^i}\right)=0,
+\end{equation}
+nên
+\begin{equation}
+\frac{dp_i}{dt}=0.
+\end{equation}
+Với khối lượng cố định khác không, điều này tương đương với bốn-vận tốc không đổi:
+\begin{equation}
+\frac{du^\mu}{d\tau}=0.
+\end{equation}
+Vì vậy đường thế giới là một đường thẳng trong không-thời gian. Phát biểu hình học duy nhất ấy bao hàm cả tốc độ không đổi lẫn hướng không gian không đổi.
+
+\begin{classroomqa}
+\audiencequestion{Có một cách biện minh xuất phát từ cơ bản hơn cho tác dụng tương đối tính không, tương tự như việc chọn tác dụng cổ điển sao cho nó tái tạo các phương trình Newton?}
+\lecturerresponse{Đối với hạt tự do, tính bất biến Lorentz, tính cục bộ dọc theo đường thế giới và giới hạn Newton ở tốc độ thấp xác định tác dụng đơn giản nhất tới một hằng số tổng thể. Phương trình Euler--Lagrange của nó khi đó cho động lượng không đổi, đúng bằng kết quả Newton khi không có lực. Các tương tác cung cấp những phép kiểm tra thêm; về sau một hạt mang điện sẽ được ghép với điện trường và từ trường. \lecturetimestamp{01:54:27}}
+\end{classroomqa}
+
+\section{Hai giới hạn cổ điển độc lập}
+
+Giới hạn phi tương đối tính và giới hạn cổ điển của cơ học lượng tử là hai thao tác khác nhau. Các hiệu chỉnh tương đối tính được chi phối bởi tỉ số \(v/c\). Các hiệu ứng lượng tử được chi phối bởi các thang tác dụng so với \(\hbar\), cùng với những tính chất như khối lượng, kích thước hệ, và mức độ trơn tru trong sự biến thiên của các lực ngoài.
+
+\begin{classroomqa}
+\audiencequestion{Giới hạn vận tốc thấp khôi phục cơ học Newton có phải cũng là giới hạn mà theo đó cơ học lượng tử trở thành cổ điển không?}
+\lecturerresponse{Không. Giới hạn tương đối tính liên quan đến \(v/c\); còn giới hạn từ lượng tử sang cổ điển liên quan đến \(\hbar\) so với tác dụng đặc trưng, và thường trở nên hiệu lực đối với khối lượng lớn hoặc các lực biến thiên trơn tru. Một hệ có thể là lượng tử nhưng phi tương đối tính, tương đối tính nhưng về cơ bản là cổ điển, đồng thời là cả hai, hoặc không thuộc loại nào cả. \lecturetimestamp{01:57:32}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có sự bất tương thích nào giữa thuyết tương đối hẹp và cơ học lượng tử không?}
+\lecturerresponse{Không. Lý thuyết lượng tử tương đối tính là nhất quán và dẫn đến lý thuyết trường lượng tử. Mối căng thẳng nổi tiếng chưa được giải quyết liên quan đến việc đưa hấp dẫn vào cơ học lượng tử, chứ không phải việc kết hợp thuyết tương đối hẹp với các nguyên lý lượng tử. Hấp dẫn chưa đi vào cuộc thảo luận hiện nay về hạt tự do. \lecturetimestamp{01:59:01}}
+\end{classroomqa}
+
+Hiện tại, kết quả cho trường hợp không có lực đã trọn vẹn: một hạt có khối lượng đi theo một đường thế giới kiểu-thời gian thẳng, khối lượng bất biến của nó ấn định chuẩn của bốn-động lượng của nó, và năng lượng cùng động lượng là bốn thành phần của một đại lượng bảo toàn duy nhất. Bước tiếp theo vượt ra ngoài chuyển động tự do này sẽ là đưa điện tích và các trường điện từ vào.

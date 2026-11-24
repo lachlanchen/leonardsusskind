@@ -1,0 +1,937 @@
+\chapter{Hạt, trường và ký hiệu tương đối tính}
+
+\section{Một bài toán về dịch Doppler trước buổi giảng}
+
+Một câu hỏi còn lại từ tuần trước mở đầu cuộc thảo luận. Liệu một người quan sát chuyển động gần bằng tốc độ ánh sáng có luôn đo được bước sóng dài hơn không? Không: câu trả lời phụ thuộc vào hướng chuyển động. Người quan sát chuyển động cùng chiều với sóng ánh sáng thấy bước sóng của nó bị kéo dài, còn người quan sát chuyển động ngược chiều với sóng thì thấy nó bị nén lại. Đây là hiệu ứng Doppler tương đối tính.
+
+\begin{classroomqa}
+\audiencequestion{Chuyển động gần bằng tốc độ ánh sáng có làm cho bước sóng quan sát được dài hơn không?}
+\lecturerresponse{Chỉ khi người quan sát chuyển động cùng chiều với ánh sáng. Đảo dấu vận tốc của người quan sát sẽ đảo ngược độ dịch. Kết quả này có thể thu được trực tiếp từ hình học Lorentz mà không cần ghi nhớ một công thức riêng. \lecturetimestamp{00:00:13}}
+\end{classroomqa}
+
+Dùng hệ đơn vị với \(c=1\), và cho hệ có dấu phẩy chuyển động sang phải với tốc độ \(v\). Một đỉnh sóng ánh sáng truyền sang phải đi theo một đường null. Chuẩn hóa bước sóng trong hệ không dấu phẩy bằng một và viết hai đường thế giới của hai đỉnh sóng liên tiếp là \begin{equation}
+x=t,
+\qquad
+x=t+1.
+\label{eq:sr5-crest-lines}
+\end{equation} Bước sóng trong hệ không dấu phẩy được đo giữa hai đỉnh tại cùng \(t\). Còn bước sóng trong hệ có dấu phẩy phải được đo giữa chúng tại cùng \(t'\). Vì thế, tính tương đối của tính đồng thời chính là toàn bộ phép tính này.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_01.png}
+\caption{Các đỉnh sóng liên tiếp chuyển động sang phải, nón ánh sáng và các trục nghiêng của hệ chuyển động.}
+\lectureframe{00:03:30}
+\end{figure}
+
+Đến đây, phép dẫn xuất tạm dừng để thảo luận ngắn về trình tự các học phần. Sẽ không có khóa học mùa hè. Thuyết tương đối rộng và việc quay lại cơ học lượng tử theo phạm vi rộng hơn đều là những ứng viên cho học phần tiếp theo; dao động tử điều hòa được nêu riêng như một nội dung cần được hiểu trước khi học lý thuyết trường lượng tử.
+
+\begin{classroomqa}
+\audiencequestion{Liệu một học phần trong tương lai có thể bàn về mối liên hệ hồng ngoại--tử ngoại không?}
+\lecturerresponse{Câu hỏi đó thuộc về điểm gặp nhau giữa cơ học lượng tử và hấp dẫn. Lớp học này có đủ cơ học lượng tử để nhận ra vấn đề, nhưng trước hết phải phát triển hấp dẫn, tự nhiên nhất là thông qua thuyết tương đối rộng. \lecturetimestamp{00:05:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể đọc trực tiếp tỉ lệ tương đối của các trục nghiêng từ hình vẽ trên bảng không?}
+\lecturerresponse{Không. Một giản đồ không-thời gian ghi lại hình học nhân quả và tính đồng thời, nhưng một thước đo Euclid thông thường trên hình vẽ không phải là một phép đo Lorentz. Hãy xác định các sự kiện liên quan rồi áp dụng phép biến đổi Lorentz. \lecturetimestamp{00:06:10}}
+\end{classroomqa}
+
+Bây giờ phép tính tiếp tục. Chuẩn hóa khoảng cách giữa các đỉnh sóng trong hệ không dấu phẩy bằng một và xác định bằng đại số hai sự kiện đồng thời trong hệ có dấu phẩy.
+
+Phép biến đổi Lorentz là
+\begin{equation}
+t'=\gamma(t-vx),
+\qquad
+x'=\gamma(x-vt),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2}}.
+\label{eq:sr5-lorentz-doppler}
+\end{equation}
+Chọn lát đồng thời của hệ có dấu phẩy \(t'=0\). Khi đó phương trình
+\eqref{eq:sr5-lorentz-doppler} cho
+\begin{equation}
+t=vx.
+\label{eq:sr5-primed-simultaneity}
+\end{equation}
+Đỉnh sóng thứ nhất cắt lát này tại gốc tọa độ. Đỉnh sóng thứ hai thỏa mãn
+\(x=t+1\), nên giao điểm của nó thỏa mãn
+\begin{align}
+x&=vx+1,\\
+x&=\frac{1}{1-v},
+\qquad
+t=\frac{v}{1-v}.
+\end{align}
+Tọa độ có dấu phẩy của nó là
+\begin{align}
+x'
+&=\frac{x-vt}{\sqrt{1-v^2}}\\
+&=\frac{1-v^2}{(1-v)\sqrt{1-v^2}}\\
+&=\sqrt{\frac{1+v}{1-v}}.
+\end{align}
+Vì bước sóng ban đầu bằng một,
+\begin{equation}
+\boxed{
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{1+\beta}{1-\beta}}
+},
+\qquad
+\beta=\frac{v}{c}.
+\label{eq:sr5-doppler}
+\end{equation}
+Tương đương,
+\begin{equation}
+\frac{\lambda'}{\lambda}
+=
+\sqrt{\frac{c+v}{c-v}}.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_02.png}
+\caption{Hệ số Doppler sau khi khôi phục \(c\); đảo dấu \(v\) cho độ dịch nghịch đảo.}
+\lectureframe{00:13:40}
+\end{figure}
+
+Với \(v>0\), người quan sát trong hệ có dấu phẩy đuổi theo ánh sáng và đo được bước sóng dài hơn. Thay \(v\) bằng \(-v\) mô tả chuyển động ngược chiều ánh sáng và làm cho hệ số nhỏ hơn một. Nếu một người quan sát có thể tiến tới \(c\) trong khi đuổi theo tia sáng, thì bước sóng sẽ phân kỳ. Độ dịch tần số là tỉ số nghịch đảo.
+
+\section{Vì sao tương tác phải xuất hiện trong một tác dụng}
+
+Sau các câu hỏi mở đầu, chủ đề là trường và hạt. Trong lý thuyết trường lượng tử, rốt cuộc hạt và trường sẽ trở thành hai cách mô tả cùng những kích thích. Đó không phải là khuôn khổ ở đây. Ở đây, các hạt đi theo các đường thế giới còn các trường cổ điển lấp đầy không-thời gian. Câu hỏi trực tiếp trước mắt khiêm tốn hơn: nếu một trường tác dụng lên một hạt, thì hạt tác dụng ngược trở lại lên trường như thế nào?
+
+Nguyên lý tác dụng trả lời điều này thông qua một mô hình mẫu hữu hạn chiều. Cho \(x(t)\) và \(y(t)\) là hai tọa độ suy rộng. Nếu Lagrangian tách được,
+\begin{equation}
+L(x,\dot x,y,\dot y)
+=
+L_x(x,\dot x)+L_y(y,\dot y),
+\label{eq:sr5-separable-l}
+\end{equation}
+thì hai phương trình Euler--Lagrange là độc lập:
+\begin{equation}
+\frac{d}{dt}\frac{\partial L}{\partial\dot x}
+=
+\frac{\partial L}{\partial x},
+\qquad
+\frac{d}{dt}\frac{\partial L}{\partial\dot y}
+=
+\frac{\partial L}{\partial y}.
+\end{equation}
+Phương trình \(x\) không chứa \(y\), và phương trình \(y\) không chứa \(x\).
+
+Để làm cho các biến tương tác, hãy thêm một hạng không thể tách thành một phần \(x\) và một phần \(y\). Một ví dụ đơn giản là
+\begin{equation}
+L
+=
+\frac{\dot x^2}{2}
++\frac{\dot y^2}{2}
+-V(x)-W(y)+\kappa xy.
+\label{eq:sr5-coupled-coordinates}
+\end{equation}
+Bây giờ, khi biến phân \(x\) sẽ sinh ra một hạng tỉ lệ với \(y\), còn khi biến phân \(y\) sẽ sinh ra một hạng tỉ lệ với \(x\). Cùng một hạng hỗn hợp chi phối cả hai chiều ảnh hưởng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_03.png}
+\caption{Hai tọa độ suy rộng trở nên liên kết động lực khi một hạng trong Lagrangian chứa cả hai.}
+\lectureframe{00:19:00}
+\end{figure}
+
+Đây là ngữ cảnh chính xác của phát biểu tác dụng--phản tác dụng được dùng ở đây: cả hai đối tượng đều là động lực học và đều được biến phân trong một tác dụng chung. Xem một trường như một nền được ấn định từ bên ngoài có thể che khuất phản hồi của nó, nhưng một khi bản thân trường là động lực học thì hạng ghép sẽ cung cấp cả hai phương trình.
+
+\section{Trường vô hướng tác dụng lên hạt như thế nào}
+
+\subsection{Sự ghép tương đối tính}
+
+Trước hết, hãy xem trường vô hướng \(\phi(\mathbf{x},t)\) là đã biết. Nó có thể là một sóng hoặc một cấu hình tĩnh; tạm thời phương trình riêng của nó chưa liên quan. Tác dụng của hạt tương đối tính tự do là
+\begin{equation}
+S_{\mathrm p}
+=
+-m\int d\tau.
+\end{equation}
+Với chuyển động trên một đường thẳng và \(c=1\),
+\begin{equation}
+L_{\mathrm p}^{(0)}
+=
+-m\sqrt{1-\dot x^2}.
+\end{equation}
+Cách ghép vô hướng đơn giản nhất là thay hệ số khối lượng bằng một hệ số phụ thuộc trường:
+\begin{equation}
+\boxed{
+L_{\mathrm p}
+=
+-\bigl[m+g\phi(x,t)\bigr]\sqrt{1-\dot x^2}
+}.
+\label{eq:sr5-particle-coupling}
+\end{equation}
+Hằng số ghép \(g\) đo mức độ trường tác động mạnh đến hạt này như thế nào. Dấu của nó là một quy ước: thay \(g\) bằng \(-g\) sẽ đảo chiều lực vô hướng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_04.png}
+\caption{Tác dụng hạt tự do với \(m\) được thay bởi hệ số cục bộ \(m+g\phi(x,t)\).}
+\lectureframe{00:24:10}
+\end{figure}
+
+\subsection{Giới hạn hạt chậm}
+
+Khôi phục tốc độ ánh sáng để giới hạn Newton hiện rõ:
+\begin{equation}
+L_{\mathrm p}
+=
+-\bigl[mc^2+g\phi(x,t)\bigr]
+\sqrt{1-\frac{\dot x^2}{c^2}}.
+\label{eq:sr5-particle-coupling-c}
+\end{equation}
+Với \(|\dot x|\ll c\),
+\begin{equation}
+\sqrt{1-\frac{\dot x^2}{c^2}}
+=
+1-\frac{\dot x^2}{2c^2}
++O\!\left(\frac{\dot x^4}{c^4}\right).
+\end{equation}
+Thay vào \eqref{eq:sr5-particle-coupling-c} cho
+\begin{align}
+L_{\mathrm p}
+&=
+-mc^2-g\phi
++\frac{m\dot x^2}{2}
++\frac{g\phi\,\dot x^2}{2c^2}
++O(c^{-4})\\
+&\longrightarrow
+\frac{m\dot x^2}{2}-g\phi(x,t),
+\label{eq:sr5-nr-particle}
+\end{align}
+sau khi bỏ hằng số \(-mc^2\) và các hạng bị ức chế bởi \(c^{-2}\).
+Kết quả có dạng thông thường \(T-V\), nên
+\begin{equation}
+V_{\mathrm p}(x,t)=g\phi(x,t).
+\label{eq:sr5-scalar-potential}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_05.png}
+\caption{Khai triển căn bậc hai để lại hạng động năng Newton và thế năng vô hướng \(g\phi\).}
+\lectureframe{00:28:50}
+\end{figure}
+
+Hằng số năng lượng nghỉ lớn không đi vào phương trình Euler--Lagrange. Hạng phụ thuộc trường thì có. Trong điện từ học, điện tích đóng vai trò tương tự như độ mạnh ghép, mặc dù tương tác điện từ thực sự dùng thế bốn-vectơ chứ không phải mô hình đồ chơi vô hướng này.
+
+\section{Hạt tác dụng ngược trở lại lên trường như thế nào}
+
+\subsection{Một bài toán biến phân duy nhất}
+
+Giờ đây trường không thể chỉ còn được cho sẵn. Hãy xét một miền không-thời gian chứa cả một cấu hình trường lẫn một đường thế giới của hạt. Nghiệm vật lý làm cho tác dụng toàn phần dừng đối với các biến phân của cả hai:
+\begin{equation}
+\delta S[\phi,x]=0.
+\end{equation}
+Biến phân đường thế giới trong khi giữ trường cố định cho phương trình của hạt. Biến phân trường trong khi giữ đường thế giới cố định cho phương trình trường. Hạng tương tác chung của chúng là cái nối chúng lại.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_06.png}
+\caption{Một đường thế giới của hạt đi qua một miền không-thời gian có mặt một trường vô hướng.}
+\lectureframe{00:30:30}
+\end{figure}
+
+Đối với trường vô hướng không khối lượng tự do, lấy
+\begin{equation}
+S_{\mathrm f}
+=
+\int d^4x\,
+\frac12
+\left[
+(\partial_t\phi)^2
+-(\partial_x\phi)^2
+-(\partial_y\phi)^2
+-(\partial_z\phi)^2
+\right].
+\label{eq:sr5-free-field-action}
+\end{equation}
+Từ đây trở đi, lại dùng \(c=1\). Nếu viết đơn vị tường minh, hạng theo thời gian sẽ mang hệ số tương ứng \(1/c^2\), tùy theo cách chuẩn hóa các tọa độ và trường.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_07.png}
+\caption{Tác dụng của trường được viết trên cùng miền không-thời gian với đường thế giới của hạt.}
+\lectureframe{00:32:10}
+\end{figure}
+
+\subsection{Một hạt tĩnh và một tích phân dọc đường thế giới}
+
+Để làm lộ rõ nguồn với lượng đại số tối thiểu, đặt hạt đứng yên tại gốc tọa độ. Khi đó thừa số \(d\tau\) bằng \(dt\), và phần tương tác của
+\eqref{eq:sr5-particle-coupling} trở thành
+\begin{equation}
+S_{\mathrm{int}}
+=
+-g\int dt\,\phi(\mathbf{0},t).
+\label{eq:sr5-worldline-interaction}
+\end{equation}
+Đây là một tích phân chỉ dọc theo đường thế giới, trong khi
+\eqref{eq:sr5-free-field-action} là một tích phân trên toàn bộ không-thời gian. Để gộp chúng thành một tích phân không-thời gian duy nhất, ta cần một hàm chọn ra vị trí của hạt.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_08.png}
+\caption{Đường thế giới tĩnh bên trong miền của trường và tác dụng của trường phải được gộp với nó.}
+\lectureframe{00:35:35}
+\end{figure}
+
+\subsection{Hàm delta Dirac}
+
+Hàm delta một chiều được định nghĩa bởi
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,f(x)\delta(x-a)=f(a).
+\label{eq:sr5-delta-definition}
+\end{equation}
+Nó bằng không ở ngoài \(x=a\), kỳ dị tại \(x=a\), và có tích phân bằng một. Tốt nhất nên hiểu nó như một phân phối được đặc trưng bởi
+\eqref{eq:sr5-delta-definition}, chứ không phải như một hàm thông thường có giá trị hữu hạn.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_09.png}
+\caption{Đồng nhất thức hàm delta viết lại giá trị của trường tại gốc tọa độ thành một tích phân không gian.}
+\lectureframe{00:36:45}
+\end{figure}
+
+Trong ba chiều,
+\begin{equation}
+\delta^3(\mathbf{x})
+=
+\delta(x)\delta(y)\delta(z),
+\end{equation}
+và do đó
+\begin{align}
+\int d^3x\,
+\phi(\mathbf{x},t)\delta^3(\mathbf{x})
+&=
+\int dx\,dy\,dz\,
+\phi(x,y,z,t)\\
+&\quad\times\delta(x)\delta(y)\delta(z)\\
+&=\phi(\mathbf{0},t).
+\label{eq:sr5-triple-delta}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{\(d^3x\) từ đâu ra?}
+\lecturerresponse{Nó là phần tử thể tích không gian thông thường \(dx\,dy\,dz\). Trong một chiều không gian, đồng nhất thức tương tự chỉ chứa \(dx\) và một hàm delta. \lecturetimestamp{00:37:09}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_10.png}
+\caption{Hàm delta ba chiều được khai triển thành ba thừa số một chiều.}
+\lectureframe{00:39:05}
+\end{figure}
+
+Giờ đây phương trình \eqref{eq:sr5-worldline-interaction} có thể được viết thành
+\begin{equation}
+S_{\mathrm{int}}
+=
+-g\int d^4x\,
+\delta^3(\mathbf{x})\phi(\mathbf{x},t).
+\end{equation}
+Tác dụng đầy đủ của nguồn tĩnh là
+\begin{align}
+S
+=
+\int d^4x
+\biggl\{
+&\frac12(\partial_t\phi)^2
+-\frac12|\boldsymbol{\nabla}\phi|^2
+\nonumber\\
+&-g\delta^3(\mathbf{x})\phi
+\biggr\}.
+\label{eq:sr5-combined-action}
+\end{align}
+
+\begin{classroomqa}
+\audiencequestion{Có bị mất một dấu trừ khi đưa tương tác vào tác dụng không-thời gian không?}
+\lecturerresponse{Lagrangian dọc đường thế giới chứa \(-g\phi\), nên mật độ không-thời gian phải chứa \(-g\delta^3(\mathbf{x})\phi\). Giữ đúng dấu đó sẽ cố định hạng nguồn trong phương trình trường. \lecturetimestamp{00:41:24}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_11.png}
+\caption{Mật độ vô hướng tự do và tương tác định xứ được ghép lại thành một tác dụng không-thời gian duy nhất.}
+\lectureframe{00:42:05}
+\end{figure}
+
+\subsection{Phương trình trường có nguồn}
+
+Biến phân \eqref{eq:sr5-combined-action} theo \(\phi\) cho
+\begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi
+=
+-g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-sourced-wave}
+\end{equation}
+Xa gốc tọa độ, đây là phương trình sóng tự do. Tại gốc tọa độ, hàm delta đánh dấu hạt như một nguồn định xứ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_12.png}
+\caption{Toán tử sóng được kích bởi một nguồn điểm tại gốc tọa độ.}
+\lectureframe{00:45:35}
+\end{figure}
+
+Đối với nghiệm tĩnh, \(\partial_t\phi=0\), nên
+\begin{equation}
+\boxed{
+\nabla^2\phi
+=
+g\delta^3(\mathbf{x})
+}.
+\label{eq:sr5-poisson}
+\end{equation}
+Đây là phương trình Poisson cho một nguồn điểm. Phép tương tự ở đây là tĩnh điện, chưa phải điện từ: trường vẫn là vô hướng \(\phi\), không phải thế bốn điện từ.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_13.png}
+\caption{Giới hạn tĩnh của phương trình sóng có nguồn, được nhận ra là phương trình Poisson.}
+\lectureframe{00:47:05}
+\end{figure}
+
+Tính đối ứng giờ đây đã hiện rõ. Hạng \(g\phi\) cho hạt một thế năng, và cùng chính \(g\) ấy làm cho hạt trở thành nguồn của \(\phi\). Hai hiệu ứng đó không phải là những giả thiết độc lập.
+
+\subsection{Nguồn chuyển động phát bức xạ}
+
+Một hạt cố định tại \(\mathbf{a}\) được biểu diễn bởi
+\(\delta^3(\mathbf{x}-\mathbf{a})\). Nếu vị trí của nó thay đổi theo thời gian, nguồn trở thành
+\begin{equation}
+\delta^3\!\left(\mathbf{x}-\mathbf{a}(t)\right).
+\label{eq:sr5-moving-delta}
+\end{equation}
+Vế phải phụ thuộc thời gian không thể được cân bằng bởi một trường độc lập với thời gian. Hạng \(\partial_t^2\phi\) phải xuất hiện trở lại, và một nguồn gia tốc hoặc dao động có thể phát sóng trong trường.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_14.png}
+\caption{Một nguồn hàm delta dịch tới \(\mathbf{a}(t)\), làm cho phương trình trường phụ thuộc thời gian.}
+\lectureframe{00:50:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Nếu coi nguồn là phi tương đối tính, thì tính tương đối nằm ở đâu trong phương trình trường?}
+\lecturerresponse{Sự lan truyền tương đối tính được mã hóa trong toán tử sóng không-thời gian ở vế trái. Một cách xử lý hạt hoàn toàn tương đối tính sẽ giữ lại hàm tác dụng theo thời gian riêng và các thừa số vận tốc của nó. Ngay cả một nguồn chuyển động chậm nhưng phụ thuộc thời gian cũng có thể kích phát sóng. \lecturetimestamp{00:52:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(g\phi\) phải có đơn vị gì?}
+\lecturerresponse{Nó xuất hiện bên cạnh \(mc^2\) trong tác dụng của hạt, nên nó có đơn vị năng lượng. Trong chuẩn hóa đơn vị tự nhiên được dùng ở đây, một vô hướng trong \(3+1\) chiều có thứ nguyên khối lượng bằng một và \(g\) có thể không thứ nguyên. Các thứ nguyên thay đổi theo số chiều không-thời gian và theo cách chuẩn hóa trường. \lecturetimestamp{00:52:55}}
+\end{classroomqa}
+
+\section{Bốn-véc-tơ, vô hướng và metric}
+
+Các phương trình theo thành phần đã đủ dài để cần một ký hiệu tốt hơn.
+Hãy viết các tọa độ không-thời gian dưới dạng
+\begin{equation}
+x^\mu=(x^0,x^1,x^2,x^3)=(t,x,y,z),
+\label{eq:sr5-four-coordinate}
+\end{equation}
+trong đó các chỉ số Hy Lạp chạy trên cả bốn thành phần. Một bộ gồm bốn thành phần không tự động là một bốn-véc-tơ. Nó chỉ là một bốn-véc-tơ nếu các thành phần của nó biến đổi dưới các phép biến đổi Lorentz như \(x^\mu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_15.png}
+\caption{Bốn tọa độ không-thời gian được gom vào \(x^\mu\).}
+\lectureframe{00:55:00}
+\end{figure}
+
+Mệnh đề rằng ba thành phần không gian bằng không có thể đúng trong một hệ quy chiếu và sai trong hệ khác. Trái lại, nếu cả bốn thành phần đều bằng không, mọi quan sát viên Lorentz đều đồng ý rằng véc-tơ bằng không. Những hiệu như \(dx^\mu\) cũng là các bốn-véc-tơ.
+
+Khoảng thời gian riêng bất biến là
+\begin{equation}
+d\tau^2
+=
+dt^2-dx^2-dy^2-dz^2.
+\label{eq:sr5-proper-time}
+\end{equation}
+Nó có một giá trị, không phải bốn thành phần phụ thuộc hệ quy chiếu, nên nó là một vô hướng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_16.png}
+\caption{Độ dời bốn chiều và khoảng thời gian riêng bất biến.}
+\lectureframe{00:57:25}
+\end{figure}
+
+\subsection{Metric Minkowski}
+
+Chọn quy ước chữ ký đa số dương
+\begin{equation}
+\eta_{\mu\nu}
+=
+\operatorname{diag}(-1,1,1,1).
+\label{eq:sr5-metric}
+\end{equation}
+Quy ước thay thế đa số âm cũng hoàn toàn hợp lệ, nhưng mọi phương trình phải dùng nhất quán một quy ước. Với \eqref{eq:sr5-metric},
+\begin{equation}
+dx^\mu dx_\mu
+=
+-dt^2+dx^2+dy^2+dz^2
+=
+-d\tau^2.
+\end{equation}
+Dấu tổng thể không làm thay đổi tính bất biến.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_17.png}
+\caption{Metric Minkowski đa số dương được viết dưới dạng ma trận đường chéo.}
+\lectureframe{01:00:30}
+\end{figure}
+
+Metric hạ một chỉ số:
+\begin{equation}
+A_\mu=\eta_{\mu\nu}A^\nu.
+\label{eq:sr5-lower-index}
+\end{equation}
+Với metric Descartes này,
+\begin{equation}
+A^\mu=(A^0,A^1,A^2,A^3),
+\qquad
+A_\mu=(-A^0,A^1,A^2,A^3).
+\label{eq:sr5-upper-lower-components}
+\end{equation}
+Áp dụng lại chính metric đó sẽ nâng chỉ số lên vì
+\(\eta^{\mu\rho}\eta_{\rho\nu}=\delta^\mu{}_\nu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_18.png}
+\caption{Hạ chỉ số như phép nhân ma trận bởi \(\eta_{\mu\nu}\).}
+\lectureframe{01:03:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Phép nhân ma trận thông thường ở đây thực sự có bao hàm một phép tổng không?}
+\lecturerresponse{Có. Mỗi thành phần đầu ra là một hàng của \(\eta\) nhân với toàn bộ véc-tơ: một phép tổng trên chỉ số cột. Metric đường chéo làm phép tính trông có vẻ tầm thường, nhưng với một ma trận tổng quát thì phép tổng hiện ra tường minh. \lecturetimestamp{01:04:56}}
+\end{classroomqa}
+
+\subsection{Phép tổng Einstein và các chỉ số tự do}
+
+Quy ước của Einstein lược bỏ ký hiệu tổng mỗi khi một chỉ số được lặp lại một lần ở trên và một lần ở dưới:
+\begin{equation}
+\eta_{\mu\nu}A^\nu
+\equiv
+\sum_{\nu=0}^{3}\eta_{\mu\nu}A^\nu.
+\end{equation}
+Ở đây \(\nu\) là một chỉ số câm; nó được lấy tổng rồi biến mất và có thể đổi tên. Chỉ số \(\mu\) là tự do và gắn nhãn cho bốn thành phần của kết quả. Một chỉ số thông thường không nên xuất hiện quá hai lần trong một đơn thức.
+
+Tên gọi truyền thống là \emph{phản biến} cho một chỉ số trên và
+\emph{hiệp biến} cho một chỉ số dưới. Bài giảng này cố ý ưu tiên cách nói giản dị hơn là \emph{trên} và \emph{dưới}, nhưng cả hai hệ thuật ngữ đều chỉ cùng những quy tắc biến đổi.
+
+\section{Phép co và các đạo hàm của một vô hướng}
+
+\subsection{Tích vô hướng Minkowski}
+
+Lấy co một véc-tơ với dạng hạ chỉ số của nó cho
+\begin{equation}
+A^\mu A_\mu
+=
+\eta_{\mu\nu}A^\mu A^\nu
+=
+-(A^0)^2+(A^1)^2+(A^2)^2+(A^3)^2.
+\label{eq:sr5-vector-square}
+\end{equation}
+Không nên chèn thêm dấu trừ bằng tay; nó đã đến từ thành phần thời gian đã hạ chỉ số.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_19.png}
+\caption{Phép co \(A^\mu A_\mu\) được khai triển thành các thành phần thời gian và không gian.}
+\lectureframe{01:09:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Có nên biểu diễn một véc-tơ chỉ số dưới bằng một hàng thay vì một cột không?}
+\lecturerresponse{Trong ký hiệu ma trận sơ cấp, nó có thể được biểu diễn bằng một hàng, nhưng ký hiệu chỉ số không đòi hỏi lựa chọn đó. Đặc trưng xác định của nó là cách nó biến đổi và cách nó co với một véc-tơ chỉ số trên. \lecturetimestamp{01:10:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các chỉ số Hy Lạp có luôn luôn chỉ cả bốn thành phần không?}
+\lecturerresponse{Trong ký hiệu này thì có. Các chỉ số Hy Lạp như \(\mu,\nu\) chạy trên không-thời gian, còn các chỉ số Latin như \(i,j\) thường chỉ chạy trên ba thành phần không gian. \lecturetimestamp{01:12:23}}
+\end{classroomqa}
+
+Cùng phép xây dựng ấy cũng áp dụng cho hai bốn-véc-tơ khác nhau:
+\begin{equation}
+A^\mu B_\mu
+\end{equation}
+là một vô hướng. Một chứng minh nhanh dùng đồng nhất thức phân cực. Vì
+\((A+B)^2\) và \((A-B)^2\) đều là vô hướng,
+\begin{equation}
+(A+B)^2-(A-B)^2=4A^\mu B_\mu
+\end{equation}
+cũng là một vô hướng. Đây là phiên bản Minkowski của tích chấm thông thường.
+
+\begin{classroomqa}
+\audiencequestion{\(A^\mu B_\mu\) có tương tự với tích chấm thông thường không?}
+\lecturerresponse{Hoàn toàn tương tự, ngoại trừ metric Minkowski cung cấp dấu tương đối giữa các thành phần thời gian và không gian. \lecturetimestamp{01:15:44}}
+\end{classroomqa}
+
+\subsection{Gradient là một đồng véc-tơ}
+
+Gọi \(\phi(x)\) là một trường vô hướng, với \(x\) nay ký hiệu cho cả bốn tọa độ không-thời gian. Giữa các sự kiện lân cận,
+\begin{equation}
+d\phi
+=
+\frac{\partial\phi}{\partial x^\mu}dx^\mu
+=
+\partial_\mu\phi\,dx^\mu.
+\label{eq:sr5-dphi}
+\end{equation}
+Vế trái là một vô hướng, còn \(dx^\mu\) là một bốn-véc-tơ. Do đó hệ số
+\begin{equation}
+\partial_\mu\phi
+=
+\left(
+\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right)
+\label{eq:sr5-gradient-lower}
+\end{equation}
+phải biến đổi như một đồng véc-tơ. Nâng chỉ số của nó lên ta được
+\begin{equation}
+\partial^\mu\phi
+=
+\left(
+-\partial_t\phi,
+\partial_x\phi,
+\partial_y\phi,
+\partial_z\phi
+\right).
+\label{eq:sr5-gradient-upper}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_20.png}
+\caption{Vi phân \(d\phi=\partial_\mu\phi\,dx^\mu\), từ đó suy ra tính chất đồng véc-tơ của gradient của vô hướng.}
+\lectureframe{01:20:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Chỉ số trên trong \(x^\mu\) có trở thành chỉ số dưới khi nó xuất hiện ở mẫu số \(\partial/\partial x^\mu\) không?}
+\lecturerresponse{Có. Vi phân tọa độ \(dx^\mu\) biến đổi phản biến, nên đạo hàm đối ngẫu của nó \(\partial_\mu=\partial/\partial x^\mu\) biến đổi hiệp biến. Chính điều đó khiến \(d\phi=\partial_\mu\phi\,dx^\mu\) là một vô hướng. \lecturetimestamp{01:20:00}}
+\end{classroomqa}
+
+\subsection{Một mật độ trường vô hướng bất biến}
+
+Lấy co hai véc-tơ đạo hàm:
+\begin{align}
+\partial_\mu\phi\,\partial^\mu\phi
+&=
+-(\partial_t\phi)^2
++(\partial_x\phi)^2
++(\partial_y\phi)^2
++(\partial_z\phi)^2.
+\end{align}
+Do đó mật độ tự do của trường vô hướng có thể được viết gọn thành
+\begin{equation}
+\boxed{
+\mathcal L_0
+=
+-\frac12
+\partial_\mu\phi\,\partial^\mu\phi
+}.
+\label{eq:sr5-compact-density}
+\end{equation}
+Điều này đồng nhất với mật độ theo thành phần trong
+\eqref{eq:sr5-free-field-action}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_21.png}
+\caption{Mật độ động học của trường vô hướng được cô đọng thành một biểu thức co duy nhất.}
+\lectureframe{01:25:10}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Biểu thức co của các đạo hàm bậc nhất có phải là toán tử Laplace không?}
+\lecturerresponse{Không. Toán tử Laplace chứa các đạo hàm không gian bậc hai. Biểu thức này là mật độ Lagrangian, được xây dựng từ các tích của các đạo hàm bậc nhất. \lecturetimestamp{01:24:38}}
+\end{classroomqa}
+
+Giá trị của một mật độ vô hướng tại một sự kiện vật lý là độc lập với hệ quy chiếu. Phép biến đổi Lorentz proper cũng có định thức với độ lớn bằng một, nên độ đo \(d^4x\) là bất biến. Do đó,
+\begin{equation}
+S=\int d^4x\,\mathcal L
+\end{equation}
+là bất biến. Một tác dụng độc lập với hệ quy chiếu dẫn đến các phương trình Euler--Lagrange có cùng dạng trong mọi hệ quy chiếu quán tính.
+
+\section{Giới hạn Galilei}
+
+\begin{classroomqa}
+\audiencequestion{Một Lagrangian Newton cũng phải tôn trọng một nguyên lý tương đối chứ?}
+\lecturerresponse{Có, dù điều đó trước đó không được nhấn mạnh. Các phương trình Newton là bất biến dưới các phép biến đổi Galilei, tức giới hạn \(c\to\infty\) của các phép biến đổi Lorentz. Điều biến mất trong giới hạn đó là tính tương đối của sự đồng thời. \lecturetimestamp{01:27:16}}
+\end{classroomqa}
+
+Để thấy giới hạn đó, hãy khôi phục \(c\) trong một phép boost dọc theo \(x\):
+\begin{equation}
+x'
+=
+\frac{x-vt}{\sqrt{1-v^2/c^2}},
+\qquad
+t'
+=
+\frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
+\label{eq:sr5-lorentz-c}
+\end{equation}
+Lấy \(c\to\infty\) thì được
+\begin{equation}
+\boxed{
+x'=x-vt,
+\qquad
+t'=t
+}.
+\label{eq:sr5-galilean}
+\end{equation}
+Đây là các phép biến đổi Galilei. Cơ học Newton vẫn giữ nguyên lý tương đối rằng các định luật có cùng dạng trong mọi hệ quy chiếu quán tính, nhưng nó cũng giả sử có một thời gian tuyệt đối chung cho mọi quan sát viên.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_22.png}
+\caption{Phép boost Lorentz trước khi lấy \(c\to\infty\), cho ra các quy tắc Galilei \(x'=x-vt\) và \(t'=t\).}
+\lectureframe{01:29:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Véc-tơ chỉ số trên và chỉ số dưới có biến đổi khác nhau chỉ bởi một sự đổi dấu không?}
+\lecturerresponse{Đối với metric Descartes cố định được dùng ở đây, việc hạ một véc-tơ đã biết chỉ làm đổi dấu thành phần thời gian của nó. Tuy nhiên, các quy luật biến đổi Lorentz của chúng là các quy luật đối ngẫu, không chỉ đơn thuần là một quy ước dấu tùy ý; metric là thứ chuyển cái này thành cái kia. \lecturetimestamp{01:31:19}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Mọi hàm trông có vẻ thông thường của các tọa độ đều là một vô hướng sao?}
+\lecturerresponse{Không. Chỉ là một con số tại mỗi điểm tọa độ thì vẫn chưa đủ; con số đó phải biểu diễn cùng một giá trị vật lý tại cùng một sự kiện trong mọi hệ quy chiếu. Mật độ năng lượng là một phản ví dụ: khi thực hiện một phép boost đối với một cái hộp, cả năng lượng đo được lẫn thể tích đo được đều thay đổi, nên các quan sát viên không gán cùng một mật độ. \lecturetimestamp{01:33:23}}
+\end{classroomqa}
+
+Một thành phần đơn lẻ của bốn-vận tốc là một ví dụ nữa. Toàn bộ bốn-vận tốc là một véc-tơ, nhưng thành phần thời gian của nó thay đổi dưới một phép boost và tự nó không phải là một vô hướng.
+
+\section{Trường Klein--Gordon}
+
+\subsection{Bản tương tự trường của dao động điều hòa}
+
+Hãy quay lại mật độ trường vô hướng và thêm thế bậc hai đơn giản nhất:
+\begin{equation}
+\boxed{
+\mathcal L
+=
+\frac12
+\left[
+(\partial_t\phi)^2
+-|\boldsymbol{\nabla}\phi|^2
+-\mu^2\phi^2
+\right]
+}.
+\label{eq:sr5-kg-density}
+\end{equation}
+Đây là bản tương tự trong lý thuyết trường của
+\begin{equation}
+L_{\mathrm{osc}}
+=
+\frac12\dot q^2-\frac12\mu^2q^2.
+\end{equation}
+Mỗi điểm không gian cục bộ cư xử như một dao động tử, còn hạng tử gradient ghép cặp các điểm lân cận.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_23.png}
+\caption{Mật độ trường vô hướng bậc hai và nguyên mẫu dao động điều hòa của nó.}
+\lectureframe{01:38:20}
+\end{figure}
+
+Phương trình Euler--Lagrange cho trường là
+\begin{equation}
+\partial_\mu
+\left[
+\frac{\partial\mathcal L}
+{\partial(\partial_\mu\phi)}
+\right]
+-
+\frac{\partial\mathcal L}{\partial\phi}
+=0.
+\label{eq:sr5-field-el}
+\end{equation}
+Áp dụng nó cho \eqref{eq:sr5-kg-density} cho ta
+\begin{equation}
+\boxed{
+\partial_t^2\phi-\nabla^2\phi+\mu^2\phi=0
+}.
+\label{eq:sr5-kg}
+\end{equation}
+Đây là phương trình Klein--Gordon. Với quy ước đa số dương và
+\(\Box=\partial_\mu\partial^\mu=-\partial_t^2+\nabla^2\), cùng phương trình ấy được viết là
+\((\Box-\mu^2)\phi=0\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_24.png}
+\caption{Phương trình Klein--Gordon được viết hoàn chỉnh bên dưới mật độ mà từ đó nó suy ra.}
+\lectureframe{01:40:00}
+\end{figure}
+
+Về mặt lịch sử, phương trình này ban đầu được khảo sát như một phương trình sóng tương đối tính cho một hạt đơn. Cách diễn giải đó gặp khó khăn, đặc biệt đối với một mật độ xác suất dương. Bối cảnh hiện đại thích hợp của nó là lý thuyết trường tương đối tính, nơi nó chi phối các trường vô hướng tự do và giới hạn tự do của các trường vô hướng tương tác.
+
+\subsection{Các mode sóng phẳng}
+
+Vì \eqref{eq:sr5-kg} là tuyến tính với các hệ số hằng, hãy thử một nghiệm sóng phẳng
+\begin{equation}
+\phi(x)
+=
+\exp\!\left[
+-i\omega t+i\mathbf{k}\cdot\mathbf{x}
+\right].
+\label{eq:sr5-plane-wave}
+\end{equation}
+Với
+\begin{equation}
+k_\mu=(-\omega,k_x,k_y,k_z),
+\end{equation}
+thì số mũ là \(ik_\mu x^\mu\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_25.png}
+\caption{Dạng thử sóng phẳng được viết theo các thành phần và dưới dạng \(e^{ik_\mu x^\mu}\).}
+\lectureframe{01:44:00}
+\end{figure}
+
+Lấy đạo hàm cho
+\begin{equation}
+\partial_t^2\phi=-\omega^2\phi,
+\qquad
+\nabla^2\phi=-|\mathbf{k}|^2\phi.
+\end{equation}
+Thế vào \eqref{eq:sr5-kg} thu được
+\begin{equation}
+\left(
+-\omega^2+|\mathbf{k}|^2+\mu^2
+\right)\phi=0.
+\end{equation}
+Do đó một mode khác không đòi hỏi
+\begin{equation}
+\boxed{
+\omega^2=|\mathbf{k}|^2+\mu^2
+},
+\qquad
+\omega=\pm\sqrt{|\mathbf{k}|^2+\mu^2}.
+\label{eq:sr5-dispersion}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_26.png}
+\caption{Phép thế sóng phẳng và hệ thức tán sắc tương đối tính thu được.}
+\lectureframe{01:47:00}
+\end{figure}
+
+Trong đơn vị tự nhiên, \(\mu\) đóng vai trò của một khối lượng. Khôi phục các hằng số cho một kích thích lượng tử,
+\begin{equation}
+E=\hbar\omega,
+\qquad
+\mathbf{p}=\hbar\mathbf{k},
+\qquad
+\mu=\frac{mc}{\hbar},
+\end{equation}
+biến \eqref{eq:sr5-dispersion} thành
+\begin{equation}
+E^2=p^2c^2+m^2c^4.
+\end{equation}
+Cả hai nhánh tần số dương và âm đều là một phần của không gian nghiệm cổ điển. Các nghiệm tổng quát là các chồng chập của những mode này.
+
+\begin{classroomqa}
+\audiencequestion{Phương trình Klein--Gordon đến từ đâu?}
+\lecturerresponse{Nó xuất phát trực tiếp từ mật độ vô hướng Lorentz bậc hai thông qua phương trình Euler--Lagrange cho trường. Ví dụ này được chọn vì mật độ bậc hai đơn giản này tạo ra một phương trình trường tuyến tính. \lecturetimestamp{01:47:59}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Trong tự nhiên, cái gì tuân theo phương trình Klein--Gordon?}
+\lecturerresponse{Một trường vô hướng cổ điển tự do thì có. Các dao động của trường Higgs là vô hướng và quy về dạng Klein--Gordon trong gần đúng tự do, mặc dù trường Higgs thực tế còn có các tương tác và các ghép nối chuẩn. \lecturetimestamp{01:50:41}}
+\end{classroomqa}
+
+\section{Một nền vô hướng như một độ dịch khối lượng}
+
+Tác dụng của hạt giờ lại xuất hiện:
+\begin{equation}
+S_{\mathrm p}
+=
+-\int d\tau\,
+\bigl[m+g\phi(x)\bigr].
+\label{eq:sr5-final-particle-action}
+\end{equation}
+Nếu \(\phi\) có một giá trị nền không đổi \(\phi_0\), hạt chuyển động như thể khối lượng của nó là
+\begin{equation}
+\boxed{
+m_{\mathrm{eff}}=m+g\phi_0
+}.
+\label{eq:sr5-effective-mass}
+\end{equation}
+Nếu số hạng trần \(m\) triệt tiêu, nền vô hướng có thể cung cấp toàn bộ hệ số nhân với thời gian riêng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_27.png}
+\caption{Tác dụng của hạt phụ thuộc trường ở trên và phương trình Euler--Lagrange gọn của trường gắn hai nửa của bài giảng lại với nhau.}
+\lectureframe{01:51:30}
+\end{figure}
+
+Đây là một mô hình được đơn giản hóa có chủ ý về sự sinh khối lượng do Higgs. Trong Mô hình Chuẩn, khối lượng fermion phát sinh từ các liên kết Yukawa với giá trị kỳ vọng chân không của Higgs, biểu diễn sơ lược bởi \(m_f\propto y_f v\), còn khối lượng của \(W\) và \(Z\) phát sinh qua số hạng động năng Higgs hiệp biến theo chuẩn. Liên kết đường thế giới của mô hình đồ chơi nắm được ý tưởng cốt lõi--một nền vô hướng khác không làm thay đổi khối lượng quán tính--mà không tái tạo toàn bộ lý thuyết điện yếu. Tính tương hỗ đã được xác lập trước đó vẫn còn hiệu lực: lấy biến phân của chính tương tác ấy theo trường khiến hạt trở thành một nguồn. Trường tác dụng lên các hạt, và các hạt tác dụng ngược trở lại lên trường.
+
+\subsection{Vì sao hàm mũ phức lại hữu ích}
+
+Trường không nhất thiết phải là phức về mặt vật lý. Công thức Euler cho
+\begin{equation}
+e^{i(\omega t-\mathbf{k}\cdot\mathbf{x})}
+=
+\cos(\omega t-\mathbf{k}\cdot\mathbf{x})
++i\sin(\omega t-\mathbf{k}\cdot\mathbf{x}).
+\end{equation}
+Vì phương trình là thực và tuyến tính, phần thực và phần ảo, xét riêng rẽ, đều là các nghiệm thực. Chúng là các sóng lệch nhau một phần tư chu kỳ, và mọi tổ hợp tuyến tính thực của chúng lại cũng là một nghiệm.
+
+\begin{classroomqa}
+\audiencequestion{Khi lấy phần thực, có phải phần ảo bằng cách nào đó cộng lại thành 0 không?}
+\lecturerresponse{Không. Hàm mũ phức gộp hai nghiệm thực độc lập, cosine và sine. Có thể giữ lại một trong hai phần, hoặc lập các tổ hợp thực. Hàm mũ được dùng vì phép vi phân trở thành phép nhân. \lecturetimestamp{01:53:29}}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_05_figure_28.png}
+\caption{Một sóng phẳng phức được tách thành cosine và sine, được vẽ thành hai sóng thực lệch pha nhau.}
+\lectureframe{01:56:00}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Khối lượng mà trường điện từ thu được trong chất siêu dẫn có phải là cùng loại hiện tượng không?}
+\lecturerresponse{Nó có liên hệ chặt chẽ: trong chất siêu dẫn, phần ngưng tụ trao cho trường điện từ một khối lượng hiệu dụng trong môi trường, tạo ra hiệu ứng Meissner. Một lời giải thích đầy đủ đòi hỏi phải xét đến trường điện từ và được hoãn lại. \lecturetimestamp{01:56:14}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có thể hình dung cơ chế Higgs như một hạt Higgs bay trong không gian và phân phát khối lượng không?}
+\lecturerresponse{Không. Đối tượng liên quan là giá trị nền của trường Higgs, không phải một dòng các hạt Higgs riêng lẻ. Trong tác dụng mô hình, nền ấy đơn giản chỉ làm thay đổi hệ số đóng vai trò là khối lượng của hạt. \lecturetimestamp{01:57:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các liên kết khác nhau với cùng một nền vô hướng có thể tạo ra các khối lượng khác nhau không?}
+\lecturerresponse{Có. Độ dịch chuyển tỉ lệ với hằng số liên kết \(g\). Trong Mô hình Chuẩn, chính các liên kết Yukawa khác nhau là lý do các fermion khác nhau nhận được các khối lượng khác nhau từ cùng một nền Higgs. \lecturetimestamp{01:58:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân \(\phi\) có phải là số hạng khối lượng không?}
+\lecturerresponse{Trong mô hình này, \(g\phi_0\) về mọi phương diện cơ học đều đóng vai trò như một đóng góp vào hệ số khối lượng. Cả hằng số liên kết lẫn giá trị nền đều phải được tính đến. \lecturetimestamp{01:58:42}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu nền Higgs triệt tiêu, có phải mọi hạt đều trở thành không khối lượng không?}
+\lecturerresponse{Không. Electron, quark và các boson chuẩn yếu sẽ mất các đóng góp khối lượng điện yếu thông thường của chúng, còn chi tiết đối với neutrino thì phụ thuộc vào cơ chế tạo khối lượng cho neutrino. Bản thân phần vô hướng không nhất thiết trở thành không khối lượng chỉ vì giá trị nền của nó triệt tiêu. Thay vào đó, phần lớn khối lượng của proton và neutron đến từ liên kết và giam hãm QCD, nên khối lượng ấy không được sinh trực tiếp bởi trường Higgs. \lecturetimestamp{01:58:51}}
+\end{classroomqa}
+
+Dẫu vậy, hệ quả ở cấp độ nguyên tử vẫn rất nghiêm trọng. Thang Bohr biến thiên như
+\begin{equation}
+a_0\sim\frac{1}{\alpha m_e}
+\end{equation}
+trong đơn vị tự nhiên. Cho khối lượng electron tiến về không khiến thang độ dài nguyên tử thông thường phân kỳ; các nguyên tử định xứ thông thường sẽ không còn tồn tại. Proton và neutron sẽ bị ảnh hưởng trực tiếp ít hơn nhiều vì khối lượng của chúng chủ yếu là năng lượng QCD động lực học.
+
+Giờ đây, các mảnh ghép hợp thành một mạch lập luận liên tục. Hình học Lorentz chi phối các bước sóng được quan sát. Một số hạng trộn trong một tác dụng làm cho hai hệ động lực ảnh hưởng lẫn nhau. Một trường vô hướng vừa trở thành một thế đối với hạt vừa trở thành một trường có nguồn là chính hạt ấy. Kí pháp metric và chỉ số làm cho tính bất biến Lorentz hiện rõ, và mật độ bất biến bậc hai đơn giản nhất sinh ra các sóng Klein--Gordon. Cuối cùng, một nền vô hướng không đổi biến chính liên kết ấy thành một độ dịch khối lượng. Phương pháp xuyên suốt là phương pháp sẽ còn được duy trì: xây dựng một tác dụng bất biến, lấy biến phân theo mọi đối tượng động lực học, và đọc ra phần vật lý tương hỗ từ các phương trình thu được.
