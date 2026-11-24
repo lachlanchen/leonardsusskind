@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 195,
+  "outline_entries": 95,
+  "target_characters": 64982,
+  "image_placements": 98,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "التشابك الكمي: الجزء الثالث",
+  "pdf_sha256": "15a4677ce90122f50dc63ecd8e5288dca014bf55091c1e648f55a0cb04bdb21d",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 112,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "edbbfe82e24951d12db72fa3f2ee17bc499339effbc4f5500237d10a027189e3",
+    "chapters/lecture_01/content.tex": "12a8afa5e9908f781dc9ba5a97bdbf1e9280669887c34ce94074a9ffdf4ce5cf",
+    "chapters/lecture_02_03/content.tex": "d085e187d60081e752010573585e17db7f0fce2f573bdf1edbe57943c3778086",
+    "chapters/lecture_04/content.tex": "1c16dd3e93d05886b4d1f3ec590626cb6c1bca4ae1cc95ead570995667416152",
+    "chapters/lecture_05/content.tex": "3b631d57fb7294a6742e6608edc2f173d7d8cf6ae1cfeef6bbe5be241690a94c",
+    "chapters/lecture_06/content.tex": "923f99454884e2f8e0d0227c31e3be4f15917174d356906d5a9d7cc5d90bf2c9",
+    "chapters/lecture_07/content.tex": "4e0131e62d54af26ca16b2d617d8a45f909f7ed0cbccd9516e0266457731885b",
+    "chapters/lecture_08/content.tex": "5fdc6aaa80807df41f7d9228ed4f6cc7122c777292a9ec30c915114b250781fa",
+    "chapters/lecture_09/content.tex": "08a3d607eb8d1d1c07ea967ed0a312b6a541621847916b365e858288afcfea93"
+  },
+  "source_files": {
+    "course.tex": "356d8ce3183a4c7413b9c336e9a2d8bd28af68d0f32fc281411dd6137903070b",
+    "common_preamble.tex": "7230adaa2c872f88056a832b9a230eaf89d97409c06df43c5abd3be7bb7c6e6d",
+    "chapters/lecture_01/content.tex": "8901a5e94b79043b8683ae3c07a6714b79847789e5762c48cd72e9d9f36d025a",
+    "chapters/lecture_02_03/content.tex": "d5f4018fc88275e090e6b4773153254fd7bbd28504c004b454fb444d72fb2f3f",
+    "chapters/lecture_04/content.tex": "b79226daad0aa91b17e4b2afe6d6e4b98fc52396be779aab36de42d64582b3ab",
+    "chapters/lecture_05/content.tex": "3e7b4248a1a92ec5b0838f3fcbd1c70b542ad61307daf8cff5face134ee911b3",
+    "chapters/lecture_06/content.tex": "ed6739fc900e1b83e609422bcf5a0246a4429759b0de1ebc104649c101391284",
+    "chapters/lecture_07/content.tex": "42d787980d2bd997c18034f22e260e9db3610b2b44586bcd1d5557ab67b90c95",
+    "chapters/lecture_08/content.tex": "57e52781307495b368457421b6d78cc41a563bc01a566b789fd9200862518709",
+    "chapters/lecture_09/content.tex": "a2e052c366902368f82b9b8cc60ec34b86f8d7451d0adc06a04c22b71778c74f"
+  },
+  "translated_tex": {
+    "cover.tex": "6e8712a0826cf2f2735e6078f63fb9108c78da18eb201fc63b1013c9a85fda46",
+    "common_preamble.tex": "0d105d37b4bf6caf700b104260214f2781c9729cfea0d8277877336ea4a79f33",
+    "course.tex": "c8d6a1501b41867c5c68634ee2b9e4f4a7769cdf4b9c6dcc68c4a3c3eeb095d7",
+    "chapters/lecture_07/content.tex": "f332f15fe98c03fd7523e8379695e41f5265647a4c5af9de6e538744125c45d3",
+    "chapters/lecture_09/content.tex": "863fc8792fe222e904040c9f38162c13a8421847701c5e0fde0cb97eaca9da76",
+    "chapters/lecture_02_03/content.tex": "3cda29d4b544d7661b64f489741f0b66933bd36a45085091b9f74c701e03671c",
+    "chapters/lecture_01/content.tex": "764705136be3762fd48df28744cbaf19b6c5d22ff89ed81b298e3ef860a4b1ce",
+    "chapters/lecture_08/content.tex": "6bb5e9763219e7a06d7c40faccc67692f98b90126bd4b71f10e780ee90be4564",
+    "chapters/lecture_05/content.tex": "bd687625bb66e943faf3087139e285215016a746aeca50be9d1f9f35415b41d4",
+    "chapters/lecture_04/content.tex": "5199ab912acc044b722800a98e33c6a0b90af43c7bdf3e6ba760935f7cf54828",
+    "chapters/lecture_06/content.tex": "903bb33495a142d6d5cf194d0165c38086ced60ebcc3054f9f925a32719d2286"
+  }
+}
