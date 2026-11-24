@@ -1,0 +1,348 @@
+\chapter{Các mặt cầu, không gian hyperbolic và ý nghĩa của \(k\)}
+
+Hãy làm một chút toán, một chút toán đơn giản. Các mặt cầu trong số chiều bất kỳ là những hình học đặc biệt: chúng đồng đều, và ở đây đồng đều có nghĩa là độ cong không đổi. Trước hết là độ cong dương, tiếp đến là độ cong âm đồng đều, rồi sau đó là mối liên hệ với các phương trình của Einstein.
+
+Một vũ trụ cầu nghĩa là \emph{không gian} có dạng cầu, chứ không phải không-thời gian. Cũng còn khả năng kia nữa, là độ cong âm đồng đều. Đặt các trường hợp này cạnh nhau chính là điều làm rõ vai trò của thuyết tương đối rộng.
+
+\section{Các mặt cầu và hình học đồng đều}
+
+Một 1-cầu chỉ là một đường tròn. Cách đơn giản nhất để mô tả nó là nhúng nó vào một không gian phụ hai chiều và viết
+\begin{equation}
+x^2+y^2=R^2.
+\end{equation}
+1-cầu đơn vị là
+\begin{equation}
+x^2+y^2=1.
+\end{equation}
+
+Một 2-cầu được mô tả theo cùng cách đó, nay dùng ba tọa độ phụ:
+\begin{equation}
+x^2+y^2+z^2=R^2,
+\end{equation}
+trong trường hợp đơn vị thì
+\begin{equation}
+x^2+y^2+z^2=1.
+\end{equation}
+
+Những tọa độ này chỉ là một chỗ dựa. Hình học đáng quan tâm không phải là không gian \(x,y,z\) bao quanh. Mà là chính bề mặt đó. Một sinh vật sống trên một 1-cầu thì sống trên một đường tròn; nó không thể tiếp cận cái bên trong hay cái bên ngoài. Cùng ý tưởng ấy áp dụng cho 2-cầu. Phần được mặt cầu bao kín và phần bên ngoài của nó chỉ thuộc về bức tranh phụ trợ.
+
+Cùng phép dựng ấy cho ta một 3-cầu. Ta đưa vào thêm một tọa độ nữa, chẳng hạn \(w\), và viết
+\begin{equation}
+x^2+y^2+z^2+w^2=R^2,
+\end{equation}
+trong trường hợp đơn vị thì
+\begin{equation}
+x^2+y^2+z^2+w^2=1.
+\end{equation}
+Một 3-cầu khó hình dung hơn, vì chỗ dựa khi này sẽ là bốn chiều, nhưng phần toán học không khó hơn bao nhiêu.
+
+Ký hiệu chuẩn cho \(n\)-cầu là \(\Omega_n\). Do đó \(\Omega_1\) là 1-cầu, \(\Omega_2\) là 2-cầu, và \(\Omega_3\) là 3-cầu.
+
+\section{Các metric trên mặt cầu}
+
+Cách mô tả hữu ích hơn là mô tả nội tại. Ta mô tả mặt cầu bằng các tọa độ nằm ngay trên chính mặt cầu.
+
+Đối với 1-cầu đơn vị, một tọa độ \(\phi\) là đủ, với \(0\leq \phi \leq 2\pi\). Metric của nó là
+\begin{equation}
+ds^2=d\phi^2.
+\end{equation}
+Điều này cũng được viết là
+\begin{equation}
+d\Omega_1^2=d\phi^2.
+\end{equation}
+
+2-cầu đơn vị được mô tả như một họ các 1-cầu. Một góc \(\phi\) vẫn chạy quanh mỗi đường tròn, nhưng một góc thứ hai \(\theta\) chạy từ đầu này của mặt cầu tới đầu kia. Góc thứ hai ấy chạy từ \(0\) đến \(\pi\). Chuyển động theo hướng \(\theta\) đóng góp \(d\theta^2\). Chuyển động quanh hướng \(\phi\) diễn ra trên một đường tròn có bán kính \(\sin\theta\). Do đó
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\phi^2
+\end{equation}
+hoặc
+\begin{equation}
+d\Omega_2^2=d\theta^2+\sin^2\theta\,d\Omega_1^2.
+\end{equation}
+
+3-cầu thu được theo cùng cách, giờ là như một họ các 2-cầu. Đưa vào thêm một tọa độ nữa \(\alpha\). Khi đó
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\,d\Omega_2^2.
+\end{equation}
+Khai triển ra, ta có
+\begin{equation}
+d\Omega_3^2=d\alpha^2+\sin^2\alpha\left(d\theta^2+\sin^2\theta\,d\phi^2\right).
+\end{equation}
+Ở đây \(\alpha\) chạy từ một đầu có kích thước bằng không đến đầu kia, nên \(0\leq \alpha \leq \pi\).\editorialnote{Tại 00:17:24, âm thanh thoáng nghe như ``0 đến 2 pi,'' nhưng cách dựng xung quanh và nhân tử \(\sin^2\alpha\) tường minh đòi hỏi tọa độ mới phải chạy từ một đầu có kích thước bằng không của họ các mặt cầu số chiều thấp hơn đến đầu kia.}
+
+Dạng đệ quy tổng quát là
+\begin{equation}
+d\Omega_n^2=d\alpha^2+\sin^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+
+Một khi đã chấp nhận cách nhìn này, ta có thể quên bức tranh nhúng đi. Một 1-cầu được mô tả bằng một tọa độ, một 2-cầu bằng hai tọa độ, một 3-cầu bằng ba tọa độ, v.v. Hình học tự đứng vững.
+
+Hình học này đặc biệt vì nó đồng nhất. Ta có thể làm biến dạng metric bằng cách thay \(\sin^2\theta\) bằng một hàm khác vẫn triệt tiêu ở cả hai đầu. Khi đó ta sẽ thu được một mặt kín nào đó đã bị biến dạng, chẳng hạn một ellipsoid. Nhưng khi đó nó sẽ không còn đồng đều nữa. Mặt cầu là đồng nhất vì mọi điểm đều giống hệt mọi điểm khác.
+
+Nếu muốn một mặt cầu bán kính \(A\) thay vì bán kính đơn vị, ta nhân metric đơn vị với \(A^2\):
+\begin{equation}
+ds^2=A^2\,d\Omega_3^2.
+\end{equation}
+Lũy thừa hai là cần thiết vì metric đo bình phương khoảng cách.
+
+Một xen ngang ngắn liên quan đến 0-cầu. Ngoại suy lùi lại một bước cho
+\begin{equation}
+x^2=1,
+\end{equation}
+mà các nghiệm là hai điểm \(x=\pm 1\). Vậy 0-cầu đơn vị chỉ là hai điểm.
+
+\section{Một vũ trụ FRW hình cầu}
+
+Giờ đây điều ta quan tâm không chỉ là không gian, mà là không-thời gian. Bức tranh thích hợp là một 3-cầu có bán kính thay đổi theo thời gian.
+
+Có một lưu ý quan trọng xuyên suốt: thời gian là một thứ khác. Không nên nghĩ vũ trụ giãn nở như một mặt cầu số chiều cao hơn, trong đó thời gian đóng vai trò của thêm một tọa độ nhúng.
+
+Với lưu ý đó, khoảng không-thời gian là
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\Omega_3^2.
+\end{equation}
+Đây là metric FRW cho một vũ trụ có không gian cầu. Thành phần mới duy nhất so với mặt cầu tĩnh là bán kính nay đã trở thành một hàm phụ thuộc thời gian \(a(t)\).
+
+Thuận tiện nhất là chọn tọa độ sao cho ta ở tại một cực. Không có gì đặc biệt ở điểm đó; đó chỉ là một quy ước. Khi đó \(\alpha\) có thể được xem như một tọa độ xuyên tâm tính ra xa khỏi chúng ta trên cầu đơn vị. Nó không phải là một khoảng cách xuyên tâm tính bằng kilômét. Nó là một độ đo góc không thứ nguyên trên cầu đơn vị, nhưng trong hình học này nó đóng vai trò của khoảng cách xuyên tâm.
+
+Bỏ qua các cấu trúc cục bộ như các thiên hà và các sao, đây là toàn bộ hình học của một vũ trụ FRW có không gian cầu. Độ cong không gian của nó là dương, và quy ước dấu được viết
+\begin{equation}
+k=+1.
+\end{equation}
+Bản thân không có gì là ``cộng một.'' Nó đơn giản chỉ có nghĩa là độ cong không gian dương.
+
+\section{Nhìn ra từ một mặt cầu}
+
+Một mặt cầu như thế trông ra sao khi ta nhìn ra từ một điểm trên nó? Đây là chỗ phép chiếu lập thể xuất hiện.
+
+Xét một 2-cầu tiếp xúc với một mặt phẳng vô hạn tại cực nam. Lấy một điểm trên mặt cầu. Kẻ đường thẳng từ cực bắc đi qua điểm đó rồi kéo dài cho đến khi nó cắt mặt phẳng. Theo cách này, mỗi điểm trên mặt cầu được ánh xạ thành một điểm trên mặt phẳng. Cực nam đi tới gốc tọa độ của mặt phẳng. Cực bắc là điểm ngoại lệ: khi ta tiến lại gần nó từ các hướng khác nhau, ảnh của nó chạy ra vô cực theo cách phụ thuộc vào hướng. Vì vậy người ta xem nó là điểm ở vô cực.
+
+Nếu đặt những ``lục địa'' bằng nhau ở những vị trí khác nhau trên mặt cầu, thì ảnh của chúng trên mặt phẳng sẽ lớn dần lên khi ta đi về phía cực bắc. Vì vậy, một người quan sát đặt ở cực nam sẽ thấy các vật ở xa trông dưới những góc lớn hơn so với trong không gian phẳng. Trong độ cong dương, một vật thể đã biết trông quá lớn so với hình học Euclid.
+
+Đó là điểm quan sát cơ bản. Độ cong được suy ra từ quan hệ giữa khoảng cách, kích thước và kích thước góc. Bản thân các thiên hà không phải là những thước đo chuẩn tốt ở các khoảng cách rất xa, nhưng logic thì chính là như vậy.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:54}
+\audiencequestion{Có phải ta cũng phải biết khoảng cách, chứ không chỉ kích thước góc?}
+\lecturerresponse{Đúng. Chỉ riêng góc thì không đủ. Cần biết cả góc lẫn khoảng cách.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:46:18}
+\audiencequestion{Các đường tròn trên bề mặt cầu có được chiếu thành các đường tròn không?}
+\lecturerresponse{Có. Đường tròn được chiếu thành đường tròn. Đó là một trong những đặc điểm đặc biệt của phép chiếu lập thể.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:47:02}
+\audiencequestion{Một lục địa có giữ nguyên hình dạng dưới phép chiếu không?}
+\lecturerresponse{Có hai mệnh đề khác nhau. Một là đường tròn được chiếu thành đường tròn. Mệnh đề kia yếu hơn: các hình đủ nhỏ bảo toàn hình dạng cục bộ vì các góc được bảo toàn. Ánh xạ này là bảo giác: nó bảo toàn góc, dù không bảo toàn kích thước tương đối.}
+\end{classroomqa}
+
+\section{Độ cong âm đồng đều}
+
+Trường hợp có độ cong âm đồng đều được đưa vào thông qua metric của nó.
+
+Đối tượng tương ứng với mặt cầu trong trường hợp độ cong âm là không gian hyperbolic. Trong cùng tinh thần đệ quy như trước, metric của nó thu được bằng cách thay \(\sin\alpha\) bằng \(\sinh\alpha\):
+\begin{equation}
+d\mathcal H_n^2=d\alpha^2+\sinh^2\alpha\,d\Omega_{n-1}^2.
+\end{equation}
+Phần góc ở số chiều thấp hơn vẫn là metric của cầu đơn vị \(d\Omega_{n-1}^2\).
+
+\begin{classroomqa}
+\lecturetimestamp{00:55:51}
+\audiencequestion{Trong metric, phần vi phân ở số chiều thấp hơn đó vẫn là phần cầu chứ?}
+\lecturerresponse{Vâng. Phần số chiều thấp hơn đó là metric mặt cầu đơn vị thông thường. Sự thay đổi nằm ở hệ số \(\sinh^2\alpha\) đứng trước nó.}
+\end{classroomqa}
+
+Sin hyperbol là
+\begin{equation}
+\sinh\alpha=\frac{e^\alpha-e^{-\alpha}}{2}.
+\end{equation}
+Dấu trừ là quan trọng; trong bài giảng, nó được một sinh viên sửa ngay lập tức.
+
+Còn có một khác biệt then chốt nữa trong miền giá trị của tọa độ. Đối với mặt cầu, tọa độ mới chạy từ đầu này tới đầu kia rồi dừng tại \(\pi\). Ở đây,
+\begin{equation}
+0\leq \alpha<\infty.
+\end{equation}
+Sin thông thường tăng lên rồi trở về 0. Sin hyperbol bắt đầu theo cùng cách đó gần \(\alpha=0\), nhưng sau đó nó tăng theo hàm mũ.
+
+Điều đó có nghĩa là các mặt cầu số chiều thấp hơn bao quanh chúng ta lớn dần lên khi ta đi ra ngoài. Trong hình học này, bầu trời ở bán kính tăng dần không phải trước hết lớn ra rồi co lại. Nó cứ tiếp tục lớn ra.
+
+Trong ba chiều không gian, dạng FRW tương ứng là
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\,d\mathcal H_3^2,
+\end{equation}
+và ký hiệu dấu là
+\begin{equation}
+k=-1.
+\end{equation}
+
+\section{Hình ảnh đĩa và ý nghĩa của nó}
+
+Độ cong âm trở nên trực quan trong hình ảnh đĩa do Escher làm nổi tiếng, đặc biệt là \emph{Limit Circle Number Four}. Phép tương tự với phép chiếu lập thể thì hữu ích, nhưng tính chất lại ngược lại.
+
+Đối với mặt cầu, hình chiếu trông vô hạn trong khi hình học thực là hữu hạn. Đối với trường hợp độ cong âm, hình ảnh đĩa trông hữu hạn trong khi hình học thực là vô hạn. Những ``lục địa'' hay ``thiên hà'' bằng nhau trông nhỏ dần khi tiến về phía biên, nhưng về mặt hình học thì tất cả đều cùng kích thước. Nếu đo khoảng cách bằng cách đếm xem ta đi qua bao nhiêu phần bằng nhau, thì biên ở xa vô hạn.
+
+Vì thế, trong độ cong âm, một vật thể đã biết trông quá nhỏ so với không gian phẳng. Nó chắn một góc quá nhỏ.
+
+Hình học vẫn đồng nhất. Mặc dù hình vẽ làm các phần ở ngoài trông rất nhỏ, bất kỳ quan sát viên nào được chuyển sang một vị trí khác cũng sẽ thấy cùng một hình học nội tại.
+
+\begin{classroomqa}
+\lecturetimestamp{01:06:42}
+\audiencequestion{Một quan sát viên ở bất kỳ vòng tròn nào trong số đó có thấy một mẫu hình tương tự không?}
+\lecturerresponse{Vâng, đúng y như vậy. Không gian là đồng nhất.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:07:03}
+\audiencequestion{Trong trường hợp cầu, các vật ở xa có vẻ quá lớn, còn ở đây chúng có vẻ quá nhỏ?}
+\lecturerresponse{Vâng. Trong độ cong dương, một vật thể đã biết chắn một góc quá lớn so với không gian phẳng. Trong độ cong âm, nó chắn một góc quá nhỏ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:08:09}
+\audiencequestion{Điểm cốt yếu của phép chiếu kiểu lập thể có phải là nhà thiên văn có thể tái dựng nó từ quan sát không?}
+\lecturerresponse{Vâng. Nhà thiên văn thực chất là một trắc địa viên đo các tam giác trên bầu trời. Đối với điểm hình học đang xét ngay lúc này, có thể gác sự phụ thuộc theo thời gian sang một bên và tập trung vào các góc và khoảng cách.}
+\end{classroomqa}
+
+Cũng có một hình dung cục bộ hữu ích. Một mảng nhỏ của không gian cong âm có thể được vẽ như một mặt yên ngựa trong không gian ba chiều thông thường. Nhưng chỉ những mảng nhỏ mới có thể được vẽ theo cách đó; toàn bộ mặt phẳng hyperbolic không thể được nhúng toàn cục như một mặt thông thường đẹp trong không gian Euclid ba chiều.
+
+\section{Trường hợp phẳng}
+
+Nằm giữa các trường hợp độ cong dương và độ cong âm là không gian phẳng. Có thể xem nó như một giới hạn, nhưng chỉ cần nghĩ đơn giản đến không gian Euclid phẳng thông thường là đủ.
+
+Dạng FRW của nó là
+\begin{equation}
+d\tau^2=dt^2-a(t)^2\left(dx^2+dy^2+dz^2\right),
+\end{equation}
+với
+\begin{equation}
+k=0.
+\end{equation}
+
+Đây là ba hình học FRW đồng nhất:
+\begin{align}
+k=+1 &: \text{positive spatial curvature},\\
+k=0 &: \text{flat space},\\
+k=-1 &: \text{negative spatial curvature}.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:15:07}
+\audiencequestion{Nếu chiếu hình học lên một mặt phẳng và theo dõi một tín hiệu, thì tốc độ ánh sáng trên hình chiếu có thay đổi theo từng nơi không?}
+\lecturerresponse{Có, trên hình chiếu thì sẽ như vậy. Trên hình chiếu cầu, nó sẽ có vẻ đi nhanh dần khi ra xa; còn trên đĩa độ cong âm, nó sẽ có vẻ đi chậm dần gần mép. Sự biến thiên đó thuộc về hình vẽ, không thuộc về vật lý nền tảng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:05}
+\audiencequestion{Người ta đã thực sự dùng cách nhìn các vật rất xa theo lối này để xác định tính phẳng hay chưa?}
+\lecturerresponse{Vâng, nhưng điều thực sự được dùng là thông tin góc. Người ta không xác định tính phẳng bằng cách cố đo xem ánh sáng có vẻ chuyển động nhanh đến đâu trên hình chiếu.}
+\end{classroomqa}
+
+\section{Trở lại các phương trình vũ trụ học}
+
+Sau giờ nghỉ là mối liên hệ giữa các phương trình vũ trụ học đã khảo sát và các phương trình Einstein. Ở thời điểm này, trên bảng vẫn còn đoạn metric không gian phẳng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{lecture_05_figure_02.png}
+\caption{Đoạn metric FRW phẳng.}
+\lectureframe{01:18:18}
+\end{figure}
+
+Trước hết là một ôn tập Newton rất ngắn. Đặt chúng ta ở tâm. Xét một thiên hà đang lùi xa theo định luật Hubble. Theo định lý của Newton đối với một phân bố đối xứng cầu, chỉ khối lượng bên trong mặt cầu có bán kính bằng khoảng cách tới thiên hà mới góp phần vào lực tác dụng lên nó. Khi đó có ba khả năng: thiên hà chuyển động nhanh hơn vận tốc thoát, chậm hơn vận tốc thoát, hoặc đúng bằng vận tốc thoát.
+
+Tiếp theo, điều được nhắc lại là đối với vật chất phi tương đối tính thông thường, mật độ tỷ lệ như khối lượng chia cho \(a^3\); đối với bức xạ, nó tỷ lệ như \(1/a^4\); còn đối với năng lượng chân không, nó không thay đổi khi mặt cầu thay đổi.
+
+Trong cách xử lý Newton trước đó, phương trình vũ trụ học có một hạng mật độ và, nếu ta không ở đúng trường hợp vận tốc thoát, một hạng hằng bổ sung tỷ lệ với \(1/a^2\). Phần thảo luận trước đó phần lớn đặt hạng ấy bằng 0. Về mặt thực nghiệm nó nhỏ, nhưng về mặt khái niệm thì không có lý do gì để bỏ nó đi.
+
+\section{Các phương trình Einstein và thành phần \(00\)}
+
+Bước tiếp theo là các phương trình trường Einstein. Ở vế trái là hình học, được xây dựng từ độ cong không-thời gian. Ở vế phải là tensor năng lượng-động lượng, nguồn của trường hấp dẫn. Trong chuẩn hoá của bài giảng, ta viết
+\begin{equation}
+R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R=4\pi G\,T^{\mu\nu}.
+\end{equation}
+\editorialnote{Trong dòng trên bảng nhìn thấy được, hệ số \(\tfrac12\) không đọc rõ, nhưng vào khoảng 01:33:36 phần sửa bằng lời khôi phục nó. Phương trình ở đây giữ lại sự sửa đó đồng thời vẫn bảo toàn chuẩn hoá \(4\pi G\) của bài giảng.}
+
+Ở đây không cần đến cả mười thành phần độc lập. Đến giai đoạn này, quá nhiều điều đã được giả thiết --- tính đồng nhất, dạng FRW và một thừa số tỉ lệ duy nhất phụ thuộc thời gian --- đến mức chỉ còn lại một hàm tùy ý, đó là \(a(t)\). Thành phần tự nhiên để chọn là thành phần thời-thời, vì \(T^{00}\) là mật độ năng lượng \(\rho\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_05_figure_05.png}
+\caption{Phương trình trường Einstein và thành phần \(00\) của nó.}
+\lectureframe{01:30:54}
+\end{figure}
+
+Vì vậy, trọng tâm là
+\begin{equation}
+R^{00}-\frac{1}{2}g^{00}R=4\pi G\,\rho.
+\end{equation}
+
+Vế phải là mật độ năng lượng. Vế trái là hình học.
+
+\begin{classroomqa}
+\lecturetimestamp{01:39:09}
+\audiencequestion{Còn các thành phần khác của tensor năng lượng-động lượng thì sao?}
+\lecturerresponse{Nói chung chúng không triệt tiêu. Các thành phần không gian-không gian có thể biểu diễn áp suất. Trong trường hợp vật chất chi phối thì áp suất bằng 0, trong trường hợp bức xạ chi phối thì nó bằng một phần ba mật độ năng lượng, còn đối với năng lượng chân không thì ta viết \(P=w\rho\) với \(w=-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:40:24}
+\audiencequestion{Vậy nếu chỉ có vật chất, thì các thành phần khác của \(T^{\mu\nu}\) có triệt tiêu không?}
+\lecturerresponse{Đối với vật chất không áp suất thì có, các thành phần áp suất triệt tiêu.}
+\end{classroomqa}
+
+\section{Phép tính Einstein cho ra điều gì}
+
+Phép tính đầy đủ của độ cong không được thực hiện trên bảng. Điều quan trọng là biểu thức xuất hiện khi thế một metric FRW vào tensor Einstein.
+
+Một loại hạng tử xuất phát đơn thuần từ việc thừa số tỉ lệ phụ thuộc vào thời gian. Ngay cả khi không gian phẳng, một thừa số tỉ lệ phụ thuộc thời gian vẫn sẽ tạo ra độ cong không-thời gian. Phần đóng góp đó tỉ lệ với
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2.
+\end{equation}
+
+Loại hạng tử thứ hai xuất phát từ chính độ cong không gian. Ngay cả khi thừa số tỉ lệ được giữ cố định theo thời gian, không gian cong vẫn sẽ góp phần vào độ cong không-thời gian. Đối với một hình học cong đều đơn giản, độ cong biến thiên như nghịch đảo của bình phương bán kính cong, nên nó đóng góp một hạng tử tỉ lệ với
+\begin{equation}
+\frac{k}{a^2},
+\end{equation}
+với dấu dương cho hình cầu, dấu âm cho trường hợp siêu bội, và bằng không cho không gian phẳng.
+
+\begin{classroomqa}
+\lecturetimestamp{01:36:53}
+\audiencequestion{Có phải còn phải có thêm một thừa số như bán kính cong nữa không?}
+\lecturerresponse{Điều đó đã nằm sẵn trong thừa số \(1/a^2\). Đối với các hình học cong đều đơn giản này, độ cong đơn giản là nghịch đảo của bình phương bán kính cong.}
+\end{classroomqa}
+
+Việc theo dõi các hệ số được thực hiện ngay trong lúc trình bày và một phần được đối chiếu với kết quả Newton trước đó. Kết quả cuối cùng là\footnote{Dạng Friedmann được trình bày ở đây cô đọng phần thảo luận bằng lời, có tự đính chính, về các hệ số và sự so sánh với kết quả Newton trước đó vào khoảng 01:32:35--01:36:53.}
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho,
+\end{equation}
+hoặc tương đương
+\begin{equation}
+\left(\frac{\dot a}{a}\right)^2=\frac{8\pi G}{3}\rho-\frac{k}{a^2}.
+\end{equation}
+
+Đây là dạng liên hệ ba hình học FRW với động lực học vũ trụ học trước đó.
+
+\begin{classroomqa}
+\lecturetimestamp{01:37:52}
+\audiencequestion{Liệu \(k\) có thể nhận bất kỳ giá trị nào nếu ta định nghĩa lại \(a\) không?}
+\lecturerresponse{Trong trường hợp phẳng, không có một thang đo tự nhiên duy nhất cho \(a\), nên ta có thể thay đổi tỉ lệ của nó, nhưng \(k\) vẫn bằng không. Trong các trường hợp hình cầu và cong âm, có một thang đo độ cong tự nhiên. Nếu lấy \(a(t)\) là bán kính cong tự nhiên đó, thì \(k\) đơn giản là \(+1\) hoặc \(-1\).}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:41:00}
+\audiencequestion{Trong phương trình cuối cùng đó, \(k\) có bằng \(+1\), \(-1\) hay \(0\) không?}
+\lecturerresponse{Vâng. Nó là \(+1\) đối với hình cầu, \(-1\) đối với trường hợp siêu bội, và \(0\) đối với không gian phẳng.}
+\end{classroomqa}
+
+Cách xử lý của Newton không làm ta đi chệch hướng; nó cho cùng một phương trình cơ bản. Điều mà thuyết tương đối rộng bổ sung là cách diễn giải. Theo quan điểm Newton, hằng số bổ sung phân biệt trường hợp vượt vận tốc thoát, trường hợp dưới vận tốc thoát, và trường hợp biên ở đúng ngưỡng. Theo quan điểm Einstein, cùng dấu ấy cho ta biết chính hình học của không gian.
+
+\begin{classroomqa}
+\lecturetimestamp{01:42:46}
+\audiencequestion{Điều này diễn ra như thế nào trước khi đưa hằng số vũ trụ học vào?}
+\lecturerresponse{Trước khi có hằng số vũ trụ học, tồn tại một mối liên hệ chặt chẽ giữa việc vượt hay không vượt vận tốc thoát và hình học không gian. Nếu \(k=+1\), không gian có độ cong dương và chuyển động ở dưới vận tốc thoát, nên vũ trụ có thể giãn nở rồi co lại. Nếu \(k=-1\), không gian có độ cong âm và chuyển động ở trên vận tốc thoát, nên vũ trụ tiếp tục giãn nở. Nếu \(k=0\), ta có trường hợp biên ở đúng ngưỡng.}
+\end{classroomqa}
+
+Vì vậy, dấu của \(k\) có thể được hiểu theo hai cách: như một phân loại động lực học của chuyển động và như dấu của độ cong không gian.

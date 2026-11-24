@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 134,
+  "outline_entries": 77,
+  "target_characters": 116377,
+  "image_placements": 24,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Vũ trụ học",
+  "pdf_sha256": "60192b8fdb8a6e22eb022d69a7e35b77d7415bc412b1f978dd8f37e1b01271d3",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 81,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "7692793bdf604d0cdcfc5ba428d477dbdabc6af8c602c6c09c4d33562cc6eae0",
+    "chapters/lecture_01/content.tex": "3894d20403ace4e01b6f46201bb5882548132830074d229ba7844e7496f93611",
+    "chapters/lecture_02/content.tex": "9a0631a345ce7d48258da0c72b2e21681d855847437550abe821320accffd8e7",
+    "chapters/lecture_03/content.tex": "5f597d3d96fb10682687cc5f6110ae2c062cd1a56bd8d5b5885f781441d782ab",
+    "chapters/lecture_04/content.tex": "4fd87cbdf1ce58b57ee9e7cb3ea94f7b9dd3d677cb409d4096d69ab81ed47e16",
+    "chapters/lecture_05/content.tex": "f614d9cd82bd80f431bdc23a2412f59788451a8c262e96c18686aef226c8165c",
+    "chapters/lecture_06/content.tex": "7dea0c1645e27d9a032a0ad524d2602993a525ba6f223ace57a80c89b54959db",
+    "chapters/lecture_07/content.tex": "e957d6379d77d868926f52e282a10bb38bf4920709bf5ed3f7619d92656caa09",
+    "chapters/lecture_08/content.tex": "3fe843b149f03d6354a4d8aa19684a4cb08a6c70ca80c5afbc19e84216d53e87"
+  },
+  "source_files": {
+    "course.tex": "125f23300b0aa5ca9c8f62f287196c91c5507e57113eab240bf01314f0443590",
+    "common_preamble.tex": "6fd30b9ea7d9cc069be8e4914c1fff00ba4579520736c97dd95ec8c2b42e6f7a",
+    "chapters/lecture_01/content.tex": "1c63865a8e8dac48d954d141bb0a84e406b3dc9485e5bd2494ce4b210419cee9",
+    "chapters/lecture_02/content.tex": "0f0971315044d58fb2c963343b10bd268c0560cb5aee03246c7adadb5d76ca00",
+    "chapters/lecture_03/content.tex": "cde02436e73a4adc4082eb3fe6dfc1d8a7ba4dfd4d85870f15c1d2a6cd0912a1",
+    "chapters/lecture_04/content.tex": "538242039f9c58bbfd06c37b1c7ec7ba5924604460697a3716ff627a8667b161",
+    "chapters/lecture_05/content.tex": "40140c7b4050146d4c248e3f72450e0154c5be4321e73b642eaf0ee1902e9230",
+    "chapters/lecture_06/content.tex": "15c4fc4f3c00e4f19c7d6966145cac4ac105abc7334e9299bfaa851b26bdc088",
+    "chapters/lecture_07/content.tex": "b199a74d64d7cd138bc33966780c72f9be462573aa42959b2f390ec56d79f3e8",
+    "chapters/lecture_08/content.tex": "9f9795054cf068dbae683402a91dda0fa52ece4daa006d29eef91409c1561290"
+  },
+  "translated_tex": {
+    "cover.tex": "d09aecbce047b1163bddb46f66679639347dfdc59fa2e4ca93fa61eb77782f34",
+    "common_preamble.tex": "9d44ed2e8365833b4c30888608ff45f98e5ee4205a6287035521db598a22b4d0",
+    "course.tex": "b42ff0be59fcf1c93af7a178e22a7647546bc86d0f9dac3cd4d863e2723e60ba",
+    "chapters/lecture_07/content.tex": "fb4d9fe17ab1641bb783d200d0af8c24b9a98b026a06a6894a9714aea5c4d20b",
+    "chapters/lecture_02/content.tex": "a15b5c1a917ac6f0b16b8272763b9af888d9b50ede944dc4ca2a17664370fdd8",
+    "chapters/lecture_01/content.tex": "4cf0be8f1d394163568d3247232635e222f52b7161008fd8263d668d0e8f9eb6",
+    "chapters/lecture_03/content.tex": "45ae0ca665efd50bf2dcc496758f291140060d46871a9f382dd29e3f93a6fb2c",
+    "chapters/lecture_08/content.tex": "111cbdadc8be59c94d9ad37dd40a38d3effbf1416647fdc39560eaca4d678577",
+    "chapters/lecture_05/content.tex": "3cdec15b59db4f62eb9ca44032be9bf22740375c0957eff40ab3ea9b62cab7e1",
+    "chapters/lecture_04/content.tex": "47c6e246c1a846dc8cd64a8870bfefa106476ba1356b5b2847b9dcd77a2a03e1",
+    "chapters/lecture_06/content.tex": "43ff888ed8c0f84993413820c24cfd7d12161a9a7297772c95bb3327306d859a"
+  }
+}
