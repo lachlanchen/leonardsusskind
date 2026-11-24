@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 29,
+  "outline_entries": 18,
+  "target_characters": 10875,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "فهم بوزون هيغز",
+  "pdf_sha256": "6f26fc72aa837623da40fb29a7c4741b4684ca5f0b4d03efd0747df6302f6b88",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 60,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "547a38b966d131cae62d6640cfc74b1d2ea4a8e150ed4f58e99e6886d02cc268",
+    "chapters/lecture_01/content.tex": "0b0006151aa64a3a43a358fb7353585d2afac1e0879cd2529cd604ca74fd7d63"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "09b920d7a7889dc812ddde5f3511376ae4b93f1d9c498e2b0de79a5e7f3d3a4f",
+    "common_preamble.tex": "44a8ff3293bb9b0258c98c6e705bd8309a93a8bddcacb119b457786921ad67ff",
+    "course.tex": "8db53f3eb8578cd5dec220a631ca8b47cf3bd5748d0003611ee7b601409d353c",
+    "chapters/lecture_01/content.tex": "c6121291dcac63ae06ed21392901946577c8b3eb6b64f4a3bb04e24122690121"
+  }
+}
