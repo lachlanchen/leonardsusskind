@@ -1,0 +1,537 @@
+\chapter{Sự phát sinh baryon, độ trơn nhẵn vũ trụ và ma sát Hubble}
+
+\lectureoverview{Hai số không thứ nguyên nhỏ chi phối buổi học tối nay. Số thứ nhất là phần dư vật chất--phản vật chất còn sống sót, được làm tròn trong môn học thành 1 phần trên \(10^8\). Lời giải thích động lực học của nó đòi hỏi sự vi phạm số baryon, bất đối xứng hạt--phản hạt, và sự lệch khỏi cân bằng nhiệt: ba điều kiện Sakharov. Số thứ hai là độ tương phản mật độ nguyên thủy, cỡ \(10^{-5}\) vào lúc tách rời. Trọng lực khuếch đại thay vì xóa đi những gợn nhỏ như vậy, nên độ nhỏ của chúng là động lực cho lạm phát. Sau đó ta chuẩn bị cơ học của lạm phát bằng cách suy ra phương trình chuyển động của một trường vô hướng đồng nhất trong một vũ trụ đang giãn nở và nhận diện \(3H\dot\phi\) là ma sát Hubble.}
+
+\section{Lật ngược câu hỏi về entropy}
+
+Tối nay chúng ta sẽ bắt đầu bàn về lạm phát, nhưng trước hết phải hoàn tất phần về sự phát sinh baryon: sự tạo ra phần dư của vật chất so với phản vật chất. Khuôn khổ này vững chắc hơn bất kỳ mô hình số chi tiết nào. Đó là lý do chủ đề này có thể được tóm lược gọn gàng dù con số trung tâm của nó vẫn chưa được suy ra từ các nguyên lý đầu tiên.
+
+Con đường lịch sử dẫn vào bài toán bắt đầu từ 1980, khi Bob Wagoner hỏi Savas Dimopoulos và Leonard Susskind vì sao entropy của vũ trụ lại lớn đến vậy. Nói theo ngôn ngữ vũ trụ học, câu hỏi là vì sao với mỗi proton còn sống sót lại có nhiều photon đến thế.
+
+Ở nhiệt độ rất cao, photon, quark, phản quark, electron và positron đều rất dồi dào và gần trạng thái cân bằng nhiệt. Quark và phản quark mỗi bên đều có mật độ số cùng bậc đại thể như mật độ photon. Bản thân quan sát đó đã gợi ý phải đảo ngược câu hỏi: vì sao sự hủy cặp lại để sót bất kỳ vật chất không được ghép cặp nào?
+
+Ưu tiên cho lập luận cấu trúc thuộc về Andrei Sakharov. Dimopoulos và Susskind đã độc lập đi tới những điều kiện rất gần gũi trong 1980, rồi tìm thấy bài báo 1967 của Sakharov khi chuẩn bị một đóng góp mang tính lịch sử. Ngày nay các điều kiện ấy được gọi một cách chính đáng bằng tên Sakharov.
+
+Mối liên hệ với entropy giờ đây có thể được nêu tường minh. Đối với bức xạ vật đen, entropy tỉ lệ với số photon tới một hệ số cố định cỡ đơn vị. Thật vậy,
+\begin{equation}
+s_\gamma=\frac{4\rho_\gamma}{3T},
+\qquad
+n_\gamma\propto T^3,
+\end{equation}
+nên một khí photon nhiệt đồng chuyển động có \(S_\gamma\propto N_\gamma\). Vấn đề không nằm ở các hằng số số học; điều bí ẩn là tỉ số photon trên proton khổng lồ.
+
+\begin{classroomqa}
+\audiencequestion{Sự phong phú của photon liên hệ với entropy như thế nào?}
+\lecturerresponse{Bức xạ vật đen là nhiệt, và entropy của nó tỉ lệ với số photon trung bình của nó. Trong bối cảnh này, hỏi vì sao entropy vũ trụ lớn về cơ bản cũng là hỏi vì sao bức xạ nền vi sóng vũ trụ chứa nhiều photon trên mỗi proton đến vậy. Tính tỉ lệ ấy có kèm các hằng số số học, nhưng chúng không liên quan đến bài toán về bậc độ lớn. \lecturetimestamp{00:04:49--00:05:55}}
+\end{classroomqa}
+
+Khi vũ trụ nguội đi, các hạt và phản hạt hủy nhau, còn bức xạ thì vẫn tồn tại và cuối cùng tách rời. Vì thế, điều đáng ngạc nhiên không phải là photon sống sót; mà là sự hủy cặp đã để lại một quần thể vật chất nhỏ xíu không được ghép cặp.
+
+Vì thế số không thứ nguyên hữu ích là
+\begin{equation}
+\eta_B
+\equiv
+\frac{N_B-N_{\bar B}}{N_\gamma}
+\sim
+\frac{N_p-N_{\bar p}}{N_p+N_{\bar p}}
+\sim 10^{-8},
+\label{eq:c08-baryon-asymmetry}
+\end{equation}
+trong đó giá trị cuối cùng là bậc làm tròn được dùng trong môn học, không phải một xác định chính xác. Một khi xuất hiện một con số trông kỳ lạ, câu trả lời ``nó đơn giản đã bắt đầu như vậy'' không còn là một điểm dừng thỏa đáng nữa. Một cơ chế định lượng phải giải thích vì sao đáp án nhỏ và vì sao nó có một dấu xác định.
+
+Việc gọi phần dư là \emph{vật chất} thay vì \emph{phản vật chất} một phần mang tính quy ước: vật chất là phía trong cặp tạo nên chúng ta. Mệnh đề vật lý chỉ là một dấu chiếm ưu thế trong toàn bộ vùng quan sát được.
+
+\section{Số baryon và điều kiện thứ nhất}
+
+Số baryon được chuẩn hóa sao cho một proton hoặc neutron mang \(B=1\). Trong ngôn ngữ quark,
+\begin{equation}
+B=\frac{N_q-N_{\bar q}}{3}.
+\label{eq:c08-baryon-number}
+\end{equation}
+Hệ số \(1/3\) là thiết yếu vì mỗi baryon thông thường chứa ba quark hóa trị. Các hadron khác cũng có thể mang số baryon, nhưng những hạt không bền cuối cùng sẽ phân rã; phần dư ròng quark là công cụ ghi sổ tổng quát hơn.
+
+\begin{classroomqa}
+\classquestion{Số quark ròng phải nhân với 3 hay chia cho 3?}
+\lecturerresponse{Phải chia cho 3. Proton có ba quark và số baryon bằng một, nên \(3B=N_q-N_{\bar q}\). Chỉnh sửa trên bảng là một phần của định nghĩa, không phải là thay đổi trong lập luận vật lý. \lecturetimestamp{00:09:23--00:10:17}}
+\end{classroomqa}
+
+Số baryon chỉ giống điện tích ở chỗ nó có thể là một đại lượng được bảo toàn. Điện tích còn là nguồn của một trường Coulomb tầm xa; số baryon thì không. Proton tạo ra điện trường vì nó có điện tích, trong khi neutron có số baryon nhưng không có điện tích tổng cộng. Do đó, tính bảo toàn và việc tạo ra lực là hai tính chất tách biệt về mặt logic.
+
+\begin{classroomqa}
+\audiencequestion{Khác biệt thích đáng giữa số baryon và điện tích là gì?}
+\lecturerresponse{Cả hai đều có thể đóng vai trò như các điện tích dùng để ghi sổ, nhưng chỉ điện tích là đã biết có thể làm nguồn cho trường điện từ tầm xa. Số baryon không sinh ra một lực Coulomb tương ứng. \lecturetimestamp{00:11:03--00:12:15}}
+\end{classroomqa}
+
+Nếu \(B\) được bảo toàn chính xác, thì một phần dư ban đầu sẽ bị đóng băng mãi mãi. Sự tạo cặp và hủy cặp có thể làm thay đổi \(N_B\) và \(N_{\bar B}\) riêng rẽ, nhưng chỉ với những lượng bằng nhau, nên hiệu của chúng không đổi. Vì thế một lý thuyết động lực học khởi đầu từ một trạng thái cân bằng không thể hoạt động, trừ phi số baryon có thể thay đổi.
+
+Ví dụ sơ đồ sáng sủa nhất là sự phân rã proton. Điện tích và năng lượng cho phép ta hình dung
+\begin{equation}
+p\longrightarrow e^+ +\gamma,
+\qquad
+\bar p\longrightarrow e^-+\gamma.
+\label{eq:c08-decay-pair}
+\end{equation}
+Các kênh này là những mô hình ghi sổ cho sự vi phạm số baryon, không phải dự đoán về kênh thực nghiệm trội nhất. Chúng đưa \(B=+1\) hoặc \(-1\) về 0 đồng thời bảo toàn điện tích.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[->,thick] (0,1.7)--(2.0,1.7);
+\draw[->,thick] (2.0,1.7)--(4.1,2.55);
+\draw[->,thick] (2.0,1.7)--(4.1,0.85);
+\node[above] at (0.9,1.7) {\(p,\ B=1\)};
+\node[right] at (4.1,2.55) {\(\gamma\)};
+\node[right] at (4.1,0.85) {\(e^+\)};
+\draw[->,thick] (6.0,1.7)--(8.0,1.7);
+\draw[->,thick] (8.0,1.7)--(10.1,2.55);
+\draw[->,thick] (8.0,1.7)--(10.1,0.85);
+\node[above] at (6.9,1.7) {\(\bar p,\ B=-1\)};
+\node[right] at (10.1,2.55) {\(\gamma\)};
+\node[right] at (10.1,0.85) {\(e^-\)};
+\node at (2.0,0.25) {\(B:1\to0\)};
+\node at (8.0,0.25) {\(B:-1\to0\)};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Các kênh sơ đồ liên hợp điện tích. Quá trình nào trong hai quá trình cũng vi phạm số baryon, nhưng nếu tốc độ bằng nhau thì sẽ không tạo ra dấu ưu tiên nào.}
+\label{fig:c08-decay-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Liệu proton có thể thay vào đó phân rã thành một positron và một neutrino không?}
+\lecturerresponse{Trạng thái cuối hai fermion đó không khớp với tính chẵn lẻ fermion của trạng thái đầu một fermion. Trạng thái cuối sơ đồ \(e^++\gamma\) chứa một fermion và là đủ cho lập luận đối xứng. Một lý thuyết phân rã proton thực tế có thể chứa các hạt và các kênh khác, nhưng mục đích hiện tại chỉ là biểu thị \(\Delta B\ne0\). \lecturetimestamp{00:14:39--00:15:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu sự bảo toàn số baryon chính xác có tương ứng với một đối xứng không?}
+\lecturerresponse{Có. Một đại lượng được bảo toàn có thể gắn với một đối xứng pha liên tục, mặc dù chỉ nêu tên đối xứng ấy không tự nó chứng minh độc lập rằng tự nhiên tôn trọng nó. Phép kiểm tra về mặt thao tác vẫn là xem các quá trình làm thay đổi số baryon có xảy ra hay không, nên lập luận sẽ thành vòng tròn nếu đối xứng chỉ được suy ra từ định luật bảo toàn. \lecturetimestamp{00:15:08--00:15:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân sự hủy proton--phản proton có thể được xem là sự phân rã proton không?}
+\lecturerresponse{Thuật ngữ là thứ yếu; định luật bảo toàn mới không phải vậy. Trong \(p+\bar p\to\text{photons}\), số baryon ban đầu là \(1-1=0\), và số baryon cuối cùng cũng bằng 0. Sự hủy cặp loại bỏ hai hạt mà không làm thay đổi \(B\) ròng, còn kênh một hạt trong phương trình~\eqref{eq:c08-decay-pair} thì làm thay đổi \(B\). \lecturetimestamp{00:15:48--00:16:47}}
+\end{classroomqa}
+
+Các proton hiện nay ổn định phi thường: bài giảng nêu các cận cỡ \(10^{32}\)--\(10^{34}\) năm, lớn hơn rất nhiều so với tuổi của vũ trụ. Quan sát ấy không thiết lập sự bảo toàn chính xác; nó chỉ cho biết rằng các quá trình làm thay đổi số baryon ở năng lượng hiện nay là cực kỳ chậm.
+
+\section{Đối xứng rời rạc và nhu cầu về một thiên lệch}
+
+Câu hỏi tiếp theo là liệu các định luật có phân biệt vật chất với phản vật chất hay không. Ba phép biến đổi rời rạc tổ chức câu trả lời:
+\begin{align}
+C&:\ \text{particle}\longleftrightarrow\text{antiparticle},\\
+P&:\ \mathbf x\longmapsto-\mathbf x,\\
+T&:\ t\longmapsto-t.
+\end{align}
+Ở đây \(P\) đảo tính thuận tay không gian, còn \(T\) đảo ngược một bộ phim vi mô. Định luật thứ hai ở mức vĩ mô không nhất thiết trông bất biến dưới đảo ngược thời gian, nhưng câu hỏi ở đây liên quan đến động lực học vi mô nền tảng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_03.png}
+\caption{Trên bảng, định nghĩa đã hiệu chỉnh \(B=(N_q-N_{\bar q})/3\) được kéo sang phần giới thiệu \(C\), phép liên hợp điện tích. Phần viết dở sau chữ charge không được dùng làm bằng chứng độc lập.}
+\label{fig:c08-charge-board}
+\lectureframe{00:20:23.280}
+\end{figure}
+
+Lý thuyết trường lượng tử địa phương tương đối tính không đòi hỏi \(C\), \(P\) hay \(T\) riêng rẽ phải là các đối xứng. Dưới các giả thiết chuẩn của nó, nó đòi hỏi phép biến đổi kết hợp \(CPT\). Nếu một quá trình là khả dĩ, thì việc thay mỗi hạt bằng phản hạt của nó, phản chiếu cấu hình không gian, và đảo ngược chuyển động sẽ cho một quá trình khả dĩ khác.
+
+Phép đảo thời gian trong cơ học lượng tử tinh tế hơn việc chỉ đơn thuần đổi dấu của \(t\). Đối với một hàm sóng không spin trong một thế bất biến dưới đảo thời gian,
+\begin{equation}
+i\hbar\frac{\partial\psi}{\partial t}=H\psi,
+\qquad
+T:\ \psi(\mathbf x,t)\longmapsto\psi^*(\mathbf x,-t).
+\end{equation}
+Việc thay \(t\to-t\) đảo ngược đạo hàm theo thời gian; lấy liên hợp phức cũng biến \(i\to-i\), nhờ đó khôi phục lại phương trình. Đối với các hạt có spin, toán tử đảo thời gian phản unita còn có cấu trúc bổ sung, nhưng phép liên hợp phức đã thấy rõ ngay trong trường hợp đơn giản này.
+
+\begin{classroomqa}
+\audiencequestion{Đối với một hàm sóng, phép đảo thời gian có đòi hỏi cả phép liên hợp phức lẫn \(t\to-t\) không?}
+\lecturerresponse{Có. Phương trình Schrödinger cho thấy vì sao: chỉ riêng việc đảo đạo hàm theo thời gian làm thay đổi một vế theo cách không nhất quán, còn phép liên hợp phức cũng đảo dấu của \(i\). \lecturetimestamp{00:23:58--00:25:04}}
+\end{classroomqa}
+
+Giờ đây ta có thể phát biểu điều kiện Sakharov thứ nhất. Nếu vũ trụ bắt đầu với số lượng hạt và phản hạt bằng nhau, sự tạo cặp và hủy cặp sẽ bảo toàn số baryon thuần bằng không trừ khi có một quá trình nào đó có thể làm thay đổi \(B\):
+\begin{equation}
+\boxed{\text{baryon-number violation}.}
+\end{equation}
+Không có điều này, một trạng thái ban đầu đối xứng sẽ không bao giờ có thể có được độ dư baryon khác không.
+
+Tính ổn định hiện nay của proton phù hợp với điều kiện này. Trong lập luận thống nhất lớn, sự vi phạm baryon có thể được làm trung gian bởi một hạt rất nặng có khối lượng \(M_X\). Ở các năng lượng thấp hơn nhiều so với \(M_X\), biên độ hiệu dụng bị triệt giảm một cách sơ đồ bởi các lũy thừa nghịch đảo,
+\begin{equation}
+\begin{aligned}
+\mathcal A_{\Delta B\ne0}&\propto \frac{E^2}{M_X^2},\\
+\Gamma_p&\sim \frac{m_p^5}{M_X^4}.
+\end{aligned}
+\label{eq:c08-heavy-suppression}
+\end{equation}
+Ước lượng tốc độ phân rã có quy luật tỉ lệ quen thuộc của toán tử chiều sáu, sai khác chỉ bởi các hằng số liên kết và các hệ số phụ thuộc kênh. Một \(M_X\) rất lớn có thể khiến một proton lạnh về thực chất tồn tại vĩnh viễn, đồng thời vẫn cho phép các phản ứng làm thay đổi baryon trong plasma sơ khai đủ giàu năng lượng.
+
+\begin{classroomqa}
+\audiencequestion{Năng lượng va chạm bổ sung đã được tính sẵn trong khối lượng nặng \(M_X\) chưa?}
+\lecturerresponse{Chưa. \(M_X\) là thang khối lượng nghỉ của hạt trung gian; \(E\) là năng lượng sẵn có trong va chạm. Khai triển năng lượng thấp theo \(E/M_X\) bị triệt giảm mạnh khi \(E\ll M_X\), còn sự triệt giảm yếu đi khi thang va chạm nhiệt tiến gần ngưỡng hạt nặng đó. Mẫu số được viết theo lối phỏng đoán trên bảng nên được hiểu theo nghĩa lý thuyết trường hiệu dụng này. \lecturetimestamp{00:32:32--00:34:02}}
+\end{classroomqa}
+
+Giả sử trạng thái ban đầu chứa số lượng hạt và phản hạt bằng nhau. Chỉ riêng sự vi phạm baryon vẫn sẽ không thiên lệch. Mỗi phân rã \(p\to e^++\gamma\) sẽ có một kênh liên hợp điện tích tương ứng \(\bar p\to e^-+\gamma\), và plasma nóng cũng sẽ thúc đẩy các phản ứng nghịch. Các xác suất vi mô bằng nhau sẽ tạo ra các chuyển hóa qua lại về số baryon nhưng không có độ trôi trung bình nào.
+
+\begin{classroomqa}
+\audiencequestion{Sự thay đổi số baryon trong giản đồ phản proton là gì?}
+\lecturerresponse{Phản proton đi vào có \(B=-1\), còn electron và photon có \(B=0\), nên kênh đó làm biến đổi số baryon từ \(-1\) thành 0. Kênh liên hợp của nó làm biến đổi \(+1\) thành 0. Hai kênh xảy ra với tần suất bằng nhau thì không tạo ra ưu tiên ròng nào. \lecturetimestamp{00:37:24--00:37:39}}
+\end{classroomqa}
+
+Các thăng giáng ngẫu nhiên quá nhỏ để giải thích độ dư quan sát được. Nếu \(N\) biến cố độc lập có xác suất bằng nhau cho hai kết cục, thì
+\begin{equation}
+\Delta N\sim\sqrt N,
+\qquad
+\frac{\Delta N}{N}\sim N^{-1/2}.
+\end{equation}
+Dùng con số ước chừng của bài giảng \(N\sim10^{80}\) cho số baryon trong vũ trụ quan sát được, ta được
+\begin{equation}
+\frac{\Delta N}{N}\sim10^{-40},
+\end{equation}
+thấp hơn \(10^{-8}\) tới 32 bậc độ lớn. Một thăng giáng kiểu tung đồng xu cũng không cho lý do gì để cùng một dấu chiếm ưu thế trong mọi vùng quan sát được.
+
+\begin{classroomqa}
+\audiencequestion{Liệu một quần thể ban đầu lớn hơn rất nhiều, chẳng hạn \(10^{160}\) cặp trong vùng đồng chuyển động đã trở thành vũ trụ quan sát được của chúng ta, có thể thăng giáng cỡ \(10^{80}\) không?}
+\lecturerresponse{Phép tính căn bậc hai cho phép con số gượng ép đó, nhưng nó không giải thích được tính nhất quán không gian quan sát được. Một thăng giáng thống kê không bị ràng buộc tự nhiên sẽ tạo ra các mảng bị vật chất chi phối và phản vật chất chi phối, chứ không phải một dấu duy nhất trên khắp vũ trụ nhìn thấy được. \lecturetimestamp{00:39:38--00:40:18}}
+\end{classroomqa}
+
+Lập luận quan sát của thời kỳ bài giảng dùng hai loại bằng chứng. Các hạt nhân thông thường, kể cả heli, xuất hiện trong tia vũ trụ, trong khi phản hạt nhân thì không được quan sát thấy trong bộ dữ liệu đang được bàn tới. Chỉ riêng phản proton kém tính quyết định hơn vì các va chạm năng lượng cao có thể tạo ra phản proton thứ cấp. Ngoài ra, các ranh giới giữa thiên hà vật chất và thiên hà phản vật chất sẽ phát sinh bức xạ hủy cặp nổi bật. Việc vắng mặt tín hiệu ranh giới cần có đó khiến giả thuyết hỗn hợp ngang nhau giữa thiên hà và phản thiên hà trong vùng quan sát được trở nên rất khó chấp nhận. Đây là các lập luận quan sát trong bối cảnh lịch sử của bài giảng, không phải những khẳng định về các vùng nằm ngoài chân trời của chúng ta.
+
+\begin{classroomqa}
+\audiencequestion{Chính các hạt nhân heli có được đo trong tia vũ trụ không?}
+\lecturerresponse{Có. Các hạt nhân heli mang điện được đo trực tiếp. Thống kê tia vũ trụ chi tiết là một chuyên ngành riêng, nhưng điểm mấu chốt của lập luận là sự tương phản giữa các hạt nhân thông thường và sự vắng mặt của một quần thể phản hạt nhân tương ứng. \lecturetimestamp{00:41:53--00:42:22}}
+\end{classroomqa}
+
+Vì vậy ta cần một thiên lệch vi mô: sự vi phạm \(C\) và, trong các bàn luận hiện thực về baryogenesis, \(CP\). Các hệ meson \(B\) trung hòa cung cấp một ví dụ trong phòng thí nghiệm. Một meson trung hòa và phản hạt của nó có thể phân rã thành các trạng thái cuối liên hợp với các tốc độ riêng phần không bằng nhau,
+\begin{equation}
+\Gamma(B^0\to f)\ne\Gamma(\bar B^0\to\bar f).
+\label{eq:c08-cp-partial}
+\end{equation}
+Kênh chính xác và độ bất đối xứng số học không được ấn định trên bảng; bài học vững chắc là sự tồn tại, đã được xác lập bằng thực nghiệm, của bất đối xứng hạt--phản hạt trong các phân rã yếu.
+
+Tuy vậy, định lý \(CPT\) đòi hỏi một hạt và phản hạt của nó trong chân không phải có khối lượng bằng nhau và độ rộng phân rã toàn phần bằng nhau:
+\begin{equation}
+\Gamma_{\rm tot}(p)=\Gamma_{\rm tot}(\bar p).
+\end{equation}
+Điều này không buộc từng tỉ phần phân nhánh phải bằng nhau. Sự khác nhau trong một cặp kênh liên hợp có thể được bù bởi sự khác nhau trong các kênh khác, chẳng hạn các kênh electron và muon được nêu một cách sơ đồ, trong khi các tổng vẫn bằng nhau.
+
+\begin{classroomqa}
+\audiencequestion{Nếu tốc độ phân rã toàn phần của proton và phản proton bằng nhau, làm sao có thể xuất hiện thiên lệch?}
+\lecturerresponse{Sự bằng nhau của độ rộng toàn phần không hàm ý sự bằng nhau theo từng kênh. Hơn nữa, baryogenesis diễn ra trong plasma: các hệ số chiếm chỗ nhiệt, các phản ứng nghịch và các kênh tán xạ đi vào các phương trình động học. Mệnh đề quyết định không phải là môi trường đơn thuần né tránh \(CPT\), mà là các quá trình riêng phần bất đối xứng \(CP\) có thể sinh ra một hạng nguồn một khi cân bằng chi tiết bị mất. \lecturetimestamp{00:49:39--00:51:48; 00:53:22--00:57:14}}
+\end{classroomqa}
+
+Đây là điều kiện Sakharov thứ hai:
+\begin{equation}
+\boxed{C\ \text{and}\ CP\ \text{violation}.}
+\end{equation}
+Nó mang lại tính định hướng cho các phản ứng làm thay đổi số baryon. Việc phát hiện sự vi phạm \(CP\) không lâu trước bài báo của Sakharov đã làm cho điều kiện này trở nên cụ thể về mặt vật lý.
+
+Mô hình Chuẩn tối thiểu đòi hỏi một sự phân biệt cẩn thận. Nó không cho phép sự phân rã proton nhiễu loạn thông thường, nhưng dị thường điện yếu của nó cho phép sự vi phạm không nhiễu loạn của \(B+L\); ở nhiệt độ cao, các chuyển tiếp sphaleron có thể làm cho sự vi phạm ấy trở nên hữu hiệu. Đây là nội dung đã được sửa đúng trong phần tự đính chính về sau trên bảng. Liệu chỉ riêng các nguồn trong Mô hình Chuẩn có tái tạo được một cách định lượng bất đối xứng vũ trụ hay không là một câu hỏi khác và khó hơn nhiều.
+
+\section{Cân bằng và điều kiện thứ ba}
+
+Vẫn còn một trở ngại. Trong cân bằng nhiệt hoàn toàn, mọi phản ứng đều được cân bằng bởi phản ứng nghịch của nó. Nếu số baryon có thể thay đổi, thế hóa học cân bằng gắn với nó không thể bảo toàn một \(B\) ban đầu tùy ý, và cân bằng chi tiết xóa sạch mọi độ dư đã được tạo ra. Bài giảng diễn đạt cùng điểm này thông qua \(CPT\): một môi trường cân bằng tĩnh không có mũi tên thời gian vĩ mô, nên thừa số \(T\) không thể cung cấp sự phân biệt còn thiếu giữa một quá trình và phản quá trình của nó.
+
+Vũ trụ thực tế đang giãn nở và nguội đi. Vì vậy trạng thái vĩ mô phân biệt chiều thời gian tiến với chiều thời gian lùi. Điều này chỉ quan trọng khi sự giãn nở cạnh tranh thành công với quá trình thư giãn vi mô:
+\begin{equation}
+\Gamma_{\rm reaction}\lesssim H.
+\label{eq:c08-freezeout-condition}
+\end{equation}
+Nếu \(\Gamma_{\rm reaction}\gg H\), các va chạm nhanh chóng khôi phục cân bằng bất chấp sự giãn nở. Nếu tốc độ phản ứng giảm xuống dưới tốc độ Hubble, plasma không thể tái điều chỉnh và độ phong phú bị đóng băng.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao chỉ riêng sự giãn nở lại không tự động đủ để đưa hệ ra khỏi cân bằng?}
+\lecturerresponse{Một môi trường giãn nở rất chậm vẫn ở gần cân bằng đến mức tùy ý vì các phản ứng vi mô liên tục tái điều chỉnh nó. Sự lệch khỏi cân bằng chỉ trở nên hữu hiệu khi thời gian giãn nở hoặc nguội đi \(H^{-1}\) ngắn so với thời gian phản ứng liên quan \(\Gamma^{-1}\). Khi đó một bộ phim của trạng thái vĩ mô sẽ cho thấy chiều nào là chiều tiến. \lecturetimestamp{01:01:22--01:02:26}}
+\end{classroomqa}
+
+Ba điều kiện Sakharov giờ có thể được ghép lại:
+\begin{enumerate}
+\item sự vi phạm số baryon, để \(B\) có thể thay đổi;
+\item \(C\) và sự vi phạm \(CP\), để sự thay đổi có một dấu ưu tiên;
+\item sự lệch khỏi cân bằng nhiệt, để cân bằng chi tiết không thể triệt tiêu thiên hướng đó.
+\end{enumerate}
+Chúng là cần thiết cho cơ chế đang được bàn tới và cung cấp một con đường đủ về mặt cấu trúc để tạo ra độ dư. Chúng không quyết định được độ lớn của nó nếu không có một mô hình năng lượng cao cụ thể, một mạng phản ứng và một lịch sử vũ trụ học cụ thể.
+
+\begin{classroomqa}
+\audiencequestion{Giá trị đo được của bất đối xứng có ràng buộc các lý thuyết năng lượng cao không?}
+\lecturerresponse{Về nguyên tắc, có. Trên thực tế, kết quả phụ thuộc vào nhiều khối lượng, hằng số ghép, pha, tốc độ phản ứng và đặc điểm của vũ trụ học sơ khai còn chưa biết. Vì thế, rất khó biến con số đo được duy nhất ấy thành một miền được phép hẹp nếu không gắn với một mô hình chi tiết. \lecturetimestamp{01:04:20--01:04:52}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bất đối xứng baryon và electron liên hệ với nhau như thế nào?}
+\lecturerresponse{Điều kiện trung hòa điện liên kết chúng. Trong kênh sơ đồ, việc loại bỏ một proton tạo ra một positron; đảo ngược sự mất cân bằng baryon sẽ làm dịch chuyển sự mất cân bằng lepton theo hướng bù trừ. Tổng quát hơn, baryogenesis và leptogenesis được ghép với nhau thông qua bảo toàn điện tích và các phản ứng của Mô hình Chuẩn, mặc dù các tổ hợp được bảo toàn còn phụ thuộc vào cơ chế. \lecturetimestamp{01:04:54--01:05:59}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sự vi phạm \(CP\) quan sát được của Mô hình Chuẩn có quá nhỏ để giải thích phần dư baryon không?}
+\lecturerresponse{Đó là kết luận tiêu chuẩn của các phân tích chi tiết về baryogenesis điện yếu, nhưng bài giảng nhấn mạnh sự phụ thuộc mô hình của phép tính và nhiều điều chưa biết ở năng lượng cao. Phát biểu có thể bảo vệ được ở đây là sự vi phạm \(CP\) đã biết ở năng lượng thấp là có tồn tại, trong khi một mô hình baryogenesis định lượng thành công nhìn chung đòi hỏi thêm các thành phần khác. \lecturetimestamp{01:06:01--01:07:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có phải các electron ngày nay đơn giản là xuất phát từ sự phá hủy phản proton không?}
+\lecturerresponse{Các kênh sơ đồ khiến cách ghi sổ đó có vẻ hấp dẫn, nhưng plasma sơ khai cũng chứa các quần thể lepton độc lập, gần đối xứng. Người ta có thể mô tả các cơ chế liên hệ như baryogenesis hoặc leptogenesis, với các phản ứng tiếp theo truyền độ bất đối xứng giữa các sector. Không nên nhầm từ ngữ mang tính lịch sử \emph{baryogenesis} với một nguồn gốc vi mô duy nhất của mọi electron. \lecturetimestamp{01:07:51--01:08:44}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao cuộc thảo luận thường được đặt theo baryon thay vì theo toàn bộ các lepton?}
+\lecturerresponse{Vật chất baryon được kiểm kê thông qua phổ nguyên tử và các quan sát thiên văn khác, còn sector neutrino vũ trụ thì khó đếm trực tiếp hơn nhiều. Cách gọi tên này phản ánh cả những gì có thể tiếp cận được bằng quan sát lẫn lịch sử của chủ đề. \lecturetimestamp{01:08:45--01:09:12}}
+\end{classroomqa}
+
+\section{Sự hủy cặp để lại phần dư}
+
+Ở nhiệt độ cao, sự tạo cặp và hủy cặp diễn ra theo cả hai chiều,
+\begin{equation}
+\gamma+\gamma\longleftrightarrow p+\bar p,
+\qquad
+E_{\gamma\gamma}\gtrsim2m_pc^2\approx2\,\mathrm{GeV}.
+\end{equation}
+Khi môi trường nhiệt nguội đi, các photon đủ năng lượng để tạo ra một cặp baryon trở nên hiếm theo hàm mũ. Sự hủy cặp vẫn được phép về mặt năng lượng, nhưng quá trình tạo ngược không còn có thể duy trì cân bằng. Hầu như mọi proton đều tìm thấy một phản proton, và phần dư nhỏ trong phương trình~\eqref{eq:c08-baryon-asymmetry} là những gì còn lại. Các photon hủy cặp năng lượng cao nhanh chóng chia sẻ năng lượng của chúng với môi trường nhiệt.
+
+\begin{classroomqa}
+\audiencequestion{Tỷ số \(10^{-8}\) có phải là một con số ở hiện tại không, và sự hủy cặp lớn đã xảy ra khi nào?}
+\lecturerresponse{Đó là bậc độ lớn hiện nay của tỷ số baryon trên photon trong học phần này. Trước đó, cả baryon lẫn phản baryon đều rất nhiều. Một khi sự tạo cặp ngược không còn hiệu quả, thành phần đối xứng của chúng hủy cặp và để lại phần dư thuần. \lecturetimestamp{01:09:13--01:11:44}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Khi nào sự hủy cặp proton--phản proton dừng lại?}
+\lecturerresponse{Nó dừng lại khi phản proton đã bị suy giảm xuống một độ phong phú không đáng kể. Bài giảng chỉ xác định sự kiện này một cách rất đại thể: ở các nhiệt độ cỡ GeV, khá lâu trước quá trình tổng hợp hạt nhân và chắc chắn rất lâu trước tái kết hợp. Không suy ra được một thời điểm chính xác nào từ phần thảo luận này. \lecturetimestamp{01:11:45--01:12:13}}
+\end{classroomqa}
+
+Các photon do hủy cặp không biến mất. Chúng thuộc về lịch sử bức xạ nhiệt mà cuối cùng góp vào bức xạ nền vi sóng. Tuy vậy, ngày nay bức xạ đóng góp rất ít vào ngân sách năng lượng vì
+\begin{equation}
+\rho_{\rm rad}\propto a^{-4},
+\qquad
+\rho_m\propto a^{-3}.
+\end{equation}
+Số photon thì lớn, nhưng năng lượng của mỗi photon bị dịch đỏ; vật chất giữ lại năng lượng khối lượng nghỉ của nó.
+
+\begin{classroomqa}
+\audiencequestion{Nếu sự hủy cặp tạo ra nhiều photon như vậy, tại sao ngày nay bức xạ lại không đáng kể về mặt động lực học?}
+\lecturerresponse{Các photon vẫn còn tồn tại, chủ yếu dưới dạng bức xạ nền vi sóng, nhưng mật độ năng lượng của chúng mất thêm một lũy thừa của thừa số tỉ lệ. Sự giãn nở vừa làm loãng số lượng của chúng vừa dịch đỏ từng photon. \lecturetimestamp{01:12:14--01:13:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một hạt trung gian rất nặng có đồng nghĩa rằng Mô hình Chuẩn là chưa hoàn chỉnh không?}
+\lecturerresponse{Một hạt trung gian phân rã proton của lý thuyết thống nhất lớn quả thật sẽ là vật lý mới vượt ra ngoài Mô hình Chuẩn tối thiểu. Sự hiệu chỉnh ở phần sau về vi phạm baryon dị thường của Mô hình Chuẩn không cung cấp một hạt phân rã proton thông thường như vậy, cũng không tự nó cung cấp một mô hình baryogenesis định lượng hoàn chỉnh. \lecturetimestamp{01:13:20--01:13:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu một sự chênh lệch lớn giữa hai kênh phân rã sơ đồ có thể biến một quần thể ban đầu chỉ gồm \(p\)-\(\bar p\) thành số lượng electron và proton bằng nhau như quan sát được không?}
+\lecturerresponse{Người ta có thể nghĩ ra cách ghi sổ như vậy, nhưng một plasma nóng ở cân bằng đã chứa các quần thể lớn của mọi hạt và phản hạt có thể tiếp cận được. Hơn nữa, các bất đối xứng \(CP\) quan sát được không cho phép ta làm cho một kênh trở nên trội hơn một cách tùy ý. Một mô hình nhất quán phải cho toàn bộ mạng phản ứng liên kết cùng tiến hóa, chứ không chỉ hai mũi tên trên bảng. \lecturetimestamp{01:13:33--01:15:10}}
+\end{classroomqa}
+
+Đây là chỗ cuộc thảo luận về baryogenesis thực sự kết thúc. Các thành phần định tính thì đã biết; con số quan sát được thì chưa được suy ra. Một câu trả lời đầy đủ hơn còn chờ cả một lý thuyết hạt hoàn chỉnh hơn lẫn một lịch sử được kiểm soát của vũ trụ rất sơ khai.
+
+\section{Con số thứ hai: độ gợn cục sơ khai}
+
+Lạm phát giải quyết một câu hỏi khác, câu hỏi đã trở nên định lượng nhờ bức xạ nền vi sóng vũ trụ: vì sao vũ trụ lại đồng nhất và đẳng hướng đến vậy trên các thang lớn? Bức xạ nền vi sóng vũ trụ có một phổ vật đen cực kỳ chính xác với nhiệt độ gần \(2.7\,\mathrm K\), và nhiệt độ đó gần như như nhau theo mọi hướng. Điều từng chỉ là một ấn tượng vũ trụ học khái quát đã trở thành một sự kiện có độ chính xác cao.
+
+Trọng lực khiến độ trơn nhẵn ấy còn đáng ngạc nhiên hơn. Khuếch tán làm lan một giọt mực cho đến khi nồng độ của nó trở nên đồng đều. Trọng lực hút làm điều ngược lại: một vùng quá mật độ kéo vật chất xung quanh vào, làm tăng mật độ của nó đồng thời làm rỗng các vùng lân cận. Vì thế, các nhiễu loạn nhỏ gieo mầm cho các thiên hà, cụm thiên hà và khoảng trống bằng cách lớn dần theo thời gian.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[thick] (-4.2,0) ellipse (1.25 and 0.72);
+\draw[very thick] (0,0) ellipse (1.55 and 0.92);
+\draw[thick] (4.2,0) ellipse (1.25 and 0.72);
+\node at (-4.2,0) {underdense};
+\node at (0,0) {overdense};
+\node at (4.2,0) {underdense};
+\draw[->,thick] (-2.65,0)--(-1.65,0);
+\draw[->,thick] (2.65,0)--(1.65,0);
+\draw[->,thick] (-2.85,0.75)--(-1.45,0.4);
+\draw[->,thick] (2.85,0.75)--(1.45,0.4);
+\draw[->,thick] (-2.85,-0.75)--(-1.45,-0.4);
+\draw[->,thick] (2.85,-0.75)--(1.45,-0.4);
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Bất ổn định hấp dẫn chuyển vật chất từ các vùng xung quanh kém mật độ vào một vùng quá mật độ, khuếch đại độ tương phản ban đầu thay vì khuếch tán nó đi.}
+\label{fig:c08-gravity-growth}
+\end{figure}
+
+Ngoại suy ngược sự tăng trưởng này hàm ý một vũ trụ sơ khai trơn nhẵn hơn nhiều. Tính đồng nhất tuyệt đối cũng không thể chấp nhận được: đối xứng tuyệt đối sẽ được duy trì và sẽ không có thiên hà nào hình thành. Đại lượng hữu ích là độ tương phản mật độ
+\begin{equation}
+\delta\equiv\frac{\delta\rho}{\rho},
+\end{equation}
+trong đó \(\delta\rho\) là độ lệch cục bộ khỏi mật độ nền. Các ước lượng về sự tăng trưởng cấu trúc gắn với Jim Peebles và các nhà vũ trụ học thời kỳ đầu khác đòi hỏi một biên độ sơ khai cỡ
+\begin{equation}
+\boxed{\frac{\delta\rho}{\rho}\sim10^{-5}}
+\end{equation}
+vào thời điểm tách ghép, với \(10^{-4}\)--\(10^{-5}\) được nêu là khoảng giá trị lịch sử. Một lần nữa, con số này làm sắc nét câu hỏi mà chưa giải thích giá trị của nó.
+
+Đề xuất lạm phát theo nghĩa rộng, do Alan Guth đưa ra năm 1980, là một giai đoạn giãn nở khổng lồ, xấp xỉ hàm mũ. Việc kéo giãn một vùng nhỏ trơn nhẵn lên qua nhiều bậc độ lớn làm loãng độ cong có sẵn từ trước và đẩy các bất quy tắc ra các thang lớn hơn miền quan sát được. Phép ví von quả bóng nhăn nheo nắm bắt trực giác về sự làm trơn nhẵn, dù không nên hiểu nó như một sự nhúng không gian theo nghĩa đen.
+
+\begin{classroomqa}
+\audiencequestion{Làm sao vũ trụ có thể đẳng hướng khi vật chất ở gần lại có vẻ gợn cục thấy rõ theo các hướng khác nhau?}
+\lecturerresponse{Đẳng hướng là một phát biểu thống kê trên thang lớn, không phải khẳng định rằng căn phòng này, Ngân Hà hay mọi đường ngắm đều trông giống hệt nhau. Trái Đất có núi non ở quy mô địa phương nhưng lại cực kỳ trơn nhẵn so với bán kính của nó. Tương tự, các thiên hà và cụm thiên hà là cấu trúc địa phương chồng lên trên một nền quy mô lớn rất trơn nhẵn. \lecturetimestamp{01:25:37--01:26:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Chẳng phải một quá trình ngẫu nhiên thỉnh thoảng sẽ tạo ra những hướng có quá mật độ cực lớn sao?}
+\lecturerresponse{Các nhiễu loạn không phải là những dao động độc lập không bị ràng buộc. Chúng tạo thành một trường ngẫu nhiên với một phổ thống kê riêng, gần như đồng nhất và đẳng hướng. Biên độ của chúng là nhỏ, cỡ \(10^{-5}\), ngay cả khi bước sóng của chúng là lớn. Phổ ấy và nguồn gốc của nó là những chủ đề sẽ được phát triển, chứ không phải những giả định về các độ lệch lớn tùy ý kiểu tung đồng xu. \lecturetimestamp{01:26:26--01:28:23}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Lạm phát có phải do nhiệt độ cao gắn với những thời điểm rất sớm gây ra không?}
+\lecturerresponse{Nhiệt độ không phải là biến chính trong giai đoạn lạm phát. Hiện tượng trung tâm là sự giãn nở mũ nhanh, được thúc đẩy bởi năng lượng-động lượng của một trường. Một bể nhiệt lại trở nên quan trọng khi lạm phát kết thúc và năng lượng của nó được chuyển hóa thành các hạt. \lecturetimestamp{01:28:25--01:29:04}}
+\end{classroomqa}
+
+\section{Khúc dạo đầu cơ học: Chuyển động có lực cản}
+
+Để chuẩn bị cho các phương trình lạm phát, hãy xét một hòn đá khối lượng đơn vị rơi qua một chất lưu nhớt. Gọi tọa độ thẳng đứng của nó là \(\phi\), để đón trước trường vô hướng sẽ sớm thay thế hòn đá. Nếu thế năng của nó là \(V(\phi)\), thì lực bảo toàn là
+\begin{equation}
+F(\phi)=-\frac{dV}{d\phi},
+\label{eq:c08-force-potential}
+\end{equation}
+và khi không có lực cản, phương trình Newton là \(\ddot\phi=F\).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_08_figure_06.png}
+\caption{Hệ thức \(F=-dV/d\phi\) được viết rõ trên bảng cho phép minh họa phép tương tự hòn đá rơi. Mũi tên hướng xuống cố định quy ước rằng chiều tăng của \(\phi\) là hướng lên trên.}
+\label{fig:c08-force-board}
+\lectureframe{01:35:09.513}
+\end{figure}
+
+Đối với lực cản nhớt tuyến tính, lực bổ sung là \(-\gamma\dot\phi\), với \(\gamma>0\). Phương trình trở thành
+\begin{equation}
+\ddot\phi+\gamma\dot\phi=F(\phi)
+=-V'(\phi).
+\label{eq:c08-viscous-motion}
+\end{equation}
+Lực cản triệt tiêu khi đứng yên và luôn ngược chiều vận tốc. Nếu \(\phi\) tăng theo hướng lên trên, thì một hòn đá đang rơi có \(F<0\) và \(\dot\phi<0\); khi đó \(-\gamma\dot\phi>0\), nên lực cản hướng lên trên như đòi hỏi.
+
+\begin{classroomqa}
+\classquestion{Vì sao lực thế và lực cản lại xuất hiện với cùng một dấu trừ? Chẳng phải chúng phải hướng theo hai chiều ngược nhau sao?}
+\lecturerresponse{Hướng của chúng được quyết định bởi những đại lượng khác nhau. Lực thế là \(-V'(\phi)\). Lực cản là \(-\gamma\dot\phi\). Trong khi chuyển động đi xuống, cả \(F\) lẫn \(\dot\phi\) đều âm, nên \(F\) hướng xuống còn \(-\gamma\dot\phi\) hướng lên. Vì vậy, phép đại số cho ra các hướng vật lý đối nhau mà không cần thay đổi công thức nào. \lecturetimestamp{01:34:16--01:35:27}}
+\end{classroomqa}
+
+Khi hòn đá tăng tốc, lực cản tăng lên cho đến khi các lực cân bằng nhau. Với \(F\) xấp xỉ không đổi, chuyển động ở vận tốc tới hạn thỏa mãn
+\begin{equation}
+0=F-\gamma\dot\phi_{\rm term},
+\qquad
+\dot\phi_{\rm term}=\frac{F}{\gamma}.
+\end{equation}
+Dấu là đúng: \(F\) hướng xuống cho một vận tốc tới hạn âm. Vì thế, một thế năng thoải và \(\gamma\) lớn tạo ra chuyển động chậm xuống dốc.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex]
+\draw[->] (0,0)--(7.0,0) node[right] {\(\phi\)};
+\draw[->] (0,0)--(0,4.4) node[above] {\(V(\phi)\)};
+\draw[very thick] plot[smooth] coordinates {(0.5,3.7) (1.6,3.55) (2.8,3.2) (4.0,2.55) (5.1,1.65) (6.3,0.6)};
+\filldraw (1.45,3.58) circle (0.09);
+\draw[->,thick] (1.55,3.48)--(2.25,3.23);
+\node[align=left,anchor=west] at (2.45,3.75) {large drag,\\slow downhill motion};
+\end{tikzpicture}
+\caption{Thế năng thoải với lực cản mạnh. Phép tương tự bằng trường sẽ thay tọa độ của hòn đá bằng một biên độ vô hướng đồng nhất trong không gian.}
+\label{fig:c08-shallow-potential}
+\end{figure}
+
+\section{Inflaton và ma sát Hubble}
+
+Lạm phát giả định thêm một trường vô hướng \(\phi\), theo quy ước được gọi là inflaton. Về mặt lịch sử, đây là một giả thuyết táo bạo được đưa ra để giải thích tính trơn nhẵn của vũ trụ. Ta bắt đầu với một trường gần như đồng đều trong không gian, \(\phi=\phi(t)\). Sự giãn nở kéo dãn các biến thiên theo không gian, còn bài toán đồng nhất thì làm lộ ra động lực học cốt yếu.
+
+Đối với một trường vô hướng chuẩn tắc, mật độ năng lượng cục bộ đầy đủ là
+\begin{equation}
+\rho_\phi
+=
+\frac12\dot\phi^{\,2}
++\frac{1}{2a^2}(\boldsymbol\nabla\phi)^2
++V(\phi).
+\end{equation}
+Dưới xấp xỉ đồng nhất \(\boldsymbol\nabla\phi=0\), biểu thức này rút gọn thành
+\begin{equation}
+\rho_\phi=\frac12\dot\phi^{\,2}+V(\phi).
+\label{eq:c08-scalar-density}
+\end{equation}
+Hạng thứ nhất là động năng trong không gian cấu hình của trường: nó đo sự biến thiên theo thời gian, không phải chuyển động tịnh tiến qua không gian thông thường.
+
+\begin{classroomqa}
+\audiencequestion{Dấu chấm trên \(\phi\) có nghĩa là đạo hàm riêng theo thời gian không?}
+\lecturerresponse{Có. Đối với trường đồng nhất, \(\dot\phi=d\phi/dt\). Gradient không gian sẽ đóng góp một hạng dương riêng biệt, nhưng chúng triệt tiêu dưới giả thiết hiện tại. \lecturetimestamp{01:41:08--01:41:34}}
+\end{classroomqa}
+
+Hãy theo dõi một hộp tọa độ đồng chuyển động đơn vị. Thể tích vật lý của nó là \(a^3(t)\), nên năng lượng của trường vô hướng bên trong nó là
+\begin{equation}
+E_\phi
+=a^3(t)
+\left[
+\frac12\dot\phi^{\,2}+V(\phi)
+\right].
+\end{equation}
+Thừa số tường minh \(a^3(t)\) là yếu tố mới: hộp vật lý giãn nở mặc dù các tọa độ đồng chuyển động của nó là cố định.
+
+\begin{classroomqa}
+\audiencequestion{Thừa số tỉ lệ \(a\) có phụ thuộc vào vị trí trong không gian không?}
+\lecturerresponse{Không trong mô hình FRW đồng nhất. Tại một thời điểm vũ trụ cho trước, nó giống nhau ở khắp không gian nhưng có thể biến thiên theo thời gian. Nếu \(\phi\) phụ thuộc vào vị trí, thì năng lượng gradient không gian của nó sẽ phải được đưa trở lại. \lecturetimestamp{01:44:12--01:44:49}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Giá trị trường có được gắn với mỗi điểm trong không gian dù bây giờ ta chỉ viết một \(\phi(t)\) hay không?}
+\lecturerresponse{Đúng. Một trường gán một giá trị cho mỗi điểm trong không-thời gian. Tính đồng nhất có nghĩa là các giá trị không gian ấy trùng nhau ở mỗi thời điểm, nên động lực học được rút xuống còn một hàm chung \(\phi(t)\). \lecturetimestamp{01:44:50--01:45:06}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hạng động năng của trường mô tả chuyển động vật lý nào? Trường đang mạnh lên hay yếu đi?}
+\lecturerresponse{Điều đó được quyết định bởi phương trình chuyển động, giá trị ban đầu và vận tốc ban đầu, cùng dấu của \(V'(\phi)\). Phép tương tự là một hạt mà ta không thể biết hướng chuyển động của nó chỉ từ riêng công thức năng lượng. \lecturetimestamp{01:45:07--01:46:08}}
+\end{classroomqa}
+
+Lagrangian đồng nhất bằng động năng trừ thế năng,
+\begin{equation}
+L_\phi=a^3(t)
+\left[
+\frac12\dot\phi^{\,2}-V(\phi)
+\right].
+\label{eq:c08-scalar-lagrangian}
+\end{equation}
+Áp dụng phương trình Euler--Lagrange cho ta
+\begin{align}
+\frac{d}{dt}\left(\frac{\partial L_\phi}{\partial\dot\phi}\right)
+&=
+\frac{\partial L_\phi}{\partial\phi},\\
+\frac{d}{dt}\left(a^3\dot\phi\right)
+&=-a^3V'(\phi).
+\end{align}
+Quy tắc đạo hàm tích cho ra hai hạng,
+\begin{equation}
+a^3\ddot\phi+3a^2\dot a\,\dot\phi
+=-a^3V'(\phi).
+\end{equation}
+Chia cho \(a^3\) và định nghĩa \(H=\dot a/a\), ta được
+\begin{equation}
+\boxed{
+\ddot\phi+3H\dot\phi+V'(\phi)=0
+}
+\label{eq:c08-hubble-friction}
+\end{equation}
+hoặc, với \(F=-V'(\phi)\),
+\begin{equation}
+\ddot\phi+3H\dot\phi=F.
+\end{equation}
+Mỗi dòng đều suy ra từ thừa số thể tích giãn nở trong phương trình~\eqref{eq:c08-scalar-lagrangian}.
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(H=\dot a/a\) có giống nhau ở mọi nơi không, và nó có thực sự là một hằng số không?}
+\lecturerresponse{Trong mô hình đồng nhất, nó giống nhau tại mọi điểm không gian trên một lát thời gian vũ trụ. Nó không nhất thiết là hằng theo thời gian; ``Hubble constant'' thường dùng để chỉ giá trị hiện tại của nó, còn \(H(t)\) là tốc độ Hubble trong suốt quá trình tiến hóa. \lecturetimestamp{01:50:32--01:50:57}}
+\end{classroomqa}
+
+Phương trình~\eqref{eq:c08-hubble-friction} làm cho phép tương tự trở nên chính xác. Nó có cùng dạng với chuyển động nhớt, với hệ số cản
+\begin{equation}
+\gamma_{\rm cosmic}=3H.
+\end{equation}
+Vì thế, sự giãn nở làm chậm sự tiến hóa của một trường vô hướng đồng nhất. Nếu \(H\) lớn và \(V(\phi)\) đủ phẳng, thì hạng quán tính trở nên nhỏ so với hạng cản và trường tiến gần quan hệ lăn chậm
+\begin{equation}
+3H\dot\phi\simeq-V'(\phi).
+\end{equation}
+Giống như một quả bóng đi xuống qua dầu lạnh, nhớt, trường có thể mất một thời gian dài khác thường để đi qua một thế năng thoải dù vẫn có lực tác dụng lên nó.
+
+Bước tiếp theo là thế mật độ năng lượng của trường vô hướng vào phương trình Friedmann và để tốc độ giãn nở đáp ứng với trường tiến hóa chậm ấy. Hệ liên hợp đó tạo ra lạm phát. Tạm thời, sự chuẩn bị cốt yếu đã hoàn tất: trường chứa động năng và thế năng, thể tích giãn nở sinh ra ma sát Hubble, và một trường lăn chậm có thể giữ thế năng của nó gần như không đổi đủ lâu để thúc đẩy sự giãn nở nhanh.
+
+\section{Những điểm cần ghi nhớ}
+
+Bất đối xứng baryon và độ tương phản mật độ nguyên thủy đóng những vai trò song song. Chỉ nêu tên thôi không giải thích được cả \(10^{-8}\) lẫn \(10^{-5}\), nhưng mỗi cái đều biến một ấn tượng vũ trụ học mơ hồ thành một bài toán định lượng. Cái thứ nhất dẫn đến các điều kiện Sakharov; cái thứ hai dẫn tới lạm phát.
+
+Cầu nối sang lạm phát cũng chính xác không kém. Một trường vô hướng đồng nhất trong một vũ trụ FRW tuân theo
+\[
+\ddot\phi+3H\dot\phi+V'(\phi)=0.
+\]
+Hạng ở giữa không phải là một độ nhớt hiện tượng luận được chèn vào. Nó suy ra từ sự tăng của thể tích vật lý \(a^3(t)\). Chính kết quả duy nhất đó sẽ định hướng phần trình bày ở bài giảng tiếp theo về một vũ trụ do một trường lăn chậm xuống thế năng của nó chi phối.

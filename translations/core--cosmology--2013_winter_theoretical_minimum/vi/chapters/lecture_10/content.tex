@@ -1,0 +1,578 @@
+\chapter{Thăng giáng lượng tử và nguồn gốc của cấu trúc}
+
+\lectureoverview{Bài giảng cuối cùng đặt câu hỏi làm thế nào một vũ trụ đã được lạm phát làm cho trơn nhẵn vẫn có thể thu được những bất quy tắc cực nhỏ mà từ đó các thiên hà phát triển. Câu trả lời được xây dựng theo từng bước. Trước hết, các hằng số phổ quát xác định các thang Planck và phơi bày khoảng cách khổng lồ giữa vật lý hạt quen thuộc và hấp dẫn lượng tử. Tiếp đó, bầu trời vi sóng cung cấp mục tiêu: các biến thiên nhiệt độ và mật độ cỡ \(10^{-5}\), trải trên nhiều thang khác nhau. Chuyển động điểm không cung cấp những thăng giáng không thể tránh khỏi, sự tắt dần giải thích cách một dao động có thể bị đóng băng, và phương trình sóng của vũ trụ giãn nở biến mỗi mode Fourier của trường inflaton thành đúng một dao động tắt dần như vậy. Các mode bị đóng băng khi bước sóng vật lý của chúng đạt tới thang Hubble. Khi lạm phát kết thúc, biến thiên bị đóng băng làm cho các vùng lân cận tái nung nóng vào những thời điểm hơi khác nhau, chuyển nhiễu lượng tử vi mô thành mẫu mật độ nguyên thủy.}
+
+\section{Những hằng số nào là phổ quát?}
+
+Chúng ta có một lý thuyết lượng tử cực kỳ chính xác về các hạt cơ bản. Các tham số của nó bao gồm khối lượng quark và lepton, các hằng số liên kết, dữ liệu trộn, điện tích, và chính danh sách các hạt. Nếu có năng lực tính toán vô hạn, lý thuyết đó sẽ giải thích không chỉ các thí nghiệm máy gia tốc mà còn cả nguyên tử, phân tử và hóa học; về nguyên tắc, các hệ quả còn kéo dài sang sinh học và các quá trình vật lý làm nền tảng cho tư duy. Điều đó không có nghĩa là những hệ như vậy dễ tính toán. Nó nói rằng Mô hình Chuẩn được dự định làm nền tảng vi mô cho vật chất thông thường. Hấp dẫn được mô tả riêng, ở mức cổ điển, bằng thuyết tương đối rộng. Cả hai lý thuyết đều mạnh; không lý thuyết nào khiến mọi con số xuất hiện trong vật lý năng lượng thấp có vẻ là điều tất yếu.
+
+Tỷ số khối lượng proton trên electron là một con số vật lý hoàn toàn xác đáng, nhưng nó gắn với hai hạt cụ thể. Thay proton bằng neutron hoặc electron bằng muon thì cho một tỷ số khác. Những tham số như vậy có thể mã hóa vật lý sâu xa mà ta chưa biết, nhưng bản thân chúng không bộc lộ tính phổ quát của mình. Ba hằng số có thứ nguyên thì khác:
+\[
+c,\qquad \hbar,\qquad G.
+\]
+Các định luật xác định chúng lặp đi lặp lại chứa từ \emph{mọi}. Mọi vật chất và thông tin đều tuân theo vận tốc giới hạn \(c\). Mọi hệ lượng tử đều tuân theo các hệ thức bất định do \(\hbar\) chi phối. Mọi dạng năng lượng đều hấp dẫn với cùng một hằng số Newton \(G\). Chính bề rộng đó khiến các hằng số này trở thành cơ bản trong lập luận hiện tại.
+
+Planck đã nhận ra tầm quan trọng của tổ hợp này trước khi ý nghĩa đầy đủ của cơ học lượng tử được biết đến. Hằng số của ông trước hết đi vào mô tả bức xạ vật đen. Ngay cả khi đó, sự kiện về thứ nguyên đã lộ rõ: từ \(c\), \(\hbar\) và \(G\), ta có thể xây dựng các đơn vị độ dài, thời gian và khối lượng mà không cần viện đến bất kỳ nguyên tử hay hạt cụ thể nào.
+
+\section{Xây dựng các thang Planck}
+
+Ký hiệu \(L\), \(T\) và \(M\) lần lượt là thứ nguyên của độ dài, thời gian và khối lượng. Vận tốc ánh sáng có thứ nguyên
+\[
+[c]=LT^{-1}.
+\]
+Hệ thức bất định \(\Delta x\,\Delta p\gtrsim\hbar\), cùng với \(p=mv\), cho
+\[
+[\hbar]=ML^2T^{-1}.
+\]
+Cuối cùng, các phương trình Newton
+\[
+F=\frac{Gm_1m_2}{r^2},
+\qquad
+F=ma
+\]
+cho
+\[
+[G]=L^3M^{-1}T^{-2}.
+\]
+Phép suy ra này quan trọng vì phân tích thứ nguyên không phải là phỏng đoán: mỗi số mũ được xác định bởi yêu cầu các thứ nguyên không mong muốn phải triệt tiêu.
+
+Hãy tìm một độ dài có dạng
+\begin{equation}
+\ell=c^\alpha\hbar^\beta G^\gamma.
+\label{eq:c10-length-ansatz}
+\end{equation}
+Số mũ của khối lượng phải triệt tiêu, nên
+\[
+\beta-\gamma=0.
+\]
+Số mũ của thời gian phải triệt tiêu, còn số mũ của độ dài phải bằng một:
+\[
+-\alpha-\beta-2\gamma=0,
+\qquad
+\alpha+2\beta+3\gamma=1.
+\]
+Dùng \(\gamma=\beta\), các phương trình này trở thành
+\[
+\alpha+3\beta=0,
+\qquad
+\alpha+5\beta=1.
+\]
+Lấy hiệu của chúng cho \(2\beta=1\), do đó
+\[
+\beta=\gamma=\frac12,
+\qquad
+\alpha=-\frac32.
+\]
+Vì thế, độ dài duy nhất được tạo từ ba hằng số phổ quát là
+\begin{equation}
+\ell_{\mathrm P}
+=\sqrt{\frac{\hbar G}{c^3}}
+\approx 1.6\times10^{-35}\,\mathrm m.
+\label{eq:c10-planck-length}
+\end{equation}
+Trong bài giảng chỉ giữ bậc độ lớn, \(10^{-35}\,\mathrm m\), nhưng phép suy ra thứ nguyên xác định chính tổ hợp đó.
+
+Thời gian tương ứng là thời gian ánh sáng đi hết quãng đó:
+\begin{equation}
+t_{\mathrm P}
+=\frac{\ell_{\mathrm P}}{c}
+=\sqrt{\frac{\hbar G}{c^5}}
+\approx 5.4\times10^{-44}\,\mathrm s.
+\label{eq:c10-planck-time}
+\end{equation}
+Ở mức chính xác theo bậc độ lớn, giá trị này là \(10^{-43}\,\mathrm s\). Nó không phải là một phép xây dựng độc lập một khi đã biết độ dài Planck và vận tốc phổ quát.
+
+Đối với khối lượng, dùng hệ thức thứ nguyên \(Et\sim\hbar\) và \(E=mc^2\). Lấy \(t=t_{\mathrm P}\) thì được
+\begin{equation}
+m_{\mathrm P}
+=\frac{\hbar}{c^2t_{\mathrm P}}
+=\sqrt{\frac{\hbar c}{G}}
+\approx 2.2\times10^{-8}\,\mathrm{kg}.
+\label{eq:c10-planck-mass}
+\end{equation}
+Theo chuẩn mực của vật lý hạt, đại lượng này vĩ mô một cách đáng ngạc nhiên, xấp xỉ khối lượng của một hạt bụi mịn. Năng lượng nghỉ của nó có cỡ \(10^9\,\mathrm J\), cùng bậc với năng lượng hóa học trong một bình nhiên liệu. Một chiếc xe có thể đi hàng trăm dặm chỉ với vài bình vì sự cháy chỉ giải phóng một phần cực nhỏ của năng lượng nghỉ của nhiên liệu. Việc chuyển hóa hoàn toàn một khối lượng Planck thành năng lượng sẽ là một chuyện hoàn toàn khác. Một khối lượng rất nhỏ có thể tương ứng với một năng lượng khổng lồ khi được nhân với \(c^2\).
+
+Sự tương phản với vật lý máy gia tốc là rất mạnh. Một khoảng cách cỡ \(10^{-18}\,\mathrm m\), đặc trưng cho những thang ngắn nhất được thăm dò trong các va chạm năng lượng cao vào thời điểm bài giảng, vẫn còn vào khoảng \(10^{17}\) độ dài Planck. Vì thế, miền chưa biết giữa thang điện yếu và thang Planck là rất rộng lớn. Vật lý hạt nhân đưa ra phép tương tự thích hợp. Từ xa, một hạt nhân trông có vẻ là cơ bản, nhưng ở những khoảng cách ngắn hơn nó được phân giải thành proton và neutron, rồi đến lượt chúng lại được phân giải thành quark và gluon. Các hạt năng lượng thấp có thể đơn giản so với hạt nhân, nhưng vẫn có thể là những đối tượng phát sinh phức tạp so với bất cứ thứ gì nằm ở thang Planck. Nhiều tham số của Mô hình Chuẩn bớt gây ngạc nhiên hơn khi được nhìn qua hệ thứ bậc đó, dù các giá trị quan sát được của chúng và các mức tinh chỉnh của chúng vẫn chưa được giải thích.
+
+\begin{classroomqa}
+\audiencequestion{Higgs nhẹ hơn hay nặng hơn so với dự đoán, và vì sao khối lượng của nó lại gây khó hiểu?}
+\lecturerresponse{Có hai phép so sánh. So với khối lượng Planck, một Higgs \(125\,\mathrm{GeV}\) là cực kỳ nhẹ. Trong một lý thuyết không có cấu trúc bảo vệ, các hiệu chỉnh lượng tử có xu hướng khiến khối lượng của một hạt vô hướng nhạy với những thang cao hơn rất nhiều, nên việc thu được giá trị quan sát được trông giống như phải cân bằng các tham số trên một lằn ranh rất hẹp. So với một số kỳ vọng siêu đối xứng đơn giản được thảo luận vào thời điểm đó, Higgs quan sát được lại có thể được gọi là hơi nặng. Mâu thuẫn bề ngoài nảy sinh từ việc so sánh nó với hai thang tham chiếu khác nhau; bài toán phân cấp nền tảng vẫn còn đó. \lecturetimestamp{00:26:45--00:30:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu Higgs giúp tạo khối lượng cho các hạt, thì các hạt vật chất tối có nên có khối lượng gần thang Planck không?}
+\lecturerresponse{Không. WIMP là một \emph{hạt nặng tương tác yếu}; cụm từ này chỉ tới một thang tương tác có thể làm cho việc phát hiện trong phòng thí nghiệm trở nên khả dĩ, chứ không phải tới khối lượng Planck. Theo các giả định WIMP thông thường, khối lượng có thể lớn hơn nhiều khối lượng proton mà vẫn thấp hơn \(m_{\mathrm P}\) vô cùng nhiều. Nếu cho phép tương tác với vật chất thông thường yếu đi tùy ý, vũ trụ học cho phép một khoảng khối lượng rộng hơn nhiều, nhưng việc phát hiện trực tiếp theo đó cũng trở nên khó hơn. Proton và neutron cũng đưa ra một lời nhắc nhở hữu ích: phần lớn khối lượng của chúng là năng lượng liên kết do tương tác mạnh, chứ không đơn giản là tổng các khối lượng quark do Higgs tạo ra. \lecturetimestamp{00:30:55--00:33:11}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một khối lượng Planck biểu thị điều gì, và có một năng lượng cơ bản trên mỗi bit hay không?}
+\lecturerresponse{Một cách diễn giải hấp dẫn hữu ích là một lỗ đen không thể bị làm nhỏ hơn một cách tham số so với thang Planck mà vẫn là một lỗ đen bán cổ điển thông thường. Một vật như vậy có khối lượng cỡ \(m_{\mathrm P}\), diện tích chân trời cỡ một diện tích Planck, và entropy cỡ một đơn vị. Theo nghĩa lỗ đen hạn chế đó, người ta có thể gắn một năng lượng cỡ Planck với thông tin cỡ một đơn vị. Đây không phải là một khẳng định phổ quát rằng mọi bit được lưu trữ trong mọi thiết bị đều đòi hỏi một năng lượng Planck; các hạt thông thường và các bộ nhớ thông thường có thể nhẹ hơn rất nhiều. \lecturetimestamp{00:33:11--00:35:10}}
+\end{classroomqa}
+
+Từ đây, dùng đơn vị Planck sẽ thuận tiện hơn,
+\begin{equation}
+c=\hbar=G=1.
+\label{eq:c10-planck-units}
+\end{equation}
+Khi đó, độ dài, thời gian, khối lượng và năng lượng đều có thể được cho dưới dạng những số thuần túy, đo theo các phương trình~\eqref{eq:c10-planck-length}--\eqref{eq:c10-planck-mass}.
+
+\section{Bầu trời vi sóng gần như đồng nhất}
+
+Bài toán vũ trụ học bắt đầu bằng một bản đồ vi sóng của toàn bầu trời. WMAP, Wilkinson Microwave Anisotropy Probe, đã đo bức xạ được phát ra gần thời kỳ plasma nguyên thủy trở nên trong suốt. Từ đó đến nay, các photon đã bị dịch đỏ đi xấp xỉ một nghìn lần và hiện tạo thành một vật đen gần như hoàn hảo ở khoảng \(2.7\,\mathrm K\). Khi nhìn ra xa, chúng ta không thấy vũ trụ tại một thời điểm hiện tại chung duy nhất. Khoảng cách càng lớn nghĩa là thời điểm phát xạ càng sớm, và phông vi sóng là lớp vỏ ở xa mà từ đó các photon lần đầu tiên truyền tự do về phía chúng ta.
+
+\begin{classroomqa}
+\audiencequestion{Chính xác thì hình WMAP dạng bầu dục biểu diễn điều gì?}
+\lecturerresponse{Mỗi điểm trong hình bầu dục biểu diễn một hướng trên bầu trời, với mặt cầu được làm phẳng bằng một phép chiếu bản đồ. Mép trái và mép phải nối với nhau, phần trên và phần dưới biểu diễn hai bán cầu thiên hà đối nhau, và mặt phẳng thiên hà chạy ngang qua giữa. Bức xạ vi sóng tiền cảnh từ chính Ngân Hà của chúng ta phải được mô hình hóa và trừ đi. Phần còn lại không phải là bản đồ các ngôi sao lân cận mà là bản đồ theo hướng của nhiệt độ vi sóng trên vỏ tán xạ cuối cùng. \lecturetimestamp{00:37:49--00:40:49}}
+\end{classroomqa}
+
+Trong gần đúng bậc nhất, kết quả là đẳng hướng:
+\[
+T(\hat{\mathbf n})\simeq 2.7\,\mathrm K
+\]
+với mọi hướng quan sát \(\hat{\mathbf n}\). Tính đẳng hướng hoàn hảo quanh mọi điểm sẽ hàm ý tính đồng nhất hoàn hảo. Nhưng một vũ trụ đồng nhất hoàn hảo sẽ không tự phát tạo ra các thiên hà, các cụm thiên hà và mạng vũ trụ kiểu caustic đã được bàn ở bài giảng trước. Ắt hẳn đã có một mức độ bất đồng nhất nào đó, dù biên độ của nó nhỏ đến đâu.
+
+Hãy viết độ lệch nhiệt độ theo hướng là
+\[
+\delta T(\hat{\mathbf n})=T(\hat{\mathbf n})-\bar T.
+\]
+Độ biến thiên tương đối đo được có bậc cỡ
+\begin{equation}
+\frac{\delta T}{T}\sim10^{-5}.
+\label{eq:c10-cmb-anisotropy}
+\end{equation}
+Một con đường để đi đến con số này là theo động lực học: tiến hóa ngược phân bố vật chất ngày nay và hỏi ở thời điểm phân ly cần độ tương phản ban đầu nào. Con đường kia là trực tiếp: phóng đại bản đồ vi sóng gần như không có đặc trưng lên 5 bậc độ lớn và đo chính sự lốm đốm đó. Hai con đường phù hợp nhau ở mức cần thiết cho lập luận này.
+
+Sự lốm đốm xuất hiện trên nhiều thang góc. Các mảng lớn chứa các mảng nhỏ hơn, và khi phóng đại một vùng thì ta được một kết cấu tương tự về mặt thống kê. Thuật ngữ \emph{bất biến theo thang} không có nghĩa là mọi thang đều giống hệt nhau theo nghĩa đen; nó có nghĩa là công suất của thăng giáng chỉ thay đổi yếu theo thang trong khoảng liên quan. Tính gần như bất biến theo thang ấy là một phần của bằng chứng mà lý thuyết phải giải thích, chứ không chỉ riêng biên độ tổng thể.
+
+Vì sao nhiệt độ lại phản ánh vật chất? Một photon thoát ra khỏi một giếng thế hấp dẫn sẽ mất năng lượng. Vì thế, bức xạ đến từ một vùng đậm đặc hơn có thể bị dịch so với bức xạ từ một vùng kém đậm đặc hơn. Ở mức ước lượng bậc độ lớn của bài giảng, điều này gợi ra
+\begin{equation}
+\frac{\delta\rho}{\rho}\sim10^{-5}
+\label{eq:c10-density-target}
+\end{equation}
+gần thời điểm phân ly. Một phép tính CMB chính xác bao gồm động lực học âm học, các thế hấp dẫn và các hàm truyền, nên phương trình~\eqref{eq:c10-density-target} là một lối viết tắt để ấn định thang độ chứ không phải một đẳng thức chính xác giữa \(\delta T/T\) và \(\delta\rho/\rho\).
+
+\begin{classroomqa}
+\audiencequestion{Liệu sự lốm đốm ấy có thể là nhiễu vi mô thông thường được sinh ra tại thời điểm tán xạ cuối cùng không?}
+\lecturerresponse{Không, trên các thang góc đã quan sát được. Đến thời điểm phân ly, các mảng đó tương ứng với những vùng vật lý khổng lồ, chứ không phải các nhiễu loạn cỡ nguyên tử trong plasma đang tái hợp. Tuy nhiên, nếu lần vết chúng lùi xa hơn nhiều về quá khứ, thì bước sóng vật lý của chúng trở nên nhỏ hơn. Lạm phát cung cấp sự phóng đại còn thiếu: các thăng giáng khởi đầu như những nhiễu loạn lượng tử vi mô có thể bị kéo giãn tới các thang thiên văn. \lecturetimestamp{00:46:42--00:48:02}}
+\end{classroomqa}
+
+Cơ chế này có thể được hiểu từ 3 yếu tố vật lý: chuyển động điểm không của một dao động tử điều hòa, sự tắt dần của một dao động tử, và phương trình sóng của một trường vô hướng trong một vũ trụ giãn nở. Chúng ta sẽ ghép chúng lại theo đúng thứ tự đó.
+
+\section{Chuyển động điểm không của một dao động tử}
+
+Đối với một dao động tử điều hòa có khối lượng đơn vị,
+\begin{equation}
+E=\frac12\dot x^{\,2}+\frac12\omega^2x^2,
+\qquad
+\ddot x+\omega^2x=0.
+\label{eq:c10-undamped}
+\end{equation}
+Động năng và thế năng liên tục trao đổi cho nhau. Lấy trung bình trên một chu kỳ dao động, mỗi phần mang một nửa năng lượng toàn phần.
+
+Cơ học lượng tử cho các mức năng lượng
+\begin{equation}
+E_n=\left(n+\frac12\right)\hbar\omega.
+\label{eq:c10-oscillator-levels}
+\end{equation}
+Trạng thái cơ bản không thể có đồng thời \(x=0\) và \(\dot x=0\), vì như thế sẽ gán đồng thời một vị trí và một động lượng chính xác. Năng lượng bất khả khử của nó,
+\[
+E_0=\frac12\hbar\omega,
+\]
+là năng lượng điểm không. Từ \emph{dao động} ở đây nên được hiểu theo nghĩa thống kê: một trạng thái cơ bản dừng không vạch ra một quỹ đạo hình sin cổ điển, nhưng nó có các phương sai khác không của vị trí và động lượng.
+
+Trung bình, một nửa năng lượng trạng thái cơ bản nằm trong số hạng thế năng:
+\[
+\frac12\omega^2\langle x^2\rangle
+=\frac14\hbar\omega.
+\]
+Do đó
+\begin{equation}
+\langle x^2\rangle=\frac{\hbar}{2\omega}
+\sim\frac{\hbar}{\omega}.
+\label{eq:c10-zero-point-position}
+\end{equation}
+Nếu bỏ qua các hệ số 2, một cách viết dùng số phức cho cỡ của thăng giáng là
+\[
+x(t)\sim\sqrt{\frac{\hbar}{\omega}}\,e^{i\omega t}.
+\]
+Lấy đạo hàm khi đó cho
+\begin{equation}
+\langle\dot x^{\,2}\rangle\sim\hbar\omega,
+\label{eq:c10-zero-point-velocity}
+\end{equation}
+phù hợp với việc động năng trung bình và thế năng trung bình bằng nhau. Làm lạnh có thể loại bỏ các kích thích với \(n>0\), nhưng không thể loại bỏ các phương sai của trạng thái cơ bản này.
+
+\section{Tắt dần, tới hạn và đóng băng}
+
+Nhúng dao động tử vào một môi trường nhớt. Một hệ lò xo-khối lượng chuyển động trong mật ong tuân theo
+\begin{equation}
+\ddot x+\gamma\dot x+\omega^2x=0,
+\label{eq:c10-damped}
+\end{equation}
+trong đó \(\gamma>0\) đo độ cản. Tìm nghiệm dạng \(x=e^{\alpha t}\) cho
+\begin{equation}
+\alpha^2+\gamma\alpha+\omega^2=0,
+\end{equation}
+và do đó
+\begin{equation}
+\alpha_\pm
+=\frac{-\gamma\pm\sqrt{\gamma^2-4\omega^2}}{2}.
+\label{eq:c10-damped-roots}
+\end{equation}
+Hai nghiệm này cung cấp hai nghiệm độc lập mà một phương trình vi phân cấp hai đòi hỏi.
+
+\begin{classroomqa}
+\audiencequestion{Số hạng cản trong phương trình~\eqref{eq:c10-damped} có nên mang dấu trừ không?}
+\lecturerresponse{Bản thân lực cản là \(F_{\rm drag}=-\gamma\dot x\). Phương trình Newton là \(\ddot x=-\gamma\dot x-\omega^2x\). Chuyển cả hai số hạng lực sang vế trái thì ta được phương trình~\eqref{eq:c10-damped} với các dấu cộng. Vì vậy, dấu trong phương trình vi phân và chiều của lực vật lý là nhất quán. \lecturetimestamp{00:59:38--01:00:10}}
+\end{classroomqa}
+
+Nếu \(\gamma^2<4\omega^2\), các nghiệm là phức. Định nghĩa
+\[
+\Omega=\sqrt{\omega^2-\frac{\gamma^2}{4}}.
+\]
+Khi đó
+\begin{equation}
+x(t)=e^{-\gamma t/2}
+\left(A\cos\Omega t+B\sin\Omega t\right).
+\label{eq:c10-underdamped}
+\end{equation}
+Dao động tử vẫn đi qua vị trí cân bằng nhiều lần, nhưng biên độ bao của nó suy giảm. Đây là chế độ tắt dần dưới tới hạn.
+
+Nếu \(\gamma^2>4\omega^2\), cả hai nghiệm trong phương trình~\eqref{eq:c10-damped-roots} đều thực và âm:
+\begin{equation}
+x(t)=A e^{\alpha_+t}+B e^{\alpha_-t}.
+\label{eq:c10-overdamped}
+\end{equation}
+Không còn dao động duy trì; cả hai thành phần đều suy giảm. Đây là chế độ quá tắt dần. Tại
+\begin{equation}
+\gamma=2\omega
+\label{eq:c10-critical}
+\end{equation}
+hai nghiệm trùng nhau, đánh dấu tắt dần tới hạn, tức điểm chuyển tiếp giữa hai kiểu hành vi.
+
+Một trường hợp giới hạn đặc biệt quan trọng. Khi không có lực phục hồi, \(\omega=0\),
+\[
+\alpha(\alpha+\gamma)=0,
+\]
+nên
+\begin{equation}
+x(t)=c_0+c_1e^{-\gamma t}.
+\label{eq:c10-no-restoring}
+\end{equation}
+Vận tốc tắt đi, nhưng tọa độ không nhất thiết phải trở về giá trị không. Nó bị đóng băng tại hằng số \(c_0\), do điều kiện đầu chọn ra. Một hòn đá bị đẩy qua mật ong mà không gắn với lò xo nào sẽ dừng lại ở bất cứ nơi nào lực cản làm cạn hết chuyển động của nó.
+
+Bây giờ hãy để tần số biến thiên chậm. Bắt đầu với \(\omega\gg\gamma\), nên chuyển động là dao động. Giảm \(\omega(t)\) trong khi giữ thang tắt dần xấp xỉ cố định. Dao động chậm lại, đi qua \(\gamma=2\omega\), rơi vào chế độ quá tắt dần, và tiến gần đến dạng không có lực phục hồi khi \(\omega\to0\). Tương đương, ta có thể tăng độ tắt dần tương đối so với lực phục hồi. Trong ứng dụng vũ trụ học, thay đổi có tính quyết định sẽ là sự suy giảm của tần số hiệu dụng trong khi độ tắt dần Hubble vẫn gần như không đổi. Giá trị đóng băng cuối cùng không thể được suy ra chỉ từ riêng điểm chuyển tiếp; nó theo từ toàn bộ diễn tiến trước đó và trạng thái lượng tử ban đầu.
+
+\section{Sóng vô hướng trong một vũ trụ giãn nở}
+
+Quay lại trường inflaton \(\phi\). Thế năng của nó được giả sử có một cao nguyên cao và rộng, tiếp theo là một đoạn tụt dốc gắt xuống một cực tiểu thấp hơn. Trên cao nguyên, gần đúng quan trọng là
+\begin{equation}
+V'(\phi)\simeq0,
+\label{eq:c10-flat-potential}
+\end{equation}
+chứ không phải \(V(\phi)\simeq0\). Độ dốc nhỏ trong khi mật độ năng lượng vẫn có thể đủ lớn để thúc đẩy lạm phát. Nguồn gốc chi tiết của dạng này không được cung cấp; đó là một yêu cầu hiện tượng luận của mô hình.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_02.png}
+\caption{Ở bên trái vẫn thấy cao nguyên và vách dốc của inflaton, còn ở bên phải bắt đầu phương trình sóng trong không-thời gian phẳng. Trên bảng có thể nhận ra chắc chắn điều kiện gần đúng \(V'(\phi)=0\) và phần đầu của một số hạng đạo hàm bậc hai, nhưng giảng viên che khuất phương trình còn dang dở; phương trình~\eqref{eq:c10-flat-wave} được phục dựng từ phần diễn giải bằng lời.}
+\label{fig:c10-potential-wave}
+\lectureframe{01:17:17.865}
+\end{figure}
+
+Đối với một trường vô hướng gần như tự do trong không-thời gian phẳng,
+\begin{equation}
+\frac{\partial^2\phi}{\partial t^2}
+-\nabla^2\phi=0.
+\label{eq:c10-flat-wave}
+\end{equation}
+Một thế năng không phẳng sẽ thêm \(-V'(\phi)\) vào vế phải. Trong gần đúng cao nguyên, ta bỏ nó đi. Nếu trường hoàn toàn đồng nhất, đạo hàm theo không gian sẽ triệt tiêu. Trong một vũ trụ giãn nở, phương trình đồng nhất còn lại sẽ là
+\[
+\ddot\phi+3H\dot\phi=0,
+\]
+đó là phương trình ma sát Hubble của bài giảng trước.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_03.png}
+\caption{Cao nguyên được chỉ ra ở bên trái, còn ở bên phải là các giai đoạn kế tiếp nhau của phương trình sóng. Toán tử không-thời gian phẳng ở dòng trên đọc được rõ ràng; dòng dưới viết đến \(+3H\) nhưng còn dang dở, nên số hạng tắt dần đầy đủ được bổ sung từ phần giải thích đồng thời.}
+\label{fig:c10-hubble-board}
+\lectureframe{01:18:57.554}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.9cm,>=Latex]
+  \draw[->] (-0.2,0) -- (9.3,0) node[right] {\(\phi\)};
+  \draw[->] (0,-0.2) -- (0,4.6) node[above] {\(V(\phi)\)};
+  \draw[very thick,blue!55!black,smooth]
+    plot coordinates {(0.25,3.9) (1.4,3.88) (2.8,3.8) (4.2,3.6) (5.3,3.25) (6.0,2.6) (6.5,1.45) (6.9,0.45) (7.5,0.28) (8.5,0.7)};
+  \draw[dashed] (6.45,0) -- (6.45,2.0);
+  \draw[->,thick,red!65!black] (2.0,4.25) -- (3.1,3.82);
+  \node[anchor=south west] at (0.8,4.0) {slow-roll plateau: \(V'\simeq0\)};
+  \node[anchor=west] at (6.55,2.05) {end of inflation};
+  \node[anchor=north] at (7.45,0.22) {reheating region};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Bản phục dựng rõ ràng của thế năng được dùng xuyên suốt lập luận. Độ dốc thoải cho phép trượt chậm, còn giá trị cao của \(V\) giữ \(H\) gần như không đổi; đoạn tụt dốc gắt chấm dứt lạm phát và giải phóng năng lượng đã tích trữ.}
+\label{fig:c10-potential-reconstruction}
+\end{figure}
+
+Đối với một trường không đồng nhất, phải phân biệt khoảng cách tọa độ với khoảng cách vật lý. Chọn các nhãn đồng chuyển không thứ nguyên \(\mathbf x\), để khoảng cách riêng vi phân là
+\[
+d\boldsymbol\ell=a(t)\,d\mathbf x.
+\]
+Ở thời gian cố định,
+\[
+\nabla_{\rm proper}=\frac{1}{a}\nabla_{\mathbf x},
+\qquad
+\nabla_{\rm proper}^2=\frac{1}{a^2}\nabla_{\mathbf x}^2.
+\]
+Vì thế phương trình vô hướng là
+\begin{equation}
+\ddot\phi+3H\dot\phi-\frac{1}{a^2}\nabla^2\phi=0,
+\label{eq:c10-frw-wave}
+\end{equation}
+trong đó \(\nabla\) lấy đạo hàm theo các nhãn đồng chuyển. Nếu thay vào đó chọn một thừa số tỉ lệ không thứ nguyên, thì các tọa độ đồng chuyển mang thứ nguyên độ dài; vật lý không thay đổi.
+
+\begin{classroomqa}
+\audiencequestion{Hạng không gian trong phương trình~\eqref{eq:c10-frw-wave} có nên mang dấu dương không?}
+\lecturerresponse{Không. Toán tử sóng của không gian phẳng vốn đã có dấu tương đối \(\partial_t^2-\nabla^2\). Sự giãn nở làm thay đổi đạo hàm không gian bởi thừa số \(a^{-2}\), nhưng không đảo ngược dấu đó. Sau một phép thế Fourier, hai dấu trừ kết hợp với nhau, và phương trình mode nhận được hạng phục hồi dương như mong đợi \(+k^2\phi_k/a^2\). \lecturetimestamp{01:22:18--01:23:06}}
+\end{classroomqa}
+
+\section{Mỗi mode Fourier là một dao động tử tắt dần}
+
+Xét từng sóng không gian một:
+\begin{equation}
+\phi(\mathbf x,t)
+=\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-mode-ansatz}
+\end{equation}
+Hàm mũ phức chỉ là cách ghi gọn cho các hàm sin và cos. Một biên dạng thực tùy ý được xây dựng bằng cách chồng chập các mode với quan hệ thực thích hợp giữa \(\mathbf k\) và \(-\mathbf k\).
+
+Các đạo hàm theo thời gian chỉ tác dụng lên \(\phi_{\mathbf k}(t)\), còn
+\[
+\nabla^2e^{i\mathbf k\cdot\mathbf x}
+=-k^2e^{i\mathbf k\cdot\mathbf x}.
+\]
+Thế vào phương trình~\eqref{eq:c10-frw-wave} ta được
+\begin{equation}
+\ddot\phi_{\mathbf k}
++3H\dot\phi_{\mathbf k}
++\frac{k^2}{a^2}\phi_{\mathbf k}=0.
+\label{eq:c10-mode-equation}
+\end{equation}
+Vì vậy, mỗi số sóng đều hành xử như một dao động tử tắt dần với
+\begin{equation}
+\gamma=3H,
+\qquad
+\omega_k(t)=\frac{k}{a(t)}.
+\label{eq:c10-mode-identification}
+\end{equation}
+Số sóng vật lý \(k/a\) bị dịch đỏ khi vũ trụ giãn nở. Do đó lực phục hồi hiệu dụng \(k^2/a^2\) giảm dần về 0.
+
+Một mode khởi đầu với bước sóng vật lý ngắn có \(\omega_k\gg H\) và dao động. Bước sóng của nó bị kéo dãn, tần số của nó giảm xuống, và sự tắt dần do Hubble rốt cuộc chi phối. Khi đó nó tiến tới một giá trị không dao động thay vì bị kéo trở lại 0. Các mode \(\mathbf k\) khác nhau chuyển tiếp vào những thời điểm khác nhau: một \(k\) lớn hơn, tương ứng tại \(a\) cố định với một bước sóng ngắn hơn, phải chờ thêm giãn nở trước khi tần số vật lý của nó hạ xuống đến thang Hubble.
+
+\section{Thoát chân trời và các thăng giáng chân không bị đóng băng}
+
+Dùng điều kiện tới hạn của dao động tử như một ước lượng cỡ một,
+\[
+\gamma=2\omega_k,
+\]
+phương trình~\eqref{eq:c10-mode-identification} cho
+\begin{equation}
+3H=\frac{2k}{a},
+\qquad
+a_{\rm cross}=\frac{2k}{3H}.
+\label{eq:c10-critical-mode}
+\end{equation}
+Các hệ số số học không phải là điểm mấu chốt về mặt khái niệm. Sự chuyển tiếp xảy ra khi số sóng vật lý \(k/a\) có cỡ \(H\).
+
+Đặt
+\[
+\lambda_{\rm com}=\frac{2\pi}{k},
+\qquad
+\lambda_{\rm phys}=a\lambda_{\rm com}
+=\frac{2\pi a}{k}.
+\]
+Phép kiểm tra thứ nguyên ấn định vị trí của \(a\): với \(\mathbf x\) không thứ nguyên, cả \(k\) và \(\mathbf k\cdot\mathbf x\) đều không thứ nguyên, còn \(a\) và \(\lambda_{\rm phys}\) có thứ nguyên độ dài. Vì thế, phương trình~\eqref{eq:c10-critical-mode} suy ra
+\begin{equation}
+\lambda_{\rm phys}\sim H^{-1},
+\label{eq:c10-horizon-crossing}
+\end{equation}
+đúng đến các thừa số như \(2\), \(3\) và \(2\pi\).
+
+Định luật Hubble \(v=Hd\) gắn khoảng cách \(H^{-1}\) với một tốc độ lùi ra xa cỡ \(c=1\). Trong thời kỳ lạm phát, \(H\) lớn và gần như không đổi, nên độ dài Hubble này là vi mô mặc dù nó đóng vai trò của một thang nhân quả. Việc gọi sự kiện ấy là \emph{thoát chân trời} chỉ là quy ước: không có vật thể vật chất nào đi xuyên qua một bức tường vật lý. Bước sóng vật lý của mode tăng vượt qua thang Hubble gần như cố định, và động lực học của nó chuyển từ dao động nhanh sang một biên độ gần như bị đóng băng.
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.85cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {cosmic time};
+  \draw[->] (0,0) -- (0,5.0) node[above] {physical length};
+  \draw[dashed,thick] (0.25,2.75) -- (8.75,2.75)
+    node[right] {\(H^{-1}\)};
+  \draw[very thick,blue!55!black]
+    (0.35,0.55) .. controls (3.3,0.75) and (5.3,1.55) .. (8.5,4.55);
+  \node[blue!55!black,anchor=west] at (6.65,4.55) {\(\lambda_{\rm phys}=2\pi a/k\)};
+  \draw[densely dotted] (6.05,0) -- (6.05,2.75);
+  \fill (6.05,2.75) circle (2pt);
+  \node[anchor=north] at (6.05,0) {horizon exit};
+  \node[align=center] at (2.6,1.7) {oscillating\\sub-Hubble mode};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Trong giai đoạn giãn nở gần như theo hàm mũ, một bước sóng vật lý tăng lên trong khi độ dài Hubble gần như giữ nguyên. Điểm chúng cắt nhau đánh dấu sự chuyển từ dao động nhanh sang một mode bị đóng băng, đúng đến các thừa số cỡ một.}
+\label{fig:c10-horizon-reconstruction}
+\end{figure}
+
+Thăng giáng chân không khiến lạm phát không thể đơn giản xóa sạch mọi sóng. Mỗi mode bước sóng ngắn đều bắt đầu với dao động điểm không. Sự giãn nở kéo một mode ra tới thang Hubble và đóng băng nó, trong khi các mode chân không còn ngắn hơn vẫn tiếp tục dao động. Đến lượt chúng, chúng bị kéo dãn rồi bị đóng băng. Sự lặp lại tạo nên một biên dạng trường chứa các đóng góp bị đóng băng trên một dải rộng các bước sóng và phương hướng. Kết quả là ngẫu nhiên nhưng không vô cấu trúc: các thống kê của nó tuân theo trạng thái lượng tử và nền lạm phát.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_04.png}
+\caption{Một sự chồng chập trải khắp bảng của các sóng trường dài và ngắn, kèm một phác thảo tắt dần nhỏ hơn bên cạnh các nhãn \(\gamma\) và \(3H\). Khung hình này ghi lại bức tranh định tính về các mode; nó không được dùng để đọc ra một hàm chính xác.}
+\label{fig:c10-mode-board}
+\lectureframe{01:45:28.476}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Các mode bị đóng băng tại một điểm hay tại một bước sóng, và bản thân \(H\) có đang tăng theo hàm mũ không?}
+\lecturerresponse{Chúng bị đóng băng khi một bước sóng đạt tới thang Hubble. Trên cao nguyên gần phẳng, \(V\) và do đó \(H\) gần như không đổi; cái tăng theo hàm mũ là thừa số tỉ lệ \(a(t)\), và vì thế là bước sóng vật lý \(a/k\). Mỗi mode đồng chuyển động đạt tới điều kiện \(k/a\sim H\) vào thời điểm riêng của nó. \lecturetimestamp{01:45:06--01:45:39}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Đây có phải là các sóng điện từ không?}
+\lecturerresponse{Không. Chúng là các thăng giáng của trường vô hướng inflaton. Các thăng giáng chân không điện từ cung cấp một phép tương tự quen thuộc, nhưng biến trong phương trình~\eqref{eq:c10-mode-equation} là \(\phi\). \lecturetimestamp{01:45:39--01:46:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có một phổ liên tục các bước sóng không?}
+\lecturerresponse{Có. Đối với mô hình lý tưởng hóa với không gian vô hạn thì có. Trường được biểu diễn bởi một tích phân Fourier,
+\begin{equation}
+\phi(\mathbf x,t)
+=\int\frac{d^3k}{(2\pi)^3}\,
+\phi_{\mathbf k}(t)e^{i\mathbf k\cdot\mathbf x}.
+\label{eq:c10-fourier-integral}
+\end{equation}
+Mỗi số sóng đều trải qua cùng một cơ chế dịch đỏ và đóng băng. \lecturetimestamp{01:46:04--01:46:34}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một vũ trụ hữu hạn sẽ chỉ có các mode rời rạc thôi sao?}
+\lecturerresponse{Có. Các điều kiện biên trên một thể tích không gian hữu hạn lượng tử hóa các số sóng được phép. Đối với một thể tích lớn hơn rất nhiều so với các thang đang bàn, khoảng cách giữa chúng có thể nhỏ đến mức tổng được xấp xỉ rất tốt bởi tích phân trong phương trình~\eqref{eq:c10-fourier-integral}. Bức tranh liên tục là một sự lý tưởng hóa, chứ không phải một cơ chế cục bộ khác. \lecturetimestamp{01:46:34--01:47:01}}
+\end{classroomqa}
+
+Hai chuyển động hiện cùng tồn tại. Trường trung bình theo không gian \(\bar\phi(t)\) lăn chậm và theo cổ điển xuống thế. Chồng lên nó là một thăng giáng lượng tử nhỏ,
+\[
+\phi(\mathbf x,t)=\bar\phi(t)+\delta\phi(\mathbf x,t),
+\]
+được ghép từ các mode bị đóng băng. Bản thân năng lượng của thăng giáng này quá nhỏ để trở thành độ tương phản vật chất quan sát được. Tầm quan trọng của nó là ở chỗ nó làm xê dịch thời điểm lạm phát kết thúc.
+
+Một phép tính lượng tử đầy đủ cho mô hình một trường làm sắc nét thêm lập luận dao động tử này. Một trường vô hướng nhẹ nhận được một thăng giáng điển hình trên mỗi khoảng logarit của số sóng có cỡ
+\begin{equation}
+\delta\phi_{\rm exit}\sim\frac{H}{2\pi}.
+\label{eq:c10-field-amplitude}
+\end{equation}
+Để suy ra hệ số chuẩn hóa, cần lượng tử hóa các mode trường trên nền lạm phát. Bức tranh dao động tử đã cung cấp cơ chế cốt yếu: các thăng giáng chân không tồn tại ngay cả trong trạng thái nền, và sự giãn nở biến chúng thành một mẫu bị đóng băng trông như cổ điển.
+
+\section{Vách đá chuyển nhiễu trường thành nhiễu mật độ}
+
+Trước hết bỏ qua \(\delta\phi\). Khi đó, tại một thời điểm cố định bất kỳ, trường có cùng một giá trị ở khắp mọi nơi, được biểu diễn trên bảng bằng một đường thẳng đứng khi không gian \(x\) được vẽ theo chiều lên trên còn giá trị trường \(\phi\) theo chiều ngang. Khi thời gian trôi đi, đường này tiến về phía vách đá. Toàn bộ vũ trụ cùng tới mép rơi, thế năng inflaton biến thành các hạt, bức xạ và nhiệt, sự giãn nở mũ kết thúc, và mật độ năng lượng kết quả bắt đầu loãng dần theo sự giãn nở thông thường.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{lecture_10_figure_05.png}
+\caption{Sơ đồ không gian-trường trên bảng. Trục đứng là \(x\), phương ngang là \(\phi\), các đường biên mờ gần thẳng đứng đánh dấu các cấu hình trường kế tiếp nhau, và biên gạch chéo ở bên phải là vách đá nơi lạm phát kết thúc.}
+\label{fig:c10-cliff-board}
+\lectureframe{01:50:54.502}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{coursefitfigure}
+\begin{tikzpicture}[x=1cm,y=0.82cm,>=Latex]
+  \draw[->] (0,0) -- (9.2,0) node[right] {\(\phi\)};
+  \draw[->] (0,0) -- (0,5.2) node[above] {space \(x\)};
+  \draw[thick,gray!60] (8.2,0.15) rectangle (8.55,4.85);
+  \foreach \y in {0.35,0.85,...,4.55} {
+    \draw[gray!60] (8.2,\y) -- (8.55,{\y+0.25});
+  }
+  \node[anchor=south,rotate=90] at (8.38,2.5) {cliff};
+  \draw[thick,densely dashed,gray!70] (3.2,0.2) -- (3.2,4.75);
+  \draw[thick,blue!45!black,smooth]
+    plot coordinates {(5.0,0.2) (5.12,0.75) (4.9,1.25) (5.18,1.8) (4.94,2.35) (5.2,2.9) (4.88,3.45) (5.12,4.05) (5.0,4.75)};
+  \draw[very thick,red!65!black,smooth]
+    plot coordinates {(7.15,0.2) (7.32,0.7) (7.0,1.2) (7.42,1.75) (7.1,2.3) (7.5,2.85) (7.02,3.35) (7.35,4.0) (7.16,4.75)};
+  \draw[->,thick] (3.55,2.5) -- (4.55,2.5);
+  \draw[->,thick] (5.55,2.5) -- (6.65,2.5);
+  \node[align=center,anchor=south,font=\small] at (3.2,4.8) {uniform\\profile};
+  \node[align=center,anchor=south,font=\small] at (5.0,4.8) {frozen\\ripple};
+  \node[align=center,anchor=south,font=\small] at (7.2,4.8) {near\\reheating};
+\end{tikzpicture}
+\end{coursefitfigure}
+\caption{Bản tái dựng rõ ràng của bức tranh không gian-trường. Trường trung bình tiến về phía vách đá trong khi một gợn sóng không gian bị đóng băng vẫn tồn tại, nên các vị trí khác nhau chạm tới điểm kết thúc lạm phát ở những thời điểm hơi khác nhau.}
+\label{fig:c10-cliff-reconstruction}
+\end{figure}
+
+Khôi phục biến thiên bị đóng băng. Lúc này đường hơi lượn sóng: các vị trí lân cận có các giá trị \(\phi\) hơi khác nhau. Hãy nghĩ đến một hàng người cố bước vai kề vai về phía một vách đá. Một vài người hơi đi trước, một vài người hơi tụt lại sau. Những người đi trước sẽ qua mép trước.
+
+Độ lệch về thời điểm đó mới là nguồn gốc thực sự của độ tương phản mật độ. Một vùng qua mép trước sẽ tái nung nóng trước. Thế năng của nó được đổ vào các hạt và nhiệt, rồi năng lượng ấy có thời gian để loãng đi khi vũ trụ giãn nở trong thời kỳ hậu lạm phát. Một vùng lân cận qua mép hơi muộn hơn sẽ tái nung nóng muộn hơn, nên khi so sánh hai vùng, vùng muộn hơn đậm đặc hơn chỉ đơn giản vì nó đã có ít thời gian hơn để loãng đi. Vì thế, đợt qua mép đầu tiên để lại những vùng đậm đặc tương đối. Trong khi các vùng đó giãn nở, những gợn có bước sóng ngắn hơn đưa một tập hợp vị trí khác qua mép và tạo ra những vùng nhỏ hơn bên trong mẫu hình lớn hơn. Lặp lại điều này trên toàn bộ thứ bậc các mode bị đóng băng tạo ra cấu trúc lồng trong cấu trúc. Vì vậy, thăng giáng trường nhỏ bé ấy không quan trọng vì năng lượng riêng của nó; nó quan trọng vì nó làm xê dịch thời điểm cục bộ mà sự tái nung nóng xảy ra.
+
+Hệ thức về thời điểm có thể được viết một cách sơ lược. Nếu trường đồng nhất đạt tới giá trị kết thúc \(\phi_{\rm end}\) với tốc độ \(\dot{\bar\phi}\), thì một độ dời nhỏ của trường làm thay đổi thời điểm kết thúc cục bộ theo
+\begin{equation}
+\delta t_{\rm end}
+\simeq-\frac{\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-time-delay}
+\end{equation}
+Trường lăn chậm hơn khiến cùng một \(\delta\phi\) tương ứng với độ trễ lớn hơn. Trong khoảng thời gian thêm đó, vùng sớm hơn giãn nở và bị pha loãng nhiều hơn. Bỏ qua các hệ số truyền cỡ một, vì vậy nhiễu loạn độ cong hay mật độ được chi phối bởi
+\begin{equation}
+\mathcal R
+\sim H\,\delta t_{\rm end}
+\sim-\frac{H\,\delta\phi}{\dot{\bar\phi}}.
+\label{eq:c10-curvature-estimate}
+\end{equation}
+Kết hợp điều này với phương trình~\eqref{eq:c10-field-amplitude} cho thang biên độ lăn chậm quen thuộc
+\begin{equation}
+\mathcal P_{\mathcal R}^{1/2}
+\sim\frac{H^2}{2\pi|\dot{\bar\phi}|},
+\label{eq:c10-slow-roll-amplitude}
+\end{equation}
+trong đó các quy ước chính xác và phép chuyển tiếp tiếp theo sang \(\delta\rho/\rho\) đòi hỏi một phép tính nhiễu loạn đầy đủ hơn. Trường lăn càng chậm thì thời gian giữa những lần các vùng lân cận vượt qua mép dốc càng dài, và sự pha loãng xen giữa càng lớn. Vì vậy, cùng một dao động trường để lại dấu ấn mật độ lớn hơn khi \(\lvert\dot{\bar\phi}\rvert\) nhỏ hơn.
+
+Nhiều mode vượt qua thang Hubble ở những thời điểm khác nhau, nên nhiều vùng có kích thước khác nhau tái nung nóng vào những thời điểm hơi khác nhau. Trường mật độ do đó chứa các vùng quá đậm đặc và kém đậm đặc lồng nhau trên nhiều thang. Các tính chất thống kê của nó phụ thuộc vào độ cao, độ dốc và độ cong của thế lạm phát. Những mô hình lăn chậm thích hợp tự nhiên tạo ra một biên độ gần như bất biến theo thang xấp xỉ
+\[
+\frac{\delta\rho}{\rho}\sim10^{-5},
+\]
+và các phổ CMB chi tiết cho phép kiểm tra một số nhỏ tham số vũ trụ học trên nhiều thang góc.
+
+\section{Từ những hạt mầm nguyên thủy trở lại bầu trời}
+
+Giờ đây ta có thể quay lại người quan sát ở tâm của một tập các vỏ ánh sáng quá khứ. Mặt cầu tán xạ cuối cùng cắt qua trường mật độ nguyên thủy ba chiều. Những hướng mà ở đó lớp vỏ ấy cắt các thế hấp dẫn khác nhau tạo ra các nhiệt độ vi ba hơi khác nhau. WMAP hiển thị mẫu hai chiều trên mặt cầu đó. Bản đồ ấy không phải là ảnh chụp của thời điểm bằng không, cũng không phải là phép chiếu của mọi cấu trúc bên trong mặt cầu; nó là cấu trúc nhiệt độ trên lớp vỏ cụ thể mà từ đó các photon vi ba đã tán xạ lần cuối.
+
+Bên trong lớp vỏ ấy, chính những nhiễu loạn nguyên thủy đó tiếp tục tiến hóa. Hấp dẫn khuếch đại các vùng quá đậm đặc, các dòng chảy kiểu caustic làm sắc nét các tấm và sợi, khí tích tụ, và các thiên hà hình thành. Vì thế, mẫu CMB và mạng lưới vũ trụ về sau là hai giai đoạn của cùng một lịch sử: các thăng giáng lạm phát bị đóng băng trước hết xuất hiện như những hạt mầm mật độ rất nhỏ, rồi sau đó trở thành cấu trúc nhìn thấy được.
+
+\begin{classroomqa}
+\audiencequestion{Phông vi sóng mà ta thấy hôm nay tương ứng với thời kỳ nào?}
+\lecturerresponse{Các photon đã di chuyển trong khoảng \(13\) tỷ năm, nhưng chúng được giải phóng vài trăm nghìn năm sau Vụ Nổ Lớn nóng, khi electron và proton kết hợp thành hydro trung hòa và vũ trụ trở nên trong suốt. Lạm phát đã kết thúc sớm hơn rất nhiều. Quá trình tái nung nóng tạo ra vật chất và bức xạ nóng; sau đó vũ trụ giãn nở và nguội đi cho tới tán xạ cuối cùng. Đối với lập luận này, phát biểu vững chắc là bậc độ lớn---vài trăm nghìn năm---, chứ không phải một thời điểm tái kết hợp chính xác. \lecturetimestamp{02:00:38--02:02:19}}
+\end{classroomqa}
+
+\section{Một bầu trời và phương sai vũ trụ}
+
+\begin{classroomqa}
+\audiencequestion{Lạm phát có dự đoán hướng ưu tiên được báo cáo hoặc bất đối xứng bắc--nam trong WMAP không?}
+\lecturerresponse{Không có hướng ưu tiên nào như vậy suy ra từ bức tranh lạm phát đơn giản được phát triển ở đây. Tình trạng của các dị thường góc lớn được báo cáo còn chưa rõ ràng, nhiễu tiền cảnh và các dao động thống kê vẫn là những mối lo ngại hiện hữu, và một đánh giá có trách nhiệm đòi hỏi phải dựa vào tài liệu chuyên ngành chứ không phải một bản tóm lược giật gân. Lạm phát dự đoán các tính chất thống kê của một tập hợp; việc quyết định xem một đặc trưng bầu trời trông khác thường có phải là vật lý mới hay không thì khó hơn nhiều. \lecturetimestamp{02:02:19--02:03:26}}
+\end{classroomqa}
+
+Những đặc trưng góc nhỏ xuất hiện nhiều lần trên khắp bầu trời. Chúng cung cấp nhiều mẫu, nên phân bố và tính đẳng hướng của chúng có thể được kiểm tra bằng thống kê. Một đặc trưng ở thang tứ cực thì khác: chỉ có vài mode góc lớn độc lập nằm vừa trên mặt cầu quan sát được. Vì vậy, công suất đo được của chúng có thể khác đáng kể so với trung bình của tập hợp ngay cả khi lý thuyết nền tảng là đúng. Bất định do lấy mẫu không thể khử này là \emph{phương sai vũ trụ}.
+
+\begin{classroomqa}
+\audiencequestion{Còn sự thẳng hàng biểu kiến của một vài đa cực bậc thấp thì sao?}
+\lecturerresponse{Nó có thể là một manh mối, một tạo tác do tiền cảnh hoặc do phân tích, hoặc một hiện thực hóa khó xảy ra nhưng vẫn được phép. Khó khăn là ta không thể rút ra một vũ trụ quan sát được khác từ cùng một tập hợp thống kê. Một đồng xu cho ra bốn mặt ngửa trong sáu lần tung chưa chắc đã bị lệch; nhiều đợt lặp lại sẽ quyết định, nhưng vũ trụ học chỉ cung cấp một đợt duy nhất ở những thang lớn nhất. Dị thường ấy có thể đáng được nghiên cứu, nhưng chỉ một bầu trời tự nó không thể cung cấp các phép thử lặp lại cần thiết cho một kiểm định ý nghĩa mang tính quyết định. \lecturetimestamp{02:05:31--02:07:36}}
+\end{classroomqa}
+
+\section{Từ chuyển động lượng tử đến cấu trúc vũ trụ}
+
+Ba hằng số phổ quát xác định các thang Planck và cho thấy vật lý hạt quen thuộc còn cách hấp dẫn lượng tử xa đến mức nào. Bầu trời vi sóng cung cấp một mục tiêu vũ trụ học chính xác: gần như đẳng hướng, một biên độ dao động cỡ \(10^{-5}\), và cấu trúc trải trên nhiều thang. Cơ học lượng tử đảm bảo rằng mỗi mode của trường đều có dao động điểm không. Lạm phát kéo giãn từng mode inflaton cho tới khi bước sóng vật lý của nó có bậc \(H^{-1}\); lúc đó ma sát Hubble ức chế dao động của nó và để lại một biên độ hiệu dụng bị đóng băng.
+
+Trường inflaton đồng nhất vẫn tiếp tục lăn dưới nền nhiễu đóng băng ấy. Khi trường chạm tới cuối đoạn bằng phẳng của nó, các vùng lân cận không tái nung nóng đúng vào cùng một thời điểm. Những vùng sớm hơn bị pha loãng lâu hơn; những vùng muộn hơn vẫn đậm đặc hơn. Điều này chuyển \(\delta\phi\) thành một mẫu hình mật độ và độ cong nguyên thủy. Hấp dẫn sau đó khuếch đại mẫu hình ấy thành các thiên hà và mạng lưới vũ trụ, trong khi mặt cầu tán xạ cuối cùng bảo tồn trạng thái sớm hơn của mẫu hình đó trên bầu trời vi sóng. Vì vậy, chuyển động điểm không vi mô, sự giãn nở vũ trụ và sự tái nung nóng so le không phải là những câu chuyện tách rời. Gộp lại, chúng giải thích vì sao một vũ trụ lạm phát có thể vừa cực kỳ trơn nhẵn vừa có đủ cấu trúc để chúng ta tồn tại.
