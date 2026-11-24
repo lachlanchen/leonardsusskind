@@ -51,7 +51,11 @@ elif args[0] == 'ls-remote':
 elif args[0] == 'rev-parse':
     print('abc123')
 elif args[0] == 'show':
-    print(' '.join(f'](translations/demo/{lang}/book.pdf)' for lang in ('fr', 'es', 'de', 'zh-Hant')))
+    def link(lang):
+        if os.environ.get('READER_LINKS'):
+            return f'](https://example.test/?book=demo&lang={lang})'
+        return f'](translations/demo/{lang}/book.pdf)'
+    print(' '.join(link(lang) for lang in ('fr', 'es', 'de', 'zh-Hant')))
 elif args[0] in {'cat-file', 'diff'}:
     pass
 elif args[0] != 'status':
@@ -82,7 +86,8 @@ elif args[0] != 'status':
 
     def test_resume_refuses_unpublished_prior_editions(self):
         (self.root/'scripts/polished_translation.py').write_text(
-            "MANIFEST = None\ndef read(_): return {'books': [{'id': 'demo'}]}\n"
+            "MANIFEST = None\ndef read(_): return {'books': [{'id': 'demo', 'course': 'demo'}]}\n"
+            "def pdf_reader_url(course,lang): return f'https://example.test/?book={course}&lang={lang}'\n"
             "def validated_output(book, lang): return False\n")
         result = self.run_queue('--resume-from', 'ko')
         self.assertIn('Cannot skip unpublished edition', result.stderr)
@@ -90,9 +95,10 @@ elif args[0] != 'status':
 
     def test_resume_keeps_subsequent_languages_in_order(self):
         (self.root/'scripts/polished_translation.py').write_text(
-            "MANIFEST = None\ndef read(_): return {'books': [{'id': 'demo'}]}\n"
+            "MANIFEST = None\ndef read(_): return {'books': [{'id': 'demo', 'course': 'demo'}]}\n"
+            "def pdf_reader_url(course,lang): return f'https://example.test/?book={course}&lang={lang}'\n"
             "def validated_output(book, lang): return True\n")
-        result = self.run_queue('--resume-from', 'ko')
+        result = self.run_queue('--resume-from', 'ko', READER_LINKS='1')
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual((self.root / '.translation-work/runs.log').read_text().splitlines(), ['ko', 'vi', 'ru', 'ar'])
 

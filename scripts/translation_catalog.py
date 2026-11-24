@@ -11,8 +11,7 @@ import polished_translation as pipeline
 from publish_generated_course_pdf import CANONICAL_FILENAMES
 
 ROOT = Path(__file__).resolve().parents[1]
-READER = 'https://learn.lazying.art/leonardsusskind-reader.html'
-RAW = 'https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/'
+READER = pipeline.PDF_READER
 
 CITATION_LABELS = {
     'en': ('Citation and Support', 'Cite these independent companion notes, not the original lectures:'),
@@ -87,24 +86,7 @@ EDITION_LABELS = {'en': 'English', **{
 
 
 def catalog():
-    result = {'schema': 1, 'translatedPdfLayout': pipeline.LAYOUT, 'paperMm': [177.6, 252], 'books': {}}
-    for book in pipeline.read(pipeline.MANIFEST)['books']:
-        filename = CANONICAL_FILENAMES[book['course']]
-        slug = filename[:-4].replace('_', '-')
-        bunko = next((p.parent.name for p in (ROOT.parent / 'bunko-books/books').glob('physics-*/rights.json')
-                      if any(r.endswith('/generated_course_notes/' + book['course']) for r in pipeline.read(p)['references'])), None)
-        row = {'id': book['id'], 'titles': dict(book['titles']), 'bunkoId': bunko, 'editions': {
-            'en': {'pdf': RAW + 'all_notes/pocket_books_1_2x/' + filename[:-4] + '_pocket_1_2x.pdf',
-                   'layout': 'legacy-pocket-1.2x-type'}}}
-        for lang in pipeline.LANGS:
-            if pipeline.validated_output(book, lang):
-                row['editions'][lang] = {'pdf': RAW + f'translations/{book["id"]}/{lang}/book.pdf',
-                                         'layout': pipeline.LAYOUT}
-                title = pipeline.read(pipeline.OUT / book['id'] / lang / 'quality.json').get('title')
-                if title:
-                    row['titles'][lang] = title
-        result['books'][slug] = row
-    return result
+    return pipeline.reading_catalog(pipeline.read(pipeline.MANIFEST)['books'], pipeline.status())
 
 
 def language_notice(locale):

@@ -54,7 +54,8 @@ readme = subprocess.check_output(['git', 'show', 'HEAD:README.md'], text=True)
 for lang in sys.argv[1:]:
     for book in p.read(p.MANIFEST)['books']:
         folder = f'translations/{book["id"]}/{lang}'
-        if not p.validated_output(book, lang) or f']({folder}/book.pdf)' not in readme:
+        links = (f']({folder}/book.pdf)', f']({p.pdf_reader_url(book["course"], lang)})')
+        if not p.validated_output(book, lang) or not any(link in readme for link in links):
             raise SystemExit(f'Cannot skip unpublished edition: {folder}')
         subprocess.run(['git', 'cat-file', '-e', f'HEAD:{folder}/book.pdf'], check=True)
         subprocess.run(['git', 'diff', '--quiet', 'HEAD', '--', folder], check=True)

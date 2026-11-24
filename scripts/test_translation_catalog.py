@@ -77,7 +77,7 @@ class CoverTableTests(unittest.TestCase):
                     self.assertIn(f'src="{table_path and "../"}figs/bunko/{asset}"', notice)
                     self.assertTrue((root.parent / 'figs/bunko' / asset).is_file())
 
-    def test_pdf_table_shows_only_verified_downloads_and_can_mark_completion(self):
+    def test_pdf_table_shows_only_verified_reader_links_and_can_mark_completion(self):
         book = {'id': 'sample', 'course': 'supplementary/higgs_boson/2012_summer',
                 'titles': {'en': 'Higgs Boson'}}
         row = {lang + '_pdf': 'validated' for lang in catalog.pipeline.LANGS}
@@ -86,7 +86,10 @@ class CoverTableTests(unittest.TestCase):
         table = catalog.pipeline.pdf_editions_block([book], [row])
         self.assertIn('**9/10 translated PDFs published.**', table)
         self.assertIn('In preparation', table)
-        self.assertNotIn('translations/sample/ar/book.pdf', table)
+        for lang in ('en', 'ja', 'zh-Hant'):
+            self.assertIn(f'[Read]({catalog.READER}?book=demystifying-the-higgs-boson&lang={lang})', table)
+        self.assertNotIn('lang=ar', table)
+        self.assertNotIn('book.pdf', table)
 
     def test_every_validated_language_is_linked(self):
         self.data['books']['sample']['editions'].update({'fr': {}, 'zh-Hant': {}, 'ar': {}})

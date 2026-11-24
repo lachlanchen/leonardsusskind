@@ -20,6 +20,7 @@ import sys
 import threading
 import time
 import unicodedata
+from urllib.parse import urlencode
 
 from opencc import OpenCC
 
@@ -30,6 +31,9 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / '.translation-work'
 OUT = ROOT / 'translations'
 MANIFEST = ROOT / 'references/polished_translation_queue.json'
+EDITION_CATALOG = 'references/reading_editions.json'
+PDF_READER = 'https://learn.lazying.art/leonardsusskind-reader.html'
+RAW_BOOKS = 'https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/'
 VERSION = 1
 LAYOUT = 'a5-1.2-dimensions-v2'
 TOKEN = re.compile(r'@@T\d{6}@@')
@@ -1843,19 +1847,54 @@ def status():
     return rows
 
 
-def pdf_editions_block(books, rows):
+def reader_book_slug(course):
     from publish_generated_course_pdf import CANONICAL_FILENAMES
 
+    return Path(CANONICAL_FILENAMES[course]).stem.replace('_', '-')
+
+
+def pdf_reader_url(course, lang):
+    return PDF_READER + '?' + urlencode({'book': reader_book_slug(course), 'lang': lang})
+
+
+def reading_catalog(books, rows):
+    from publish_generated_course_pdf import CANONICAL_FILENAMES
+
+    result = {'schema': 2, 'translatedPdfLayout': LAYOUT, 'paperMm': [177.6, 252], 'books': {}}
+    previous_path = ROOT / EDITION_CATALOG
+    previous = read(previous_path)['books'] if previous_path.is_file() else {}
+    bunko_ids = {reference.rsplit('/generated_course_notes/', 1)[1]: path.parent.name
+                 for path in (ROOT.parent / 'bunko-books/books').glob('physics-*/rights.json')
+                 for reference in read(path)['references'] if '/generated_course_notes/' in reference}
+    for book, state in zip(books, rows):
+        slug = reader_book_slug(book['course'])
+        stem = Path(CANONICAL_FILENAMES[book['course']]).stem
+        row = {'id': book['id'], 'titles': dict(book['titles']),
+               'bunkoId': bunko_ids.get(book['course'], previous.get(slug, {}).get('bunkoId')),
+               'editions': {'en': {'pdf': RAW_BOOKS + f'all_notes/pocket_books_1_2x/{stem}_pocket_1_2x.pdf',
+                                   'layout': 'legacy-pocket-1.2x-type'}}}
+        for lang in LANGS:
+            if state[lang + '_pdf'] != 'validated':
+                continue
+            folder = f'{book["id"]}/{lang}'
+            row['editions'][lang] = {'pdf': RAW_BOOKS + f'translations/{folder}/book.pdf', 'layout': LAYOUT}
+            title = read(OUT / folder / 'quality.json').get('title')
+            if title:
+                row['titles'][lang] = title
+        result['books'][slug] = row
+    return result
+
+
+def pdf_editions_block(books, rows):
     labels = ['English', *(LANGUAGE_SPECS[lang]['label'] for lang in LANGS)]
     table = ['| Book | ' + ' | '.join(labels) + ' |',
              '| --- | ' + ' | '.join('---' for _ in labels) + ' |']
     published = 0
     for book, st in zip(books, rows):
-        english = Path(CANONICAL_FILENAMES[book['course']]).stem
-        cells = [f'[PDF](all_notes/pocket_books_1_2x/{english}_pocket_1_2x.pdf)']
+        cells = [f'[Read]({pdf_reader_url(book["course"], "en")})']
         for lang in LANGS:
             if st[lang + '_pdf'] == 'validated':
-                cells.append(f'[PDF](translations/{book["id"]}/{lang}/book.pdf)')
+                cells.append(f'[Read]({pdf_reader_url(book["course"], lang)})')
                 published += 1
             else:
                 cells.append('In preparation')
@@ -1866,6 +1905,7 @@ def pdf_editions_block(books, rows):
               if published == count else f'**{published}/{count} translated PDFs published.**')
     return ('<!-- polished-translations:start -->\n<a name="final-polished-translations"></a>\n\n'
             '## PDF Editions\n\n' + status + '\n\n'
+            'Choose a language to read in your browser. The reader also has a direct PDF link.\n\n'
             + '\n'.join(table) + '\n\n[Edition notes](references/POLISHED_TRANSLATIONS.md)\n'
             '<!-- polished-translations:end -->')
 
@@ -1873,7 +1913,9 @@ def pdf_editions_block(books, rows):
 def update_readmes():
     if not MANIFEST.exists():
         return
-    block = pdf_editions_block(read(MANIFEST)['books'], status())
+    books, rows = read(MANIFEST)['books'], status()
+    block = pdf_editions_block(books, rows)
+    write(ROOT / EDITION_CATALOG, reading_catalog(books, rows))
     labels = {
         'ja': 'PDF版一覧', 'zh-Hans': 'PDF 版本', 'zh-Hant': 'PDF 版本', 'de': 'PDF-Ausgaben',
         'es': 'Ediciones en PDF', 'fr': 'Éditions PDF', 'ko': 'PDF판', 'ru': 'Издания в PDF',
@@ -1965,6 +2007,8 @@ def publish_book(book, languages):
                 if p.stat().st_size >= 95 * 1024 * 1024:
                     raise RuntimeError(f'Artifact too large for regular Git: {p.name}')
                 paths.append(str(p.relative_to(ROOT)))
+    if (ROOT / EDITION_CATALOG).is_file():
+        paths.append(EDITION_CATALOG)
     git('add', '--', *paths)
     if git('diff', '--cached', '--name-only').strip():
         labels = ', '.join(LANGUAGE_SPECS[lang]['label'] for lang in languages)

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "translatedPdfLayout": "a5-1.2-dimensions-v2",
   "paperMm": [
     177.6,
@@ -11,7 +11,15 @@
       "titles": {
         "en": "Demystifying the Higgs Boson",
         "ja": "ヒッグス粒子を解き明かす",
-        "zh": "解密希格斯玻色子"
+        "zh": "解密希格斯玻色子",
+        "fr": "Démystifier le boson de Higgs",
+        "es": "Desmitificando el bosón de Higgs",
+        "de": "Das Higgs-Boson verstehen",
+        "zh-Hant": "揭開希格斯玻色子的奧秘",
+        "ko": "힉스 보손의 이해",
+        "vi": "Tìm hiểu về boson Higgs",
+        "ru": "Бозон Хиггса без тайн",
+        "ar": "فهم بوزون هيغز"
       },
       "bunkoId": "physics-higgs-boson",
       "editions": {
@@ -26,6 +34,38 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ar": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--higgs_boson--2012_summer/ar/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -34,7 +74,15 @@
       "titles": {
         "en": "Advanced Quantum Mechanics",
         "ja": "量子力学特論",
-        "zh": "高等量子力学"
+        "zh": "高等量子力学",
+        "fr": "Mécanique quantique avancée",
+        "es": "Mecánica cuántica avanzada",
+        "de": "Fortgeschrittene Quantenmechanik",
+        "zh-Hant": "高等量子力學",
+        "ko": "고급 양자역학",
+        "vi": "Cơ học lượng tử nâng cao",
+        "ru": "Продвинутая квантовая механика",
+        "ar": "ميكانيكا الكم المتقدمة"
       },
       "bunkoId": "physics-advanced-quantum-mechanics",
       "editions": {
@@ -49,6 +97,38 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ar": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--advanced_quantum_mechanics--2013_fall/ar/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -57,7 +137,14 @@
       "titles": {
         "en": "Quantum Entanglement Part 1",
         "ja": "量子もつれ 第1部",
-        "zh": "量子纠缠 第1部"
+        "zh": "量子纠缠 第1部",
+        "fr": "Intrication quantique, première partie",
+        "es": "Entrelazamiento cuántico, parte 1",
+        "de": "Quantenverschränkung, Teil 1",
+        "zh-Hant": "量子糾纏：第一部分",
+        "ko": "양자 얽힘 1부",
+        "vi": "Rối lượng tử, Phần 1",
+        "ru": "Квантовая запутанность. Часть 1"
       },
       "bunkoId": "physics-quantum-entanglement-1",
       "editions": {
@@ -72,6 +159,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_1/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -80,7 +195,14 @@
       "titles": {
         "en": "Quantum Entanglement Part 3",
         "ja": "量子もつれ 第3部",
-        "zh": "量子纠缠 第3部"
+        "zh": "量子纠缠 第3部",
+        "fr": "Intrication quantique, troisième partie",
+        "es": "Entrelazamiento cuántico, parte 3",
+        "de": "Quantenverschränkung, Teil 3",
+        "zh-Hant": "量子糾纏：第三部分",
+        "ko": "양자 얽힘 3부",
+        "vi": "Rối lượng tử, Phần 3",
+        "ru": "Квантовая запутанность. Часть 3"
       },
       "bunkoId": "physics-quantum-entanglement-3",
       "editions": {
@@ -95,6 +217,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--quantum_entanglement--2006_fall_part_3/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -103,7 +253,14 @@
       "titles": {
         "en": "Particle Physics 1: Basic Concepts",
         "ja": "素粒子物理学1：基礎概念",
-        "zh": "粒子物理学1：基本概念"
+        "zh": "粒子物理学1：基本概念",
+        "fr": "Physique des particules 1 : concepts fondamentaux",
+        "es": "Física de partículas 1: conceptos básicos",
+        "de": "Teilchenphysik 1: Grundbegriffe",
+        "zh-Hant": "粒子物理學（一）：基本概念",
+        "ko": "입자물리학 1: 기본 개념",
+        "vi": "Vật lý hạt 1: Các khái niệm cơ bản",
+        "ru": "Физика элементарных частиц 1: основные понятия"
       },
       "bunkoId": "physics-particle-physics-1",
       "editions": {
@@ -118,6 +275,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -126,7 +311,14 @@
       "titles": {
         "en": "Particle Physics 2: Standard Model",
         "ja": "素粒子物理学2：標準模型",
-        "zh": "粒子物理学2：标准模型"
+        "zh": "粒子物理学2：标准模型",
+        "fr": "Physique des particules 2 : modèle standard",
+        "es": "Física de partículas 2: el modelo estándar",
+        "de": "Teilchenphysik 2: Das Standardmodell",
+        "zh-Hant": "粒子物理學（二）：標準模型",
+        "ko": "입자물리학 2: 표준모형",
+        "vi": "Vật lý hạt 2: Mô hình Chuẩn",
+        "ru": "Физика элементарных частиц 2: стандартная модель"
       },
       "bunkoId": "physics-particle-physics-2",
       "editions": {
@@ -141,6 +333,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_2_standard_model--2010_winter/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -149,7 +369,14 @@
       "titles": {
         "en": "Particle Physics 3: Supersymmetry and Grand Unification",
         "ja": "素粒子物理学3：超対称性と大統一",
-        "zh": "粒子物理学3：超对称性与大统一"
+        "zh": "粒子物理学3：超对称性与大统一",
+        "fr": "Physique des particules 3 : supersymétrie et grande unification",
+        "es": "Física de partículas 3: supersimetría y gran unificación",
+        "de": "Teilchenphysik 3: Supersymmetrie und große Vereinheitlichung",
+        "zh-Hant": "粒子物理學（三）：超對稱與大統一理論",
+        "ko": "입자물리학 3: 초대칭과 대통일",
+        "vi": "Vật lý hạt 3: Siêu đối xứng và thống nhất lớn",
+        "ru": "Физика элементарных частиц 3: суперсимметрия и великое объединение"
       },
       "bunkoId": "physics-particle-physics-3",
       "editions": {
@@ -164,6 +391,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_3_supersymmetry_and_grand_unification--2010_spring/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -172,7 +427,14 @@
       "titles": {
         "en": "Topics in String Theory",
         "ja": "弦理論の諸問題",
-        "zh": "弦理论专题"
+        "zh": "弦理论专题",
+        "fr": "Thèmes de théorie des cordes",
+        "es": "Temas de teoría de cuerdas",
+        "de": "Themen der Stringtheorie",
+        "zh-Hant": "弦理論專題",
+        "ko": "끈 이론의 주요 주제",
+        "vi": "Các chủ đề trong lý thuyết dây",
+        "ru": "Темы теории струн"
       },
       "bunkoId": "physics-cosmology-and-black-holes",
       "editions": {
@@ -187,6 +449,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--cosmology_and_black_holes--2011_winter_topics_in_string_theory/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -195,7 +485,14 @@
       "titles": {
         "en": "String Theory and M-Theory",
         "ja": "弦理論とM理論",
-        "zh": "弦理论与M理论"
+        "zh": "弦理论与M理论",
+        "fr": "Théorie des cordes et théorie M",
+        "es": "Teoría de cuerdas y teoría M",
+        "de": "Stringtheorie und M-Theorie",
+        "zh-Hant": "弦理論與 M 理論",
+        "ko": "끈 이론과 M이론",
+        "vi": "Lý thuyết dây và M-lý thuyết",
+        "ru": "Теория струн и М-теория"
       },
       "bunkoId": "physics-string-theory-and-m-theory",
       "editions": {
@@ -210,6 +507,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--string_theory--2010_fall_string_theory_and_m_theory/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -218,7 +543,14 @@
       "titles": {
         "en": "Classical Mechanics",
         "ja": "古典力学",
-        "zh": "经典力学"
+        "zh": "经典力学",
+        "fr": "Mécanique classique",
+        "es": "Mecánica clásica",
+        "de": "Klassische Mechanik",
+        "zh-Hant": "經典力學",
+        "ko": "고전역학",
+        "vi": "Cơ học cổ điển",
+        "ru": "Классическая механика"
       },
       "bunkoId": "physics-classical-mechanics",
       "editions": {
@@ -233,6 +565,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--classical_mechanics--2011_fall_theoretical_minimum/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -241,7 +601,14 @@
       "titles": {
         "en": "Quantum Mechanics",
         "ja": "量子力学",
-        "zh": "量子力学"
+        "zh": "量子力学",
+        "fr": "Mécanique quantique",
+        "es": "Mecánica cuántica",
+        "de": "Quantenmechanik",
+        "zh-Hant": "量子力學",
+        "ko": "양자역학",
+        "vi": "Cơ học lượng tử",
+        "ru": "Квантовая механика"
       },
       "bunkoId": "physics-quantum-mechanics",
       "editions": {
@@ -256,6 +623,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--quantum_mechanics--2012_winter_theoretical_minimum_alt_title/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -264,7 +659,14 @@
       "titles": {
         "en": "Special Relativity",
         "ja": "特殊相対性理論",
-        "zh": "狭义相对论"
+        "zh": "狭义相对论",
+        "fr": "Relativité restreinte",
+        "es": "Relatividad especial",
+        "de": "Spezielle Relativitätstheorie",
+        "zh-Hant": "狹義相對論",
+        "ko": "특수상대성이론",
+        "vi": "Thuyết tương đối hẹp",
+        "ru": "Специальная теория относительности"
       },
       "bunkoId": "physics-special-relativity",
       "editions": {
@@ -279,6 +681,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--special_relativity--2012_spring_theoretical_minimum/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -287,7 +717,14 @@
       "titles": {
         "en": "General Relativity",
         "ja": "一般相対性理論",
-        "zh": "广义相对论"
+        "zh": "广义相对论",
+        "fr": "Relativité générale",
+        "es": "Relatividad general",
+        "de": "Allgemeine Relativitätstheorie",
+        "zh-Hant": "廣義相對論",
+        "ko": "일반상대성이론",
+        "vi": "Thuyết tương đối rộng",
+        "ru": "Общая теория относительности"
       },
       "bunkoId": "physics-general-relativity",
       "editions": {
@@ -302,6 +739,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--general_relativity--2012_fall_theoretical_minimum/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -310,7 +775,14 @@
       "titles": {
         "en": "Statistical Mechanics",
         "ja": "統計力学",
-        "zh": "统计力学"
+        "zh": "统计力学",
+        "fr": "Mécanique statistique",
+        "es": "Mecánica estadística",
+        "de": "Statistische Mechanik",
+        "zh-Hant": "統計力學",
+        "ko": "통계역학",
+        "vi": "Cơ học thống kê",
+        "ru": "Статистическая механика"
       },
       "bunkoId": "physics-statistical-mechanics",
       "editions": {
@@ -325,6 +797,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--statistical_mechanics--2013_spring_theoretical_minimum/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -333,7 +833,14 @@
       "titles": {
         "en": "Cosmology",
         "ja": "宇宙論",
-        "zh": "宇宙学"
+        "zh": "宇宙学",
+        "fr": "Cosmologie",
+        "es": "Cosmología",
+        "de": "Kosmologie",
+        "zh-Hant": "宇宙學",
+        "ko": "우주론",
+        "vi": "Vũ trụ học",
+        "ru": "Космология"
       },
       "bunkoId": "physics-cosmology",
       "editions": {
@@ -348,6 +855,34 @@
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/zh/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2013_winter_theoretical_minimum/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
         }
       }
     },
@@ -356,7 +891,14 @@
       "titles": {
         "en": "Cosmology",
         "ja": "宇宙論",
-        "zh": "宇宙学"
+        "zh": "宇宙学",
+        "fr": "Cosmologie",
+        "es": "Cosmología",
+        "de": "Kosmologie",
+        "zh-Hant": "宇宙學",
+        "ko": "우주론",
+        "vi": "Vũ trụ học",
+        "ru": "Космология"
       },
       "bunkoId": "physics-cosmology-legacy",
       "editions": {
@@ -370,6 +912,34 @@
         },
         "zh": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/zh/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "fr": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/fr/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "es": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/es/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "de": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/de/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "zh-Hant": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/zh-Hant/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ko": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/ko/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "vi": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/vi/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ru": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/core--cosmology--2009_winter_legacy_cosmology/ru/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
         }
       }

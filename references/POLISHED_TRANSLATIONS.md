@@ -301,13 +301,12 @@ python ../Bunko/tools/check_polished_reader.py
 python ../LazyLearn/tests/check_susskind_reader.py
 ```
 
-The generated catalogue exposes only currently validated translations. It
-drives the language links under README covers, all eleven localized availability
-notices, and LazyLearn's PDF language selector. Existing English links remain
-available. Publish the book PDFs and Bunko catalogue before the website changes;
-then run `../LazyLearn/tests/check_susskind_reader.py --live` to verify the actual
-published PDFs on desktop and mobile. The reader starts at page width with its
-outline closed so a phone's reading area is not covered by the sidebar.
+The publication queue commits the catalogue with the validated PDFs. The
+GitHub edition table links directly to the selected book and language in the
+web reader, which loads the current catalogue and offers a direct PDF link.
+The embedded catalogue is an offline fallback. Refresh it when updating the
+reader and verify representative editions on desktop and mobile. The reader
+opens at page width with the outline closed.
 
 Use scoped publication commits when neighboring repositories have unrelated
 work in progress. Do not deploy an unrelated Bunko app branch: content updates
