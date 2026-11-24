@@ -53,7 +53,7 @@ case "$provider" in
     bin_env="TRANSLATION_CODEX_BIN=$bin"
     ;;
   aginti-openai)
-    bin="${TRANSLATION_AGINTI_BIN:-$(command -v aginti)}"
+    bin="$("${TRANSLATION_PYTHON:-python}" scripts/polished_translation.py aginti-cli-path)"
     bin_env="TRANSLATION_AGINTI_BIN=$bin"
     ;;
   *) exit 2 ;;

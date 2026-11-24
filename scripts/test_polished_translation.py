@@ -1043,6 +1043,7 @@ class TranslationTests(unittest.TestCase):
         arabic = p.translated_preamble(source, 'ar')
         self.assertIn(r'\newfontfamily\arabicfont[Script=Arabic]{Amiri}', arabic)
         self.assertIn(r'\newfontfamily\arabicfontsf[Script=Arabic]{Amiri}', arabic)
+        self.assertIn(r'\newfontfamily\arabicfonttt[Script=Arabic]{DejaVu Sans Mono}', arabic)
         self.assertIn(r'\renewcommand{\thesection}{\LRE{\arabicsectionnumber}}', arabic)
         self.assertIn(r'\sectionfont{\raggedleft}', arabic)
         self.assertIn(r'\subsectionfont{\raggedleft}', arabic)

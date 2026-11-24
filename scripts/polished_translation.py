@@ -832,13 +832,31 @@ def codex_chat(prompt, dest, args, model):
     return value
 
 
+def aginti_package_cli():
+    """Find the installed package entry point, skipping shell launchers on PATH."""
+    override = os.environ.get('TRANSLATION_AGINTI_BIN')
+    candidates = [shutil.which(override)] if override else (
+        shutil.which('aginti', path=directory) for directory in os.get_exec_path())
+    for candidate in candidates:
+        if not candidate:
+            continue
+        try:
+            path = Path(candidate).resolve(strict=True)
+            package = path.parent.parent
+            if (read(package / 'package.json').get('name') == '@lazyingart/agintiflow'
+                    and all((package / 'src' / module).is_file()
+                            for module in ('project.js', 'provider-contract.js', 'model-client.js'))):
+                return str(path)
+        except (OSError, ValueError, AttributeError, RuntimeError):
+            continue
+    raise ProviderUnavailable('Cannot find the AgInTi package executable; set TRANSLATION_AGINTI_BIN to its bin/aginti-cli.js')
+
+
 def aginti_openai_chat(prompt, dest, args, model):
     """Use AgInTi's provider client, not the interactive agent/planning loop."""
     cwd = WORK / 'aginti-cwd'
     cwd.mkdir(mode=0o700, parents=True, exist_ok=True)
-    aginti = shutil.which(os.environ.get('TRANSLATION_AGINTI_BIN', 'aginti'))
-    if not aginti:
-        raise ProviderUnavailable('Cannot find AgInTi; verify TRANSLATION_AGINTI_BIN and PATH')
+    aginti = aginti_package_cli()
     command = ['node', str(ROOT / 'scripts/aginti_openai_completion.mjs'),
                os.path.abspath(aginti), model, args.reasoning, str(args.aginti_timeout)]
     try:
@@ -1264,6 +1282,7 @@ def translated_preamble(source, lang):
             language_setup += (r'\setotherlanguage{english}' '\n'
                                r'\newfontfamily\arabicfont[Script=Arabic]{Amiri}' '\n'
                                r'\newfontfamily\arabicfontsf[Script=Arabic]{Amiri}' '\n'
+                               r'\newfontfamily\arabicfonttt[Script=Arabic]{DejaVu Sans Mono}' '\n'
                                r'\let\arabicsectionnumber\thesection' '\n'
                                r'\let\arabicsubsectionnumber\thesubsection' '\n'
                                r'\renewcommand{\thesection}{\LRE{\arabicsectionnumber}}' '\n'
@@ -2130,7 +2149,8 @@ def run_with_transport_recovery(args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['prepare', 'run', 'status', 'compile', 'approve-pilot', 'readme', 'repair', 'review', 'recheck'])
+    parser.add_argument('command', choices=['prepare', 'run', 'status', 'compile', 'approve-pilot', 'readme',
+                                           'repair', 'review', 'recheck', 'aginti-cli-path'])
     parser.add_argument('--workers', type=int, default=5)
     parser.add_argument('--ramp-seconds', type=float, default=1)
     parser.add_argument('--provider', choices=['deepseek', 'codex', 'aginti-openai'], default='deepseek')
@@ -2152,6 +2172,12 @@ def main():
     parser.add_argument('--dry-run', action='store_true', help='Preview a cache recheck without writes or model calls')
     parser.add_argument('--apply-queued-repairs', action='store_true', help='Apply trusted repair inbox before recheck')
     args = parser.parse_args()
+    if args.command == 'aginti-cli-path':
+        try:
+            print(aginti_package_cli())
+        except ProviderUnavailable as exc:
+            parser.exit(1, f'{exc}\n')
+        return
     if not 1 <= args.workers <= 5:
         parser.error('Use 1 to 5 workers')
     if args.transport_retry_seconds < 0:

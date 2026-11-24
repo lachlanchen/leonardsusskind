@@ -1,4 +1,5 @@
 import json
+import os
 import subprocess
 import unittest
 from pathlib import Path
@@ -23,7 +24,7 @@ class AgintiTranslationTests(unittest.TestCase):
         probe = patch.object(p, 'check_codex_quota', side_effect=AssertionError)
         self.probe = probe.start()
         self.addCleanup(probe.stop)
-        aginti = patch.object(p.shutil, 'which', return_value='/verified/bin/aginti')
+        aginti = patch.object(p, 'aginti_package_cli', return_value='/verified/bin/aginti')
         aginti.start()
         self.addCleanup(aginti.stop)
         self.addCleanup(p.PROVIDER_STOP.clear)
@@ -83,6 +84,33 @@ class AgintiTranslationTests(unittest.TestCase):
             p.ensure_language_titles('vi', self.args)
         chat.assert_not_called()
         self.assertEqual(p.read(path), catalog)
+
+
+class AgintiExecutableTests(unittest.TestCase):
+    def test_package_resolution_skips_wrapper_and_honors_explicit_pin(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            wrapper = root / 'local/bin/aginti'
+            cli = root / 'packages/agintiflow/bin/aginti-cli.js'
+            symlink = root / 'npm/bin/aginti'
+            for path in (wrapper, cli):
+                path.parent.mkdir(parents=True)
+                path.write_text('#!/bin/sh\n')
+                path.chmod(0o700)
+            symlink.parent.mkdir(parents=True)
+            symlink.symlink_to(cli)
+            package = cli.parent.parent
+            p.write(package / 'package.json', {'name': '@lazyingart/agintiflow'})
+            for module in ('project.js', 'provider-contract.js', 'model-client.js'):
+                p.textwrite(package / 'src' / module, '')
+            with patch.dict(os.environ, {'PATH': f'{wrapper.parent}:{symlink.parent}',
+                                         'TRANSLATION_AGINTI_BIN': ''}):
+                self.assertEqual(p.aginti_package_cli(), str(cli))
+                with patch.dict(os.environ, {'TRANSLATION_AGINTI_BIN': str(wrapper)}):
+                    with self.assertRaisesRegex(p.ProviderUnavailable, 'package executable'):
+                        p.aginti_package_cli()
+                with patch.dict(os.environ, {'TRANSLATION_AGINTI_BIN': str(symlink)}):
+                    self.assertEqual(p.aginti_package_cli(), str(cli))
 
 
 if __name__ == '__main__':

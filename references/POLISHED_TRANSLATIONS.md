@@ -60,7 +60,7 @@ compilation share the queue lock and cannot race a live worker run.
 ## Commands
 
 Dependencies: Python with `pylatexenc==2.10`, `PyMuPDF` and `opencc`; XeLaTeX,
-Noto Serif/Sans, Noto CJK and Amiri (e.g. Debian's fonts-hosny-amiri); tmux and
+Noto Serif/Sans, Noto CJK, Amiri and DejaVu Sans Mono; tmux and
 the CLI for the selected translation provider. Reuse the
 shared Python environment. Codex account authentication is reused by the CLI;
 no credential, cookie or session file is copied into the repository.
