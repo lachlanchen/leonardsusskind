@@ -1,0 +1,59 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 284,
+  "outline_entries": 135,
+  "target_characters": 227568,
+  "image_placements": 82,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Темы теории струн",
+  "pdf_sha256": "760381e7377183d814e2556a77febb3764f31f34337168ca6090cfd861609e7e",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 217,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "4761b6def8da315ee06efaaaa3017a0c61b288198644de9b9b08571f630749e1",
+    "chapters/lecture_01/content.tex": "2217186c5de93b76fea1ebe30a55f512296946208c1682852a0c96fb835974fc",
+    "chapters/lecture_02/content.tex": "6753ec237cb4b023df47ae55a1e0ceb18ca605c296f1432be735bf6c6491e95b",
+    "chapters/lecture_03/content.tex": "97f2e300e4cf997622c17f29a7dc049602bad6c7fb2f1dfa39e304c7cfe84cd6",
+    "chapters/lecture_04/content.tex": "2228810f0f5cbd1e696384b33b07f4cd9870732398cc5497a3d55693c8477ad2",
+    "chapters/lecture_05/content.tex": "ee8cf4fe3d2884b0704f148bd1ed557119425868442a43a639893b5374279f63",
+    "chapters/lecture_06/content.tex": "76a3fa3267e4d83d1de116218dc13d337c9a3ebcc78214699e6003e04f83fdea",
+    "chapters/lecture_07/content.tex": "1903794828d2f72cc0f3059029bfcd72b158903fe00444739263dfc3874871f4",
+    "chapters/lecture_08/content.tex": "51cd8d9b726f0f39da6e73bcbec0d807aba641ec942f90191678b112d00e861d",
+    "chapters/lecture_09/content.tex": "432d2204e37a397bbd6f34735352eea6a3f9deb0d8fe7d60180a0ef3758c774b"
+  },
+  "source_files": {
+    "course.tex": "5813fa3876488c0990af4bf15a855abc4eb833dd1e1b4a173b02a8742570c935",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "567923e017f5afbf8d6b82d2b0341bbeabbe06ae28165837759d891dfd670e56",
+    "chapters/lecture_02/content.tex": "df3935948d623649fa1bd4adf69a53f8defeec0fc0c65f1c370452d8403326bf",
+    "chapters/lecture_03/content.tex": "7eeac70ea5e86a155890a459eafd007f8d02b28f119664d2df6502ebc7f4e969",
+    "chapters/lecture_04/content.tex": "280798e99eea6e71529164540437c8fdbe22e752c03c6c39baaa153278b0060c",
+    "chapters/lecture_05/content.tex": "8fce7d01e02b32819996400e347bbc0c596655cc9a35f92f7fdd056a3b17b5fb",
+    "chapters/lecture_06/content.tex": "2ebe6be0dd8eed3ab446d3a7baebea39f33a6b1d97e5026135fdea0e9a0854aa",
+    "chapters/lecture_07/content.tex": "ad35584cafd776fe8bbde8625c31a325f7465d5507753dfefc7f06356991b9c3",
+    "chapters/lecture_08/content.tex": "28c531b7e4cf9483f0bb78491ff0f2a11411be6fee0d4aa70f68b44e949b04a6",
+    "chapters/lecture_09/content.tex": "1c889082ea6d02f33411d3bbdfd9b39ce29e5910b3708a80799a0c4e9a38bae7"
+  },
+  "translated_tex": {
+    "cover.tex": "2ec19662adc8cfb4df7c4bda28ba30b20e30d4f77bcd9c711cdb08c34e7ec710",
+    "common_preamble.tex": "98b3ae9243545a4194e7fc8d2e6ae76c8cae4b91cede54eeca75ad8bcf2f47af",
+    "course.tex": "af00fb4ba13548f0889b78a9846210ea1116f9949f49b00cd82466a7b58b4932",
+    "chapters/lecture_07/content.tex": "c022677eb1e6039f35cbaa804516bf984aaa678fb8db85187ea7175ee1ab7171",
+    "chapters/lecture_02/content.tex": "1ac01e3a09bdaf4950476216c39ed70888cf7c235838949c3704513a396f9936",
+    "chapters/lecture_09/content.tex": "12a566554c16cc8377a825437e8b15f0bc438c297b3be9cb471bbd7364acb291",
+    "chapters/lecture_01/content.tex": "e420eb962830bedca400aa1352c97343ec1fa80748bb6712fbf95a882cb19592",
+    "chapters/lecture_03/content.tex": "4bcb3a3a6c60ab9e783b68240da7cc494b6df6ba76c4552463e1667118071046",
+    "chapters/lecture_08/content.tex": "fe5a97ffaee54e8315c613de937492d3594e4c5a43003fe8f5a27c5bd89954d6",
+    "chapters/lecture_05/content.tex": "e0e7bb8f120e21ed4c97e4aa7f527a069e895ca1393bc384acdd2815322b2652",
+    "chapters/lecture_04/content.tex": "ee73cf8ab5dbe8aeaae9e96edccc7ece1742ddabfcbbe2c37121b45fc17ca4c3",
+    "chapters/lecture_06/content.tex": "309748c148f0d777a0fce0fddcf95377b2eb2eb497ded48dadfa30a5a12f7a74"
+  }
+}
