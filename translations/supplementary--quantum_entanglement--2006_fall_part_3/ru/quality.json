@@ -1,0 +1,56 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 236,
+  "outline_entries": 95,
+  "target_characters": 164946,
+  "image_placements": 98,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Квантовая запутанность. Часть 3",
+  "pdf_sha256": "e8f369ee49f7c58361456611890aef82771498b5ea1c38d0583ad0a5428641c2",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 71,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "140a934e9bc37c6fcd5a36c08ef68abad9fbea8fd777d5042fb1d272c53121ef",
+    "chapters/lecture_01/content.tex": "819bbe4f4d4f4d3eede36e4cbf4b24cdf8b2c507f33c743ca08eb5ef9a642298",
+    "chapters/lecture_02_03/content.tex": "1a9a18e08e17606ff18b5d9302207458c7699ede9ce53dfd743cc6383cf09f2b",
+    "chapters/lecture_04/content.tex": "05d44822b6fff6b9a772cd760524bbd7aa1976e8da315467de0ee42319104db3",
+    "chapters/lecture_05/content.tex": "7cba7d013618e84d6e4fdfcbcb2de3524e1e99e7b7b33e165616e818e58a1899",
+    "chapters/lecture_06/content.tex": "ef46fc9da57e78185b700f6f4d1176009f7a4582f6b3f04aaedb1c9b8c3899b3",
+    "chapters/lecture_07/content.tex": "b5f593b12d7f8e7656e5d05d7b300e4432f451205c94df98437676a9b4ce8fc5",
+    "chapters/lecture_08/content.tex": "aeb447233bc98847243dc320738bb6b5c0006bda92535f3b70c658f6560b2e98",
+    "chapters/lecture_09/content.tex": "2b1c8a18841883898dbcb2fc584e70923d33eeec6d7ac32bc1353ba595b436fd"
+  },
+  "source_files": {
+    "course.tex": "356d8ce3183a4c7413b9c336e9a2d8bd28af68d0f32fc281411dd6137903070b",
+    "common_preamble.tex": "7230adaa2c872f88056a832b9a230eaf89d97409c06df43c5abd3be7bb7c6e6d",
+    "chapters/lecture_01/content.tex": "8901a5e94b79043b8683ae3c07a6714b79847789e5762c48cd72e9d9f36d025a",
+    "chapters/lecture_02_03/content.tex": "d5f4018fc88275e090e6b4773153254fd7bbd28504c004b454fb444d72fb2f3f",
+    "chapters/lecture_04/content.tex": "b79226daad0aa91b17e4b2afe6d6e4b98fc52396be779aab36de42d64582b3ab",
+    "chapters/lecture_05/content.tex": "3e7b4248a1a92ec5b0838f3fcbd1c70b542ad61307daf8cff5face134ee911b3",
+    "chapters/lecture_06/content.tex": "ed6739fc900e1b83e609422bcf5a0246a4429759b0de1ebc104649c101391284",
+    "chapters/lecture_07/content.tex": "42d787980d2bd997c18034f22e260e9db3610b2b44586bcd1d5557ab67b90c95",
+    "chapters/lecture_08/content.tex": "57e52781307495b368457421b6d78cc41a563bc01a566b789fd9200862518709",
+    "chapters/lecture_09/content.tex": "a2e052c366902368f82b9b8cc60ec34b86f8d7451d0adc06a04c22b71778c74f"
+  },
+  "translated_tex": {
+    "cover.tex": "ac857b516bf986139e41c452bb9cf949491fda89d58645b89fb743a856a70b19",
+    "common_preamble.tex": "724182985f62e522ebfed517af67a65331660169c747a56da041c1b5f3a0391e",
+    "course.tex": "743fa6dc461c3f794a1755370576b404b04b257085f6db441c44265ddd545308",
+    "chapters/lecture_07/content.tex": "7e0be1b182733a693860ebd0950e8ee6be2f62b2088a95a76dafbe2de1e6a25e",
+    "chapters/lecture_09/content.tex": "db0d648abf73ef675a69e0b52e928736165c45d003edd97b1aa6d90d906438ec",
+    "chapters/lecture_02_03/content.tex": "83bc622bee53546a379479daf67920cbb4753031f908ee2ebfa6410608007cb2",
+    "chapters/lecture_01/content.tex": "36250b5ca3c8e23818bcb125b59d272bc4dea5fb3a6b4497672d68eecd5c15c7",
+    "chapters/lecture_08/content.tex": "fa4c5ac41c4b69681159adb86a4efb6e73e53b09b8b8f8a4ed6ab428fdbfc939",
+    "chapters/lecture_05/content.tex": "d043a92f9332dde539efaf08bfbe2c2aab3fb4c8fff19184a51644ca1e7b1f46",
+    "chapters/lecture_04/content.tex": "e3889813589955e6babf302c79b66822644e1ab08302aa9c7d4e0da9a4128804",
+    "chapters/lecture_06/content.tex": "03cf898dcfc99c6118d68e4a00fbe7dd36d503ebaf2079c281d00364f758dc92"
+  }
+}
