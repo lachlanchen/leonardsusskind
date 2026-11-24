@@ -267,10 +267,11 @@ only, requires the previous translation hash, backs up the cache and schedules
 fresh semantic review and compilation. Do not repair a cache while the queue
 lock is held. The caption validator prevents recurrence in new output.
 
-The Bunko importer lives in `../Bunko/tools/import_polished_physics.py`; the
-published content lives in `../bunko-books`, not in the app repository. It
-retains schema 1 and existing book identities and adds aligned `en`, `ja`, `zh`
-layers. Coverage checks include front matter, overviews, classroom Q&A,
+The original Bunko importer, `../Bunko/tools/import_polished_physics.py`, created
+the aligned `en`, `ja`, `zh` base layers. Do not rerun it in write mode on
+published books: it replaces the metadata and drops additional layers.
+Published content lives in `../bunko-books`, not in the app repository.
+Coverage checks include front matter, overviews, classroom Q&A,
 footnotes, captions and tables. Equations are protected before Pandoc parsing
 and every rich expression must render with the app's KaTeX configuration.
 Matched passage IDs and old content-addressed files remain valid for readers.
@@ -282,13 +283,16 @@ commit with `--source-commit` and use `--report` to record accepted and held
 layers. Add `--apply` only with a clean, up-to-date `bunko-books` checkout.
 The exporter checks source segments, equation and figure alignment, KaTeX, and
 the Bunko bundle schema, then preserves older chapter files, passage IDs and
-sentence maps. Rebuild `reader-index.json` in `bunko-books` before publishing.
+sentence maps. Review the report before publishing: an exit status of 1 can
+mean some layers were held even though verified layers were written. Rebuild
+`reader-index.json` in `bunko-books` before publishing.
 
 Release commands after the queue has exited:
 
 ```bash
 python scripts/audit_reading_editions.py
-python ../Bunko/tools/import_polished_physics.py
+python scripts/sync_bunko_layers.py --source-commit "$published_susskind_commit" \
+  --apply --report .translation-work/bunko-sync.json
 python ../bunko-books/tools/catalogue.py --write
 python scripts/polished_translation.py readme
 python scripts/translation_catalog.py --reader ../LazyLearn/docs/leonardsusskind-reader.html
