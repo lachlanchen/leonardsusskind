@@ -1,0 +1,35 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 35,
+  "outline_entries": 18,
+  "target_characters": 26519,
+  "image_placements": 14,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Бозон Хиггса без тайн",
+  "pdf_sha256": "d02f7790ce2d80a417521d960c291d6338397a6ac5c10507c2c31f6307c37f18",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 4,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "41b9be1c0c18a2de90e4d7829d0c21fe8ee2a58d5fd214092ba2bbfed6b4f9dc",
+    "chapters/lecture_01/content.tex": "3d96c75f7566870fd7a8d9179af68e784e5b6453fc64d506c0c8b1a2b9270413"
+  },
+  "source_files": {
+    "course.tex": "8618bd1a9d6c91833ba00f7be31dcb20fcc6727f03cd9160273f418737e819fd",
+    "common_preamble.tex": "0387bc086d996b84dfd6d74a7d18b55fb756b03aff19f43f899e7448b3a0963c",
+    "chapters/lecture_01/content.tex": "0dce2f6c0fcca244ee59848cdffaf66f43d412a86a2f3e89cf16984c5f46430c"
+  },
+  "translated_tex": {
+    "cover.tex": "54d194c0c1efcb3af919535f838ea1fc0f2c989c7a37a65204ecc1b5959e2099",
+    "common_preamble.tex": "98b3ae9243545a4194e7fc8d2e6ae76c8cae4b91cede54eeca75ad8bcf2f47af",
+    "course.tex": "8c57ca76e059e75f92808330858fb5f4db0018e406029dd284f6b65e61158520",
+    "chapters/lecture_01/content.tex": "e38d19b0e16e30f7c246473e7773847247b2db006c6a9e7e9eae046b9462334f"
+  }
+}
