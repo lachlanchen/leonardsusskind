@@ -1,0 +1,150 @@
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setmonofont{Noto Sans Mono}
+\newfontfamily\proseunicodefont{DejaVu Serif}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathmorphing}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  urlcolor=blue!50!black,
+  citecolor=blue!50!black
+}
+
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{topsep=0.25em,itemsep=0.2em}
+\setlist[enumerate]{topsep=0.25em,itemsep=0.2em}
+\setlength{\headheight}{40pt}
+\numberwithin{equation}{chapter}
+
+\newtheorem{theorem}{Теорема}[chapter]
+\newtheorem{proposition}[theorem]{Утверждение}
+\newtheorem{lemma}[theorem]{Лемма}
+\newtheorem{corollary}[theorem]{Следствие}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Определение}
+\newtheorem{example}[theorem]{Пример}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Замечание}
+
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+\providecommand{\braket}[2]{\left\langle#1\,\middle|\,#2\right\rangle}
+\providecommand{\expect}[1]{\left\langle#1\right\rangle}
+\newcommand{\lectureoverview}[1]{\paragraph{Обзор.} #1}
+
+\makeatletter
+\newcommand{\course@headerfont}{\normalfont\small\itshape}
+\newcommand{\course@pagefont}{\normalfont\small}
+\newcommand{\course@headerraise}{14pt}
+\newlength{\course@headerboxheight}
+\setlength{\course@headerboxheight}{\dimexpr\headheight-\course@headerraise-9pt\relax}
+\newcommand{\course@leftheadbox}[1]{%
+  \raisebox{\course@headerraise}{%
+    \parbox[t][\course@headerboxheight][t]{0.82\textwidth}{%
+      \raggedright\course@headerfont\strut\MakeUppercase{#1}\strut%
+    }%
+  }%
+}
+\newcommand{\course@rightheadbox}[1]{%
+  \raisebox{\course@headerraise}{%
+    \parbox[t][\course@headerboxheight][t]{0.82\textwidth}{%
+      \raggedleft\course@headerfont\strut\MakeUppercase{#1}\strut%
+    }%
+  }%
+}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{\thesection\hspace{0.4em}#1}}}
+\fancyhf{}
+\fancyhead[L]{\course@leftheadbox{\leftmark}}
+\fancyhead[R]{\course@pagefont\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{\course@leftheadbox{\leftmark}}
+  \fancyhead[R]{\course@pagefont\thepage}
+  \renewcommand{\headrulewidth}{0.5pt}
+}
+\makeatother
+
+% Transcript provenance used by the polished lecture chapters.
+\newenvironment{classroomqa}{%
+  \par\medskip\noindent\begin{minipage}{\linewidth}\small\hrule\medskip
+}{%
+  \medskip\hrule\end{minipage}\par\medskip
+}
+\newcommand{\audiencequestion}[1]{\noindent\textbf{Вопрос из аудитории.} #1\par\smallskip}
+\newcommand{\lecturerresponse}[1]{\noindent\textbf{Ответ.} #1\par}
+\newcommand{\lecturetimestamp}[1]{\footnote{Время в лекции: #1.}}
+\newcommand{\lectureframe}[1]{\par\smallskip{\centering\footnotesize\itshape Кадр лекции: #1.\par}}
+\newcommand{\editorialnote}[1]{\footnote{Редакторское пояснение: #1}}
+
+\newsavebox{\coursefitfigurebox}
+\newenvironment{coursefitfigure}{%
+  \begin{lrbox}{\coursefitfigurebox}%
+}{%
+  \end{lrbox}%
+  \ifdim\wd\coursefitfigurebox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\coursefitfigurebox}}%
+  \else
+    \usebox{\coursefitfigurebox}%
+  \fi
+}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\usepackage{sectsty}
+\renewcommand{\contentsname}{Содержание}
+\renewcommand{\chaptername}{Глава}
+\renewcommand{\figurename}{Рисунок}
+\renewcommand{\tablename}{Таблица}
+\renewcommand{\proofname}{Доказательство}
+\renewcommand{\bibname}{Литература}
+\sectionfont{\raggedright}
+\subsectionfont{\raggedright}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.2em}
+\renewcommand{\@tocrmarg}{3.2em}
+\makeatother
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\small\bfseries}
+\renewcommand{\cftchappagefont}{\small\bfseries}
+\renewcommand{\cftsecfont}{\small}
+\renewcommand{\cftsecpagefont}{\small}
+\setlength{\cftsecnumwidth}{3em}
+\renewcommand{\cftsubsecfont}{\small}
+\renewcommand{\cftsubsecpagefont}{\small}
+\setlength{\cftsubsecindent}{4.5em}
+\setlength{\cftsubsecnumwidth}{4em}
+\emergencystretch=6em
+\pdfstringdefDisableCommands{\def\proseunicodefont{}}
+
+\geometry{paperwidth=177.6mm,paperheight=252mm,left=16mm,right=16mm,
+ top=18mm,bottom=18mm,includeheadfoot,headheight=28pt,headsep=7mm,footskip=9mm}
+\usepackage{scrextend}
+\changefontsizes[17pt]{12pt}
+\raggedbottom
+\renewenvironment{classroomqa}{\par\medskip\begingroup}{\par\endgroup\medskip}
+\fancyhf{}
+\setlength{\headwidth}{\textwidth}
+\fancyhead[L]{\parbox{\textwidth}{\raggedright\fontsize{9}{11}\selectfont\nouppercase{\leftmark}}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
