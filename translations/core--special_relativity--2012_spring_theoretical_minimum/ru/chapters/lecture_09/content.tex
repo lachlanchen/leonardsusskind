@@ -1,0 +1,1061 @@
+\chapter{Электромагнитные волны и действие Максвелла}
+
+\lectureoverview{Сначала мы решим уравнения Максвелла без источников для плоской волны и позволим самим уравнениям определить ее поляризацию, геометрию поля и скорость. Затем мы зададим более глубокий вопрос: какое локальное, лоренц-инвариантное, калибровочно-инвариантное действие порождает динамические уравнения Максвелла? Ответ связывает электромагнитное поле, сохранение заряда и калибровочную инвариантность в единую структуру.}
+
+\section{Два семейства уравнений Максвелла}
+
+Начнем с плоской электромагнитной волны. Здесь \emph{plane} — геометрическое слово, а не \emph{plain} в смысле простой, без украшений. Непосредственные вопросы здесь вполне конкретны: как выглядит такая волна и как ее форма следует из уравнений Максвелла?
+
+Полезно, прежде чем делать с волной что-либо еще, выписать уравнения в два столбца. В пустом пространстве они имеют вид
+\begin{align}
+\nabla\cdot\mathbf B&=0,
+&
+\dot{\mathbf B}&=\nabla\times\mathbf E,
+\label{eq:homogeneous-vector}
+\\
+\nabla\cdot\mathbf E&=0,
+&
+\dot{\mathbf E}&=-\,\nabla\times\mathbf B.
+\label{eq:dynamical-vector-vacuum}
+\end{align}
+Мы используем метрику с преимущественно положительной сигнатурой
+\begin{equation}
+\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)
+\end{equation}
+и принятое в курсе соглашение
+\begin{equation}
+F_{\mu\nu}
+=
+\partial_\mu A_\nu-\partial_\nu A_\mu,
+\qquad
+F_{0i}=E_i,
+\qquad
+F_{ij}=\epsilon_{ijk}B_k.
+\label{eq:course-f-convention}
+\end{equation}
+Тогда те же два семейства можно записать как
+\begin{align}
+\partial_\mu F_{\nu\sigma}
++\partial_\nu F_{\sigma\mu}
++\partial_\sigma F_{\mu\nu}
+&=0,
+\label{eq:bianchi-l9}
+\\
+\partial_\mu F^{\mu\nu}
+&=0.
+\label{eq:vacuum-maxwell-covariant}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_01.png}
+\caption{Два вакуумных семейства уравнений Максвелла и их ковариантные формы. Циклическое уравнение является тождеством; свернутое уравнение — динамическим.}
+\par\smallskip
+\textit{Кадр лекции: 00:03:30.}
+\end{figure}
+
+Различие между двумя строками существенно. Уравнение
+\eqref{eq:bianchi-l9} тождественно следует из существования потенциала \(A_\mu\): каждый член является второй производной, и эти члены попарно сокращаются. Следовательно, это тождество Бьянки. Уравнение
+\eqref{eq:vacuum-maxwell-covariant}, напротив, является уравнением движения. Измените электромагнитный лагранжиан — и изменится именно это семейство.
+
+На доске есть небольшое наблюдение, которое в этой главе выполнит две задачи. Каждое поле в уравнениях Максвелла появляется под знаком производной. Этот факт наложит ограничения на относительные фазы плоской волны и позднее сделает естественной калибровочную инвариантность.
+
+\section{Плоская волна вдоль оси \texorpdfstring{\(z\)}{z}}
+
+Выберем координаты так, чтобы волна распространялась вдоль оси \(z\). Это не ограничивает общности; волну, идущую в другом направлении, можно привести к такому виду поворотом осей. Пусть \(k\) — ее волновое число,
+\begin{equation}
+\lambda=\frac{2\pi}{k},
+\end{equation}
+а \(\omega\) — ее частота. Прежде чем налагать какое-либо уравнение движения, запишем все шесть компонент поля с общей фазой
+\begin{equation}
+\theta=kz-\omega t:
+\end{equation}
+\begin{align}
+E_x(z,t)&=\epsilon_x\sin\theta,
+&
+B_x(z,t)&=\beta_x\sin\theta,
+\nonumber\\
+E_y(z,t)&=\epsilon_y\sin\theta,
+&
+B_y(z,t)&=\beta_y\sin\theta,
+\label{eq:plane-wave-ansatz}\\
+E_z(z,t)&=\epsilon_z\sin\theta,
+&
+B_z(z,t)&=\beta_z\sin\theta.
+\nonumber
+\end{align}
+Эти шесть греческих букв — постоянные амплитуды.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_02.png}
+\caption{Анзац плоской волны с шестью компонентами до того, как уравнения Максвелла исключат недопустимые амплитуды.}
+\par\smallskip
+\textit{Кадр лекции: 00:08:45.}
+\end{figure}
+
+Почему мы начинаем с одной и той же синусоидальной зависимости для \(\mathbf E\) и
+\(\mathbf B\)? Предположим, что одно поле содержит \(\sin\theta\), а другое —
+\(\cos\theta\). Тогда производная по времени с одной стороны уравнения ротора и пространственная производная с другой дали бы разные тригонометрические функции. Равенство не могло бы выполняться при всех \(z\)
+и \(t\). Общая постоянная фаза допустима, но сдвиг начала отсчета
+\(z\) ее устраняет. Таким образом, этот анзац — не дополнительный динамический
+закон; это простейший представитель того фазового соотношения, которое
+потребуют дифференциальные уравнения.
+
+Пока ни одно уравнение Максвелла не использовано. Мы лишь выбрали направление,
+длину волны и удобное начало отсчета фазы. Теперь уравнения решат,
+какие амплитуды сохраняются.
+
+\subsection{Ограничения на дивергенцию}
+
+Поскольку поля зависят только от \(z\) и \(t\),
+\begin{equation}
+\nabla\cdot\mathbf E
+=
+\partial_xE_x+\partial_yE_y+\partial_zE_z
+=
+\partial_zE_z.
+\end{equation}
+В пустом пространстве это должно обращаться в нуль при любой фазе, так что
+\begin{equation}
+\epsilon_z=0.
+\label{eq:epsilon-z-zero}
+\end{equation}
+Тот же самый довод для магнитного поля дает
+\begin{equation}
+\beta_z=0.
+\label{eq:beta-z-zero}
+\end{equation}
+Ни одно из полей не имеет компоненты вдоль направления распространения. Волна поперечна.
+
+В поперечной плоскости \(xy\) остается свобода поворота. Пара \((\epsilon_x,\epsilon_y)\) — обычный двумерный вектор,
+поэтому повернем поперечные оси так, чтобы
+\begin{equation}
+\epsilon_y=0,
+\qquad
+\epsilon_x\ne0.
+\label{eq:polarization-axis}
+\end{equation}
+Это выбор линейной поляризации, а не ограничение физического содержания задачи.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_03.png}
+\caption{Продольные амплитуды исчезли, и выбрана поперечная электрическая ось.}
+\par\smallskip
+\textit{Кадр лекции: 00:14:30.}
+\end{figure}
+
+\subsection{Уравнения ротора}
+
+Возьмем \(x\)-компоненту уравнения
+\(\dot{\mathbf E}=-\nabla\times\mathbf B\). Поскольку поля зависят только
+от \(z\),
+\begin{equation}
+\dot E_x
+=
+-\left(\nabla\times\mathbf B\right)_x
+=
+\partial_zB_y.
+\end{equation}
+Подстановка анзаца дает
+\begin{align}
+-\omega\epsilon_x\cos\theta
+&=
+k\beta_y\cos\theta,
+\nonumber\\
+\beta_y
+&=
+-\,\epsilon_x\frac{\omega}{k}.
+\label{eq:beta-y-epsilon}
+\end{align}
+\(y\)-компонента того же уравнения Максвелла имеет вид
+\begin{equation}
+\dot E_y
+=
+-\left(\partial_zB_x\right).
+\end{equation}
+Левая часть равна нулю в силу нашего выбора поляризации, так что
+\begin{equation}
+\beta_x=0.
+\label{eq:beta-x-zero}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_04.png}
+\caption{Покомпонентный расчет ротора связывает \(\epsilon_x\) с
+\(\beta_y\) и устраняет оставшуюся магнитную амплитуду.}
+\par\smallskip
+\textit{Кадр лекции: 00:20:15.}
+\end{figure}
+
+Геометрия тем самым фиксирована:
+\begin{equation}
+\mathbf E\parallel\hat{\mathbf x},
+\qquad
+\mathbf B\parallel\hat{\mathbf y},
+\qquad
+\mathbf k\parallel\hat{\mathbf z}.
+\end{equation}
+Электрическое поле, магнитное поле и направление распространения взаимно перпендикулярны.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\linewidth]{lecture_09_figure_05.png}
+\caption{Изображение на доске поперечных электрических и магнитных колебаний, распространяющихся вдоль оси \(z\).}
+\par\smallskip
+\textit{Кадр лекции: 00:23:15.}
+\end{figure}
+
+Другое уравнение ротора дает независимое соотношение между амплитудами. Его \(y\)-компонента имеет вид
+\begin{equation}
+\dot B_y=(\nabla\times\mathbf E)_y=\partial_zE_x,
+\end{equation}
+и, следовательно,
+\begin{align}
+-\omega\beta_y\cos\theta
+&=
+k\epsilon_x\cos\theta,
+\nonumber\\
+\epsilon_x
+&=
+-\,\beta_y\frac{\omega}{k}.
+\label{eq:epsilon-beta-y}
+\end{align}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_06.png}
+\caption{Взаимные соотношения амплитуд над эскизом поперечной волны.}
+\par\smallskip
+\textit{Кадр лекции: 00:25:00.}
+\end{figure}
+
+Объединяя уравнения \eqref{eq:beta-y-epsilon} и
+\eqref{eq:epsilon-beta-y}, получаем дисперсионное соотношение
+\begin{equation}
+\left(\frac{\omega}{k}\right)^2=1.
+\end{equation}
+Для волны с положительной частотой, движущейся в выбранном направлении,
+\begin{equation}
+\omega=k
+\qquad
+(c=1).
+\label{eq:omega-k}
+\end{equation}
+Поэтому общая фаза равна
+\begin{equation}
+\theta=k(z-t).
+\end{equation}
+Возвращаясь к обычным единицам, получаем
+\begin{equation}
+\omega=ck,
+\qquad
+\theta=k(z-ct).
+\label{eq:restore-c-wave}
+\end{equation}
+Тем самым профиль переносится без искажения со скоростью света. В единицах, использованных на доске,
+электрическая и магнитная амплитуды имеют одинаковую величину.
+Их относительный знак минус — это соглашение об ориентации: он указывает,
+в какую сторону направлена выбранная ось \(y\), а не на то, что одно поле отстает от другого на четверть периода.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_07.png}
+\caption{Окончательный вид плоской волны после наложения условия \(\omega=k\).}
+\par\smallskip
+\textit{Кадр лекции: 00:26:45.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Разве размерности \(\omega\) и \(k\) не различны?}
+\lecturerresponse{Различны в обычных единицах: \(\omega\) имеет размерность обратного времени,
+а \(k\) — обратной длины. При \(c=1\) время и длина имеют одну и ту же
+единицу. Восстановление \(c\) превращает \(\omega=k\) в \(\omega=ck\), в точности как и
+требует размерностный анализ. \lecturetimestamp{00:25:55}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Всегда ли электрическое и магнитное поля в плоской волне находятся в одной фазе?}
+\lecturerresponse{Их фазовая зависимость одинакова. Их знаковые
+амплитуды могут отличаться знаком минус, что можно описать как
+разворот на \(180^\circ\), но уравнения Максвелла не допускают
+\(90^\circ\) сдвига синус--косинус для этой линейно поляризованной плоской волны.
+Круговая поляризация составляется из поперечных компонент и
+требует более аккуратного языка, но она не изменяет этого покомпонентного
+соотношения Максвелла. \lecturetimestamp{00:27:31}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Если оба поля одновременно проходят через нуль, сохраняется ли
+энергия?}
+\lecturerresponse{Да. Плотность энергии в одной фиксированной точке осциллирует,
+когда волна проходит мимо, но энергия переместилась, а не исчезла.
+То, что в один момент времени занимало одну область, мгновение спустя занимает соседнюю.
+Локальный перенос энергии, более полно представляемый потоком
+Пойнтинга, согласует изменяющуюся плотность с законом сохранения.
+\lecturetimestamp{00:28:15}}
+\end{classroomqa}
+
+Уравнения Максвелла линейны. Амплитуда \(\epsilon_x\) может быть
+большой или малой, \(\beta_y\) из нее следует, и любая сумма или разность
+решений снова является решением. Поэтому волны, распространяющиеся в разных направлениях,
+могут накладываться друг на друга. Этот короткий расчет стоит проделать:
+изложение электромагнетизма не должно оставлять электромагнитную волну
+просто необъясненной цитатой.
+
+\begin{classroomqa}
+\audiencequestion{Предполагалось ли в выводе с самого начала, что
+\(\mathbf E\) и \(\mathbf B\) имеют одну и ту же фазу?}
+\lecturerresponse{Общая фаза была записана как анзац, но она
+не является независимым физическим предположением. Поскольку на каждой стороне уравнений ротора
+берется производная от поля, уравнения исключают нетривиальную
+относительную фазу. После этого общий фазовый сдвиг можно устранить сдвигом начала отсчета. \lecturetimestamp{00:29:56}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Откуда взялось второе соотношение
+\(\epsilon_x=-\beta_y\omega/k\)?}
+\lecturerresponse{Первое соотношение следовало из
+\(\dot{\mathbf E}=-\nabla\times\mathbf B\). Второе получается из
+сопутствующего уравнения \(\dot{\mathbf B}=\nabla\times\mathbf E\), где
+\(\mathbf E\) и \(\mathbf B\) меняются местами в том же покомпонентном
+вычислении. Для получения \(\omega^2=k^2\) нужны оба.
+\lecturetimestamp{00:30:25}}
+\end{classroomqa}
+
+\section{Почему дифференциальных уравнений недостаточно}
+
+Теперь мы переходим от частного решения к структуре теории.
+Именно принцип наименьшего действия организует закон сохранения энергии,
+закон сохранения импульса и их связь с симметриями пространства-времени.
+Можно придумать дифференциальные уравнения, у которых нет энергии, которую стоило бы
+назвать сохраняющейся, и нет никакого полезного принципа симметрии. Уравнения Максвелла,
+напротив, должны следовать из лагранжиана.
+
+Нужно вывести только динамическое семейство:
+\begin{equation}
+\partial_\mu F^{\mu\nu}=J^\nu.
+\label{eq:target-sourced-maxwell}
+\end{equation}
+Семейство Бианки уже следует из определения \(F_{\mu\nu}\).
+На языке трёхвекторов наша конвенция даёт
+\begin{align}
+\nabla\cdot\mathbf E&=\rho,
+\label{eq:gauss-source}
+\\
+\dot{\mathbf E}+\nabla\times\mathbf B&=-\,\mathbf J.
+\label{eq:ampere-course-sign}
+\end{align}
+Знак минус в \eqref{eq:ampere-course-sign} важен. Это
+покомпонентная форма \eqref{eq:target-sourced-maxwell} при
+\eqref{eq:course-f-convention}, и мы снова обнаружим его при непосредственной
+проверке знака ближе к концу.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_08.png}
+\caption{Полная запись уравнений Максвелла на доске при переходе от волнового решения к принципу действия.}
+\par\smallskip
+\textit{Кадр лекции: 00:32:45.}
+\end{figure}
+
+\section{Локальная релятивистская теория поля}
+
+Первый принцип — локальность. Действие есть интеграл по пространству-времени
+от плотности, построенной из полей и их первых производных в той же
+точке:
+\begin{equation}
+S=\int d^4x\,\mathcal L(\phi,\phi_{,\mu}),
+\qquad
+\phi_{,\mu}\equiv\partial_\mu\phi.
+\label{eq:local-action}
+\end{equation}
+Запятая — это компактное обозначение производной. Второй принцип —
+лоренц-инвариантность: \(\mathcal L\) должен быть скаляром.
+
+\subsection{Тренировка на скалярном поле}
+
+Прежде чем варьировать четырёхвектор, отработаем метод на одном скалярном поле.
+Локальный лоренц-скаляр может зависеть от потенциала \(U(\phi)\) и от
+свёртки двух производных:
+\begin{equation}
+\mathcal L_\phi
+=
+-\frac12\,\partial_\mu\phi\,\partial^\mu\phi-U(\phi).
+\label{eq:scalar-lagrangian}
+\end{equation}
+При метрике с тремя плюсами,
+\begin{equation}
+\partial_\mu\phi\,\partial^\mu\phi
+=
+-\dot\phi^{\,2}+|\nabla\phi|^2,
+\end{equation}
+поэтому
+\begin{equation}
+\mathcal L_\phi
+=
+\frac12\dot\phi^{\,2}
+-\frac12|\nabla\phi|^2
+-U(\phi).
+\end{equation}
+Производная по времени с поднятым индексом отличается по знаку от производной с опущенным; производные по пространственным координатам с поднятыми
+и опущенными индексами не отличаются.
+
+\begin{classroomqa}
+\audiencequestion{Имеет ли какой-нибудь смысл писать индекс производной
+сверху, а не снизу?}
+\lecturerresponse{Да. Поднятие индекса означает свёртку с обратной
+метрикой. При сигнатуре \((-+++)\),
+\(\partial^0=-\partial_0\), тогда как
+\(\partial^i=\partial_i\). Именно поэтому член с производной
+по времени несёт знак, противоположный трём пространственным членам.
+\lecturetimestamp{00:38:02}}
+\end{classroomqa}
+
+Уравнение Эйлера--Лагранжа для поля имеет вид
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial\phi_{,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial\phi}.
+\label{eq:field-el}
+\end{equation}
+Для \eqref{eq:scalar-lagrangian},
+\begin{equation}
+\frac{\partial\mathcal L_\phi}{\partial\phi_{,\mu}}
+=
+-\partial^\mu\phi,
+\qquad
+\frac{\partial\mathcal L_\phi}{\partial\phi}
+=
+-U'(\phi),
+\end{equation}
+и, следовательно,
+\begin{equation}
+\Box\phi=U'(\phi),
+\qquad
+\Box\equiv\partial_\mu\partial^\mu.
+\end{equation}
+Эквивалентно,
+\begin{equation}
+\ddot\phi-\nabla^2\phi=-U'(\phi).
+\label{eq:scalar-wave}
+\end{equation}
+На доске перед тем, как члены с \(y\) и \(z\) оставляются неявными, явно записана только производная по \(x\). Результат — знакомое волновое уравнение
+с силовым членом от потенциала.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_09.png}
+\caption{Локальность, лоренц-инвариантный скалярный лагранжиан и
+уравнение Эйлера--Лагранжа в теории поля.}
+\par\smallskip
+\textit{Кадр лекции: 00:41:00.}
+\end{figure}
+
+Электромагнитное вычисление — тот же вариационный процесс, но с
+четырьмя полями и большим числом индексов.
+
+\section{Калибровочная инвариантность выбирает максвелловский скаляр}
+
+Добавим третий принцип: калибровочную инвариантность. Пока положим
+\(J^\mu=0\) и рассмотрим свободное поле. Калибровочное преобразование имеет вид
+\begin{equation}
+A_\mu\longrightarrow A_\mu+\partial_\mu\chi.
+\label{eq:gauge-transform}
+\end{equation}
+Тензор поля не меняется, потому что смешанные вторые производные
+коммутируют:
+\begin{align}
+F_{\mu\nu}
+&\longrightarrow
+F_{\mu\nu}
++\partial_\mu\partial_\nu\chi
+-\partial_\nu\partial_\mu\chi
+\nonumber\\
+&=F_{\mu\nu}.
+\end{align}
+
+Одна лишь лоренц-инвариантность допускала бы скаляр
+\begin{equation}
+A_\mu A^\mu.
+\end{equation}
+Тем не менее в теории Максвелла он запрещён, потому что меняется при
+\eqref{eq:gauge-transform}. Индексы в этом выражении обозначают компоненты
+поля; это не производные. Производная обозначается запятой, как в
+\(A_{\nu,\mu}=\partial_\mu A_\nu\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_10.png}
+\caption{Калибровочное преобразование и лоренц-скаляр
+\(A_\mu A^\mu\), который отвергается, потому что не является калибровочно-инвариантным.}
+\par\smallskip
+\textit{Кадр лекции: 00:43:40.}
+\end{figure}
+
+Следовательно, свободный лагранжиан следует строить из \(F_{\mu\nu}\).
+Линейный след не проходит:
+\begin{equation}
+F^\mu{}_\mu=0.
+\end{equation}
+Антисимметрия заставляет каждую диагональную компоненту обращаться в нуль:
+\begin{equation}
+F_{00}=F_{11}=F_{22}=F_{33}=0.
+\end{equation}
+Поднятие индекса может изменить знак, но не может превратить нуль во что-то другое.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_11.png}
+\caption{Попытка взять линейный след и обращающиеся в нуль диагональные элементы
+антисимметричного тензора поля.}
+\par\smallskip
+\textit{Кадр лекции: 00:47:00.}
+\end{figure}
+
+Первый ненулевой лоренц-скаляр квадратичен:
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}.
+\label{eq:f2-scalar}
+\end{equation}
+Давайте распишем свёртку, а не просто приведём готовый результат. Смешанные компоненты
+содержат электрическое поле. Поднятие их временного индекса даёт
+знак минус, и встречаются оба порядка \(0i\) и \(i0\):
+\begin{equation}
+\sum_i\left(F_{0i}F^{0i}+F_{i0}F^{i0}\right)
+=-2E^2.
+\end{equation}
+Чисто пространственные компоненты содержат магнитное поле. Поднятие
+пространственных индексов знака не меняет, и оба порядка снова встречаются:
+\begin{equation}
+\sum_{i<j}\left(F_{ij}F^{ij}+F_{ji}F^{ji}\right)
+=2B^2.
+\end{equation}
+Следовательно,
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}=2(B^2-E^2),
+\qquad
+-F_{\mu\nu}F^{\mu\nu}=2(E^2-B^2).
+\label{eq:f2-eb}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_12.png}
+\caption{Полностью вычисленная свёртка, выраженная через модули электрического и магнитного
+полей.}
+\par\smallskip
+\textit{Кадр лекции: 00:51:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Равен ли \(F_{00}\) тоже нулю?}
+\lecturerresponse{Да. Каждая диагональная компонента антисимметричного
+тензора равна нулю, включая \(F_{00}\). Вклад дают только недиагональные смешанные
+компоненты, которые кодируют \(\mathbf E\), и недиагональные пространственные
+компоненты, которые кодируют \(\mathbf B\).
+\lecturetimestamp{00:51:36}}
+\end{classroomqa}
+
+Стандартная нормировка имеет вид
+\begin{equation}
+\boxed{
+\mathcal L_{\mathrm{EM}}
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+}
+\label{eq:maxwell-lagrangian}
+\end{equation}
+или
+\begin{equation}
+\mathcal L_{\mathrm{EM}}
+=
+\frac12(E^2-B^2).
+\label{eq:maxwell-lagrangian-eb}
+\end{equation}
+Знак минус даёт электрическому члену привычный положительный знак. Множитель
+\(1/4\) компенсирует двукратное появление каждой антисимметричной
+пары и оставляет стандартный множитель \(1/2\). Умножение всего
+свободного действия на ненулевую константу не изменило бы его уравнений
+без источников, но именно эта нормировка согласуется со стандартной
+связью с источником.
+
+\section{Варьирование свободного электромагнитного поля}
+
+Независимыми полями являются
+\begin{equation}
+A_0,\qquad A_x,\qquad A_y,\qquad A_z.
+\end{equation}
+Для каждой компоненты \(A_\nu\) уравнение Эйлера--Лагранжа имеет вид
+\begin{equation}
+\partial_\mu\left(
+\frac{\partial\mathcal L}{\partial A_{\nu,\mu}}
+\right)
+=
+\frac{\partial\mathcal L}{\partial A_\nu},
+\qquad
+A_{\nu,\mu}\equiv\partial_\mu A_\nu.
+\label{eq:vector-el-comma}
+\end{equation}
+Расположение индексов в обозначении с запятой стоит читать медленно: первый
+индекс указывает, какая компонента \(A\) является полем; второй указывает
+координату дифференцирования.
+
+В этом обозначении,
+\begin{equation}
+F_{\mu\nu}
+=
+A_{\nu,\mu}-A_{\mu,\nu}.
+\label{eq:f-comma-consistent}
+\end{equation}
+Это в точности \eqref{eq:course-f-convention}. Если словесно читать индексы при запятой
+в противоположном порядке, меняется промежуточный знак минус, поэтому
+покомпонентное вычисление полезно.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_13.png}
+\caption{Тензор поля, записанный в обозначении с запятой после того, как четыре
+компоненты потенциала были выделены как независимые поля.}
+\par\smallskip
+\textit{Кадр лекции: 00:55:30.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_14.png}
+\caption{Лагранжиан Максвелла, явно записанный через производные
+векторного потенциала.}
+\par\smallskip
+\textit{Кадр лекции: 00:56:45.}
+\end{figure}
+
+\subsection{Одна показательная производная}
+
+Выберем производную \(A_{x,y}=\partial_yA_x\). Члены \(xy\) и \(yx\)
+в полной сумме дают вклад
+\begin{align}
+\mathcal L_{\mathrm{EM}}
+&\supset
+-\frac14\left(F_{xy}F^{xy}+F_{yx}F^{yx}\right)
+\nonumber\\
+&=
+-\frac12F_{xy}^2
+\nonumber\\
+&=
+-\frac12\left(A_{x,y}-A_{y,x}\right)^2.
+\label{eq:isolated-xy-piece}
+\end{align}
+Последнее равенство корректно, потому что при возведении в квадрат знак исчезает:
+\(A_{x,y}-A_{y,x}=F_{yx}=-F_{xy}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_15.png}
+\caption{Показательная производная \(A_{x,y}\) и выделенный
+квадрат антисимметричной комбинации.}
+\par\smallskip
+\textit{Кадр лекции: 01:00:45.}
+\end{figure}
+
+Продифференцируем:
+\begin{align}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial A_{x,y}}
+&=
+-\left(A_{x,y}-A_{y,x}\right)
+\nonumber\\
+&=
+F_{xy}.
+\label{eq:component-variation}
+\end{align}
+На доске это суммировано так, что знак минус приписан тензору, чьи
+индексы идут в порядке записи производной на доске. При используемом во всём курсе
+определении \eqref{eq:course-f-convention} инвариантное утверждение имеет вид
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}
+{\partial(\partial_\mu A_\nu)}
+=
+-F^{\mu\nu}.
+\label{eq:maxwell-canonical-derivative}
+\end{equation}
+Для примера \(\partial_yA_x\) это даёт
+\(-F^{yx}=F^{xy}\), в точности
+\eqref{eq:component-variation}. Таким образом, кажущееся различие знаков
+сводится лишь к вопросу учёта порядка индексов.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_16.png}
+\caption{Раскрытие выбранного квадрата перед дифференцированием по
+одной производной потенциала.}
+\par\smallskip
+\textit{Кадр лекции: 01:03:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Что произошло с множителем \(1/2\) в покомпонентной
+производной?}
+\lecturerresponse{При дифференцировании квадрата появляется множитель два,
+который сокращает \(1/2\):
+\[
+\frac{d}{dx}\left[-\frac12x^2\right]=-x.
+\]
+Прежний переход от \(1/4\) к \(1/2\) возник из-за двух упорядоченных
+тензорных компонент \(xy\) и \(yx\). \lecturetimestamp{01:03:29}}
+\end{classroomqa}
+
+В вакуумном лагранжиане потенциал без производных отсутствует:
+\begin{equation}
+\frac{\partial\mathcal L_{\mathrm{EM}}}{\partial A_\nu}=0.
+\end{equation}
+Подстановка в \eqref{eq:vector-el-comma} даёт
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=0,
+\end{equation}
+или, эквивалентно,
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=0.}
+\label{eq:free-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_17.png}
+\caption{Покомпонентный результат в обобщённом виде, подставленный в
+уравнение Эйлера--Лагранжа.}
+\par\smallskip
+\textit{Кадр лекции: 01:09:00.}
+\end{figure}
+
+Тот же вывод получается чище, если варьировать всё действие:
+\begin{align}
+\delta S_{\mathrm{EM}}
+&=
+-\frac12\int d^4x\,
+F^{\mu\nu}
+\left(\partial_\mu\delta A_\nu
+-\partial_\nu\delta A_\mu\right)
+\nonumber\\
+&=
+-\int d^4x\,F^{\mu\nu}\partial_\mu\delta A_\nu
+\nonumber\\
+&=
+\int d^4x\,
+\left(\partial_\mu F^{\mu\nu}\right)\delta A_\nu,
+\label{eq:global-maxwell-variation}
+\end{align}
+где граничный член отбрасывается. Антисимметрия объединяет два
+члена в первой строке. Поскольку \(\delta A_\nu\) произвольно,
+следует \eqref{eq:free-maxwell-from-action}.
+
+\begin{classroomqa}
+\audiencequestion{Не предполагал ли выделенный квадрат, что магнитное поле
+направлено только вдоль \(z\)?}
+\lecturerresponse{Нет. Это был один член, вынесенный из полной суммы для
+рассмотрения; после него должно стоять многоточие. Оставшиеся пространственные пары
+dают другие компоненты магнитного поля, а пары время--пространство дают
+электрические компоненты. \lecturetimestamp{01:08:05}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Изменится ли результат, если выбрать один временной индекс вместо двух пространственных индексов?}
+\lecturerresponse{Получается та же общая производная, а знак метрики учитывается при поднятии индекса. Два пространственных индекса выделяют магнитную компоненту; один временной и один пространственный индекс выделяют электрическую компоненту. Антисимметричная формула \eqref{eq:maxwell-canonical-derivative} охватывает оба случая.
+\lecturetimestamp{01:08:46}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Мы всё ещё предполагаем \(J^\mu=0\)?}
+\lecturerresponse{Только для этого вывода для свободного поля. Ток был временно положен равным нулю, чтобы можно было выделить калибровочно-инвариантный кинетический член. Теперь мы восстанавливаем его и спрашиваем, какой дополнительный член даёт правую часть уравнения Максвелла. \lecturetimestamp{01:09:41}}
+\end{classroomqa}
+
+Алгебра не трудна, но её нужно проделать, а не просто наблюдать. Однократное прослеживание цепочки индексов не закрепляет её надолго; а воспроизведение этой цепочки от руки закрепляет.
+
+\section{Сохраняющийся четырёхток}
+
+Источником является четырёхток
+\begin{equation}
+J^\mu=(\rho,\mathbf J).
+\end{equation}
+Его временная компонента — это плотность заряда, а пространственные компоненты — потоки заряда через три взаимно перпендикулярных окна. Эквивалентно, для небольшого неподвижного ящика,
+\begin{equation}
+\frac{\partial\rho}{\partial t}
++\nabla\cdot\mathbf J=0.
+\label{eq:continuity-vector-l9}
+\end{equation}
+Заряд внутри ящика может уменьшаться только за счёт протекания через его границу. В ковариантной записи,
+\begin{equation}
+\boxed{\partial_\mu J^\mu=0.}
+\label{eq:continuity-covariant-l9}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_18.png}
+\caption{Напоминание о плотности заряда, пространственном токе и интерпретации через малый ящик перед введением связи с источником.}
+\par\smallskip
+\textit{Кадр лекции: 01:14:45.}
+\end{figure}
+
+\section{Связь с источником и калибровочная инвариантность}
+
+Простейший локальный лоренц-инвариантный скаляр, линейный как по току, так и по потенциалу, имеет вид
+\begin{equation}
+S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu A_\mu.
+\label{eq:interaction-action}
+\end{equation}
+Общий знак задаётся соглашением. В лекции в шутку говорится, что исторический выбор знака электрического заряда в конечном счёте можно свалить на Benjamin Franklin; реальная суть в том, что всюду нужно использовать одну и ту же согласованную знаковую конвенцию.
+
+На первый взгляд \eqref{eq:interaction-action} не выглядит калибровочно-инвариантным.
+При преобразовании \eqref{eq:gauge-transform},
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+-\int d^4x\,J^\mu\partial_\mu\chi.
+\label{eq:gauge-variation-interaction}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_19.png}
+\caption{Действие взаимодействия и его вариация при \(A_\mu\mapsto A_\mu+\partial_\mu\chi\).}
+\par\smallskip
+\textit{Кадр лекции: 01:16:45.}
+\end{figure}
+
+Чтобы увидеть механизм в элементарных терминах, разложим свёртку:
+\begin{equation}
+J^\mu\partial_\mu\chi
+=
+J^0\partial_0\chi
++J^1\partial_1\chi
++J^2\partial_2\chi
++J^3\partial_3\chi.
+\end{equation}
+Предположим, что ток ограничен большой лабораторией или достаточно быстро спадает, так что на границе он обращается в нуль. Проинтегрируем по частям каждый член. Например, для первой пространственной координаты,
+\begin{align}
+-\int d^4x\,J^1\partial_1\chi
+&=
+-\int dt\,dx^2\,dx^3
+\left[J^1\chi\right]_{x^1=-\infty}^{x^1=+\infty}
+\nonumber\\
+&\quad
++\int d^4x\,\chi\,\partial_1J^1
+\nonumber\\
+&=
+\int d^4x\,\chi\,\partial_1J^1.
+\end{align}
+Та же операция применяется к временному члену и двум другим пространственным членам.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_20.png}
+\caption{Четыре члена калибровочной вариации, разложенные до интегрирования по частям.}
+\par\smallskip
+\textit{Кадр лекции: 01:19:15.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_21.png}
+\caption{Показательное интегрирование по частям переносит производную с калибровочной функции на ток.}
+\par\smallskip
+\textit{Кадр лекции: 01:20:45.}
+\end{figure}
+
+Собирая все четыре компоненты,
+\begin{equation}
+\delta_\chi S_{\mathrm{int}}
+=
+\int d^4x\,\chi\,\partial_\mu J^\mu.
+\label{eq:gauge-variation-continuity}
+\end{equation}
+Следовательно,
+\begin{equation}
+\partial_\mu J^\mu=0
+\quad\Longrightarrow\quad
+\delta_\chi S_{\mathrm{int}}=0.
+\end{equation}
+При принятых граничных условиях взаимодействие с источником является калибровочно-инвариантным в точности тогда, когда ток локально сохраняется.
+
+\begin{classroomqa}
+\audiencequestion{Достаточно ли потребовать только \(\nabla\cdot\mathbf J=0\)?}
+\lecturerresponse{Нет. Нужны все четыре члена:
+\[
+\partial_\mu J^\mu
+=
+\dot\rho+\nabla\cdot\mathbf J=0.
+\]
+Первый член — это изменение плотности заряда в неподвижном ящике. Ненулевая пространственная дивергенция допустима, если она уравновешивается этим изменением. \lecturetimestamp{01:22:00}}
+\end{classroomqa}
+
+\section{Уравнение Максвелла с источником}
+
+Полная электромагнитная плотность лагранжиана имеет вид
+\begin{equation}
+\boxed{
+\mathcal L
+=
+-\frac14F_{\mu\nu}F^{\mu\nu}
+-J^\mu A_\mu.
+}
+\label{eq:full-maxwell-lagrangian}
+\end{equation}
+Член источника не содержит производной от \(A_\nu\), поэтому он оставляет \eqref{eq:maxwell-canonical-derivative} без изменения и даёт вклад
+\begin{equation}
+\frac{\partial\mathcal L}{\partial A_\nu}=-J^\nu.
+\end{equation}
+Поэтому уравнение Эйлера--Лагранжа даёт
+\begin{equation}
+-\partial_\mu F^{\mu\nu}=-J^\nu,
+\end{equation}
+или
+\begin{equation}
+\boxed{\partial_\mu F^{\mu\nu}=J^\nu.}
+\label{eq:sourced-maxwell-from-action}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_22.png}
+\caption{Свободный член и член источника, показанные вместе с характерными производными Эйлера--Лагранжа.}
+\par\smallskip
+\textit{Кадр лекции: 01:25:00.}
+\end{figure}
+
+Несохраняющийся заданный ток привёл бы сразу к двум сбоям. Действие взаимодействия не было бы калибровочно-инвариантным, а уравнения Максвелла с источником были бы несовместны. Заряд не может просто исчезнуть внутри области без компенсирующего потока через её границу.
+
+\section{Уравнения Максвелла снова дают закон сохранения}
+
+Совместимость можно прочитать прямо из уравнения поля. Применяя \(\partial_\nu\) к \eqref{eq:sourced-maxwell-from-action}, получаем
+\begin{equation}
+\partial_\nu J^\nu
+=
+\partial_\nu\partial_\mu F^{\mu\nu}
+=0,
+\label{eq:antisymmetry-implies-continuity}
+\end{equation}
+поскольку производные симметричны относительно \(\mu\leftrightarrow\nu\), тогда как \(F^{\mu\nu}\) антисимметричен.
+
+В лекции это также проверяется в трёхвекторной форме, и эта проверка выявляет сделанную по ходу дела ошибку в знаке. Начнём с закона Гаусса:
+\begin{equation}
+\rho=\nabla\cdot\mathbf E.
+\end{equation}
+Продифференцируем по времени:
+\begin{equation}
+\dot\rho=\nabla\cdot\dot{\mathbf E}.
+\label{eq:rho-dot-div-edot}
+\end{equation}
+На доске предварительно было записано уравнение
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B+\mathbf J.
+\label{eq:provisional-wrong-source-sign}
+\end{equation}
+Его дивергенция дала бы
+\begin{equation}
+\dot\rho=\nabla\cdot\mathbf J,
+\end{equation}
+поскольку дивергенция ротора равна нулю. Это противоречит
+\eqref{eq:continuity-vector-l9}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_23.png}
+\caption{Предварительное уравнение на доске с \(\mathbf J\) со знаком плюс, дающее неверный знак в уравнении непрерывности.}
+\par\smallskip
+\textit{Кадр лекции: 01:27:00.}
+\end{figure}
+
+Несоответствие не скрывается. Вычисление заново прослеживается в реальном времени; формулируется требуемое уравнение непрерывности; и один из слушателей проверяет уравнение и указывает знак при источнике. Согласованное с обычной конвенцией компонентное уравнение имеет вид
+\begin{equation}
+\boxed{
+\dot{\mathbf E}+\nabla\times\mathbf B=-\,\mathbf J,
+}
+\label{eq:corrected-source-sign}
+\end{equation}
+или
+\begin{equation}
+\dot{\mathbf E}
+=
+-\nabla\times\mathbf B-\mathbf J.
+\end{equation}
+Теперь уравнения \eqref{eq:rho-dot-div-edot} и
+\eqref{eq:corrected-source-sign} дают
+\begin{align}
+\dot\rho
+&=
+\nabla\cdot
+\left(-\nabla\times\mathbf B-\mathbf J\right)
+\nonumber\\
+&=
+-\nabla\cdot\mathbf J,
+\end{align}
+что в точности и есть локальное сохранение заряда.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{lecture_09_figure_24.png}
+\caption{Исправленный знак при источнике и восстановленное уравнение непрерывности.}
+\par\smallskip
+\textit{Кадр лекции: 01:31:00.}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Должен ли член с током справа быть \(-\mathbf J\)?}
+\lecturerresponse{Да. При соглашении для тензора поля, используемом на протяжении всего курса, пространственная часть \(\partial_\mu F^{\mu\nu}=J^\nu\) имеет вид \(\dot{\mathbf E}+\nabla\times\mathbf B=-\mathbf J\).
+Это исправление приводит к тому, что вычисление дивергенции воспроизводит \(\dot\rho+\nabla\cdot\mathbf J=0\), и не изменяет предыдущего ковариантного вывода из действия. \lecturetimestamp{01:30:17}}
+\end{classroomqa}
+
+\section{Какой принцип является фундаментальным?}
+
+\begin{classroomqa}
+\audiencequestion{Является ли это рассуждение круговым? Мы использовали сохранение заряда, чтобы сделать действие калибровочно-инвариантным, затем использовали действие для вывода уравнений Максвелла, а уравнения Максвелла влекут сохранение заряда.}
+\lecturerresponse{Эти утверждения взаимно совместимы, а не образуют круговое доказательство, предполагающее собственный вывод. Можно начать с наблюдаемых уравнений Максвелла и вывести уравнение непрерывности; тогда \(-J^\mu A_\mu\) распознаётся как калибровочно-инвариантная связь. Или можно начать с локальности, лоренц-инвариантности, калибровочной инвариантности и действия; калибровочная инвариантность требует сохраняющегося тока, а действие даёт уравнения Максвелла. Или можно считать первичным физический факт, что заряд не исчезает локально. Каждый путь приводит к одной и той же структуре. \lecturetimestamp{01:31:11}}
+\end{classroomqa}
+
+Если спрашивать о наиболее экономном конструктивном пути, то сочетание локальности, лоренц-инвариантности, калибровочной инвариантности и лагранжева принципа выделяет
+\begin{equation}
+-\frac14F_{\mu\nu}F^{\mu\nu}-J^\mu A_\mu
+\end{equation}
+и тем самым динамическое уравнение Максвелла. Называть один элемент этого треугольника более фундаментальным — отчасти вопрос вкуса. Важный факт состоит в том, что эти элементы согласуются.
+
+\section{Почему слово \emph{калибровка}?}
+
+\begin{classroomqa}
+\audiencequestion{Математика ясна, но что здесь означает слово \emph{калибровка}?}
+\lecturerresponse{Это название — исторический анахронизм. Калибровка может относиться к выбранному нулю, как, например, давление, измеряемое относительно некоторого эталона. Hermann Weyl первоначально связал эту идею с локальным эталоном длины; такая интерпретация не была правильной физикой. Термин сохранился, когда эту свободу правильно связали с фазой квантовой волновой функции. В данном классическом вычислении замена \(A_\mu\) на \(\partial_\mu\chi\) меняет условный нуль описания, не изменяя \(F_{\mu\nu}\). Более глубокий квантовый смысл пока откладывается.
+\lecturetimestamp{01:34:49}}
+\end{classroomqa}
+
+Исторический ярлык не должен заслонять рабочее утверждение: потенциалы, связанные преобразованием \eqref{eq:gauge-transform}, описывают одно и то же электромагнитное поле. Поэтому калибровочная свобода является избыточностью описания через потенциал, тогда как тензор поля калибровочно-инвариантен.
+
+\section{Почему два семейства уравнений Максвелла выглядят несимметрично}
+
+\begin{classroomqa}
+\audiencequestion{Если электрическое и магнитное поля столь симметричны, почему одно из семейств уравнений Максвелла выступает как тождество Бианки, тогда как другое получается из уравнений движения?}
+\lecturerresponse{В электромагнетизме без источников можно ввести дуальный потенциал так, чтобы роли поменялись местами: то, что было уравнением движения, становится тождеством Бианки, и наоборот. Физическая асимметрия вносится источниками. Электрические заряды наблюдаются, тогда как элементарные магнитные монополи не были обнаружены. Если бы существовала точная обычная симметрия, переставляющая электрические и магнитные заряды, следовало бы ожидать магнитных аналогов с соответствующими спектрами, но их не наблюдают. Более сложные теории всё же могут содержать магнитные заряды или электрические--магнитные дуальности, но это выходит за рамки данного вывода. \lecturetimestamp{01:37:11}}
+\end{classroomqa}
+
+Таким образом, уравнения без источников обладают структурой, допускающей электрическо--магнитную перестановку, тогда как наблюдаемый сектор источников выбирает электрическое описание. Это больше, чем типографская условность, но это не устраняет симметрию, видимую в свободной плоской волне.
+
+\section{Что было собрано воедино}
+
+Теперь путь по лекции завершён:
+\begin{enumerate}
+\item Уравнения Максвелла заставляют плоскую волну быть поперечной, с ортогональными электрическим и магнитным полями и дисперсионным соотношением \(\omega=ck\).
+\item Уравнения Бианки — это тождества, следующие из потенциала; свёрнутые уравнения являются динамическими.
+\item Локальность и инвариантность Лоренца приводят нас к плотности действия, тогда как калибровочная инвариантность исключает \(A_\mu A^\mu\) и выделяет скаляр, построенный из \(F_{\mu\nu}\).
+\item Свободное действие \(-\tfrac14F_{\mu\nu}F^{\mu\nu}\) даёт вакуумное уравнение Максвелла.
+\item Взаимодействие \(-J^\mu A_\mu\) является калибровочно-инвариантным в точности тогда, когда ток удовлетворяет уравнению непрерывности.
+\item Действие с источником даёт \(\partial_\mu F^{\mu\nu}=J^\nu\), а из антисимметрии обратно получается \(\partial_\mu J^\mu=0\).
+\end{enumerate}
+
+Это очень богатая структура: лагранжева механика, релятивистская теория поля, электродинамика, инвариантность Лоренца, калибровочная инвариантность и локальное сохранение заряда стали частями единого рассуждения. Единственный надёжный способ это усвоить — снова начать с уравнений и вручную проследить каждую производную и каждый знак.
