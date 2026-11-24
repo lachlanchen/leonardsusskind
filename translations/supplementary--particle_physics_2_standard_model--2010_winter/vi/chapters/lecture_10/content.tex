@@ -1,0 +1,811 @@
+\chapter{Thang Higgs, các hằng số ghép chạy, và bài toán phân cấp}
+
+\lectureoverview{Bài giảng cuối cùng mở đầu bằng cách nhìn vượt ra ngoài Mô hình Chuẩn, hướng tới sự thống nhất, siêu đối xứng, và bài toán phân cấp chuẩn. Để thấy vì sao trường Higgs nằm ở trung tâm của các câu hỏi đó, trước hết ta dựng lại Lagrangian Dirac và chỉ ra rằng khối lượng của một fermion trộn tính chiral trái và phải. Tương tác yếu chiral cấm khối lượng ấy dưới dạng một hạng trần; một liên kết Yukawa bất biến chuẩn chỉ cung cấp nó sau khi trường Higgs nhận một giá trị chân không. Sau đó ta suy ra giá trị chân không ấy từ thế Higgs, đặt câu hỏi vì sao mọi khối lượng sơ cấp đã biết đều gắn với đúng thang nhỏ này, và dùng hiện tượng siêu dẫn như một phép tương tự vật lý. Sau giờ nghỉ, bài giảng phát triển phép tái chuẩn hóa từ sự che chắn trong chất dẫn và điện môi, đưa lập luận vào QED và QCD, theo dõi các hằng số ghép chuẩn tiến tới sự thống nhất, và suy ra thang Planck từ hấp dẫn ở khoảng cách ngắn. Khi đó thang điện-yếu lại xuất hiện như con số nhỏ duy nhất chưa được giải thích.}
+
+\section{Câu hỏi chờ đợi bên ngoài Mô hình Chuẩn}
+
+Mô hình Chuẩn ở đây không được trình bày như một danh mục khép kín. Vào đầu buổi tối nay tôi muốn nói khóa học tiếp theo sẽ đi theo hướng nào. Lý thuyết này có những khó khăn chứ không phải các nghịch lý lôgic: sự phân cấp chuẩn, vai trò có thể có của siêu đối xứng, và câu hỏi về sự thống nhất. Ba thừa số chuẩn
+\begin{equation}
+  SU(3)_c\times SU(2)_L\times U(1)_Y
+  \label{eq:l10-standard-model-group}
+\end{equation}
+mô tả riêng rẽ các tương tác mạnh, yếu, và siêu tích. Liệu chúng có thể là các nhóm con của một nhóm lớn hơn duy nhất không? Một khả năng thường được nghiên cứu là
+\(SU(5)\), trong đó quark và lepton nằm trong các đa bội chung. Việc tự nhiên có dùng đúng cấu trúc cụ thể ấy hay không lại là một câu hỏi khác. Manh mối quan trọng là những cấu trúc có vẻ tách biệt ấy lại khớp rất gọn vào một cấu trúc toán học lớn hơn.
+
+Máy Va chạm Hadron Lớn được xây dựng một phần để phơi bày thứ vật lý nào giải quyết các câu hỏi này. Vào 2010, mục tiêu truy tìm trước mắt nhất của nó là boson Higgs. Việc tìm thấy một Higgs không bao giờ chỉ có nghĩa là thêm một hạt vào một bảng. Một Higgs được nhận diện bởi một tập tính chất móc nối với nhau: giá trị chân không của nó cho khối lượng của các boson vectơ yếu và các fermion, còn dao động của nó thì ghép với chính những hạt ấy bằng các độ mạnh xác định. Một cộng hưởng có các ghép sai sẽ không phải là Higgs của Mô hình Chuẩn. \editorialnote{Bài giảng có trước phát hiện 2012. Vô hướng quan sát được cỡ \(125\,\mathrm{GeV}\) có, trong độ chính xác hiện nay, spin, parity và mẫu ghép đúng như mong đợi đối với Higgs của Mô hình Chuẩn. Tính đến 2026, chưa quan sát thấy hạt siêu đối xứng năng lượng thấp nào. Những dữ kiện về sau này cập nhật bối cảnh lịch sử mà không làm thay đổi lập luận đã được triển khai trong phòng học.}
+
+Con đường đi vào lập luận ấy bắt đầu không phải từ thế Higgs mà từ phương trình Dirac. Ta cần hiểu chính xác khối lượng của một fermion thực sự làm gì trước khi hỏi nó đến từ đâu.
+
+\section{Từ phương trình Dirac đến Lagrangian của nó}
+
+\subsection{Ký hiệu Dirac kiểu cũ}
+
+Trong ký hiệu Hamilton được dùng khi phương trình Dirac lần đầu được đưa ra, cấu trúc của nó là
+\begin{equation}
+  i\partial_t\psi
+  =
+  \left(-i\alpha^i\partial_i+\beta m\right)\psi .
+  \label{eq:l10-dirac-hamiltonian}
+\end{equation}
+Các dấu và các thừa số \(i\) phụ thuộc vào quy ước, và trên bảng viết trực tiếp một số trong đó tạm thời được lược đi. Nội dung bất biến là sự tách biệt giữa các hạng có chứa đạo hàm và một hạng khối lượng không chứa đạo hàm nào.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_02.png}
+\caption{Phương trình Dirac và Lagrangian trong ký hiệu \(\alpha,\beta\) kiểu cũ. Bảng được dùng theo nghĩa cấu trúc hơn là như một quy ước dấu cố định.}
+\lectureframe{00:05:52}
+\label{fig:l10-dirac-alpha-beta}
+\end{figure}
+
+Để thu được một tác dụng mà phép biến phân của nó cho ra phương trình Dirac, hãy nhân phương trình với \(\psi^\dagger\). Đưa mọi hạng về một vế khiến không còn cần dấu bằng nữa, dẫn tới câu đùa toán học nhỏ của buổi tối: một khi phương trình đã được viết thành một biểu thức triệt tiêu, dấu bằng đã làm xong việc của nó. Lagrangian bậc nhất tương ứng có thể được viết một cách sơ đồ là
+\begin{equation}
+  \mathcal L
+  =
+  \psi^\dagger
+  \left(i\partial_t+i\alpha^i\partial_i-\beta m\right)\psi ,
+  \label{eq:l10-dirac-old-lagrangian}
+\end{equation}
+với sự ngầm hiểu rằng một quy ước metric nhất quán sẽ cố định các dấu tương đối.
+
+Các hạng đạo hàm đưa một kích thích từ một điểm không-thời gian sang một điểm lân cận và đồng thời quay các thành phần spinor của nó. Trong bức tranh mạng rời rạc, chúng là các hạng nhảy. Ngược lại, hạng khối lượng hấp thụ rồi phát lại fermion tại cùng một điểm. Nó không có đạo hàm. Phép tác dụng cục bộ này ngay sau đây sẽ bộc lộ là một sự chuyển đổi lặp đi lặp lại giữa hai dạng tay trái và tay phải.
+
+\begin{classroomqa}
+\audiencequestion{Có nên đặt \(\gamma^0\) sau \(\psi^\dagger\) không?\lecturetimestamp{00:05:59}}
+\lecturerresponse{Không, trong dạng không hiệp biến vừa được viết ra thì không. Nhưng câu hỏi đó chỉ thẳng tới ký hiệu hiệp biến. Hãy định nghĩa liên hợp Dirac bởi \(\bar\psi=\psi^\dagger\gamma^0\); khi đó \(\gamma^0\) quả thực đã được gộp sẵn vào đối tượng đứng ở bên trái.}
+\end{classroomqa}
+
+\subsection{Dạng hiệp biến}
+
+Đặt
+\begin{equation}
+  \bar\psi\equiv\psi^\dagger\beta
+  =\psi^\dagger\gamma^0,
+  \qquad
+  \gamma^0\equiv\beta,
+  \qquad
+  \gamma^i\equiv\beta\alpha^i .
+  \label{eq:l10-dirac-adjoint}
+\end{equation}
+Vì \(\beta^2=1\), phép nhân với \(\beta\) cho phép chuyển đổi tự do giữa hai ký hiệu. Đạo hàm theo thời gian trở thành
+\(\bar\psi\gamma^0\partial_0\psi\), các đạo hàm không gian trở thành
+\(\bar\psi\gamma^i\partial_i\psi\), và kết quả là
+\begin{equation}
+  \boxed{\mathcal L_D
+  =\bar\psi\left(i\gamma^\mu\partial_\mu-m\right)\psi .}
+  \label{eq:l10-covariant-dirac}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_03.png}
+\caption{Viết lại theo dạng hiệp biến: \(\bar\psi=\psi^\dagger\gamma^0\),
+\(\gamma^i=\beta\alpha^i\), và Lagrangian Dirac dạng gọn.}
+\lectureframe{00:10:17}
+\label{fig:l10-dirac-covariant}
+\end{figure}
+
+Ký hiệu này làm lộ ra tính chất Lorentz của từng song tuyến tính. \(\bar\psi\psi\) là một vô hướng, còn
+\(\bar\psi\gamma^\mu\psi\) là một bốn-vectơ. Biểu thức gọn không chỉ đẹp hơn dạng \(\alpha,\beta\); nó cho ta biết các thành phần biến đổi như thế nào.
+
+\begin{classroomqa}
+\audiencequestion{Spinor ở ngoài cùng bên trái của biểu thức gọn có phải là \(\bar\psi\) không?\lecturetimestamp{00:09:39}}
+\lecturerresponse{Đúng. Dấu gạch trên bị thiếu đã được khôi phục trên bảng. Điều đó quan trọng: \(\bar\psi\) không phải là \(\psi^\dagger\), mà là
+\(\psi^\dagger\gamma^0\).}
+\end{classroomqa}
+
+\section{Tính chiral và điều mà một khối lượng Dirac thực sự làm}
+
+Ngoài \(\gamma^0,\gamma^1,\gamma^2,\gamma^3\), hãy định nghĩa
+\begin{equation}
+  \gamma^5
+  =i\gamma^0\gamma^1\gamma^2\gamma^3,
+  \qquad
+  (\gamma^5)^2=1 .
+  \label{eq:l10-gamma-five}
+\end{equation}
+Thừa số \(i\) xuất hiện ở đây là quy ước chuẩn cho metric Minkowski chủ yếu dấu trừ. Các giá trị riêng là \(+1\) và \(-1\), còn các toán tử chiếu tương ứng là
+\begin{equation}
+\begin{aligned}
+  P_L&=\frac{1-\gamma^5}{2},
+  &
+  P_R&=\frac{1+\gamma^5}{2},
+  \\
+  \psi_L&=P_L\psi,
+  &
+  \psi_R&=P_R\psi .
+\end{aligned}
+  \label{eq:l10-chiral-projectors}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao ma trận phụ thêm lại được gọi là \(\gamma^5\) khi không có \(\gamma^4\)? Và giá trị riêng của nó có mô tả độ xoắn không?\lecturetimestamp{00:10:42}}
+\lecturerresponse{Tên gọi này là do lịch sử: đó là ma trận bổ sung được tạo từ tích của bốn ma trận gamma không-thời gian. Giá trị riêng của nó gắn nhãn tính chiral, chứ nói chung không phải độ xoắn. Đối với một hạt không khối lượng thì hai khái niệm ấy có thể được đồng nhất một cách thích hợp, nên cách nói rất dễ bị nhập nhằng, nhưng tính chiral mới là nhãn của biểu diễn Lorentz mà lý thuyết chuẩn yếu cần đến.}
+\end{classroomqa}
+
+Hạng động học bảo toàn tính chiral. Một cách hữu ích để thấy điều này là \(\{\gamma^\mu,\gamma^5\}=0\), nên nó tách thành
+\begin{equation}
+  \bar\psi i\gamma^\mu\partial_\mu\psi
+  =
+  \bar\psi_L i\gamma^\mu\partial_\mu\psi_L
+  +
+  \bar\psi_R i\gamma^\mu\partial_\mu\psi_R .
+  \label{eq:l10-chiral-kinetic}
+\end{equation}
+Song tuyến tính vô hướng thì ứng xử khác:
+\begin{equation}
+  \bar\psi\psi
+  =
+  \bar\psi_L\psi_R+\bar\psi_R\psi_L .
+  \label{eq:l10-chiral-mass}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_04.png}
+\caption{Trên bảng, song tuyến tính vô hướng được phân tách thành các phần từ trái sang phải và từ phải sang trái.}
+\lectureframe{00:15:38}
+\label{fig:l10-chiral-decomposition}
+\end{figure}
+
+Vì vậy, một khối lượng Dirac là một phép tác dụng cục bộ làm lật tính chiral:
+\begin{equation}
+  \psi_L\longleftrightarrow\psi_R .
+\end{equation}
+Một fermion không khối lượng có thể lan truyền với tính chiral xác định. Một fermion có khối lượng thì không thể ở mãi trong một sector chiral, vì hạng khối lượng liên tục trộn hai sector ấy. Có thể thấy ngạc nhiên khi sự chuyển đổi này lại liên quan tới quán tính, nhưng đó chính là dạng của khối lượng nghỉ fermion trong lý thuyết trường tương đối tính.
+
+\section{Vì sao đối xứng yếu cấm một khối lượng fermion trần}
+
+Dòng yếu tích điện hoàn toàn là chiral trái. Bài giảng lúc đầu nêu \(Z\), rồi sửa phát biểu thành \(W^\pm\): các ghép của \(Z\) là chiral và không bằng nhau, nhưng không phải đơn giản là vắng mặt đối với mọi fermion chiral phải. Phát biểu chuẩn xác là
+\begin{equation}
+  \mathcal L_{\mathrm{cc}}
+  =
+  -\frac{g}{\sqrt2}
+  \left(\bar u_L\gamma^\mu d_L
+  +\bar\nu_L\gamma^\mu e_L\right)W^+_\mu
+  +\mathrm{h.c.}
+  \label{eq:l10-charged-current}
+\end{equation}
+Các fermion tay trái biến đổi như các doublet \(SU(2)_L\); các fermion tích điện tay phải biến đổi như các singlet.
+
+Bây giờ hãy so sánh các quy tắc biến đổi đó với
+\eqref{eq:l10-chiral-mass}. Một hạng như
+\(\bar e_L e_R\)
+hấp thụ một đối tượng mang một bộ số lượng tử điện-yếu và phát ra một đối tượng mang bộ khác. Tự thân nó không bất biến chuẩn. Vì vậy khối lượng Dirac quen thuộc là không được phép như một hạng trần trong Lagrangian điện-yếu.
+
+Đây là thứ tự giải thích đúng. Khối lượng fermion không phải trước hết được chèn vào rồi sau đó mới được gán ghép một cách hình thức với Higgs. Đối xứng chuẩn trước hết loại bỏ hạng khối lượng hiển nhiên. Khi đó trường Higgs bị buộc phải mang những số lượng tử còn thiếu.
+
+\subsection{Higgs như trường mang điện tích}
+
+Hãy để Higgs biến đổi như một doublet \(SU(2)_L\) với siêu tích
+\(+\tfrac12\):
+\begin{equation}
+  H=
+  \begin{pmatrix}
+    H^+\\ H^0
+  \end{pmatrix},
+  \qquad
+  \widetilde H=i\sigma^2H^* .
+  \label{eq:l10-higgs-doublet}
+\end{equation}
+Bài giảng giữ các chỉ số nhóm ở mức sơ đồ và gọi trường là
+\(\phi\). Trong ký hiệu đó, một hạng Yukawa có dạng
+\begin{equation}
+  \mathcal L_Y
+  =
+  -G_Y\left(
+    \bar\psi_L\phi\psi_R+
+    \bar\psi_R\phi^\dagger\psi_L
+  \right).
+  \label{eq:l10-yukawa-schematic}
+\end{equation}
+Trường Higgs mang đi điện tích yếu mà một phép lật chiral đơn thuần sẽ không bảo toàn được.
+
+Biểu thức đầy đủ của Mô hình Chuẩn cho một thế hệ làm tường minh cùng phép hạch toán đó:
+\begin{equation}
+  \mathcal L_Y
+  =
+  -y_d\bar Q_LHd_R
+  -y_u\bar Q_L\widetilde H u_R
+  -y_e\bar L_LHe_R
+  +\mathrm{h.c.}
+  \label{eq:l10-yukawa-full}
+\end{equation}
+Mỗi hạng đều bất biến chuẩn, và mỗi loại fermion mang hằng số ghép Yukawa không thứ nguyên riêng của nó.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{lecture_10_figure_05.png}
+\caption{Phép lật chiral có Higgs hỗ trợ và thế phá vỡ đối xứng cùng xuất hiện trên bảng.}
+\lectureframe{00:18:54}
+\label{fig:l10-yukawa-potential-board}
+\end{figure}
+
+\section{Một tương tác trở thành cả khối lượng lẫn ghép Higgs}
+
+Tự nhiên chọn một chân không trong đó thành phần Higgs trung hòa không triệt tiêu. Trong ký hiệu trường thực sơ đồ của bài giảng,
+\begin{equation}
+  \phi=F+\mathcal H ,
+  \label{eq:l10-f-plus-h}
+\end{equation}
+trong đó \(F\) là độ dời chân không không dao động và \(\mathcal H\) là dao động Higgs lan truyền. Thế vào
+\eqref{eq:l10-yukawa-schematic} ta được
+\begin{align}
+  \mathcal L_Y
+  ={}&
+  -G_YF
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right)
+  \notag\\
+  &-G_Y\mathcal H
+  \left(\bar\psi_L\psi_R+\bar\psi_R\psi_L\right).
+  \label{eq:l10-yukawa-split}
+\end{align}
+Dòng thứ nhất là một khối lượng Dirac và dòng thứ hai là một tương tác với một lượng tử Higgs vật lý:
+\begin{equation}
+  m_f=G_YF
+  \qquad\hbox{in the lecture's normalization.}
+  \label{eq:l10-mass-lecture-normalization}
+\end{equation}
+
+Trong chuẩn hóa thông thường của Mô hình Chuẩn,
+\begin{equation}
+\begin{aligned}
+  H(x)&=\frac{1}{\sqrt2}
+  \begin{pmatrix}
+    0\\ v+h(x)
+  \end{pmatrix},
+  \\
+  m_f&=\frac{y_fv}{\sqrt2},
+  \\
+  \mathcal L_{hff}&=-\frac{m_f}{v}h\bar f f,
+\end{aligned}
+  \label{eq:l10-standard-higgs-normalization}
+\end{equation}
+với \(v\simeq246\,\mathrm{GeV}\). Ước lượng gần đúng \(F\sim200\,\mathrm{GeV}\) của bài giảng chính là cùng thang điện-yếu này, với các chi tiết chuẩn hóa đã được lược bỏ.
+
+Các khối lượng đo được của \(W\) và \(Z\) xác định thang \(F\). Các khối lượng fermion đo được khi đó xác định các hằng số ghép Yukawa. Hằng số ghép của electron là rất nhỏ; của quark top thì cỡ đơn vị. Nếu cơ chế này chỉ làm từng ấy việc, thì ta sẽ đưa vào một số chưa biết cho mỗi fermion rồi lại đọc ra đúng thông tin ấy.
+
+Nhưng dòng thứ hai của \eqref{eq:l10-yukawa-split} là nội dung thực nghiệm mới. Nó nói rằng một fermion có thể phát ra hoặc hấp thụ một Higgs và, khi đọc theo kênh chéo, rằng một Higgs có thể phân rã thành một cặp fermion-phản fermion. Một cách sơ đồ,
+\begin{equation}
+\begin{aligned}
+  \mathcal M(h\to f\bar f)&\propto y_f,
+  \\
+  \Gamma(h\to f\bar f)
+  &=
+  N_c\frac{y_f^2m_h}{16\pi}
+  \\
+  &\quad\times
+  \left(1-\frac{4m_f^2}{m_h^2}\right)^{3/2},
+\end{aligned}
+  \label{eq:l10-higgs-fermion-width}
+\end{equation}
+ở mức cây. Ở đây \(N_c=3\) đối với quark và \(1\) đối với lepton. Khối lượng fermion lớn hơn có nghĩa là hằng số ghép Yukawa lớn hơn, miễn là phân rã được cho phép về mặt động học. Điều này không có nghĩa là mọi kênh nặng đều áp đảo: các hệ số màu, không gian pha, các kênh cảm sinh bởi vòng lặp, và các phân rã thành boson vectơ cũng đều quan trọng. Nó có nghĩa là chính ghép fermion tỉ lệ với khối lượng.
+
+\begin{classroomqa}
+\audiencequestion{Thực tế người ta sẽ dự đoán thời gian phân rã của Higgs như thế nào mà không phải làm mọi chi tiết kỹ thuật?\lecturetimestamp{00:25:32}}
+\lecturerresponse{Tương tác cho một phần tử ma trận của Hamiltonian. Hãy vẽ giản đồ Feynman tương ứng, tính biên độ chuyển tiếp của nó, bình phương biên độ ấy, rồi cộng hoặc tích phân trên mọi trạng thái cuối được phép. Kết quả là tốc độ phân rã. Thời gian sống là nghịch đảo của bề rộng toàn phần, \(\tau=\hbar/\Gamma_{\mathrm{tot}}\). Đó chính là lôgic cơ học lượng tử đã được dùng trong các phép tính hạt kể từ buổi đầu phát triển của lý thuyết trường lượng tử.}
+\end{classroomqa}
+
+Vào thời điểm bài giảng, hiện tượng học Higgs này vẫn còn là dự đoán chứ chưa phải quan sát trực tiếp. Các tự tương tác \(W\) và \(Z\) đã cung cấp những kiểm nghiệm nghiêm ngặt đối với cấu trúc chuẩn; Higgs và các ghép trực tiếp của nó vẫn còn phải được tìm ra. Sự bất định mang tính lịch sử đó cần được lưu lại. Kết cục về sau cũng vậy: một hạt giống Higgs đã được tìm thấy, và các phép đo các ghép của nó hiện nay là những phép kiểm nghiệm cùng cấu trúc sinh khối lượng được phát triển ở đây.
+
+\section{Thế năng chọn F}
+
+Độ dịch chân không không được ấn định bằng tay sau khi viết liên kết Yukawa.
+Nó được xác định bởi thế Higgs. Với một mặt cắt thực qua toàn bộ bộ đôi, lấy
+\begin{equation}
+  V(\phi)
+  =
+  -\frac{\mu^2}{2}\phi^2
+  +\frac{\lambda}{4}\phi^4,
+  \qquad
+  \mu^2>0,\quad\lambda>0.
+  \label{eq:l10-real-higgs-potential}
+\end{equation}
+Gần \(\phi=0\), hạng bậc hai âm làm cho thế có dạng một parabol úp. Việc gọi \(\mu\) là một khối lượng ảo chỉ là cách nói tắt rằng gốc tọa độ là không ổn định; điều đó không có nghĩa là dao động Higgs vật lý quanh chân không thực có khối lượng ảo.
+
+Chỉ riêng hạng bậc hai sẽ đẩy trường đi vô hạn và không để lại trạng thái năng lượng thấp nhất nào. Hạng bậc bốn dương rốt cuộc sẽ chi phối và bẻ thế đi lên. Một lũy thừa lẻ sẽ phá hỏng đối xứng mô hình đồ chơi \(\phi\mapsto-\phi\). Tương tác bậc bốn là tương tác chẵn làm ổn định đầu tiên và, trong bốn chiều không-thời gian, là tương tác vô hướng đa thức bậc cao nhất có hằng số liên kết không thứ nguyên.
+
+Lấy đạo hàm:
+\begin{align}
+  \frac{dV}{d\phi}
+  &=-\mu^2\phi+\lambda\phi^3
+  \notag\\
+  &=\phi\left(-\mu^2+\lambda\phi^2\right).
+  \label{eq:l10-potential-derivative}
+\end{align}
+Điểm dừng \(\phi=0\) là đỉnh không ổn định. Hai cực tiểu thỏa mãn
+\begin{equation}
+  \boxed{F^2=\frac{\mu^2}{\lambda}},
+  \qquad
+  F=\frac{\mu}{\sqrt\lambda}
+  \label{eq:l10-vacuum-value}
+\end{equation}
+trong quy ước trường thực này.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_06.png}
+\caption{Phép cực tiểu hóa hoàn chỉnh trên bảng:
+\(V=-\mu^2\phi^2/2+\lambda\phi^4/4\),
+\(V'=0\), và \(\phi^2=\mu^2/\lambda\).}
+\lectureframe{00:34:32}
+\label{fig:l10-higgs-minimization}
+\end{figure}
+
+Các hệ số \(1/2\) và \(1/4\) được đưa vào chính xác để chúng biến mất khi lấy đạo hàm. Gần gốc, \(\phi^4\) nhỏ hơn \(\phi^2\); ở trường lớn nó tăng nhanh hơn và làm ổn định hệ. Sự cạnh tranh đơn giản đó tạo ra thế hai giếng.
+
+Các thứ nguyên cũng giải quyết một chỗ lỡ lời thoáng qua trong bản chép. \(\lambda\) là không thứ nguyên trong bốn chiều không-thời gian, còn \(\mu\) và \(F\) có thứ nguyên khối lượng. Khai triển \(\phi=F+\mathcal H\), độ cong của thế cho
+\begin{equation}
+  m_{\mathcal H}^2
+  =
+  \left.\frac{d^2V}{d\phi^2}\right|_{\phi=F}
+  =
+  -\mu^2+3\lambda F^2
+  =
+  2\mu^2
+  =
+  2\lambda F^2.
+  \label{eq:l10-higgs-curvature}
+\end{equation}
+Trong ký hiệu đầy đủ của Mô hình Chuẩn,
+\(V(H)=-\mu^2H^\dagger H+\lambda(H^\dagger H)^2\), ta tương tự cũng có
+\(m_h^2=2\lambda v^2\). Khối lượng Higgs đo được và \(v\) suy ra \(\lambda\) gần \(0.13\) ở thang điện yếu. Ước lượng 2010 trong bài giảng được cố ý làm thô; khẳng định về mặt cấu trúc là \(\lambda\) không phải là một con số nhỏ đến mức phi lý.
+
+\section{Vì sao mọi thứ ta quan sát đều gắn với thang này?}
+
+Cùng một \(F\) chi phối các khối lượng \(W\) và \(Z\) và, khi nhân với các liên kết Yukawa khác nhau, mọi khối lượng fermion mang điện. Sự tập trung thực nghiệm ấy đặt ra một câu hỏi thú vị hơn phép đại số: vì sao tất cả các hạt cơ bản đã biết lại phải mượn khối lượng của mình từ cùng một hiện tượng phá vỡ đối xứng?
+
+Không có định lý nào nói rằng mọi hạt khả dĩ đều phải như vậy. Hãy hình dung một fermion vectorlike mà các thành phần chiral trái và phải biến đổi theo cùng một cách dưới nhóm chuẩn. Khi đó
+\(\bar\psi_L\psi_R+\mathrm{h.c.}\) có thể bất biến chuẩn mà không cần Higgs.
+Một singlet chuẩn hoàn toàn cũng có thể mang một khối lượng không liên quan đến sự phá vỡ điện yếu. Những hạt như vậy một cách tự nhiên có thể nặng hơn nhiều so với các hạt gắn với \(F\). Các hạt mà ta đã phát hiện có thể đủ nhẹ để quan sát chính là vì đối xứng sẽ làm chúng không có khối lượng khi \(F\) bằng không.
+
+Vì thế thang điện yếu là con số ngoại lệ. Bức tranh suy đoán là các khối lượng điển hình không được bảo vệ nằm gần một thang cơ bản lớn hơn nhiều, trong khi các hạt được đối xứng chuẩn chiral bảo vệ thì bị kéo xuống cùng với \(F\).
+
+\begin{classroomqa}
+\audiencequestion{Khối lượng Planck có phải là một ứng viên cho thang khối lượng cơ bản mà \(F\) nên được so sánh với không?\lecturetimestamp{00:38:43}}
+\lecturerresponse{Có. Một ứng viên khác là thang do sự thống nhất các hằng số liên kết chuẩn gợi ra. Cả hai sẽ xuất hiện từ các lập luận ở phần sau của bài giảng, mặc dù chưa có hạt nào với những khối lượng khổng lồ đó được quan sát trực tiếp.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Điều đó có nghĩa gì khi nói rằng các thang khác cao hơn \(F\) khoảng mười lăm bậc độ lớn, và những hạt nào tương ứng với chúng?\lecturetimestamp{00:39:54}}
+\lecturerresponse{Thang điện yếu có bậc cỡ
+\(10^2\,\mathrm{GeV}\), trong khi sự thống nhất được gợi ý gần
+\(10^{16}\,\mathrm{GeV}\) và thang Planck nằm gần
+\(10^{19}\,\mathrm{GeV}\). Chúng ta chưa tạo ra các hạt ở những khối lượng đó.
+Ta suy ra các thang ấy một cách gián tiếp: một từ phép ngoại suy các hằng số liên kết chuẩn đã đo được và cái kia từ việc kết hợp cơ học lượng tử, thuyết tương đối và hằng số Newton.}
+\end{classroomqa}
+
+\section{Một ngưng tụ mang điện trong phòng thí nghiệm}
+
+Trước giờ nghỉ, một câu hỏi từ cử tọa yêu cầu một ví dụ tương tự trong vật chất ngưng tụ thông thường của cơ chế Higgs. Câu trả lời được triển khai từng bước chứ không chỉ bằng phép loại suy.
+
+\begin{classroomqa}
+\audiencequestion{Ngoài các ngưng tụ Bose siêu lạnh, có ví dụ chất rắn thông dụng nào về một cơ chế giống Higgs không?\lecturetimestamp{00:40:50}}
+\lecturerresponse{Có. Một trường boson trung hòa có thể nhận giá trị kỳ vọng khác không trong một ngưng tụ Bose hoặc chất siêu chảy. Nếu đối tượng ngưng tụ mang điện, cùng hiện tượng cơ bản đó sẽ làm thay đổi trường chuẩn. Siêu dẫn cung cấp ví dụ quen thuộc: các cặp Cooper mang điện ngưng tụ, và các trường điện từ có được một chiều dài thâm nhập hữu hạn bên trong vật liệu.}
+\end{classroomqa}
+
+Ở độ phân giải cấp phân tử, một nguyên tử heli có thể được coi như một hạt boson hiệu dụng duy nhất với một trường \(\Phi_{\mathrm{He}}\). Không gian trống tương ứng với trường bằng không; một pha siêu chảy có
+\(\langle\Phi_{\mathrm{He}}\rangle\ne0\) và tự phát phá vỡ đối xứng pha toàn cục liên quan. Các nguyên tử heli là trung hòa, nên đây vẫn chưa phải là cơ chế khối lượng của trường chuẩn.
+
+Trong chất siêu dẫn, các electron tạo thành các cặp Cooper liên kết yếu. Trường cặp, ở mức sơ đồ, là một song tuyến tính theo electron,
+\begin{equation}
+  \Delta(x)\sim\langle\psi_\downarrow(x)\psi_\uparrow(x)\rangle,
+  \label{eq:l10-cooper-order-parameter}
+\end{equation}
+và mang điện tích \(2e\). Khi \(\Delta\) ngưng tụ, trường chuẩn điện từ phản ứng đúng theo cách mà một trường chuẩn ghép với một tham số trật tự mang điện tất yếu phải phản ứng. Từ trường tĩnh suy giảm theo độ sâu thâm nhập London:
+\begin{equation}
+  B(x)\propto e^{-x/\lambda_L}.
+  \label{eq:l10-meissner-screening}
+\end{equation}
+Nghịch đảo của chiều dài thâm nhập đóng vai trò của một khối lượng photon hiệu dụng bên trong môi trường. Nó không phải là khối lượng photon trong chân không; nó là một tính chất của pha siêu dẫn.
+
+\begin{classroomqa}
+\audiencequestion{Hai electron trong một cặp Cooper chẳng phải tách rời nhau, thậm chí nằm ở hai phía đối diện của mặt Fermi sao?\lecturetimestamp{00:43:13}}
+\lecturerresponse{Chúng không phải là một phân tử tí hon khu trú tại một điểm. Một cặp Cooper là một đối tượng trải rộng và được mô tả tự nhiên trong không gian mômen bằng các trạng thái tương quan gần các mômen đối nhau. Tuy nhiên, đối với lập luận đối xứng, cặp này hành xử như một tham số trật tự boson mang điện duy nhất. Điều quan trọng là sự ngưng tụ của nó.}
+\end{classroomqa}
+
+Về mặt lịch sử, mối liên hệ này không chỉ là một ẩn dụ dùng để giảng dạy. Hiện tượng siêu dẫn và phân tích của Anderson về các trường chuẩn trong một pha bị phá vỡ đã giúp làm cho cơ chế Higgs tương đối tính trở nên dễ hiểu. Cách xây dựng trong vật lý hạt được phát triển độc lập trong lý thuyết trường tương đối tính, nhưng phần toán học chung là thực sự có.
+
+\section{Các tham số trần và các tham số đo được}
+
+Sau giờ nghỉ, ta quay lại Lagrangian. Nó chứa các tham số được gọi là khối lượng và điện tích, nhưng các tham số đầu vào đó hiếm khi đồng nhất với các đại lượng được đo mà không kèm điều kiện. Các mode tần số cao tương tác với các mode tần số thấp và mặc chỉnh chúng. Mối liên hệ có hệ thống giữa các tham số được định nghĩa ở một độ phân giải và các đại lượng quan sát ở độ phân giải khác là sự tái chuẩn hóa.
+
+Điện tích cho một bức tranh có thể dựng lên mà không cần tính toán. Ở khoảng cách lớn, định luật Coulomb xác định điện tích quan sát được:
+\begin{equation}
+  V(r)\sim\frac{e_1e_2}{4\pi r},
+  \qquad
+  F(r)\sim\frac{e_1e_2}{4\pi r^2}.
+  \label{eq:l10-coulomb-law}
+\end{equation}
+Bài giảng lược bỏ \(4\pi\) và viết \(e^2/r\) hoặc \(e^2/r^2\).
+Điều quan trọng là hệ số được suy ra từ một phép đo lực có thể phụ thuộc vào khoảng cách mà tại đó hệ được thăm dò.
+
+\subsection{Vật dẫn: che chắn hoàn toàn}
+
+Đặt một điện tích thử dương vào một vật dẫn lý tưởng. Điện trường của nó kéo điện tích âm linh động về phía nó và đẩy điện tích dương ra xa. Dòng điện chạy cho đến khi nguồn cục bộ được bao quanh bởi một đám mây trái dấu và không còn điện trường nào trong khối vật liệu bên ngoài đám mây đó; điện tích bù bị đẩy ra biên ở xa. Một nguồn âm tạo ra sự sắp xếp lại ngược lại. Khi đó hai nguồn đã được mặc chỉnh, nếu ở xa nhau, có thể hầu như không tác dụng lực lên nhau, mặc dù các điện tích được đưa vào ở mức vi mô là khác không.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_07.png}
+\caption{Một điện tích nguồn được bao quanh bởi một đám mây che chắn mang điện tích trái dấu trong phần thảo luận về vật dẫn.}
+\lectureframe{00:50:24}
+\label{fig:l10-conductor-screening}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sự tái sắp xếp này có phải là điều người ta gọi là che chắn không?\lecturetimestamp{00:51:25}}
+\lecturerresponse{Đúng. Ở các khoảng cách lớn hơn đám mây, điện tích được đưa vào bị che chắn. Nếu đưa một đầu dò khác vào bên trong đám mây, một phần sự che chắn không còn có thể nằm giữa nguồn và đầu dò; khi đó điện tích nền tảng xuất hiện mạnh hơn.}
+\end{classroomqa}
+
+Đám mây có một thang đặc trưng do động lực học và mật độ của các điện tích linh động quyết định. Ở các khoảng cách \(r\) nhỏ hơn thang đó, đầu dò xuyên vào đám mây. Vì vậy ta có thể định nghĩa điện tích chạy \(e(r)\)
+thông qua
+\begin{equation}
+  F(r)\equiv\frac{e^2(r)}{4\pi r^2}.
+  \label{eq:l10-running-charge-definition}
+\end{equation}
+Đối với vật dẫn lý tưởng hóa, \(e(r)\) tiến tới không ở khoảng cách rất lớn và tiến tới giá trị vi mô ở khoảng cách rất ngắn.
+
+\subsection{Điện môi: che chắn một phần}
+
+Trong một chất cách điện, các electron bị liên kết với các nguyên tử thay vì tự do đi xuyên qua mẫu. Một mô hình thô nhưng hữu ích hình dung mỗi đám mây electron gắn với ion của nó bằng một lò xo. Khi không có trường ngoài, tâm điện tích dương và âm trung bình trùng nhau. Một trường áp vào làm chúng lệch nhau một chút và cảm ứng một lưỡng cực.
+
+Xung quanh một nguồn âm, các đám mây electron lân cận dịch ra xa và để các ion dương của chúng hơi gần hơn; xung quanh một nguồn dương chúng dịch theo chiều ngược lại. Các điện tích liên kết không thể chảy đủ xa để trung hòa nguồn hoàn toàn, nên trường ở khoảng cách lớn bị giảm bởi hằng số điện môi chứ không bị triệt tiêu:
+\begin{equation}
+  V_{\mathrm{medium}}(r)
+  =
+  \frac{1}{\epsilon_r}
+  \frac{e_1e_2}{4\pi\epsilon_0r}.
+  \label{eq:l10-dielectric-coulomb}
+\end{equation}
+Ở các khoảng cách nằm bên trong đám mây phân cực, đầu dò lại cảm nhận được nhiều hơn của nguồn trần. Che chắn hoàn toàn và che chắn một phần là hai phiên bản của cùng một ý tưởng phụ thuộc theo thang.
+
+\section{Chân không QED như một môi trường có thể bị phân cực}
+
+Điện động lực học lượng tử không có các nguyên tử vật chất trong chân không của nó, nhưng nó có các trường lượng tử mang điện. Các dao động electron-positron đóng góp các vòng lặp vào sự lan truyền của photon. Trong ngôn ngữ cũ của biển Dirac, điện trường làm biến dạng các trạng thái năng lượng âm đã được lấp đầy; trong ngôn ngữ hiện đại, sự phân cực chân không mặc chỉnh hàm truyền photon. Bức tranh môi trường nói rằng một cặp ảo bị phân cực: các thành phần dương và âm của nó dịch chuyển theo các hướng ngược nhau.
+
+Một nguồn dương được bao quanh bởi một phần dư nhỏ điện tích phân cực âm, và một nguồn âm bởi điện tích phân cực dương. Vì vậy điện tích đo ở xa nhỏ hơn tham số mà người ta sẽ gán cho một nguồn chưa được phân giải. Không giống một vật liệu thông thường, chân không chứa các dao động trên một phổ liên tục mômen. Các cặp năng lượng thấp tương ứng với cấu trúc ở khoảng cách lớn hơn; các cặp năng lượng cao thăm dò các khoảng cách ngắn hơn. Không có bán kính đám mây cuối cùng nào mà tại đó quá trình đơn giản dừng lại.
+
+Khi hai electron được đưa lại gần nhau hơn, các đám mây phân cực lớn nhất trước hết không còn vừa giữa chúng. Đưa chúng lại gần hơn nữa sẽ lần lượt bóc đi các đám mây nhỏ hơn. Hằng số liên kết điện hiệu dụng tăng theo logarit của nghịch đảo khoảng cách, hay tương đương là theo năng lượng:
+\begin{equation}
+  \alpha(Q)
+  \simeq
+  \frac{\alpha(\mu)}
+  {1-\dfrac{2\alpha(\mu)}{3\pi}
+  \ln\!\left(\dfrac{Q}{\mu}\right)}
+  \label{eq:l10-qed-running}
+\end{equation}
+cho một fermion Dirac mang điện khi xét ở năng lượng cao hơn nhiều ngưỡng của nó và ở bậc dẫn đầu. Các loài mang điện bổ sung làm thay đổi hệ số khi các ngưỡng của chúng bị vượt qua.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_10_figure_08.png}
+\caption{Điện tích hiệu dụng trong QED tăng chậm khi thang ngang \(1/R\), và do đó năng lượng thăm dò, tăng lên.}
+\lectureframe{01:02:13}
+\label{fig:l10-qed-running-board}
+\end{figure}
+
+Tán xạ electron cho phiên bản mang tính thao tác. Năng lượng va chạm cao hơn có nghĩa là bước sóng de Broglie ngắn hơn và khoảng cách tiếp cận gần nhất nhỏ hơn. Vì thế biên độ phải dùng hằng số liên kết thích hợp với độ truyền mômen đó, chứ không phải một con số cố định cho mọi thang.
+
+\begin{classroomqa}
+\audiencequestion{Ở khoảng cách nào thì sự chạy mới bắt đầu trở nên đo được?\lecturetimestamp{01:03:54}}
+\lecturerresponse{Sự phân cực chân không của electron trở nên quan trọng vào cỡ thang Compton của electron, \(\lambda_C=\hbar/(m_ec)\), xấp xỉ
+\(4\times10^{-11}\,\mathrm{cm}\) đối với bước sóng rút gọn. Hiệu ứng là nhỏ và theo logarit, nên cần độ chính xác cao. Các hạt mang điện nặng hơn tham gia vào sự chạy tại các ngưỡng riêng của chúng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Việc nói về khoảng cách nhỏ nhất có giả định rằng chúng ta đã biết điều gì xảy ra ở đó không?\lecturetimestamp{01:04:49}}
+\lecturerresponse{Không. Chúng ta chỉ ngoại suy lý thuyết chừng nào thành phần hạt và các tương tác của nó vẫn còn đúng. Vật lý mới có thể làm thay đổi sự chạy. Thực nghiệm không cho ta biết rằng QED vẫn là mô tả đầy đủ cho tới các khoảng cách ngắn tùy ý.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Đối với gluon, sự phụ thuộc theo thang có ngược lại không? Vì sao?\lecturetimestamp{01:05:03}}
+\lecturerresponse{Có. Các vòng quark che chắn điện tích màu theo cách tương tự vật chất tích điện, nhưng bản thân gluon cũng mang màu và tương tác phi tuyến. Đóng góp của chúng có dấu ngược lại và trội hơn đối với số hương quark được quan sát. Kết quả là phản che chắn và tự do tiệm cận.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Làm thế nào người ta có thể xác định một điện tích trần nếu việc đó đòi hỏi một khoảng cách nhỏ vô hạn?\lecturetimestamp{01:05:28}}
+\lecturerresponse{Người ta không đo trực tiếp một điện tích trần duy nhất, độc lập với bộ điều chuẩn. Người ta xác định một tham số tại một ngưỡng cắt khoảng cách ngắn hoặc một thang tái chuẩn hóa đã chọn, rồi điều chỉnh nó sao cho một đại lượng đo được năng lượng thấp vẫn giữ cố định. Hằng số ghép đã tái chuẩn hóa phụ thuộc thang mới là đối tượng vật lý hữu ích.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Điện tích trong QED có tiến tới một giá trị hữu hạn ở năng lượng vô hạn không?\lecturetimestamp{01:05:39}}
+\lecturerresponse{Không, nếu chỉ ngoại suy riêng QED nhiễu loạn. Hàm beta dương của nó làm cho hằng số ghép tiếp tục tăng theo lôgarit và về mặt hình thức dẫn tới một cực Landau ở một thang cực kỳ cao. Từ rất lâu trước khi coi cực hình thức đó là vật lý, người ta kỳ vọng mô tả này sẽ được nhúng vào lý thuyết điện yếu và rốt cuộc bị thay đổi bởi vật lý tiếp theo.}
+\end{classroomqa}
+
+\subsection{Tái chuẩn hóa thay đổi điều gì và bảo toàn điều gì}
+
+Chọn một độ dài ngưỡng cắt \(a\), gọi đầu vào tương ứng là \(e(a)\), rồi tính một đại lượng quan sát được ở khoảng cách xa cố định. Một ngưỡng cắt khác \(a'\) cũng chấp nhận được như nhau nếu đầu vào được đổi thành \(e(a')\) sao cho cùng đại lượng quan sát đó được tái tạo:
+\begin{equation}
+  \frac{d}{d\ln\mu}\,\mathcal O_{\mathrm{physical}}=0,
+  \qquad
+  \mu\frac{de}{d\mu}=\beta(e).
+  \label{eq:l10-rg-invariance}
+\end{equation}
+Dòng bù trừ đó là nhóm tái chuẩn hóa.
+
+\begin{classroomqa}
+\audiencequestion{Từ trần có nhất thiết phải chỉ cụ thể đến độ dài Planck không?\lecturetimestamp{01:06:20}}
+\lecturerresponse{Không. Người ta có thể chấm dứt mô tả tại bất kỳ ngưỡng cắt nào đã chọn và gọi tham số tại đó là trần. Việc thay đổi ngưỡng cắt đồng thời thay đổi tham số ấy một cách thích hợp sẽ giữ cho phần vật lý có thể tiếp cận không đổi. Độ dài Planck là một nơi hợp lý mà tại đó lý thuyết trường lượng tử thông thường phải được thay thế, chứ không phải một quy ước bắt buộc của tái chuẩn hóa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Thủ tục này có phải là chuyện phóng to vào và làm suy giảm mô tả không?\lecturetimestamp{01:07:15}}
+\lecturerresponse{Đó là sự phóng to theo nghĩa khái niệm. Ta hỏi các tham số của một mô tả hạt mịn hơn phải thay đổi như thế nào để các tiên đoán tại một bước sóng cố định, có thể tiếp cận bằng thực nghiệm, vẫn giữ nguyên.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hiện tượng chạy tương tự có xảy ra với hấp dẫn không?\lecturetimestamp{01:08:14}}
+\lecturerresponse{Hấp dẫn cũng có sự phụ thuộc theo thang, nhưng không đơn giản là cùng một cơ chế che chắn điện môi. Trong bài giảng này, một lập luận thứ nguyên là đủ: sự định xứ làm tăng năng lượng, năng lượng thì hấp dẫn, và cường độ hấp dẫn vô thứ nguyên thu được vì thế tăng nhanh theo năng lượng.}
+\end{classroomqa}
+
+\section{QCD: Phản che chắn, ống thông lượng và tự do tiệm cận}
+
+Ở những khoảng cách cỡ hadron, các đường sức của trường sắc điện không lan tỏa theo dạng cầu như một trường Coulomb điện từ. Tự tương tác của gluon ép chúng thành một ống hẹp giữa một quark và một phản quark. Nếu ống này có năng lượng trên một đơn vị chiều dài xấp xỉ cố định \(\sigma\), thì
+\begin{equation}
+  V_{q\bar q}(r)
+  \simeq
+  -\frac{C_F\alpha_s(r)}{r}
+  +\sigma r .
+  \label{eq:l10-cornell-potential}
+\end{equation}
+Khi \(r\) lớn, hạng tuyến tính chiếm ưu thế. Kéo giãn cặp ấy tạo ra thêm phần ống, giống như kéo một sợi kẹo kéo, và năng lượng tăng lên thay vì tiến về 0. Đây là khía cạnh giam hãm của câu chuyện.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_09.png}
+\caption{Các đường sức sắc điện được vẽ như một ống nối các nguồn màu tách biệt, chứ không phải như một trường Coulomb lan tỏa tự do.}
+\lectureframe{01:09:56}
+\label{fig:l10-qcd-flux-tube-board}
+\end{figure}
+
+Ở những khoảng cách ngắn hơn bán kính của ống, thế trở lại gần đúng dạng Coulomb, nhưng hằng số ghép của nó giảm theo năng lượng. Ở một vòng,
+\begin{equation}
+  \alpha_s(Q)
+  =
+  \frac{4\pi}
+  {\left(11-\frac23n_f\right)
+  \ln(Q^2/\Lambda_{\mathrm{QCD}}^2)} .
+  \label{eq:l10-asymptotic-freedom}
+\end{equation}
+Với \(n_f<17\), hệ số là dương và
+\(\alpha_s(Q)\to0\) khi \(Q\to\infty\). QCD yếu ở khoảng cách rất ngắn
+và mạnh ở khoảng cách lớn. Đây là phiên bản chính xác theo hằng số ghép chạy của hành vi ngược lại trong bài giảng.
+
+\begin{classroomqa}
+\audiencequestion{Điều gì xảy ra với hằng số ghép yếu nằm giữa các đường QED và QCD?\lecturetimestamp{01:11:53}}
+\lecturerresponse{Sự chạy của nó ở mức trung gian và phụ thuộc vào việc ta đang theo dõi thừa số điện yếu nào. Trên thang điện yếu, các đại lượng thích hợp là các hằng số ghép \(U(1)_Y\) và \(SU(2)_L\). Một cái tăng lên và cái kia giảm chậm. Cùng với hằng số ghép mạnh đang giảm, các giá trị ngoại suy của chúng tiến lại gần nhau một cách đáng ngạc nhiên ở năng lượng cao.}
+\end{classroomqa}
+
+\section{Sự chạy hướng tới thống nhất}
+
+Hãy đo ba hằng số ghép chuẩn gần thang yếu và tiến hóa chúng với thành phần hạt của một lý thuyết được đề xuất. Vì mọi hàm beta đều là lôgarit, một biến thiên khổng lồ của năng lượng chỉ tạo ra một biến đổi vừa phải của hằng số ghép. Các quỹ đạo của Mô hình Chuẩn tiến lại gần nhau nhưng không gặp nhau chính xác. Với thành phần hạt năng lượng thấp của Mô hình Chuẩn siêu đối xứng tối thiểu, các quỹ đạo một vòng gặp nhau sát hơn nhiều gần
+\begin{equation}
+  M_{\mathrm{GUT}}\sim10^{16}\,\mathrm{GeV}.
+  \label{eq:l10-gut-scale}
+\end{equation}
+
+Đồ thị này là bằng chứng, không phải chứng minh. Các ngưỡng từ những hạt chưa được khám phá, các hiệu chỉnh bậc vòng cao hơn và các chi tiết của một lý thuyết thống nhất làm dịch các đường cong. Bài giảng 2010 nhấn mạnh sự hội tụ xấp xỉ ở mức phần trăm trong một phổ siêu đối xứng vì điều đó khiến siêu đối xứng ở thang yếu trở nên đặc biệt hấp dẫn. Việc không có các siêu đối tác ở các năng lượng máy va chạm hiện nay giờ đây có nghĩa là phiên bản đơn giản nhất của phổ đó không được hiện thực hóa như đã kỳ vọng ban đầu; sự thống nhất chính xác vẫn phụ thuộc vào mô hình.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_10.png}
+\caption{Đồ thị định tính các hằng số ghép trên bảng: đường mạnh đi xuống, các đường điện yếu tiến hóa chậm về phía nó, còn hấp dẫn tăng dốc gần miền tử ngoại xa.}
+\lectureframe{01:16:29}
+\label{fig:l10-unification-board}
+\end{figure}
+
+Vì sao lại xem vùng lân cận của một điểm gặp nhau là cơ bản? Đó là nơi đầu vào có thể trở nên đơn giản nhất. Ba hằng số ghép năng lượng thấp không liên hệ có thể là những hậu duệ được che chắn theo những cách khác nhau của một hằng số ghép năng lượng cao gắn với một nhóm chuẩn duy nhất. Đây là manh mối số trị đằng sau câu hỏi \(SU(5)\) trước đó.
+
+Hấp dẫn xuất hiện trên cùng phác đồ lôgarit như một đường tăng nhanh hơn nhiều. Nó không cắt các đường chuẩn đúng ngay tại thang GUT, nhưng nó trở thành cỡ 1 chỉ trong vòng vài bậc độ lớn năng lượng. Trên một trục lôgarit, sự gần nhau ấy gợi nhiều điều: \(10^{16}\), \(10^{17}\), \(10^{18}\), và
+\(10^{19}\,\mathrm{GeV}\) gần nhau hơn rất nhiều so với khoảng cách từ bất kỳ giá trị nào trong chúng tới thang điện yếu.
+
+\section{Vì sao hấp dẫn mạnh lên ở khoảng cách ngắn}
+
+\subsection{Năng lượng, chứ không chỉ riêng khối lượng nghỉ, mới gây hấp dẫn}
+
+Lực Newton giữa hai khối lượng chuyển động chậm là
+\begin{equation}
+  F_G=\frac{Gm_1m_2}{r^2}.
+  \label{eq:l10-newton-force}
+\end{equation}
+Để có một ước lượng thứ nguyên tương đối tính, hãy thay mỗi khối lượng nghỉ bằng năng lượng tương ứng chia cho \(c^2\):
+\begin{equation}
+  F_G(r)\sim\frac{GE_1E_2}{c^4r^2}.
+  \label{eq:l10-relativistic-gravity-force}
+\end{equation}
+Đây không phải là sự thay thế cho thuyết tương đối rộng; ứng suất, dòng xung lượng và áp suất cũng là nguồn của hấp dẫn. Nó là ước lượng tỉ lệ đúng cho câu hỏi đang xét.
+
+Định xứ mỗi hạt trong một vùng kích thước \(r\). Nguyên lý bất định đòi hỏi
+\begin{equation}
+  p\sim\frac{\hbar}{r}.
+  \label{eq:l10-localization-momentum}
+\end{equation}
+Ở \(r\) đủ nhỏ, xung lượng là siêu tương đối tính, nên
+\begin{equation}
+  E\simeq pc\sim\frac{\hbar c}{r}.
+  \label{eq:l10-localization-energy}
+\end{equation}
+Thay hai năng lượng như vậy vào
+\eqref{eq:l10-relativistic-gravity-force} ta được
+\begin{equation}
+  F_G(r)
+  \sim
+  \frac{G\hbar^2}{c^2r^4}.
+  \label{eq:l10-short-distance-gravity-force}
+\end{equation}
+Thang năng lượng thế tương ứng là
+\begin{equation}
+  U_G(r)\sim-\frac{G\hbar^2}{c^2r^3}.
+  \label{eq:l10-short-distance-gravity-potential}
+\end{equation}
+Đây là sự phân biệt đã được sửa trong phép tính trực tiếp:
+thế tỉ lệ như \(1/r^3\), còn lực tỉ lệ như \(1/r^4\).
+
+\begin{classroomqa}
+\audiencequestion{Đối với một hạt siêu tương đối tính, năng lượng có phải là
+\(p^2/(2m)\) không?\lecturetimestamp{01:22:18}}
+\lecturerresponse{Không. Đó là công thức phi tương đối tính. Từ
+\(E^2=p^2c^2+m^2c^4\), giới hạn \(pc\gg mc^2\) cho
+\(E\simeq pc\). Kết hợp với \(p\sim\hbar/r\), năng lượng định xứ là
+\(\hbar c/r\).}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_11.png}
+\caption{Trên bảng, năng lượng tương đối tính được thế vào định luật Newton đồng thời kiểm tra các lũy thừa của \(c\) và \(r\).}
+\lectureframe{01:23:29}
+\label{fig:l10-gravity-derivation-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Các thừa số \(c\) có triệt tiêu không, và định luật \(1/r^3\) được nêu ra có phải là định luật lực không?\lecturetimestamp{01:23:38}}
+\lecturerresponse{Phép tính trên bảng được hiệu chỉnh ngay tại chỗ. Hai khối lượng hiệu dụng đóng góp \(E_1E_2/c^4\); với
+\(E_i\sim\hbar c/r\), hai lũy thừa của \(c\) còn lại ở mẫu. Lực thu được là \(G\hbar^2/(c^2r^4)\). Biểu thức \(1/r^3\) thuộc về năng lượng thế.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Lực hấp dẫn đang được bàn tới là lực hút, đúng không?\lecturetimestamp{01:24:42}}
+\lecturerresponse{Đúng. Các phương trình ở trên biểu diễn độ lớn. Thế hấp dẫn Newton mang dấu trừ đối với các năng lượng dương, nên lực là lực hút trong ước lượng này.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có phải hấp dẫn tăng cường độ tương đối vì sự định xứ làm tăng năng lượng, còn chính điện tích thì không nhận cùng nhân tố động học đó?\lecturetimestamp{01:25:02}}
+\lecturerresponse{Chính xác. Năng lượng là điện tích hấp dẫn. Việc nén một trạng thái lượng tử làm tăng xung lượng và năng lượng của nó, nên cũng làm tăng cái đóng vai trò nguồn của hấp dẫn. Điện tích là vô thứ nguyên và không nhận trực tiếp nhân tố \(1/r\) đó, ngoài sự tái chuẩn hóa lôgarit chậm hơn nhiều của nó.}
+\end{classroomqa}
+
+\subsection{Giao cắt Planck}
+
+Lực điện từ giữa các điện tích cỡ 1 trong đơn vị tự nhiên có độ lớn
+\begin{equation}
+  F_{\mathrm{EM}}(r)
+  \sim
+  \alpha\,\frac{\hbar c}{r^2}.
+  \label{eq:l10-em-force-alpha}
+\end{equation}
+Cho nó bằng \eqref{eq:l10-short-distance-gravity-force} thì được
+\begin{equation}
+  r^2\sim\frac{G\hbar}{\alpha c^3}.
+  \label{eq:l10-gravity-em-crossing}
+\end{equation}
+Bài giảng đặt thừa số ghép vô thứ nguyên ở cỡ 1 để làm lộ ra độ dài hấp dẫn cơ bản:
+\begin{equation}
+  \boxed{\ell_P=\sqrt{\frac{\hbar G}{c^3}}}
+  \simeq1.616\times10^{-35}\,\mathrm{m}.
+  \label{eq:l10-planck-length}
+\end{equation}
+Giữ nguyên \(\alpha\) thực sẽ dịch vị trí bằng nhau với điện từ đi bởi một nhân tố cỡ 1 trên thang lôgarit, \(r\sim\ell_P/\sqrt\alpha\). Phát biểu cơ bản gọn hơn trong đơn vị tự nhiên:
+\begin{equation}
+\begin{aligned}
+  \alpha_G(E)
+  &\equiv\frac{GE^2}{\hbar c^5}
+  =\left(\frac{E}{E_P}\right)^2,
+  \\
+  E_P
+  &=\sqrt{\frac{\hbar c^5}{G}}
+  \simeq1.22\times10^{19}\,\mathrm{GeV}.
+\end{aligned}
+  \label{eq:l10-gravitational-coupling}
+\end{equation}
+Hấp dẫn trở nên mạnh khi \(E\) tiến gần \(E_P\).
+
+\begin{classroomqa}
+\audiencequestion{Trong phép so sánh, thứ được đặt bằng 1 là \(G\) hay hằng số ghép điện?\lecturetimestamp{01:27:02}}
+\lecturerresponse{Hằng số ghép điện đã được coi như một số cỡ 1 trong ước lượng thô. Hằng số Newton phải được giữ lại: đó là đại lượng có thứ nguyên quyết định thang Planck.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các lũy thừa trung gian của \(r\), \(\hbar\), và \(c\) có vẻ không nhất quán về thứ nguyên. Phép tính đã hiệu chỉnh là gì?\lecturetimestamp{01:27:47}}
+\lecturerresponse{Hãy dùng năng lượng ngay từ đầu. Sự định xứ cho
+\(E\sim\hbar c/r\), do đó
+\(U_G\sim GE^2/(c^4r)=G\hbar^2/(c^2r^3)\). So sánh điều này với
+\(U_{\mathrm{EM}}\sim\alpha\hbar c/r\). Đặt
+\(\alpha\) ở cỡ 1 thì được
+\(r^2=G\hbar/c^3\). Cả lớp cùng phép tính trên bảng đi đến
+\(r=\sqrt{G\hbar/c^3}\), tức độ dài Planck.}
+\end{classroomqa}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_10_figure_12.png}
+\caption{Kết quả cuối cùng đã hiệu chỉnh của phép kiểm tra thứ nguyên trực tiếp:
+\(r=\sqrt{\hbar G/c^3}\).}
+\lectureframe{01:32:16}
+\label{fig:l10-planck-length-board}
+\end{figure}
+
+\section{Bài toán thứ bậc trở lại}
+
+Các hằng số ghép chuẩn trở nên tương đương nhau gần một thang rất cao, và hấp dẫn trở nên mạnh gần thang Planck. Những thang khổng lồ này nay có vẻ bớt giống những con số lớn tùy tiện và giống hơn những nơi mà một mô tả vi mô có thể đơn giản hóa. So với chúng, giá trị chân không điện yếu \(F\) nhỏ một cách dị thường:
+\begin{equation}
+  \frac{v}{E_P}\sim2\times10^{-17}
+  \label{eq:l10-electroweak-planck-ratio}
+\end{equation}
+trong các đơn vị với \(c=1\). Dùng thang GUT thay cho thang Planck làm thay đổi tỉ số chính xác nhưng không làm thay đổi điều bí ẩn.
+
+Một khi \(F\) nhỏ, khối lượng của \(W\), \(Z\), các lepton tích điện và các quark cũng theo đó mà nhỏ, vì đối xứng chuẩn làm cho khối lượng của chúng tỉ lệ với nó. Những hạt không có sự bảo vệ đó có thể vẫn nặng. Vì thế, câu hỏi nổi bật không phải là vì sao mọi khối lượng đã biết đều nhỏ một cách độc lập. Mà là vì sao ngành Higgs lại cung cấp thang phá vỡ đối xứng nhỏ bé duy nhất này.
+
+\begin{classroomqa}
+\audiencequestion{Nếu có thể tính được \(F\), thì khi đó mọi khối lượng khác đều có thể tính được hay không?\lecturetimestamp{01:34:39}}
+\lecturerresponse{Điều đó sẽ xác định thang điện yếu tổng thể và, khi cho trước các hằng số liên kết chuẩn và Yukawa, các khối lượng hạt tương ứng. Vấn đề còn lại là một phép tính thông thường nhạy với tử ngoại có xu hướng đẩy tham số khối lượng Higgs lên phía thang cơ bản cao, trừ phi có một đối xứng hoặc cơ chế động lực học bảo vệ nó.}
+\end{classroomqa}
+
+Cụm từ tinh chỉnh báo trước độ nhạy đó. Trong một mô tả với ngưỡng cắt, một tham số khối lượng vô hướng nhận các hiệu chỉnh gần đúng có dạng
+\begin{equation}
+  \delta\mu^2
+  \sim
+  \frac{C}{16\pi^2}\Lambda^2,
+  \label{eq:l10-higgs-quadratic-sensitivity}
+\end{equation}
+trong đó \(C\) gộp các hằng số liên kết chuẩn, Yukawa và vô hướng, còn \(\Lambda\) đánh dấu thang tại đó lý thuyết hiệu dụng được thay thế. Nếu
+\(\Lambda\) ở gần một thang GUT hoặc Planck, thì để thu được
+\(\mu^2\sim v^2\) dường như cần một sự triệt tiêu rất chính xác giữa các đóng góp đầu vào và bức xạ. Đây là dạng theo tính tự nhiên của bài toán phân cấp chuẩn. Đây là phần bổ sung biên tập nhằm hoàn tất phép tính mà bài giảng hứa dành cho quý học tiếp theo, chứ không phải là khẳng định rằng bản thân một tạo tác điều chuẩn cụ thể là quan sát được.
+
+\begin{classroomqa}
+\audiencequestion{Có nên hình dung độ dài Planck như bán kính cuối cùng của đám mây sàng lọc không?\lecturetimestamp{01:35:03}}
+\lecturerresponse{Không. Bức tranh điện môi giải thích sự tái chuẩn hoá điện tích chuẩn, nhưng lập luận Planck đã dùng năng lượng định xứ và hằng số liên kết hấp dẫn có thứ nguyên. Không có đám mây sàng lọc hấp dẫn theo nghĩa đen nào trong phép suy dẫn này.}
+\end{classroomqa}
+
+\subsection{Các câu hỏi cuối cùng về các tương tác}
+
+Những phút cuối trở lại với thế Higgs và các hạng mà một Lagrangian có thể chứa.
+
+\begin{classroomqa}
+\audiencequestion{Thế Higgs có thể chứa \(\phi^6\) mà vẫn giữ được đối xứng không?\lecturetimestamp{01:35:20}}
+\lecturerresponse{Có. Các lũy thừa chẵn bảo toàn đối xứng mô hình đồ chơi \(\phi\mapsto-\phi\), còn \(\phi^5\) thì sẽ phá vỡ nó. Trong bốn chiều, hệ số của \(\phi^6\) có thứ nguyên khối lượng âm, nên hạng đó bị triệt bởi một thang cao, chẳng hạn
+\(c_6\phi^6/\Lambda^2\). Nó là một tương tác hiệu dụng hợp lệ dù không khả tái chuẩn hoá theo đếm lũy thừa.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các lũy thừa của trường Higgs có biểu diễn các quá trình tạo và huỷ hay không, nghĩa là \(\phi^4\) dự đoán tán xạ Higgs-Higgs?\lecturetimestamp{01:35:52}}
+\lecturerresponse{Có. Sau khi khai triển quanh chân không, các lũy thừa của trường đã lượng tử hoá sinh ra các đỉnh. Hạng bậc bốn chứa một đỉnh bốn Higgs, và thế sau khi dịch chuyển cũng tạo ra các tương tác bậc ba. Biết các hệ số của chúng cho phép dự đoán những quá trình như
+\(hh\to hh\), với điều kiện thực hiện phép tính giản đồ như thường lệ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Một Lagrangian cơ bản có bắt buộc phải là đa thức theo các trường của nó, không có lũy thừa nào vượt quá bốn không?\lecturetimestamp{01:36:09}}
+\lecturerresponse{Đối với một lý thuyết vô hướng bốn chiều khả tái chuẩn hoá theo nhiễu loạn, các toán tử có thứ nguyên không quá bốn tạo thành danh sách hữu hạn truyền thống. Lý thuyết trường hiệu dụng hiện đại ít bị ràng buộc hơn: các toán tử có thứ nguyên cao hơn được phép và mã hoá vật lý khoảng cách ngắn, nhưng tác dụng của chúng bị triệt bởi các lũy thừa của thang cao. Vì thế, ngoại lệ thỉnh thoảng xuất hiện lại là điều thiết yếu đối với quy tắc cũ.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các hạng tự tương tác có bị bỏ qua trong phần thảo luận về sự chạy của các hằng số liên kết không?\lecturetimestamp{01:36:44}}
+\lecturerresponse{Chúng đã được bao hàm về mặt khái niệm. Chính các tự tương tác gluon là thứ đảo dấu so với QED và tạo ra phản sàng lọc. Các tự tương tác Higgs cũng góp phần vào sự chạy của các tham số vô hướng và các tham số khác của Mô hình Chuẩn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có những hạng chéo trong đó các tương tác khác nhau ảnh hưởng đến sự chạy của nhau không?\lecturetimestamp{01:37:23}}
+\lecturerresponse{Có. Ở bậc vòng cao hơn, các hàm beta chứa các tích hỗn hợp của các hằng số liên kết chuẩn, Yukawa và vô hướng. Lý thuyết nhiễu loạn vẫn hữu ích chừng nào các hằng số liên kết không thứ nguyên ấy còn đủ nhỏ, vì các bậc vòng kế tiếp khi đó bị triệt tương ứng.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Cụ thể, ý nói \(F\) được tinh chỉnh rất chính xác là gì?\lecturetimestamp{01:37:44}}
+\lecturerresponse{Câu trả lời đầy đủ được hoãn lại trong bài giảng. Vấn đề là sự bất ổn định của một thang vô hướng nhẹ trước những đóng góp tử ngoại lớn hơn nhiều, được tóm lược bởi
+\eqref{eq:l10-higgs-quadratic-sensitivity}. Siêu đối xứng là một cách từng được đề xuất để buộc xảy ra các sự triệt tiêu, nhưng bản thân bài toán phân cấp không chọn ra một lời giải đã được xác nhận.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Bản thân nhóm tái chuẩn hoá có thể được giải thích ngay bây giờ không?
+\lecturetimestamp{01:37:56}}
+\lecturerresponse{Không thể trong những phút còn lại. Nội dung vận hành của nó đã xuất hiện rồi: thay đổi độ phân giải, để các hằng số liên kết chảy, và vẫn giữ nguyên các dự đoán vật lý. Một trình bày đầy đủ thuộc về giai đoạn tiếp theo của học phần.}
+\end{classroomqa}
+
+Đó là chỗ mạch trình bày dừng lại một cách thích đáng. Cơ chế Higgs đã làm cho Mô hình Chuẩn trở nên nhất quán về nội tại: nó bảo toàn đối xứng chuẩn chiral, đem lại khối lượng cho các boson yếu và các fermion, đồng thời dự đoán các tương tác Higgs vật lý. Khi đó, tái chuẩn hoá dạy cho ta cách những tương tác ấy thay đổi theo thang và gợi ý rằng các lực chuẩn có thể cùng chia sẻ một nguồn gốc thống nhất. Hấp dẫn cung cấp một thang cao thứ hai bằng một lập luận độc lập. Không một thành công nào trong số đó giải thích vì sao giá trị chân không của Higgs lại thấp hơn rất nhiều so với cả hai. Vì vậy, bài giảng cuối không khép lại chủ đề; nó xác định con số nhỏ mà chủ đề kế tiếp phải tập trung vào.
