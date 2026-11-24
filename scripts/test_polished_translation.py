@@ -239,6 +239,23 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(p.layout_repairs(entanglement, 'de', 'chapters/lecture_09/content.tex', row),
                          'Gesamt\\-energie & Räumliche Krümmung & Entwicklung')
 
+    def test_russian_layout_repairs_preserve_words_and_table_columns(self):
+        entanglement = {'id': 'supplementary--quantum_entanglement--2006_fall_part_3'}
+        q = 'Сопротивлялся ли Эйнштейн пространственно-временной формулировке'
+        self.assertEqual(p.layout_repairs(entanglement, 'ru', 'chapters/lecture_06/content.tex', q).replace('\\-', ''), q)
+        rows = '  положительная & отрицательная (открытая)\n  отрицательная & положительная (замкнутая)'
+        actual = p.layout_repairs(entanglement, 'ru', 'chapters/lecture_09/content.tex', rows)
+        self.assertEqual(actual.count('\\-'), 2)
+        self.assertEqual(actual.replace('\\-', ''), rows)
+        standard = {'id': 'supplementary--particle_physics_2_standard_model--2010_winter'}
+        phrase = 'Её время--пространственные компоненты'
+        self.assertEqual(p.layout_repairs(standard, 'ru', 'chapters/lecture_07/content.tex', phrase),
+                         'Её время--\\allowbreak{}пространственные компоненты')
+        special = {'id': 'core--special_relativity--2012_spring_theoretical_minimum'}
+        anchor = '\\begin{classroomqa}\n\\audiencequestion{Не потерялся ли знак минус, когда взаимодействие'
+        self.assertEqual(p.layout_repairs(special, 'ru', 'chapters/lecture_05/content.tex', anchor),
+                         '\\enlargethispage{1pt}\n' + anchor)
+
     def test_traditional_chinese_overflow_break_is_bound_to_failing_references(self):
         cosmology = next(b for b in p.read(p.MANIFEST)['books']
                          if b['id'] == 'core--cosmology--2013_winter_theoretical_minimum')
@@ -675,6 +692,31 @@ class TranslationTests(unittest.TestCase):
                 self.assertEqual(p.recheck_language('ko', False), 1)
                 self.assertEqual(p.recheck_language('ko', False), 0)
 
+    def test_aginti_splits_a_truncated_writer_batch_within_the_existing_budget(self):
+        with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
+            book = {'id': 'demo', 'titles': {'en': 'Physics', 'ru': 'Физика'}}
+            rel = 'chapter.tex'
+            prepared = {'source_sha256': 'test', 'parts': ['A field.'] * 23, 'protected': []}
+            p.write(p.WORK / 'prepared/demo/chapter.tex.json', prepared)
+            calls = []
+
+            def reply(prompt, *args, **kwargs):
+                payload = p.json.loads(prompt[prompt.index('{"paragraphs":'):])
+                keys = payload['paragraphs']
+                calls.append(len(keys))
+                if len(keys) > 10:
+                    raise p.InvalidReply('AgInTi response reached its output limit')
+                self.assertEqual(set(payload['previous_errors']), set(keys))
+                return {'translations': {k: 'Поле.' for k in keys}}
+
+            with patch.object(p, 'chat', side_effect=reply):
+                for _ in range(2):
+                    p.translate_file(book, 'ru', rel, SimpleNamespace(provider='aginti-openai'))
+            result = p.read(p.result_path(book, 'ru', rel))
+            self.assertEqual(calls, [23, 10, 10, 3])
+            self.assertEqual(len(result['accepted']), 23)
+            self.assertTrue(all(a == {'writer': 2} for a in result['attempts'].values()))
+
     def test_small_batches_recover_only_missing_replies_once(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):
             book = {'id': 'demo', 'titles': {'en': 'Physics'}}
@@ -712,6 +754,17 @@ class TranslationTests(unittest.TestCase):
         errors = p.accept_candidates(prepared, result, {'0': source},
                                      {'0': 'Cách viết gốc: Атом.'}, 'vi', 'writer')
         self.assertEqual(errors, {})
+
+    def test_russian_rejects_stray_script_without_rejecting_cyrillic_or_greek(self):
+        result = {'accepted': {}}
+        prepared = {'protected': []}
+        source = 'Consider the other vectors.'
+        errors = p.accept_candidates(prepared, result, {'0': source},
+                                     {'0': 'Рассмотрим المزيد векторов.'}, 'ru', 'writer')
+        self.assertIn('foreign-script', errors['0'])
+        self.assertFalse(p.foreign_letters('Смысл α', 'ru'))
+        self.assertEqual(p.accept_candidates(prepared, result, {'0': source},
+                                             {'0': 'Рассмотрим другие векторы.'}, 'ru', 'writer'), {})
 
     def test_persistent_budget_prevents_resume_retry_amplification(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'WORK', Path(tmp)):

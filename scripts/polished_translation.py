@@ -964,9 +964,10 @@ def book_title(book, lang, args=None):
     return read(path)['translations'][book['id']]
 
 
-def foreign_vietnamese_letters(text):
+def foreign_letters(text, lang):
+    scripts = ('LATIN ', 'GREEK ', 'CYRILLIC ') if lang == 'ru' else ('LATIN ', 'GREEK ')
     return Counter(c for c in TOKEN.sub('', text) if c.isalpha()
-                   and not unicodedata.name(c, '').startswith(('LATIN ', 'GREEK ')))
+                   and not unicodedata.name(c, '').startswith(scripts))
 
 
 def accept_candidates(prepared, result, rows, translations, lang, stage):
@@ -975,8 +976,8 @@ def accept_candidates(prepared, result, rows, translations, lang, stage):
         translated = translations.get(key)
         evidence = []
         issue = validate(source, translated, lang, prepared['protected'], number_evidence=evidence)
-        if not issue and lang == 'vi' and foreign_vietnamese_letters(translated) - foreign_vietnamese_letters(source):
-            issue = 'foreign-script text not present in the Vietnamese source passage'
+        if not issue and lang in {'vi', 'ru'} and foreign_letters(translated, lang) - foreign_letters(source, lang):
+            issue = 'foreign-script text not present in the source passage'
         if isinstance(translated, str):
             result.setdefault('candidates', {})[key] = translated
         if issue:
@@ -1137,6 +1138,15 @@ def segment_batches(items, limit, max_count=None):
         yield dict(batch)
 
 
+def writer_batches(eligible, result, aginti):
+    misses = {'AgInTi response reached its output limit', 'AgInTi returned no text'}
+    last_errors = result.get('last_errors', {})
+    if aginti and any(last_errors.get(key) in misses for key in eligible):
+        yield from segment_batches(eligible.items(), 3500, 10)
+    else:
+        yield eligible
+
+
 def recover_missing_batches(book, lang, rel, prepared, result, pending, args, errors):
     if getattr(args, 'provider', None) != 'aginti-openai' or lang not in {'vi', 'ru', 'ar'}:
         return
@@ -1169,50 +1179,51 @@ def translate_file(book, lang, rel, args):
                         if result.get('attempts', {}).get(k, {}).get('writer', 0) < REQUEST_LIMIT}
             if not eligible:
                 break
-            payload = {'paragraphs': eligible, 'previous_errors': errors,
-                'read_only_token_legend': {token: p['protected'][int(token[3:9])]
-                    for source in eligible.values() for token in TOKEN.findall(source)}}
-            if lang == 'zh-Hant':
-                simplified = load_results(book, 'zh', rel, p)
-                missing = [key for key in eligible if key not in simplified['accepted']]
-                if missing:
-                    raise RuntimeError(f'Simplified Chinese source is incomplete: {book["id"]}/{rel}: {missing}')
-                payload['simplified_chinese_drafts'] = {
-                    key: OPENCC_S2T.convert(simplified['accepted'][key]) for key in eligible}
-                opening = (
-                    'Polish the supplied mechanically converted drafts into fluent, precise Traditional Chinese '
-                    'as used in Taiwan. Do not retranslate from scratch. Use each English paragraph only as the '
-                    'authoritative reference for meaning, facts, qualifications, negations and physics terminology. ')
-            else:
-                opening = f'Translate these final edited physics lecture paragraphs into fluent, precise {LANGS[lang]}. '
-            prompt = (
-                opening +
-                'Translate faithfully, not summarize: preserve every qualification, negation, physical distinction, '
-                'question and answer. Never add facts. Keep standard physics terminology consistent. '
-                'Every @@T000000@@-style token is immutable TeX, math, a reference, or a number. '
-                'Copy all tokens EXACTLY ONCE; do not translate their contents. Keep structural tokens in '
-                'original order. Inline math, numeric and cross-reference tokens may change order ONLY '
-                'within the same structural boundaries when required for natural target-language syntax. '
-                'Use the read-only token legend to understand the physics and formatting. Even tokens '
-                'representing quote marks, dashes or empty-looking braces MUST remain. For example '
-                'left@@T000001@@right becomes 左@@T000001@@右, not 左右. '
-                'Return JSON {"translations": {"id": "translated paragraph"}} with all supplied IDs only. '
-                'No TeX commands, markdown, new numbers, or comments. Translate headings and introductory '
-                'paragraphs just as carefully as body text. Proper names may remain Latin, but ordinary '
-                'prose such as companion notes or Professor must be translated, not left in English. '
-                f'Book: {book["titles"]["en"]}. Target title: {book_title(book, lang, args)}. '
-                'Use the established scientific register of the target language. Distinguish vectors from scalars, '
-                'operators from their values, and transformations from literal motion. Do not change the physical action.\n'
-                'Use idiomatic scientific sentences around displayed equations rather than mechanically '
-                'copying English word order. Introduce transformations as transformations, not literal sending. '
-                'Frozen expressions cannot be repeated, even if repeating them would be natural: use a '
-                'pronoun or restructure the sentence instead. English spelled-out numbers up to '
-                'ninety-nine and unity may use equivalent Arabic numerals. Never add explanatory quantities. '
-                'Translate a/an/per-unit expressions with natural words, not extra Arabic digits. '
-                'Do not copy digits out of frozen formulas or add numerical glosses for verbal '
-                'predicates such as vanishes or nonzero. Preserve their polarity and qualifiers. '
-                + json.dumps(payload, ensure_ascii=False))
-            request_segments(book, lang, rel, p, result, eligible, args, 'writer', errors, prompt)
+            for chunk in writer_batches(eligible, result, aginti):
+                payload = {'paragraphs': chunk, 'previous_errors': {k: errors[k] for k in chunk if k in errors},
+                    'read_only_token_legend': {token: p['protected'][int(token[3:9])]
+                        for source in chunk.values() for token in TOKEN.findall(source)}}
+                if lang == 'zh-Hant':
+                    simplified = load_results(book, 'zh', rel, p)
+                    missing = [key for key in chunk if key not in simplified['accepted']]
+                    if missing:
+                        raise RuntimeError(f'Simplified Chinese source is incomplete: {book["id"]}/{rel}: {missing}')
+                    payload['simplified_chinese_drafts'] = {
+                        key: OPENCC_S2T.convert(simplified['accepted'][key]) for key in chunk}
+                    opening = (
+                        'Polish the supplied mechanically converted drafts into fluent, precise Traditional Chinese '
+                        'as used in Taiwan. Do not retranslate from scratch. Use each English paragraph only as the '
+                        'authoritative reference for meaning, facts, qualifications, negations and physics terminology. ')
+                else:
+                    opening = f'Translate these final edited physics lecture paragraphs into fluent, precise {LANGS[lang]}. '
+                prompt = (
+                    opening +
+                    'Translate faithfully, not summarize: preserve every qualification, negation, physical distinction, '
+                    'question and answer. Never add facts. Keep standard physics terminology consistent. '
+                    'Every @@T000000@@-style token is immutable TeX, math, a reference, or a number. '
+                    'Copy all tokens EXACTLY ONCE; do not translate their contents. Keep structural tokens in '
+                    'original order. Inline math, numeric and cross-reference tokens may change order ONLY '
+                    'within the same structural boundaries when required for natural target-language syntax. '
+                    'Use the read-only token legend to understand the physics and formatting. Even tokens '
+                    'representing quote marks, dashes or empty-looking braces MUST remain. For example '
+                    'left@@T000001@@right becomes 左@@T000001@@右, not 左右. '
+                    'Return JSON {"translations": {"id": "translated paragraph"}} with all supplied IDs only. '
+                    'No TeX commands, markdown, new numbers, or comments. Translate headings and introductory '
+                    'paragraphs just as carefully as body text. Proper names may remain Latin, but ordinary '
+                    'prose such as companion notes or Professor must be translated, not left in English. '
+                    f'Book: {book["titles"]["en"]}. Target title: {book_title(book, lang, args)}. '
+                    'Use the established scientific register of the target language. Distinguish vectors from scalars, '
+                    'operators from their values, and transformations from literal motion. Do not change the physical action.\n'
+                    'Use idiomatic scientific sentences around displayed equations rather than mechanically '
+                    'copying English word order. Introduce transformations as transformations, not literal sending. '
+                    'Frozen expressions cannot be repeated, even if repeating them would be natural: use a '
+                    'pronoun or restructure the sentence instead. English spelled-out numbers up to '
+                    'ninety-nine and unity may use equivalent Arabic numerals. Never add explanatory quantities. '
+                    'Translate a/an/per-unit expressions with natural words, not extra Arabic digits. '
+                    'Do not copy digits out of frozen formulas or add numerical glosses for verbal '
+                    'predicates such as vanishes or nonzero. Preserve their polarity and qualifiers. '
+                    + json.dumps(payload, ensure_ascii=False))
+                request_segments(book, lang, rel, p, result, chunk, args, 'writer', errors, prompt)
             pending = {k: s for k, s in pending.items() if k not in result['accepted']}
             print(json.dumps({'book': book['id'], 'lang': lang, 'file': rel,
                               'accepted': len(result['accepted']), 'pending_batch': len(pending)}, ensure_ascii=False), flush=True)
@@ -1494,6 +1505,24 @@ def layout_repairs(book, lang, rel, text):
                   '\\audiencequestion{Liệu \\(F_{00}\\) cũng bằng 0 không?}')
         # Printed page 285 needs 1.224 pt more depth alongside the timestamp footnote.
         replacements.append((anchor, '\\enlargethispage{2pt}\n' + anchor))
+    if (book['id'] == 'core--special_relativity--2012_spring_theoretical_minimum'
+            and lang == 'ru' and rel == 'chapters/lecture_05/content.tex'):
+        anchor = ('\\begin{classroomqa}\n'
+                  '\\audiencequestion{Не потерялся ли знак минус, когда взаимодействие')
+        # Printed page 145 needs 0.579 pt more depth alongside the timestamp footnote.
+        replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
+    if book['id'] == 'supplementary--quantum_entanglement--2006_fall_part_3' and lang == 'ru':
+        if rel == 'chapters/lecture_06/content.tex':
+            anchor = 'Сопротивлялся ли Эйнштейн пространственно-временной формулировке'
+            replacements.append((anchor, anchor.replace('пространственно', 'простран\\-ственно')))
+        elif rel == 'chapters/lecture_09/content.tex':
+            for word, broken in [('положительная', 'положи\\-тельная'),
+                                 ('отрицательная', 'отри\\-цательная')]:
+                replacements.append((f'  {word} & ', f'  {broken} & '))
+    if (book['id'] == 'supplementary--particle_physics_2_standard_model--2010_winter'
+            and lang == 'ru' and rel == 'chapters/lecture_07/content.tex'):
+        anchor = 'Её время--пространственные компоненты'
+        replacements.append((anchor, 'Её время--\\allowbreak{}пространственные компоненты'))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'
