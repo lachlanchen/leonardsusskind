@@ -1,0 +1,504 @@
+\chapter{Vectơ trạng thái, sự tiến hóa unita và đối xứng tịnh tiến}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+\providecommand{\bra}[1]{\left\langle#1\right\rvert}
+
+Sau khoảng nghỉ hai quý, việc ôn nhanh cơ học lượng tử sẽ rất hữu ích. Tuy nhiên, không thể dành trọn cả quý cho việc ôn tập. Chủ đề tiếp theo là ứng dụng cơ học lượng tử vào những bài toán mà ban đầu lý thuyết này được phát triển để giải quyết: nguyên tử, electron và các hạt liên quan, cùng photon.
+
+Trước hết là nguyên tử. Làm sao có thể xét nguyên tử trước electron, khi electron là thành phần của nguyên tử? Ban đầu, chỉ cần biết vừa đủ về cơ học của electron để viết các phương trình cơ bản của nguyên tử hydro. Sau đó có thể nghiên cứu chi tiết hơn về các hạt giống electron. Trong suốt những ứng dụng này, đối xứng sẽ là công cụ thường xuyên được sử dụng: cách các đối xứng được biểu diễn trong cơ học lượng tử và những hệ quả của chúng đối với một hệ.
+
+\section{Trạng thái, đại lượng quan sát được và tính trực giao}
+
+Trong cơ học cổ điển, trạng thái được biểu diễn bằng một điểm trong không gian pha. Trong cơ học lượng tử, trạng thái được biểu diễn bằng một vectơ trong một không gian vectơ phức. Đây là vectơ trừu tượng, không phải mũi tên trong không gian ba chiều thông thường. Có thể cộng các vectơ trạng thái và nhân chúng với các số phức; không gian chứa chúng không nhất thiết phải có số chiều hữu hạn cụ thể nào.
+
+Ký hiệu Dirac viết vectơ trạng thái dưới dạng ket,
+\begin{equation}
+\ket{\psi},
+\end{equation}
+và gắn với nó một bra,
+\begin{equation}
+\bra{\psi}.
+\end{equation}
+Bra và ket liên hệ với nhau qua phép liên hợp Hermite. Ghép một bra với một ket ta được tích vô hướng,
+\begin{equation}
+\langle\phi|\psi\rangle,
+\end{equation}
+vốn thường là một số phức.
+
+Đại lượng quan sát được là đại lượng có thể đo: vị trí, động lượng, năng lượng hay bất kỳ đại lượng đo được nào khác. Trong cơ học lượng tử, một đại lượng quan sát được được biểu diễn bằng toán tử tuyến tính Hermite \(A\),
+\begin{equation}
+A^\dagger=A.
+\end{equation}
+Tính Hermite là dạng tương tự của tính thực đối với toán tử. Cụ thể, các trị riêng của một toán tử Hermite đều là số thực.
+
+Vectơ riêng của \(A\) thỏa mãn
+\begin{equation}
+A\ket{\alpha}=\alpha\ket{\alpha}.
+\end{equation}
+Các trị riêng có thể có chính là những kết quả có thể thu được khi đo \(A\). Chẳng hạn, nếu một đại lượng quan sát được chỉ có thể cho kết quả \(1\), \(3\) hoặc \(7\), thì những số này là các trị riêng của nó. Các vectơ riêng là những trạng thái trong đó kết quả được xác định rõ, chứ không mang tính thống kê. Ở trạng thái \(\ket{\alpha}\), phép đo \(A\) chắc chắn cho kết quả \(\alpha\).
+
+Tích vô hướng biểu thị một quan hệ logic quan trọng giữa các trạng thái. Giả sử có một phép đo có thể phân biệt chắc chắn \(\ket{\phi}\) với \(\ket{\psi}\). Khi đó hai trạng thái trực giao với nhau:
+\begin{equation}
+\langle\phi|\psi\rangle=0.
+\end{equation}
+Tính trực giao nghĩa là có thể phân biệt các trạng thái về mặt vật lý mà không có sự nhập nhằng. Với một trạng thái đã chuẩn hóa,
+\begin{equation}
+\langle\psi|\psi\rangle=1.
+\end{equation}
+
+\section{Hạt trong biểu diễn vị trí}
+
+Trước hết, xét một hạt chuyển động trên một đường thẳng. Vị trí \(x\) của hạt là một đại lượng quan sát được. Với mỗi vị trí có thể có \(x_0\), tồn tại một trạng thái \(\ket{x_0}\) mà trong đó phép đo vị trí chắc chắn cho kết quả \(x_0\).
+
+Các trạng thái ứng với những vị trí khác nhau có thể phân biệt được, nên chúng trực giao:
+\begin{equation}
+x\neq x'
+\quad\Longrightarrow\quad
+\langle x'|x\rangle=0.
+\end{equation}
+Với một trạng thái bất kỳ \(\ket{\psi}\), độ chồng lấp của nó với trạng thái vị trí xác định hàm sóng:
+\begin{equation}
+\psi(x)=\langle x|\psi\rangle.
+\end{equation}
+Đây là biểu diễn vị trí của vectơ trạng thái.
+
+Bản thân hàm sóng không phải là xác suất. Hàm sóng có thể dương, âm, ảo hoặc hoàn toàn phức. Mật độ xác suất vị trí là
+\begin{equation}
+P(x)=\psi^*(x)\psi(x)=|\psi(x)|^2.
+\end{equation}
+Tích này không âm, đúng như yêu cầu đối với một mật độ xác suất. Với hàm sóng đã chuẩn hóa,
+\begin{equation}
+\int_{-\infty}^{\infty}dx\,|\psi(x)|^2=1.
+\end{equation}
+
+Trong biểu diễn vị trí, toán tử vị trí tác dụng bằng phép nhân:
+\begin{equation}
+(\hat x\psi)(x)=x\psi(x).
+\end{equation}
+Các hàm riêng của nó là những hàm lý tưởng tập trung tại một điểm. Về mặt hình thức, chúng được mô tả bằng các hàm delta Dirac: những đỉnh rất hẹp có tâm tại trị riêng vị trí. Không cần đến định nghĩa phân phối chính xác của chúng trong phần ôn tập này.
+
+Trong ba chiều, vị trí có ba thành phần \(x\), \(y\) và \(z\); trạng thái vị trí biểu diễn một điểm trong không gian ba chiều. Hai trạng thái như vậy trực giao nếu các điểm tương ứng khác nhau ít nhất ở một tọa độ. Thông thường, ta vẫn dùng ký hiệu một chiều và ngầm hiểu phần mở rộng tương ứng sang ba chiều.
+
+\section{Động lượng và các trạng thái có động lượng xác định}
+
+Mỗi thành phần vị trí có một thành phần động lượng tương ứng. Trong biểu diễn vị trí, toán tử động lượng dọc theo trục \(x\) là
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+Như vậy, một toán tử Hermite trừu tượng cũng có thể được hình dung cụ thể như một phép toán tác động lên các hàm sóng.
+
+Trạng thái có động lượng xác định \(p_0\) thỏa mãn phương trình trị riêng
+\begin{equation}
+\hat p_x\psi_{p_0}(x)=p_0\psi_{p_0}(x).
+\end{equation}
+Thay dạng vi phân của \(\hat p_x\) vào ta được
+\begin{equation}
+-i\hbar\frac{d\psi_{p_0}(x)}{dx}
+=p_0\psi_{p_0}(x).
+\end{equation}
+Đạo hàm của hàm sóng tỉ lệ với chính hàm sóng, nên nghiệm có dạng hàm mũ:
+\begin{equation}
+\psi_{p_0}(x)\propto
+\exp\left(\frac{ip_0x}{\hbar}\right).
+\end{equation}
+
+\begin{classroomqa}
+\lecturetimestamp{00:24:26}
+\audiencequestion{Phương trình vi phân này có đúng với mọi hàm sóng không?}
+\lecturerresponse{Không. Đây là phương trình trị riêng cho trạng thái có động lượng xác định. Phần lớn các hàm sóng không thỏa mãn phương trình này; nó chọn ra các hàm riêng động lượng.}
+\end{classroomqa}
+
+Sự khác biệt giữa trạng thái riêng vị trí và trạng thái riêng động lượng rất rõ rệt. Hàm riêng vị trí tập trung tại một điểm. Hàm riêng động lượng có
+\begin{equation}
+\left|\exp\left(\frac{ip_0x}{\hbar}\right)\right|^2=1.
+\end{equation}
+Do đó, môđun của nó không đổi trên toàn bộ đường thẳng. Theo nghĩa lý tưởng hóa này, động lượng xác định đồng nghĩa với độ bất định hoàn toàn về vị trí; tương tự, vị trí xác định cũng đồng nghĩa với độ bất định hoàn toàn về động lượng. Đây là trường hợp cực hạn của hệ thức bất định vị trí--động lượng.
+
+\begin{classroomqa}
+\lecturetimestamp{00:26:36}
+\audiencequestion{Nếu biết động lượng là \(p_0\), tại sao vẫn có phân bố xác suất?}
+\lecturerresponse{Đại lượng được trình bày ở đây liên quan đến phép đo vị trí, chứ không phải một phép đo động lượng khác. Động lượng và vị trí là hai đại lượng quan sát được khác nhau. Với trạng thái riêng động lượng lý tưởng hóa, biên độ vị trí có môđun không đổi trên toàn bộ đường thẳng. Biên độ động lượng thuộc về biểu diễn động lượng và liên hệ với hàm sóng vị trí qua phép biến đổi Fourier.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:02}
+\audiencequestion{Xác suất vị trí có dạng thế nào khi hàm sóng là hàm delta Dirac?}
+\lecturerresponse{Nó tập trung tại vị trí đã chỉ định. Đỉnh lý tưởng hóa biểu thị vị trí được xác định chắc chắn.}
+\end{classroomqa}
+
+\editorialnote{Các trạng thái riêng vị trí và động lượng chính xác là những trạng thái tổng quát hóa. Hàm delta Dirac và sóng phẳng không phải là các hàm sóng thông thường, bình phương khả tích và được chuẩn hóa trên toàn đường thẳng; bình phương theo nghĩa thông thường của một hàm delta cũng không phải là một phân phối thông thường. Những phát biểu trên nói về tính định xứ lý tưởng hóa và môđun không đổi của chúng.}
+
+Về mặt hình thức, có thể xem hàm sóng như một vectơ có một thành phần ứng với mỗi giá trị của \(x\). Tuy nhiên, không giống một vectơ cột hữu hạn thông thường, nó có vô hạn liên tục các thành phần.
+
+\begin{classroomqa}
+\lecturetimestamp{00:28:53}
+\audiencequestion{Vectơ trạng thái có được biểu diễn bằng vectơ cột không?}
+\lecturerresponse{Có thể biểu diễn như vậy, nhưng viết một hàm sóng vị trí dưới dạng vectơ cột thông thường khá bất tiện vì \(x\) nhận liên tục nhiều giá trị. Có thể hình dung nó về mặt hình thức như một vectơ cột liên tục, còn bra tương ứng là một vectơ hàng liên tục.}
+\end{classroomqa}
+
+\section{Sự tiến hóa theo thời gian và tính unita}
+
+Trạng thái thay đổi theo thời gian như thế nào? Sự tiến hóa theo thời gian là một phép biến đổi trên không gian trạng thái. Gọi \(U(t)\) là toán tử biểu thị sự tiến hóa trong khoảng thời gian đã trôi qua \(t\). Khi đó,
+\begin{equation}
+U(t)\ket{\psi(t_1)}=\ket{\psi(t_1+t)}.
+\end{equation}
+Đặc biệt,
+\begin{equation}
+\ket{\psi(t)}=U(t)\ket{\psi(0)},
+\qquad
+U(0)=\mathbf 1.
+\end{equation}
+
+Điều kiện đối với \(U(t)\) bắt nguồn từ định luật bảo toàn thông tin. Nếu hai trạng thái ban đầu có thể phân biệt được, sự tiến hóa theo thời gian không được xóa nhòa sự khác biệt đó. Các trạng thái trực giao phải tiếp tục trực giao. Tổng quát hơn, tích vô hướng giữa hai trạng thái bất kỳ được bảo toàn:
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|\psi\rangle.
+\end{equation}
+Vì
+\begin{equation}
+\langle U(t)\phi|U(t)\psi\rangle
+=\langle\phi|U^\dagger(t)U(t)|\psi\rangle,
+\end{equation}
+việc bảo toàn mọi tích vô hướng đòi hỏi
+\begin{equation}
+U^\dagger(t)U(t)=\mathbf 1.
+\end{equation}
+Toán tử thỏa mãn phương trình này được gọi là toán tử unita.
+
+\begin{classroomqa}
+\lecturetimestamp{00:36:36}
+\audiencequestion{Bảo toàn mọi tích vô hướng có phải là một điều kiện mạnh hơn chỉ bảo toàn tính trực giao không?}
+\lecturerresponse{Đối với các phép biến đổi tuyến tính của trạng thái đang xét, bảo toàn tính trực giao dẫn đến bảo toàn tích vô hướng. Phép quay thông thường là một phép tương tự quen thuộc: nó bảo toàn tính trực giao và tích vô hướng.}
+\end{classroomqa}
+
+\editorialnote{Nói chính xác, chỉ bảo toàn tính trực giao vẫn cho phép một hệ số co giãn chung khác không. Việc bảo toàn chuẩn hóa, vốn đã là yêu cầu đối với sự tiến hóa vật lý theo thời gian, loại bỏ khả năng đó và dẫn đến bảo toàn tích vô hướng.}
+
+Không nên nhầm toán tử unita với các đại lượng quan sát được Hermite. Vị trí và động lượng là các toán tử Hermite, nhưng nhìn chung chúng không phải là toán tử unita. Các trị riêng của một toán tử unita là các pha, tức những số có dạng \(e^{i\theta}\) và nằm trên đường tròn đơn vị.
+
+\begin{classroomqa}
+\lecturetimestamp{00:38:12}
+\audiencequestion{Ví dụ nào về một phép biến đổi không unita?}
+\lecturerresponse{Các toán tử vị trí và động lượng là những ví dụ: chúng là các đại lượng quan sát được Hermite nhưng không unita. Toán tử unita có các trị riêng với môđun bằng đơn vị, nên các trị riêng của nó là các pha.}
+\end{classroomqa}
+
+\section{Hamiltonian và phương trình Schr\"odinger}
+
+Giả sử sự tiến hóa theo thời gian là liên tục. Vì vậy, trong một khoảng thời gian rất ngắn \(\epsilon\), toán tử tiến hóa phải gần với toán tử đồng nhất:
+\begin{equation}
+U(\epsilon)=\mathbf 1+\epsilon G+\mathcal O(\epsilon^2).
+\end{equation}
+Dùng tính unita,
+\begin{align}
+U^\dagger(\epsilon)U(\epsilon)
+&=
+\left(\mathbf 1+\epsilon G^\dagger\right)
+\left(\mathbf 1+\epsilon G\right)
++\mathcal O(\epsilon^2)
+\\
+&=
+\mathbf 1+\epsilon(G^\dagger+G)
++\mathcal O(\epsilon^2).
+\end{align}
+Ở bậc nhất,
+\begin{equation}
+G^\dagger=-G.
+\end{equation}
+Do đó \(G\) là phản Hermite. Có thể viết nó dưới dạng
+\begin{equation}
+G=-\frac{i}{\hbar}H,
+\end{equation}
+trong đó \(H\) là toán tử Hermite:
+\begin{equation}
+H^\dagger=H.
+\end{equation}
+Vì vậy, toán tử tiến hóa trong thời gian vi phân là
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+Toán tử Hermite \(H\) được gọi là Hamiltonian.
+
+\begin{classroomqa}
+\lecturetimestamp{00:45:48}
+\audiencequestion{Vì sao có thể bỏ qua số hạng \(\epsilon^2\)?}
+\lecturerresponse{Phép tính được thực hiện nhất quán đến bậc nhất theo \(\epsilon\). Nếu tính đến bậc hai thì phải giữ tất cả các số hạng bậc hai, kể cả số hạng tỉ lệ với \(-\epsilon^2H^2/(2\hbar^2)\). Phép gần đúng nằm ở biểu thức đã lược bỏ các số hạng của \(U(\epsilon)\), chứ không nằm trong tính Hermite của \(H\).}
+\end{classroomqa}
+
+Có thể ghép một khoảng thời gian hữu hạn từ nhiều khoảng nhỏ. Chia \(t\) thành \(N\) bước, mỗi bước dài \(t/N\). Lặp lại phép biến đổi vi phân ta được
+\begin{equation}
+U(t)
+=
+\lim_{N\to\infty}
+\left(
+\mathbf 1-\frac{itH}{N\hbar}
+\right)^N
+=
+\exp\left(-\frac{iHt}{\hbar}\right).
+\end{equation}
+Hàm mũ là dạng hữu hạn của phép biến đổi vi phân.
+
+Giờ hãy cho trạng thái tiến hóa từ \(t\) đến \(t+\epsilon\):
+\begin{align}
+\ket{\psi(t+\epsilon)}
+&=
+U(\epsilon)\ket{\psi(t)}
+\\
+&=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)\ket{\psi(t)}
++\mathcal O(\epsilon^2).
+\end{align}
+Lấy hiệu với \(\ket{\psi(t)}\), chia cho \(\epsilon\) rồi lấy giới hạn, ta được
+\begin{equation}
+\frac{d}{dt}\ket{\psi(t)}
+=
+-\frac{i}{\hbar}H\ket{\psi(t)}.
+\end{equation}
+Tương đương,
+\begin{equation}
+i\hbar\frac{d}{dt}\ket{\psi(t)}
+=
+H\ket{\psi(t)}.
+\end{equation}
+Đây là phương trình Schr\"odinger phụ thuộc thời gian. Trong biểu diễn vị trí, phương trình trở thành
+\begin{equation}
+i\hbar\frac{\partial}{\partial t}\psi(x,t)
+=
+H\psi(x,t),
+\end{equation}
+trong đó \(H\) tác dụng như một toán tử lên hàm sóng.
+
+Phương trình Schr\"odinger không phụ thuộc thời gian là phương trình trị riêng của Hamiltonian:
+\begin{equation}
+H\ket{E}=E\ket{E}.
+\end{equation}
+Các trị riêng \(E\) là những năng lượng có thể đo được, hay các mức năng lượng. Vì vậy, cùng một Hamiltonian xác định cả những năng lượng được phép lẫn sự tiến hóa của trạng thái.
+
+Nếu trạng thái ban đầu là một trạng thái riêng năng lượng, sự tiến hóa của nó là
+\begin{equation}
+\ket{E;t}
+=
+\exp\left(-\frac{iEt}{\hbar}\right)\ket{E}.
+\end{equation}
+Nó vẫn là cùng một vectơ riêng năng lượng và chỉ nhận thêm một pha.\footnote{Dấu trừ được xác định từ phép suy ra \(U(t)=\exp(-iHt/\hbar)\) ở trên. Cách đọc thành lời của pha ở phần sau có dấu ngược lại và không nhất quán với phép suy ra đó.}
+
+\begin{classroomqa}
+\lecturetimestamp{01:01:05}
+\audiencequestion{Vectơ riêng năng lượng tiến hóa như thế nào theo phương trình Schr\"odinger phụ thuộc thời gian?}
+\lecturerresponse{Giữ nguyên ket. Vì \(H\ket{E}=E\ket{E}\), sự tiến hóa theo thời gian nhân vectơ riêng năng lượng với một pha được xác định bởi năng lượng của nó: \(\exp(-iEt/\hbar)\).}
+\end{classroomqa}
+
+\section{Thế nào là một đối xứng?}
+
+Sự tiến hóa theo thời gian là một phép biến đổi unita trên không gian trạng thái. Các phép biến đổi đối xứng là một lớp quan trọng khác.
+
+Đối xứng quay giữ vai trò trung tâm trong vật lý nguyên tử. Trong nguyên tử hydro, electron chuyển động trong thế Coulomb tâm. Phép quay hệ tọa độ không làm thay đổi các phương trình; còn khi quay nguyên tử trên thực tế, nguyên tử vẫn tuân theo cùng các phương trình ấy. Trạng thái có thể thay đổi khi quay, nhưng định luật động lực học thì không.
+
+Tịnh tiến là một ví dụ khác. Một hệ cô lập trong không gian trống phải có cách ứng xử như nhau sau khi mọi bộ phận của nó cùng được dịch đi một khoảng như nhau. Điều kiện giới hạn này rất quan trọng. Nếu có một lò nung và chỉ dịch chuyển hệ lại gần lò, hệ có thể ứng xử khác đi; lò nung phá vỡ đối xứng tịnh tiến đó. Nếu dịch chuyển cả hệ lẫn lò nung cùng nhau, quan hệ ban đầu giữa chúng được khôi phục.
+
+Không phải phép biến đổi nào cũng là đối xứng. Nén tinh thể muối mỏ theo hệ số hai thường làm thay đổi cách tinh thể ứng xử. Ép là một phép biến đổi xác định rõ, nhưng nhìn chung không phải là đối xứng.
+
+Vì vậy, đối xứng là một phép biến đổi trên các trạng thái bảo toàn dạng thức của động lực học. Ký hiệu phép biến đổi đó là \(V\). Nó phải bảo toàn khả năng phân biệt: hai trạng thái trực giao phải vẫn trực giao sau phép biến đổi. Do đó,
+\begin{equation}
+V^\dagger V=\mathbf 1,
+\end{equation}
+nên \(V\) là unita.
+
+\section{Đối xứng giao hoán với sự tiến hóa theo thời gian}
+
+Giả sử trạng thái ban đầu \(\ket{\psi_1}\) tiến hóa thành \(\ket{\psi_2}\):
+\begin{equation}
+\ket{\psi_2}=U(t)\ket{\psi_1}.
+\end{equation}
+Áp dụng phép đối xứng được đề xuất \(V\) lên cả hai trạng thái:
+\begin{equation}
+\ket{\psi_1'}=V\ket{\psi_1},
+\qquad
+\ket{\psi_2'}=V\ket{\psi_2}.
+\end{equation}
+Nếu \(V\) là đối xứng của động lực học, trạng thái ban đầu sau biến đổi phải tiến hóa thành trạng thái cuối sau biến đổi:
+\begin{equation}
+\ket{\psi_2'}=U(t)\ket{\psi_1'}.
+\end{equation}
+Thay các định nghĩa vào, ta được
+\begin{equation}
+VU(t)\ket{\psi_1}
+=
+U(t)V\ket{\psi_1}.
+\end{equation}
+Điều này phải đúng với mọi trạng thái ban đầu. Do đó,
+\begin{equation}
+VU(t)=U(t)V.
+\end{equation}
+
+Hai lộ trình tương đương có thể được biểu diễn bằng một sơ đồ giao hoán.\footnote{Sơ đồ tái hiện lập luận hai lộ trình được triển khai từ 01:10:30 đến 01:16:34.}
+\begin{figure}
+\centering
+\begin{tikzpicture}[>=Stealth]
+\node (a) at (0,0) {$\ket{\psi_1}$};
+\node (b) at (4.2,0) {$\ket{\psi_2}=U(t)\ket{\psi_1}$};
+\node (c) at (0,-2.0) {$V\ket{\psi_1}$};
+\node (d) at (4.2,-2.0) {$V\ket{\psi_2}=U(t)V\ket{\psi_1}$};
+
+\draw[->] (a) -- node[above] {$U(t)$} (b);
+\draw[->] (c) -- node[below] {$U(t)$} (d);
+\draw[->] (a) -- node[left] {$V$} (c);
+\draw[->] (b) -- node[right] {$V$} (d);
+\end{tikzpicture}
+\caption{Phép biến đổi đối xứng và sự tiến hóa theo thời gian cho cùng một trạng thái cuối, bất kể thứ tự thực hiện.}
+\end{figure}
+
+\begin{classroomqa}
+\lecturetimestamp{01:16:38}
+\audiencequestion{Đối xứng có phải giao hoán với sự tiến hóa theo thời gian ở mọi thời điểm không?}
+\lecturerresponse{Có. Đối xứng của động lực học phải thỏa mãn điều kiện giao hoán đối với toàn bộ sự tiến hóa theo thời gian.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{01:17:13}
+\audiencequestion{Điều đó có nghĩa là ta có thể quay rồi chờ, hoặc chờ rồi mới quay, phải không?}
+\lecturerresponse{Đúng vậy. Nếu phép quay là một đối xứng, cả hai thứ tự đều cho cùng một trạng thái cuối sau biến đổi.}
+\end{classroomqa}
+
+Trong một khoảng thời gian nhỏ,
+\begin{equation}
+U(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}H
++\mathcal O(\epsilon^2).
+\end{equation}
+Điều kiện giao hoán trở thành
+\begin{equation}
+V\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)
+=
+\left(
+\mathbf 1-\frac{i\epsilon}{\hbar}H
+\right)V
++\mathcal O(\epsilon^2).
+\end{equation}
+Các số hạng đồng nhất triệt tiêu, còn lại
+\begin{equation}
+VH=HV,
+\end{equation}
+hay
+\begin{equation}
+[V,H]=0.
+\end{equation}
+Vì vậy, một phép biến đổi unita là đối xứng của động lực học khi và chỉ khi nó giao hoán với Hamiltonian.
+
+\begin{classroomqa}
+\lecturetimestamp{01:19:29}
+\audiencequestion{Vì sao toán tử đối xứng \(V\) phải là toán tử unita?}
+\lecturerresponse{Đối xứng phải bảo toàn những phân biệt logic giữa các trạng thái. Nó không được biến hai trạng thái trực giao, loại trừ lẫn nhau thành các trạng thái không còn phân biệt được. Việc bảo toàn những quan hệ đó đòi hỏi một phép biến đổi unita.}
+\end{classroomqa}
+
+Một toán tử không phụ thuộc tường minh vào thời gian và giao hoán với \(H\) là một đại lượng bảo toàn. Điều này nối kết đối xứng với các định luật bảo toàn. Trong cơ học cổ điển, mối liên hệ được phát biểu qua định lý Noether. Trong dạng thức cơ học lượng tử đang xét, tiêu chuẩn cốt yếu là giao tử của toán tử với Hamiltonian.
+
+\section{Đối xứng rời rạc và liên tục}
+
+Đối xứng có thể là rời rạc hoặc liên tục. Phản xạ gương là rời rạc: nó đổi trái thành phải, nhưng không có một chuỗi phép phản xạ vô cùng nhỏ liên tục nối hai trạng thái đó. Hoán đổi hai hạt đồng nhất là một phép biến đổi rời rạc khác. Lật một vật có hai mặt không đánh dấu cũng là ví dụ cùng loại.
+
+Phép quay là liên tục. Có thể tạo phép quay một góc \(90^\circ\) bằng cách ghép nhiều phép quay nhỏ quanh cùng một trục. Phép tịnh tiến trong không gian cũng liên tục vì lý do tương tự: có thể tạo một độ dời hữu hạn bằng nhiều độ dời rất nhỏ.
+
+Khả năng chia nhỏ thành các phép biến đổi nhỏ khiến đối xứng liên tục có một dạng đặc biệt. Gần phép đồng nhất, viết
+\begin{equation}
+V(\epsilon)
+=
+\mathbf 1-i\epsilon G+\mathcal O(\epsilon^2),
+\end{equation}
+trong đó \(\epsilon\) tham số hóa phép biến đổi. Tính unita suy ra
+\begin{equation}
+G^\dagger=G.
+\end{equation}
+Toán tử Hermite \(G\) được gọi là toán tử sinh của đối xứng.
+
+Nếu phép biến đổi là một đối xứng thì
+\begin{equation}
+[H,V(\epsilon)]=0.
+\end{equation}
+Khai triển đến bậc nhất cho ta
+\begin{equation}
+[H,G]=0.
+\end{equation}
+Vì vậy, đối xứng liên tục được sinh bởi các toán tử Hermite giao hoán với Hamiltonian. Các toán tử sinh đó là những đại lượng bảo toàn.
+
+Từ ``sinh ra'' ở đây có ý nghĩa cụ thể. Một phép biến đổi hữu hạn được tạo bằng cách lặp đi lặp lại phép biến đổi vi phân, cũng như sự tiến hóa theo thời gian hữu hạn được tạo từ nhiều bước thời gian ngắn.
+
+\section{Đối xứng tịnh tiến và động lượng}
+
+Xét phép tịnh tiến chủ động hàm sóng sang phải một khoảng \(\epsilon\). Nếu hàm sóng ban đầu đạt đỉnh tại \(x_0\), thì hàm sóng sau tịnh tiến phải đạt đỉnh tại \(x_0+\epsilon\). Vì vậy, giá trị của nó tại tọa độ \(x\) bằng giá trị của hàm sóng cũ tại \(x-\epsilon\):
+\begin{equation}
+(T(\epsilon)\psi)(x)=\psi(x-\epsilon).
+\end{equation}
+Với một độ dời nhỏ,
+\begin{equation}
+\psi(x-\epsilon)
+=
+\psi(x)-\epsilon\frac{d\psi(x)}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+Do đó,
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\epsilon\frac{d}{dx}
++\mathcal O(\epsilon^2).
+\end{equation}
+Dùng hệ thức
+\begin{equation}
+\hat p_x=-i\hbar\frac{d}{dx},
+\qquad
+\frac{d}{dx}=\frac{i}{\hbar}\hat p_x,
+\end{equation}
+phép tịnh tiến vi phân trở thành
+\begin{equation}
+T(\epsilon)
+=
+\mathbf 1-\frac{i\epsilon}{\hbar}\hat p_x
++\mathcal O(\epsilon^2).
+\end{equation}
+Phép tịnh tiến hữu hạn tương ứng là
+\begin{equation}
+T(\epsilon)
+=
+\exp\left(-\frac{i\epsilon}{\hbar}\hat p_x\right).
+\end{equation}
+Theo quy ước \(V(\epsilon)=\mathbf 1-i\epsilon G+\cdots\), tham số tịnh tiến có thứ nguyên cho ta
+\begin{equation}
+G_{\mathrm{trans}}=\frac{\hat p_x}{\hbar}.
+\end{equation}
+Tương đương, động lượng được gọi là toán tử sinh của các phép tịnh tiến không gian khi thừa số \(\hbar\) được viết tường minh trong hàm mũ.
+
+\begin{classroomqa}
+\lecturetimestamp{01:34:08}
+\audiencequestion{Có phải đã bỏ sót dấu trừ trong phép suy ra phép tịnh tiến không?}
+\lecturerresponse{Vấn đề nằm ở chiều tịnh tiến được gán cho hàm sóng sau biến đổi. Phép dịch chủ động sang phải được biểu diễn bằng \(\psi(x-\epsilon)\), chứ không phải \(\psi(x+\epsilon)\). Khi sửa lại như vậy, ta có \(T(\epsilon)=\mathbf 1-i\epsilon\hat p_x/\hbar+\cdots\).}
+\end{classroomqa}
+
+Động lượng có được bảo toàn hay không tùy thuộc vào Hamiltonian. Với một hạt tự do chuyển động một chiều,
+\begin{equation}
+H=\frac{\hat p_x^2}{2m}.
+\end{equation}
+Vì mọi toán tử đều giao hoán với mọi hàm của chính nó,
+\begin{equation}
+[H,\hat p_x]=0.
+\end{equation}
+Hamiltonian của hạt tự do do đó bất biến dưới phép tịnh tiến, và \(\hat p_x\) được bảo toàn. Về mặt vật lý, hạt ứng xử như nhau bất kể vị trí ban đầu được chọn ở đâu. Tịnh tiến điều kiện ban đầu chỉ làm tịnh tiến toàn bộ chuyển động.
+
+Trong ba chiều,
+\begin{equation}
+H
+=
+\frac{\hat p_x^2+\hat p_y^2+\hat p_z^2}{2m}.
+\end{equation}
+Mỗi thành phần động lượng đều giao hoán với \(H\):
+\begin{equation}
+[H,\hat p_x]=[H,\hat p_y]=[H,\hat p_z]=0.
+\end{equation}
+Có một đối xứng tịnh tiến riêng cho mỗi phương không gian. Động lượng vừa là đại lượng bảo toàn, vừa là toán tử sinh tương ứng với các phép tịnh tiến đó.
+
+Trường hợp tiếp theo là đối xứng quay. Các phép quay phức tạp hơn vì phép quay quanh những trục khác nhau nhìn chung không giao hoán: quay quanh trục \(x\) rồi đến trục \(y\) không cho kết quả như làm theo thứ tự ngược lại. Điều này dẫn đến các toán tử sinh đối xứng không giao hoán và cấu trúc lý thuyết nhóm của phép quay.

@@ -1,0 +1,467 @@
+\chapter{Đối xứng, suy biến và các thang mômen động lượng}
+\providecommand{\ket}[1]{\left\lvert#1\right\rangle}
+
+\section{Đối xứng và các mức năng lượng suy biến}
+
+Đối xứng là một phép biến đổi không làm thay đổi mô tả vật lý của một hệ. Nó không làm thay đổi Hamiltonian, phương trình Schr\"odinger hay các năng lượng có thể có. Nếu toán tử đơn vị \(S\) biểu diễn phép biến đổi đó, tính bất biến có nghĩa là
+\begin{equation}
+S H S^\dagger=H,
+\end{equation}
+hoặc tương đương
+\begin{equation}
+[S,H]=0.
+\end{equation}
+
+Phép tịnh tiến là một ví dụ. Dời một nguyên tử từ vị trí này sang vị trí khác mà năng lượng của nó không đổi. Điều này đúng với mọi trạng thái nguyên tử, không chỉ trạng thái cơ bản. Phép quay là một ví dụ khác và sẽ là chủ đề chính ở đây.
+
+Hoán đổi hai hạt đồng nhất cũng là một đối xứng. Gọi hai electron là electron một và electron hai, hoặc Harry và Fred, không khiến chúng trở thành hai hạt khác nhau. Hoán đổi nhãn không thể làm thay đổi các tính chất của nguyên tử.
+
+Tinh thể có thêm một loại đối xứng tịnh tiến. Dời toàn bộ tinh thể trong không gian là một phép tịnh tiến thông thường. Tuy nhiên, với tinh thể vô hạn, tịnh tiến một khoảng mạng cũng đưa ta trở lại cùng một cấu hình vật lý. Tương đương, có thể đổi nhãn các nút mạng bằng cách tăng chỉ số của mọi nút lên một đơn vị. Biên làm mất tính đúng chính xác này ở tinh thể hữu hạn, nhưng đây là một đối xứng tốt khi xét xa hai đầu của một tinh thể rất dài.
+
+Tính đồng nhất của không gian---tức là mọi vị trí đều giống mọi vị trí khác---chính là đối xứng tịnh tiến. Tính đẳng hướng của không gian---tức là mọi phương đều giống mọi phương khác---chính là đối xứng quay.
+
+Suy biến có liên quan đến đối xứng, nhưng không đồng nhất với đối xứng. Một mức năng lượng suy biến khi có nhiều hơn một trạng thái cùng có chính xác năng lượng đó. Với một Hamiltonian tổng quát có phổ rời rạc, việc hai mức không liên quan bằng nhau chính xác sẽ là một sự trùng hợp đáng kinh ngạc. Hai mức chỉ trùng nhau đến sai khác một phần trên \(10^{15}\) vẫn chưa bằng nhau chính xác. Các suy biến chính xác thông thường là dấu hiệu của đối xứng.
+
+Đôi khi đối xứng dẫn đến suy biến, nhưng không phải lúc nào cũng vậy. Ví dụ đầu tiên cho thấy vì sao suy biến có thể xuất hiện, đồng thời giải thích vì sao chỉ một đối xứng có thể chưa đủ.
+
+\section{Hạt trên một đường tròn}
+
+Xét một hạt cườm bị giới hạn chuyển động trên một vòng dây tròn. Có thể mô tả vị trí của nó bằng các tọa độ Descartes \(x\) và \(y\), nhưng chỉ cần một tọa độ góc:
+\begin{equation}
+\psi=\psi(\theta).
+\end{equation}
+Mật độ xác suất vị trí trên đường tròn là \(\psi^*(\theta)\psi(\theta)\).
+
+Một phép quay chủ động ngược chiều kim đồng hồ một góc nhỏ \(\epsilon\) biến đổi
+\begin{equation}
+\psi(\theta)\longrightarrow\psi(\theta-\epsilon).
+\end{equation}
+Do đó
+\begin{align}
+\delta\psi(\theta)
+&=\psi(\theta-\epsilon)-\psi(\theta)\\
+&=-\epsilon\frac{d\psi}{d\theta}
++\mathcal O(\epsilon^2).
+\end{align}
+
+Toán tử
+\begin{equation}
+L_z=-i\hbar\frac{d}{d\theta}
+\end{equation}
+là toán tử Hermite trên các hàm sóng tuần hoàn. Nó là đại lượng tương tự góc của
+\begin{equation}
+p_x=-i\hbar\frac{d}{dx}.
+\end{equation}
+Thừa số \(i\) là thiết yếu để toán tử Hermite. Viết theo \(L_z\),
+\begin{equation}
+\delta\psi
+=-\frac{i\epsilon}{\hbar}L_z\psi
++\mathcal O(\epsilon^2),
+\end{equation}
+vì vậy toán tử quay vi phân là
+\begin{equation}
+R(\epsilon)
+=1-\frac{i\epsilon}{\hbar}L_z
++\mathcal O(\epsilon^2).
+\end{equation}
+Điều này xác định \(L_z\) là toán tử sinh phép quay quanh trục vuông góc với đường tròn.
+
+\begin{classroomqa}
+\lecturetimestamp{00:11:19}
+\audiencequestion{Một trong các thừa số chứa \(i\) có nên mang dấu ngược lại không?}
+\lecturerresponse{Kiểm tra các dấu cho ta hệ thức ở trên. Theo quy ước \(\psi(\theta)\to\psi(\theta-\epsilon)\), độ biến thiên là \(-\epsilon\,d\psi/d\theta\), bằng \(-i\epsilon L_z\psi/\hbar\).}
+\end{classroomqa}
+
+Bây giờ hãy tìm các trạng thái riêng của mômen động lượng:
+\begin{equation}
+L_z\psi=M\psi.
+\end{equation}
+Thay toán tử vi phân vào ta được
+\begin{equation}
+-i\hbar\frac{d\psi}{d\theta}=M\psi,
+\end{equation}
+các nghiệm có dạng
+\begin{equation}
+\psi(\theta)=C\exp\left(\frac{iM\theta}{\hbar}\right).
+\end{equation}
+
+Ở đây có thêm một điều kiện không xuất hiện khi chuyển động trên đường thẳng vô hạn. Các điểm \(\theta=0\) và \(\theta=2\pi\) là cùng một điểm, nên hàm sóng quỹ đạo đơn trị phải thỏa mãn
+\begin{equation}
+\psi(\theta+2\pi)=\psi(\theta).
+\end{equation}
+Với hàm riêng ở trên, điều này đòi hỏi
+\begin{equation}
+\exp\left(\frac{2\pi iM}{\hbar}\right)=1.
+\end{equation}
+Do đó,
+\begin{equation}
+M=m\hbar,
+\qquad
+m\in\mathbb Z.
+\end{equation}
+Các mômen động lượng quỹ đạo có thể có trên đường tròn là
+\begin{equation}
+\ldots,-2\hbar,-\hbar,0,\hbar,2\hbar,\ldots.
+\end{equation}
+
+Trạng thái có mômen động lượng \(m\hbar\) có nhất thiết phải có cùng năng lượng với trạng thái có mômen động lượng \(-m\hbar\) không? Giá trị \(m\) dương và âm mô tả hai chiều tuần hoàn ngược nhau. Câu hỏi là liệu chỉ riêng đối xứng quay có đòi hỏi hai chuyển động ấy phải có năng lượng bằng nhau hay không.
+
+\begin{classroomqa}
+\lecturetimestamp{00:22:51}
+\audiencequestion{Dùng \(\psi(\theta-\epsilon)\) có nghĩa là hạt đang chuyển động theo chiều kim đồng hồ phải không?}
+\lecturerresponse{Không. Quy ước đó chỉ xác định chiều nào được gọi là chiều quay dương. Nó quy định dấu của tọa độ góc và mômen động lượng, nhưng không xác định chiều chuyển động thực tế của hạt.}
+\end{classroomqa}
+
+Từ trường vuông góc với mặt phẳng đường tròn là một phản ví dụ. Từ trường có thể làm dịch chuyển năng lượng của các mômen động lượng dương và âm theo hai chiều ngược nhau, qua đó tách đôi cặp mức. Dấu của độ dịch chuyển phụ thuộc vào quy ước về điện tích và chiều, nhưng điểm quan trọng là cặp mức bị tách.
+
+Từ trường như vậy vẫn bảo toàn phép quay quanh trục vuông góc. Vì thế, nó cho thấy chỉ riêng đối xứng quay không đòi hỏi
+\begin{equation}
+E(m)=E(-m).
+\end{equation}
+Nếu không có sự tách mức, \(m=1\) và \(m=-1\) có thể tạo thành một cặp suy biến, tương tự \(m=2\) và \(m=-2\). Trạng thái \(m=0\) không có trạng thái đối tác phân biệt theo cách này.
+
+\section{Đối xứng phản xạ và cặp \texorpdfstring{\(m,-m\)}{m, -m}}
+
+Thêm một đối xứng rời rạc là phép phản xạ. Gọi \(\mathcal M\) là phép phản xạ qua một đường kính của đường tròn:
+\begin{equation}
+(\mathcal M\psi)(\theta)=\psi(-\theta).
+\end{equation}
+Phép này đảo chiều tuần hoàn:
+\begin{equation}
+\mathcal M\psi_m=\psi_{-m}.
+\end{equation}
+
+Nếu phản xạ là một đối xứng, thì
+\begin{equation}
+[\mathcal M,H]=0.
+\end{equation}
+Giả sử
+\begin{equation}
+H\ket{m}=E_m\ket{m}.
+\end{equation}
+Áp dụng \(\mathcal M\) ta được
+\begin{align}
+H\mathcal M\ket{m}
+&=\mathcal M H\ket{m}\\
+&=E_m\mathcal M\ket{m}.
+\end{align}
+Vì \(\mathcal M\ket{m}\) là trạng thái có mômen động lượng \(-m\hbar\),
+\begin{equation}
+E_{-m}=E_m.
+\end{equation}
+Đối xứng quay bảo toàn mômen động lượng; đối xứng phản xạ liên hệ hai giá trị trái dấu. Kết hợp lại, chúng buộc cặp trạng thái phải suy biến.
+
+\begin{classroomqa}
+\lecturetimestamp{00:29:54}
+\audiencequestion{Các mode \(m\) và \(-m\) có cùng mật độ xác suất, vậy chỉ điều đó thôi đã chứng tỏ năng lượng của chúng bằng nhau chưa?}
+\lecturerresponse{Chưa. Các hàm sóng \(e^{im\theta}\) và \(e^{-im\theta}\) khác nhau dù bình phương môđun của chúng bằng nhau. Phương trình trị riêng của mômen động lượng phụ thuộc vào hàm sóng, chứ không chỉ \(\psi^*\psi\). Cơ học lượng tử đòi hỏi biên độ, chứ không chỉ xác suất.}
+\end{classroomqa}
+
+Từ trường bảo toàn phép quay quanh trục của nó nhưng phá vỡ phép phản xạ đã dùng ở trên.
+
+\begin{classroomqa}
+\lecturetimestamp{00:33:05}
+\audiencequestion{Phép phản xạ có đảo chiều từ trường không?}
+\lecturerresponse{Có. Từ trường là một vectơ giả. Phản xạ một từ trường hướng vào mặt bảng sẽ cho từ trường hướng ra khỏi mặt bảng. Tương đương, một vòng dây có dòng điện và ảnh gương của nó mang dòng điện theo hai chiều ngược nhau, nên tạo ra các từ trường hướng ngược nhau.}
+\end{classroomqa}
+
+Có thể thấy trực tiếp tính không giao hoán của phép quay và phép phản xạ. Khi tác dụng lên một hàm riêng của mômen động lượng,
+\begin{align}
+\mathcal M L_z\psi_m
+&=m\hbar\,\psi_{-m},\\
+L_z\mathcal M\psi_m
+&=-m\hbar\,\psi_{-m}.
+\end{align}
+Do đó
+\begin{equation}
+[\mathcal M,L_z]\psi_m
+=2m\hbar\,\psi_{-m},
+\end{equation}
+biểu thức này khác không khi \(m\neq0\). Quay rồi phản xạ không phải là cùng phép biến đổi với phản xạ rồi quay.
+
+Cả hai toán tử đều giao hoán với \(H\) khi cả hai phép biến đổi đều là đối xứng, nhưng chúng không giao hoán với nhau. Đây là kiểu quan hệ dẫn đến suy biến.
+
+\begin{classroomqa}
+\lecturetimestamp{00:40:28}
+\audiencequestion{Một cặp Heisenberg không giao hoán bất kỳ, chẳng hạn \(x\) và \(p\), có tạo ra suy biến không?}
+\lecturerresponse{Không, nói chung là không. Các toán tử đó còn phải là đối xứng, nghĩa là phải giao hoán với Hamiltonian. Thông thường, vị trí và động lượng không đồng thời được bảo toàn. Nếu cả hai cùng giao hoán với \(H\), thì tính không giao hoán của chúng sẽ kéo theo suy biến.}
+\end{classroomqa}
+
+\section{Đại số giao hoán của các đối xứng}
+
+Giả sử \(A\) và \(B\) là các toán tử sinh Hermite của hai đối xứng liên tục:
+\begin{equation}
+[A,H]=0,
+\qquad
+[B,H]=0.
+\end{equation}
+Các phương trình này không đòi hỏi \(A\) và \(B\) phải giao hoán với nhau.
+
+Toán tử giao hoán \([A,B]\) là phản Hermite, nên ta định nghĩa một toán tử Hermite
+\begin{equation}
+C=i[A,B].
+\end{equation}
+Các hệ số số học và dấu tổng thể không quan trọng ở đây. Điểm cốt yếu là \(C\) cũng giao hoán với Hamiltonian. Thật vậy,
+\begin{equation}
+[AB,H]
+=A[B,H]+[A,H]B=0,
+\end{equation}
+và tương tự
+\begin{equation}
+[BA,H]=0.
+\end{equation}
+Do đó
+\begin{equation}
+[C,H]
+=i\bigl([AB,H]-[BA,H]\bigr)=0.
+\end{equation}
+
+Toán tử sinh mới \(C\) có thể độc lập với \(A\) và \(B\), hoặc chỉ là tổ hợp tuyến tính của các toán tử sinh đã biết. Nếu đó là toán tử mới, hãy thêm nó vào danh sách rồi lập các giao hoán tiếp theo. Quá trình lặp lại này có thể tiếp diễn vô hạn, nhưng thường thì sau hữu hạn toán tử sinh, nó khép kín: mọi giao hoán tiếp theo đều là tổ hợp tuyến tính của các toán tử đã có. Hệ khép kín đó gọi là đại số giao hoán hoặc đại số Lie.
+
+Các phép biến đổi đối xứng hữu hạn tạo thành một nhóm. Các toán tử sinh vi phân của chúng tạo thành đại số Lie tương ứng.
+
+Suy biến quan trọng vì nó giúp sắp xếp phổ. Nếu hai trạng thái có cùng năng lượng, trạng thái này không thể phân rã thành trạng thái kia bằng cách phát ra một photon mang hiệu năng lượng giữa chúng. Trong quang phổ nguyên tử, cách sắp xếp và độ suy biến của các mức quyết định những vạch phổ có thể có. Lập luận tương tự áp dụng cho các hadron kích thích và các chuyển mức của chúng.
+
+\begin{classroomqa}
+\lecturetimestamp{00:49:07}
+\audiencequestion{Các giao hoán tử này có phải là phần tử của nhóm đối xứng không?}
+\lecturerresponse{Các toán tử đang xét là các toán tử sinh. Các toán tử sinh và các giao hoán tử của chúng tạo thành một đại số giao hoán tử, hay đại số Lie. Các phép đối xứng hữu hạn được xây dựng từ những toán tử sinh là các phần tử của nhóm.}
+\end{classroomqa}
+
+Nếu mọi toán tử sinh đối xứng đều giao hoán với nhau, đối xứng đó được gọi là abel. Nếu có một số giao hoán khác không, đối xứng đó là không abel.
+
+\begin{classroomqa}
+\lecturetimestamp{00:50:25}
+\audiencequestion{Định nghĩa cơ bản của toán tử sinh là gì?}
+\lecturerresponse{Lấy một phép biến đổi đối xứng đơn vị rất gần phép đồng nhất và viết nó dưới dạng \(1-i\epsilon G/\hbar+\cdots\). Toán tử Hermite \(G\) là toán tử sinh của phép biến đổi đó. Lặp lại phép biến đổi vi phân tương ứng sẽ tạo nên một phép biến đổi hữu hạn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\lecturetimestamp{00:52:08}
+\audiencequestion{Đại số của các toán tử sinh đối xứng có nghĩa là gì?}
+\lecturerresponse{Đó là một tập hợp các toán tử sinh có thể được cộng, trừ, nhân với các số thông thường và lấy giao hoán. Trong đại số này, giao hoán đóng vai trò phép nhân; tính khép kín có nghĩa là các phép toán ấy không tạo ra toán tử sinh nào nằm ngoài tập hợp.}
+\end{classroomqa}
+
+\section{Phép quay quanh các trục khác nhau}
+
+Phép quay là ví dụ quan trọng nhất về một đối xứng không abel. Quay quanh trục \(x\) rồi quay quanh trục \(y\) nhìn chung không cho cùng kết quả với việc thực hiện chúng theo thứ tự ngược lại. Sai khác giữa hai thứ tự ấy có liên hệ với phép quay quanh trục thứ ba.
+
+\begin{classroomqa}
+\lecturetimestamp{00:54:22}
+\audiencequestion{Phép quay vi phân có giao hoán với nhau dù các phép quay hữu hạn thì không phải không?}
+\lecturerresponse{Chúng khác nhau ở bậc hai theo hai góc quay nhỏ. Chừng đó đã đủ: sau khi tách các tham số nhỏ ra, các toán tử sinh còn lại có giao hoán khác không.}
+\end{classroomqa}
+
+Trước khi tính các giao hoán lượng tử, hãy xét bức tranh cổ điển tương ứng. Xét một quỹ đạo hành tinh tròn, có mômen động lượng vuông góc với mặt phẳng quỹ đạo. Quay toàn bộ quỹ đạo quanh trục \(y\) sẽ cho một quỹ đạo khác cũng được phép, có năng lượng chính xác bằng nhau. Tuy nhiên, vectơ mômen động lượng của quỹ đạo đó giờ có thành phần \(x\) khác.
+
+Như vậy, tính bất biến quay tạo ra các cấu hình có cùng năng lượng nhưng có các thành phần mômen động lượng khác nhau. Trong cơ học lượng tử, điều này biểu hiện thành tính không giao hoán giữa các toán tử sinh phép quay quanh những trục khác nhau.
+
+\section{Mômen động lượng trong tọa độ Descartes}
+
+Trước hết, xét một hạt chuyển động trong mặt phẳng \(xy\), không bị giới hạn trên một đường tròn. Khi quay ngược chiều kim đồng hồ một góc nhỏ,
+\begin{equation}
+\delta x=-\epsilon y,
+\qquad
+\delta y=\epsilon x.
+\end{equation}
+Với trạng thái được quay chủ động, hàm sóng biến đổi được tính tại các tọa độ đã quay ngược:
+\begin{equation}
+\psi_\epsilon(x,y)
+=\psi(x+\epsilon y,y-\epsilon x).
+\end{equation}
+Do đó,
+\begin{align}
+\delta\psi
+&=\epsilon\left(
+y\frac{\partial}{\partial x}
+-x\frac{\partial}{\partial y}
+\right)\psi
++\mathcal O(\epsilon^2)\\
+&=-\frac{i\epsilon}{\hbar}
+\left(xp_y-yp_x\right)\psi
++\mathcal O(\epsilon^2).
+\end{align}
+Vì vậy, toán tử sinh phép quay quanh trục \(z\) là
+\begin{equation}
+L_z=xp_y-yp_x.
+\end{equation}
+Đây là thành phần \(z\) của vectơ cổ điển quen thuộc
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+Đây không chỉ là mômen động lượng cơ học; trong cơ học lượng tử, đây là toán tử sinh phép quay của hàm sóng.\footnote{Quy ước quay chủ động được chọn sao cho phù hợp với phép biến đổi trước đó \(\psi(\theta)\mapsto\psi(\theta-\epsilon)\) và với kết luận cuối cùng \(L_z=xp_y-yp_x\) sau khi giải quyết sự không chắc chắn về dấu trong phần suy diễn bằng lời.}
+
+Lấy hoán vị vòng \(x\to y\to z\to x\) sẽ được các thành phần còn lại.\footnote{\(L_x\) và \(L_y\) được suy ra bằng cách áp dụng phép thay thế vòng \(x\to y\to z\to x\), như bài giảng chỉ rõ, vào \(L_z=xp_y-yp_x\).}
+\begin{align}
+L_x&=yp_z-zp_y,\\
+L_y&=zp_x-xp_z,\\
+L_z&=xp_y-yp_x.
+\end{align}
+
+Với một hệ bất biến quay, các toán tử này giao hoán với Hamiltonian:
+\begin{equation}
+[H,L_x]=[H,L_y]=[H,L_z]=0.
+\end{equation}
+Hạt trong trường lực trung tâm là ví dụ điển hình. Các phương trình này biểu diễn sự bảo toàn mômen động lượng dưới dạng lượng tử.
+
+\section{Đại số Lie của mômen động lượng}
+
+Các hệ thức giao hoán chính tắc là
+\begin{align}
+[x_i,x_j]&=0,\\
+[p_i,p_j]&=0,\\
+[x_i,p_j]&=i\hbar\,\delta_{ij}.
+\end{align}
+Các tọa độ giao hoán với các thành phần động lượng theo những phương khác nhau. Chẳng hạn, \(x\) giao hoán với \(p_y\), còn \(x\) không giao hoán với \(p_x\).
+
+Bây giờ hãy tính
+\begin{equation}
+[L_x,L_y]
+=
+[yp_z-zp_y,\;zp_x-xp_z].
+\end{equation}
+Hầu hết các số hạng đều triệt tiêu. Hai số hạng khác không là
+\begin{align}
+[yp_z,zp_x]&=-i\hbar\,yp_x,\\
+[zp_y,xp_z]&=i\hbar\,xp_y.
+\end{align}
+Do đó
+\begin{align}
+[L_x,L_y]
+&=i\hbar\left(xp_y-yp_x\right)\\
+&=i\hbar L_z.
+\end{align}
+Hoán vị vòng các nhãn tọa độ cho ta
+\begin{align}
+[L_x,L_y]&=i\hbar L_z,\\
+[L_y,L_z]&=i\hbar L_x,\\
+[L_z,L_x]&=i\hbar L_y.
+\end{align}
+
+\begin{classroomqa}
+\lecturetimestamp{01:14:50}
+\audiencequestion{Khi giao hoán cho ra \(L_z\), ta vẫn cần chứng minh rằng \(L_z\) không phải là tổ hợp tuyến tính của \(L_x\) và \(L_y\) chứ?}
+\lecturerresponse{Đúng. Cần chứng minh tính độc lập đó, chứ không được mặc nhiên giả định. Ở đây chưa đi sâu vào chứng minh đại số trực tiếp.}
+\end{classroomqa}
+
+Các giao hoán được trình bày khép kín trên không gian sinh bởi \(L_x\), \(L_y\) và \(L_z\): khi đã đưa cả ba toán tử vào, các giao hoán tiếp theo không tạo ra toán tử nào nằm ngoài không gian đó. Đây là đại số Lie của mômen động lượng. Cùng với
+\begin{equation}
+[H,L_i]=0,
+\qquad i=x,y,z,
+\end{equation}
+các hệ thức này chứa lượng thông tin đáng kể về phổ năng lượng mà không cần giải trực tiếp phương trình Schr\"odinger góc.
+
+Một chiến lược đại số tương tự được dùng cho dao động tử điều hòa lượng tử, trong đó các toán tử sinh và hủy tạo ra phổ của nó. Ở đây, các toán tử tương tự sẽ làm thay đổi thành phần \(z\) của mômen động lượng thay vì năng lượng.
+
+Chọn trục \(z\) chỉ là lựa chọn biểu diễn. Không có gì khiến \(z\) ưu tiên về mặt vật lý hơn \(x\) hay \(y\), nhưng chọn một thành phần sẽ cho ta một cơ sở thuận tiện. Viết
+\begin{equation}
+L_z\ket{m}=m\hbar\ket{m}.
+\end{equation}
+Bài toán là xác định những giá trị nào của \(m\) có thể xuất hiện và các trạng thái có giá trị \(m\) khác nhau liên hệ với nhau như thế nào.
+
+\begin{classroomqa}
+\lecturetimestamp{01:24:02}
+\audiencequestion{Khi so sánh cách xây dựng này với dao động tử điều hòa, ý thầy là dao động tử điều hòa lượng tử phải không? Nội dung đó chưa được học trong buổi trước.}
+\lecturerresponse{Đúng, phép so sánh ở đây là với dao động tử lượng tử. Lập luận về mômen động lượng đang xét tự nó đã đầy đủ, không cần biết về dao động tử. Sau này cũng có thể nhìn phép tương tự theo chiều ngược lại: dao động tử sử dụng một phương pháp đại số tương tự.}
+\end{classroomqa}
+
+\section{Toán tử nâng và hạ mômen động lượng}
+
+Định nghĩa
+\begin{equation}
+L_+=L_x+iL_y,
+\qquad
+L_-=L_x-iL_y.
+\end{equation}
+Các hệ thức giao hoán của mômen động lượng suy ra
+\begin{equation}
+[L_z,L_+]=\hbar L_+,
+\qquad
+[L_z,L_-]=-\hbar L_-.
+\end{equation}
+
+Áp dụng hệ thức thứ nhất lên một trạng thái riêng của \(L_z\):
+\begin{align}
+L_zL_+\ket{m}
+&=\left(L_+L_z+[L_z,L_+]\right)\ket{m}\\
+&=(m+1)\hbar\,L_+\ket{m}.
+\end{align}
+Nếu \(L_+\ket{m}=0\), thì đó là một trạng thái riêng khác của \(L_z\), có trị riêng \((m+1)\hbar\). Tương tự,
+\begin{equation}
+L_zL_-\ket{m}
+=(m-1)\hbar\,L_-\ket{m}.
+\end{equation}
+Như vậy, \(L_+\) nâng \(m\) lên một đơn vị, còn \(L_-\) hạ nó xuống một đơn vị.
+
+Bắt đầu từ một trị riêng bất kỳ, đại số tạo ra một dãy có các giá trị cách nhau từng đơn vị. Dãy này có thể kéo dài vô hạn, hoặc kết thúc vì
+\begin{equation}
+L_+\ket{m_{\mathrm{top}}}=0
+\end{equation}
+ở đầu trên và
+\begin{equation}
+L_-\ket{m_{\mathrm{bottom}}}=0
+\end{equation}
+ở đầu dưới.
+
+\begin{classroomqa}
+\lecturetimestamp{01:35:11}
+\audiencequestion{Lập luận về đường tròn chẳng phải đã đòi hỏi mômen động lượng là một số nguyên rồi sao?}
+\lecturerresponse{Lập luận đó chứng minh các giá trị nguyên cho mômen động lượng quỹ đạo được biểu diễn bằng các hàm sóng vị trí đơn trị. Đại số mômen động lượng trừu tượng cho kết quả ít hạn chế hơn: thang có thể chứa các giá trị nguyên hoặc bán nguyên.}
+\end{classroomqa}
+
+Nếu một thang có điểm kết thúc, tính bất biến quay liên hệ hai đầu của nó. Một phép quay \(180^\circ\) quanh trục vuông góc với \(z\) biến đổi
+\begin{equation}
+L_z\longrightarrow-L_z.
+\end{equation}
+Do đó, phổ phải đối xứng qua không:
+\begin{equation}
+m_{\mathrm{bottom}}=-m_{\mathrm{top}}.
+\end{equation}
+Vì các giá trị liền kề nhau chênh một đơn vị nên chỉ có hai khả năng. Thang chứa các số nguyên,
+\begin{equation}
+\ldots,-2,-1,0,1,2,\ldots,
+\end{equation}
+hoặc các số bán nguyên,
+\begin{equation}
+\ldots,-\frac{5}{2},-\frac{3}{2},-\frac{1}{2},
+\frac{1}{2},\frac{3}{2},\frac{5}{2},\ldots,
+\end{equation}
+với hai đầu tại những giá trị mà toán tử nâng hoặc hạ cho kết quả bằng không.
+
+Lập luận dùng hàm sóng đơn trị trên đường tròn chọn trường hợp nguyên cho mômen động lượng quỹ đạo,
+\begin{equation}
+\mathbf L=\mathbf r\times\mathbf p.
+\end{equation}
+Trường hợp bán nguyên cũng có ý nghĩa vật lý và thuộc về mômen động lượng spin; nội dung này sẽ được xét riêng.
+
+Cuối cùng, các trạng thái trên thang có cùng năng lượng khi Hamiltonian bất biến quay. Giả sử
+\begin{equation}
+H\ket{m}=E\ket{m}.
+\end{equation}
+Vì mọi thành phần \(L_i\) đều giao hoán với \(H\), nên \(L_+\) và \(L_-\) cũng vậy. Do đó
+\begin{align}
+H L_+\ket{m}
+&=L_+H\ket{m}\\
+&=E L_+\ket{m}.
+\end{align}
+Khi \(L_+\ket{m}\neq0\), trạng thái được nâng có cùng năng lượng với trạng thái ban đầu. Phép tính tương tự cho ta
+\begin{equation}
+H L_-\ket{m}=E L_-\ket{m}.
+\end{equation}
+Vì vậy, các phép nâng và hạ tạo ra một họ trạng thái có các trị riêng \(L_z\) khác nhau nhưng có chính xác cùng năng lượng. Đây là mối liên hệ giữa các đối xứng không giao hoán và suy biến, được phát triển xuyên suốt bài giảng.
+
+\begin{classroomqa}
+\lecturetimestamp{01:44:13}
+\audiencequestion{Các trạng thái trên thang này có liên hệ với việc chọn các trục quay khác nhau không?}
+\lecturerresponse{Chúng có liên hệ với nhau qua các phép quay. Các vectơ riêng của \(L_x\) hoặc \(L_y\) là tổ hợp tuyến tính của các vectơ riêng \(L_z\) đã chọn. Quay một trạng thái làm thay đổi các thành phần mômen động lượng của nó mà không làm thay đổi năng lượng.}
+\end{classroomqa}
+
+Lựa chọn \(L_+\) và \(L_-\) thuận tiện vì các tổ hợp này làm lộ rõ cấu trúc thang. Thủ thuật này xuất hiện lặp đi lặp lại trong cơ học lượng tử: khi một đại số giao hoán khép kín, các toán tử nâng và hạ thường giúp sắp xếp phổ trị riêng của nó.
+
+\begin{classroomqa}
+\lecturetimestamp{01:46:33}
+\audiencequestion{Điều gì xảy ra khi \(L_+\) tác dụng lên trạng thái cực đại, và trạng thái trên cùng được xác định như thế nào?}
+\lecturerresponse{Nó cho kết quả bằng không. Đó là định nghĩa của đầu trên của một thang có điểm kết thúc. Tương tự, \(L_-\) cho kết quả bằng không ở đầu dưới. Một thang trừu tượng không nhất thiết phải có điểm kết thúc. Với các trạng thái mômen động lượng nguyên tử sẽ xét sau này, ta thường gặp những thang có điểm kết thúc.}
+\end{classroomqa}
+
+Bước tiếp theo là phát triển thêm cấu trúc mômen động lượng này và áp dụng nó cho các nguyên tử, trong đó có nguyên tử hydro. Các đa tuyến quay tìm được ở đây giải thích một phần kiểu suy biến; vẫn còn những cấu trúc khác cần được phát triển.
