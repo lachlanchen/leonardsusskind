@@ -1,0 +1,669 @@
+\chapter{Hồi quy, trật tự phi cân bằng và các spin Ising}
+
+\lectureoverview{Một chất khí được giải phóng từ một nửa căn phòng lao nhanh tới cân bằng, nhưng cơ học thuận nghịch nói rằng sự tiến hóa đủ dài cũng tất phải tạo ra những lần trở lại trạng thái ngoại lệ. Chúng ta ước tính thời gian trở lại đó từ thể tích không gian pha, tách hiện tượng hồi quy khỏi sự khởi đầu entropy thấp của vũ trụ mà ta vẫn chưa giải thích được, và dùng nghịch lý nảy sinh từ đó để bàn về các bộ não Boltzmann, lịch sử mạch lạc, và sự sống được duy trì bởi một dòng năng lượng. Sau đó ta chuyển sang trật tự từ. Các spin hai trạng thái độc lập cho ta một bài khởi động giải được chính xác: tổ hợp học quyết định hàm phân hoạch và độ từ hóa là hàm tang hyperbol. Tương tác láng giềng cuối cùng khôi phục một đối xứng lên--xuống và dẫn tới mô hình Ising một chiều.}
+
+\section{Không khí trong một căn phòng rốt cuộc sẽ quay trở lại}
+
+Hãy bắt đầu với toàn bộ không khí ở nửa bên trái của một căn phòng. Có thể chuẩn bị trạng thái này bằng một vách ngăn: hút hết không khí ở nửa phải, đặt không khí ở bên trái, rồi dỡ vách đi. Chất khí lan nhanh khắp căn phòng và tiến gần tới cân bằng nhiệt. Entropy tăng. Không có gì đáng ngạc nhiên đã xảy ra.
+
+Bây giờ hãy để căn phòng kín lại và chờ. Một triệu lần ngửa liên tiếp là một chuỗi kết quả tung đồng xu cực kỳ khó xảy ra, nhưng một thí nghiệm lặp đi lặp lại vô thời hạn rốt cuộc cũng tạo ra những chuỗi cực kỳ khó xảy ra. Cùng một logic ấy áp dụng cho chất khí. Vào một thời điểm xa xôi nào đó, tất cả các phân tử của nó sẽ lại được tìm thấy trong nửa bên trái, hoặc trong một miền đặc biệt tương tự nào đó. Một sự trở lại như vậy là một hồi quy Poincaré.
+
+Định lý chính xác cẩn trọng hơn bức tranh này đôi chút. Đối với một miền có độ đo hữu hạn của không gian pha mà động lực học của nó bảo toàn thể tích không gian pha, hầu như mọi điểm ban đầu đều quay trở lại gần điểm xuất phát của nó đến mức tùy ý. Một phát biểu vĩ mô như \emph{mọi phân tử đều ở nửa bên trái} thì dễ hơn: nó chỉ đòi hỏi quỹ đạo đi vào lại một miền hữu hạn đã làm thô, chứ không phải mọi tọa độ phân tử đều quay về chính xác. Câu hỏi thực tế là việc đó mất bao lâu.
+
+\subsection{Một điểm pha nhiều chiều}
+
+Đối với \(N\) hạt cổ điển, không gian pha có \(6N\) tọa độ,
+\begin{equation}
+ \Gamma=(\bm x_1,\ldots,\bm x_N;\bm p_1,\ldots,\bm p_N).
+ \label{eq:sm8-phase-point}
+\end{equation}
+Các vị trí bị giới hạn bởi căn phòng. Ở tổng năng lượng cố định, các động lượng cũng bị chặn, bởi vì một hạt không thể mang động lượng lớn tùy ý mà không đồng thời mang năng lượng lớn tùy ý. Vì thế, dưới các giả thiết của lập luận về hồi quy, vỏ năng lượng được phép có độ đo hữu hạn.
+
+Điểm pha chuyển động một cách tất định, nhưng trong một chất khí nhiều hạt thì chuyển động của nó là hỗn loạn. Các quỹ đạo gần nhau tách xa nhau nhanh chóng, như trong một chuỗi va chạm bi-a. Sau khi làm thô, một quỹ đạo dài dường như lang thang khắp miền khả dĩ.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_02.png}
+\caption{Một miền không gian pha minh họa và một quỹ đạo phức tạp lang thang trong đó. Hình vẽ cố ý có số chiều thấp; chất khí thật sự sống trong một không gian \(6N\) chiều.}
+\lectureframe{00:06:41}
+\end{figure}
+
+Bản phác thảo ít chiều này ngay lập tức dễ khiến ta mắc một sai lầm. Nếu trạng thái đặc biệt chiếm một nửa hình chữ nhật được vẽ, ta có thể nói rằng chất khí phải dành một nửa thời gian ở đó. Nhưng \emph{mọi phân tử đều nằm trong nửa bên trái} ràng buộc mọi tọa độ vị trí, chứ không chỉ một tọa độ của điểm pha.
+
+Xét chỉ hai hạt chuyển động trong một chiều không gian, với các tọa độ \(x_1\) và \(x_2\). Không gian cấu hình của chúng là một hình vuông. Yêu cầu \(x_1<L/2\) chọn ra một nửa hình vuông; yêu cầu đồng thời \(x_1<L/2\) và \(x_2<L/2\) chọn ra một phần tư:
+\begin{equation}
+ P_2=\frac{1}{2}\frac{1}{2}=\frac{1}{4}.
+ \label{eq:sm8-two-particle-quarter}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_07.png}
+\caption{Đối với hai hạt một chiều, hình vuông nhỏ hơn biểu diễn các cấu hình mà trong đó cả hai tọa độ đều nằm trong nửa phòng đã chọn.}
+\lectureframe{00:07:08}
+\end{figure}
+
+Ba hạt cho \(1/2^3\), và \(N\) hạt cho
+\begin{equation}
+ P_{\mathrm{half}}(N)
+ =\left(\frac{1}{2}\right)^N.
+ \label{eq:sm8-half-probability}
+\end{equation}
+Mấu chốt hoàn toàn nằm ở số mũ. Một thừa số một nửa là chuyện bình thường; một nửa lũy thừa với một số hạt vĩ mô thì vượt khỏi trực giác thông thường.
+
+\begin{classroomqa}
+\audiencequestion{Có phải đáp án nên là \(1/3^N\), vì các phân tử còn có những phương không gian khác nữa?}
+\lecturerresponse{Điều đó phụ thuộc vào điều kiện đang được áp đặt. Nếu câu hỏi duy nhất là mọi hạt có nằm về bên trái vách ngăn hay không, thì mỗi hạt thỏa đúng một điều kiện nhị phân và đáp án là \(2^{-N}\). Ràng buộc thêm một phần độc lập khác của không gian vị trí khả dụng sẽ đưa vào thêm một thừa số nữa.
+\lecturetimestamp{00:07:47--00:08:05}}
+\end{classroomqa}
+
+\section{Thể tích pha, entropy và thang hồi quy}
+
+Cùng một ước lượng ấy có thể được viết mà không cần nhắc đến các nửa phòng. Gọi thể tích không gian thông thường của căn phòng là \(V\), và gọi \(v\) là một miền nhỏ hơn mà ta đòi mọi phân tử đều phải được tìm thấy trong đó. Bỏ qua các thừa số động lượng chung cho hai vĩ trạng thái, các thể tích không gian cấu hình khả dụng là
+\begin{equation}
+ \Omega_{\mathrm{room}}\propto V^N,
+ \qquad
+ \Omega_{\mathrm{small}}\propto v^N.
+ \label{eq:sm8-config-volumes}
+\end{equation}
+Vì thế, tỷ phần thời gian dài hạn ở trong vĩ trạng thái nhỏ là
+\begin{equation}
+ P(v)
+ =\frac{\Omega_{\mathrm{small}}}{\Omega_{\mathrm{room}}}
+ =\left(\frac{v}{V}\right)^N.
+ \label{eq:sm8-volume-ratio}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_08.png}
+\caption{Bức tranh thể tích pha tổng quát trên bảng: một miền nhỏ \(v^N\) nằm bên trong một miền khả dĩ \(V^N\), với tỉ số \(v^N/V^N\).}
+\lectureframe{00:10:44}
+\end{figure}
+
+Trong đơn vị với \(k_B=1\), entropy là logarit của thể tích pha khả dụng. Nếu \(S_A=\log\Omega_A\) là entropy của vĩ trạng thái bị ràng buộc và \(S_{\rm eq}=\log\Omega_{\rm eq}\) là entropy của trạng thái cân bằng, thì
+\begin{equation}
+ \begin{aligned}
+ P(A)
+ &=\frac{\Omega_A}{\Omega_{\rm eq}}\\
+ &=\exp\!\left(S_A-S_{\rm eq}\right)\\
+ &=e^{-\Delta S},\\
+ \Delta S&=S_{\rm eq}-S_A.
+ \end{aligned}
+ \label{eq:sm8-entropy-probability}
+\end{equation}
+Đối với trạng thái nửa phòng, \(\Delta S=N\log 2\), và
+\eqref{eq:sm8-entropy-probability} rút gọn chính xác thành \(2^{-N}\).
+Ký hiệu tắt \(P\sim e^{-S_{\rm eq}}\) chỉ thích hợp khi entropy của miền đặc biệt được xem như một mốc tham chiếu cố định; số mũ có ý nghĩa vật lý là độ thiếu hụt entropy \(\Delta S\).
+
+\begin{classroomqa}
+\audiencequestion{Đây là thể tích của không gian cấu hình chứ không phải của toàn bộ không gian pha phải không?}
+\lecturerresponse{Đúng, đối với phép so sánh này là như vậy. Chúng ta đang áp một điều kiện vị trí trong khi giữ phân bố động lượng ở cùng nhiệt độ, nên thừa số chung của không gian động lượng triệt tiêu. Một phát biểu hồi quy hoàn toàn tổng quát dùng không gian pha; xác suất cụ thể này có thể tính từ tỉ số không gian cấu hình.
+\lecturetimestamp{00:11:21--00:11:40}}
+\end{classroomqa}
+
+Giả sử hệ mất ký ức về vị trí chi tiết của nó trên một thang thời gian tương quan vi mô hoặc thời gian trộn \(\tau_{\rm mix}\). Khi đó, một miền hiếm có xác suất \(P(A)\) sẽ được gặp trên thang thời gian
+\begin{equation}
+ \tau_{\rm rec}
+ \sim \frac{\tau_{\rm mix}}{P(A)}
+ \sim \tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-recurrence-time-general}
+\end{equation}
+Đối với điều kiện nửa phòng,
+\begin{equation}
+ \tau_{\rm rec}\sim\tau_{\rm mix}2^N.
+ \label{eq:sm8-recurrence-time-half}
+\end{equation}
+Bài giảng dùng ước lượng cỡ phòng, cố ý rất thô, \(N\sim10^{30}\), cho ra thang dễ nhớ
+\(\tau_{\rm rec}/\tau_{\rm mix}\sim2^{10^{30}}\). Ở mật độ khí quyển thông thường, một căn phòng gần với \(10^{27}\) phân tử hơn, nhưng thay \(10^{30}\) bằng \(10^{27}\) không làm thay đổi kết luận: thời gian hồi quy vẫn lớn hơn tuổi của vũ trụ đến mức không thể hình dung.
+
+\begin{classroomqa}
+\audiencequestion{Thời gian hồi quy được đo theo đơn vị nào? Việc đổi từ giây sang giờ, hoặc sang một đơn vị cực ngắn, có thể làm thay đổi kết luận không?}
+\lecturerresponse{Tiền nhân có thứ nguyên là \(\tau_{\rm mix}\); con số khổng lồ là tỉ số không thứ nguyên \(\tau_{\rm rec}/\tau_{\rm mix}\).
+Đổi từ giây sang giờ chỉ chia cho một hệ số chuyển đổi thông thường, là thứ không đáng kể bên cạnh \(2^{10^{30}}\). Thời lượng của một lần ghé riêng lẻ vào góc quả thực phụ thuộc vào tốc độ phân tử. Ước lượng này nói về việc lần ghé ấy bắt đầu hiếm đến mức nào. Cũng có một định lý hồi quy lượng tử, nhưng ở đây không cần đến nó.
+\lecturetimestamp{00:17:24--00:19:18}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Mục đích của việc tính một thời gian mà không thí nghiệm nào có thể chờ đợi nổi là gì?}
+\lecturerresponse{Điểm mấu chốt mang tính khái niệm. Nó cho ta biết theo nghĩa nào một hệ cơ học kín vẫn là thuận nghịch. Nó dành gần như toàn bộ thời gian ở gần cân bằng, nhưng trên những thang đủ dài nó cũng tạo ra các thăng giáng hướng về entropy thấp hơn. Vì vậy, định luật hai là một phát biểu có xác suất áp đảo về những điều kiện ban đầu đặc biệt, chứ không phải một phương trình vi mô cấm chuyển động ngược.
+\lecturetimestamp{00:15:12--00:16:35}}
+\end{classroomqa}
+
+\section{Tính thuận nghịch và sự khởi đầu đặc biệt}
+
+Hãy chủ ý bắt đầu trong miền nửa phòng nhỏ bé ấy. Gần như mọi quỹ đạo lân cận đều rời khỏi nó ngay lập tức, vì thể tích pha ở bên ngoài lớn hơn bên trong rất nhiều. Chất khí lan ra nhanh chóng rồi chờ một thời gian mênh mông trước khi trở lại. Sự bất đối xứng giữa thư giãn nhanh và chờ đợi lâu này không vi phạm cơ học thuận nghịch.
+
+Ảnh đảo thời gian của sự thoát ra nhanh ấy không phải là toàn bộ khoảng chờ. Nó là giai đoạn ngắn, được phối hợp đến khó tin, trong đó những vận tốc phân tử trông như ở cân bằng tình cờ tự sắp xếp sao cho chất khí \emph{ào} vào một nửa căn phòng. Đảo ngược mọi động lượng ở cuối quá trình thoát ra thông thường, và chất khí sẽ lần ngược lại chính quá trình ấy. Khoảng chờ dài chính là thời gian cần để mẫu vận tốc hướng vào đặc biệt ấy tự phát xuất hiện.
+
+\begin{classroomqa}
+\audiencequestion{Đối xứng thời gian có nghĩa là sự hồi quy chậm trở lại góc mất thời gian lâu bằng sự thoát ra ban đầu khỏi đó không?}
+\lecturerresponse{Không. Hãy so sánh sự thoát ra ấy với ảnh đảo ngược thời gian chính xác của nó. Cả hai đều nhanh. Thứ mất một khoảng thời gian khổng lồ là chờ trong cân bằng cho một dao động hướng vào đủ chính xác để khởi phát cú lao ngược đó. Trên một bản ghi kéo dài khổng lồ, các chệch khỏi cân bằng xảy ra theo cả hai chiều thời gian với các lịch sử cục bộ đối xứng.
+\lecturetimestamp{00:20:46--00:21:58}}
+\end{classroomqa}
+
+Vì thế, lập luận về sự hồi quy chỉ giải thích một phần của mũi tên thời gian. Nó giải thích vì sao entropy thông thường tăng \emph{với giả thiết rằng} hệ đã bắt đầu trong một vùng entropy thấp. Nó không giải thích vì sao điều kiện ban đầu lại đặc biệt. Trong vũ trụ học, tiền đề còn thiếu đó trở thành câu hỏi trung tâm: vì sao vũ trụ quan sát được lại bắt đầu trong một vùng nhỏ khác thường đến vậy của không gian pha hấp dẫn của nó?
+
+\begin{classroomqa}
+\audiencequestion{Sự hồi quy có áp dụng cho vũ trụ học không? Sau khi vũ trụ giãn ra, liệu nó có thể hồi quy nếu chờ đủ lâu không?}
+\lecturerresponse{Câu hỏi đó là không thể tránh khỏi, nhưng câu trả lời của nó phụ thuộc vào vũ trụ học toàn cục. Một hệ thực sự kín với một không gian trạng thái cân bằng hữu hạn gợi ra sự hồi quy. Không-thời gian giãn nở, hấp dẫn, các chân trời, và một không gian trạng thái vô hạn hoặc không dừng có thể làm thay đổi các tiền đề. Bài học quan trọng ở đây hẹp hơn thế: riêng bức tranh hồi quy cân bằng tự nó không phải là một lời giải thích thống kê thỏa đáng cho vũ trụ có cấu trúc mà ta quan sát.
+\lecturetimestamp{00:19:59--00:20:45}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Sự hồi quy có phụ thuộc vào việc chuẩn bị khí trong một vùng nhỏ lúc ban đầu không? Nếu căn phòng bắt đầu ở trạng thái cân bằng, liệu không khí rốt cuộc vẫn sẽ tụ lại vào một góc chứ?}
+\lecturerresponse{Có. Sự hồi quy liên quan đến động lực học thời gian dài của hệ kín, nên một trạng thái ban đầu có vẻ cân bằng cũng trải qua những dao động entropy thấp hiếm. Việc chuẩn bị trạng thái khí bị giam trong nửa căn phòng lại quan trọng vì một lý do khác: nó cho phép ta điều kiện hóa theo một khởi đầu đặc biệt đã biết và hỏi vì sao entropy tăng ngay sau đó.
+\lecturetimestamp{00:22:04--00:22:20}}
+\end{classroomqa}
+
+\section{Vì sao một dao động ngẫu nhiên dự đoán quá ít}
+
+Người ta có thể thử biến sự hồi quy thành một mô hình vũ trụ học: có lẽ vũ trụ đã ở cân bằng gần như suốt toàn bộ vĩnh hằng, và thế giới hiện tại của chúng ta là một dao động hiếm. Đề xuất đó thất bại trước một phép kiểm định thống kê sắc bén. Hãy điều kiện hóa theo sự tồn tại của một quan sát viên và hỏi quan sát viên ấy còn nên kỳ vọng nhìn thấy gì nữa.
+
+Một dao động đủ lớn để tạo ra một hành tinh là cực kỳ hiếm. Một dao động tạo ra hai hành tinh đòi hỏi một độ thiếu hụt entropy lớn hơn và còn hiếm hơn nữa. Một dao động tạo ra các sao, các thiên hà, phông vi sóng vũ trụ, và các ghi chép phù hợp lẫn nhau về một quá khứ dài thì hiếm hơn với một nhân tử mũ bổ sung khổng lồ. Vì vậy, một lý thuyết dao động cân bằng dự đoán dao động nhỏ nhất đủ cho quan sát, chứ không phải thế giới phong phú và gắn kết mà ta thực sự quan sát. Ở dạng cực đoan nhất của nó, quan sát viên tối thiểu được gọi là một não Boltzmann.
+
+Lôgic ở đây là xác suất có điều kiện. Gọi \(A\) là biến cố xảy ra một dao động cỡ một quan sát viên và \(B\) là biến cố có một cấu trúc thứ hai độc lập. Nếu cả hai đều có xác suất rất nhỏ \(p\), thì
+\begin{equation}
+ P(B\mid A)=p,
+ \qquad
+ P(A\cap B)=p^2.
+ \label{eq:sm8-conditional-fluctuations}
+\end{equation}
+Biết rằng dao động thứ nhất đã xảy ra không làm cho dao động thứ hai trở nên có khả năng hơn. Ở mức này, phép so sánh với xổ số là hoàn toàn chính xác: một người đã trúng trước đó không có cơ hội tốt hơn ở lần rút độc lập tiếp theo. Vì vậy, quan sát viên có thể điều kiện hóa theo việc bản thân đang hiện diện, nhưng vẫn phải ngạc nhiên nếu thấy một môi trường có cấu trúc độc lập với nó.
+
+\begin{classroomqa}
+\audiencequestion{Giả sử đã có một hành tinh hoặc một quan sát viên Boltzmann, thì xác suất có thêm một cái nữa thật sự nhỏ hơn sao?}
+\lecturerresponse{Xác suất có điều kiện cho một dao động hiếm thứ hai độc lập chính là cùng một xác suất nhỏ của một biến cố đơn lẻ, chứ không phải bình phương của nó. Xác suất đồng thời cho cả hai mới là bình phương ấy. Chính vì vậy mà quan sát viên thứ nhất vẫn nên kỳ vọng sự hỗn loạn nhiệt ở bên ngoài bản thân nó. Việc tìm thấy một người bạn đời, một hành tinh khác và một bầu trời có trật tự là bằng chứng chống lại tiền đề rằng quan sát viên ấy đã được hình thành như một dao động cân bằng cô lập.
+\lecturetimestamp{00:26:12--00:30:27}}
+\end{classroomqa}
+
+\subsection{Những ghi chép nhất quán về một quá khứ}
+
+Lập luận tương tự cũng áp dụng cho lịch sử. Hai cuốn sách giáo khoa phù hợp nhau, các ghi chép thiên văn khớp với cùng một lịch sử giãn nở, các địa tầng, ký ức và sổ ghi chép phòng thí nghiệm đều ràng buộc lẫn nhau. Một cuốn sách giáo khoa ngẫu nhiên đơn lẻ có thể chứa bất kỳ câu chuyện nào. Cả một mạng lưới ghi chép cùng phù hợp về một quá khứ duy nhất chiếm một vùng không gian pha nhỏ hơn rất nhiều.
+
+Ví dụ trong lớp học dùng câu chuyện quen thuộc rằng George Washington đã chặt đổ một cây anh đào. Việc câu chuyện ấy có thật hay không không liên quan. Điểm cốt yếu là, trong một thế giới được dao động tạo ra đúng vào khoảnh khắc hiện tại, câu văn trong một cuốn sách không cho lý do động lực học nào để một ghi chép khác phải phù hợp với nó. Những tương quan nhất quán là bằng chứng của một lịch sử được chia sẻ, chứ không chỉ đơn thuần của một tai nạn tức thời.
+
+\begin{classroomqa}
+\audiencequestion{\emph{Tính nhất quán lịch sử} ở đây có nghĩa là gì?}
+\lecturerresponse{Nó có nghĩa là nhiều ghi chép hiện tại phù hợp với nhau như những hệ quả của một quá khứ chung. Một dao động có thể dựng ra các ghi chép và ký ức, nhưng dựng ra cả một mạng lưới nhất quán lẫn nhau đòi hỏi một dao động lớn hơn rất nhiều so với việc dựng ra một quan sát viên tối thiểu. Vì vậy, lý thuyết hồi quy dự đoán rằng phần lớn các dao động kiểu quan sát viên đều thiếu sự nhất quán mà ta thực sự tìm thấy.
+\lecturetimestamp{00:30:30--00:31:12}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu vũ trụ vẫn có thể là một hệ kín mà thời gian đạt cân bằng và thời gian hồi quy của nó chỉ đơn thuần là cực kỳ dài không?}
+\lecturerresponse{Khả năng đó không loại bỏ vấn đề thống kê. Trên một lịch sử dài vô định, sẽ có nhiều dao động kiểu quan sát viên, và đại đa số áp đảo sẽ là những dao động tối thiểu không có một lịch sử xung quanh nhất quán. Một quan sát viên được chọn từ tập hợp đó không nên kỳ vọng các quan sát của chúng ta. Vì thế, các nhà vũ trụ học xem trọng vấn đề não Boltzmann như một phép kiểm tra đối với các độ đo vũ trụ học và các mô hình thời muộn, chứ không phải như một khẳng định rằng sự hồi quy đã được quan sát thấy.
+\lecturetimestamp{00:31:13--00:32:42}}
+\end{classroomqa}
+
+\section{Sự sống như cấu trúc được duy trì bởi dòng chảy}
+
+Sự sống dường như đặt ra khó khăn ngược lại. Các sinh vật duy trì sự tổ chức tinh vi trong thời gian dài; chúng không giống những dao động ngẫu nhiên thoáng qua. Cách giải quyết là định luật hai áp dụng cho một hệ kín hoàn chỉnh. Một hệ con có thể làm giảm hoặc duy trì entropy của nó, miễn là trong môi trường của nó xảy ra một sự tăng entropy lớn hơn:
+\begin{equation}
+ \dot S_{\rm total}
+ =\dot S_{\rm subsystem}+\dot S_{\rm environment}\geq 0.
+ \label{eq:sm8-open-system-second-law}
+\end{equation}
+
+Trái Đất không ở trạng thái cân bằng nhiệt. Nó xấp xỉ dừng trên thang thời gian của con người, nhưng dừng không có nghĩa là tĩnh. Năng lượng đi qua nó. Ánh sáng Mặt Trời đi tới, trải qua nhiều quá trình làm suy giảm chất lượng, rồi được bức xạ ra ngoài ở một nhiệt độ hiệu dụng thấp hơn. Thông lượng đó có thể duy trì sự tổ chức cục bộ trong khi tổng entropy tăng.
+
+Nước chảy qua một đường ống cung cấp hình ảnh cơ học trực tiếp trước mắt. Dòng chảy có thể chứa các xoáy nhỏ và các xoáy cuộn bền. Chúng là những cấu trúc có tổ chức, nhưng được duy trì bởi chính dòng chảy. Bịt kín cả hai đầu, làm ngừng dòng chảy, và độ nhớt sẽ xóa các xoáy ấy khi nước tiến tới một trạng thái cân bằng tẻ nhạt. Nước đi ra ấm hơn nước đi vào, nên hệ lớn hơn đã phải gánh chi phí entropy.
+
+\begin{classroomqa}
+\audiencequestion{Sự sống có làm giảm entropy không, và vì sao sự tổ chức của nó có thể tồn tại dai dẳng thay vì xuất hiện rồi biến mất như một dao động thông thường?}
+\lecturerresponse{Sự sống có thể duy trì hoặc làm giảm entropy một cách cục bộ, nhưng chỉ bằng cách xuất ra ngoài còn nhiều entropy hơn nữa. Tính bền dai của nó đến từ một dòng chảy không cân bằng dừng, chủ yếu là dòng năng lượng Mặt Trời đi qua Trái Đất. Nếu Trái Đất bị bịt kín đối với bức xạ đi vào và đi ra, cuối cùng nó sẽ tiến gần đến cân bằng nhiệt và hoạt động có tổ chức sẽ chấm dứt. Sự sống gần với một xoáy trong dòng chảy hơn là với một dao động cân bằng.
+\lecturetimestamp{00:32:43--00:35:42}}
+\end{classroomqa}
+
+Đến đây, ta rời khỏi \emph{những điều thú vị} và quay lại, theo cách nói cố ý khô khan của bài giảng, với một thứ tẻ nhạt: nam châm.
+
+\section{Làm lạnh nam châm: các miền từ và một hướng được chọn}
+
+Cơ học thống kê thường gọi một mô hình toán học là nam châm ngay cả khi nó không phải là một miếng sắt theo nghĩa đen. Đặc điểm chung hữu ích là một tập hợp các bậc tự do cục bộ có thể trật tự hóa. Trong một vật liệu từ thực, các bậc tự do này có thể phát sinh từ các mômen từ nguyên tử, spin electron, các dòng quỹ đạo, hoặc các mômen hiệu dụng của những đơn vị tinh thể.
+
+Ở nhiệt độ cao, hỗn loạn nhiệt khiến các mômen cục bộ hướng theo nhiều phương, nên từ hóa ròng rất nhỏ hoặc không có. Nếu các mômen lân cận có năng lượng thấp hơn khi thẳng hàng, thì khi làm lạnh các miền nhỏ thẳng hàng có thể hình thành. Làm lạnh thêm khiến lợi thế về năng lượng trở nên quan trọng hơn và các miền tương quan lớn dần. Trong một hệ có thể xảy ra chuyển pha sắt từ, độ dài tương quan trở thành vĩ mô tại một nhiệt độ tới hạn hữu hạn. Khi đó pha có trật tự sẽ chọn một hướng, mặc dù năng lượng ở trường bằng không trước đó không hề ưu tiên sẵn hướng nào.
+
+\begin{classroomqa}
+\audiencequestion{Có phải các nam châm vi mô sẽ ưu tiên phản song song vì cực bắc hút cực nam không?}
+\lecturerresponse{Tương tác hiệu dụng phụ thuộc vào vật liệu.
+Trực giác lưỡng cực thông thường không phải là toàn bộ bài toán vi mô; tương tác trao đổi,
+cấu trúc tinh thể và các tương tác cạnh tranh đều quan trọng. Vật liệu
+sắt từ là những vật liệu trong đó xu hướng hiệu dụng ở năng lượng thấp ưu tiên
+trật tự song song, còn những vật liệu khác có thể ưu tiên sự phản song song.
+\lecturetimestamp{00:39:56--00:40:30}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có nhất thiết phải có từ trường ngoài hiện diện trong khi
+vật liệu nguội đi thì các mômen mới thẳng hàng được không?}
+\lecturerresponse{Không. Tương tác có thể tạo ra trật tự mà không cần trường.
+Trong một lý tưởng hóa đối xứng chính xác, các hướng khác nhau là tương đương
+về năng lượng, nên hướng được hiện thực hóa được chọn bởi các thăng giáng ban đầu,
+các biên, hoặc một từ trường rò rỉ nhỏ tùy ý. Việc chọn một trong những
+hướng tương đương đó là phá vỡ đối xứng tự phát; sự xuất hiện của
+trật tự vĩ mô là chuyển pha từ.
+\lecturetimestamp{00:40:31--00:42:33}}
+\end{classroomqa}
+
+Vật liệu thực thì phức tạp, nên bây giờ ta đơn giản hóa một cách mạnh tay. Mỗi mômen cục bộ chỉ được phép hướng lên hoặc hướng xuống:
+\begin{equation}
+ \sigma_i=+1\quad\hbox{or}\quad\sigma_i=-1.
+ \label{eq:sm8-ising-spin}
+\end{equation}
+Trong mô hình này không có hướng đông hay tây. Hai hướng được phép là một phần của định nghĩa mô hình, giống như mặt ngửa và mặt sấp là hai kết quả của một đồng xu.
+Giá trị của nó không nằm ở tính hiện thực vi mô mà ở sự sáng tỏ toán học và khả năng biểu diễn các hiện tượng trật tự mà nhiều hệ cùng chia sẻ.
+
+\begin{classroomqa}
+\audiencequestion{Về mặt vật lý, các đối tượng hai trạng thái này là gì? Có nên
+hình dung chúng như các hạt không?}
+\lecturerresponse{Ta có thể hình dung các nguyên tử ở những vị trí của một tinh thể, mỗi nguyên tử mang
+một mômen từ hiệu dụng do spin hoặc dòng điện vi mô tạo ra. Tuy nhiên,
+đối với mô hình, điều quan trọng duy nhất là biến hai giá trị. Sự hạn chế chỉ còn
+lên và xuống được áp đặt để làm cho cơ học thống kê trở nên đơn giản.
+\lecturetimestamp{00:44:22--00:45:01}}
+\end{classroomqa}
+
+\section{Các spin độc lập trong từ trường ngoài}
+
+Mô hình đầu tiên gồm \(N\) spin không tương tác với nhau.
+Một trường ngoài \(H\) cung cấp thang năng lượng duy nhất, và \(\mu\) đo
+độ mạnh ghép của một spin với trường đó. Ta giữ quy ước dấu đã dùng
+trong phép tính:
+\begin{equation}
+ \epsilon_i=\mu H\sigma_i.
+ \label{eq:sm8-single-spin-energy}
+\end{equation}
+Với \(H>0\), một spin lên \(\sigma_i=+1\) có năng lượng \(+\mu H\), còn một spin xuống
+\(\sigma_i=-1\) có năng lượng \(-\mu H\). Vì vậy, theo quy ước này,
+trường dương ưu tiên các spin xuống. Nó ngược với một quy ước đặt tên
+thông dụng khác, nhưng không có nội dung vật lý nào phụ thuộc vào tên gọi nếu các dấu được dùng
+nhất quán.
+
+Gọi \(n\) là số spin lên và \(m\) là số spin xuống. Khi đó
+\begin{equation}
+ n+m=N,
+ \qquad
+ E=(n-m)\mu H.
+ \label{eq:sm8-counting-energy}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_03.png}
+\caption{Thiết lập spin độc lập: \(n\) spin lên, \(m\) spin xuống,
+\(n+m=N\), và \(E=(n-m)\mu H\).}
+\lectureframe{00:49:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Thứ nguyên của \(H\), \(\mu\) và \(E\) là gì? \(H\)
+là một con số hay là một từ trường?}
+\lecturerresponse{\(H\) biểu thị độ lớn của trường ngoài được áp đặt, còn
+\(\mu\) là mômen từ. Tích của chúng \(\mu H\) có thứ nguyên
+năng lượng. Trong mô hình trừu tượng, người ta thường gộp chúng thành một tham số duy nhất
+mang giá trị năng lượng, theo thông lệ cũng ký hiệu bằng chữ thường \(h\).
+Ở đây ta giữ lại cả hai thừa số để cho thấy nguồn gốc vật lý của chúng, và \(E\) là
+năng lượng toàn phần.
+\lecturetimestamp{00:48:21--00:49:27}}
+\end{classroomqa}
+
+\subsection{Đếm số cấu hình}
+
+Với \(n\) và \(m=N-n\) cố định, ta chọn xem \(n\) trong số \(N\) vị trí nào có spin hướng lên.
+Độ đa bội là
+\begin{equation}
+ \Omega(n,m)=\binom{N}{n}
+ =\frac{N!}{n!\,m!}.
+ \label{eq:sm8-spin-multiplicity}
+\end{equation}
+Mỗi cấu hình trong số này đều có cùng năng lượng
+\eqref{eq:sm8-counting-energy}.
+
+\begin{classroomqa}
+\audiencequestion{\(n\) và \(m\) có thể cùng là chỉ số lấy tổng được không, vì chúng
+không độc lập? Và thừa số tổ hợp đi vào ở đâu?}
+\lecturerresponse{Chúng có thể được viết như một cặp bị ràng buộc với
+\(n+m=N\), hoặc ta có thể lấy tổng theo \(n=0,\ldots,N\) rồi đặt \(m=N-n\).
+Trọng số Boltzmann gắn với từng cấu hình riêng lẻ; khi gộp tất cả
+các cấu hình có cùng năng lượng, ta nhân trọng số đó với
+\(N!/(n!\,m!)\).
+\lecturetimestamp{00:52:04--00:53:03}}
+\end{classroomqa}
+
+Vì vậy, hàm phân hoạch là
+\begin{align}
+ Z_N
+ &=\sum_{n+m=N}
+   \frac{N!}{n!\,m!}
+   e^{-\beta\mu H(n-m)}
+ \notag\\
+ &=\sum_{n=0}^{N}
+   \binom{N}{n}
+   \left(e^{-\beta\mu H}\right)^n
+   \left(e^{+\beta\mu H}\right)^{N-n}.
+ \label{eq:sm8-spin-z-sum}
+\end{align}
+Đặt
+\begin{equation}
+ x=e^{-\beta\mu H},
+ \qquad
+ y=e^{+\beta\mu H}.
+ \label{eq:sm8-xy}
+\end{equation}
+Khi đó định lý nhị thức hoàn tất phép tính:
+\begin{align}
+ Z_N
+ &=\sum_{n=0}^{N}\binom{N}{n}x^n y^{N-n}
+   =(x+y)^N
+ \notag\\
+ &=\left(e^{-\beta\mu H}+e^{+\beta\mu H}\right)^N
+   =\left[2\cosh(\beta\mu H)\right]^N.
+ \label{eq:sm8-spin-z-closed}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_04.png}
+\caption{Tổng của hàm phân hoạch, các phép đặt \(x\) và \(y\), và
+phép rút gọn nhị thức thành một lũy thừa của \(2\cosh(\beta\mu H)\).}
+\lectureframe{00:56:00}
+\end{figure}
+
+Cũng có một cách suy ra ngắn hơn. Vì các spin là độc lập, với một
+spin ta có
+\begin{equation}
+ z_1=e^{-\beta\mu H}+e^{+\beta\mu H}
+    =2\cosh(\beta\mu H),
+ \label{eq:sm8-one-spin-z}
+\end{equation}
+và \(Z_N=z_1^N\). Tuy nhiên, phép suy ra tổ hợp vẫn đáng giữ lại vì nó chỉ ra
+một cách tường minh độ đa bội cạnh tranh với năng lượng như thế nào.
+
+\section{Từ hóa của cấu hình và từ hóa tập hợp}
+
+Đối với một cấu hình, ta định nghĩa độ dư spin không thứ nguyên trên mỗi vị trí bởi
+\begin{equation}
+ M_{\rm conf}=\frac{n-m}{N}.
+ \label{eq:sm8-config-magnetization}
+\end{equation}
+Nó biến thiên từ \(+1\) khi mọi spin đều hướng lên đến \(-1\) khi mọi spin đều hướng xuống. Đại lượng
+từ hóa nhiệt động được dùng ở đây là trung bình Boltzmann của nó,
+\begin{equation}
+ M=\left\langle M_{\rm conf}\right\rangle
+  =\left\langle\frac{n-m}{N}\right\rangle.
+ \label{eq:sm8-average-magnetization}
+\end{equation}
+Thừa số \(\mu H\) không thuộc về định nghĩa này. Trong lúc tính toán, nó đã từng
+được viết tạm vào đó rồi sau đó bị bỏ đi; \(\mu H\) biến
+độ dư spin thành năng lượng.
+
+Xét từng cấu hình một,
+\begin{equation}
+ E=N\mu H M_{\rm conf}.
+ \label{eq:sm8-energy-config-m}
+\end{equation}
+Tính tuyến tính của phép lấy trung bình cho ngay
+\begin{equation}
+ \langle E\rangle=N\mu H M.
+ \label{eq:sm8-energy-average-m}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_05.png}
+\caption{Dãy spin, từ hóa trung bình đã được hiệu chỉnh, và hệ thức năng lượng
+được nhấn mạnh trên bảng.}
+\lectureframe{01:01:22}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Ở đây ta đang gán từ hóa cho một
+cấu hình cụ thể, hay đang bàn về từ hóa trung bình? Vì sao cùng
+hệ thức ấy lại đúng cho cả năng lượng trung bình?}
+\lecturerresponse{Cả hai khái niệm đều xuất hiện, và cần phải phân biệt chúng.
+\((n-m)/N\) là giá trị trong một cấu hình; \(M\) là trung bình Boltzmann
+của nó. Vì \(E=N\mu H M_{\rm conf}\) đúng riêng cho từng
+cấu hình, nên lấy trung bình hai vế với cùng các xác suất cho
+\(\langle E\rangle=N\mu H M\). Các đại lượng cố định \(N\), \(\mu\) và
+\(H\) có thể được đưa ra ngoài phép lấy trung bình.
+\lecturetimestamp{00:59:54--01:03:40}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Làm sao mô hình có thể buộc mọi spin chỉ theo trục bắc--nam mà lại không
+thiên vị lên so với xuống?}
+\lecturerresponse{Sự vắng mặt của hướng đông và tây đã được xây sẵn vào mô hình hai trạng thái;
+đó là một sự hạn chế áp lên các bậc tự do được phép. Mô hình
+trường ngoài hiện tại \emph{quả thật} có thiên lệch giữa lên và xuống: theo quy ước dấu
+của ta, trường làm giảm năng lượng của các spin xuống. Vì vậy
+mô hình này không có đối xứng lên--xuống. Mô hình Ising không trường được giới thiệu bên dưới
+sẽ khôi phục đối xứng đó.
+\lecturetimestamp{01:03:41--01:04:53}}
+\end{classroomqa}
+
+\subsection{Năng lượng từ hàm phân hoạch}
+
+Năng lượng trung bình suy ra từ đồng nhất thức quen thuộc
+\begin{equation}
+ \langle E\rangle
+ =-\frac{\partial}{\partial\beta}\log Z_N.
+ \label{eq:sm8-energy-identity}
+\end{equation}
+Dùng \eqref{eq:sm8-spin-z-closed},
+\begin{align}
+ \log Z_N
+ &=N\log 2+N\log\!\left[\cosh(\beta\mu H)\right],
+ \notag\\
+ \langle E\rangle
+ &=-N\mu H\,
+   \frac{\sinh(\beta\mu H)}{\cosh(\beta\mu H)}
+ \notag\\
+ &=-N\mu H\tanh(\beta\mu H).
+ \label{eq:sm8-average-energy}
+\end{align}
+Kết hợp điều này với \eqref{eq:sm8-energy-average-m} ta được
+\begin{equation}
+ \boxed{M=-\tanh(\beta\mu H)}.
+ \label{eq:sm8-magnetization-tanh}
+\end{equation}
+
+Dạng của kết quả đã hàm chứa nội dung vật lý. Nhớ rằng
+\begin{equation}
+ \cosh x=\frac{e^x+e^{-x}}{2},
+ \qquad
+ \sinh x=\frac{e^x-e^{-x}}{2}.
+ \label{eq:sm8-hyperbolic-definitions}
+\end{equation}
+Gần gốc, \(\tanh x=x+O(x^3)\); còn khi \(x\) dương và lớn, nó tiến tới
+\(1\). Vì \(\beta=1/T\),
+\begin{equation}
+ M\longrightarrow -1
+ \quad (T\longrightarrow0),
+ \qquad
+ M\longrightarrow 0
+ \quad (T\longrightarrow\infty).
+ \label{eq:sm8-magnetization-limits}
+\end{equation}
+Ở nhiệt độ bằng không, mọi spin đều chiếm trạng thái xuống có năng lượng thấp hơn. Ở
+nhiệt độ vô hạn, mọi cấu hình đều có cùng trọng số và sự thiên lệch do
+trường bị xóa nhòa. Đổi dấu \(H\) thì \(M\) cũng đổi dấu.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_09.png}
+\caption{Đường cong tang hyperbol tiến đến một hằng số khi
+\(\beta\mu H\) lớn và tuyến tính gần gốc. Theo quy ước của bài giảng, từ hóa vật lý là
+âm của \(\tanh\) được vẽ.}
+\lectureframe{01:13:14}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Từ hóa biến thiên liên tục. Nhiệt độ
+chuyển pha đã được nhắc đến trước đó ở đâu?}
+\lecturerresponse{Không có nhiệt độ như vậy trong mô hình này. Các spin độc lập trong một
+trường ngoài khác không là quá đơn giản, và
+\(\log Z_N=N\log[2\cosh(\beta\mu H)]\) trơn tại mọi nhiệt độ dương hữu hạn.
+Một chuyển pha đòi hỏi bài toán có tương tác và có đối xứng
+mà bây giờ ta sẽ tiếp cận; mô hình Ising hai chiều không trường là thành viên đầu tiên
+của họ này có chuyển pha ở nhiệt độ hữu hạn.
+\lecturetimestamp{01:14:47--01:15:11}}
+\end{classroomqa}
+
+\section{Mô hình Ising: Năng lượng trong các cặp lân cận}
+
+Trường ngoài đã chọn sẵn một hướng trước khi việc thống kê bắt đầu. Hãy bỏ
+trường đó đi và để các spin lân cận cung cấp trường hiệu dụng cho nhau.
+Nếu cả hai láng giềng của một vị trí đều hướng lên, chúng ưu tiên lên; nếu cả hai đều hướng xuống, chúng
+ưu tiên xuống; nếu một cái hướng lên còn cái kia hướng xuống, thì trong bức tranh đơn giản nhất,
+tác dụng của chúng triệt tiêu nhau. Giờ đây năng lượng được gắn với các cặp thay vì với các vị trí cô lập.
+
+Đối với hai spin lân cận, chọn \(J>0\) và viết
+\begin{equation}
+ E_{12}=-J\sigma_1\sigma_2.
+ \label{eq:sm8-pair-energy}
+\end{equation}
+Các spin cùng hướng có \(\sigma_1\sigma_2=+1\) và năng lượng \(-J\);
+các spin ngược hướng có tích \(-1\) và năng lượng \(+J\). Vì thế, chính dấu trừ
+là điều làm cho tương tác này là sắt từ.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_06.png}
+\caption{Tương tác sắt từ cục bộ
+\(E_{12}=-J\sigma_1\sigma_2\).}
+\lectureframe{01:19:59}
+\end{figure}
+
+Trên một chuỗi một chiều hở, Hamiltonian là
+\begin{equation}
+ {\cal H}=-J\sum_{i=1}^{N-1}\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-ising-chain-open}
+\end{equation}
+Với điều kiện biên tuần hoàn, ta đặt \(\sigma_{N+1}=\sigma_1\) và
+lấy tổng đến \(N\). Cả hai quy ước đều đếm mỗi cặp lân cận đúng một lần;
+sự khác biệt ở biên giữa chúng trở nên không đáng kể đối với một chuỗi dài.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_10.png}
+\caption{Năng lượng cặp cục bộ được mở rộng thành Hamiltonian của chuỗi với tương tác láng giềng gần nhất.}
+\lectureframe{01:20:46}
+\end{figure}
+
+Ở nhiệt độ vô hạn, mọi chuỗi spin đều có xác suất như nhau. Trung bình, một nửa
+các liên kết là cùng hướng và một nửa là ngược hướng, nên
+\begin{equation}
+ \left\langle\sigma_i\sigma_{i+1}\right\rangle_{T=\infty}=0,
+ \qquad
+ \left\langle{\cal H}\right\rangle_{T=\infty}=0.
+ \label{eq:sm8-infinite-t-bond}
+\end{equation}
+Năng lượng bằng 0 ở đây không phải là một trạng thái năng lượng thấp. Trạng thái cơ bản với
+mọi spin cùng hướng có năng lượng \(-J\) trên mỗi liên kết, nên tập hợp ở nhiệt độ vô hạn nằm cao hơn nó một
+lượng năng lượng quảng tính.
+
+\begin{classroomqa}
+\audiencequestion{Làm sao giá trị trung bình của tích lại có thể bằng 0 khi từng tích riêng lẻ
+\(\sigma_i\sigma_{i+1}\) đều là \(+1\) hoặc \(-1\)?}
+\lecturerresponse{Một giá trị trung bình không nhất thiết phải là một trong những giá trị xuất hiện trong một
+cấu hình đơn lẻ. Ở nhiệt độ vô hạn, các liên kết cùng hướng và ngược hướng xuất hiện
+với tần suất như nhau, nên các đóng góp \(+1\) và \(-1\) của chúng triệt tiêu nhau. Cùng một
+sự phân biệt về phép lấy trung bình vốn quan trọng đối với từ độ cũng quan trọng ở đây.
+\lecturetimestamp{01:21:39--01:22:37}}
+\end{classroomqa}
+
+\subsection{Hai trạng thái cơ bản và một đối xứng toàn cục}
+
+Ở nhiệt độ đúng bằng 0, mọi liên kết đều muốn cùng hướng. Do đó có
+hai trạng thái cơ bản,
+\begin{equation}
+ (+,+,+,\ldots,+)
+ \qquad\hbox{and}\qquad
+ (-,-,-,\ldots,-).
+ \label{eq:sm8-two-ground-states}
+\end{equation}
+Chúng có năng lượng hoàn toàn như nhau. Hamiltonian làm cho tính suy biến này
+trở nên hiển nhiên: đảo mọi spin,
+\begin{equation}
+ \sigma_i\longmapsto-\sigma_i
+ \qquad\hbox{for all }i,
+ \label{eq:sm8-global-flip}
+\end{equation}
+thì mọi tích liên kết đều không đổi,
+\begin{equation}
+ (-\sigma_i)(-\sigma_{i+1})
+ =\sigma_i\sigma_{i+1}.
+ \label{eq:sm8-global-flip-invariance}
+\end{equation}
+Đảo một spin không phải là một đối xứng, vì nó đảo dấu các tích liên kết
+kề với spin đó. Đảo tất cả các spin là một đối xứng. Đây là đối xứng \(\mathbb Z_2\)
+toàn cục của mô hình Ising không có trường.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_08_figure_11.png}
+\caption{Hamiltonian của chuỗi cùng với phép biến đổi toàn cục
+\(\sigma_i\mapsto-\sigma_i\), phép biến đổi này giữ bất biến mọi tích cặp.}
+\lectureframe{01:26:31}
+\end{figure}
+
+Hãy áp một trường rất nhỏ lên một spin ở nhiệt độ đúng bằng 0. Điều đó phá vỡ
+sự ngang bằng giữa hai trạng thái cơ bản, và các liên kết sắt từ truyền
+sự lựa chọn ấy dọc theo chuỗi. Sau khi trạng thái đã được chọn, hãy bỏ trường đi, và một hệ lớn có thể giữ định hướng của nó trong một thời gian rất dài.
+Đây là điểm xuất phát trực giác để hiểu phá vỡ đối xứng tự phát.
+
+Có một lưu ý thống kê thiết yếu. Đối với một hệ hữu hạn trong
+trường đúng bằng 0, tập hợp chính tắc gán trọng số bằng nhau cho hai trạng thái cơ bản và do đó cho từ độ trung bình bằng 0. Một pha phá vỡ đối xứng
+được định nghĩa bằng cách lấy giới hạn nhiệt động lực học trước khi bỏ trường dùng để chọn trạng thái:
+\begin{equation}
+ M_*=\lim_{H\to0^+}\lim_{N\to\infty}M_N(H).
+ \label{eq:sm8-order-of-limits}
+\end{equation}
+Trong mô hình một chiều với tương tác láng giềng gần nhất, giới hạn này chỉ khác không tại
+\(T=0\); mọi nhiệt độ hữu hạn đều phá hủy trật tự tầm xa trong chuỗi vô hạn.
+Trong hai chiều, pha có trật tự vẫn tồn tại dưới một nhiệt độ tới hạn khác không.
+
+\subsection{Một đính chính về lịch sử}
+
+Cách kể trên lớp trình bày lịch sử này kèm một câu đùa nhắm vào Ising.
+Trình tự thời gian chính xác thì công bằng hơn. Wilhelm Lenz đề xuất mô hình, và học trò của ông
+là Ernst Ising đã giải trường hợp một chiều trong luận án 1924 của mình,
+công bố vào 1925. Ising đã đúng khi nhận ra không có chuyển pha
+sắt từ ở nhiệt độ hữu hạn trong một chiều, mặc dù khi ấy ý nghĩa rộng hơn của các trường hợp nhiều chiều hơn vẫn chưa được hiểu. Kramers và Wannier phát triển
+phép đối ngẫu hai chiều và xác định điểm tới hạn của mạng vuông vào
+1941; Onsager đưa ra nghiệm chính xác lừng danh ở trường bằng không vào 1944.
+
+Phép tính tiếp theo giờ đã rõ. Chúng ta phải tìm hàm phân hoạch của
+\eqref{eq:sm8-ising-chain-open} và xác định các tương quan của nó phụ thuộc vào
+nhiệt độ như thế nào. Phép tính đó sẽ chỉ ra tường minh vì sao chuỗi một chiều không có chuyển pha ở nhiệt độ hữu hạn và vì sao số chiều lại quan trọng.
+
+\section{Ta đang ở đâu}
+
+Bài toán hồi quy và bài toán spin là hai phiên bản của cùng một
+bài học thống kê. Trong chất khí, một độ thiếu hụt entropy làm cho một trạng thái vĩ mô
+trở nên hiếm theo hàm mũ:
+\begin{equation}
+ P(A)=e^{-\Delta S},
+ \qquad
+ \tau_{\rm rec}\sim\tau_{\rm mix}e^{\Delta S}.
+ \label{eq:sm8-summary-recurrence}
+\end{equation}
+Cơ học thuận nghịch cho phép sự quay trở lại, còn tỉ số thể tích của không gian pha
+khổng lồ giải thích vì sao kinh nghiệm thông thường chỉ thấy sự thư giãn. Vấn đề
+mũi tên thời gian còn lại nằm ở điều kiện đầu vũ trụ học đặc biệt, chứ không
+phải ở một sự thất bại của tính thuận nghịch vi mô.
+
+Đối với các spin độc lập trong một trường,
+\begin{equation}
+ Z_N=\left[2\cosh(\beta\mu H)\right]^N,
+ \qquad
+ M=-\tanh(\beta\mu H).
+ \label{eq:sm8-summary-spins}
+\end{equation}
+Hệ đó bị thiên lệch một cách tường minh và biến đổi trơn theo nhiệt độ. Tương tác Ising
+\begin{equation}
+ {\cal H}=-J\sum_i\sigma_i\sigma_{i+1}
+ \label{eq:sm8-summary-ising}
+\end{equation}
+loại bỏ sự thiên lệch bên ngoài, khôi phục một đối xứng lên--xuống toàn cục, và đặt ra
+câu hỏi thực sự về sự hình thành trật tự: liệu một hệ nhiều hạt đối xứng có thể chọn một trong
+hai trạng thái có trật tự ở nhiệt độ khác không hay không?

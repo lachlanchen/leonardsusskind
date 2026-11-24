@@ -1,0 +1,589 @@
+\chapter{Tương tác yếu, hiệu chỉnh virial và vi phân không chính xác}
+
+\lectureoverview{Ta bắt đầu với ý nghĩa thao tác của phép đo và của nhiệt độ, rồi hỏi một khí loãng lệch khỏi định luật khí lý tưởng như thế nào khi các tương tác tầm ngắn được đưa vào với cường độ yếu. Hàm phân hoạch cho các hiệu chỉnh tương tác bậc đầu đối với năng lượng và áp suất, đồng thời xác định miền hiệu lực của chúng. Một đoạn xen vào toán học cuối cùng phân biệt các hàm trạng thái với nhiệt và công phụ thuộc đường đi bằng vi phân chính xác, vòng kín và một phép kiểm tra khí lý tưởng cụ thể.}
+
+\section{Dụng cụ thực sự đo đại lượng gì}
+
+Không một thiết bị phòng thí nghiệm nào vươn trực tiếp vào tự nhiên rồi đọc ra một biến toán học trừu tượng. Một lực kế lò xo cho biết độ dãn; một nhiệt kế cho biết chiều cao của một cột chất lỏng. Ta chỉ gọi cái thứ nhất là phép đo lực và cái thứ hai là phép đo nhiệt độ vì đã thiết lập được một quan hệ tái lập được giữa đáp ứng quan sát được và đại lượng cần đo.
+
+Quan hệ đó chỉ có một miền hiệu lực hữu hạn. Một lò xo chỉ tuân theo định luật Hooke chừng nào nó còn đàn hồi, và một lực đủ lớn cuối cùng sẽ làm nó biến dạng hoặc gãy. Nói tổng quát hơn, nếu số đọc \(R\) biến thiên trơn theo một biến vật lý \(X\), thì gần một điểm làm việc được chọn \begin{equation}
+ \Delta R \simeq
+ \left.\frac{dR}{dX}\right|_{X_0}\Delta X.
+ \label{eq:sm6-local-linear-response}
+\end{equation} Những biến thiên nhỏ của số đọc tỉ lệ với những biến thiên nhỏ của biến đích ngay cả khi toàn bộ đường cong đáp ứng là phi tuyến. Sự tuyến tính hóa cục bộ này là logic thông thường của việc hiệu chuẩn.
+
+Số đọc cũng có thể phụ thuộc vào các biến gây nhiễu. Một lò xo có thể đáp ứng yếu với nhiệt độ hoặc áp suất. Chiều cao của cột thủy ngân trong nhiệt kế có thể phụ thuộc vào hướng đặt thông qua trọng lực, vào các tính chất của thủy tinh, hoặc vào các biến đổi chậm của vật liệu. Một quy trình đo không chứng minh rằng các sự phụ thuộc ấy vắng mặt; nó giữ chúng cố định hoặc chỉ ra rằng chúng không đáng kể trên thang độ cần thiết.
+
+\begin{classroomqa}\audiencequestion{Trường hấp dẫn cục bộ, hoặc hướng cầm nhiệt kế, có thể làm thay đổi số đọc không?} \lecturerresponse{Về nguyên tắc là có. Nếu hướng đặt có ảnh hưởng đáng kể, thì chỉ dẫn phải giữ nhiệt kế theo phương thẳng đứng trở thành một phần của định nghĩa về dụng cụ đó. Gần bề mặt Trái Đất, trường hấp dẫn đủ ổn định nên biến thiên còn lại thông thường là không đáng kể. \lecturetimestamp{00:04:08--00:05:00}} \end{classroomqa}
+
+\begin{classroomqa}\audiencequestion{Sự lão hóa hoặc biến đổi hóa học có thể từ từ làm thay đổi hiệu chuẩn không?} \lecturerresponse{Có thể. Thủy ngân và thủy tinh đủ trơ đối với các phép đo thông thường, còn những biến đổi trên các thang thời gian dài đến mức khó tưởng tượng thì không liên quan đến thí nghiệm. Hiệu chuẩn luôn là một phát biểu về một dụng cụ, một khoảng đo, một quy trình và một khoảng thời gian xác định. \lecturetimestamp{00:05:03--00:06:11}} \end{classroomqa}
+
+Đối với một nhiệt kế Celsius, hai trạng thái chuẩn có thể tái lập cung cấp một thang đo thuận tiện. Nếu \(h_f\) và \(h_b\) lần lượt là chiều cao cột chất lỏng tại điểm đóng băng và điểm sôi của nước, thì trong một miền mà đáp ứng gần tuyến tính, \begin{equation}
+ T_{\mathrm C}=100\,\frac{h-h_f}{h_b-h_f}.
+ \label{eq:sm6-celsius-calibration}
+\end{equation} Lựa chọn \(T_{\mathrm C}=0\) tại điểm đóng băng là có tính quy ước. Đó không phải là trạng thái có năng lượng nhiệt bằng không, cũng như 0 độ Fahrenheit trong một ngày mùa đông không phải là độ không tuyệt đối.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_03.png}\caption{Đáp ứng của nhiệt kế trơn nhưng phi tuyến, với một khoảng ngắn được khoanh ra để hiệu chuẩn tuyến tính.}\lectureframe{00:07:55}\end{figure}
+
+\section{Cân bằng và nhiệt độ như một thang năng lượng}
+
+Nhiệt kế chỉ đo nhiệt độ của môi trường xung quanh sau khi bản thân nó và môi trường lân cận đã đạt cân bằng nhiệt. Trước đó, số đọc của nó chỉ đơn thuần đang thay đổi để tiến tới cân bằng. Phép kiểm tra thực hành thì đơn giản: chờ cho đến khi số đọc ngừng thay đổi. Sự đơn giản của quy tắc ấy che khuất các quá trình vật lý quyết định thời gian phải chờ.
+
+\begin{classroomqa}\audiencequestion{Quá trình đi tới cân bằng có chỉ liên quan đến một lớp biên quanh bầu nhiệt kế hay không, và nên chờ bao lâu?} \lecturerresponse{Năng lượng phải đi qua thủy tinh và được trao đổi với môi trường xung quanh, nên thời gian phụ thuộc vào nhiệt kế, độ dẫn nhiệt của nó và môi trường đó. Vùng lân cận trực tiếp cũng phải đại diện cho một trạng thái cân bằng đồng đều. Về thực nghiệm, số đọc được chấp nhận khi nó không còn trôi nữa. \lecturetimestamp{00:08:45--00:10:13}} \end{classroomqa}
+
+Nhiệt độ và mật độ đóng những vai trò khác nhau trong thời gian chờ này. Một khí rất loãng vẫn có thể rất nóng: số ít phân tử hiện diện có thể mang năng lượng động học lớn. Tuy vậy, các phân tử ấy va vào nhiệt kế rất hiếm, nên quá trình cân bằng có thể chậm. Giảm mật độ đi 100 hoặc 1000 lần trong khi giữ nhiệt độ cố định không làm hạ thang năng lượng phân tử; nó làm giảm tốc độ mà năng lượng đó được truyền cho dụng cụ.
+
+\begin{classroomqa}\audiencequestion{Bức xạ trong một căn phòng có thể có nhiệt độ khác với không khí không?} \lecturerresponse{Có. Vật chất và bức xạ chỉ có cùng một nhiệt độ khi chúng ở cân bằng nhiệt với nhau. Không khí trung hòa ghép yếu với phần lớn bức xạ quang học trong một căn phòng có chiếu sáng, và quần thể photon không nhất thiết phải là một trường vật đen cân bằng ở nhiệt độ của không khí. \lecturetimestamp{00:11:26--00:12:20}} \end{classroomqa}
+
+Một khi cân bằng đã được thiết lập, nhiệt độ tốt nhất nên được xem như một thang năng lượng. Ta tiếp tục dùng hệ đơn vị trong đó \(k_B=1\), nên bản thân \(T\) có thứ nguyên của năng lượng. Đối với một khí lý tưởng đơn nguyên tử, \begin{equation}
+ E_0=\frac{3}{2}NT.
+ \label{eq:sm6-ideal-energy}
+\end{equation} Năng lượng nhiệt trên mỗi phân tử được xác định bởi \(T\); vận tốc tương ứng vẫn phụ thuộc vào khối lượng phân tử.
+
+\section{Đưa vào một tương tác yếu}
+
+\begin{classroomqa}\audiencequestion{Trong những điều kiện nào phép gần đúng khí lý tưởng mất hiệu lực, và có thể chỉ ra sự mất hiệu lực đó bằng toán học không?} \lecturerresponse{Hãy bắt đầu từ khí không tương tác mà ta đã giải được rồi đưa vào một tương tác nhỏ. Khai triển theo sự thay đổi ấy, tính hiệu chỉnh bậc đầu, rồi so sánh nó với hạng khí lý tưởng. Phép gần đúng thất bại khi hiệu chỉnh không còn nhỏ nữa. \lecturetimestamp{00:12:25--00:14:40}} \end{classroomqa}
+
+Đây là chiến lược nhiễu loạn chuẩn. Nếu một bài toán giải được tại \(\lambda=0\), hãy đưa vào một hằng ghép \(\lambda\), viết \begin{equation}
+ F(\lambda)=F(0)+\lambda F_1+\lambda^2F_2+\cdots,
+ \label{eq:sm6-perturbative-template}
+\end{equation} và hỏi liệu mỗi hạng được giữ lại có nhỏ hơn hạng đứng trước hay không. Ở đây bài toán mốc là khí lý tưởng. Sự nhỏ về mặt vật lý đến từ một mẫu loãng, một tầm tương tác ngắn so với khoảng cách trung bình, và một thế đủ yếu để hạng tương tác bậc đầu còn hữu ích. Mật độ cao hoặc lực tầm xa có thể làm mất hiệu lực phép gần đúng ngay cả khi mỗi lần tương tác riêng lẻ có vẻ nhẹ.
+
+Gọi \(x_i\in\mathbb R^3\) và \(p_i\in\mathbb R^3\) là vị trí và động lượng của phân tử \(i\). Đối với các phân tử đồng nhất có khối lượng \(m\), lấy \begin{equation}
+ H(X,P)=
+ \sum_{i=1}^{N}\frac{p_i^2}{2m}
+ +\sum_{i<j}u\!\left(|x_i-x_j|\right),
+ \label{eq:sm6-interacting-hamiltonian}
+\end{equation} trong đó \(X=(x_1,\ldots,x_N)\) và \(P=(p_1,\ldots,p_N)\). Điều kiện ràng buộc \(i<j\) loại trừ các cặp tự ghép và chỉ đếm \((i,j)\) một lần: \begin{equation}
+ \sum_{i<j}1=\binom{N}{2}=\frac{N(N-1)}{2}.
+ \label{eq:sm6-pair-count}
+\end{equation}
+
+\begin{classroomqa}\audiencequestion{Tại sao không lấy tổng độc lập theo cả hai nhãn hạt?} \lecturerresponse{Cặp \((3,7)\) là cùng một cặp vật lý với \((7,3)\), và một hạt không ghép cặp với chính nó. Việc giới hạn tổng bởi \(i<j\) áp đặt cả hai điều đó. Ký hiệu khối lượng được giữ là \(m\), còn \(i,j\) dùng để gắn nhãn các hạt, để tránh xung đột ký hiệu có thể xảy ra khi \(m\) được dùng cho cả hai mục đích. \lecturetimestamp{00:17:52--00:19:12}} \end{classroomqa}
+
+Hãy viết thế năng cấu hình tổng cộng dưới dạng \begin{equation}
+ U(X)=\sum_{i<j}u\!\left(|x_i-x_j|\right).
+ \label{eq:sm6-total-potential}
+\end{equation} Tương tác được giả sử là bất biến tịnh tiến và tầm ngắn: \(u(r)\) trở nên không đáng kể khi \(r\) lớn so với một độ dài phân tử.
+
+\section{Độ mạnh tích phân của tương tác cặp}
+
+Chỉ một tích phân của thế tương tác cặp yếu đi vào hiệu chỉnh bậc đầu: \begin{equation}
+ U_0\equiv\int_{\mathbb R^3}d^3r\,u(r).
+ \label{eq:sm6-u0-definition}
+\end{equation} Đơn vị của nó là năng lượng nhân thể tích. Nó kết hợp cường độ điển hình của tương tác với thể tích mà trên đó tương tác ấy còn đáng kể.
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_04.png}\caption{Thế tương tác cặp tầm ngắn được nén vào độ mạnh tích phân \(U_0=\int d^3r\,u(r)\).}\lectureframe{00:25:15}\end{figure}
+
+Để thấy vì sao \(U_0\) hữu ích, hãy xét một cặp: \begin{equation}
+ I_2=\int_V d^3x_1\,d^3x_2\,
+ u\!\left(|x_1-x_2|\right).
+ \label{eq:sm6-two-particle-integral}
+\end{equation} Đưa vào tọa độ tương đối \(r=x_2-x_1\). Xa biên, tích phân theo tọa độ tương đối cho \(U_0\), còn vị trí chung của cặp quét qua toàn bộ bình chứa. Vì thế \begin{equation}
+ I_2=V U_0+\text{surface corrections}.
+ \label{eq:sm6-pair-integral-vu0}
+\end{equation} Hiệu chỉnh này đến từ các hạt nằm trong phạm vi một tầm tương tác tính từ tường, nơi một phần lân cận theo tọa độ tương đối nằm ngoài hộp. Tầm quan trọng tương đối của nó tỷ lệ như tỉ số diện tích bề mặt trên thể tích và biến mất trong giới hạn vĩ mô.
+
+\begin{classroomqa}\audiencequestion{Liệu \(U_0\) có chỉ một cặp được chọn ra hay không, và có phải một hạt được giữ ở khoảng cách cố định với hạt kia không?} \lecturerresponse{Nó chỉ luật tương tác chung cho bất kỳ một cặp nào. Giữ cố định hạt thứ nhất và lấy tích phân vị trí của hạt thứ hai trên mọi vị trí tương đối. Khoảng cách không được giữ cố định trong tích phân này. Chỉ vùng tương tác lân cận mới đóng góp đáng kể, tạo ra \(U_0\). \lecturetimestamp{00:26:03--00:27:33}} \end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao tích phân vị trí thứ hai lại cho toàn bộ thể tích bình chứa còn tích phân thứ nhất thì không?}
+\lecturerresponse{Sau khi cấu hình tương đối đã được tích phân vào \(U_0\), toàn bộ cặp có thể được tịnh tiến trong mẫu. Phép tịnh tiến chung đó cung cấp thừa số lớn \(V\). Vùng lân cận tương tác là một thể tích cỡ phân tử đã được chứa sẵn trong \(U_0\), chứ không phải một thừa số khác bằng thể tích bình chứa.
+\lecturetimestamp{00:27:48--00:29:21}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Giá trị đó có thể phụ thuộc vào điểm nào được giữ cố định không, đặc biệt là ở gần thành bình?}
+\lecturerresponse{Tính bất biến tịnh tiến khiến giá trị trong khối không phụ thuộc vào điểm cố định. Ở gần thành, tích phân hơi khác đi vì một số vị trí lân cận không khả dụng. Chỉ một lớp bề mặt dày cỡ phân tử bị ảnh hưởng, nên sai số là không đáng kể khi hộp có kích thước vĩ mô.
+\lecturetimestamp{00:29:24--00:31:22}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Kết quả có phải là thế năng được tích phân trên mọi cấu hình hai hạt không, và vì sao nó chỉ tỉ lệ với một thể tích lớn duy nhất?}
+\lecturerresponse{Có. Đơn vị của nó là năng lượng nhân với bình phương thể tích, vì \(V U_0\) chứa một thể tích bình chứa và một thể tích tương tác cỡ phân tử. Chỉ đại lượng thứ nhất trong hai đại lượng đó tăng theo kích thước của mẫu.
+\lecturetimestamp{00:31:31--00:32:04}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Việc chọn một hình cầu, là hình làm cực tiểu diện tích ở thể tích cố định, có làm thay đổi kết quả trong khối không?}
+\lecturerresponse{Nó chỉ làm thay đổi hiệu chỉnh biên nhỏ. Với mọi hình dạng vĩ mô thông thường, số hạt nằm trong một khoảng cách cỡ phân tử tới bề mặt là không đáng kể so với số hạt trong khối. Bề mặt chỉ trở nên quan trọng khi bản thân bình chứa tiến gần tới các thang phân tử.
+\lecturetimestamp{00:32:04--00:33:58}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có phải các va chạm đã bị bỏ qua khi thay quỹ đạo hạt bằng một thế không?}
+\lecturerresponse{Không. Lực là đạo hàm của thế và chính nó tạo ra các va chạm. Cơ học thống kê cân bằng không đòi hỏi ta phải theo dõi các va chạm đó từng cái một; tác dụng của chúng được mã hóa trong năng lượng và do đó trong trọng số Boltzmann.
+\lecturetimestamp{00:33:59--00:35:29}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ta mất đi điều gì khi giữ các lực cặp nhưng không giữ các tương tác ba vật thực sự?}
+\lecturerresponse{Một năng lượng vi mô có thể chứa các hạng ba vật thực sự, và các bậc cao hơn của một thế cặp cũng tạo ra các tương quan nhiều hạt. Tuy nhiên, trong một khí loãng, xác suất để ba hạt được chỉ định cùng chiếm một vùng lân cận phân tử nhỏ hơn nhiều so với hai hạt. Vì thế, các hiệu ứng cặp cho hiệu chỉnh đầu tiên theo mật độ; các cụm bậc cao hơn đi vào ở những lũy thừa cao hơn của mật độ.
+\lecturetimestamp{00:35:29--00:38:14}}
+\end{classroomqa}
+
+\section{Hàm phân hoạch ở chế độ tự động}
+
+Ưu thế của phương pháp thống kê giờ đã lộ rõ. Một khi Hamiltonian đã được xác định, không cần phải phỏng đoán phân bố vận tốc chi tiết ở gần thành bình hay trong các va chạm. Ta viết hàm phân hoạch chính tắc và thực hiện các phép biến đổi đại số của nó:
+\begin{equation}
+\begin{aligned}
+ Z&=
+ \frac{1}{N!h^{3N}}
+ \int d^{3N}P\,d^{3N}X\\
+ &\qquad{}\times e^{-\beta K(P)}e^{-\beta U(X)},\\
+ K(P)&=\sum_i\frac{p_i^2}{2m}.
+\end{aligned}
+ \label{eq:sm6-full-partition-function}
+\end{equation}
+Thừa số \(h^{3N}\) làm cho độ đo không gian pha cổ điển trở thành vô thứ nguyên, và \(N!\) loại bỏ sự đếm thừa do các hoán vị của các hạt đồng nhất.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_05.png}
+\caption{Năng lượng của nhiều hạt và các thừa số động năng và cấu hình tương ứng trong hàm phân hoạch.}
+\lectureframe{00:40:35}
+\end{figure}
+
+Động lượng và tọa độ tách rời nhau. Nhân rồi chia tích phân cấu hình cho \(V^N\) sẽ tách riêng kết quả khí lý tưởng:
+\begin{align}
+ Z
+ &=\left[
+ \frac{V^N}{N!h^{3N}}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ \right] \notag\\
+ &\quad\times\left[
+ \frac{1}{V^N}
+ \int d^{3N}X\,e^{-\beta U(X)}
+ \right] \notag\\
+ &\equiv Z_0\,C(\beta,V,N).
+ \label{eq:sm6-z-factorization}
+\end{align}
+Thừa số Gauss quen thuộc là
+\begin{equation}
+ \int d^{3N}P\,e^{-\beta K(P)}
+ =\left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm6-gaussian-factor}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_06.png}
+\caption{Hàm phân hoạch khí lý tưởng được tách riêng khỏi thừa số cấu hình đã chuẩn hóa.}
+\lectureframe{00:43:45}
+\end{figure}
+
+Thừa số \(N!\) không ảnh hưởng đến tỉ số đã chuẩn hóa \(C\), cũng không ảnh hưởng đến các đạo hàm tại \(N\) cố định được dùng bên dưới, nhưng không thể lược bỏ nó khỏi toàn bộ nhiệt động lực học: nó là thiết yếu để đếm trạng thái đúng và để entropy có tính quảng tính.
+
+Đến bậc nhất theo tương tác,
+\begin{equation}
+ e^{-\beta U(X)}
+ =1-\beta U(X)+O(U^2).
+ \label{eq:sm6-boltzmann-expansion}
+\end{equation}
+Do đó,
+\begin{align}
+ C
+ &=
+ 1-\frac{\beta}{V^N}
+ \sum_{i<j}
+ \int d^{3N}X\,u(|x_i-x_j|)
+ +O(U^2) \notag\\
+ &=
+ 1-\frac{\beta}{V^N}
+ \frac{N(N-1)}{2}
+ V^{N-2}(V U_0)+O(U^2) \notag\\
+ &=
+ 1-\beta\frac{N(N-1)}{2V}U_0+O(U^2).
+ \label{eq:sm6-configurational-correction}
+\end{align}
+Mỗi cặp cho cùng một \emph{tích phân}, chứ không phải cùng độ tách tức thời hay cùng thế năng. \(N-2\) tích phân theo vị trí còn lại, mỗi tích phân đóng góp một thừa số \(V\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_07.png}
+\caption{Việc đếm số cặp, các thể tích do các tọa độ của những hạt ngoài cặp tạo ra, và hiệu chỉnh cấu hình đầu tiên \(1-\beta N^2U_0/(2V)\).}
+\lectureframe{00:53:40}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Hạng dẫn đầu \(1\) có giả thiết rằng thế bằng không tại độ tách bằng 0 không?}
+\lecturerresponse{Không. Nó là hạng bậc không trong khai triển của hàm mũ, độc lập với giá trị của \(u(0)\). Thế đi vào ở hạng kế tiếp, \(-\beta U(X)\).
+\lecturetimestamp{00:46:19--00:46:48}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao có thể thay mọi cặp bằng cùng một biểu thức nếu các cặp khác nhau có những độ tách khác nhau?}
+\lecturerresponse{Không phải các giá trị tại từng điểm của chúng đang được xem là bằng nhau. Mỗi hạng đều được tích phân trên cùng một toàn bộ không gian cấu hình, và các nhãn hạt không phân biệt cặp này với cặp khác. Các tích phân có cùng dạng và cùng giá trị.
+\lecturetimestamp{00:50:00--00:51:07}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Số cặp là \(N(N-1)/2\) hay
+\(N(N+1)/2\)?}
+\lecturerresponse{Đó là \(N(N-1)/2\): sau khi chọn một hạt thì chỉ còn \(N-1\) đối tác phân biệt, và phép chia cho 2 loại bỏ thứ tự đảo ngược. Với \(N\) vĩ mô, việc thay \(N(N-1)\) bằng \(N^2\) chỉ làm thay đổi một hiệu chỉnh tương đối cỡ \(1/N\).
+\lecturetimestamp{00:48:33--00:49:56}}
+\end{classroomqa}
+
+Vì \(\log(1-x)=-x-x^2/2-x^3/3-\cdots\), chứ không phải một chuỗi luân phiên dấu, nên logarit đến bậc nhất là
+\begin{equation}
+ \log Z
+ =
+ \log Z_0
+ -\beta\frac{N(N-1)}{2V}U_0
+ +O(U^2).
+ \label{eq:sm6-logz-correction}
+\end{equation}
+Khi \(N\) lớn, ta có thể thay \(N(N-1)\) bằng \(N^2\) ở những chỗ không cần phân biệt hiệu ứng \(N\) hữu hạn.
+
+\begin{remark}
+Cách thiết lập có kiểm soát ở mật độ thấp sử dụng hàm Mayer
+\(f(r)=e^{-\beta u(r)}-1\) và hệ số virial thứ hai
+\begin{equation}
+ B_2(T)=-\frac{1}{2}\int d^3r\,f(r).
+ \label{eq:sm6-second-virial}
+\end{equation}
+Đối với một thế yếu, \(f(r)\simeq-\beta u(r)\), nên
+\(B_2\simeq\beta U_0/2\) và ta thu lại kết quả bên dưới. Dạng viết này là cần thiết cho một lõi đẩy cứng, nơi việc khai triển trực tiếp \(e^{-\beta u}\) là không hợp lệ.
+\end{remark}
+
+\section{Năng lượng, áp suất và ý nghĩa của hiệu chỉnh}
+
+Logarit của \(Z\) hữu ích vì các đạo hàm của nó là những đại lượng đo được. Giả sử thế vi mô không phụ thuộc nhiệt độ,
+\begin{align}
+ E
+ &=-\left(\frac{\partial\log Z}{\partial\beta}\right)_{V,N} \notag\\
+ &=
+ \frac{3}{2}NT
+ +\frac{N(N-1)}{2V}U_0+O(U^2) \notag\\
+ &\simeq
+ N\left(\frac{3}{2}T+\frac{1}{2}\rho U_0\right),
+ \qquad
+ \rho=\frac{N}{V}.
+ \label{eq:sm6-energy-correction}
+\end{align}
+Đại lượng \(N^2\) tuy có vẻ không quảng tính lại đi kèm với \(1/V\). Ở mật độ cố định, \(N^2/V=N\rho\), nên tổng năng lượng vẫn tỉ lệ với quy mô của hệ. Phần năng lượng tăng thêm trên mỗi hạt tỉ lệ với mật độ vì một phân tử được chọn chỉ nhận năng lượng cặp khi có một phân tử khác nằm ở gần.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_08.png}
+\caption{Hiệu chỉnh tương tác đầu tiên được sắp xếp lại thành một năng lượng quảng tính \(N[3T/2+\rho U_0/2]\).}
+\lectureframe{01:03:25}
+\end{figure}
+
+Áp suất dễ đo hơn. Dùng kết quả của chương trước,
+\begin{equation}
+ P=T\left(\frac{\partial\log Z}{\partial V}\right)_{T,N},
+ \label{eq:sm6-pressure-from-z}
+\end{equation}
+ta thu được
+\begin{align}
+ P
+ &=
+ \frac{NT}{V}
+ +T\frac{\partial}{\partial V}
+ \left(-\beta\frac{N(N-1)}{2V}U_0\right)
+ +O(U^2) \notag\\
+ &=
+ \rho T+\frac{1}{2}\rho^2U_0
+ +O\!\left(\frac{\rho U_0}{N},U^2\right).
+ \label{eq:sm6-pressure-correction}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_09.png}
+\caption{Áp suất từ đạo hàm Helmholtz, bao gồm hiệu chỉnh đầu tiên bậc hai theo mật độ.}
+\lectureframe{01:09:50}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao \(\rho^2\), chứ không phải một lũy thừa khác, lại là hiệu chỉnh đầu tiên tự nhiên?}
+\lecturerresponse{Hạng lý tưởng đòi hỏi một hạt hiện diện trong một vùng nhỏ và vì thế tỉ lệ như \(\rho\). Một tương tác đòi hỏi hai hạt cùng chiếm một vùng lân cận phân tử, nên xác suất của nó tỉ lệ như \(\rho^2\). Thừa số \(1/2\) chính là thừa số đếm cặp ngăn \((i,j)\) và \((j,i)\) bị đếm riêng rẽ.
+\lecturetimestamp{01:24:27--01:26:00}}
+\end{classroomqa}
+
+Ở nhiệt độ cố định, ta có thể thay đổi \(V\), đo \(\rho=N/V\), và vẽ đồ thị áp suất. Định luật lý tưởng là hạng tuyến tính. Độ cong của \(P(\rho)\) cho thấy hiệu chỉnh tương tác đầu tiên. Trong xấp xỉ thế yếu này, hiệu chỉnh không có phụ thuộc nhiệt độ tường minh vì thừa số \(T\) trong \eqref{eq:sm6-pressure-from-z} triệt tiêu \(\beta=1/T\).
+
+\begin{classroomqa}
+\audiencequestion{Mật độ có thể tăng lớn đến mức nào trước khi buộc phải kể đến các hiệu ứng ba vật?}
+\lecturerresponse{Phép đếm theo mật độ cho biết hạng virial kế tiếp tỉ lệ với \(\rho^3\), nhưng hệ số của nó không thể suy ra chỉ từ \(U_0\). Nó nhận đóng góp từ các tích tương quan của các tương tác cặp và, nếu có, từ các lực ba vật thực sự. Ta phải tính hệ số cụm kế tiếp rồi so sánh nó với hạng \(\rho^2\); không nên nâng một công thức phỏng đoán thành một kết quả.
+\lecturetimestamp{01:10:50--01:13:38}}
+\end{classroomqa}
+
+Hạng khí lý tưởng chi phối khi độ lớn của hiệu chỉnh là nhỏ:
+\begin{equation}
+ \begin{aligned}
+ \frac{1}{2}\rho^2|U_0|&\ll \rho T,\\
+ |\rho U_0|&\ll T
+ \qquad\text{(parametrically)}.
+ \end{aligned}
+ \label{eq:sm6-ideal-validity}
+\end{equation}
+Hai vế của bất đẳng thức thứ hai đều là năng lượng. Đại lượng
+\(\rho U_0\) là thang năng lượng tương tác trên mỗi hạt, còn \(T\) là thang động năng. Một chất khí loãng thông thường ở nhiệt độ phòng nằm rất sâu trong miền này; các sai lệch đáng kể chỉ xuất hiện khi các vùng lân cận phân tử được chiếm đủ thường xuyên để tương tác có thể cạnh tranh với chuyển động nhiệt.
+
+\begin{classroomqa}
+\audiencequestion{Có thể ước lượng tiêu chuẩn này cho không khí trong phòng này không?}
+\lecturerresponse{Hãy ước lượng \(U_0\) bằng tích của một năng lượng tương tác phân tử với một thể tích phân tử, nhân với mật độ số, rồi so sánh kết quả với \(k_BT\). Các trị số phân tử gần đúng cho thấy thang tương tác nhỏ hơn nhiều trong không khí phòng thông thường. Cần nén đáng kể thì các phân tử mới thường xuyên chen vào phạm vi tương tác của nhau.
+\lecturetimestamp{01:16:24--01:18:54}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu \(U_0\) có thể mang cả hai dấu không?}
+\lecturerresponse{Có. Trong gần đúng này, một tương tác tích phân dương là đẩy thuần và làm áp suất lớn hơn \(\rho T\). Một tương tác tích phân âm là hút thuần và làm áp suất giảm xuống. Phép thử dấu này là một kiểm tra vật lý trực tiếp đối với \eqref{eq:sm6-pressure-correction}.
+\lecturetimestamp{01:18:56--01:20:29}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_10.png}
+\caption{Biên dạng định tính của thế cặp đẩy và hút, đặt bên cạnh công thức áp suất mà số hạng hiệu chỉnh của nó đi theo dấu của \(U_0\).}
+\lectureframe{01:21:30}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Có thể đưa lực đẩy tĩnh điện, lực hút hấp dẫn hoặc các lực phân tử thực vào phép tính này không?}
+\lecturerresponse{Thế vi mô được lấy từ vật lý nguyên tử, phân tử hoặc lượng tử. Các phân tử trung hòa thường có một lõi đẩy rất dốc ở tầm ngắn và một đuôi hút van der Waals dài hơn, thường được biểu diễn sơ đồ bằng một thế 12--6. Đối với một lõi cứng như vậy, nên dùng công thức đầy đủ của hàm Mayer. Trọng lực thì khác: nó là tương tác tầm xa, tích phân theo không gian của nó không hội tụ theo cách cần thiết, và giới hạn nhiệt động lực học thông thường cho tương tác tầm ngắn được dùng ở đây không còn áp dụng được.
+\lecturetimestamp{01:20:40--01:23:03}}
+\end{classroomqa}
+
+Phép tính này minh họa một sự phân công hữu ích. Vật lý vi mô cung cấp \(u(r)\). Cơ học thống kê biến năng lượng đó thành \(Z\), các đạo hàm của \(Z\) cho ra các đại lượng vĩ mô quan sát được, còn suy luận vật lý kiểm tra dấu, sự tỉ lệ theo mật độ, tính quảng tính và miền hiệu lực của chúng. Chỉ sau khi đã chọn đúng năng lượng và phép gần đúng thì thao tác hình thức mới mang tính cơ học.
+
+\section{Vi phân chính xác và sự phụ thuộc đường đi}
+
+Bây giờ ta đổi ngôn ngữ toán học. Trong cụm \emph{vi phân chính xác}, từ chính xác không có nghĩa là chính xác về mặt số trị. Nó có nghĩa là một 1-dạng là vi phân của một hàm vô hướng thực sự.
+
+Cho \(f(x,y)\) là độ cao tại một điểm trên địa hình. Một độ dời nhỏ làm nó thay đổi theo
+\begin{equation}
+ df=
+ \frac{\partial f}{\partial x}\,dx+
+ \frac{\partial f}{\partial y}\,dy
+ =f_x\,dx+f_y\,dy.
+ \label{eq:sm6-total-differential}
+\end{equation}
+Ngược lại, giả sử ta chỉ được cho
+\begin{equation}
+ \omega=F_x(x,y)\,dx+F_y(x,y)\,dy.
+ \label{eq:sm6-one-form}
+\end{equation}
+Có tồn tại một hàm vô hướng \(f\) sao cho \(\omega=df\) không? Sự bằng nhau của các đạo hàm riêng hỗn hợp đòi hỏi
+\begin{equation}
+ \frac{\partial F_y}{\partial x}
+ =
+ \frac{\partial F_x}{\partial y}.
+ \label{eq:sm6-exactness-condition}
+\end{equation}
+Trên một miền đơn liên, điều kiện xoáy bằng không này cũng là đủ. Khi đó các thành phần \((F_x,F_y)\) tạo thành gradien của \(f\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_11.png}
+\caption{Độ cao như một hàm vô hướng, vi phân của nó, và điều kiện đạo hàm riêng hỗn hợp cho tính chính xác.}
+\lectureframe{01:34:30}
+\end{figure}
+
+Cùng điều kiện ấy còn có một ý nghĩa tích phân. Nếu \(\omega=df\), thì
+\begin{equation}
+ \int_{\gamma:1\to2}\omega=f(2)-f(1)
+ \label{eq:sm6-path-independent-integral}
+\end{equation}
+chỉ phụ thuộc vào hai điểm cuối, không phụ thuộc vào đường đi \(\gamma\). Đặc biệt,
+\begin{equation}
+ \oint_\gamma\omega=0
+ \label{eq:sm6-closed-loop-zero}
+\end{equation}
+với mọi vòng kín co rút được.
+
+Độ cao có tính chất này. Đi xe giữa cùng hai điểm bằng một con đường bằng phẳng hay qua một ngọn đồi đều cho cùng một độ biến thiên ròng của độ cao. Mức tiêu hao nhiên liệu thì không. Một lộ trình đồi dốc và một lộ trình bằng phẳng nói chung tiêu hao những lượng khác nhau, và một chuyến đi khép kín không hoàn lại lượng nhiên liệu đã đốt. Lượng nhiên liệu còn lại chắc chắn là một đại lượng được xác định rõ trong một mô tả trạng thái mở rộng, nhưng nó không phải là một hàm chỉ của vị trí \((x,y)\) của chiếc xe; nó mang theo ký ức về lộ trình. Mệt mỏi cũng cho một phép tương tự cùng loại: đi xuống dốc nói chung không xóa được sự mệt mỏi do đi lên dốc.
+
+\begin{classroomqa}
+\audiencequestion{Tính chính xác có phải là cùng một ý niệm với lực bảo toàn không, và nó có liên quan đến độ cong không?}
+\lecturerresponse{Một trường lực có xoáy bằng không là bảo toàn cục bộ và cho phép một thế, nên cách nói này liên hệ chặt chẽ. Vận chuyển song song và độ cong cũng liên hệ các biến đổi trên vòng kín với dữ liệu hình học cục bộ, nhưng đó là một chủ đề rộng hơn. Ở đây chỉ cần mệnh đề sơ cấp sau: xoáy bằng không có nghĩa là độc lập đường đi cục bộ, kèm điều kiện toàn cục quen thuộc trên miền.
+\lecturetimestamp{01:39:22--01:41:07}}
+\end{classroomqa}
+
+Hai ví dụ làm cho phép kiểm tra này trở nên cụ thể. Trước hết lấy
+\begin{equation}
+ F_x=y,\qquad F_y=x.
+ \label{eq:sm6-exact-example}
+\end{equation}
+Cả hai đạo hàm hỗn hợp đều bằng \(1\), và quả thật
+\begin{equation}
+ \omega=y\,dx+x\,dy=d(xy).
+ \label{eq:sm6-exact-example-potential}
+\end{equation}
+Bây giờ đổi một dấu:
+\begin{equation}
+ F_x=y,\qquad F_y=-x.
+ \label{eq:sm6-inexact-example}
+\end{equation}
+Khi đó
+\begin{equation}
+ \frac{\partial F_x}{\partial y}=1,
+ \qquad
+ \frac{\partial F_y}{\partial x}=-1,
+ \label{eq:sm6-inexact-cross-derivatives}
+\end{equation}
+nên không có hàm vô hướng \(f(x,y)\) nào có gradien gồm hai thành phần này.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_12.png}
+\caption{Một ví dụ chính xác được sinh bởi \(f=xy\) và một ví dụ không chính xác có các đạo hàm hỗn hợp bằng \(1\) và \(-1\).}
+\lectureframe{01:44:50}
+\end{figure}
+
+\section{Nhiệt và công không phải là các hàm trạng thái}
+
+Đối với một hệ đơn giản nén được có số hạt cố định, hai biến cân bằng độc lập xác định trạng thái. Ta có thể dùng \((T,V)\), \((E,V)\), hoặc, đặc biệt tự nhiên đối với hệ thức cơ bản, \((S,V)\). Do đó
+\begin{equation}
+ E=E(S,V),
+ \end{equation}
+và vi phân chính xác của nó là
+\begin{equation}
+ dE=
+ \left(\frac{\partial E}{\partial S}\right)_V dS+
+ \left(\frac{\partial E}{\partial V}\right)_S dV
+ =T\,dS-P\,dV.
+ \label{eq:sm6-fundamental-relation}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Đoạn nhiệt có nghĩa là chậm, cách nhiệt, thuận nghịch hay entropy không đổi?}
+\lecturerresponse{Thuật ngữ này được dùng khác nhau trong các ngữ cảnh khác nhau. Đối với đường đi cân bằng được xét ở đây, biến đổi là gần tĩnh và cách nhiệt, do đó thuận nghịch và đẳng entropy. Một quá trình bất thuận nghịch chỉ cách nhiệt thôi vẫn có thể sinh entropy, còn định lý đoạn nhiệt lượng tử nhấn mạnh sự biến thiên chậm của tham số.
+\lecturetimestamp{01:47:13--01:47:54}}
+\end{classroomqa}
+
+Ở entropy cố định, một sự giãn nở làm năng lượng của khí thay đổi một lượng \(-P\,dV\). Ở thể tích cố định, một sự truyền nhiệt thuận nghịch làm nó thay đổi một lượng \(T\,dS\). Vì vậy, sẽ hữu ích khi viết
+\begin{equation}
+ \begin{aligned}
+ \delta W_{\mathrm{on}}&=-P\,dV,
+ &\delta Q_{\mathrm{rev}}&=T\,dS,\\
+ dE&=\delta Q_{\mathrm{rev}}+\delta W_{\mathrm{on}}.&&
+ \end{aligned}
+ \label{eq:sm6-first-law-increments}
+\end{equation}
+Ký hiệu \(\delta\), thay vì \(d\), báo trước rằng nhiệt và công là các gia lượng phụ thuộc đường đi, không phải vi phân của các hàm trạng thái.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_13.png}
+\caption{Định luật thứ nhất cho một hệ piston:
+\(dE=-P\,dV+T\,dS\).}
+\lectureframe{01:50:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{\(-P\,dV\) biểu diễn công tác dụng lên khí hay do khí thực hiện?}
+\lecturerresponse{Theo quy ước trong
+\eqref{eq:sm6-first-law-increments}, đó là công tác dụng lên khí. Trong quá trình giãn nở \(dV>0\), khí thực hiện công dương lên piston, nên công tác dụng lên khí là âm và khí mất năng lượng. Hai cách mô tả này bằng nhau về độ lớn và trái dấu.
+\lecturetimestamp{01:51:23--01:52:27}}
+\end{classroomqa}
+
+Đẳng thức \(\delta Q_{\mathrm{rev}}=T\,dS\) không được áp dụng nguyên xi cho mọi quá trình gia nhiệt bất thuận nghịch. Nói chung,
+\begin{equation}
+ dS=\frac{\delta Q}{T_{\mathrm{boundary}}}+dS_{\mathrm{prod}},
+ \qquad dS_{\mathrm{prod}}\ge 0.
+ \label{eq:sm6-entropy-production}
+\end{equation}
+Lập luận về vi phân chính xác bên dưới xét các đường đi cân bằng gần tĩnh, đối với chúng hệ thức thuận nghịch là hệ thức thích hợp.
+
+\begin{classroomqa}
+\audiencequestion{Trong lập luận không gian trạng thái, có giả thiết rằng mọi đường đi đều đi qua các trạng thái cân bằng không?}
+\lecturerresponse{Có. Các thao tác được thực hiện đủ chậm để \(P\), \(T\), \(E\), \(S\) và \(V\) vẫn được xác định rõ dọc theo đường đi. Sự phụ thuộc đường đi của nhiệt và công không đòi hỏi phải đẩy hệ ra xa cân bằng.
+\lecturetimestamp{01:54:30--01:54:39}}
+\end{classroomqa}
+
+Để kiểm tra tính chính xác của nhiệt, hãy dùng \((E,V)\) làm tọa độ và viết lại định luật thứ nhất:
+\begin{equation}
+ \delta Q_{\mathrm{rev}}=dE+P(E,V)\,dV.
+ \label{eq:sm6-heat-one-form}
+\end{equation}
+Nếu tồn tại một hàm trạng thái \(Q(E,V)\) sao cho \(dQ=\delta Q_{\mathrm{rev}}\),
+thì các đạo hàm riêng của nó ắt phải là
+\begin{equation}
+ \left(\frac{\partial Q}{\partial E}\right)_V=1,
+ \qquad
+ \left(\frac{\partial Q}{\partial V}\right)_E=P.
+ \label{eq:sm6-hypothetical-heat-derivatives}
+\end{equation}
+Khi đó, sự bằng nhau của các đạo hàm hỗn hợp sẽ đòi hỏi
+\begin{equation}
+ \begin{aligned}
+ \frac{\partial}{\partial V}
+ \left(\frac{\partial Q}{\partial E}\right)_V
+ &=\frac{\partial}{\partial E}
+ \left(\frac{\partial Q}{\partial V}\right)_E,\\
+ 0&=\left(\frac{\partial P}{\partial E}\right)_V.
+ \end{aligned}
+ \label{eq:sm6-heat-exactness-requirement}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Đây có đúng là cùng một phép kiểm tra xoáy đã dùng cho
+\(F_x\,dx+F_y\,dy\) không?}
+\lecturerresponse{Đúng. Các hệ số của \(dE\) và \(dV\) là \(1\) và
+\(P(E,V)\). Các đạo hàm hỗn hợp của chúng là \(0\) và
+\((\partial P/\partial E)_V\). Nhiệt sẽ chỉ là chính xác nếu các đạo hàm ấy trùng nhau.
+\lecturetimestamp{01:54:39--01:54:52}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_14.png}
+\caption{1-dạng nhiệt \(dE+P\,dV\) và các đạo hàm hỗn hợp cần có nếu nó là vi phân của một hàm trạng thái.}
+\lectureframe{01:58:10}
+\end{figure}
+
+Yêu cầu này về mặt vật lý đã khó tin: thêm năng lượng vào một chất khí ở thể tích cố định nói chung sẽ làm thay đổi áp suất của nó. Khí lý tưởng cho một phép tính trực tiếp:
+\begin{equation}
+ PV=NT,
+ \qquad
+ E=\frac{3}{2}NT
+ \quad\Longrightarrow\quad
+ P=\frac{2E}{3V}.
+ \label{eq:sm6-ideal-pressure-energy}
+\end{equation}
+Do đó
+\begin{equation}
+ \left(\frac{\partial P}{\partial E}\right)_V
+ =\frac{2}{3V}\ne0.
+ \label{eq:sm6-heat-curl-fails}
+\end{equation}
+Phép kiểm tra xoáy thất bại: \(\delta Q_{\mathrm{rev}}\) không phải là một vi phân chính xác. Số gia công \(\delta W_{\mathrm{on}}=-P\,dV\) cũng không phải là vi phân chính xác vì cùng lý do đó.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_15.png}
+\caption{Các hệ thức khí lý tưởng kết hợp lại thành
+\(P=2E/(3V)\).}
+\lectureframe{02:00:00}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{lecture_06_figure_16.png}
+\caption{Lập luận hoàn chỉnh: vì
+\((\partial P/\partial E)_V\ne0\), 1-dạng nhiệt không thể là vi phân chính xác.}
+\lectureframe{02:00:35}
+\end{figure}
+
+Đối với một chu trình cân bằng khép kín,
+\begin{equation}
+ \oint dE=0,
+ \qquad
+ \oint\delta Q_{\mathrm{rev}}
+ =-\oint\delta W_{\mathrm{on}}.
+ \label{eq:sm6-cycle-balance}
+\end{equation}
+Hệ trở về cùng một năng lượng, nhưng nhiệt và công không nhất thiết triệt tiêu riêng rẽ. Giá trị của chúng phụ thuộc vào lộ trình trong không gian trạng thái. Đó là lý do vì sao một động cơ chu trình có thể hấp thụ nhiệt và cung cấp công thuần mặc dù môi chất làm việc của nó trở về trạng thái nhiệt động học ban đầu.
+
+\begin{classroomqa}
+\audiencequestion{Sự phụ thuộc vào đường đi này có liên quan đến hiệu suất động cơ, hiện tượng trễ và hiệu ứng nhớ không?}
+\lecturerresponse{Các chu trình động cơ sử dụng điều đó trực tiếp: nhiệt đưa vào của một chu trình kín cân bằng với công ròng đầu ra, trong khi hàm trạng thái \(E\) trở về giá trị ban đầu của nó. Hiện tượng trễ và hiệu ứng nhớ cũng liên quan đến sự phụ thuộc vào đường đi, mặc dù chúng thường đòi hỏi các biến nội bổ sung hoặc vật lý không cân bằng. Kết luận hiện tại hẹp hơn và đã đúng ngay cả đối với các đường đi cân bằng thuận nghịch: nhiệt và công là các đại lượng trao đổi, không phải những tính chất được lưu trữ trong trạng thái nhiệt động.
+\lecturetimestamp{02:02:21--02:03:17}}
+\end{classroomqa}
+
+Đến đây, hai nửa của lập luận gặp nhau. Phép đo chỉ có ý nghĩa sau khi các yếu tố kiểm soát và các điều kiện cân bằng của nó được nêu rõ. Phép gần đúng chỉ có ý nghĩa sau khi tham số nhỏ của nó và tiêu chuẩn mất hiệu lực được nêu rõ. Một đại lượng nhiệt động chỉ là hàm trạng thái sau khi vi phân của nó vượt qua phép kiểm tra tính độc lập với đường đi. Trong mỗi trường hợp, toán học được dùng một cách nghiêm cẩn không thay thế sự diễn giải vật lý; nó cho ta biết chính xác ở đâu sự diễn giải ấy là có cơ sở.

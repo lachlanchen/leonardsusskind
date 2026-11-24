@@ -1,0 +1,642 @@
+\chapter{Trọng số Boltzmann, hàm phân hoạch và khí lý tưởng}
+
+\lectureoverview{Chúng ta suy ra phân bố xác suất cân bằng bằng cách cực đại hóa entropy với điều kiện chuẩn hóa và năng lượng trung bình được giữ cố định. Hàm phân hoạch sau đó cho phép suy ra năng lượng trung bình, entropy và nhiệt độ bằng phép vi phân. Khí lý tưởng cung cấp ví dụ đầy đủ đầu tiên, tiếp theo là một mở rộng hấp dẫn và phần báo trước về dao động năng lượng.}
+
+\section{Bài toán entropy có ràng buộc}
+
+Bắt đầu với một tập hợp lớn gồm \(\mathcal N\) bản sao giống hệt nhau, tương tác với nhau rất yếu, của cùng một hệ con. Nếu \(n_i\) bản sao chiếm trạng thái thứ \(i\), thì
+\begin{equation}
+ p_i=\frac{n_i}{\mathcal N},
+ \qquad
+ \sum_i p_i=1.
+ \label{eq:sm4-occupation-probability}
+\end{equation}
+Cách đếm đa thức của bài giảng trước cho entropy trên mỗi bản sao,
+\begin{equation}
+ S[p]=-\sum_i p_i\log p_i.
+ \label{eq:sm4-entropy}
+\end{equation}
+Nên xem đây như một hàm thông thường của mọi biến \(p_1,p_2,\ldots\). Dạng cộng đơn giản của nó chính là điều làm cho phép tính này trở nên khả dĩ.
+
+Tập hợp các bản sao có tổng năng lượng cố định là \(\mathcal N E\), trong đó
+\(E\) là năng lượng trung bình trên mỗi bản sao. Vì vậy ràng buộc thứ hai là
+\begin{equation}
+ \sum_i p_iE_i=E.
+ \label{eq:sm4-energy-constraint}
+\end{equation}
+Các mức \(E_i\) thuộc về hệ con; con số \(E\) ở vế phải là trung bình có trọng số theo xác suất của chúng. Việc cực đại hóa
+\eqref{eq:sm4-entropy} với các ràng buộc
+\eqref{eq:sm4-occupation-probability} và
+\eqref{eq:sm4-energy-constraint} sẽ chọn ra các tỉ phần chiếm giữ có xác suất lớn áp đảo.
+
+Để tiện lợi, hãy cực tiểu hóa \(-S=\sum_i p_i\log p_i\). Đưa vào một nhân tử Lagrange cho mỗi ràng buộc:
+\begin{equation}
+ \begin{aligned}
+ \Phi[p;\alpha,\beta]
+ &=\sum_i p_i\log p_i\\
+ &\quad+\alpha\left(\sum_i p_i-1\right)\\
+ &\quad+\beta\left(\sum_i p_iE_i-E\right).
+ \end{aligned}
+ \label{eq:sm4-augmented-functional}
+\end{equation}
+Các ký hiệu \(\alpha\) và \(\beta\) ở đây chưa hàm ý giả thiết vật lý nào. Ở giai đoạn này, chúng đơn giản chỉ là hai con số cần thiết để áp đặt hai ràng buộc.
+
+\begin{classroomqa}
+\audiencequestion{Phiếm hàm được bổ sung này cũng là một hàm của
+\(\alpha\) và \(\beta\) phải không?}
+\lecturerresponse{Đúng. Biến thiên nó theo \(\alpha\) và \(\beta\) sẽ thu lại hai ràng buộc. Tuy nhiên, trong phép tính trước mắt, ta giữ cố định các nhân tử đó và cho các xác suất \(p_i\) biến thiên. Các giá trị của chúng được cố định về sau bởi điều kiện chuẩn hóa và năng lượng trung bình đã cho.
+\lecturetimestamp{00:09:32--00:09:49}}
+\end{classroomqa}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{lecture_04_figure_02.png}
+\caption{Phiếm hàm entropy được bổ sung sau khi đã lược bỏ các hạng không đổi dưới phép biến thiên của các xác suất.}
+\lectureframe{00:10:56}
+\end{figure}
+
+Khi lấy đạo hàm theo một xác suất, các hạng
+\(-\alpha\) và \(-\beta E\) không đóng góp gì. Đây là phiếm hàm rút gọn xuất hiện trên bảng. Chúng vẫn là một phần của
+\eqref{eq:sm4-augmented-functional}; chúng chỉ đơn thuần trở nên không còn liên quan đối với đạo hàm này.
+
+\section{Phân bố Boltzmann}
+
+Hãy chọn tùy ý một xác suất. Bài giảng chọn \(p_7\), phần vì
+\(1\) trông quá đặc biệt và \(7\) là một con số may mắn. Không có gì phụ thuộc vào lựa chọn đó. Phép tính vi phân duy nhất cần dùng là
+\begin{equation}
+ \frac{d}{dp_i}\bigl(p_i\log p_i\bigr)=\log p_i+1.
+\end{equation}
+Do đó
+\begin{equation}
+ \frac{\partial\Phi}{\partial p_i}
+ =\log p_i+1+\alpha+\beta E_i=0.
+ \label{eq:sm4-stationarity}
+\end{equation}
+Giải theo \(p_i\),
+\begin{align}
+ \log p_i&=-(1+\alpha)-\beta E_i,\\
+ p_i&=e^{-(1+\alpha)}e^{-\beta E_i}.
+\end{align}
+Thừa số thứ nhất không phụ thuộc vào nhãn trạng thái. Viết nó thành \(1/Z\):
+\begin{equation}
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+ \label{eq:sm4-boltzmann-weight}
+\end{equation}
+
+Đây là thành quả bất ngờ đầu tiên. Một phép đạo hàm có ràng buộc hoàn toàn thường quy đã tạo ra một định luật hàm mũ. Các xác suất tương đối tuân theo
+\begin{equation}
+ \frac{p_i}{p_j}=e^{-\beta(E_i-E_j)}.
+ \label{eq:sm4-relative-weight}
+\end{equation}
+Nhân tử \(\beta\) kiểm soát tốc độ xác suất giảm theo năng lượng. Giá trị \(\beta\) dương lớn tập trung phân bố gần các mức thấp nhất; giá trị \(\beta\) dương nhỏ phân bố đáng kể trọng số lên các mức cao hơn của phổ. Ta đã có thể thấy rằng thay đổi \(\beta\) sẽ làm thay đổi năng lượng trung bình, mặc dù việc đồng nhất nó với nghịch đảo nhiệt độ vẫn còn phải được chứng minh.
+
+\section{Chuẩn hóa và hàm phân hoạch}
+
+Điều kiện chuẩn hóa xác định thừa số không phụ thuộc vào trạng thái:
+\begin{equation}
+ 1=\sum_i p_i
+ =\frac{1}{Z}\sum_i e^{-\beta E_i},
+\end{equation}
+cho nên
+\begin{equation}
+ Z(\beta)=\sum_i e^{-\beta E_i}.
+ \label{eq:sm4-partition-function}
+\end{equation}
+Đây là hàm phân hoạch chính tắc. Ban đầu nó xuất hiện như một hằng số chuẩn hóa, nhưng cách mô tả đó đánh giá thấp nghiêm trọng vai trò của nó. Một khi \(Z(\beta)\) đã biết, các đại lượng nhiệt động học sẽ suy ra từ các đạo hàm của nó.
+
+Các mức năng lượng trong \eqref{eq:sm4-partition-function} là dữ liệu đầu vào. Chúng
+đến từ cơ học của hệ cùng với các điều kiện bên ngoài cố định: thể tích và hình dạng của hộp, các trường từ hoặc điện, và mọi tham số điều khiển khác. Thay đổi một tham số điều khiển sẽ làm thay đổi phổ và do đó làm thay đổi \(Z\). Trong phép tính hiện tại, các tham số ấy, và do đó tập \(\{E_i\}\), được giữ cố định.
+
+\begin{classroomqa}
+\audiencequestion{Chính xác thì các trục của bản phác thảo hàm mũ biểu diễn cái gì? Tọa độ thẳng đứng có phải là một \(p_i\) cụ thể không?}
+\lecturerresponse{Độ cao được vẽ là xác suất gán cho một mức, còn thứ tự theo phương ngang có thể được hiểu hoặc là nhãn trạng thái
+\(i\) hoặc, theo nghĩa vật lý hơn, là năng lượng \(E_i\). Mỗi trạng thái có một năng lượng cố định. Giá trị \(\beta\) lớn làm cho xác suất giảm rất dốc theo năng lượng đó; gần \(\beta=0\), các trọng số gần như phẳng trên các mức có thể tiếp cận.
+\lecturetimestamp{00:19:39--00:20:09}}
+\end{classroomqa}
+
+\section{Năng lượng trung bình ẩn trong hàm phân hoạch}
+
+Ràng buộc thứ hai xác định \(\beta\):
+\begin{equation}
+ E=\sum_i p_iE_i
+ =\frac{1}{Z}\sum_i E_i e^{-\beta E_i}.
+ \label{eq:sm4-mean-energy}
+\end{equation}
+Thay vì tính lại từ đầu tổng có trọng số này, hãy lấy đạo hàm của
+\eqref{eq:sm4-partition-function}:
+\begin{equation}
+ \frac{dZ}{d\beta}
+ =-\sum_i E_i e^{-\beta E_i}.
+\end{equation}
+So sánh với \eqref{eq:sm4-mean-energy} cho
+\begin{equation}
+ E(\beta)
+ =-\frac{1}{Z}\frac{dZ}{d\beta}
+ =-\frac{d\log Z}{d\beta}.
+ \label{eq:sm4-energy-logz}
+\end{equation}
+Việc dùng logarit là tự nhiên vì đạo hàm của nó cung cấp thừa số
+\(1/Z\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_03.png}
+\caption{Điều kiện chuẩn hóa, ràng buộc năng lượng trung bình và đạo hàm của hàm phân hoạch xuất hiện cùng nhau trên bảng.}
+\lectureframe{00:26:24}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Phương trình ở phần dưới của bảng là một phương trình mới cho \(Z\), hay nó được suy ra từ định nghĩa ở phía trên?}
+\lecturerresponse{Nó được suy ra bằng cách lấy đạo hàm của định nghĩa
+\(Z=\sum_i e^{-\beta E_i}\). Phép đạo hàm đưa
+\(-E_i\) xuống. Sau đó chia kết quả cho \(Z\) sẽ tái tạo lại tổng có trọng số dùng để định nghĩa năng lượng trung bình.
+\lecturetimestamp{00:25:58--00:26:37}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu
+\(dZ/d\beta=-E Z\) có làm cho \(Z\) trở thành một hàm riêng của phép đạo hàm không?}
+\lecturerresponse{Không theo nghĩa thông thường. Một phương trình trị riêng sẽ có một hằng số nhân với \(Z\), trong khi ở đây
+\(E=E(\beta)\). Phương trình này cho ta năng lượng trung bình như một hàm của
+\(\beta\); nó không phải là một bài toán trị riêng với trị riêng cố định.
+\lecturetimestamp{00:28:49--00:29:43}}
+\end{classroomqa}
+
+Sự đơn giản của \eqref{eq:sm4-energy-logz} dễ gây ngộ nhận. Phổ có thể phức tạp, và việc tính \(Z\) có thể khó, nhưng một khi đã tìm được hàm duy nhất đó thì năng lượng trung bình suy ra chỉ bằng một đạo hàm. Mẫu hình này lặp lại xuyên suốt cơ học thống kê: các phép toán sơ cấp được áp dụng theo đúng thứ tự sẽ cho những kết quả mà khó có thể đoán trực tiếp.
+
+\begin{classroomqa}
+\audiencequestion{\(E\) là tổng năng lượng của tất cả các bản sao hay là năng lượng trung bình trên mỗi hộp?}
+\lecturerresponse{Đó là năng lượng trung bình của một hộp. Tập hợp các bản sao có tổng năng lượng là \(\mathcal N E\). Về sau, khi chính hệ được chọn là cả một hộp chứa \(N\) hạt khí, thì \(E\) sẽ có nghĩa là năng lượng của toàn bộ mẫu khí đó.
+\lecturetimestamp{00:30:55--00:31:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Ta có thể lấy logarit của
+\(\sum_i e^{-\beta E_i}\) theo từng hạng được không?}
+\lecturerresponse{Không. Logarit biến một tích thành một tổng, chứ không biến một tổng thành tổng các logarit:
+\[
+ \log\!\left(\sum_i e^{-\beta E_i}\right)
+ \ne \sum_i\log\!\left(e^{-\beta E_i}\right).
+\]
+Sự phân biệt này về sau sẽ hữu ích, khi các hệ con độc lập khiến các hàm phân hoạch tương ứng nhân với nhau.
+\lecturetimestamp{00:31:10--00:31:58}}
+\end{classroomqa}
+
+\section{Đại lượng nào được giữ cố định, và đại lượng nào được phép biến thiên?}
+
+Trong cùng những công thức này có nhiều lớp biến số, và phần thảo luận trên lớp cố ý tách bạch chúng.
+
+\begin{itemize}
+ \item Các xác suất \(p_i\) là các ẩn ban đầu.
+ \item Các mức \(E_i\) được giữ cố định một khi hệ và các tham số điều khiển của nó đã được chỉ định.
+ \item Nhân tử \(\alpha\) đã được hấp thụ vào hệ số chuẩn hóa
+ \(Z=e^{1+\alpha}\).
+ \item Với một năng lượng trung bình \(E\) đã cho, ràng buộc sẽ cố định một số
+ \(\beta\). Tuy nhiên, trên một họ các trạng thái cân bằng, có thể dùng
+ \(E=E(\beta)\) hoặc \(\beta=\beta(E)\).
+\end{itemize}
+
+\begin{classroomqa}
+\audiencequestion{Nếu các nhân tử là những con số, tại sao \(\beta\) và
+\(E\) giờ lại được xem như các biến?}
+\lecturerresponse{Đối với một bài toán có ràng buộc cụ thể, chúng quả thực là các con số.
+Nhưng ta có thể so sánh nhiều bài toán cân bằng có cùng phổ và các năng lượng trung bình đã cho khác nhau. Trên họ đó, \(\beta\) thay đổi theo
+\(E\). Giữ cố định \(E\) thì xác định \(\beta\); giữ cố định \(\beta\) thì xác định
+\(E\). Đó là hai cách đọc của cùng một quan hệ.
+\lecturetimestamp{00:31:58--00:33:27}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{\(\alpha\) đã biến mất rồi sao?}
+\lecturerresponse{Chỉ có tên gọi của nó là biến mất. Định nghĩa
+\(e^{-(1+\alpha)}=1/Z\) hấp thụ nó vào \(Z\). Nếu giữ cả \(\alpha\)
+và \(Z\) thì ta sẽ tính cùng một tham số chuẩn hóa hai lần.
+\lecturetimestamp{00:33:29--00:33:49}}
+\end{classroomqa}
+
+Năng lượng không nhất thiết là đại lượng bảo toàn duy nhất. Nếu tổng động lượng, số hạt, mômen động lượng hoặc một đại lượng khác bị ràng buộc, thì giá trị kỳ vọng của nó sẽ có nhân tử riêng. Sự mở rộng đó làm thay đổi ensemble nhưng không thay đổi phương pháp.
+
+\begin{classroomqa}
+\audiencequestion{Liệu việc chỉ cố định năng lượng trung bình có giả định quá nhiều về hệ không?}
+\lecturerresponse{Điều đó giả định rằng trong bài toán hiện tại không cần điều kiện hóa theo bất kỳ đại lượng bảo toàn nào khác. Nếu, chẳng hạn, tổng động lượng cũng được cố định, hãy thêm một ràng buộc nữa và một nhân tử Lagrange nữa. Trái lại, ở đây thể tích, hình dạng và các trường ngoài là những tham số điều khiển: chúng được giữ cố định và tự chúng xác định các mức năng lượng.
+\lecturetimestamp{00:33:51--00:35:50}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có nên cho \(\alpha\) xuất hiện như một đối số khác của năng lượng không, và \(Z\) có phụ thuộc vào các mức \(E_i\) không?}
+\lecturerresponse{\(\alpha\) đã nằm trong \(Z\), nên nó không phải là một đối số độc lập. Hàm phân hoạch dĩ nhiên phụ thuộc vào phổ cố định cũng như vào \(\beta\). Việc thay đổi một tham số điều khiển sẽ làm thay đổi \(E_i\), và do đó làm thay đổi \(Z\); trong các đạo hàm theo \(\beta\) hiện tại thì phổ được giữ cố định.
+\lecturetimestamp{00:35:52--00:37:10}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Chúng ta đang biến thiên các mức riêng lẻ \(E_i\), hay năng lượng trung bình \(E\)?}
+\lecturerresponse{Các mức riêng lẻ được giữ cố định. Năng lượng trung bình thay đổi vì các xác suất thay đổi. Do đó, họ phân bố này được tham số hóa bởi \(E\) hoặc tương đương bởi \(\beta\), trong khi cùng một danh sách mức \(\{E_i\}\) được dùng xuyên suốt.
+\lecturetimestamp{00:37:12--00:39:04}}
+\end{classroomqa}
+
+Trên thực tế, nhiệt độ thường dễ đo hơn nhiều so với tổng năng lượng của một chất khí. Ta có thể đặt một nhiệt kế vào; việc cân hiệu khối lượng tương đối tính và viện đến \(E=mc^2\) thì là đúng, nhưng cực kỳ không hữu ích. Để \(\beta\) mang ý nghĩa thao tác, giờ ta phải liên hệ nó với định nghĩa nhiệt động lực học của nhiệt độ.
+
+\section{Entropy trước nhiệt độ}
+
+Về mặt lôgic, entropy xuất hiện trước. Thế các xác suất Boltzmann vào
+\eqref{eq:sm4-entropy}:
+\begin{equation}
+ \log p_i=-\beta E_i-\log Z.
+\end{equation}
+Khi đó
+\begin{align}
+ S
+ &=-\sum_i p_i\log p_i\\
+ &=\beta\sum_i p_iE_i+\log Z\sum_i p_i\\
+ &=\beta E+\log Z.
+ \label{eq:sm4-entropy-logz}
+\end{align}
+Tổng chuẩn hóa cung cấp thừa số 1 ở cuối. Đây cũng là gợi ý đầu tiên về năng lượng tự do Helmholtz, vì về sau
+\(F_{\mathrm H}=-T\log Z\) trong các đơn vị với \(k_B=1\).
+
+\begin{classroomqa}
+\audiencequestion{Điều gì đã xảy ra với thừa số \(1/Z\) trong hạng thứ nhất?}
+\lecturerresponse{Nó đã là một phần của \(p_i\). Tổng
+\(\sum_i p_iE_i\) chứa xác suất đã chuẩn hóa đầy đủ và, theo định nghĩa, là năng lượng trung bình \(E\).
+\lecturetimestamp{00:43:19--00:43:26}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Có nên có dấu trừ trong
+\(S=\beta E+\log Z\) không?}
+\lecturerresponse{Không. Entropy bắt đầu bằng một dấu trừ, còn
+\(\log p_i=-\beta E_i-\log Z\) chứa thêm hai dấu trừ nữa. Chúng tạo ra hai hạng dương được hiển thị trong \eqref{eq:sm4-entropy-logz}.
+\lecturetimestamp{00:45:53--00:46:03}}
+\end{classroomqa}
+
+Nhiệt độ được định nghĩa theo nhiệt động lực học bởi
+\begin{equation}
+ dE=T\,dS,
+ \qquad
+ \frac{1}{T}=\frac{dS}{dE},
+ \label{eq:sm4-temperature-definition}
+\end{equation}
+trong khi mọi tham số điều khiển khác đều được giữ cố định. Một nỗ lực đầu tiên nhằm lấy đạo hàm \eqref{eq:sm4-entropy-logz} trực tiếp theo \(E\) nhanh chóng trở nên rối rắm vì \(\beta\) cũng phụ thuộc vào \(E\). Lấy vi phân toàn phần thì gọn hơn:
+\begin{align}
+ dS
+ &=\beta\,dE+E\,d\beta
+   +\frac{d\log Z}{d\beta}\,d\beta\\
+ &=\beta\,dE+E\,d\beta-E\,d\beta\\
+ &=\beta\,dE.
+ \label{eq:sm4-entropy-differential}
+\end{align}
+Sự triệt tiêu dùng \eqref{eq:sm4-energy-logz}. So sánh
+\eqref{eq:sm4-entropy-differential} với
+\eqref{eq:sm4-temperature-definition} thu được
+\begin{equation}
+ T=\frac{1}{\beta},
+ \qquad
+ \beta=\frac{1}{T}.
+ \label{eq:sm4-beta-temperature}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_04.png}
+\caption{Hai hạng \(d\beta\) triệt tiêu nhau, còn lại
+\(dS=\beta\,dE\).}
+\lectureframe{00:50:48}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Sự triệt tiêu này có giả định sai rằng
+\(\log Z\) không phụ thuộc vào năng lượng hay nhiệt độ không?}
+\lecturerresponse{Không. Với phổ cố định, chỉ có một tham số nhiệt độc lập. Ta có thể viết \(Z=Z(\beta)\), rồi xem
+\(\beta=\beta(E)\) dọc theo họ cân bằng. Vi phân toàn phần giữ đầy đủ sự phụ thuộc theo \(d\beta\), và đồng nhất thức
+\(d\log Z/d\beta=-E\) chính là điều làm cho sự triệt tiêu ấy hoạt động.
+\lecturetimestamp{00:52:04--00:52:44}}
+\end{classroomqa}
+
+Trong phần lớn phép tính, nhiệt độ được đo theo đơn vị năng lượng, nên \(k_B=1\). Khôi phục các đơn vị phòng thí nghiệm,
+\begin{equation}
+ \beta=\frac{1}{k_B T_{\mathrm K}},
+ \label{eq:sm4-beta-laboratory}
+\end{equation}
+trong đó \(T_{\mathrm K}\) là nhiệt độ tuyệt đối tính bằng kelvin. Thường tiện khi viết \(T_{\mathrm e}=k_BT_{\mathrm K}\) rồi dùng
+\(\beta=1/T_{\mathrm e}\).
+
+\begin{classroomqa}
+\audiencequestion{Với một thể tích khí, hệ là một phân tử hay toàn bộ tập hợp?}
+\lecturerresponse{Điều đó phụ thuộc vào cách ta định nghĩa hệ. Ở đây hệ sẽ là toàn bộ hộp khí, nên \(E\) là năng lượng của tất cả các phân tử của nó. Đối với một khí lý tưởng đủ loãng, một phân tử cũng có thể được xem là một phân hệ vì các hạt không tương tác; sự phân tích thành nhân tử dưới đây sẽ cho thấy mối liên hệ giữa hai cách mô tả.
+\lecturetimestamp{00:53:32--00:54:49}}
+\end{classroomqa}
+
+Các hệ thức chính tắc giờ có thể được gom lại:
+\begin{align}
+ p_i&=\frac{e^{-\beta E_i}}{Z},&
+ Z(\beta)&=\sum_i e^{-\beta E_i},\label{eq:sm4-canonical-pair}\\
+ E&=-\frac{d\log Z}{d\beta},&
+ S&=\beta E+\log Z,&
+ T&=\frac{1}{\beta}.
+ \label{eq:sm4-canonical-identities}
+\end{align}
+
+\section{Khí lý tưởng cổ điển}
+
+Xét \(N\) hạt điểm đồng nhất khối lượng \(m\) trong một hộp có thể tích
+\(V\). Chất khí là lý tưởng khi có thể bỏ qua các tương tác giữa các hạt. Đây có thể là một gần đúng tốt vì các lực yếu hoặc vì chất khí đủ loãng để các lần lại gần nhau ở cự li ngắn là hiếm.
+
+Một vi trạng thái cổ điển được xác định bởi toàn bộ các vị trí và động lượng:
+\begin{equation}
+ (\bm q_1,\ldots,\bm q_N;\bm p_1,\ldots,\bm p_N).
+\end{equation}
+Có \(3N\) tọa độ vị trí và \(3N\) tọa độ động lượng, nên trạng thái là một điểm trong không gian pha \(6N\) chiều. Khi không có tương tác, Hamiltonian là
+\begin{equation}
+ H(\bm p)=\sum_{a=1}^{N}\frac{\bm p_a^2}{2m}
+ =\sum_{\mu=1}^{3N}\frac{p_\mu^2}{2m}.
+ \label{eq:sm4-ideal-hamiltonian}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Có phải có \(3N\) hạt không, và việc cộng trên mọi thành phần động lượng có đếm trùng các trạng thái không?}
+\lecturerresponse{Có \(N\) hạt và \(3N\) thành phần động lượng. Tổng trong \eqref{eq:sm4-ideal-hamiltonian} chứa một hạng bậc hai cho mỗi thành phần. Khi đó, tích phân không gian pha tích phân trên mỗi thành phần độc lập đúng một lần, nên không có sự đếm trùng nào do tích đó gây ra.
+\lecturetimestamp{01:02:29--01:04:04}}
+\end{classroomqa}
+
+Đối với một không gian pha cổ điển liên tục, tổng trên các trạng thái trở thành
+\begin{equation}
+ Z_N
+ =\frac{1}{N!\,h^{3N}}
+ \int_{V^N}d^{3N}q
+ \int_{\mathbb R^{3N}}d^{3N}p\,
+ e^{-\beta H(\bm p)}.
+ \label{eq:sm4-classical-partition}
+\end{equation}
+Bài giảng tập trung vào các tích phân và viết cùng biểu thức ấy mà không có ô không gian pha \(h^{3N}\). Khôi phục nó khiến \(Z_N\) trở thành không thứ nguyên và phản ánh nguồn gốc lượng tử của việc đếm trạng thái cổ điển. Vì \(h\) độc lập với \(\beta\), nó không làm thay đổi đạo hàm dùng để tính năng lượng ở bên dưới.
+
+Tích phân theo vị trí được tính ngay. Hamiltonian không phụ thuộc vào vị trí, và mỗi hạt có thể nằm ở bất kỳ đâu trong hộp:
+\begin{equation}
+ \int_{V^N}d^{3N}q=V^N.
+\end{equation}
+Tích phân theo động lượng phân tách thành \(3N\) tích phân Gauss một chiều giống hệt nhau:
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left[
+  \int_{-\infty}^{\infty}dp\,
+  e^{-\beta p^2/(2m)}
+ \right]^{3N}.
+ \label{eq:sm4-factorized-gas}
+\end{equation}
+
+Thừa số \(1/N!\) xem các cấu hình chỉ khác nhau bởi một hoán vị của các hạt đồng nhất là như nhau. Đối với năng lượng trung bình khi \(N\) và \(V\) được giữ cố định, nó chỉ đóng góp một hằng số độc lập với \(\beta\) vào \(\log Z_N\), nên biến mất dưới phép
+\(-\partial/\partial\beta\). Nó không phải lúc nào cũng có thể bỏ đi: cùng với \(h^{3N}\), nó là thiết yếu để có một hàm phân hoạch không thứ nguyên, một entropy quảng tính và một thế hóa học nhất quán.
+
+Giờ đặt
+\begin{equation}
+ x=\sqrt{\frac{\beta}{2m}}\,p,
+ \qquad
+ dp=\sqrt{\frac{2m}{\beta}}\,dx.
+\end{equation}
+Tích phân Gauss trở thành
+\begin{align}
+ \int_{-\infty}^{\infty}dp\,e^{-\beta p^2/(2m)}
+ &=
+ \sqrt{\frac{2m}{\beta}}
+ \int_{-\infty}^{\infty}dx\,e^{-x^2}\\
+ &=\sqrt{\frac{2\pi m}{\beta}}.
+ \label{eq:sm4-gaussian}
+\end{align}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{lecture_04_figure_05.png}
+\caption{Tích phân theo động lượng được đưa về Gaussian chuẩn chỉ bằng một phép đổi tỉ lệ.}
+\lectureframe{01:13:12}
+\end{figure}
+
+Thế vào \eqref{eq:sm4-factorized-gas} thu được
+\begin{equation}
+ Z_N
+ =\frac{V^N}{N!\,h^{3N}}
+ \left(\frac{2\pi m}{\beta}\right)^{3N/2}.
+ \label{eq:sm4-ideal-partition}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{lecture_04_figure_06.png}
+\caption{Hàm phân hoạch của khí lý tưởng ở dạng hoàn chỉnh trên bảng. Ô không gian pha \(h^{3N}\) được khôi phục trong
+\eqref{eq:sm4-ideal-partition}.}
+\lectureframe{01:14:38}
+\end{figure}
+
+Sẽ hữu ích nếu viết cùng kết quả ấy theo bước sóng de Broglie nhiệt
+\begin{equation}
+ \lambda_T=\frac{h}{\sqrt{2\pi mT}}
+ \qquad (k_B=1).
+\end{equation}
+Khi đó
+\begin{equation}
+ Z_N=\frac{1}{N!}\left(\frac{V}{\lambda_T^3}\right)^N.
+ \label{eq:sm4-thermal-wavelength-form}
+\end{equation}
+
+Đối với \(N\) vĩ mô, công thức Stirling cho
+\begin{equation}
+ N!\simeq N^Ne^{-N}\sqrt{2\pi N}.
+\end{equation}
+Chỉ giữ lại phần phụ thuộc mũ trội và định nghĩa
+\(\rho=N/V\),
+\begin{equation}
+ \frac{V^N}{N!}
+ \simeq
+ \frac{1}{\sqrt{2\pi N}}
+ \left(\frac{e}{\rho}\right)^N.
+ \label{eq:sm4-density-rewrite}
+\end{equation}
+Đây là cách sắp xếp lại gọn gàng theo mật độ của bài giảng. Thừa số căn bậc hai chỉ là hạng dưới trội trong \(\log Z_N\), nhưng ở đây nó được viết ra thay vì bị lặng lẽ bỏ đi.
+
+\begin{classroomqa}
+\audiencequestion{Nếu \(1/N!\) độc lập với \(\beta\), thì nó hoàn toàn không tạo ra khác biệt nào sao?}
+\lecturerresponse{Nó không tạo ra khác biệt nào đối với đạo hàm của năng lượng trung bình đang xét khi \(N\) và \(V\) được giữ cố định, vì nó cộng một hằng số độc lập với \(\beta\) vào \(\log Z_N\). Tuy vậy, nó có ý nghĩa đối với entropy tuyệt đối và đối với các biến thiên của số hạt. Không nên nhầm lẫn mệnh đề về đạo hàm có phạm vi hạn chế này với mệnh đề rộng hơn về việc đếm trạng thái.
+\lecturetimestamp{01:27:01--01:27:51}}
+\end{classroomqa}
+
+\section{Năng lượng và nguyên lý phân bố đều năng lượng}
+
+Tích thì bất tiện khi lấy đạo hàm; logarit biến chúng thành tổng. Từ \eqref{eq:sm4-ideal-partition},
+\begin{equation}
+ \log Z_N
+ =-\frac{3N}{2}\log\beta+\text{\(\beta\)-independent terms}.
+ \label{eq:sm4-log-ideal-partition}
+\end{equation}
+Do đó
+\begin{equation}
+ E
+ =-\frac{\partial\log Z_N}{\partial\beta}
+ =\frac{3N}{2\beta}
+ =\frac{3N}{2}T.
+ \label{eq:sm4-ideal-energy}
+\end{equation}
+Năng lượng trên mỗi hạt là
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}T
+ \qquad (k_B=1),
+\end{equation}
+hoặc, trong các đơn vị phòng thí nghiệm,
+\begin{equation}
+ \frac{E}{N}=\frac{3}{2}k_BT_{\mathrm K}.
+ \label{eq:sm4-ideal-energy-lab}
+\end{equation}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{lecture_04_figure_07.png}
+\caption{Chỉ hạng \(-3N\log\beta/2\) đóng góp vào năng lượng của khí lý tưởng, cho \(E/N=3T/2\).}
+\lectureframe{01:25:28}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Hằng số Boltzmann đi vào công thức năng lượng ở đâu?}
+\lecturerresponse{Nhiệt độ \(T\) theo cách dùng của nhà lý thuyết là một năng lượng. Để dùng kelvin, hãy thay nó bằng \(k_BT_{\mathrm K}\), thu được
+\(E/N=3k_BT_{\mathrm K}/2\). Giá trị nhỏ của \(k_B\) chuyển một nhiệt độ có vẻ ở thang vĩ mô thành thang năng lượng vi mô của một phân tử.
+\lecturetimestamp{01:24:58--01:26:01}}
+\end{classroomqa}
+
+Số 3 đến từ ba phương của không gian. Hệ số một phần hai đến từ sự phụ thuộc căn bậc hai của mỗi tích phân Gauss vào \(1/\beta\). Mỗi tọa độ động lượng bậc hai độc lập đóng góp
+\begin{equation}
+ \frac{1}{2}T
+\end{equation}
+vào năng lượng trung bình. Trong \(d\) chiều không gian, cùng lập luận ấy cho \(E/N=dT/2\). Đây là lần đầu tiên nguyên lý phân bố đều năng lượng xuất hiện.
+
+Phép tính entropy được giao ở cuối bài giảng suy ra từ
+\(S=\beta E+\log Z_N\). Dùng xấp xỉ Stirling,
+\begin{equation}
+ \frac{S}{N}
+ \simeq
+ \log\!\left[
+  \frac{V}{N}
+  \left(\frac{2\pi mT}{h^2}\right)^{3/2}
+ \right]
+ +\frac{5}{2},
+ \label{eq:sm4-sackur-tetrode}
+\end{equation}
+đúng tới hiệu chỉnh dưới trội do \(N\) hữu hạn. Khôi phục \(k_B\) sẽ nhân vế phải với \(k_B\) và thay \(T\) bằng
+\(k_BT_{\mathrm K}\). Kết quả này cho thấy rõ vì sao các hệ số chuẩn hóa đã triệt tiêu khỏi năng lượng lại là không thể thiếu đối với entropy.
+
+\section{Đặt chất khí trong trường hấp dẫn}
+
+Một câu hỏi về việc đặt chiếc hộp lên một sao neutron dẫn đến phần mở rộng có hấp dẫn. Trước khi xét một sao neutron, hãy xét một trường đều \(g\) trong một căn phòng bình thường. Chọn \(y=0\) ở đáy của một chiếc hộp có diện tích đáy \(A\) và chiều cao \(L\). Hamilton trở thành
+\begin{equation}
+ H=\sum_{a=1}^{N}
+ \left(\frac{\bm p_a^2}{2m}+mgy_a\right).
+ \label{eq:sm4-gravity-hamiltonian}
+\end{equation}
+Các tích phân theo vị trí ngang vẫn cho \(A^N\), còn mỗi tọa độ thẳng đứng đóng góp
+\begin{equation}
+ I_y(L)
+ =\int_0^Ldy\,e^{-\beta mgy}
+ =\frac{1-e^{-\beta mgL}}{\beta mg}.
+ \label{eq:sm4-finite-height-integral}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Tích phân theo phương thẳng đứng thật sự nên lấy tới vô cực, hay chỉ tới đỉnh của hộp?}
+\lecturerresponse{Đối với một hộp hữu hạn, nó phải chạy từ \(0\) đến chiều cao \(L\) của nó, như trong \eqref{eq:sm4-finite-height-integral}. Việc lấy cận trên ra vô cực là một phép đơn giản hóa về sau, mô hình hóa một khí quyển phía trên một bề mặt chứ không phải một căn phòng hữu hạn.
+\lecturetimestamp{01:30:25--01:31:32}}
+\end{classroomqa}
+
+Vì thế, hàm phân hoạch đầy đủ cho trường hợp chiều cao hữu hạn là
+\begin{equation}
+ Z_N(L)
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  A\,
+  \frac{1-e^{-\beta mgL}}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-finite}
+\end{equation}
+Thừa số theo phương thẳng đứng phụ thuộc vào \(\beta\), nên nó phải đóng góp vào năng lượng. Thật vậy,
+\begin{equation}
+ \langle U\rangle
+ =N\left[
+  \frac{1}{\beta}
+  -\frac{mgL}{e^{\beta mgL}-1}
+ \right].
+ \label{eq:sm4-finite-gravity-energy}
+\end{equation}
+Điều này hoàn tất phần tích phân nhỏ mà lúc đầu bài giảng đã để lại như một phép tính phiền toái.
+
+Đối với một khí quyển cao vô hạn, \(L\to\infty\), và
+\begin{equation}
+ I_y(\infty)=\frac{1}{\beta mg}.
+\end{equation}
+Hàm phân hoạch trở thành
+\begin{equation}
+ Z_N^{(\infty)}
+ =
+ \frac{1}{N!\,h^{3N}}
+ \left[
+  \frac{A}{\beta mg}
+  \left(\frac{2\pi m}{\beta}\right)^{3/2}
+ \right]^N.
+ \label{eq:sm4-gravity-partition-infinite}
+\end{equation}
+Logarit phụ thuộc \(\beta\) của nó là
+\begin{equation}
+ \log Z_N^{(\infty)}
+ =-\frac{3N}{2}\log\beta-N\log\beta+\mathrm{const}.
+\end{equation}
+Số hạng thứ nhất cho động năng \(3NT/2\); số hạng thứ hai cho thế năng hấp dẫn trung bình \(NT\). Do đó
+\begin{equation}
+ E_{\mathrm{tot}}=\frac{5N}{2}T
+\end{equation}
+đối với khí quyển không bị chặn được lý tưởng hóa này.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.83\textwidth]{lecture_04_figure_08.png}
+\caption{Hàm phân hoạch của khí quyển vô hạn bổ sung
+\(-N\log\beta\) vào \(\log Z\), là nguồn gốc của thế năng trung bình.}
+\lectureframe{01:36:38}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Một trường hấp dẫn rất mạnh có đòi hỏi thêm một nhân tử Lagrange khác không?}
+\lecturerresponse{Không chỉ đơn thuần vì trường mạnh. Trọng lực làm thay đổi Hamilton và vì thế làm thay đổi các mức năng lượng hoặc trọng số trong không gian pha. Vẫn dùng cùng nhân tử năng lượng \(\beta\). Một sao neutron đưa vào những phức tạp vật lý bổ sung, nhưng sửa đổi đầu tiên vẫn là đưa thế năng hấp dẫn vào \(H\).
+\lecturetimestamp{01:27:58--01:29:24}}
+\end{classroomqa}
+
+\section{Ba câu hỏi ở phần cuối}
+
+\begin{classroomqa}
+\audiencequestion{Phương trình nào là phân bố Boltzmann, và nó khẳng định điều gì về trạng thái cân bằng?}
+\lecturerresponse{Phân bố là
+\[
+ p_i=\frac{e^{-\beta E_i}}{Z}.
+\]
+Đó là phân bố entropy cực đại dưới các ràng buộc chuẩn hóa và năng lượng trung bình cố định. Năng lượng trung bình phải được tính từ chính các xác suất ấy, và điều kiện chuẩn hóa vẫn phải được áp đặt dù trong công thức cuối cùng nó trông gần như tự động.
+\lecturetimestamp{01:38:14--01:38:45}}
+\end{classroomqa}
+
+Quy trình này có thể tạo cảm giác máy móc: viết ra một hàm phân hoạch, lấy logarit, rồi lấy đạo hàm. Thế nhưng các phương trình thu được vẫn tiếp tục gây ngạc nhiên. Sự quen thuộc dạy ta phép toán đơn giản nào nên theo sau phép nào, nhưng nó không làm cho chủ đề này bớt kỳ thú.
+
+\begin{classroomqa}
+\audiencequestion{Có thể áp dụng những ý tưởng entropy này cho một ngôi sao đang sụp đổ hay một lỗ đen không? Làm sao entropy có thể tăng trong khi vật chất chiếm một vùng nhỏ hơn?}
+\lecturerresponse{Các ngôi sao chủ yếu khó vì các chi tiết vật chất của chúng phức tạp. Lỗ đen có một chuẩn đối chiếu rõ ràng hơn: entropy Bekenstein--Hawking của nó là entropy hấp dẫn cực hạn đối với các ràng buộc vĩ mô đã cho. Sự sụp đổ có thể làm tăng entropy cho đến khi đạt tới giá trị của lỗ đen đó; để tăng thêm nữa thì cần thay đổi năng lượng sẵn có hoặc kích thước.
+\lecturetimestamp{01:39:29--01:40:36}}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Hàm phân hoạch cũng có thể tính các thăng giáng của năng lượng không?}
+\lecturerresponse{Có. Một đạo hàm cho năng lượng trung bình, và đạo hàm bậc hai cho phương sai của nó:
+\begin{align*}
+ \frac{\partial^2\log Z}{\partial\beta^2}
+ &=\langle E^2\rangle-\langle E\rangle^2\\
+ &=\operatorname{Var}(E).
+\end{align*}
+Theo đơn vị năng lượng, đại lượng này liên hệ với nhiệt dung bởi
+\(\operatorname{Var}(E)=T^2C_V\). Theo đơn vị phòng thí nghiệm,
+\(\operatorname{Var}(E)=k_BT_{\mathrm K}^2C_V\). Hệ thức thăng giáng này là phép tính tiếp theo.
+\lecturetimestamp{01:40:37--01:41:53}}
+\end{classroomqa}
+
+Các thăng giáng phân biệt cơ học thống kê với một mô tả nhiệt động lực học thuần túy liên tục. Việc nghiên cứu chúng một cách có hệ thống, đặc biệt gắn với Gibbs và Einstein, làm lộ ra các cấu phần vi mô hữu hạn đứng sau những định luật vĩ mô trơn tru. Đó là điểm bắt đầu của bài giảng tiếp theo.

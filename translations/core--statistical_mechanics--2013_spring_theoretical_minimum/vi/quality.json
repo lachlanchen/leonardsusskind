@@ -1,0 +1,62 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 272,
+  "outline_entries": 154,
+  "target_characters": 211740,
+  "image_placements": 93,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Cơ học thống kê",
+  "pdf_sha256": "2823743098d9310f80ba16486428394bfe99ec9a866727b7839d61299f970c1c",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 52,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "c09dee10130b2940f854f88063e38bc32c0de001ac59167251771f68498a3b0e",
+    "chapters/lecture_01/content.tex": "f073d7e92da5c416490d27f78017056ab36bc64e197d1124944be2f3fcde68cd",
+    "chapters/lecture_02/content.tex": "cd770ad318133e43b210befc41d8b9d0c41369822fe13b9e3d9df490a0b56020",
+    "chapters/lecture_03/content.tex": "e1fffce42ee0f20de74e8bba083c0985c9f94a37a7528279268cd7c1d7d20913",
+    "chapters/lecture_04/content.tex": "44ece5848afcdf213ecfa4b7a1f08be8e5b8d5d7d1a0ef886080854197f8130d",
+    "chapters/lecture_05/content.tex": "6304acc32003099e284b0fba21f7c08cb4b64609a0b0ce02438086fbd6c2a4cb",
+    "chapters/lecture_06/content.tex": "fb5682c412f27202f80d246a46f23186d4cfb4f10a9dbc3572575324293c7025",
+    "chapters/lecture_07/content.tex": "6bb315329d69bee1a57baf9bc4794bf105e420f93118fff9ffc01720d0e47f96",
+    "chapters/lecture_08/content.tex": "1fa32ec7b2caef942bcb7a748601244720f53f179b2088ba9f3ce0c71264a754",
+    "chapters/lecture_09/content.tex": "0aea0d899208bf40433a94f711a9428267d89b1d304f69edc8bb8c853804ff7f",
+    "chapters/lecture_10/content.tex": "d7c0d6331df3795eb12763b37f5a5ebf12a8ae5b475fbc5c533d0da8d6866446"
+  },
+  "source_files": {
+    "course.tex": "0f37f9307e89e1bc851fed9dadf235591916024addc7c0826d2309fae7419ee0",
+    "common_preamble.tex": "89eff45b483a8b9b83dda2bbe8dbca5781b177087fdc32856093212e10addabc",
+    "chapters/lecture_01/content.tex": "7083535841c0a2ffc4fa5a7dd1037d7df21fd494f83ad264bb51da5712fde21e",
+    "chapters/lecture_02/content.tex": "23a07ae5c803c858ddd170b8032289025b3222419cd5c98f7768412367c6156b",
+    "chapters/lecture_03/content.tex": "1fc1ce22c0da3a0c60b6d394938028a5503f91d0b0af9fe61a1c010af47d530b",
+    "chapters/lecture_04/content.tex": "369fe2d8e5c2839aa0d4be2e5571bcc07a3daf77a60771bb8c93e6db281faa76",
+    "chapters/lecture_05/content.tex": "8880d4f2ab99d33cd270c3814a574c128c96a94fb701656388b1fc0f10954e45",
+    "chapters/lecture_06/content.tex": "b4cb52efe2b115e47563479ad99d2c2ce18ea8e60114880055618c939e473632",
+    "chapters/lecture_07/content.tex": "3b3360d627b21c7b02c3ab292cf25adb90188f12d2fa7b5f85b221d473bf18c5",
+    "chapters/lecture_08/content.tex": "371ff299543f232e75d00dff2f39008029cdd5b46755c386a12ff0025550677c",
+    "chapters/lecture_09/content.tex": "04c0b75014d3727c451f2dc0b4b33da1b917dd1ac340523f1e3f797902583da1",
+    "chapters/lecture_10/content.tex": "6ddff13d3e3a6411fc83d9a7749ab16d35c202e8ebe66779729ca68142080c03"
+  },
+  "translated_tex": {
+    "cover.tex": "8192820d047a045356a7914ea3c3edac2d195b80a1ff381e877a371c9beb976a",
+    "common_preamble.tex": "ad5dfaa0c11488da3565a0a1ad89956cbd2f2248bba056324bd75a579bcb89ef",
+    "course.tex": "12166049d2a6d69195f05edf93aa6d257ab2c56f46b2b2d44a39db5a1f6e4e16",
+    "chapters/lecture_07/content.tex": "90372074a19c4ba08a71f1309d0cc84f2252e2b7a7380b9fad08710c2044454b",
+    "chapters/lecture_02/content.tex": "60453b41d0b00d8156db3461037c2a6ed780ffdbb124f7759de3583142b0d67a",
+    "chapters/lecture_09/content.tex": "2ead337827309fd71e7e2f6e013cd62833887430023d21614d740c157a10cea2",
+    "chapters/lecture_01/content.tex": "18a5aea39ef04184c9e33b532ac76d261fa824591edbcf8539ae8e87f9df1985",
+    "chapters/lecture_10/content.tex": "dcad531840c976fb67e5e8ae317326e3ee95cb4cebe6e152a46fb0927b9b8fe5",
+    "chapters/lecture_03/content.tex": "5c50954340299927a05e40f297277a7303b09ff0aba52d051541fc312a06070f",
+    "chapters/lecture_08/content.tex": "d148659e517360d90e3bb69684f00ac417e71ae627e39fa2105ea061b43475d7",
+    "chapters/lecture_05/content.tex": "f54e3a497a8176e8836d6bd29ef9d3a3a42a5ef4987ac3a85df20a0626dcb2f5",
+    "chapters/lecture_04/content.tex": "4b0797856140dc3fba2a9ee948ed57bdc00f60865d1a7dd0d48173db80a3b3fd",
+    "chapters/lecture_06/content.tex": "d13831706386b824ca26b8a4cf2b6ae1cec33394eb2b523e32a696c88fabb8b1"
+  }
+}
