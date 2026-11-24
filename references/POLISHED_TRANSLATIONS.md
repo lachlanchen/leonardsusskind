@@ -38,7 +38,7 @@ error-free translation throughout a book.
    API transport errors have three bounded attempts; exhaustion stops new calls
    across all workers. There is no perpetual quota retry loop.
 5. Reassemble real TeX, retaining source figure assets and the accepted layout.
-   Use XeLaTeX with Noto CJK, Noto Serif/Sans or Noto Arabic fonts as appropriate.
+   Use XeLaTeX with Noto CJK, Noto Serif/Sans or Amiri as appropriate.
    Original blackboard writing and English labels
    inside frozen mathematical displays are intentionally retained, not redrawn.
 6. Build three passes; require a nonempty PDF and outline, target-language text, no missing
@@ -60,7 +60,8 @@ compilation share the queue lock and cannot race a live worker run.
 ## Commands
 
 Dependencies: Python with `pylatexenc==2.10`, `PyMuPDF` and `opencc`; XeLaTeX,
-Noto Serif/Sans, Noto CJK and Noto Arabic fonts; Codex CLI and tmux. Reuse the
+Noto Serif/Sans, Noto CJK and Amiri (e.g. Debian's fonts-hosny-amiri); tmux and
+the CLI for the selected translation provider. Reuse the
 shared Python environment. Codex account authentication is reused by the CLI;
 no credential, cookie or session file is copied into the repository.
 `scripts/setup_translation_tex.sh` prepares an isolated XeLaTeX format under

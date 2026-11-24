@@ -1260,9 +1260,14 @@ def translated_preamble(source, lang):
         language_setup = (r'\usepackage{polyglossia}' '\n'
                           f'\\setdefaultlanguage{{{family}}}\n' r'\usepackage{sectsty}' '\n')
         if lang == 'ar':
+            # The Arabic font also typesets unwrapped Latin names and equation tags.
             language_setup += (r'\setotherlanguage{english}' '\n'
-                               r'\newfontfamily\arabicfont[Script=Arabic]{Noto Naskh Arabic}' '\n'
-                               r'\newfontfamily\arabicfontsf[Script=Arabic]{Noto Sans Arabic}' '\n')
+                               r'\newfontfamily\arabicfont[Script=Arabic]{Amiri}' '\n'
+                               r'\newfontfamily\arabicfontsf[Script=Arabic]{Amiri}' '\n'
+                               r'\let\arabicsectionnumber\thesection' '\n'
+                               r'\let\arabicsubsectionnumber\thesubsection' '\n'
+                               r'\renewcommand{\thesection}{\LRE{\arabicsectionnumber}}' '\n'
+                               r'\renewcommand{\thesubsection}{\LRE{\arabicsubsectionnumber}}' '\n')
     prefix += '\\newfontfamily\\proseunicodefont{DejaVu Serif}\n'
     localized = {
         'ja': ('定理|命題|補題|系|定義|例|注意|概観。|受講者からの質問。|受講者への問い。|回答。|講義時刻：|講義映像：|編集上の補足：', '目次|章|図|表|証明|参考文献'),
@@ -1431,7 +1436,18 @@ def cover(book, lang, args=None):
     titlepage = re.sub(r'(?:Original lectures?|Lectures) by Leonard Susskind', spec['lecturer'], titlepage)
     titlepage = titlepage.replace('Companion edition by ', spec['companion'])
     titlepage = titlepage.replace(' with ', ' / ')
-    # Allow long CJK titles to wrap within the existing cover text area.
+    if lang == 'ar':
+        # TikZ typesets nodes left-to-right even on Arabic pages.
+        def rtl_line(m):
+            style, text, spacing = m.groups()
+            for latin_start in ('Leonard Susskind', r'\href{https://lazying.art}'):
+                first, separator, rest = text.partition(latin_start)
+                if separator:
+                    text = first + r'\LRE{' + separator + rest + '}'
+                    break
+            return style + r'\RLE{' + text + '}' + (spacing or '') + '}'
+        titlepage = re.sub(r'^([ \t]*\{\\[^\n]*?\\color\{black!\d+\} )(.+?)(\\\\\[[^\]\n]+\])?\}$',
+                           rtl_line, titlepage.replace('align=left', 'align=right'), flags=re.M)
     return titlepage
 
 
@@ -1590,8 +1606,12 @@ def changed_layout_books(lang):
         src = ROOT / 'generated_course_notes' / book['course']
         try:
             verify_sources(book)
-            if any((dst / rel).read_text() != render_translation_tex(book, lang, rel, (src / rel).read_text())
-                   for rel in book['source_files'] if rel.endswith('content.tex')):
+            preamble = 'common_preamble.tex'
+            preamble_changed = (preamble in book['source_files'] and
+                                (dst / preamble).read_text() != translated_preamble((src / preamble).read_text(), lang))
+            if preamble_changed or any(
+                    (dst / rel).read_text() != render_translation_tex(book, lang, rel, (src / rel).read_text())
+                    for rel in book['source_files'] if rel.endswith('content.tex')):
                 books.append(book['id'])
         except (OSError, ValueError, KeyError, RuntimeError) as exc:
             print(f'Cannot preflight changed layout: {book["id"]}/{lang}: {exc}', flush=True)
@@ -1759,6 +1779,8 @@ def compile_book(book, lang, args):
                          'No hyphenation patterns were loaded'] if s in log]
     with fitz.open(build / 'course.pdf') as pdf:
         text = ''.join(page.get_text() for page in pdf)
+        if lang == 'ar':
+            text = unicodedata.normalize('NFKC', text)
         script = LANGUAGE_SPECS[lang].get('script')
         target_characters = len(re.findall(script, text)) if script else len(re.findall(r'[^\W\d_]', text, re.UNICODE))
         qa = {'layout_profile': LAYOUT, 'paper_mm': [177.6, 252],

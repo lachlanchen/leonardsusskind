@@ -291,6 +291,25 @@ class TranslationTests(unittest.TestCase):
                 p.textwrite(root / 'generated_course_notes/demo' / rel, 'Changed source')
                 self.assertEqual(p.changed_layout_books('ru'), [])
 
+    def test_refresh_detects_a_repaired_preamble(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rel = 'common_preamble.tex'
+            book = {'id': 'book', 'course': 'demo', 'source_files': {rel: p.digest('Source')}}
+            manifest = root / 'manifest'
+            quality = root / 'out/book/ar/quality.json'
+            p.write(manifest, {'books': [book]})
+            p.textwrite(root / 'generated_course_notes/demo' / rel, 'Source')
+            p.textwrite(quality.parent / rel, 'Old preamble')
+            p.write(quality, {'status': 'blocked', 'error': 'PDF quality gate needs repair: quality.json'})
+            with patch.object(p, 'ROOT', root), patch.object(p, 'OUT', root / 'out'), \
+                    patch.object(p, 'MANIFEST', manifest), patch.object(p, 'translated_preamble') as render:
+                render.return_value = 'Old preamble'
+                self.assertEqual(p.changed_layout_books('ar'), [])
+                render.return_value = 'New preamble'
+                self.assertEqual(p.changed_layout_books('ar'), ['book'])
+                render.assert_called_with('Source', 'ar')
+
     def test_traditional_chinese_overflow_break_is_bound_to_failing_references(self):
         cosmology = next(b for b in p.read(p.MANIFEST)['books']
                          if b['id'] == 'core--cosmology--2013_winter_theoretical_minimum')
@@ -386,6 +405,17 @@ class TranslationTests(unittest.TestCase):
         for lang in p.LANGS:
             label = p.localized_track('path/2012_spring_theoretical_minimum', lang)
             self.assertNotRegex(label, r'\b(?:spring|theoretical_minimum)\b')
+
+    def test_arabic_cover_preserves_text_direction_and_links(self):
+        book = p.read(p.MANIFEST)['books'][0]
+        title = 'فهم بوزون هيغز'
+        with patch.object(p, 'book_title', return_value=title):
+            result = p.cover(book, 'ar')
+        self.assertEqual(result.count('align=right'), 2)
+        self.assertEqual(result.count(r'\RLE{'), 4)
+        self.assertIn(r'\RLE{' + title + r'}\\[0.85em]', result)
+        self.assertIn(r'\LRE{Leonard Susskind}', result)
+        self.assertIn(r'\LRE{\href{https://lazying.art}{LazyingArt LLC}', result)
 
     def test_cover_does_not_hyphenate_titles(self):
         with TemporaryDirectory() as tmp, patch.object(p, 'ROOT', Path(tmp)):
@@ -1011,6 +1041,9 @@ class TranslationTests(unittest.TestCase):
         self.assertIn(r'\setlength{\cftsecnumwidth}{3em}', french)
         self.assertIn(r'\setlength{\cftsubsecnumwidth}{4em}', french)
         arabic = p.translated_preamble(source, 'ar')
+        self.assertIn(r'\newfontfamily\arabicfont[Script=Arabic]{Amiri}', arabic)
+        self.assertIn(r'\newfontfamily\arabicfontsf[Script=Arabic]{Amiri}', arabic)
+        self.assertIn(r'\renewcommand{\thesection}{\LRE{\arabicsectionnumber}}', arabic)
         self.assertIn(r'\sectionfont{\raggedleft}', arabic)
         self.assertIn(r'\subsectionfont{\raggedleft}', arabic)
 
