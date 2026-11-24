@@ -256,6 +256,14 @@ class TranslationTests(unittest.TestCase):
         self.assertEqual(p.layout_repairs(special, 'ru', 'chapters/lecture_05/content.tex', anchor),
                          '\\enlargethispage{1pt}\n' + anchor)
 
+    def test_russian_general_relativity_page_adjustment_is_local(self):
+        book = {'id': 'core--general_relativity--2012_fall_theoretical_minimum'}
+        rel = 'chapters/lecture_09/content.tex'
+        heading = r'\section{Космологическая постоянная}'
+        self.assertEqual(p.layout_repairs(book, 'ru', rel, heading), '\\enlargethispage{1pt}\n' + heading)
+        self.assertEqual(p.layout_repairs(book, 'vi', rel, heading), heading)
+        self.assertEqual(p.layout_repairs(book, 'ru', 'chapters/lecture_08/content.tex', heading), heading)
+
     def test_traditional_chinese_overflow_break_is_bound_to_failing_references(self):
         cosmology = next(b for b in p.read(p.MANIFEST)['books']
                          if b['id'] == 'core--cosmology--2013_winter_theoretical_minimum')

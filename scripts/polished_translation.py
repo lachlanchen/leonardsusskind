@@ -1523,6 +1523,11 @@ def layout_repairs(book, lang, rel, text):
             and lang == 'ru' and rel == 'chapters/lecture_07/content.tex'):
         anchor = 'Её время--пространственные компоненты'
         replacements.append((anchor, 'Её время--\\allowbreak{}пространственные компоненты'))
+    if (book['id'] == 'core--general_relativity--2012_fall_theoretical_minimum'
+            and lang == 'ru' and rel == 'chapters/lecture_09/content.tex'):
+        anchor = '\\section{Космологическая постоянная}'
+        # Printed page 296 needs 0.269 pt more depth for its two timestamp footnotes.
+        replacements.append((anchor, '\\enlargethispage{1pt}\n' + anchor))
     if book['id'] == 'core--cosmology--2013_winter_theoretical_minimum' and rel == 'chapters/lecture_06/content.tex':
         if lang == 'zh':
             anchor = '\\begin{equation}\n\\frac{GM}{r^2}=\\frac{v^2}{r},'
