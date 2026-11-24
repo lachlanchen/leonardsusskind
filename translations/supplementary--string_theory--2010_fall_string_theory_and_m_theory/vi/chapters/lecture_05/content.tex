@@ -1,0 +1,573 @@
+\chapter{Thang đo, dây và 26 chiều}
+
+\lectureoverview{Điều gì quyết định khoảng cách mức của phổ dây? Câu trả lời là sức căng, một đại lượng có thứ nguyên của bình phương khối lượng. Đối với các dây cơ bản, nhận xét đó dẫn đến các đơn vị Planck, sự bất khả thi trên thực tế của việc kích thích trực tiếp, và sự xuất hiện của hấp dẫn mạnh. Sau một đoạn ngắt có chủ ý, chúng ta quay lại trạng thái cơ bản của dây mở bosonic. Việc điều chuẩn năng lượng không điểm của nó cho con đường \emph{dễ dàng} mang tính lịch sử dẫn tới 24 phương ngang và vì thế tới 26 chiều không-thời gian.}
+
+\section{Thang đo mà ta đã bỏ qua}
+
+Cho đến đây chúng ta đã nói về các dây dao động và quay mà chưa nói một đơn vị kích thích có nghĩa là gì. Một hadron có thể được hình dung như một dây, và các dao động tử của nó có thể bị kích thích, nhưng bước nhảy từ trạng thái này sang trạng thái kế tiếp lớn đến mức nào? Điều gì quyết định nó?
+
+Chỉ có một tham số có thứ nguyên trong mô hình dây sơ cấp. Để tìm nó, hãy bắt đầu với một lò xo kéo dãn thông thường. Nếu hai đầu của nó cách nhau một đoạn \(\ell\), định luật Hooke cho
+\begin{equation}
+  E_{\mathrm{spring}}=\frac{k\ell^2}{2}.
+  \label{eq:l05-hooke}
+\end{equation}
+Hệ số một phần hai được lớp học bổ sung sau khi bản đầu tiên được viết ra. Không có điều gì cốt yếu phụ thuộc vào những hệ số số học như vậy trong ước lượng mở đầu này.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_01.png}
+  \caption{Đoạn bị kéo dãn và thế năng theo định luật Hooke của nó.}
+  \lectureframe{00:02:28}
+  \label{fig:l05-hooke-board}
+\end{figure}
+
+Năng lượng trong \eqref{eq:l05-hooke} là phi tương đối tính. Trong mô tả xung lượng vô hạn được dùng trong các bài giảng trước, năng lượng nội phi tương đối tính không tỉ lệ với \(m\) mà với \(m^2\). Vì vậy ta viết một cách sơ đồ
+\begin{equation}
+  m^2\sim k\ell^2,
+  \qquad
+  m\sim \sqrt{k}\,\ell.
+  \label{eq:l05-mass-length}
+\end{equation}
+Trong hệ quy chiếu nghỉ của dây, khối lượng của nó chính là năng lượng của nó, nên hệ thức thứ hai có dạng
+\begin{equation}
+  E_{\mathrm{rest}}\sim T_s\ell,
+  \qquad
+  T_s\equiv\sqrt{k}.
+  \label{eq:l05-tension}
+\end{equation}
+Hệ số \(T_s\) là sức căng của dây: năng lượng được tích trữ trên một đơn vị độ dài.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_02.png}
+  \caption{Bảng chuyển từ \(m^2\sim k\ell^2\) sang một khối lượng tỉ lệ với độ dài.}
+  \lectureframe{00:05:42}
+  \label{fig:l05-mass-length-board}
+\end{figure}
+
+Ký hiệu này được điều chỉnh cho phù hợp với phép tương tự lò xo của bài giảng. Trong ký hiệu dây tương đối tính chuẩn, người ta thường viết
+\begin{equation}
+  T_s=\frac{1}{2\pi\alpha'},
+  \label{eq:l05-alpha-prime}
+\end{equation}
+nên các độ tăng của mức dây sinh ra các độ tăng của \(m^2\) cỡ \(1/\alpha'\), tương đương cỡ sức căng.
+\editorialnote{Trong bài giảng, \(k\) hiệu dụng được chọn sao cho \(\sqrt{k}\) đóng vai trò của sức căng. Mệnh đề độc lập với quy ước là \(T_s\) có thứ nguyên của bình phương khối lượng và hệ số dốc Regge thỏa \(\alpha'\propto T_s^{-1}\).}
+
+\subsection{Thứ nguyên và độ tách mức của dao động tử}
+
+Đặt \(c=\hbar=1\). Khi đó năng lượng có thứ nguyên là nghịch đảo của độ dài:
+\begin{equation}
+  [E]=L^{-1}.
+\end{equation}
+Vì sức căng là năng lượng trên một đơn vị độ dài,
+\begin{equation}
+  [T_s]=L^{-2}=E^2.
+  \label{eq:l05-tension-dimension}
+\end{equation}
+Đó là lý do các mức của phổ dây tự nhiên cách nhau theo bình phương khối lượng.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_03.png}
+  \caption{Các đơn vị tự nhiên trên bảng: \(c=\hbar=1\), năng lượng là nghịch đảo độ dài, và tần số dao động tử được chi phối bởi thang đặc trưng của lò xo.}
+  \lectureframe{00:06:05}
+  \label{fig:l05-natural-units-board}
+\end{figure}
+
+Dao động tử thông thường cũng nêu lên cùng một điểm từ một hướng khác. Với một lò xo có khối lượng \(\mu\),
+\begin{equation}
+  \omega=\sqrt{\frac{k}{\mu}},
+  \qquad
+  \Delta E=\hbar\omega.
+\end{equation}
+Lò xo càng cứng thì tần số càng cao và độ tách mức lượng tử càng lớn. Một dây chứa vô hạn nhiều mode chuẩn như vậy, nhưng thang chung của chúng được cố định bởi \(T_s\). Một khi biết sức căng, ta biết khoảng cách mức của phổ dây.
+
+Sức căng cũng có thứ nguyên của lực, vì lực nhân quãng đường là năng lượng. Hãy tưởng tượng cố định một đầu và treo một vật nặng ở đầu kia. Một dây tương đối tính lý tưởng với \(E=T_s\ell\) có thể đỡ một lực được ấn định bởi \(T_s\), không phụ thuộc vào độ dài của nó. Sức căng hadron suy ra từ các năng lượng kích thích quan sát được tương ứng, trong phép so sánh cố ý giàu tưởng tượng này, với trọng lượng của một chiếc xe tải. Chưa từng có chiếc xe tải nào được treo lên một meson; phổ đo được cho sức căng, và sức căng cho ra phép so sánh cơ học.
+
+Các dây cơ bản sẽ cứng hơn rất nhiều. Nếu chúng là nền tảng của electron, photon và graviton, thì các kích thích dao động tử đầu tiên của chúng phải nằm cao hơn rất nhiều so với các năng lượng hạt đã quan sát được. Trong cùng thí nghiệm hấp dẫn giàu tưởng tượng đó, sức căng của chúng có thể đỡ một vật có khối lượng cỡ thiên hà. Mục đích của phép so sánh này không phải là kỹ thuật. Mà là ở chỗ một sức căng khổng lồ đồng thời có nghĩa là năng lượng kích thích lớn và thăng giáng trạng thái cơ bản rất nhỏ.
+
+\section{Các đơn vị được dựng từ các hằng số phổ quát}
+
+Thang nào là đủ lớn? Mốc tự nhiên là thang Planck. Thay vì chỉ nêu ra nó, ta hãy dựng nó.
+
+Mét, kilogram và giây là những đơn vị tuyệt vời trong phòng thí nghiệm, nhưng nguồn gốc của chúng gắn với kích thước con người. Một mét thuận tiện cho vải hay dây thừng; một foot được đặt theo tên một bộ phận cơ thể; một giây là một phần dễ xử lý của một ngày. Ta có thể đặt bán kính proton bằng một và đơn giản hóa một số công thức hạt nhân, nhưng proton chỉ là một hạt hợp thành cụ thể. Một lựa chọn như vậy sẽ không đơn giản hóa toàn bộ vật lý.
+
+Ba hằng số có thứ nguyên có tầm với phổ quát hơn:
+\begin{itemize}
+  \item \(c\) đặt ra tốc độ giới hạn cho mọi hệ vật chất;
+  \item \(\hbar\) xuất hiện trong các hệ thức bất định của mọi hệ lượng tử;
+  \item \(G\) ghép hấp dẫn với mọi dạng khối lượng-năng lượng.
+\end{itemize}
+Chọn các đơn vị sao cho \(c=\hbar=G=1\) tương đương với việc dựng các đơn vị độ dài, thời gian và khối lượng từ những hằng số này.
+
+Các thứ nguyên thông thường của chúng là
+\begin{equation}
+  \begin{aligned}
+    [c]&=LT^{-1},
+    & [\hbar]&=ML^2T^{-1},\\
+    [G]&=L^3M^{-1}T^{-2}.
+  \end{aligned}
+  \label{eq:l05-dimensions-constants}
+\end{equation}
+Hệ thức ở giữa suy ra trực tiếp từ \(\Delta x\,\Delta p\gtrsim\hbar\). Hệ thức cuối cùng suy ra, chẳng hạn, từ
+\begin{equation}
+  a=\frac{GM}{r^2}.
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_04.png}
+    \par\smallskip\footnotesize (a) Đơn vị của \(c\) và \(\hbar\).
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{lecture_05_figure_05.png}
+    \par\smallskip\footnotesize (b) Đơn vị của \(G\) từ gia tốc Newton.
+  \end{minipage}
+  \caption{Các thành phần của phép phân tích thứ nguyên được tập hợp trên lớp.}
+  \lectureframe{00:25:43--00:26:40}
+  \label{fig:l05-dimensional-analysis-board}
+\end{figure}
+
+\subsection{Trước hết là diện tích Planck}
+
+Hãy tìm các lũy thừa \(p,q,r\) sao cho
+\begin{equation}
+  G^p\hbar^q c^r
+\end{equation}
+có thứ nguyên \(L^2\). Chọn diện tích trước giúp tránh một căn bậc hai quá sớm và cũng báo trước vai trò đặc biệt mà diện tích về sau sẽ đóng trong hấp dẫn. Từ \eqref{eq:l05-dimensions-constants}, việc khử khối lượng và thời gian cho
+\begin{equation}
+  -p+q=0,
+  \qquad
+  -2p-q-r=0.
+\end{equation}
+Lũy thừa độ dài còn lại phải thỏa
+\begin{equation}
+  3p+2q+r=2.
+\end{equation}
+Do đó \(q=p\), \(r=-3p\) và \(p=1\). Diện tích Planck là
+\begin{equation}
+  \ell_P^2=\frac{G\hbar}{c^3},
+  \label{eq:l05-planck-area}
+\end{equation}
+và hệ quả là
+\begin{equation}
+  \ell_P=\sqrt{\frac{G\hbar}{c^3}},
+  \qquad
+  t_P=\frac{\ell_P}{c},
+  \qquad
+  m_P=\sqrt{\frac{\hbar c}{G}}.
+  \label{eq:l05-planck-units}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_06.png}
+  \caption{Lập luận phân tích thứ nguyên hoàn chỉnh cho diện tích và độ dài Planck.}
+  \lectureframe{00:31:34}
+  \label{fig:l05-planck-area-board}
+\end{figure}
+
+Ở độ chính xác theo bậc độ lớn,
+\begin{equation}
+  \begin{aligned}
+    \ell_P&\sim10^{-35}\,\mathrm{m},
+    &t_P&\sim10^{-43}\,\mathrm{s},\\
+    m_P&\sim10^{-8}\,\mathrm{kg},
+    &m_Pc^2&\sim10^{19}\,\mathrm{GeV}.
+  \end{aligned}
+  \label{eq:l05-planck-numbers}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{lecture_05_figure_07.png}
+  \caption{Ba thang Planck được ghi lại theo bậc độ lớn.}
+  \lectureframe{00:35:12}
+  \label{fig:l05-planck-values-board}
+\end{figure}
+
+Độ dài và thời gian thì nhỏ đến mức khó tưởng tượng, còn khối lượng thì, theo chuẩn hạt, lại lớn một cách đáng ngạc nhiên, xấp xỉ khối lượng của một hạt bụi mịn. Năng lượng nghỉ của nó có bậc vài gigajoule, tương đương với năng lượng hóa học trong một bình xăng. Ngược lại, vũ trụ quan sát được trải dài cỡ \(10^{60}\) độ dài Planck và đã tồn tại cỡ \(10^{60}\) thời gian Planck. Những so sánh này nhằm làm cho các đơn vị trở nên có sức nặng vật lý, chứ không phải để cải thiện độ chính xác số học của chúng.
+
+Nếu độ dài đặc trưng của dây \(\ell_s=\sqrt{\alpha'}\) gần \(\ell_P\), thì kích thước lượng tử của dây gần \(\ell_P\), chu kỳ dao động của nó gần \(t_P\), và kích thích có khối lượng đầu tiên của nó gần \(m_P\). Bài giảng cho phép các hệ số mười, một trăm, hoặc hơn; sự đồng nhất này là một kỳ vọng, không phải một đồng nhất thức thứ nguyên.
+
+\begin{classroomqa}
+\audiencequestion{Khối lượng ở thang Planck có phải là phần tăng thêm so với trạng thái cơ bản của hạt không? \lecturetimestamp{00:38:37}}
+\lecturerresponse{Đại lượng được chia cách đều là bình phương khối lượng. Nếu trạng thái cơ bản là nhẹ, thì kích thích dây đầu tiên có \(m^2\) lớn hơn một lượng cỡ \(m_P^2\), nên khối lượng của nó và năng lượng khối tâm cần thiết đều có cỡ \(m_P\).}
+\end{classroomqa}
+
+\section{Hai thang này nên gần nhau đến mức nào?}
+
+\begin{classroomqa}
+\audiencequestion{Phân tích thứ nguyên cho \(\ell_P\), nhưng tại sao con số đó lại phải là độ dài của một dây? \lecturetimestamp{00:40:21}}
+\lecturerresponse{Đó là một phỏng đoán vật lý được hấp dẫn và việc chưa quan sát thấy cấu trúc dây hậu thuẫn, chứ không phải hệ quả chỉ từ riêng phân tích thứ nguyên. Độ dài của dây có thể lớn hơn độ dài Planck, điều đó có nghĩa là thang năng lượng của nó thấp hơn. Bài giảng chỉ lập luận rằng nó không nên là một độ dài thông thường của vật lý hạt và rằng nếu đẩy nó xuống thấp hơn rất nhiều so với độ dài Planck thì sẽ gặp sự sụp đổ hấp dẫn.}
+\end{classroomqa}
+
+Quan hệ giữa hai thang này thực ra phụ thuộc vào hằng số ghép. Trong một compact hóa hoàn chỉnh, \(\ell_P\), \(\ell_s\), hằng số ghép của dây và thể tích compact hóa cùng xuất hiện với nhau. Không có phương trình phổ quát nào \(\ell_s=\ell_P\). Điều còn lại từ bài giảng là lập luận về thang: hiệu ứng dây phải xuất hiện ở thang rất cao, và không thể bàn về sự định xứ dưới-Planck trong khi bỏ qua hấp dẫn.
+\editorialnote{Các kiến trúc dây hiện đại không nhất thiết phải đồng nhất chính xác độ dài dây với độ dài Planck bốn chiều. Quan hệ giữa chúng phụ thuộc vào hằng số ghép của dây và dữ liệu compact hóa.}
+
+\begin{classroomqa}
+\audiencequestion{Nếu độ dài Planck được xem như độ dài hữu ích nhỏ nhất, thì khối lượng Planck có phải cũng là khối lượng nhỏ nhất có thể không? \lecturetimestamp{00:43:27}}
+\lecturerresponse{Không. Các hạt thông thường nhẹ hơn rất nhiều. Khối lượng Planck là thang tại đó một vật thể cô đặc có thể có bán kính hấp dẫn sánh được với bước sóng lượng tử của nó. Theo lối nói heuristic của bài giảng, đó là thang của lỗ đen bán cổ điển nhẹ nhất, với thời gian sống cỡ một thời gian Planck; mệnh đề cuối cùng không nên bị hiểu nhầm là một mô tả chính xác của một vật thể hoàn toàn lượng tử.}
+\end{classroomqa}
+
+\subsection{Các hằng số ghép chạy có thể cho ta biết điều gì}
+
+Có bằng chứng gián tiếp cho thấy lý thuyết trường lượng tử quy ước vẫn còn đúng tới những thang vượt xa tầm với trực tiếp của máy gia tốc. Ba hằng số ghép gauge của mô hình chuẩn được đo ở các năng lượng có thể tiếp cận, và sự phụ thuộc theo thang của chúng có thể được ngoại suy. Trên đồ thị sơ đồ của bài giảng, các hằng số ghép \(U(1)\), \(SU(2)\) và \(SU(3)\) tiến lại gần nhau tại một thang thống nhất cao, có lẽ thấp hơn năng lượng Planck vài bậc độ lớn.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_08.png}
+  \caption{Đồ thị sơ đồ của các hằng số ghép chạy. Ba đường cong gauge tiến lại gần nhau trước khi cường độ hấp dẫn đang tăng trở thành cỡ đơn vị.}
+  \lectureframe{00:47:18}
+  \label{fig:l05-running-couplings-board}
+\end{figure}
+
+Đây là ngoại suy, không phải thí nghiệm trực tiếp tại điểm giao nhau. Các hạt bổ sung hoặc các ngưỡng giữa năng lượng phòng thí nghiệm và năng lượng thống nhất có thể làm thay đổi các độ dốc. Kết luận thận trọng chỉ là lý thuyết trường đã biết không cho thấy dấu hiệu nào của hạ cấu trúc cỡ dây ở các khoảng cách thông thường, và rằng một thang dây khả dĩ nằm đâu đó trong khoảng khổng lồ giữa thang thống nhất suy ra được và thang Planck.
+
+\begin{classroomqa}
+\audiencequestion{Ba hằng số ghép nào đang được ngoại suy? \lecturetimestamp{00:48:28}}
+\lecturerresponse{Đó là các hằng số ghép gauge gắn với \(U(1)\), \(SU(2)\) và \(SU(3)\): các tương tác siêu điện tích, yếu và mạnh. Điện từ xuất hiện từ sự trộn điện-yếu thay vì là một nhân tố gauge thứ tư độc lập trong cách tính này.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Liệu chính hằng số hấp dẫn \(G\) có tăng lên khi ta thăm dò ở năng lượng cao hơn không? \lecturetimestamp{00:49:30}}
+\lecturerresponse{\(G\) có thứ nguyên, nên tự nó không phải là đại lượng đúng để so sánh với một hằng số ghép gauge không thứ nguyên. Ở năng lượng đặc trưng \(M\), cường độ hấp dẫn không thứ nguyên ứng xử một cách sơ đồ như \(GM^2/(\hbar c)\). Tổ hợp đó tăng theo năng lượng và trở thành cỡ đơn vị ở thang Planck.}
+\end{classroomqa}
+
+Các định luật lực làm cho phép so sánh này trở nên rõ ràng:
+\begin{equation}
+  F_{\mathrm{em}}\sim\frac{e^2}{r^2},
+  \qquad
+  F_{\mathrm{grav}}\sim\frac{GM^2}{r^2}.
+  \label{eq:l05-force-laws}
+\end{equation}
+Vì thế \(e^2\) được so sánh không phải với \(G\) mà với \(GM^2\) trong các đơn vị tự nhiên.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_09.png}
+  \caption{Các định luật lực điện từ và hấp dẫn được dùng để xác định cường độ hấp dẫn không thứ nguyên.}
+  \lectureframe{00:50:50}
+  \label{fig:l05-force-laws-board}
+\end{figure}
+
+\section{Vì sao phổ học dây trực tiếp còn xa vời}
+
+Làm thế nào ta có thể xác lập bằng thực nghiệm rằng electron là một dây? Ta sẽ làm điều mà phổ học hadron đã làm: bắn vào nó đủ mạnh để kích thích các mode nội tại của nó và tìm một tháp trạng thái mà các khối lượng của nó tuân theo mẫu hình dây. Nếu mức khối lượng đầu tiên nằm gần \(10^{19}\,\mathrm{GeV}\), thì điều đó vượt rất xa bất kỳ cỗ máy thăm dò trực tiếp nào.
+
+Tổng năng lượng không phải trở ngại duy nhất. Nó còn phải được tập trung trong một tham số va chạm cực nhỏ. Điều đó đưa lỗ đen vào cuộc.
+
+\begin{classroomqa}
+\audiencequestion{Ở các năng lượng này, liệu một máy gia tốc có bắt đầu tạo ra các lỗ đen nhỏ không? \lecturetimestamp{00:50:57}}
+\lecturerresponse{Đó là kỳ vọng theo trực giác một khi năng lượng khối tâm được tập trung vào bên trong bán kính hấp dẫn tương ứng. Một lỗ đen sao được tạo nên khi thế năng hấp dẫn nén một ngôi sao khối lượng lớn. Còn một lỗ đen vi mô thì thay vào đó sẽ được tạo nên bởi động năng được hội tụ vào một vùng va chạm cực nhỏ. Trong hấp dẫn bốn chiều, thang cần thiết là cỡ Planck.}
+\end{classroomqa}
+
+Để dễ hình dung, độ tăng năng lượng của một máy gia tốc thẳng gần như tỉ lệ với chiều dài của nó. Bài giảng lấy khoảng hai dặm cho cỡ \(100\,\mathrm{GeV}\) như một mốc đo đơn giản theo quy mô SLAC. Để đạt \(10^{19}\,\mathrm{GeV}\) với cùng gradient, phải nhân chiều dài lên khoảng \(10^{17}\), tạo ra một cỗ máy có quy mô thiên hà.
+
+Ngay cả một cỗ máy như vậy cũng cần độ sáng. Các chùm hạt không được ngắm với độ chính xác cỡ độ dài Planck cho từng cặp hạt một; có vô số hạt đi xuyên qua nhau để một vài hạt va chạm ở tham số va chạm mong muốn. Lấy một năng lượng Planck nhân với một tốc độ va chạm khổng lồ sẽ cho một yêu cầu công suất phi lý tương tự. Các ước tính được cố ý làm thô, nhưng kết luận của chúng là vững: phổ học dây trực tiếp ở thang Planck không phải là một thí nghiệm mà người ta có thể thiết kế một cách khả dĩ.
+
+Bằng chứng gián tiếp sẽ phải mang tính cấu trúc hơn: một lý thuyết cho ra các hạt và tương tác năng lượng thấp đã quan sát được với độ đặc hiệu đủ để kiểm nghiệm, hoặc các hiệu ứng compact hóa còn tồn tại ở rất xa dưới thang dây. Bài giảng không khẳng định rằng một xây dựng mang tính quyết định như vậy đã sẵn có.
+
+\subsection{Các chiều phụ và giới hạn định xứ}
+
+\begin{classroomqa}
+\audiencequestion{Liệu các chiều phụ cũng phải có kích thước gần độ dài Planck không? \lecturetimestamp{00:56:23}}
+\lecturerresponse{Trong bức tranh sơ cấp này, chúng được kỳ vọng là cực nhỏ, dù lập luận không ấn định chính xác như vậy. Nếu một chiều compact đủ lớn để được thăm dò ở năng lượng thấp hơn, thì các mode Kaluza--Klein mới và hành vi cao chiều đã phải làm biến đổi lý thuyết trường mà ta quan sát. Vì vậy, việc ngoại suy thành công lý thuyết ấy đặt ra một cận trên cho các chiều như vậy.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Vì sao một dây hoặc một chiều compact lại không thể nhỏ hơn \(\ell_P\) nhiều bậc độ lớn? \lecturetimestamp{00:57:48}}
+\lecturerresponse{Phân giải một khoảng cách ngắn hơn đòi hỏi xung lượng lớn hơn. Vượt quá thang Planck, năng lượng cần cho sự định xứ có một bán kính hấp dẫn so sánh được với, rồi sau đó lớn hơn, vùng đang được thăm dò. Thí nghiệm tạo ra một lỗ đen trước khi nó phân giải được một dây thông thường nhỏ hơn.}
+\end{classroomqa}
+
+Nguyên lý bất định cho ta ước lượng. Định xứ tới \(\Delta x\) đòi hỏi
+
+\begin{classroomqa}
+\audiencequestion{Một khi đã chọn độ dài Planck và thời gian Planck, khối lượng Planck được xác định về mặt vật lý như thế nào? \lecturetimestamp{00:59:04}}
+\lecturerresponse{Dùng \(\hbar\) hoặc \(G\) để đổi thang độ dài thành một năng lượng. Nguyên lý bất định nói rằng việc định xứ hai hạt trong phạm vi \(\ell_P\) đòi hỏi xung lượng cỡ \(\hbar/\ell_P\), do đó năng lượng cỡ \(m_Pc^2\). Tương đương, đó là khối lượng tại đó các độ dài lượng tử và hấp dẫn trở nên so sánh được.}
+\end{classroomqa}
+
+\begin{equation}
+  \Delta p\gtrsim\frac{\hbar}{\Delta x},
+  \qquad
+  E\sim c\,\Delta p.
+  \label{eq:l05-localization}
+\end{equation}
+Tại \(\Delta x=\ell_P\), năng lượng này là
+\begin{equation}
+  E\sim\frac{\hbar c}{\ell_P}=m_Pc^2.
+\end{equation}
+Đồng thời, bán kính Schwarzschild
+\begin{equation}
+  r_s\sim\frac{GE}{c^4}
+\end{equation}
+ở cỡ \(\ell_P\), sai khác chỉ bởi các hằng số số học. Định xứ lượng tử và suy sụp hấp dẫn gặp nhau ở cùng một thang.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_05_figure_10.png}
+  \caption{Các công thức độ dài và khối lượng Planck được xét lại trong lập luận về định xứ.}
+  \lectureframe{01:00:25}
+  \label{fig:l05-localization-board}
+\end{figure}
+
+Điều này hoàn tất lập luận xác định thang.
+
+\section{Trạng thái cơ bản phải nằm dưới photon}
+
+Sau giờ nghỉ có hai hướng có thể đi: bắt đầu với các phép biến đổi bảo giác, hoặc trình bày con đường cũ hơn và dễ hơn để đi tới chiều tới hạn. Ta chọn cách sau, nhưng kèm một cảnh báo. Lập luận dễ này không hề dễ, và cũng không phải là lý do sâu nhất. Tuy vậy, nó là đúng và gần với khám phá lịch sử.
+
+Quay lại dây boson hở. Tác dụng một lần với một toán tử tạo ngang cho ra hai trạng thái phân cực. Vì không có trạng thái thứ ba theo phương dọc, kích thích ấy phải là một vectơ không khối lượng. Trong các đơn vị mà một lượng tử mode-\(1\) làm tăng \(m^2\) lên một đơn vị,
+\begin{equation}
+  m_{\mathrm{ground}}^2=-1,
+  \qquad
+  m_{\mathrm{first}}^2=-1+1=0.
+  \label{eq:l05-open-intercept}
+\end{equation}
+Trạng thái cơ bản tachyon vẫn là một vấn đề của lý thuyết boson; điều đó được thừa nhận và tạm gác sang một bên. Câu hỏi trước mắt là đơn vị âm trong \eqref{eq:l05-open-intercept} đến từ đâu.
+
+Mỗi mode của dây là một dao động tử điều hòa. Với \(\hbar=1\), năng lượng chân không của nó là
+\begin{equation}
+  E_{0,n}=\frac{\omega_n}{2}.
+\end{equation}
+Đối với dây, \(\omega_n=n\), nên một tọa độ ngang về hình thức đóng góp
+\begin{equation}
+  E_0^{(1)}
+  =\frac12\sum_{n=1}^{\infty}n.
+  \label{eq:l05-formal-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_11.png}
+  \caption{Tổng không điểm \(\sum n/2\) được viết ra sau khi nhắc lại các tần số mode.}
+  \lectureframe{01:06:18}
+  \label{fig:l05-zero-point-board}
+\end{figure}
+
+Giờ đây khó khăn đã trở nên sắc nét. Mọi hạng trong
+\eqref{eq:l05-formal-zero-point} đều dương, và tổng thì phân kỳ. Làm sao nó có thể cung cấp một hệ số chặn âm hữu hạn?
+
+\section{Trừ chuyển động trước khi đọc phổ}
+
+Trước khi điều chuẩn tổng ấy, hãy nhắc lại vì sao nội năng được đồng nhất với bình phương khối lượng. Với một hạt mang xung lượng dọc lớn \(P>0\),
+\begin{equation}
+  E=\sqrt{P^2+m^2}
+   =P+\frac{m^2}{2P}
+   +O(P^{-3}).
+  \label{eq:l05-large-p-energy}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\textwidth]{lecture_05_figure_12.png}
+  \caption{Khai triển theo \(P\) lớn tách xung lượng toàn cục khỏi hạng khối lượng nội tại.}
+  \lectureframe{01:07:35}
+  \label{fig:l05-fast-energy-board}
+\end{figure}
+
+Hạng thứ nhất là chuyển động toàn cục không thú vị dọc theo trục \(z\). Nó được bảo toàn và là chung cho mọi trạng thái nội tại có cùng \(P\). Trừ nó đi và đổi thang sẽ loại bỏ giãn thời gian động học:
+\begin{equation}
+  \begin{aligned}
+    E-P&=\frac{m^2}{2P}+O(P^{-3}),\\
+    2P(E-P)&=m^2+O(P^{-2}).
+  \end{aligned}
+  \label{eq:l05-internal-energy}
+\end{equation}
+
+Nguyên tử cung cấp bức tranh vật lý. Hãy boost một nguyên tử hiđrô. Tổng năng lượng của nó tăng lên, nhưng độ chênh năng lượng giữa hai mức nội tại, khi đo theo thời gian phòng thí nghiệm, lại giảm đi vì đồng hồ của nguyên tử bị giãn. Thừa số \(1/P\) trong \eqref{eq:l05-large-p-energy} chính là sự suy giảm đó. Nhân với \(2P\) sẽ khôi phục độ chênh bình phương khối lượng bất biến.
+
+Vì thế, năng lượng trạng thái cơ bản thô không nhất thiết phải đúng theo nghĩa đen là \(-1\). Nó có thể chứa một phần lớn độc lập với trạng thái gắn với năng lượng dọc toàn cục, cộng với một phần dư nội tại hữu hạn. Bài giảng viết lại hệ thức sau khi boost để biểu lộ cả hai phần ấy trước khi quay lại tổng dao động tử.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_13.png}
+  \caption{Hạng khối lượng bất biến được đặt cạnh đóng góp dọc lớn, độc lập với trạng thái.}
+  \lectureframe{01:11:34}
+  \label{fig:l05-infinite-piece-board}
+\end{figure}
+
+Năng lượng chân không vô hạn là điều quen thuộc trong lý thuyết trường lượng tử. Người ta thường tách ra một hằng số phân kỳ độc lập với trạng thái khỏi các độ chênh năng lượng quan sát được. Bài giảng so sánh điều này với năng lượng không điểm của trường điện từ trong căn phòng và công khai gọi thủ tục ấy là không thỏa đáng nhưng vẫn chuẩn mực. Ở đây ta theo cùng lối lập luận heuristic ấy: cô lập phần phân kỳ và hỏi xem có còn một phần dư hữu hạn xác định nào hay không.
+
+\section{Điều chuẩn tổng}
+
+Đưa vào một bộ điều chuẩn dương \(\epsilon\):
+\begin{equation}
+  S_1(\epsilon)
+  =\sum_{n=1}^{\infty}n e^{-n\epsilon}.
+  \label{eq:l05-regulated-sum}
+\end{equation}
+Với mọi \(\epsilon>0\), hàm mũ cuối cùng lấn át thừa số \(n\), nên tổng hội tụ. Cho \(\epsilon\) tiến về không sẽ loại bỏ ngưỡng cắt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_14.png}
+  \caption{Bộ điều chuẩn mũ được áp dụng từng hạng cho
+  \(1+2+3+\cdots\).}
+  \lectureframe{01:16:42}
+  \label{fig:l05-regulator-board}
+\end{figure}
+
+Thừa số \(n\) có thể được tạo ra bằng phép đạo hàm:
+\begin{equation}
+  S_1(\epsilon)
+  =
+  -\frac{d}{d\epsilon}
+  \sum_{n=1}^{\infty}e^{-n\epsilon}.
+  \label{eq:l05-derivative-trick}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_05_figure_15.png}
+  \caption{Lấy đạo hàm theo tham số cắt đưa xuống
+  \(-n\).}
+  \lectureframe{01:18:05}
+  \label{fig:l05-derivative-board}
+\end{figure}
+
+Chuỗi còn lại là chuỗi hình học:
+\begin{equation}
+  S_0(\epsilon)
+  \equiv
+  \sum_{n=1}^{\infty}e^{-n\epsilon}
+  =
+  \frac{e^{-\epsilon}}{1-e^{-\epsilon}}
+  =
+  \frac{1}{e^\epsilon-1}.
+  \label{eq:l05-geometric-sum}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_16.png}
+  \caption{Chuỗi hình học đã điều chuẩn ở dạng khép kín.}
+  \lectureframe{01:19:12}
+  \label{fig:l05-geometric-board}
+\end{figure}
+
+Khai triển với \(\epsilon\) nhỏ:
+\begin{equation}
+  S_0(\epsilon)
+  =
+  \frac{1}{\epsilon}
+  -\frac12
+  +\frac{\epsilon}{12}
+  -\frac{\epsilon^3}{720}
+  +O(\epsilon^5).
+  \label{eq:l05-bernoulli-expansion}
+\end{equation}
+Trên bảng, điều này được thu bằng cách khai triển riêng tử số và mẫu số, tách ra một lũy thừa của \(\epsilon\), rồi khai triển nghịch đảo. Phép tính đó có vài bước kiểm tra dấu ngay trên lớp; biểu thức gọn \eqref{eq:l05-bernoulli-expansion} là kết quả đã được làm sạch của nó.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_17.png}
+  \caption{Các khai triển của tử số và mẫu số trước khi đơn giản hóa nghịch đảo.}
+  \lectureframe{01:23:10}
+  \label{fig:l05-expansion-board}
+\end{figure}
+
+Áp dụng \(-d/d\epsilon\) ta được
+\begin{equation}
+  S_1(\epsilon)
+  =
+  \frac{1}{\epsilon^2}
+  -\frac{1}{12}
+  +\frac{\epsilon^2}{240}
+  +O(\epsilon^4).
+  \label{eq:l05-regulated-result}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_05_figure_18.png}
+  \caption{Hạng phân kỳ \(1/\epsilon^2\) và phần dư hữu hạn
+  \(-1/12\) ở cuối phép tính điều chuẩn.}
+  \lectureframe{01:29:48}
+  \label{fig:l05-minus-twelve-board}
+\end{figure}
+
+Người ta thường tóm tắt kết quả này một cách đùa vui thành
+\(1+2+3+\cdots=-1/12\). Điều đó không phải là hội tụ theo nghĩa thông thường. Phương trình \eqref{eq:l05-regulated-result} nói rằng bộ điều chuẩn cụ thể này cho ra một hạng phân kỳ cộng với một phần hữu hạn độc lập với bộ điều chuẩn:
+\begin{equation}
+  \underbrace{\frac{1}{\epsilon^2}}_{\text{divergent}}
+  \;+\;
+  \underbrace{\left(-\frac{1}{12}\right)}_{\text{finite}}
+  \;+\;O(\epsilon^2).
+\end{equation}
+Bài giảng hấp thụ hạng thứ nhất vào phần độc lập với trạng thái vốn đã có mặt và giữ lại hạng thứ hai. Nó cũng giữ nguyên lời cảnh báo gán cho Pauli: việc là vô hạn tự nó không làm cho một đại lượng trở thành không. Một lý thuyết nhất quán phải giải thích vì sao phép trừ ấy được phép.
+
+Khôi phục thừa số một nửa trong
+\eqref{eq:l05-formal-zero-point}, một tọa độ ngang đóng góp
+\begin{equation}
+  E_0^{(1)}=-\frac{1}{24}.
+  \label{eq:l05-one-transverse-zero-point}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{lecture_05_figure_19.png}
+  \caption{Thừa số một nửa biến \(-1/12\) hữu hạn thành \(-1/24\) cho mỗi tọa độ ngang.}
+  \lectureframe{01:33:42}
+  \label{fig:l05-minus-twenty-four-board}
+\end{figure}
+
+\section{Đếm các chiều ngang}
+
+Gọi \(D_\perp\) là số tọa độ ngang của dây. Tổng đóng góp chân không của chúng là
+\begin{equation}
+  E_0^{\mathrm{open}}
+  =-\frac{D_\perp}{24}.
+  \label{eq:l05-open-vacuum}
+\end{equation}
+Để dao động tử đầu tiên của dây hở nâng trạng thái cơ bản từ
+\(-1\) lên mức không khối lượng, ta cần
+\begin{equation}
+  -\frac{D_\perp}{24}=-1.
+\end{equation}
+Vì vậy
+\begin{equation}
+  D_\perp=24.
+\end{equation}
+Đó là các phương vuông góc với xung lượng dọc lớn. Cộng thêm phương không gian dọc ấy và thời gian, ta được
+\begin{equation}
+  D=D_\perp+2=26.
+  \label{eq:l05-critical-dimension}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Khi nào lập luận này đi vào lý thuyết dây? \lecturetimestamp{01:35:27}}
+\lecturerresponse{Nó thuộc về thời kỳ dây hadron nguyên thủy, vào khoảng 1969 và đầu thập niên 1970. Các quỹ đạo Regge đã được biết từ thực nghiệm. Một khi mô hình dao động tử được khảo sát riêng nó, người ta thấy trạng thái kích thích thứ nhất có 2 chứ không phải 3 phân cực vectơ, buộc nó phải không khối lượng. Hệ số chặn cần thiết từ đó nhanh chóng dẫn tới 24 dao động tử ngang.}
+\end{classroomqa}
+
+Khi đó điều này trông gần như quá kỳ lạ để tin. Vì sao một tổng chân không đã điều chuẩn lại biết số chiều của không thời gian? Thế nhưng các mảnh ghép khớp với nhau: vectơ không khối lượng, hệ số chặn và số dao động tử ngang đều chọn cùng một con số.
+
+\subsection{Dây kín kiểm tra lại phép đếm}
+
+Một dây kín cần một mode chuyển động sang trái và một mode chuyển động sang phải để đạt mức vật lý không khối lượng đầu tiên của nó. Vì vậy trạng thái cơ bản của nó phải bắt đầu thấp hơn không hai đơn vị.
+
+\begin{classroomqa}
+\audiencequestion{Nếu 24 phương ngang chỉ cho \(-1\), có phải một dây kín phải tồn tại trong 48 phương ngang không? \lecturetimestamp{01:37:47}}
+\lecturerresponse{Không. Cùng một không thời gian chứa cả dây hở lẫn dây kín. Một dây kín vốn đã có nội dung dao động tử gấp đôi: một tháp chạy theo mỗi hướng trên mặt thế. Mỗi tháp đóng góp
+\(-24/24=-1\), nên gộp lại cho \(-2\).}
+\end{classroomqa}
+
+Do đó
+\begin{equation}
+  E_0^{\mathrm{closed}}
+  =
+  2\left(-\frac{D_\perp}{24}\right)
+  =-2
+  \qquad (D_\perp=24).
+\end{equation}
+Thêm một dao động tử từ mỗi sector làm tăng trạng thái lên hai đơn vị và đưa nó tới bình phương khối lượng bằng không, đúng tại nơi đa bội graviton đã xuất hiện trong bài giảng trước.
+
+Sự phù hợp này khiến lập luận có vẻ thuyết phục hơn, nhưng đó vẫn chưa phải là lời giải thích sâu xa. Trong lượng tử hóa hiện đại, hằng số sắp thứ tự chuẩn, tính đóng của đại số Lorentz hoặc Virasoro, và sự triệt tiêu dị thường bảo giác cùng thuộc về một cấu trúc nhất quán. Cấu trúc đó ấn định cả hệ số chặn lẫn số chiều tới hạn; phần dư hữu hạn của phép cắt cụt là con đường lịch sử để đi vào nó.
+\editorialnote{Phép tính với bộ điều chuẩn là một cách nhìn mang tính heuristic về hằng số sắp thứ tự chuẩn. Suy dẫn sâu hơn của \(D=26\) đòi hỏi bất biến bảo giác trên mặt thế giới, hay tương đương là sự triệt tiêu dị thường bảo giác và đại số ràng buộc nhất quán.}
+
+Con đường sâu hơn đó là phần tiếp theo. Để bắt đầu, chỉ cần một ít giải tích phức:
+tọa độ phức, các hàm giải tích và các phương trình Cauchy--Riemann.
+Hình ảnh vật lý đã hứa là kẹo dẻo Turkish taffy---được kéo theo một hướng, dãn theo hướng khác, rồi nắn lại mà không phá hủy cấu trúc điều cốt yếu. Toán học đứng sau hình ảnh đó là bất biến bảo giác.

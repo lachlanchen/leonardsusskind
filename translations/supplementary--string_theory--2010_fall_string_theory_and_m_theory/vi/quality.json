@@ -1,0 +1,62 @@
+{
+  "layout_profile": "a5-1.2-dimensions-v2",
+  "paper_mm": [
+    177.6,
+    252
+  ],
+  "pages": 313,
+  "outline_entries": 138,
+  "target_characters": 197076,
+  "image_placements": 180,
+  "overflows": [],
+  "errors": [],
+  "status": "validated",
+  "title": "Lý thuyết dây và M-lý thuyết",
+  "pdf_sha256": "ca0523e5fba87d264408a9737fbc2b10fd1260315f3607164cdb88d950295eca",
+  "semantic_review": "sampled, not exhaustive",
+  "sample_pairs": 377,
+  "review_model": "gpt-5.4",
+  "review_adjudications": [],
+  "translation_results": {
+    "course.tex": "5f50aadb48b7bbc54335b9608a118aac811c7e5b7bd78fbc2440b7cdfbc1f5ef",
+    "chapters/lecture_01/content.tex": "f59c0e854137251e94130c0afc5a74bc5ad61a1d222a6bbc925101645241fb18",
+    "chapters/lecture_02/content.tex": "5d186b7f794f596f5ee695dcfc225323e55cb046f9cbf92faf7c78bb7be59524",
+    "chapters/lecture_03/content.tex": "e3d87f6ca2bfe2e3ca0871e2ca04d0c6987be8ce8714d92441967f9c5c3a84de",
+    "chapters/lecture_04/content.tex": "08d48e67038c752bf14e53ff56f212b3f9adc3a1480dd061e8cd48af09835545",
+    "chapters/lecture_05/content.tex": "589a93ceb833290c0c350bfbd57cb0458a54504b705a48329c7cecb6d5bcc399",
+    "chapters/lecture_06/content.tex": "42cf0cfdb4f57c81cdf9a8ffe9e3c61637a2d71e170b4975e4430aed20b438e1",
+    "chapters/lecture_07/content.tex": "45d16189b9745ed378444e7a66edee99afc30e93da3d0a435f05aeb17412278f",
+    "chapters/lecture_08/content.tex": "3019ba2c7c73616e5e26502a56ce91a224ef69badef596de13062baa2da8868b",
+    "chapters/lecture_09/content.tex": "dbfd1bf0877cf1ce2e8838632d4e488af481106c4f1c377b2f8ea938d0b0ed01",
+    "chapters/lecture_10/content.tex": "ccb50ef1784b85f29409b0cad2b53579b1ddc858124dc4f84b15eb728c67e5fc"
+  },
+  "source_files": {
+    "course.tex": "3c2aac6313fc893cf20a605a6c663dfbcb338d2c0ae2334dc128133f758cf0ea",
+    "common_preamble.tex": "e0e154562b603ec4718f48629c70818b2a8f3494074630fff47fb530f39f7b52",
+    "chapters/lecture_01/content.tex": "c35ec8c6e2057da8a8177c62ba775b1add4bdd4374b30d2a0f2ccfda9122512c",
+    "chapters/lecture_02/content.tex": "4b4fb064a6f50dbb737daee24a2a4ceac586eb6b4184ae53caf529e92cf98d41",
+    "chapters/lecture_03/content.tex": "0ab3386a29887229d417b296d92fa5fbc9170dd585a0f9962912b29d8c88aa5c",
+    "chapters/lecture_04/content.tex": "d5c5e04c004fc0eccd91ac8ba41da0da4694e5a3424b34e5efa47bbf6f36a0ae",
+    "chapters/lecture_05/content.tex": "c6895fcea77b026c2060b164d575052c7d4416f0330dc976206e5d42b041eefa",
+    "chapters/lecture_06/content.tex": "a1dc323c4cc47aed1c5829af012a259b6175918b02437ca71944c41498f0778f",
+    "chapters/lecture_07/content.tex": "1556e07fc4c80fb821d9dcfd5e55909be8581386c92b49582e2c1528de9bc3ba",
+    "chapters/lecture_08/content.tex": "4eba7941c6455e9f331ded4c9ac665b2ea1e4a2b9c36ee4dd1c2648d8664b301",
+    "chapters/lecture_09/content.tex": "edce49458e149572f4b28bd588ef97e8facb7d7e93f41e0eab1a94dc1d478313",
+    "chapters/lecture_10/content.tex": "35c0eeef265ad73ed92613daf75bf70b86e9901d32d534b8955dd075b6a5b425"
+  },
+  "translated_tex": {
+    "cover.tex": "12306e512a0e6a148b152095786b0028ccee183134e3e22e9b8caa5ea39f27f9",
+    "common_preamble.tex": "66d75eb5d85f0876dde74f046bee0980da97176c6ed49486e809f44b47182ca6",
+    "course.tex": "1fe4c03a451147b7e0da08c3a1ff01fe77f6766b9975dc4d37307624cc38354f",
+    "chapters/lecture_07/content.tex": "197e614e64eb52db776382ea255efcc9705f1fed980ecdf58ceba3ff1766cca0",
+    "chapters/lecture_02/content.tex": "28c75b3f9ebc75bd17f7b4988fbefa0c89b5b52132408d011ae8f1c34cb0e4da",
+    "chapters/lecture_09/content.tex": "8100c2fa24f57b05593c26f9c89c268d68e4d356b8fa513310ce65c9b1aadca8",
+    "chapters/lecture_01/content.tex": "92a5a9b78a4d6d44e1399c335328327c441718e0eb4b0ab3cc14088e53ecbc47",
+    "chapters/lecture_10/content.tex": "360fa0a9d4d36f2e2f02036b33f8d0578286ff20f1a0d57e31908bbc19a7c5b4",
+    "chapters/lecture_03/content.tex": "0054cbc69f938155f9c05c79b7f07fb25f746d498a4fe23b082749e1ee13e3e5",
+    "chapters/lecture_08/content.tex": "3ae73cf9cb3295b14f6f7f81ca59ef28de3c45e4441704540b5f4e5dd549fbec",
+    "chapters/lecture_05/content.tex": "2642207ccd9deece30d87e1d95a5286ab13ae3058d7e21fd2cdb98eb837c2592",
+    "chapters/lecture_04/content.tex": "3c5f20827788a7fd20ed979878f8f61dcaf8ebed90645bc343364d6a7174dfc8",
+    "chapters/lecture_06/content.tex": "ee6106f33c328716367246b9bb72a6e93901871f9fc7438f1644fa2f1882044a"
+  }
+}

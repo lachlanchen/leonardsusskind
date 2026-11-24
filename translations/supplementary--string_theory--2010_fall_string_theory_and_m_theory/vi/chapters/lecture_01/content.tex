@@ -1,0 +1,803 @@
+\chapter{Từ các quỹ đạo Regge hadron đến các dây nón ánh sáng}
+
+\lectureoverview{Lý thuyết dây không khởi đầu như một lý thuyết hấp dẫn lượng tử.
+Nó khởi đầu như một nỗ lực nhằm hiểu phổ và tán xạ của hadron.
+Các quỹ đạo Regge thẳng gợi ý một vật thể mở rộng; tính đối ngẫu trong
+tán xạ pion--pion gợi ý rằng hai quá trình có vẻ khác biệt thực ra là
+hai cách cắt của cùng một mặt. Chúng ta sẽ lần theo những manh mối đó vào bức tranh
+mặt thế giới, diễn giải lại dây hadron như một ống thông lượng của QCD, rồi dùng
+hệ quy chiếu xung lượng vô hạn để suy ra cơ học ngang của một dây mở.
+Kết quả trung tâm là Hamiltonian nội hiệu dụng của nó đo
+bình phương khối lượng. Vì vậy, trong mô tả ấy, một năng lượng theo định luật Hooke tỉ lệ với \(L^2\)
+trở thành một năng lượng nghỉ tỉ lệ với \(L\), tức hành vi xác định
+của một dây có sức căng không đổi.}
+
+\section{Nguồn gốc hadron của lý thuyết dây}
+
+Vào khoảng 1968--1970, vấn đề dẫn tới dây liên quan đến proton,
+neutron, và đặc biệt là meson. Mô hình quark khi ấy đã là một ý tưởng nghiêm túc,
+nhưng thành phần quark của hadron vẫn chưa được xác lập bằng thực nghiệm
+theo nghĩa hiện đại. Gluon còn kém nổi bật hơn nữa trong thảo luận thông thường.
+Nambu đã đề xuất những ý tưởng liên quan về trường chuẩn, nhưng ngôn ngữ đã được xác lập
+của sắc động lực học lượng tử khi ấy vẫn chưa tồn tại. Thay vào đó, dữ liệu xuất phát là
+một phổ phong phú bất ngờ của các hạt tương tác mạnh.
+
+Tạm thời bỏ qua sự phân biệt proton--neutron và gọi
+cả hai trạng thái là nuclon sẽ hữu ích. Ngoài nuclon còn có những trạng thái nặng hơn với
+spin lớn hơn, rồi đến những trạng thái còn nặng hơn nữa với spin còn lớn hơn nữa. Chew và
+Frautschi đã sắp xếp các họ như vậy trên một đồ thị với mômen động lượng trên trục đứng
+và bình phương khối lượng trên trục ngang. Theo các đơn vị lịch sử của thời kỳ đó
+khối lượng proton vào khoảng một BeV; cùng đơn vị ấy nay được
+gọi là GeV.
+
+Đo mômen động lượng theo đơn vị \(\hbar\). Đối với một họ baryon, các
+giá trị spin không thứ nguyên là bán nguyên,
+
+\begin{equation}
+  J=\frac12,\frac32,\frac52,\ldots,
+\end{equation}
+
+trong khi các họ meson có spin nguyên. Sự kiện thực nghiệm đáng chú ý là
+mỗi họ đều nằm xấp xỉ trên một đường thẳng khi được vẽ theo
+\(M^2\). Theo ký hiệu hiện đại, người ta viết
+
+\begin{equation}
+  J\simeq \alpha_0+\alpha' M^2,
+  \label{eq:l01-regge-trajectory}
+\end{equation}
+
+trong đó \(\alpha_0\) là hệ số chặn và \(\alpha'\) là độ dốc Regge.
+\editorialnote{Bài giảng nhấn mạnh quan hệ tuyến tính quan sát được và
+độ dốc gần như phổ quát của nó. Ký hiệu hệ số chặn chỉ được đưa vào để phát biểu
+quan hệ ấy một cách gọn; các quỹ đạo là thực nghiệm và chỉ xấp xỉ.}
+
+Đường thẳng ban đầu không thật sự thuyết phục vì nó chỉ đi qua chỉ
+2 điểm đã biết. Bất kỳ 2 điểm nào cũng xác định một đường thẳng. Điều gây ngạc nhiên đến sau:
+các trạng thái mới được phát hiện tiếp tục nằm gần cùng đường đó. Các quỹ đạo meson
+cũng cho thấy cùng một kiểu tổ chức. Pion bắt đầu gần \(J=0\) với
+một khối lượng nhỏ ở thang GeV; rho bắt đầu tại \(J=1\); các kích thích tiếp theo
+cứ tiếp tục đi lên. 5, 6, hoặc 7 trạng thái có thể xuất hiện trong một họ. Còn ấn tượng
+hơn nữa, các quỹ đạo baryon và meson khác nhau gần như
+song song. Do đó, việc tăng thêm một lượng tử mômen động lượng tương ứng
+với xấp xỉ cùng một độ tăng của bình phương khối lượng:
+
+\begin{equation}
+  \Delta J=1
+  \quad\Longrightarrow\quad
+  \Delta M^2\simeq \frac{1}{\alpha'}.
+  \label{eq:l01-regge-spacing}
+\end{equation}
+
+\begin{classroomqa}
+\audiencequestion{Việc các quỹ đạo Regge khác nhau song song với nhau có
+nghĩa là gì?\lecturetimestamp{00:09:32}}
+\lecturerresponse{Hãy chọn một họ hạt và vẽ tất cả các trạng thái kích thích
+của nó; chúng nằm dọc theo một đường. Lặp lại điều đó cho một họ meson hoặc baryon
+khác. Các đường có xấp xỉ cùng độ dốc dù
+hệ số chặn của chúng khác nhau. Vì thế, cùng một độ tăng của mômen động lượng
+đòi hỏi xấp xỉ cùng một độ tăng của \(M^2\). Độ dốc chung này được gọi là
+độ dốc Regge phổ quát.}
+\end{classroomqa}
+
+Phép so sánh với các vật thể mở rộng thông thường cho thấy vì sao mẫu hình ấy lại quan trọng.
+Một quả bóng rổ thu thêm năng lượng quay khi bị quay, nhưng quỹ đạo của nó
+là cong chứ không tuyến tính, và ở vận tốc góc đủ lớn thì quả bóng sẽ bị xé toạc.
+Một nguyên tử cũng có các kích thích quay, nhưng cuối cùng nó bị ion hóa;
+quỹ đạo của nó kết thúc. Hadron lại cho thấy một dãy đơn giản hơn nhiều và,
+trong phạm vi dữ liệu sẵn có, không có dấu hiệu nào cho thấy dãy ấy đang chấm dứt.
+
+Phổ này cho thấy hadron không hành xử như một điểm. Một điểm không có
+cấu trúc không gian nào để quay hay biến dạng. Electron không có tháp
+trạng thái nội với spin cao hơn nào đã được quan sát thấy và vì thế là một đối tượng
+dạng điểm trong giới hạn thực nghiệm hiện nay. Trái lại, hadron có thể được quay lên.
+Phổ của nó gợi ý tính hợp thành, và quan hệ giữa spin và khối lượng gợi rằng
+vật thể ấy biến dạng khi mômen động lượng của nó tăng.
+
+\section{Đối ngẫu trong tán xạ pion--pion}
+
+Phổ học cung cấp một manh mối. Tán xạ pion--pion cung cấp một manh mối khác. Hai
+pion có thể kết hợp thành một cộng hưởng kiểu rho rồi sau đó lại xuất hiện thành hai
+pion. Trong một giản đồ Feynman thông thường, đây là một quá trình hủy và
+tái tạo, thường được gọi là quá trình kênh \(s\). Nếu xoay ngang cùng giản đồ sơ cấp ấy, ta được
+một quá trình chéo, hay kênh \(t\), trong đó một hạt kiểu rho được trao đổi giữa các pion.
+
+Rho không đơn độc. Nó thuộc một họ Regge, vì thế tính nhất quán dường như đòi
+hỏi phải có rho và tất cả các trạng thái kích thích đồng hành của nó trong cả hai kênh. Về mặt sơ đồ,
+
+\begin{equation}
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(s)}_{\rho_n}(s,t),
+  \qquad
+  \mathcal A(s,t)\simeq
+  \sum_n \mathcal A^{(t)}_{\rho_n}(s,t).
+  \label{eq:l01-channel-sums}
+\end{equation}
+
+Hai biểu thức này không phải là hai gần đúng mà ta chỉ việc cộng lại.
+Các nghiên cứu số cho thấy rằng việc cộng tháp cộng hưởng trong
+kênh hủy đã cho xấp xỉ phần đóng góp được mong đợi từ
+kênh trao đổi. Ngược lại, tháp trao đổi lại có thể tái tạo
+mô tả cộng hưởng. Vì thế, cộng cả hai tháp đầy đủ dường như
+đếm cùng một nội dung vật lý hai lần. Cách hạch toán nhiễu loạn thông thường nói rằng nếu
+hai giản đồ tồn tại thì phải đưa cả hai vào. Thay vào đó, các biên độ hadron
+gợi ý rằng hai mô tả theo kênh là đối ngẫu.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth]{lecture_01_figure_01.png}
+  \caption{Hình trên bảng nối đồ thị Chew--Frautschi với các giản đồ
+  kênh hủy và kênh chéo, khiến các manh mối từ phổ và từ tán xạ trở thành những phần của
+  cùng một vấn đề.}
+  \lectureframe{00:14:20}
+  \label{fig:l01-regge-duality-board}
+\end{figure}
+
+Cùng những quan hệ ấy có thể được tách ra thành một sơ đồ rõ ràng. Hình đầu
+ghi lại phổ tuyến tính; hai hình kia biểu diễn các khai triển theo kênh thay thế
+của cùng một biên độ.
+
+\begin{figure}[H]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[>=Latex,thick]
+    \begin{scope}
+      \draw[->] (0,0) -- (4.2,0) node[right] {$M^2$};
+      \draw[->] (0,0) -- (0,3.4) node[above] {$J$};
+      \draw[blue!65!black] (0.45,0.35) -- (3.55,2.95);
+      \draw[orange!80!black] (0.75,0.20) -- (3.85,2.80);
+      \foreach \x/\y in {0.65/0.52,1.35/1.10,2.05/1.69,2.75/2.27,3.45/2.86}
+        \fill[blue!65!black] (\x,\y) circle (0.07);
+      \foreach \x/\y in {0.95/0.37,1.65/0.95,2.35/1.54,3.05/2.12,3.75/2.71}
+        \fill[orange!80!black] (\x,\y) circle (0.07);
+      \node at (2.1,-0.55) {parallel Regge families};
+    \end{scope}
+    \begin{scope}[xshift=5.7cm]
+      \draw[->] (-1.5,1.2) -- (-0.3,0.25);
+      \draw[->] (-1.5,-1.2) -- (-0.3,-0.25);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.25) -- (0,-0.25);
+      \draw[->] (0.3,0.25) -- (1.5,1.2);
+      \draw[->] (0.3,-0.25) -- (1.5,-1.2);
+      \node at (0,-1.75) {$s$-channel tower};
+    \end{scope}
+    \begin{scope}[xshift=10.5cm]
+      \draw[->] (-1.5,1.2) -- (1.5,1.2);
+      \draw[->] (-1.5,-1.2) -- (1.5,-1.2);
+      \draw[decorate,decoration={snake,amplitude=1.5pt,segment length=7pt}]
+        (0,0.95) -- (0,-0.95);
+      \node at (0,-1.75) {$t$-channel tower};
+    \end{scope}
+  \end{tikzpicture}}
+  \caption{Các họ Regge song song và hai khai triển theo kênh có liên quan trong
+  đối ngẫu hadron.}
+  \label{fig:l01-regge-duality-redraw}
+\end{figure}
+
+\section{Một mặt thế giới, hai cách cắt}
+
+Phản ứng tự nhiên là tìm một lịch sử hình học duy nhất có thể được đọc
+theo cả hai cách. Biểu diễn một pion bằng một cặp quark--phản quark và cho thời gian chạy
+lên trên. Thay vì chỉ vẽ các đường hạt một chiều, hãy tô đầy miền
+được chặn bởi các quỹ đạo quark. Một lát cắt ngang qua lịch sử hai chiều này
+có thể cho thấy hai dây đi vào nhập lại rồi về sau tách ra. Một cách cắt khác
+hiển thị một dây được trao đổi từ phía này sang phía kia. Hai bức tranh kênh Feynman
+không còn là những cơ chế độc lập; chúng là những cách phân cắt khác nhau của cùng một mặt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_02.png}
+  \caption{Tôpô các đường quark trên bảng. Những lát cắt khác nhau qua cùng
+  một lịch sử hai chiều cho ra các cách diễn giải theo cộng hưởng và theo trao đổi.}
+  \lectureframe{00:17:50}
+  \label{fig:l01-worldsheet-topology-board}
+\end{figure}
+
+Miền giữa một quark và một phản quark còn đem lại thêm một ý tưởng nữa. Ở một
+thời điểm cố định, lát cắt chứa hai đầu mút và một cái gì đó lấp đầy toàn bộ
+khoảng giữa chúng. Đối tượng ấy là một chiều: một dây. Trong một tương tác,
+dây quét ra mặt hai chiều đó.
+
+\begin{definition}
+Lịch sử không-thời gian của một hạt điểm là một \emph{đường thế giới}. Lịch sử
+không-thời gian của một dây là một \emph{mặt thế giới}. Một dây tại một thời điểm
+là một lát cắt không gian của mặt thế giới của nó.
+\end{definition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_03.png}
+  \caption{Mặt trên bảng được tô đầy giữa các quỹ đạo đầu mút. Một
+  lát cắt theo thời gian cắt nó thành một dây một chiều.}
+  \lectureframe{00:19:15}
+  \label{fig:l01-worldsheet-filled-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex,scale=0.95]
+    \fill[blue!10]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3)
+      -- (2.6,2.3)
+      .. controls (1.0,1.0) and (1.0,0.5) .. (0.2,0)
+      .. controls (1.0,-0.4) and (1.0,-1.0) .. (2.6,-2.3) -- cycle;
+    \draw[blue!65!black]
+      (-2.6,-2.3) .. controls (-1.0,-1.0) and (-1.0,-0.4) .. (-0.2,0)
+      .. controls (-1.0,0.5) and (-1.0,1.0) .. (-2.6,2.3);
+    \draw[blue!65!black]
+      (2.6,-2.3) .. controls (1.0,-1.0) and (1.0,-0.4) .. (0.2,0)
+      .. controls (1.0,0.5) and (1.0,1.0) .. (2.6,2.3);
+    \draw[red!75!black,dashed] (-2.9,-1.15) -- (2.9,-1.15)
+      node[right] {time slice};
+    \draw[orange!80!black,dashed] (-1.55,-2.5) -- (1.55,2.5)
+      node[above] {crossed slicing};
+    \draw[->] (3.45,-1.7) -- (3.45,1.8) node[above] {time};
+    \node[blue!65!black] at (0,-2.7) {one world sheet};
+  \end{tikzpicture}
+  \caption{Một sơ đồ mặt thế giới rõ ràng. Các cách cắt khác nhau sắp xếp cùng một
+  mặt thành các mô tả kênh trung gian khác nhau.}
+  \label{fig:l01-worldsheet-redraw}
+\end{figure}
+
+Cách tái dựng hình học này mang tính thăm dò, chứ không phải là một suy diễn
+của toàn bộ lý thuyết từ các nguyên lý đầu tiên. Những người khác nhau đã đi tới bức tranh dây ban đầu
+theo những con đường khác nhau. Điểm mạnh của nó là cùng một vật thể mở rộng
+có thể xử lý cả hai quan sát: một dây có thể quay và biến dạng, còn
+mặt thế giới của nó có thể mã hóa các kênh tán xạ đối ngẫu.
+
+\begin{classroomqa}
+\audiencequestion{Vì sao lại đưa vào một cầu nối giống dây thay vì một hạt thông thường
+được trao đổi giữa các quark?\lecturetimestamp{00:21:20}}
+\lecturerresponse{Tại một thời điểm, không chỉ đơn thuần có một hạt trao đổi
+cục bộ. Có một quark, một phản quark, và cấu trúc tại mọi điểm giữa
+chúng. Cấu trúc ấy có thể liên tục ở mức cơ bản, hoặc có thể là một tập hợp dày đặc
+các cấu tử xấp xỉ một môi trường liên tục; bức tranh đầu tiên không quyết định điều đó.
+Điều quan trọng là toàn bộ khoảng giữa đã bị chiếm đầy và rằng các quỹ đạo quan sát được
+không cho thấy xu hướng chấm dứt như một sợi dây giày bình thường với vật nặng ở hai đầu.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Mô hình Chuẩn có thể mô tả tán xạ pion không?
+\lecturetimestamp{00:22:45}}
+\lecturerresponse{Có, mặc dù mức độ hữu ích còn phụ thuộc vào miền năng lượng. Ở
+năng lượng thấp, Mô hình Chuẩn, thông qua QCD và các mô tả năng lượng thấp của nó,
+giải thích được rất nhiều hiện tượng tán xạ pion. Ở năng lượng cao hơn, nơi toàn bộ
+các tháp trao đổi hadron trở nên quan trọng, các tính toán trực tiếp trở nên
+khó hơn và một cách tổ chức kiểu dây có thể hữu ích hơn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Các thí nghiệm ban đầu có xác lập rằng một quỹ đạo Regge
+không bao giờ kết thúc hay không?\lecturetimestamp{00:23:37}}
+\lecturerresponse{Không. Chúng chỉ xác lập rằng dãy quan sát được khi ấy
+chưa cho thấy một điểm cuối. Suy luận rằng nó có thể kéo dài vô hạn là một
+ngoại suy gợi ý, chứ không phải một vô hạn được đo đạc.}
+\end{classroomqa}
+
+\section{Ống thông lượng và sự thay đổi thang đo}
+
+QCD hiện đại đem lại cho bức tranh cũ một cách diễn giải theo lý thuyết trường. Một quark
+và một phản quark đóng vai trò như các nguồn trái dấu của trường gluon. Trong
+điện động lực học thông thường, thông lượng điện loe sang ngang khi các điện tích
+trái dấu bị tách ra. Trường yếu đi theo khoảng cách, nên miền giữa các điện tích
+không giữ được một biên dạng ngang cố định. QCD là phi tuyến. Động lực học của nó
+có thể giam giữ thông lượng sắc-điện liên quan vào một ống hẹp nối quark và phản quark.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_04.png}
+  \caption{Các đường sức trường của quark và phản quark được vẽ thành một ống thông lượng hẹp
+  thay vì một trường Coulomb loe tự do.}
+  \lectureframe{00:25:15}
+  \label{fig:l01-qcd-flux-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[orange!14,rounded corners=8pt] (-3.0,-0.55) rectangle (3.0,0.55);
+    \draw[orange!80!black,thick,rounded corners=8pt]
+      (-3.0,-0.55) rectangle (3.0,0.55);
+    \fill[blue!70!black] (-3.35,0) circle (0.17);
+    \fill[red!75!black] (3.35,0) circle (0.17);
+    \node[below] at (-3.35,-0.22) {$q$};
+    \node[below] at (3.35,-0.22) {$\bar q$};
+    \foreach \y in {-0.30,0,0.30}
+      \draw[->,orange!85!black] (-3.05,\y) -- (3.05,\y);
+    \draw[<->] (-2.9,-1.05) -- (2.9,-1.05) node[midway,below] {$L$};
+    \node at (0,0.92) {approximately fixed transverse profile};
+  \end{tikzpicture}
+  \caption{Một ống thông lượng bị giam giữ dài ra mà không loe ra. Năng lượng cố định trên
+  một đơn vị chiều dài cho \(E=TL\).}
+  \label{fig:l01-qcd-flux-redraw}
+\end{figure}
+
+Ngôn ngữ hạt và ngôn ngữ trường nói cùng một điều theo những cách khác nhau. Trong
+mô tả trường, ống giữ xấp xỉ cùng cường độ trường và cùng diện tích tiết diện
+khi hai đầu mút của nó tách xa nhau. Trong một bức tranh theo cấu tử,
+năng lượng kéo giãn tạo ra thêm cấu trúc gluon giữa hai đầu mút.
+Một dây thun thông thường có một số phân tử cố định, nên các phân tử của nó tách xa nhau
+cho đến khi vật liệu đứt. Hãy tưởng tượng thay vào đó rằng cứ mỗi khi xuất hiện một khoảng hở
+thì lại có một phân tử mới được chèn vào. Mật độ dọc theo dây khi ấy có thể giữ nguyên
+trong khi dây trở nên dài hơn. Đó là phép tương tự được nhắm tới cho trường gluon:
+ống tăng chiều dài thay vì mỏng dần đến chỗ đứt.
+
+\begin{classroomqa}
+\audiencequestion{Nếu một dây cấu thành nên electron, thì nó cũng được tạo nên từ gluon phải không?\lecturetimestamp{00:28:08}}
+\lecturerresponse{Không thể rút ra kết luận như vậy. Dây hadron là một đối tượng của QCD ở thang proton. Một dây cơ bản giả thuyết có liên quan đến hấp dẫn lượng tử sẽ tồn tại gần thang Planck nhỏ hơn rất nhiều, và ở đây không có bằng chứng nào cho thấy electron là một dây gluon hadron. Điều nổi bật là phần toán học có liên hệ đã xuất hiện ở cả hai thang ấy, chứ không phải rằng các đối tượng vật lý là đồng nhất.}
+\end{classroomqa}
+
+Những nỗ lực biến bức tranh hadron thành một lý thuyết dây tương tác hoàn chỉnh tỏ ra đầy hứa hẹn, nhưng vẫn chưa hẳn tạo ra được lý thuyết hadron mong muốn. Mô hình toán học nhiều lần chứa một hạt không khối lượng có spin 2. Trong một lý thuyết hadron, trạng thái đó có vẻ là một tiên đoán không mong muốn; còn với tư cách một lý thuyết hấp dẫn, nó lại có chính xác các số lượng tử của graviton. Joel Scherk và John Schwarz đã đưa ra phép diễn giải lại mang tính quyết định: có lẽ lý thuyết đang cho ta biết về hấp dẫn lượng tử chứ không phải hadron. Ứng dụng hadron và ứng dụng đối với dây cơ bản khác nhau về mặt vật lý, dù bài toán hadron thời kỳ đầu đã cung cấp con đường dẫn tới phần toán học.
+
+\begin{classroomqa}
+\audiencequestion{Các đường thông lượng đi từ đầu mút dương sang đầu mút âm như thế nào?\lecturetimestamp{00:31:46}}
+\lecturerresponse{Chúng đi ra khỏi một nguồn và đi vào nguồn kia, đúng như các đường sức từ đi từ cực bắc tới cực nam của một nam châm thẳng. Các nhãn đầu mút đối dấu biểu thị định hướng của thông lượng; một nam châm thẳng tương tự cũng có hai cực đối nhau chứ không phải hai cực bắc.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Dây là liên tục hay rời rạc?
+\lecturetimestamp{00:32:45}}
+\lecturerresponse{Lý thuyết lượng tử khiến sự phân biệt ấy trở nên tinh tế. Trường điện từ được biểu diễn như một trường liên tục và đồng thời cũng có các lượng tử rời rạc. Tương tự như vậy, một dây có thể được xử lý như liên tục trong khi các kích thích của nó được lượng tử hóa. Cả hai mô tả đều có thể đúng, tùy câu hỏi đang được đặt ra.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Nếu thay đổi góc của lát cắt không-thời gian qua một mặt thế giới, thì giao tuyến đó vẫn là một dây chứ?\lecturetimestamp{00:34:20}}
+\lecturerresponse{Có. Việc thay đổi lát cắt đồng thời tính là một phép biến đổi Lorentz. Lát cắt mới cắt mặt đó theo một dây được nhìn thấy trong một trạng thái chuyển động khác. Ngay cả một dây có tâm khối đứng yên cũng không bất động về nội tại; nó có thể dao động. ``Đứng yên'' chỉ nói tới tâm khối của nó.}
+\end{classroomqa}
+
+\section{Hai khai triển của năng lượng tương đối tính}
+
+Một mô tả tương đối tính trực tiếp cho một vật kéo dài và dao động là khá bất tiện. Chiến lược hữu ích là tìm một hệ quy chiếu trong đó chuyển động thích đáng của nó có dạng của cơ học phi tương đối tính thông thường. Hãy bắt đầu với một hạt đơn. Trong cơ học phi tương đối tính, ta viết
+
+\begin{equation}
+  E_{\mathrm{nr}}=\frac{\bm p^2}{2m}+B,
+  \label{eq:l01-nonrel-energy}
+\end{equation}
+
+trong đó \(B\) là năng lượng nội hoặc năng lượng liên kết, không phụ thuộc vào xung lượng toàn thể. Đối với vài hạt không tương tác, cả các hạng động năng lẫn các hằng số nội đều được cộng lại. Vì chỉ các hiệu năng lượng mới chi phối chuyển động, một hằng số cộng thêm không phụ thuộc vào trạng thái thường có thể được lược bỏ.
+
+Năng lượng tương đối tính chính xác là
+
+\begin{equation}
+  E=\sqrt{\bm p^2c^2+m^2c^4}.
+  \label{eq:l01-rel-energy-c}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_05.png}
+  \caption{Động năng phi tương đối tính và căn bậc hai tương đối tính chính xác, với các lũy thừa của \(c\) được sửa lại trong lúc thảo luận.}
+  \lectureframe{00:38:45}
+  \label{fig:l01-relativistic-energy-board}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Phải chăng công thức tương đối tính nên chứa \(p^2c^2\) và \(m^2c^4\), thay vì các lũy thừa ban đầu đã viết trên bảng?
+\lecturetimestamp{00:39:12}}
+\lecturerresponse{Đúng. Tính nhất quán về thứ nguyên cố định biểu thức thành \(E^2=p^2c^2+m^2c^4\). Sau khi khôi phục giới hạn phi tương đối tính, ta sẽ đặt \(c=1\), nhưng việc giữ các lũy thừa ấy ở đây làm cho phép khai triển trở nên minh bạch.}
+\end{classroomqa}
+
+Khi \(p^2c^2\ll m^2c^4\), ta đặt \(m^2c^4\) ra ngoài và dùng \(\sqrt{1+\epsilon}\simeq1+\epsilon/2\):
+
+\begin{align}
+  E
+  &=mc^2\sqrt{1+\frac{p^2}{m^2c^2}}
+  \notag\\
+  &\simeq mc^2+\frac{p^2}{2m}.
+  \label{eq:l01-low-momentum-expansion}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_06.png}
+  \caption{Khai triển theo xung lượng nhỏ, khôi phục năng lượng nghỉ cộng với hạng động năng phi tương đối tính quen thuộc.}
+  \lectureframe{00:41:30}
+  \label{fig:l01-low-momentum-board}
+\end{figure}
+
+Xấp xỉ này đòi hỏi nhiều hơn việc tâm khối chuyển động chậm. Một cái hộp có thể trôi chậm trong khi các hạt bên trong nó chuyển động gần tốc độ ánh sáng. Trong trường hợp đó, động lực học nội tại vẫn là tương đối tính. Giới hạn phi tương đối tính thông thường đòi hỏi mọi vận tốc cấu tử liên quan đều nhỏ trong hệ quy chiếu đã chọn.
+
+Còn có một giới hạn hữu ích khác. Thực hiện một phép boost lên toàn bộ hệ dọc theo trục \(z\) cho đến khi mọi cấu tử đều có xung lượng dọc dương lớn \(P_{zi}\). Bất kỳ cấu tử nào ban đầu chuyển động lùi đều sẽ bị một phép boost đủ lớn mang sang chuyển động tiến. Các xung lượng ngang và các khối lượng nghỉ vẫn giữ nguyên:
+
+\begin{equation}
+  P_{zi}\gg |p_{xi}|,|p_{yi}|,m_i,
+  \qquad
+  p_{\perp i}^2=p_{xi}^2+p_{yi}^2,
+\end{equation}
+
+trong đó từ đây về sau \(c=1\). Khai triển theo \(P_{zi}\) lớn cho ta
+
+\begin{align}
+  E_i
+  &=\sqrt{P_{zi}^2+p_{\perp i}^2+m_i^2}
+  \notag\\
+  &=P_{zi}\sqrt{1+\frac{p_{\perp i}^2+m_i^2}{P_{zi}^2}}
+  \notag\\
+  &\simeq P_{zi}
+  +\frac{p_{\perp i}^2+m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-one-particle}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_07.png}
+  \caption{Khai triển căn bậc hai theo \(P_z\) lớn, trong đó xung lượng ngang và khối lượng được giữ lại như các đại lượng nhỏ.}
+  \lectureframe{00:46:45}
+  \label{fig:l01-large-pz-board}
+\end{figure}
+
+Đối với nhiều cấu tử,
+
+\begin{equation}
+  E\simeq
+  \sum_i P_{zi}
+  +\sum_i\frac{p_{\perp i}^2}{2P_{zi}}
+  +\sum_i\frac{m_i^2}{2P_{zi}}.
+  \label{eq:l01-large-pz-sum}
+\end{equation}
+
+Hạng thứ nhất là tổng xung lượng dọc được bảo toàn. Nó rất lớn, nhưng đồng thời cũng là một đóng góp cộng thêm cố định. Giữ lại hay trừ nó đi không làm thay đổi bất kỳ hiệu năng lượng nào, cũng như việc cộng bất kỳ đại lượng bảo toàn nào khác vào một Hamiltonian sẽ không làm thay đổi các phương trình chuyển động. Vì vậy phần động lực là
+
+\begin{equation}
+  \begin{aligned}
+    H_{\perp}=E-P_z
+    &\simeq
+    \sum_i\left(
+      \frac{p_{\perp i}^2}{2P_{zi}}
+      +\frac{m_i^2}{2P_{zi}}
+    \right),\\
+    P_z&=\sum_iP_{zi}.
+  \end{aligned}
+  \label{eq:l01-transverse-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_08.png}
+  \caption{Phân rã nhiều hạt thành xung lượng dọc bảo toàn, động năng ngang và các hạng nội phụ thuộc khối lượng.}
+  \lectureframe{00:49:16}
+  \label{fig:l01-energy-sum-board}
+\end{figure}
+
+\section{Hệ quy chiếu xung lượng vô hạn}
+
+Giới hạn ở trên trước đây về mặt lịch sử được gọi là hệ quy chiếu xung lượng vô hạn và nay thường được phát biểu bằng tọa độ nón ánh sáng. Ý nghĩa của nó có thể đọc trực tiếp từ Hamiltonian. Trong cơ học lượng tử,
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}\ket{\psi}=H\ket{\psi}.
+  \label{eq:l01-time-evolution}
+\end{equation}
+
+Mọi hạng không tầm thường trong \(H_{\perp}\) đều tỉ lệ như \(1/P_z\). Khi độ lớn của phép boost tăng lên, các độ tách mức năng lượng co lại và các biến đổi xảy ra chậm hơn. Đây là giãn thời gian. Một hệ phóng xạ có vẻ phân rã chậm hơn khi được boost rất mạnh; ta có thể bù lại bằng cách quan sát nó trong một thời gian dài hơn tương ứng. Sự chậm lại không loại bỏ động lực học. Nó chỉ đổi lại thang thời gian của chúng.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_09.png}
+  \caption{Trên bảng, năng lượng đã rút gọn được đồng nhất với Hamiltonian sinh ra sự tiến hóa theo thời gian bị làm chậm của hệ đã qua phép boost.}
+  \lectureframe{00:52:57}
+  \label{fig:l01-hamiltonian-board}
+\end{figure}
+
+Hạng ngang có đúng dạng phi tương đối tính \(p^2/(2m)\), nhưng vai trò của khối lượng lại do \(P_z\) đảm nhiệm. Điều này hợp lý về mặt vật lý: xung lượng dọc lớn hơn khiến một hạt khó bị bẻ lệch sang ngang hơn, nên nó đóng vai trò như quán tính ngang. Hạng \(m_i^2/(2P_{zi})\) không phụ thuộc vào trạng thái chuyển động trong hai chiều ngang và vì vậy đóng vai trò của năng lượng nội hoặc năng lượng liên kết. Chuyển động tương đối tính trong ba chiều không gian đã trở thành chuyển động mang dáng vẻ phi tương đối tính trong hai chiều vuông góc với hướng boost.
+
+Đây chính là cơ sở cho phép dùng một mô hình khối lượng-lò xo sơ cấp cho một dây tương đối tính. Mô hình này không giả vờ rằng dây chuyển động chậm trong hệ nghỉ của nó. Nó dùng hệ quy chiếu trong đó động lực học ngang có cấu trúc phi tương đối tính cần thiết.
+
+\section{Một dây mở được ghép từ các hạt và lò xo}
+
+Xét một dây mở, nghĩa là một dây có hai đầu mút. Sau này có thể gắn một thứ gì đó vào các đầu mút ấy, nhưng mối quan tâm hiện tại là bản thân dây. Hãy xấp xỉ nó bằng các hạt ở những vị trí ngang
+\(\bm X_i(t)=(X_i(t),Y_i(t))\), được nối với nhau bằng các lò xo giống hệt nhau. Một Hamiltonian rời rạc là
+
+\begin{equation}
+  H_N=\sum_{i=1}^{N}
+  \left[
+    \frac{\mu_N}{2}\dot{\bm X}_i^{\,2}
+    +\frac{k_N}{2}
+      \left(\bm X_{i+1}-\bm X_i\right)^2
+  \right].
+  \label{eq:l01-discrete-string}
+\end{equation}
+
+Chỉ riêng hạng động năng sẽ làm các hạt bay tách xa nhau. Chính hạng Hooke giữa các láng giềng gần nhất khiến chúng tạo thành một dây.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lecture_01_figure_10.png}
+  \caption{Phác họa hạt-lò xo đầu tiên cho một dây mở với hai tọa độ ngang.}
+  \lectureframe{01:00:30}
+  \label{fig:l01-bead-chain-board}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \foreach \x in {0,...,8} {
+      \fill[blue!65!black] ({0.85*\x},0) circle (0.09);
+    }
+    \foreach \x in {0,...,7} {
+      \draw[decorate,decoration={zigzag,segment length=4pt,amplitude=2pt}]
+        ({0.85*\x+0.10},0) -- ({0.85*\x+0.75},0);
+    }
+    \draw[->] (3.4,0.15) -- (3.4,1.25) node[above] {$\bm X_i(t)$};
+    \draw[<->] (0,-0.65) -- (6.8,-0.65)
+      node[midway,below] {$0\leq\sigma\leq\pi$};
+  \end{tikzpicture}
+  \caption{Phép chính quy rời rạc cho dây mở. Khối lượng hạt và hằng số lò xo tỉ lệ theo khoảng cách trước khi lấy giới hạn liên tục.}
+  \label{fig:l01-bead-chain-redraw}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_11.png}
+  \caption{Các hạng động năng và Hooke rời rạc được viết cùng nhau trước khi lấy giới hạn liên tục.}
+  \lectureframe{01:01:30}
+  \label{fig:l01-discrete-energy-board}
+\end{figure}
+
+Khi số hạt tăng lên, mỗi khối lượng hạt \(\mu_N\) phải tiến về 0 để toàn bộ dây vẫn giữ quán tính hữu hạn. Đồng thời, hằng số lò xo \(k_N\) phải tăng lên. Một dải cao su dài dễ bị kéo dãn một lượng cố định hơn một đoạn rất ngắn của cùng vật liệu; vì thế các điểm lân cận được đưa lại gần nhau hơn phải được nối cứng hơn nếu vật liệu liên tục vẫn phải giữ nguyên như cũ.
+
+Đưa vào một tọa độ \(\sigma\) dọc theo dây. Miền giá trị số của nó là một quy ước. Chọn
+
+\begin{equation}
+  0\leq\sigma\leq\pi
+\end{equation}
+
+là thuận tiện vì về sau một dây kín có thể được tham số hóa từ \(0\) đến \(2\pi\). Tổng trở thành tích phân, và sai khác giữa các láng giềng gần nhất trở thành đạo hàm:
+
+\begin{equation}
+  \sum_i\longrightarrow\int_0^\pi d\sigma,
+  \qquad
+  \bm X_{i+1}-\bm X_i
+  \longrightarrow
+  \partial_\sigma\bm X.
+  \label{eq:l01-continuum-replacements}
+\end{equation}
+
+Sau khi hấp thụ các hằng số phụ thuộc vào khoảng cách vào chuẩn hóa của \(t\), \(\sigma\) và \(\bm X\), Hamiltonian liên tục có dạng
+
+\begin{equation}
+  H_{\mathrm{string}}=
+  \frac12\int_0^\pi d\sigma
+  \left[
+    \left(\partial_t\bm X\right)^2
+    +\left(\partial_\sigma\bm X\right)^2
+  \right].
+  \label{eq:l01-continuum-hamiltonian}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\textwidth]{lecture_01_figure_12.png}
+  \caption{Trên bảng là bước chuyển từ tổng theo các hạt sang
+  \(\int_0^\pi d\sigma\), trong đó sai khác láng giềng gần nhất được thay bằng
+  \(\partial_\sigma\bm X\).}
+  \lectureframe{01:05:00}
+  \label{fig:l01-continuum-board}
+\end{figure}
+
+Hạng thứ nhất là động năng trong hai phương ngang. Hạng thứ hai đo độ kéo giãn dọc theo dây. Cả hai hạng đều mang dấu cộng vì đây là Hamiltonian. Trong Lagrangian, hạng thế năng sẽ đi vào với dấu trừ. Các hệ số chính xác phụ thuộc vào quy ước và chưa được cố định ở giai đoạn này; điều sẽ quan trọng là cấu trúc gồm động năng cộng với độ kéo giãn.
+
+Hãy tách chuyển động của tâm khối khỏi chuyển động tương đối. Tịnh tiến mọi điểm cùng một lượng sẽ làm vật di chuyển như một toàn thể. Dao động, uốn cong và kéo giãn tương đối là các chuyển động nội. Một proton, một nguyên tử hay bất kỳ vật thể hợp thành nào khác đều có thể được gọi là một hạt mặc dù các cấu tử của nó chuyển động bên trong. Dây cũng không khác về phương diện đó.
+
+\section{Vì sao Hamiltonian đo bình phương khối lượng}
+
+Đối với một vật chuyển động chậm, năng lượng nghỉ tỉ lệ với khối lượng của nó. Tuy nhiên, trong mô tả xung lượng vô hạn, đóng góp nội xuất hiện dưới dạng \(M^2/(2P_z)\). Một khi xung lượng dọc chung và phép co giãn thời gian gắn với nó đã được cố định, Hamiltonian nội của dây tỉ lệ với bình phương khối lượng bất biến của toàn bộ vật thể:
+
+\begin{equation}
+  H_{\mathrm{int}}\propto M^2.
+  \label{eq:l01-hint-mass-squared}
+\end{equation}
+
+\editorialnote{Cụ thể hơn, động học nón ánh sáng cho một hệ thức bất biến dạng \(M^2=2P^+P^- - \bm P_\perp^2\). Trong hệ ngang của tâm khối và tại \(P^+\) cố định, Hamiltonian nón ánh sáng \(P^-\) do đó tỉ lệ với \(M^2\). Bài giảng lược bỏ các chi tiết chuẩn hóa này và giữ lại quan hệ tỉ lệ cần cho lập luận.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_13.png}
+  \caption{Trên bảng, năng lượng nội của dây được đồng nhất với bình phương khối lượng của trạng thái hoàn chỉnh của dây.}
+  \lectureframe{01:10:30}
+  \label{fig:l01-mass-squared-board}
+\end{figure}
+
+Một dây dao động là một tập hợp các dao động tử ghép cặp. Việc lượng tử hóa hoàn toàn nó được hoãn lại, nhưng sự kiện phổ quan trọng đã có thể nhìn thấy ngay. Năng lượng của dao động tử điều hòa tăng theo các bước rời rạc. Vì những năng lượng nội đó đóng góp vào \(M^2\), các kích thích của dây tự nhiên tạo ra các bước rời rạc trong bình phương khối lượng. Đây chính là cấu trúc mà các đồ thị Regge đã báo hiệu ngay từ đầu.
+
+\begin{classroomqa}
+\audiencequestion{Có phải \(M\) là khối lượng của toàn bộ dây, và nếu nhân đôi khối lượng ấy thì đóng góp \(M^2\) tương ứng sẽ tăng gấp bốn không?
+\lecturetimestamp{01:12:10}}
+\lecturerresponse{Đúng. \(M\) là khối lượng nghỉ của trạng thái dây hoàn chỉnh, bao gồm dao động, kéo giãn và mọi đóng góp nội khác. Hamiltonian hiệu dụng của hệ đã boost tỉ lệ với \(M^2\), nên một trạng thái có khối lượng gấp đôi sẽ có giá trị bình phương khối lượng ấy lớn gấp bốn.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Làm sao mô tả này có thể bao gồm một photon, hạt có khối lượng nghỉ bằng không?\lecturetimestamp{01:12:52}}
+\lecturerresponse{Một trạng thái không khối lượng tương ứng với \(M=0\). Việc các đóng góp dương của các dao động tử có thể kết hợp thế nào để tạo ra một trạng thái như vậy là một câu hỏi quan trọng của lý thuyết lượng tử hóa, chứ không phải điều được mô hình cổ điển ở đây quyết định. Ở thời điểm này, \(M\) chỉ đơn giản ký hiệu tổng khối lượng nghỉ, và cơ học lượng tử vẫn chưa được đưa vào.}
+\end{classroomqa}
+
+Bây giờ hãy kéo dãn đều một dây đứng yên đến độ dài vật lý \(L\). Hạng động năng triệt tiêu, và trên khoảng tham số có độ dài \(\pi\),
+
+\begin{equation}
+  \left|\partial_\sigma\bm X\right|\simeq\frac{L}{\pi}.
+\end{equation}
+
+Do đó,
+
+\begin{align}
+  H_{\mathrm{stretch}}
+  &\propto
+  \int_0^\pi d\sigma
+    \left(\partial_\sigma\bm X\right)^2
+  \notag\\
+  &\simeq
+  \pi\left(\frac{L}{\pi}\right)^2
+  \propto L^2.
+  \label{eq:l01-hooke-l2}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_14.png}
+  \caption{Cấu hình kéo dãn đều được dùng để suy ra \(H_{\mathrm{stretch}}\propto L^2\) và do đó \(M\propto L\).}
+  \lectureframe{01:15:30}
+  \label{fig:l01-length-relation-board}
+\end{figure}
+
+Đây là hành vi theo định luật Hooke trong cơ học ngang hiệu dụng. Nhưng đại lượng ở vế trái tỉ lệ với \(M^2\), chứ không phải \(M\). Suy ra rằng
+
+\begin{equation}
+  M^2\propto L^2,
+  \qquad
+  M\propto L.
+  \label{eq:l01-mass-length}
+\end{equation}
+
+Trong hệ quy chiếu nghỉ, năng lượng là \(E_{\mathrm{rest}}=M\), trong đơn vị \(c=1\).
+Viết hằng số tỉ lệ là sức căng dây \(T\),
+
+\begin{equation}
+  E_{\mathrm{rest}}=TL.
+  \label{eq:l01-string-tension}
+\end{equation}
+
+Kết quả này phù hợp với bức tranh ống thông lượng. Một điện trường hoặc từ trường đều mang mật độ năng lượng đồng đều. Nếu thông lượng của nó bị giam trong một ống có tiết diện cố định, thì mỗi đơn vị chiều dài tăng thêm sẽ cộng thêm cùng một lượng năng lượng. Tương đương, trong một bức tranh cấu phần mà ở đó các bậc tự do mới lấp đầy mỗi khoảng trống mới được mở ra, năng lượng trên một đơn vị chiều dài là cố định. Sức căng dây chính là năng lượng trên một đơn vị chiều dài ấy.
+
+Kết luận này là gián tiếp. Nó không khẳng định rằng một sợi dây cao su bất kỳ bị đẩy tới tốc độ tương đối tính sẽ tự động có \(E=TL\). Lập luận bắt đầu từ mô tả phi tương đối tính theo phương ngang, vốn suy ra từ một phép boost lớn, đồng nhất năng lượng nội tại của nó với \(M^2\), rồi chỉ sau đó mới chuyển kết quả trở lại năng lượng trong hệ quy chiếu nghỉ.
+
+\section{Cùng một đối tượng trong hai hệ quy chiếu}
+
+Rất dễ đánh mất sự phân biệt giữa \(M\) và \(M^2\), nên đáng để đặt hai khai triển cạnh nhau. Với \(c=1\),
+
+\begin{align}
+  E&=\sqrt{p^2+M^2}
+  \simeq M+\frac{p^2}{2M},
+  &&p\ll M,
+  \label{eq:l01-rest-expansion-again}\\
+  E&=\sqrt{P_z^2+M^2}
+  \simeq P_z+\frac{M^2}{2P_z},
+  &&P_z\gg M.
+  \label{eq:l01-boost-expansion-again}
+\end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_15.png}
+  \caption{Khai triển động lượng nhỏ được nhắc lại sau quãng ngắt, trong đó năng lượng nghỉ nội tại được đọc là \(M\).}
+  \lectureframe{01:28:00}
+  \label{fig:l01-rest-expansion-board-again}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.74\textwidth]{lecture_01_figure_16.png}
+  \caption{Khai triển động lượng lớn bổ sung, trong đó năng lượng dư tỉ lệ với \(M^2/(2P_z)\).}
+  \lectureframe{01:31:00}
+  \label{fig:l01-boost-expansion-board-again}
+\end{figure}
+
+Trong khai triển thứ nhất, năng lượng nghỉ được đồng nhất với khối lượng, còn quán tính thông thường được đặc trưng bởi \(M\). Trong khai triển thứ hai, hạng \(P_z\) bảo toàn được tách ra, quán tính ngang là \(P_z\), và năng lượng nội tại được biểu diễn bởi \(M^2/(2P_z)\). Khối lượng vẫn tỉ lệ với chiều dài của dây trong cả hai hệ quy chiếu. Điều thay đổi là hàm nào của khối lượng xuất hiện như Hamiltonian còn lại.
+
+\begin{classroomqa}
+\audiencequestion{Một phép boost Lorentz lẽ ra không nên làm thay đổi vật lý. Vì sao dây sau khi boost lại có vẻ tuân theo một định luật năng lượng khác?
+\lecturetimestamp{01:25:35}}
+\lecturerresponse{Nó không tuân theo vật lý khác. Trong cả hai mô tả đều có \(M\propto L\) và \(M^2\propto L^2\). Trong hệ quy chiếu nghỉ, năng lượng thích hợp là \(M\); sau một phép boost lớn, phần \(P_z\) bảo toàn được tách riêng ra và Hamiltonian còn lại tỉ lệ với \(M^2\). Phép boost làm thay đổi mô tả hữu ích, chứ không phải quan hệ khối lượng--chiều dài bất biến.}
+\end{classroomqa}
+
+\section{Một mô hình siêu dẫn của sự giam hãm}
+
+Chất siêu dẫn đẩy từ trường ra khỏi phần khối của nó. Nếu thông lượng từ bị giữ trong một kênh đủ hẹp trước khi vật liệu trở thành siêu dẫn, thì thông lượng ấy không thể loang sang ngang và sẽ vẫn bị giam trong một ống. Một thí nghiệm tư duy hữu ích là khoan một lỗ hẹp xuyên qua một mẫu đang ở trạng thái thường, đưa một thanh nam châm dài xuyên qua đó, làm lạnh mẫu, rồi rút nam châm ra. Cấu hình này mang tính sơ đồ hơn là một quy trình phòng thí nghiệm thực tế. Mục đích của nó là cô lập một đường thông lượng mà cường độ trường và mật độ năng lượng của nó xấp xỉ đồng đều dọc theo chiều dài của đường ấy.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_17.png}
+  \caption{Cấu hình đường thông lượng siêu dẫn và bức tranh giam hãm monopole--phản monopole tương ứng.}
+  \lectureframe{01:35:30}
+  \label{fig:l01-superconductor-board}
+\end{figure}
+
+Giả sử, như một thí nghiệm tư duy tiếp theo, rằng có thể đặt một monopole từ và một phản monopole vào môi trường siêu dẫn rồi tách chúng ra. Thông lượng từ giữa chúng sẽ bị ép vào một ống. Vì mỗi đơn vị chiều dài của ống mang cùng một năng lượng,
+
+\begin{equation}
+  V(R)=T_{\mathrm{flux}}R.
+  \label{eq:l01-linear-confinement}
+\end{equation}
+
+Lực \(F=-dV/dR\) có độ lớn không đổi. Việc kéo cặp ấy ra xa nhau trở nên ngày càng tốn năng lượng, nên cặp đó bị giam hãm. Đây chính là hành vi mong muốn đối với các quark trong một hadron.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=Latex]
+    \fill[blue!8,rounded corners=5pt] (-4,-1.35) rectangle (4,1.35);
+    \node[blue!55!black] at (0,1.65) {superconducting medium};
+    \fill[red!75!black] (-2.8,0) circle (0.17);
+    \fill[blue!70!black] (2.8,0) circle (0.17);
+    \node[below] at (-2.8,-0.22) {monopole};
+    \node[below] at (2.8,-0.22) {antimonopole};
+    \fill[orange!18,rounded corners=7pt] (-2.65,-0.42) rectangle (2.65,0.42);
+    \draw[orange!85!black,thick,rounded corners=7pt]
+      (-2.65,-0.42) rectangle (2.65,0.42);
+    \foreach \y in {-0.22,0,0.22}
+      \draw[->,orange!85!black] (-2.55,\y) -- (2.55,\y);
+    \draw[<->] (-2.8,-1.00) -- (2.8,-1.00) node[midway,below] {$R$};
+  \end{tikzpicture}
+  \caption{Sự giam hãm thông lượng tạo ra một ống đồng đều và một thế tuyến tính \(V(R)=T_{\mathrm{flux}}R\).}
+  \label{fig:l01-superconductor-redraw}
+\end{figure}
+
+\begin{classroomqa}
+\audiencequestion{Cái gì đóng vai trò của môi trường siêu dẫn trong hadron?\lecturetimestamp{01:36:57}}
+\lecturerresponse{Phép tương tự được đề xuất đảo ngược vai trò điện và từ. Một ngưng tụ siêu dẫn thông thường mang điện và giam hãm thông lượng từ. Trong bức tranh siêu dẫn đối ngẫu của QCD, một ngưng tụ của các đối tượng sắc-từ giam hãm điện tích sắc-điện của các quark. Các đối tượng như vậy không xuất hiện như các hạt cô lập vì chúng được biểu diễn là đã ngưng tụ trong chân không.}
+\end{classroomqa}
+
+\editorialnote{Mô tả siêu dẫn đối ngẫu là một cơ chế giam hãm có ảnh hưởng lớn và được trình bày ở đây theo ngôn ngữ lịch sử của bài giảng. Nó nên được hiểu như một bức tranh vật lý về chân không QCD, chứ không phải như một sự suy dẫn đầy đủ của sự giam hãm từ các nguyên lý đầu tiên.}
+
+\begin{classroomqa}
+\audiencequestion{Năng lượng tỉ lệ với chiều dài có phải là quy tắc chung cho mọi sợi dây thông thường khi được đưa tới chế độ rất tương đối tính không?\lecturetimestamp{01:38:10}}
+\lecturerresponse{Không. Trước hết cần có một lý thuyết tương đối tính nhất quán cho vật liệu đó, và hành vi của nó sẽ phụ thuộc vào chi tiết. Năng lượng tuyến tính là điều đặc thù của một cấu hình mà mật độ vẫn giữ cố định khi nó được kéo dài, hoặc của thông lượng bị ngăn không cho loang theo phương ngang. Việc kéo nó ra làm phát sinh thêm các cấu phần hoặc thêm chiều dài đồng đều được lấp đầy bởi trường, chứ không chỉ đơn thuần làm tăng khoảng cách giữa một tập phân tử cố định.}
+\end{classroomqa}
+
+\section{Các bậc tự do ngang và kích thước của một hạt}
+
+Trong cách xây dựng theo nón ánh sáng, dây được viết trực tiếp theo các tọa độ ngang của nó. Không có một dao động tử dọc tách biệt, có thể quy định tự do, tương tự với mỗi dao động tử ngang. Việc giảm đi một chiều không gian tường minh này là một trong những đặc trưng đáng chú ý của hình thức luận; dẫu vậy, lý thuyết hoàn chỉnh vẫn phải thỏa mãn bất biến Lorentz.
+
+\begin{classroomqa}
+\audiencequestion{Phần chuyển động còn lại dọc theo phương \(z\) sẽ ra sao?
+\lecturetimestamp{01:40:10}}
+\lecturerresponse{Trong mô tả nón ánh sáng, chuyển động dọc không được đưa vào như một bậc tự do độc lập. Các dao động vật lý được mô tả theo phương ngang, còn các ràng buộc quyết định thông tin theo phương dọc. Sự tiết kiệm này có liên hệ về tinh thần với ý tưởng rằng các hệ hấp dẫn có thể chấp nhận một mô tả với ít hơn một chiều tường minh, mặc dù mối liên hệ đó không được suy ra ở đây.}
+\end{classroomqa}
+
+\begin{classroomqa}
+\audiencequestion{Trên thực tế người ta biết bao nhiêu điểm trên các đồ thị Regge?
+\lecturetimestamp{01:41:15}}
+\lecturerresponse{Số tối đa chính xác phụ thuộc vào từng họ; một con số gần đúng là khoảng 7. Dãy này không kéo dài vô tận về mặt thực nghiệm. Điều quan trọng là các điểm đã biết không biểu lộ kiểu điểm cuối hỏng hóc hay đứt gãy nhìn thấy được vốn quen thuộc ở vật liệu vĩ mô thông thường.}
+\end{classroomqa}
+
+Hiện tượng học hadron đã cung cấp động cơ lịch sử, nhưng lý thuyết dây toán học không buộc phải tái tạo các hadron trong từng chi tiết. Một khi hình thức luận đã được xây dựng, người ta hỏi nó thực sự mô tả cái gì. Trạng thái spin hai không khối lượng của nó và các tính chất khác hướng tự nhiên hơn tới hấp dẫn.
+
+Sự tương phản có vẻ giữa hadron và electron có thể được định lượng bằng năng lượng của một sự quay cứng,
+
+\begin{equation}
+  E_{\mathrm{rot}}=\frac{J^2}{2I},
+  \qquad
+  I\sim MR^2.
+  \label{eq:l01-rotational-energy}
+\end{equation}
+
+Mômen động lượng là đại lượng lượng tử hóa. Viết \(J^2\) một cách sơ đồ thành \(\hbar^2 n^2\), bước kích thích quay đầu tiên có bậc độ lớn
+
+\begin{equation}
+  \Delta E_{0\to1}\sim\frac{\hbar^2}{2I}.
+  \label{eq:l01-first-rotational-step}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.76\textwidth]{lecture_01_figure_18.png}
+  \caption{Ước lượng theo mômen quán tính cho kích thích quay đầu tiên, \(\Delta E\sim\hbar^2/(2I)\).}
+  \lectureframe{01:44:00}
+  \label{fig:l01-rotational-board}
+\end{figure}
+
+Với khối lượng cố định, bán kính nhỏ hơn nghĩa là mômen quán tính nhỏ hơn rất nhiều và năng lượng kích thích lớn hơn rất nhiều. Hadron có kích thước lớn trên thang động lực học nội tại của chúng, nên một kích thích quay tốn cỡ một GeV và có thể đạt tới trong các va chạm hạt. Nếu electron có bất kỳ tiểu cấu trúc không gian nào, thì các cận thực nghiệm khiến quy mô của nó nhỏ hơn rất nhiều, và các kích thích quay sẽ nằm vượt xa các năng lượng hiện có. Một quả bóng rổ là cực đoan ngược lại: mômen quán tính của nó lớn đến mức một lượng tử mômen động lượng chỉ tốn một năng lượng nhỏ đến mức không cảm nhận được. Các bước quay hoặc quỹ đạo ở cấp nguyên tử nằm giữa hai cực đoan ấy, thường ở thang electron volt.
+
+\begin{classroomqa}
+\audiencequestion{Một electron tưởng như cơ bản vẫn có thể có cấu trúc không gian và các kích thích quay không?\lecturetimestamp{01:42:04}}
+\lecturerresponse{Nó chỉ có thể che giấu chúng ở năng lượng rất cao. Cái giá năng lượng của một đơn vị mômen động lượng tỉ lệ như \(1/I\), và \(I\sim MR^2\). Vì thế, một bán kính cực nhỏ đẩy kích thích đầu tiên ra rất xa trên đồ thị bình phương khối lượng. Việc không quan sát thấy các kích thích của electron có nghĩa là hoặc electron là điểm, hoặc mọi thang hợp thành đều nhỏ hơn rất nhiều so với mức mà các thí nghiệm hiện nay có thể phân giải.}
+\end{classroomqa}
+
+Giờ đây có thể đọc đồ thị Regge mở đầu theo nghĩa động lực học. Hadron bộc lộ các trạng thái quay và dao động có thể tiếp cận được vì chúng là những đối tượng kéo dài. Các bước bằng nhau trong phổ bình phương khối lượng của chúng là dấu hiệu được mong đợi khi một Hamiltonian dao động tử được đồng nhất với \(M^2\). Sự gần tuyến tính của năng lượng theo chiều dài của chúng là dấu hiệu của một ống thông lượng có sức căng không đổi. Quang phổ học, tính đối ngẫu của tán xạ, hình học mặt thế giới và cơ học nón ánh sáng là bốn cách mô tả của cùng một ý tưởng tổ chức: một đối tượng tương đối tính kéo dài mà biến nội tại tự nhiên của nó là bình phương khối lượng.
