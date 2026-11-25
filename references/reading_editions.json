@@ -270,7 +270,8 @@
         "zh-Hant": "粒子物理學（一）：基本概念",
         "ko": "입자물리학 1: 기본 개념",
         "vi": "Vật lý hạt 1: Các khái niệm cơ bản",
-        "ru": "Физика элементарных частиц 1: основные понятия"
+        "ru": "Физика элементарных частиц 1: основные понятия",
+        "ar": "فيزياء الجسيمات 1: المفاهيم الأساسية"
       },
       "bunkoId": "physics-particle-physics-1",
       "editions": {
@@ -312,6 +313,10 @@
         },
         "ru": {
           "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/ru/book.pdf",
+          "layout": "a5-1.2-dimensions-v2"
+        },
+        "ar": {
+          "pdf": "https://raw.githubusercontent.com/lachlanchen/leonardsusskind/main/translations/supplementary--particle_physics_1_basic_concepts--2009_fall/ar/book.pdf",
           "layout": "a5-1.2-dimensions-v2"
         }
       }
